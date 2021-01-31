@@ -50,6 +50,23 @@ class LettersViewController: UIViewController {
         present(vc, animated: true)
     }
     
+    
+    @IBAction func homeButtonTapped(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(identifier: "main_vc") as! ViewController
+        present(vc, animated: true)
+    }
+    
+    @IBAction func puzzleButtonTapped(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(identifier: "puzzle_vc") as! PuzzleViewController
+        present(vc, animated: true)
+    }
+    
+    @IBAction func coinButtonTapped(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(identifier: "coin_vc") as! CoinViewController
+        present(vc, animated: true)
+    }
+    
+    
     /*
     // MARK: - Navigation
 

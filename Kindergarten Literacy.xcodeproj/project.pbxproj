@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34D9818D25C54B8800AD992F /* VowelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D9818C25C54B8800AD992F /* VowelViewController.swift */; };
+		34D9819025C6655F00AD992F /* CoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D9818F25C6655F00AD992F /* CoinViewController.swift */; };
+		34D9819325C666AE00AD992F /* PuzzleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D9819225C666AE00AD992F /* PuzzleViewController.swift */; };
+		34D9819625C68D0B00AD992F /* VowelBlackAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D9819525C68D0B00AD992F /* VowelBlackAViewController.swift */; };
+		34D9819925C68F5A00AD992F /* VowelGreenAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D9819825C68F5A00AD992F /* VowelGreenAViewController.swift */; };
+		34D9819C25C68F7A00AD992F /* VowelBlackEViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D9819B25C68F7A00AD992F /* VowelBlackEViewController.swift */; };
+		34D9819F25C68F8C00AD992F /* VowelBlackIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D9819E25C68F8C00AD992F /* VowelBlackIViewController.swift */; };
+		34D981A225C68FA100AD992F /* VowelGreenIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D981A125C68FA100AD992F /* VowelGreenIViewController.swift */; };
+		34D981A525C68FB200AD992F /* VowelBlackOViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D981A425C68FB200AD992F /* VowelBlackOViewController.swift */; };
+		34D981A825C68FCF00AD992F /* VowelBlackUViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D981A725C68FCF00AD992F /* VowelBlackUViewController.swift */; };
+		34D981AB25C6A7B600AD992F /* VowelQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D981AA25C6A7B600AD992F /* VowelQuizViewController.swift */; };
 		C0BA854D256C6485000EBAEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BA854C256C6485000EBAEC /* AppDelegate.swift */; };
 		C0BA854F256C6485000EBAEC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BA854E256C6485000EBAEC /* SceneDelegate.swift */; };
 		C0BA8551256C6485000EBAEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BA8550256C6485000EBAEC /* ViewController.swift */; };
@@ -19,6 +30,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		34D9818C25C54B8800AD992F /* VowelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VowelViewController.swift; sourceTree = "<group>"; };
+		34D9818F25C6655F00AD992F /* CoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinViewController.swift; sourceTree = "<group>"; };
+		34D9819225C666AE00AD992F /* PuzzleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleViewController.swift; sourceTree = "<group>"; };
+		34D9819525C68D0B00AD992F /* VowelBlackAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VowelBlackAViewController.swift; sourceTree = "<group>"; };
+		34D9819825C68F5A00AD992F /* VowelGreenAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VowelGreenAViewController.swift; sourceTree = "<group>"; };
+		34D9819B25C68F7A00AD992F /* VowelBlackEViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VowelBlackEViewController.swift; sourceTree = "<group>"; };
+		34D9819E25C68F8C00AD992F /* VowelBlackIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VowelBlackIViewController.swift; sourceTree = "<group>"; };
+		34D981A125C68FA100AD992F /* VowelGreenIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VowelGreenIViewController.swift; sourceTree = "<group>"; };
+		34D981A425C68FB200AD992F /* VowelBlackOViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VowelBlackOViewController.swift; sourceTree = "<group>"; };
+		34D981A725C68FCF00AD992F /* VowelBlackUViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VowelBlackUViewController.swift; sourceTree = "<group>"; };
+		34D981AA25C6A7B600AD992F /* VowelQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VowelQuizViewController.swift; sourceTree = "<group>"; };
 		C0BA8549256C6485000EBAEC /* Kindergarten Literacy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kindergarten Literacy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0BA854C256C6485000EBAEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0BA854E256C6485000EBAEC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +94,17 @@
 				C0BA8557256C6487000EBAEC /* LaunchScreen.storyboard */,
 				C0BA855A256C6487000EBAEC /* Info.plist */,
 				C0BA856E256CAAB5000EBAEC /* EndingSoundsViewController.swift */,
+				34D9818C25C54B8800AD992F /* VowelViewController.swift */,
+				34D9818F25C6655F00AD992F /* CoinViewController.swift */,
+				34D9819225C666AE00AD992F /* PuzzleViewController.swift */,
+				34D9819525C68D0B00AD992F /* VowelBlackAViewController.swift */,
+				34D9819825C68F5A00AD992F /* VowelGreenAViewController.swift */,
+				34D9819B25C68F7A00AD992F /* VowelBlackEViewController.swift */,
+				34D9819E25C68F8C00AD992F /* VowelBlackIViewController.swift */,
+				34D981A125C68FA100AD992F /* VowelGreenIViewController.swift */,
+				34D981A425C68FB200AD992F /* VowelBlackOViewController.swift */,
+				34D981A725C68FCF00AD992F /* VowelBlackUViewController.swift */,
+				34D981AA25C6A7B600AD992F /* VowelQuizViewController.swift */,
 			);
 			path = "Kindergarten Literacy";
 			sourceTree = "<group>";
@@ -146,9 +179,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34D9819925C68F5A00AD992F /* VowelGreenAViewController.swift in Sources */,
+				34D981A525C68FB200AD992F /* VowelBlackOViewController.swift in Sources */,
+				34D9819F25C68F8C00AD992F /* VowelBlackIViewController.swift in Sources */,
 				C0BA856F256CAAB5000EBAEC /* EndingSoundsViewController.swift in Sources */,
+				34D9819325C666AE00AD992F /* PuzzleViewController.swift in Sources */,
+				34D981AB25C6A7B600AD992F /* VowelQuizViewController.swift in Sources */,
+				34D9819625C68D0B00AD992F /* VowelBlackAViewController.swift in Sources */,
+				34D9819C25C68F7A00AD992F /* VowelBlackEViewController.swift in Sources */,
 				C0BA8567256CA9ED000EBAEC /* LettersViewController.swift in Sources */,
+				34D981A825C68FCF00AD992F /* VowelBlackUViewController.swift in Sources */,
+				34D9818D25C54B8800AD992F /* VowelViewController.swift in Sources */,
+				34D9819025C6655F00AD992F /* CoinViewController.swift in Sources */,
 				C0BA8551256C6485000EBAEC /* ViewController.swift in Sources */,
+				34D981A225C68FA100AD992F /* VowelGreenIViewController.swift in Sources */,
 				C0BA854D256C6485000EBAEC /* AppDelegate.swift in Sources */,
 				C0BA856A256CAA93000EBAEC /* BeginningSoundsViewController.swift in Sources */,
 				C0BA854F256C6485000EBAEC /* SceneDelegate.swift in Sources */,
