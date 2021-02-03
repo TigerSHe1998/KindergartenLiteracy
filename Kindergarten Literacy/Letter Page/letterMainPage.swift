@@ -3,11 +3,12 @@
 //  Kindergarten Literacy
 //
 //  Created by Bingqing Xu on 11/23/20.
+//  Development taken over by TigerSHe
 //
 
 import UIKit
 
-class LettersViewController: UIViewController {
+class letterMainPage: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

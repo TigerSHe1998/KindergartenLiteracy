@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func lettersButtonTapped(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(identifier: "letters_vc") as! LettersViewController
+        let vc = storyboard?.instantiateViewController(identifier: "letters_vc") as! letterMainPage
         present(vc, animated: true)
     }
     

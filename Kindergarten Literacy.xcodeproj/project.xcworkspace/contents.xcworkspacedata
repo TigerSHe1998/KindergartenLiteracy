@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/tigershe/Documents/Xcode Projects/KindergartenLiteracy/KindergartenLiteracy/Kindergarten Literacy/CoinViewController.swift">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/tigershe/Documents/Xcode Projects/KindergartenLiteracy/KindergartenLiteracy/Kindergarten Literacy/PuzzleViewController.swift">
+   </FileRef>
+   <FileRef
       location = "self:">
    </FileRef>
 </Workspace>

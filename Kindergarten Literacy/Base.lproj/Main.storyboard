@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="landscape" appearance="light"/>
+    <device id="retina6_0" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -14,11 +14,11 @@
             <objects>
                 <viewController storyboardIdentifier="main_vc" id="BYZ-38-t0r" customClass="ViewController" customModule="Kindergarten_Literacy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="18d-Jv-fXh">
-                                <rect key="frame" x="238" y="57" width="420" height="300"/>
+                                <rect key="frame" x="212" y="45" width="420" height="300"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="sHH-U8-PdZ">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="300"/>
@@ -120,16 +120,16 @@
             </objects>
             <point key="canvasLocation" x="-897.32142857142856" y="-1175.3623188405797"/>
         </scene>
-        <!--Letters View Controller-->
+        <!--Letter Main Page-->
         <scene sceneID="Tvu-kW-fLx">
             <objects>
-                <viewController storyboardIdentifier="letters_vc" id="XDS-se-AwN" customClass="LettersViewController" customModule="Kindergarten_Literacy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="letters_vc" id="XDS-se-AwN" customClass="letterMainPage" customModule="Kindergarten_Literacy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="og7-9d-H6N">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="O0I-Rc-EXu">
-                                <rect key="frame" x="123" y="32" width="650" height="350"/>
+                                <rect key="frame" x="97" y="20" width="650" height="350"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="iD4-UT-meY">
                                         <rect key="frame" x="0.0" y="0.0" width="650" height="350"/>
@@ -263,11 +263,11 @@
             <objects>
                 <viewController storyboardIdentifier="beginning_sounds_vc" id="N9P-jC-cgb" customClass="BeginningSoundsViewController" customModule="Kindergarten_Literacy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hNQ-V2-Rri">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n65-1C-k5d">
-                                <rect key="frame" x="123" y="32" width="650" height="350"/>
+                                <rect key="frame" x="97" y="20" width="650" height="350"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1Wa-hX-Tr7">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="350"/>
@@ -276,28 +276,28 @@
                                         <rect key="frame" x="200" y="0.0" width="450" height="350"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="run-FU-HeF">
-                                                <rect key="frame" x="0.0" y="0.0" width="450" height="84"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="450" height="83.666666666666671"/>
                                                 <state key="normal" backgroundImage="beginning sounds 1"/>
                                                 <connections>
                                                     <action selector="beginningSoundsOneButtonTapped:" destination="N9P-jC-cgb" eventType="touchUpInside" id="dqw-Vn-Q2G"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Frf-jC-gIB">
-                                                <rect key="frame" x="0.0" y="89" width="450" height="83.5"/>
+                                                <rect key="frame" x="0.0" y="88.666666666666686" width="450" height="84"/>
                                                 <state key="normal" backgroundImage="beginning sounds 2"/>
                                                 <connections>
                                                     <action selector="beginningSoundsTwoButtonTapped:" destination="N9P-jC-cgb" eventType="touchUpInside" id="o8Q-1J-a3O"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvh-mv-pRm">
-                                                <rect key="frame" x="0.0" y="177.5" width="450" height="84"/>
+                                                <rect key="frame" x="0.0" y="177.66666666666666" width="450" height="83.666666666666657"/>
                                                 <state key="normal" backgroundImage="beginning sounds 3"/>
                                                 <connections>
                                                     <action selector="beginningSoundsThreeButtonTapped:" destination="N9P-jC-cgb" eventType="touchUpInside" id="5Re-gE-sIr"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MDq-cK-nUR">
-                                                <rect key="frame" x="0.0" y="266.5" width="450" height="83.5"/>
+                                                <rect key="frame" x="0.0" y="266.33333333333331" width="450" height="83.666666666666686"/>
                                                 <state key="normal" backgroundImage="beginning sounds 4"/>
                                                 <connections>
                                                     <action selector="beginningSoundsFourButtonTapped:" destination="N9P-jC-cgb" eventType="touchUpInside" id="GOi-ad-fke"/>
@@ -369,11 +369,11 @@
             <objects>
                 <viewController storyboardIdentifier="ending_sounds_vc" id="t6p-3L-WFZ" customClass="EndingSoundsViewController" customModule="Kindergarten_Literacy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JI2-IW-UAq">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M10-iM-cce">
-                                <rect key="frame" x="123" y="32" width="650" height="350"/>
+                                <rect key="frame" x="97" y="20" width="650" height="350"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="IMF-pn-npD">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="350"/>
@@ -382,28 +382,28 @@
                                         <rect key="frame" x="200" y="0.0" width="450" height="350"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sAa-Ap-HXl">
-                                                <rect key="frame" x="0.0" y="0.0" width="450" height="84"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="450" height="83.666666666666671"/>
                                                 <state key="normal" backgroundImage="ending sounds 1"/>
                                                 <connections>
                                                     <action selector="endingSoundsOneButtonTapped:" destination="t6p-3L-WFZ" eventType="touchUpInside" id="jxi-GJ-d1S"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QYz-FW-xiq">
-                                                <rect key="frame" x="0.0" y="89" width="450" height="83.5"/>
+                                                <rect key="frame" x="0.0" y="88.666666666666686" width="450" height="84"/>
                                                 <state key="normal" backgroundImage="ending sounds 2"/>
                                                 <connections>
                                                     <action selector="endingSoundsTwoButtonTapped:" destination="t6p-3L-WFZ" eventType="touchUpInside" id="1eU-uy-zfd"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l7B-FD-hbH">
-                                                <rect key="frame" x="0.0" y="177.5" width="450" height="84"/>
+                                                <rect key="frame" x="0.0" y="177.66666666666666" width="450" height="83.666666666666657"/>
                                                 <state key="normal" backgroundImage="ending sounds 3"/>
                                                 <connections>
                                                     <action selector="endingSoundsThreeButtonTapped:" destination="t6p-3L-WFZ" eventType="touchUpInside" id="A4N-5D-4AQ"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zNA-Fv-uNV">
-                                                <rect key="frame" x="0.0" y="266.5" width="450" height="83.5"/>
+                                                <rect key="frame" x="0.0" y="266.33333333333331" width="450" height="83.666666666666686"/>
                                                 <state key="normal" backgroundImage="ending sounds 4"/>
                                                 <connections>
                                                     <action selector="endingSoundsFourButtonTapped:" destination="t6p-3L-WFZ" eventType="touchUpInside" id="TEl-rG-Vr8"/>
@@ -475,7 +475,7 @@
             <objects>
                 <viewController storyboardIdentifier="vowels_vc" id="jGV-1l-ZlQ" customClass="VowelViewController" customModule="Kindergarten_Literacy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="N2Q-zU-SV7">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Een-vn-q1S">
@@ -627,7 +627,7 @@
             <objects>
                 <viewController storyboardIdentifier="coin_vc" id="Ssw-U2-RYa" customClass="CoinViewController" customModule="Kindergarten_Literacy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Sgf-KJ-vxz">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is Coin Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jYD-jx-yl2">
@@ -688,7 +688,7 @@
             <objects>
                 <viewController storyboardIdentifier="puzzle_vc" id="W0e-VR-xL6" customClass="PuzzleViewController" customModule="Kindergarten_Literacy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2gG-OG-q4j">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is Puzzle Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B57-QQ-yPc">
@@ -749,11 +749,11 @@
             <objects>
                 <viewController storyboardIdentifier="black_vowel_a_vc" id="FSU-Jn-FJk" customClass="VowelBlackAViewController" customModule="Kindergarten_Literacy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rdV-hu-YQH">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="a" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7h2-Qj-Rd9">
-                                <rect key="frame" x="456" y="29" width="23" height="54"/>
+                                <rect key="frame" x="456" y="29" width="0.0" height="30"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <nil key="textColor"/>
@@ -840,7 +840,7 @@
             <objects>
                 <viewController storyboardIdentifier="green_vowel_a_vc" id="e8X-mw-8fd" customClass="VowelGreenAViewController" customModule="Kindergarten_Literacy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XQ8-M4-kSf">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="a2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ke-tN-ip2">
@@ -931,7 +931,7 @@
             <objects>
                 <viewController storyboardIdentifier="black_vowel_e_vc" id="3b5-Q2-2qm" customClass="VowelBlackEViewController" customModule="Kindergarten_Literacy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2rm-aK-IwF">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="e" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q36-AA-QK3">
@@ -1022,7 +1022,7 @@
             <objects>
                 <viewController storyboardIdentifier="black_vowel_i_vc" id="NB3-0q-lNK" customClass="VowelBlackIViewController" customModule="Kindergarten_Literacy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3AZ-2r-9v4">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="i" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ir3-lm-hBm">
@@ -1113,7 +1113,7 @@
             <objects>
                 <viewController storyboardIdentifier="green_vowel_i_vc" id="f6D-as-1dY" customClass="VowelGreenIViewController" customModule="Kindergarten_Literacy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ryg-kB-ENi">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="i2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="crm-d8-yPF">
@@ -1204,7 +1204,7 @@
             <objects>
                 <viewController storyboardIdentifier="black_vowel_o_vc" id="Jdx-zH-3Ql" customClass="VowelBlackOViewController" customModule="Kindergarten_Literacy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SnI-GZ-kyG">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="o" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ezr-UG-rFO">
@@ -1295,7 +1295,7 @@
             <objects>
                 <viewController storyboardIdentifier="black_vowel_u_vc" id="USI-Nb-BfB" customClass="VowelBlackUViewController" customModule="Kindergarten_Literacy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KqO-58-Lbv">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="u" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D1g-Lr-KsK">
@@ -1386,7 +1386,7 @@
             <objects>
                 <viewController storyboardIdentifier="quiz_vc" id="D6L-zS-oqK" customClass="VowelQuizViewController" customModule="Kindergarten_Literacy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dNL-RU-SK4">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FSx-Lc-Gxv">
@@ -1456,25 +1456,85 @@
             </objects>
             <point key="canvasLocation" x="-1554" y="93"/>
         </scene>
+        <!--Name Select List Page-->
+        <scene sceneID="hUR-Hj-t9k">
+            <objects>
+                <viewController id="tuR-uM-kXU" customClass="nameSelectListPage" customModule="Kindergarten_Literacy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WQh-dv-NC2">
+                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="m5t-zM-0AY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Pj-Ci-afM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-216" y="845"/>
+        </scene>
+        <!--Sound Select List Page-->
+        <scene sceneID="cgv-e4-y52">
+            <objects>
+                <viewController id="cTa-9W-n2p" customClass="soundSelectListPage" customModule="Kindergarten_Literacy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v6A-rB-ndh">
+                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="tLh-3e-jed"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nn7-d8-ytp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-216" y="1563"/>
+        </scene>
+        <!--Alphabet Learn Page-->
+        <scene sceneID="dld-z8-aFn">
+            <objects>
+                <viewController id="8rH-UW-zPi" customClass="alphabetLearnPage" customModule="Kindergarten_Literacy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yVz-t9-BSm">
+                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="DV1-kH-38W"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WTr-us-l9f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-216" y="2277"/>
+        </scene>
+        <!--Phoneme Learn Page-->
+        <scene sceneID="OQa-IM-niS">
+            <objects>
+                <viewController id="h9w-wS-FfJ" customClass="phonemeLearnPage" customModule="Kindergarten_Literacy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q0b-h3-hKL">
+                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="RTU-sS-p3g"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LQ1-vb-nJX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-216" y="3022"/>
+        </scene>
     </scenes>
     <resources>
         <image name="arrow.backward.circle.fill" catalog="system" width="128" height="121"/>
         <image name="arrow.clockwise.circle.fill" catalog="system" width="128" height="121"/>
         <image name="arrow.forward.circle.fill" catalog="system" width="128" height="121"/>
         <image name="arrowshape.turn.up.backward.2.circle.fill" catalog="system" width="128" height="121"/>
-        <image name="beginning sounds" width="330" height="225"/>
-        <image name="beginning sounds 1" width="602" height="145"/>
+        <image name="beginning sounds" width="220" height="150"/>
+        <image name="beginning sounds 1" width="401.33334350585938" height="96.666664123535156"/>
         <image name="beginning sounds 2" width="1204" height="316"/>
         <image name="beginning sounds 3" width="1404" height="270"/>
         <image name="beginning sounds 4" width="1428" height="296"/>
         <image name="cart.circle.fill" catalog="system" width="128" height="121"/>
-        <image name="ending sounds" width="331" height="223"/>
-        <image name="ending sounds 1" width="505" height="145"/>
-        <image name="ending sounds 2" width="516" height="164"/>
-        <image name="ending sounds 3" width="587" height="146"/>
-        <image name="ending sounds 4" width="594" height="156"/>
+        <image name="ending sounds" width="220.66667175292969" height="148.66667175292969"/>
+        <image name="ending sounds 1" width="336.66665649414062" height="96.666664123535156"/>
+        <image name="ending sounds 2" width="344" height="109.33333587646484"/>
+        <image name="ending sounds 3" width="391.33334350585938" height="97.333335876464844"/>
+        <image name="ending sounds 4" width="396" height="104"/>
         <image name="house.circle.fill" catalog="system" width="128" height="121"/>
-        <image name="letters" width="329" height="225"/>
+        <image name="letters" width="219.33332824707031" height="150"/>
         <image name="names1" width="904" height="230"/>
         <image name="names2" width="902" height="230"/>
         <image name="names3" width="902" height="230"/>
@@ -1485,7 +1545,7 @@
         <image name="sounds2" width="904" height="230"/>
         <image name="sounds3" width="902" height="228"/>
         <image name="sounds4" width="906" height="228"/>
-        <image name="vowels" width="331" height="223"/>
+        <image name="vowels" width="220.66667175292969" height="148.66667175292969"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
