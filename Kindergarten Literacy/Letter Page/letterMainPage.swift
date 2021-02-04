@@ -1,13 +1,14 @@
 //
-//  EndingSoundsViewController.swift
+//  LettersViewController.swift
 //  Kindergarten Literacy
 //
 //  Created by Bingqing Xu on 11/23/20.
+//  Development taken over by TigerSHe
 //
 
 import UIKit
 
-class EndingSoundsViewController: UIViewController {
+class letterMainPage: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,31 +16,9 @@ class EndingSoundsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    
-    @IBAction func endingSoundsOneButtonTapped(_ sender: Any) {
-    }
-    
-    
-    @IBAction func endingSoundsTwoButtonTapped(_ sender: Any) {
-    }
-    
-    
-    @IBAction func endingSoundsThreeButtonTapped(_ sender: Any) {
-    }
-    
-    
-    @IBAction func endingSoundsFourButtonTapped(_ sender: Any) {
-    }
-    
-    @IBAction func returnButtonTapped(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(identifier: "main_vc") as! ViewController
-        present(vc, animated: true)
-    }
-    
-    
+    // you can copy these code for sidebar
     @IBAction func homeButtonTapped(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(identifier: "main_vc") as! ViewController
-        present(vc, animated: true)
+        self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func puzzleButtonTapped(_ sender: Any) {
@@ -51,6 +30,7 @@ class EndingSoundsViewController: UIViewController {
         let vc = storyboard?.instantiateViewController(identifier: "coin_vc") as! CoinViewController
         present(vc, animated: true)
     }
+
     
     /*
     // MARK: - Navigation

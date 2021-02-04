@@ -1,14 +1,14 @@
 //
-//  EndingSoundsViewController.swift
+//  VowelQuizViewController.swift
 //  Kindergarten Literacy
 //
-//  Created by Bingqing Xu on 11/23/20.
+//  Created by 徐浩云 on 1/31/21.
 //
-
+import Foundation
 import UIKit
 
-class EndingSoundsViewController: UIViewController {
-
+class VowelQuizViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -16,20 +16,8 @@ class EndingSoundsViewController: UIViewController {
     }
     
     
-    @IBAction func endingSoundsOneButtonTapped(_ sender: Any) {
-    }
     
     
-    @IBAction func endingSoundsTwoButtonTapped(_ sender: Any) {
-    }
-    
-    
-    @IBAction func endingSoundsThreeButtonTapped(_ sender: Any) {
-    }
-    
-    
-    @IBAction func endingSoundsFourButtonTapped(_ sender: Any) {
-    }
     
     @IBAction func returnButtonTapped(_ sender: Any) {
         let vc = storyboard?.instantiateViewController(identifier: "main_vc") as! ViewController
@@ -52,14 +40,5 @@ class EndingSoundsViewController: UIViewController {
         present(vc, animated: true)
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
 }
