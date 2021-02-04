@@ -17,6 +17,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="38" id="nD4-T3-bf9" userLabel="side_bar_stack">
+                                <rect key="frame" x="44" y="26" width="56" height="338"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yu7-7S-dEv" userLabel="back">
+                                        <rect key="frame" x="0.0" y="0.0" width="56" height="56"/>
+                                        <state key="normal" image="back"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bvw-N5-Iwa" userLabel="home">
+                                        <rect key="frame" x="0.0" y="94" width="56" height="56"/>
+                                        <state key="normal" image="home"/>
+                                        <connections>
+                                            <action selector="homeButtonTapped:" destination="XDS-se-AwN" eventType="touchUpInside" id="ELH-Qu-VuA"/>
+                                            <action selector="homeButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pq1-vt-AY0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AmE-OJ-kfB" userLabel="coin">
+                                        <rect key="frame" x="0.0" y="188" width="56" height="56"/>
+                                        <state key="normal" image="bank"/>
+                                        <connections>
+                                            <action selector="puzzleButtonTapped:" destination="XDS-se-AwN" eventType="touchUpInside" id="5aA-94-5uW"/>
+                                            <action selector="puzzleButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8BP-qN-Hdo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y1A-kU-b81" userLabel="puzzle">
+                                        <rect key="frame" x="0.0" y="282" width="56" height="56"/>
+                                        <state key="normal" image="puzzle"/>
+                                        <connections>
+                                            <action selector="coinButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kow-Gc-slM"/>
+                                            <action selector="coinButtonTapped:" destination="XDS-se-AwN" eventType="touchUpInside" id="srw-A7-mts"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="18d-Jv-fXh">
                                 <rect key="frame" x="212" y="45" width="420" height="300"/>
                                 <subviews>
@@ -64,45 +98,7 @@
                                     <constraint firstAttribute="width" constant="420" id="pqn-vH-ErF"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEY-79-yZ4">
-                                <rect key="frame" x="60" y="62" width="46" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="arrowshape.turn.up.backward.2.circle.fill" catalog="system">
-                                    <color key="titleColor" name="AccentColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="homeButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6q5-nU-vue"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YrZ-zr-2Ba">
-                                <rect key="frame" x="60" y="115.5" width="46" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemPurpleColor"/>
-                                <state key="normal" backgroundImage="house.circle.fill" catalog="system"/>
-                                <connections>
-                                    <action selector="homeButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v9d-sU-P7A"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9dk-VT-UjO">
-                                <rect key="frame" x="60" y="311.5" width="46" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemGreenColor"/>
-                                <state key="normal" backgroundImage="pencil.circle.fill" catalog="system"/>
-                                <connections>
-                                    <action selector="puzzleButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zwJ-1C-vxC"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5dY-77-fy0">
-                                <rect key="frame" x="60" y="257.5" width="46" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemRedColor"/>
-                                <state key="normal" backgroundImage="cart.circle.fill" catalog="system"/>
-                                <connections>
-                                    <action selector="coinButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eIo-4R-pIX"/>
-                                </connections>
-                            </button>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="18d-Jv-fXh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5ZT-Ou-jFF"/>
@@ -128,135 +124,119 @@
                         <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="O0I-Rc-EXu">
-                                <rect key="frame" x="97" y="20" width="650" height="350"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="letters_entry_bg" id="i5D-ZO-3FK">
+                                <rect key="frame" x="83" y="5" width="718" height="380"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="i5D-ZO-3FK" secondAttribute="height" multiplier="151:80" id="95g-nE-q7Z"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="38" id="DdF-Oe-tA7" userLabel="side_bar_stack">
+                                <rect key="frame" x="44" y="26" width="56" height="338"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="iD4-UT-meY">
-                                        <rect key="frame" x="0.0" y="0.0" width="650" height="350"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jKh-9j-tqx" userLabel="back">
+                                        <rect key="frame" x="0.0" y="0.0" width="56" height="56"/>
+                                        <state key="normal" image="back"/>
+                                        <connections>
+                                            <segue destination="afv-W4-845" kind="unwind" unwindAction="myUnwindActionWithUnwindSegue:" id="eeq-NJ-Ybf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="byp-IX-VTL" userLabel="home">
+                                        <rect key="frame" x="0.0" y="94" width="56" height="56"/>
+                                        <state key="normal" image="home"/>
+                                        <connections>
+                                            <action selector="homeButtonTapped:" destination="XDS-se-AwN" eventType="touchUpInside" id="VWk-H2-Q8T"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Sf-DP-9NH" userLabel="coin">
+                                        <rect key="frame" x="0.0" y="188" width="56" height="56"/>
+                                        <state key="normal" image="bank"/>
+                                        <connections>
+                                            <action selector="puzzleButtonTapped:" destination="XDS-se-AwN" eventType="touchUpInside" id="OZy-06-Zhh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHX-cC-LYx" userLabel="puzzle">
+                                        <rect key="frame" x="0.0" y="282" width="56" height="56"/>
+                                        <state key="normal" image="puzzle"/>
+                                        <connections>
+                                            <action selector="coinButtonTapped:" destination="XDS-se-AwN" eventType="touchUpInside" id="NOX-Un-1GH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="center" distribution="fillEqually" alignment="top" spacing="10" id="rLe-OG-uEQ" userLabel="main_button_stack">
+                                <rect key="frame" x="197" y="95" width="450" height="270"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" id="rWb-E5-PL8" userLabel="right_stack">
+                                        <rect key="frame" x="0.0" y="0.0" width="220" height="270"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="y9A-Ee-Klh">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="350"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uR8-gW-aRy">
-                                                        <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
-                                                        <state key="normal" backgroundImage="names1"/>
-                                                        <connections>
-                                                            <action selector="namesOneButtonTapped:" destination="XDS-se-AwN" eventType="touchUpInside" id="Jvf-f2-oFV"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="51x-RO-MZy">
-                                                        <rect key="frame" x="0.0" y="90" width="320" height="80"/>
-                                                        <state key="normal" backgroundImage="names2"/>
-                                                        <connections>
-                                                            <action selector="namesTwoButtonTapped:" destination="XDS-se-AwN" eventType="touchUpInside" id="zEJ-dC-3Tg"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZNW-4f-5q6">
-                                                        <rect key="frame" x="0.0" y="180" width="320" height="80"/>
-                                                        <state key="normal" backgroundImage="names3"/>
-                                                        <connections>
-                                                            <action selector="namesThreeButtonTapped:" destination="XDS-se-AwN" eventType="touchUpInside" id="aNX-Sa-41b"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rri-OP-e8h">
-                                                        <rect key="frame" x="0.0" y="270" width="320" height="80"/>
-                                                        <state key="normal" backgroundImage="names4"/>
-                                                        <connections>
-                                                            <action selector="namesFourButtonTapped:" destination="XDS-se-AwN" eventType="touchUpInside" id="f9N-lx-3C9"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="H2U-Cu-6o8">
-                                                <rect key="frame" x="330" y="0.0" width="320" height="350"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eat-im-jZL">
-                                                        <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
-                                                        <state key="normal" title="Button" image="sounds1"/>
-                                                        <connections>
-                                                            <action selector="soundsOneButtonTapped:" destination="XDS-se-AwN" eventType="touchUpInside" id="6p7-fh-yr5"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eMI-t1-1JW">
-                                                        <rect key="frame" x="0.0" y="90" width="320" height="80"/>
-                                                        <state key="normal" backgroundImage="sounds2"/>
-                                                        <connections>
-                                                            <action selector="soundsTwoButtonTapped:" destination="XDS-se-AwN" eventType="touchUpInside" id="Fja-74-mz3"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AJ5-eX-nMC">
-                                                        <rect key="frame" x="0.0" y="180" width="320" height="80"/>
-                                                        <state key="normal" backgroundImage="sounds3"/>
-                                                        <connections>
-                                                            <action selector="soundsThreeButtonTapped:" destination="XDS-se-AwN" eventType="touchUpInside" id="C9D-M4-mtn"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgp-Hq-6Na">
-                                                        <rect key="frame" x="0.0" y="270" width="320" height="80"/>
-                                                        <state key="normal" backgroundImage="sounds4"/>
-                                                        <connections>
-                                                            <action selector="soundsFourButtonTapped:" destination="XDS-se-AwN" eventType="touchUpInside" id="nAf-Pr-lfH"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WzT-aL-XJd" userLabel="sounds_bmras">
+                                                <rect key="frame" x="0.0" y="0.0" width="220" height="56.333333333333336"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="sounds_lowercase_bmras"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="BWk-Zm-sL7" userLabel="sounds_abcde">
+                                                <rect key="frame" x="0.0" y="71.333333333333329" width="220" height="56.333333333333329"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="sounds_lowercase_alphabetical"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="EcT-0x-XEr" userLabel="sounds_BMRAS">
+                                                <rect key="frame" x="0.0" y="142.66666666666666" width="220" height="56"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="sounds_uppercase_bmras"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yS3-xZ-OvA" userLabel="sounds_ABCDE">
+                                                <rect key="frame" x="0.0" y="213.66666666666666" width="220" height="56.333333333333343"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="sounds_uppercase_alphabetical"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" id="hlX-NO-uo1" userLabel="left_stack">
+                                        <rect key="frame" x="230" y="0.0" width="220" height="270"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Fll-eE-Cjd" userLabel="names_bmras">
+                                                <rect key="frame" x="0.0" y="0.0" width="220" height="56.333333333333336"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="names_lowercase_bmras"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="BGK-07-z6W" userLabel="names_abcde">
+                                                <rect key="frame" x="0.0" y="71.333333333333329" width="220" height="56.333333333333329"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="names_lowercase_alphabetical"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CTd-BH-TIM" userLabel="names_BMRAS">
+                                                <rect key="frame" x="0.0" y="142.66666666666666" width="220" height="56"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="names_uppercase_bmras"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="BJr-lH-McP" userLabel="names_ABCDE">
+                                                <rect key="frame" x="0.0" y="213.66666666666666" width="220" height="56.333333333333343"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="names_uppercase_alphabetical"/>
+                                            </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="350" id="JhR-bB-KWc"/>
-                                    <constraint firstAttribute="width" constant="650" id="g87-Fv-Ynt"/>
-                                </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gjX-dc-gvC">
-                                <rect key="frame" x="45" y="59.5" width="46" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="arrowshape.turn.up.backward.2.circle.fill" catalog="system">
-                                    <color key="titleColor" name="AccentColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="returnButtonTapped:" destination="XDS-se-AwN" eventType="touchUpInside" id="p7Z-vC-WvN"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5jJ-fe-aBE">
-                                <rect key="frame" x="45" y="112.5" width="46" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemPurpleColor"/>
-                                <state key="normal" backgroundImage="house.circle.fill" catalog="system"/>
-                                <connections>
-                                    <action selector="homeButtonTapped:" destination="XDS-se-AwN" eventType="touchUpInside" id="rtd-Ar-9Ye"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gon-za-kLx">
-                                <rect key="frame" x="45" y="308.5" width="46" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemGreenColor"/>
-                                <state key="normal" backgroundImage="pencil.circle.fill" catalog="system"/>
-                                <connections>
-                                    <action selector="puzzleButtonTapped:" destination="XDS-se-AwN" eventType="touchUpInside" id="yQV-l4-7gp"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ujc-wh-pue">
-                                <rect key="frame" x="45" y="254.5" width="46" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemRedColor"/>
-                                <state key="normal" backgroundImage="cart.circle.fill" catalog="system"/>
-                                <connections>
-                                    <action selector="coinButtonTapped:" destination="XDS-se-AwN" eventType="touchUpInside" id="yLl-un-QuQ"/>
-                                </connections>
-                            </button>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="8gH-d7-JxS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="O0I-Rc-EXu" firstAttribute="centerY" secondItem="og7-9d-H6N" secondAttribute="centerY" id="iKO-9w-qT1"/>
-                            <constraint firstItem="O0I-Rc-EXu" firstAttribute="centerX" secondItem="og7-9d-H6N" secondAttribute="centerX" id="z7y-wz-aho"/>
+                            <constraint firstItem="i5D-ZO-3FK" firstAttribute="centerX" secondItem="og7-9d-H6N" secondAttribute="centerX" constant="20" id="AA9-T5-Lci"/>
+                            <constraint firstItem="i5D-ZO-3FK" firstAttribute="centerY" secondItem="og7-9d-H6N" secondAttribute="centerY" id="RUk-qt-L0q"/>
+                            <constraint firstItem="DdF-Oe-tA7" firstAttribute="centerY" secondItem="og7-9d-H6N" secondAttribute="centerY" id="fRe-CX-wCs"/>
+                            <constraint firstItem="DdF-Oe-tA7" firstAttribute="centerX" secondItem="og7-9d-H6N" secondAttribute="centerX" constant="-350" id="oGp-3C-kEM"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1uk-nF-wOE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="afv-W4-845" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-216" y="93"/>
+            <point key="canvasLocation" x="-216.29464285714286" y="92.753623188405811"/>
         </scene>
         <!--Beginning Sounds View Controller-->
         <scene sceneID="BPY-2E-RVG">
@@ -1522,6 +1502,8 @@
         <image name="arrow.clockwise.circle.fill" catalog="system" width="128" height="121"/>
         <image name="arrow.forward.circle.fill" catalog="system" width="128" height="121"/>
         <image name="arrowshape.turn.up.backward.2.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="back" width="56" height="56"/>
+        <image name="bank" width="56" height="56"/>
         <image name="beginning sounds" width="220" height="150"/>
         <image name="beginning sounds 1" width="401.33334350585938" height="96.666664123535156"/>
         <image name="beginning sounds 2" width="1204" height="316"/>
@@ -1533,18 +1515,21 @@
         <image name="ending sounds 2" width="344" height="109.33333587646484"/>
         <image name="ending sounds 3" width="391.33334350585938" height="97.333335876464844"/>
         <image name="ending sounds 4" width="396" height="104"/>
+        <image name="home" width="56" height="56"/>
         <image name="house.circle.fill" catalog="system" width="128" height="121"/>
         <image name="letters" width="219.33332824707031" height="150"/>
-        <image name="names1" width="904" height="230"/>
-        <image name="names2" width="902" height="230"/>
-        <image name="names3" width="902" height="230"/>
-        <image name="names4" width="904" height="230"/>
+        <image name="letters_entry_bg" width="1510" height="800"/>
+        <image name="names_lowercase_alphabetical" width="429" height="108"/>
+        <image name="names_lowercase_bmras" width="429" height="107"/>
+        <image name="names_uppercase_alphabetical" width="429" height="108"/>
+        <image name="names_uppercase_bmras" width="429" height="107"/>
         <image name="pencil.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="puzzle" width="56" height="56"/>
         <image name="questionmark.circle.fill" catalog="system" width="128" height="121"/>
-        <image name="sounds1" width="904" height="228"/>
-        <image name="sounds2" width="904" height="230"/>
-        <image name="sounds3" width="902" height="228"/>
-        <image name="sounds4" width="906" height="228"/>
+        <image name="sounds_lowercase_alphabetical" width="429" height="108"/>
+        <image name="sounds_lowercase_bmras" width="429" height="107"/>
+        <image name="sounds_uppercase_alphabetical" width="429" height="108"/>
+        <image name="sounds_uppercase_bmras" width="429" height="107"/>
         <image name="vowels" width="220.66667175292969" height="148.66667175292969"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
