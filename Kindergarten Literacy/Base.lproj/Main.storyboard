@@ -122,14 +122,15 @@
         <scene sceneID="Tvu-kW-fLx">
             <objects>
                 <viewController storyboardIdentifier="letters_vc" id="XDS-se-AwN" customClass="letterMainPage" customModule="Kindergarten_Literacy" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="og7-9d-H6N">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="og7-9d-H6N">
                         <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="letters_entry_bg" translatesAutoresizingMaskIntoConstraints="NO" id="i5D-ZO-3FK">
-                                <rect key="frame" x="119" y="5" width="717.33333333333337" height="380"/>
+                                <rect key="frame" x="119" y="15" width="679.66666666666663" height="360"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="i5D-ZO-3FK" secondAttribute="height" multiplier="151:80" id="95g-nE-q7Z"/>
+                                    <constraint firstAttribute="height" constant="360" id="SSW-VU-elX"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="DdF-Oe-tA7" userLabel="side_bar_stack">
@@ -166,63 +167,57 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="center" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rLe-OG-uEQ" userLabel="main_button_stack">
-                                <rect key="frame" x="230.99999999999997" y="90" width="449.33333333333326" height="270"/>
+                                <rect key="frame" x="223.66666666666663" y="97" width="426" height="256"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="rWb-E5-PL8" userLabel="right_stack">
-                                        <rect key="frame" x="0.0" y="0.0" width="219.66666666666666" height="270"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="208" height="256"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WzT-aL-XJd" userLabel="sounds_bmras">
-                                                <rect key="frame" x="0.0" y="0.0" width="219.66666666666666" height="56.333333333333336"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="208" height="52.666666666666664"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" image="sounds_lowercase_bmras"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="BWk-Zm-sL7" userLabel="sounds_abcde">
-                                                <rect key="frame" x="0.0" y="71.333333333333329" width="219.66666666666666" height="56.333333333333329"/>
+                                                <rect key="frame" x="0.0" y="67.666666666666671" width="208" height="53"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" image="sounds_lowercase_alphabetical"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="EcT-0x-XEr" userLabel="sounds_BMRAS">
-                                                <rect key="frame" x="0.0" y="142.66666666666666" width="219.66666666666666" height="56"/>
+                                                <rect key="frame" x="0.0" y="135.66666666666666" width="208" height="52.666666666666657"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" image="sounds_uppercase_bmras"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yS3-xZ-OvA" userLabel="sounds_ABCDE">
-                                                <rect key="frame" x="0.0" y="213.66666666666666" width="219.66666666666666" height="56.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="203.33333333333334" width="208" height="52.666666666666657"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" image="sounds_uppercase_alphabetical"/>
                                             </button>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="270" id="PZD-sB-tY2"/>
-                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="hlX-NO-uo1" userLabel="left_stack">
-                                        <rect key="frame" x="229.66666666666669" y="0.0" width="219.66666666666669" height="270"/>
+                                        <rect key="frame" x="218" y="0.0" width="208" height="256"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Fll-eE-Cjd" userLabel="names_bmras">
-                                                <rect key="frame" x="0.0" y="0.0" width="219.66666666666666" height="56.333333333333336"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="208" height="52.666666666666664"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" image="names_lowercase_bmras"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="BGK-07-z6W" userLabel="names_abcde">
-                                                <rect key="frame" x="0.0" y="71.333333333333329" width="219.66666666666666" height="56.333333333333329"/>
+                                                <rect key="frame" x="0.0" y="67.666666666666671" width="208" height="53"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" image="names_lowercase_alphabetical"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CTd-BH-TIM" userLabel="names_BMRAS">
-                                                <rect key="frame" x="0.0" y="142.66666666666666" width="219.66666666666666" height="56"/>
+                                                <rect key="frame" x="0.0" y="135.66666666666666" width="208" height="52.666666666666657"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" image="names_uppercase_bmras"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="BJr-lH-McP" userLabel="names_ABCDE">
-                                                <rect key="frame" x="0.0" y="213.66666666666666" width="219.66666666666666" height="56.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="203.33333333333334" width="208" height="52.666666666666657"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" image="names_uppercase_alphabetical"/>
                                             </button>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="270" id="Msg-DY-Wly"/>
-                                        </constraints>
                                     </stackView>
                                 </subviews>
                             </stackView>
