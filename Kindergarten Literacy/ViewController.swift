@@ -50,8 +50,8 @@ class ViewController: UIViewController {
     
     // sidebar logic
     
-    // back button, please bind this function using unwind segue from the next page
-    @IBAction func myUnwindAction(unwindSegue: UIStoryboardSegue) {
+    // back button, please bind this function using unwind segue from the NEXT page
+    @IBAction func unwindToHome(_ sender: UIStoryboardSegue) {
         
     }
     
