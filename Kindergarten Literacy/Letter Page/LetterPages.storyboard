@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Letter Main Page-->
+        <scene sceneID="jZL-yt-Td0">
+            <objects>
+                <viewController storyboardIdentifier="letters_vc" id="mHA-37-G36" customClass="letterMainPage" customModule="Kindergarten_Literacy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="BZ1-81-fUq">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="letters_entry_bg" translatesAutoresizingMaskIntoConstraints="NO" id="D3Y-wN-nmt">
+                                <rect key="frame" x="119" y="27" width="679.5" height="360"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="D3Y-wN-nmt" secondAttribute="height" multiplier="151:80" id="Ipo-RU-gRC"/>
+                                    <constraint firstAttribute="height" constant="360" id="Ssv-CU-Nzy"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="hxG-5h-yeL" userLabel="side_bar_stack">
+                                <rect key="frame" x="59" y="38" width="56" height="338"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cm9-9O-ytv" userLabel="back">
+                                        <rect key="frame" x="0.0" y="0.0" width="56" height="56"/>
+                                        <state key="normal" image="back"/>
+                                        <connections>
+                                            <action selector="backButtonTapped:" destination="mHA-37-G36" eventType="touchUpInside" id="V4s-nG-mxf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULa-2W-gX9" userLabel="home">
+                                        <rect key="frame" x="0.0" y="94" width="56" height="56"/>
+                                        <state key="normal" image="home"/>
+                                        <connections>
+                                            <action selector="homeButtonTapped:" destination="mHA-37-G36" eventType="touchUpInside" id="nWz-2k-z6U"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ESO-LZ-7Nt" userLabel="coin">
+                                        <rect key="frame" x="0.0" y="188" width="56" height="56"/>
+                                        <state key="normal" image="bank"/>
+                                        <connections>
+                                            <action selector="puzzleButtonTapped:" destination="mHA-37-G36" eventType="touchUpInside" id="guI-T9-Bqx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jEZ-kI-EKe" userLabel="puzzle">
+                                        <rect key="frame" x="0.0" y="282" width="56" height="56"/>
+                                        <state key="normal" image="puzzle"/>
+                                        <connections>
+                                            <action selector="coinButtonTapped:" destination="mHA-37-G36" eventType="touchUpInside" id="Jvi-n5-HtE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="center" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZhE-Ky-98e" userLabel="main_button_stack">
+                                <rect key="frame" x="225" y="109" width="425.5" height="256"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="8Ei-rZ-xH8" userLabel="left_stack">
+                                        <rect key="frame" x="0.0" y="0.0" width="208" height="256"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Kru-FG-ipZ" userLabel="names_bmras">
+                                                <rect key="frame" x="0.0" y="0.0" width="208" height="53"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="names_lowercase_bmras"/>
+                                                <connections>
+                                                    <action selector="toNameSelectListPage:" destination="mHA-37-G36" eventType="touchUpInside" id="5AE-L2-I0n"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="f4y-FA-jrJ" userLabel="names_abcde">
+                                                <rect key="frame" x="0.0" y="68" width="208" height="52.5"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="names_lowercase_alphabetical"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uB0-vS-m07" userLabel="names_BMRAS">
+                                                <rect key="frame" x="0.0" y="135.5" width="208" height="53"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="names_uppercase_bmras"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fsw-qW-yNE" userLabel="names_ABCDE">
+                                                <rect key="frame" x="0.0" y="203.5" width="208" height="52.5"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="names_uppercase_alphabetical"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="cmt-bg-kE9" userLabel="right_stack">
+                                        <rect key="frame" x="218" y="0.0" width="207.5" height="256"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="aBg-gS-24m" userLabel="sounds_bmras">
+                                                <rect key="frame" x="0.0" y="0.0" width="207.5" height="53"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="sounds_lowercase_bmras"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CeG-X6-7S2" userLabel="sounds_abcde">
+                                                <rect key="frame" x="0.0" y="68" width="207.5" height="52.5"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="sounds_lowercase_alphabetical"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="NWj-KT-Aiv" userLabel="sounds_BMRAS">
+                                                <rect key="frame" x="0.0" y="135.5" width="207.5" height="53"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="sounds_uppercase_bmras"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qKP-UN-rzO" userLabel="sounds_ABCDE">
+                                                <rect key="frame" x="0.0" y="203.5" width="207.5" height="52.5"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="sounds_uppercase_alphabetical"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xLr-7k-epw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZhE-Ky-98e" firstAttribute="width" secondItem="D3Y-wN-nmt" secondAttribute="width" multiplier="0.626741" id="579-sh-6dW"/>
+                            <constraint firstItem="D3Y-wN-nmt" firstAttribute="centerX" secondItem="BZ1-81-fUq" secondAttribute="centerX" constant="30" id="8D6-Jd-RAd"/>
+                            <constraint firstItem="ZhE-Ky-98e" firstAttribute="centerX" secondItem="D3Y-wN-nmt" secondAttribute="centerX" constant="-21" id="Hbn-hy-Hm1"/>
+                            <constraint firstItem="D3Y-wN-nmt" firstAttribute="leading" secondItem="xLr-7k-epw" secondAttribute="leading" constant="75" id="NLo-Ou-ZoX"/>
+                            <constraint firstItem="ZhE-Ky-98e" firstAttribute="centerY" secondItem="D3Y-wN-nmt" secondAttribute="centerY" constant="30" id="RrV-XJ-tiv"/>
+                            <constraint firstItem="hxG-5h-yeL" firstAttribute="leading" secondItem="xLr-7k-epw" secondAttribute="leading" constant="15" id="Uh2-01-X9r"/>
+                            <constraint firstItem="D3Y-wN-nmt" firstAttribute="centerY" secondItem="BZ1-81-fUq" secondAttribute="centerY" id="UlO-rc-bxd"/>
+                            <constraint firstItem="8Ei-rZ-xH8" firstAttribute="height" secondItem="D3Y-wN-nmt" secondAttribute="height" multiplier="0.710526" id="rhd-DK-qO7"/>
+                            <constraint firstItem="hxG-5h-yeL" firstAttribute="centerY" secondItem="BZ1-81-fUq" secondAttribute="centerY" id="wnb-5y-DI2"/>
+                            <constraint firstItem="cmt-bg-kE9" firstAttribute="height" secondItem="D3Y-wN-nmt" secondAttribute="height" multiplier="0.710526" id="zFM-al-wA2"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Zx-sG-G6i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-216.29464285714286" y="92.753623188405811"/>
+        </scene>
+        <!--Name Select List Page-->
+        <scene sceneID="KIm-Aa-RQj">
+            <objects>
+                <viewController storyboardIdentifier="nameSelectList_vc" id="DSc-dU-ctE" customClass="nameSelectListPage" customModule="Kindergarten_Literacy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U4W-0R-YXH">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="Zof-0L-70V" userLabel="side_bar_stack">
+                                <rect key="frame" x="59" y="38" width="56" height="338"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gxN-Hd-lXz" userLabel="back">
+                                        <rect key="frame" x="0.0" y="0.0" width="56" height="56"/>
+                                        <state key="normal" image="back"/>
+                                        <connections>
+                                            <action selector="backButtonTapped:" destination="DSc-dU-ctE" eventType="touchUpInside" id="tAN-1P-OnL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iOx-dX-kA5" userLabel="home">
+                                        <rect key="frame" x="0.0" y="94" width="56" height="56"/>
+                                        <state key="normal" image="home"/>
+                                        <connections>
+                                            <action selector="homeButtonTapped:" destination="DSc-dU-ctE" eventType="touchUpInside" id="ceY-JD-cfO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ly-F0-2oX" userLabel="coin">
+                                        <rect key="frame" x="0.0" y="188" width="56" height="56"/>
+                                        <state key="normal" image="bank"/>
+                                        <connections>
+                                            <action selector="coinButtonTapped:" destination="DSc-dU-ctE" eventType="touchUpInside" id="dsh-l7-FhH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uHV-wh-MBg" userLabel="puzzle">
+                                        <rect key="frame" x="0.0" y="282" width="56" height="56"/>
+                                        <state key="normal" image="puzzle"/>
+                                        <connections>
+                                            <action selector="puzzleButtonTapped:" destination="DSc-dU-ctE" eventType="touchUpInside" id="PjG-rc-iSh"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ngc-Vd-AgX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Zof-0L-70V" firstAttribute="leading" secondItem="Ngc-Vd-AgX" secondAttribute="leading" constant="15" id="0U2-Qg-CsX"/>
+                            <constraint firstItem="Zof-0L-70V" firstAttribute="centerY" secondItem="U4W-0R-YXH" secondAttribute="centerY" id="WB2-Ls-7vm"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ggX-lN-rij" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-216" y="845"/>
+        </scene>
+        <!--Sound Select List Page-->
+        <scene sceneID="nmY-hE-kcj">
+            <objects>
+                <viewController storyboardIdentifier="soundSelectList_vc" id="IeH-pJ-RRC" customClass="soundSelectListPage" customModule="Kindergarten_Literacy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h4g-Bj-Hfw">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="466-1c-5FK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YBa-MA-PDu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-216" y="1563"/>
+        </scene>
+        <!--Alphabet Learn Page-->
+        <scene sceneID="QiQ-zb-HW4">
+            <objects>
+                <viewController id="5rb-vH-NfV" customClass="alphabetLearnPage" customModule="Kindergarten_Literacy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ezz-LG-U9N">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="c8z-gu-5Sq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2aR-Y0-Q1x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-216" y="2277"/>
+        </scene>
+        <!--Phoneme Learn Page-->
+        <scene sceneID="f6t-du-Gq2">
+            <objects>
+                <viewController id="CTk-JY-veO" customClass="phonemeLearnPage" customModule="Kindergarten_Literacy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xKi-fx-hwt">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="HF3-5Z-xEp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ZO-NT-RYC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-216" y="3022"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back" width="56" height="56"/>
+        <image name="bank" width="56" height="56"/>
+        <image name="home" width="56" height="56"/>
+        <image name="letters_entry_bg" width="1510" height="800"/>
+        <image name="names_lowercase_alphabetical" width="429" height="108"/>
+        <image name="names_lowercase_bmras" width="429" height="107"/>
+        <image name="names_uppercase_alphabetical" width="429" height="108"/>
+        <image name="names_uppercase_bmras" width="429" height="107"/>
+        <image name="puzzle" width="56" height="56"/>
+        <image name="sounds_lowercase_alphabetical" width="429" height="108"/>
+        <image name="sounds_lowercase_bmras" width="429" height="107"/>
+        <image name="sounds_uppercase_alphabetical" width="429" height="108"/>
+        <image name="sounds_uppercase_bmras" width="429" height="107"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

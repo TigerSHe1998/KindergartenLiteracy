@@ -31,6 +31,7 @@
 		DC8EB4C525CB1A7B00FD7BB1 /* soundSelectListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8EB4C425CB1A7B00FD7BB1 /* soundSelectListPage.swift */; };
 		DC8EB4C825CB1B1200FD7BB1 /* alphabetLearnPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8EB4C725CB1B1200FD7BB1 /* alphabetLearnPage.swift */; };
 		DC8EB4CB25CB1B7900FD7BB1 /* phonemeLearnPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8EB4CA25CB1B7900FD7BB1 /* phonemeLearnPage.swift */; };
+		DCD5CA3625CECD110095B416 /* LetterPages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCD5CA3525CECD110095B416 /* LetterPages.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		DC8EB4C425CB1A7B00FD7BB1 /* soundSelectListPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = soundSelectListPage.swift; sourceTree = "<group>"; };
 		DC8EB4C725CB1B1200FD7BB1 /* alphabetLearnPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alphabetLearnPage.swift; sourceTree = "<group>"; };
 		DC8EB4CA25CB1B7900FD7BB1 /* phonemeLearnPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = phonemeLearnPage.swift; sourceTree = "<group>"; };
+		DCD5CA3525CECD110095B416 /* LetterPages.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LetterPages.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 		DC8EB4B125CB146300FD7BB1 /* Letter Page */ = {
 			isa = PBXGroup;
 			children = (
+				DCD5CA3525CECD110095B416 /* LetterPages.storyboard */,
 				C0BA8566256CA9ED000EBAEC /* letterMainPage.swift */,
 				DC8EB4AE25CB117000FD7BB1 /* nameSelectListPage.swift */,
 				DC8EB4C425CB1A7B00FD7BB1 /* soundSelectListPage.swift */,
@@ -187,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0BA8559256C6487000EBAEC /* LaunchScreen.storyboard in Resources */,
+				DCD5CA3625CECD110095B416 /* LetterPages.storyboard in Resources */,
 				C0BA8556256C6487000EBAEC /* Assets.xcassets in Resources */,
 				C0BA8554256C6485000EBAEC /* Main.storyboard in Resources */,
 			);

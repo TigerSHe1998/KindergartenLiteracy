@@ -23,8 +23,11 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    // instantiate letterStoryboard for calling views under letter
+    let letterStoryBoard:UIStoryboard = UIStoryboard(name: "LetterPages", bundle:nil)
+    
     @IBAction func lettersButtonTapped(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(identifier: "letters_vc") as! letterMainPage
+        let vc = letterStoryBoard.instantiateViewController(identifier: "letters_vc")
         present(vc, animated: true)
     }
     
