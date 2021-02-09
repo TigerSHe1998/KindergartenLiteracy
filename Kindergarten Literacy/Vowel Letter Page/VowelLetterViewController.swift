@@ -1,4 +1,11 @@
 //
+//  VowelBlackAViewController.swift
+//  Kindergarten Literacy
+//
+//  Created by 徐浩云 on 1/31/21.
+//
+
+//
 //  CoinViewController.swift
 //  Kindergarten Literacy
 //
@@ -8,7 +15,7 @@
 import Foundation
 import UIKit
 
-class VowelBlackOViewController: UIViewController {
+class VowelLetterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,13 +49,12 @@ class VowelBlackOViewController: UIViewController {
     }
     
     
-    @IBAction func prevButtonTapped(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(identifier: "green_vowel_i_vc") as! VowelGreenIViewController
+    @IBAction func nextButtonTapped(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(identifier: "green_vowel_a_vc") as! VowelGreenAViewController
         present(vc, animated: true)
     }
     
-    
-    @IBAction func nextButtonTapped(_ sender: Any) {
+    @IBAction func prevButtonTapped(_ sender: Any) {
         let vc = storyboard?.instantiateViewController(identifier: "black_vowel_u_vc") as! VowelBlackUViewController
         present(vc, animated: true)
     }

@@ -18,37 +18,37 @@ class VowelViewController: UIViewController {
     
     
     @IBAction func VowelBlackATapped(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(identifier: "black_vowel_a_vc") as! VowelBlackAViewController
+        let vc = storyboard?.instantiateViewController(identifier: "vowel_letter_vc") as! VowelBlackAViewController
         present(vc, animated: true)
     }
     
     @IBAction func VowelBlackETapped(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(identifier: "black_vowel_e_vc") as! VowelBlackEViewController
+        let vc = storyboard?.instantiateViewController(identifier: "vowel_letter_vc") as! VowelBlackEViewController
         present(vc, animated: true)
     }
     
     @IBAction func VowelBlackITapped(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(identifier: "black_vowel_i_vc") as! VowelBlackIViewController
+        let vc = storyboard?.instantiateViewController(identifier: "vowel_letter_vc") as! VowelBlackIViewController
         present(vc, animated: true)
     }
     
     @IBAction func VowelBlackOTapped(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(identifier: "black_vowel_o_vc") as! VowelBlackOViewController
+        let vc = storyboard?.instantiateViewController(identifier: "vowel_letter_vc") as! VowelBlackOViewController
         present(vc, animated: true)
     }
     
     @IBAction func VowelBlackUTapped(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(identifier: "black_vowel_u_vc") as! VowelBlackUViewController
+        let vc = storyboard?.instantiateViewController(identifier: "vowel_letter_vc") as! VowelBlackUViewController
         present(vc, animated: true)
     }
     
     @IBAction func VowelGreenATapped(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(identifier: "green_vowel_a_vc") as! VowelGreenAViewController
+        let vc = storyboard?.instantiateViewController(identifier: "vowel_letter_vc") as! VowelGreenAViewController
         present(vc, animated: true)
     }
     
     @IBAction func VowelGreenITapped(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(identifier: "green_vowel_i_vc") as! VowelGreenIViewController
+        let vc = storyboard?.instantiateViewController(identifier: "vowel_letter_vc") as! VowelGreenIViewController
         present(vc, animated: true)
     }
     
