@@ -16,6 +16,7 @@
 		34D981A525C68FB200AD992F /* VowelBlackOViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D981A425C68FB200AD992F /* VowelBlackOViewController.swift */; };
 		34D981A825C68FCF00AD992F /* VowelBlackUViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D981A725C68FCF00AD992F /* VowelBlackUViewController.swift */; };
 		34D981AB25C6A7B600AD992F /* VowelQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D981AA25C6A7B600AD992F /* VowelQuizViewController.swift */; };
+		C05D1AA325D26B3E00A30442 /* EndingSoundsPages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C05D1AA225D26B3E00A30442 /* EndingSoundsPages.storyboard */; };
 		C0BA854D256C6485000EBAEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BA854C256C6485000EBAEC /* AppDelegate.swift */; };
 		C0BA854F256C6485000EBAEC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BA854E256C6485000EBAEC /* SceneDelegate.swift */; };
 		C0BA8551256C6485000EBAEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BA8550256C6485000EBAEC /* ViewController.swift */; };
@@ -44,6 +45,7 @@
 		34D981A425C68FB200AD992F /* VowelBlackOViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VowelBlackOViewController.swift; sourceTree = "<group>"; };
 		34D981A725C68FCF00AD992F /* VowelBlackUViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VowelBlackUViewController.swift; sourceTree = "<group>"; };
 		34D981AA25C6A7B600AD992F /* VowelQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VowelQuizViewController.swift; sourceTree = "<group>"; };
+		C05D1AA225D26B3E00A30442 /* EndingSoundsPages.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EndingSoundsPages.storyboard; sourceTree = "<group>"; };
 		C0BA8549256C6485000EBAEC /* Kindergarten Literacy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kindergarten Literacy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0BA854C256C6485000EBAEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0BA854E256C6485000EBAEC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +77,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C05D1AA125D26B0D00A30442 /* Ending Sounds Page */ = {
+			isa = PBXGroup;
+			children = (
+				C0BA856E256CAAB5000EBAEC /* EndingSoundsViewController.swift */,
+				C05D1AA225D26B3E00A30442 /* EndingSoundsPages.storyboard */,
+			);
+			path = "Ending Sounds Page";
+			sourceTree = "<group>";
+		};
 		C0BA8540256C6485000EBAEC = {
 			isa = PBXGroup;
 			children = (
@@ -102,7 +113,6 @@
 				C0BA8552256C6485000EBAEC /* Main.storyboard */,
 				C0BA8550256C6485000EBAEC /* ViewController.swift */,
 				C0BA8569256CAA93000EBAEC /* BeginningSoundsViewController.swift */,
-				C0BA856E256CAAB5000EBAEC /* EndingSoundsViewController.swift */,
 				DC8EB4BE25CB17B300FD7BB1 /* CoinViewController.swift */,
 				DC8EB4BD25CB17B300FD7BB1 /* PuzzleViewController.swift */,
 				34D9819525C68D0B00AD992F /* VowelBlackAViewController.swift */,
@@ -114,6 +124,7 @@
 				34D981A125C68FA100AD992F /* VowelGreenIViewController.swift */,
 				34D981AA25C6A7B600AD992F /* VowelQuizViewController.swift */,
 				34D9818C25C54B8800AD992F /* VowelViewController.swift */,
+				C05D1AA125D26B0D00A30442 /* Ending Sounds Page */,
 				DC8EB4B125CB146300FD7BB1 /* Letter Page */,
 			);
 			path = "Kindergarten Literacy";
@@ -192,6 +203,7 @@
 				C0BA8559256C6487000EBAEC /* LaunchScreen.storyboard in Resources */,
 				DCD5CA3625CECD110095B416 /* LetterPages.storyboard in Resources */,
 				C0BA8556256C6487000EBAEC /* Assets.xcassets in Resources */,
+				C05D1AA325D26B3E00A30442 /* EndingSoundsPages.storyboard in Resources */,
 				C0BA8554256C6485000EBAEC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
