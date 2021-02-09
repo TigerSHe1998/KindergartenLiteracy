@@ -77,13 +77,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C05D1AA125D26B0D00A30442 /* New Group */ = {
+		C05D1AA125D26B0D00A30442 /* Ending Sounds Page */ = {
 			isa = PBXGroup;
 			children = (
 				C0BA856E256CAAB5000EBAEC /* EndingSoundsViewController.swift */,
 				C05D1AA225D26B3E00A30442 /* EndingSoundsPages.storyboard */,
 			);
-			path = "New Group";
+			path = "Ending Sounds Page";
 			sourceTree = "<group>";
 		};
 		C0BA8540256C6485000EBAEC = {
@@ -124,7 +124,7 @@
 				34D981A125C68FA100AD992F /* VowelGreenIViewController.swift */,
 				34D981AA25C6A7B600AD992F /* VowelQuizViewController.swift */,
 				34D9818C25C54B8800AD992F /* VowelViewController.swift */,
-				C05D1AA125D26B0D00A30442 /* New Group */,
+				C05D1AA125D26B0D00A30442 /* Ending Sounds Page */,
 				DC8EB4B125CB146300FD7BB1 /* Letter Page */,
 			);
 			path = "Kindergarten Literacy";
