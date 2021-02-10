@@ -38,16 +38,7 @@ class vowelMainPage: UIViewController {
         present(vc, animated: true)
     }
     
-    // code for main buttons (draft) (need to pass arguments)
-    @IBAction func toNameSelectListPage(_ sender: Any) {
-        let vc = letterStoryBoard.instantiateViewController(identifier: "nameSelectList_vc")
-        present(vc, animated: true)
-    }
-    
-    @IBAction func toSoundSelectListPage(_ sender: Any) {
-        let vc = letterStoryBoard.instantiateViewController(identifier: "nameSelectList_vc")
-        present(vc, animated: true)
-    }
+   
     
 
     
