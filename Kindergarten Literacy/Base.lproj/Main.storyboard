@@ -115,112 +115,6 @@
             </objects>
             <point key="canvasLocation" x="-897.32142857142856" y="-1175.3623188405797"/>
         </scene>
-        <!--Beginning Sounds View Controller-->
-        <scene sceneID="BPY-2E-RVG">
-            <objects>
-                <viewController storyboardIdentifier="beginning_sounds_vc" id="N9P-jC-cgb" customClass="BeginningSoundsViewController" customModule="Kindergarten_Literacy" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="hNQ-V2-Rri">
-                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n65-1C-k5d">
-                                <rect key="frame" x="97" y="20" width="650" height="350"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1Wa-hX-Tr7">
-                                        <rect key="frame" x="0.0" y="0.0" width="200" height="350"/>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="NGH-hP-yh9">
-                                        <rect key="frame" x="200" y="0.0" width="450" height="350"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="run-FU-HeF">
-                                                <rect key="frame" x="0.0" y="0.0" width="450" height="83.666666666666671"/>
-                                                <state key="normal" backgroundImage="beginning sounds 1"/>
-                                                <connections>
-                                                    <action selector="beginningSoundsOneButtonTapped:" destination="N9P-jC-cgb" eventType="touchUpInside" id="dqw-Vn-Q2G"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Frf-jC-gIB">
-                                                <rect key="frame" x="0.0" y="88.666666666666686" width="450" height="84"/>
-                                                <state key="normal" backgroundImage="beginning sounds 2"/>
-                                                <connections>
-                                                    <action selector="beginningSoundsTwoButtonTapped:" destination="N9P-jC-cgb" eventType="touchUpInside" id="o8Q-1J-a3O"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvh-mv-pRm">
-                                                <rect key="frame" x="0.0" y="177.66666666666666" width="450" height="83.666666666666657"/>
-                                                <state key="normal" backgroundImage="beginning sounds 3"/>
-                                                <connections>
-                                                    <action selector="beginningSoundsThreeButtonTapped:" destination="N9P-jC-cgb" eventType="touchUpInside" id="5Re-gE-sIr"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MDq-cK-nUR">
-                                                <rect key="frame" x="0.0" y="266.33333333333331" width="450" height="83.666666666666686"/>
-                                                <state key="normal" backgroundImage="beginning sounds 4"/>
-                                                <connections>
-                                                    <action selector="beginningSoundsFourButtonTapped:" destination="N9P-jC-cgb" eventType="touchUpInside" id="GOi-ad-fke"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="450" id="tqy-8r-inO"/>
-                                        </constraints>
-                                    </stackView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="350" id="CFl-2g-qAh"/>
-                                    <constraint firstAttribute="width" constant="650" id="bLf-5W-eHJ"/>
-                                </constraints>
-                            </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6dq-lh-TFf">
-                                <rect key="frame" x="60" y="59.5" width="46" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="arrowshape.turn.up.backward.2.circle.fill" catalog="system">
-                                    <color key="titleColor" name="AccentColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="returnButtonTapped:" destination="N9P-jC-cgb" eventType="touchUpInside" id="yje-s7-t4C"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wMQ-KX-1f8">
-                                <rect key="frame" x="60" y="112.5" width="46" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemPurpleColor"/>
-                                <state key="normal" backgroundImage="house.circle.fill" catalog="system"/>
-                                <connections>
-                                    <action selector="homeButtonTapped:" destination="N9P-jC-cgb" eventType="touchUpInside" id="bkD-P3-rjo"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I5Z-Zv-ZL0">
-                                <rect key="frame" x="60" y="308.5" width="46" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemGreenColor"/>
-                                <state key="normal" backgroundImage="pencil.circle.fill" catalog="system"/>
-                                <connections>
-                                    <action selector="puzzleButtonTapped:" destination="N9P-jC-cgb" eventType="touchUpInside" id="KpB-DD-Beo"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PNk-ti-n2X">
-                                <rect key="frame" x="60" y="254.5" width="46" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemRedColor"/>
-                                <state key="normal" backgroundImage="cart.circle.fill" catalog="system"/>
-                                <connections>
-                                    <action selector="coinButtonTapped:" destination="N9P-jC-cgb" eventType="touchUpInside" id="E26-f6-bTZ"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="WYt-uq-ACJ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="n65-1C-k5d" firstAttribute="centerY" secondItem="hNQ-V2-Rri" secondAttribute="centerY" id="4sU-Ts-hWh"/>
-                            <constraint firstItem="n65-1C-k5d" firstAttribute="centerX" secondItem="hNQ-V2-Rri" secondAttribute="centerX" id="Fxw-4q-ExY"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lDW-Nd-eVc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="467" y="93"/>
-        </scene>
         <!--Vowel View Controller-->
         <scene sceneID="09z-DK-fmr">
             <objects>
@@ -1216,10 +1110,6 @@
         <image name="back" width="56" height="56"/>
         <image name="bank" width="56" height="56"/>
         <image name="beginning sounds" width="220" height="150"/>
-        <image name="beginning sounds 1" width="401.33334350585938" height="96.666664123535156"/>
-        <image name="beginning sounds 2" width="1204" height="316"/>
-        <image name="beginning sounds 3" width="1404" height="270"/>
-        <image name="beginning sounds 4" width="1428" height="296"/>
         <image name="cart.circle.fill" catalog="system" width="128" height="121"/>
         <image name="ending sounds" width="220.66667175292969" height="148.66667175292969"/>
         <image name="home" width="56" height="56"/>

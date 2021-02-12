@@ -598,32 +598,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NKc-X0-Yzg">
-                                <rect key="frame" x="543" y="93" width="49" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="arrow.forward.circle.fill" catalog="system"/>
-                                <connections>
-                                    <action selector="next:" destination="Ign-y4-RTg" eventType="touchUpInside" id="Wbi-xR-ZZN"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A8Z-ne-CNm">
-                                <rect key="frame" x="305" y="92" width="49" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <bool key="isElement" value="NO"/>
-                                </accessibility>
-                                <state key="normal" backgroundImage="arrow.backward.circle.fill" catalog="system"/>
-                                <connections>
-                                    <action selector="prev:" destination="Ign-y4-RTg" eventType="touchUpInside" id="5se-Dg-Sh8"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="b" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XKJ-C9-UNT">
-                                <rect key="frame" x="430" y="26" width="55" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="sZ6-wh-pwS" userLabel="Side Bar Stack View">
                                 <rect key="frame" x="59" y="26" width="40" height="338"/>
                                 <subviews>
@@ -696,6 +670,29 @@
                                     <constraint firstAttribute="height" constant="338" id="KnH-U1-ngh"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EEo-Yp-f1N">
+                                <rect key="frame" x="305" y="92" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="back"/>
+                                <connections>
+                                    <action selector="prev:" destination="Ign-y4-RTg" eventType="touchUpInside" id="fHy-Vd-smt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1bP-Wb-xAA">
+                                <rect key="frame" x="543" y="92" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="forward"/>
+                                <connections>
+                                    <action selector="next:" destination="Ign-y4-RTg" eventType="touchUpInside" id="GyM-Q9-Be4"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="b" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XKJ-C9-UNT">
+                                <rect key="frame" x="436" y="26" width="55" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3hq-mf-DsC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -710,7 +707,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R0c-69-Rov" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="450" y="2938"/>
+            <point key="canvasLocation" x="450" y="2936.9230769230767"/>
         </scene>
         <!--Beginning Sounds Two Button View Controller-->
         <scene sceneID="qSi-ip-JsO">
@@ -1092,27 +1089,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XzF-i6-YGu">
-                                <rect key="frame" x="543" y="93" width="49" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="arrow.forward.circle.fill" catalog="system"/>
-                                <connections>
-                                    <action selector="next:" destination="P0C-Ee-CUY" eventType="touchUpInside" id="Uu7-9p-zE2"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4QK-25-6L4">
-                                <rect key="frame" x="305" y="92" width="49" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <bool key="isElement" value="NO"/>
-                                </accessibility>
-                                <state key="normal" backgroundImage="arrow.backward.circle.fill" catalog="system"/>
-                                <connections>
-                                    <action selector="prev:" destination="P0C-Ee-CUY" eventType="touchUpInside" id="OmC-6f-hjr"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="b" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AkQ-Xa-469">
-                                <rect key="frame" x="430" y="26" width="62" height="54"/>
+                                <rect key="frame" x="436" y="26" width="62" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <nil key="textColor"/>
@@ -1190,6 +1168,22 @@
                                     <constraint firstAttribute="height" constant="338" id="D6g-SH-rWB"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZtB-h1-rVJ">
+                                <rect key="frame" x="305" y="92" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="back"/>
+                                <connections>
+                                    <action selector="prev:" destination="P0C-Ee-CUY" eventType="touchUpInside" id="Lec-Di-3X2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="igL-Zs-yvL">
+                                <rect key="frame" x="543" y="92" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="forward"/>
+                                <connections>
+                                    <action selector="next:" destination="P0C-Ee-CUY" eventType="touchUpInside" id="wF1-Rt-bNR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="RI1-Qm-DiT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1593,25 +1587,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JMx-SE-FsX">
-                                <rect key="frame" x="543" y="93" width="49" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="arrow.forward.circle.fill" catalog="system"/>
-                                <connections>
-                                    <action selector="next:" destination="Lnn-lH-skY" eventType="touchUpInside" id="fn6-4h-Wri"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZg-Ib-E8m">
-                                <rect key="frame" x="305" y="92" width="49" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <bool key="isElement" value="NO"/>
-                                </accessibility>
-                                <state key="normal" backgroundImage="arrow.backward.circle.fill" catalog="system"/>
-                                <connections>
-                                    <action selector="prev:" destination="Lnn-lH-skY" eventType="touchUpInside" id="XDF-1g-A9L"/>
-                                </connections>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="njY-hD-9cp" userLabel="Side Bar Stack View">
                                 <rect key="frame" x="59" y="26" width="40" height="338"/>
                                 <subviews>
@@ -1684,6 +1659,22 @@
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="338" id="lYn-te-aGm"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tof-xN-DFe">
+                                <rect key="frame" x="305" y="92" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="back"/>
+                                <connections>
+                                    <action selector="prev:" destination="Lnn-lH-skY" eventType="touchUpInside" id="uuf-HF-vRO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fr3-qz-T7s">
+                                <rect key="frame" x="543" y="92" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="forward"/>
+                                <connections>
+                                    <action selector="next:" destination="Lnn-lH-skY" eventType="touchUpInside" id="LaV-jK-it9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tey-I8-ZQq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -2080,25 +2071,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="foX-ZQ-hXh">
-                                <rect key="frame" x="543" y="93" width="49" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="arrow.forward.circle.fill" catalog="system"/>
-                                <connections>
-                                    <action selector="next:" destination="nc9-Sy-S2d" eventType="touchUpInside" id="TJT-wC-oeD"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Azx-wW-7Zr">
-                                <rect key="frame" x="305" y="92" width="49" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <bool key="isElement" value="NO"/>
-                                </accessibility>
-                                <state key="normal" backgroundImage="arrow.backward.circle.fill" catalog="system"/>
-                                <connections>
-                                    <action selector="prev:" destination="nc9-Sy-S2d" eventType="touchUpInside" id="26f-YJ-2r9"/>
-                                </connections>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="WFf-eS-kSm" userLabel="Side Bar Stack View">
                                 <rect key="frame" x="59" y="26" width="40" height="338"/>
                                 <subviews>
@@ -2180,6 +2152,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M9V-2E-Idn">
+                                <rect key="frame" x="307" y="92" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="back"/>
+                                <connections>
+                                    <action selector="prev:" destination="nc9-Sy-S2d" eventType="touchUpInside" id="gqb-1n-U68"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1x-AS-YED">
+                                <rect key="frame" x="543" y="92" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="forward"/>
+                                <connections>
+                                    <action selector="next:" destination="nc9-Sy-S2d" eventType="touchUpInside" id="8AS-Sm-jTW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bKl-Bm-aDc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -2201,14 +2189,13 @@
     </scenes>
     <resources>
         <image name="Image" width="233" height="650"/>
-        <image name="arrow.backward.circle.fill" catalog="system" width="128" height="121"/>
-        <image name="arrow.forward.circle.fill" catalog="system" width="128" height="121"/>
         <image name="back" width="56" height="56"/>
         <image name="bank" width="56" height="56"/>
         <image name="beginning sounds 1" width="401.33334350585938" height="96.666664123535156"/>
         <image name="beginning sounds 2" width="1204" height="316"/>
         <image name="beginning sounds 3" width="1404" height="270"/>
         <image name="beginning sounds 4" width="1428" height="296"/>
+        <image name="forward" width="56" height="56"/>
         <image name="home" width="56" height="56"/>
         <image name="puzzle" width="56" height="56"/>
         <image name="quiz" width="56" height="56"/>
