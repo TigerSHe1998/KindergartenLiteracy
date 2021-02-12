@@ -39,7 +39,8 @@ class ViewController: UIViewController {
     
     
     @IBAction func beginningSoundsButtonTapped(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(identifier: "beginning_sounds_vc") as! BeginningSoundsViewController
+        let sb = UIStoryboard(name: "BeginningSounds", bundle: nil)
+        let vc = sb.instantiateViewController(identifier: "beginning_sounds_vc") as! BeginningSoundsViewController
         present(vc, animated: true)
     }
     
