@@ -388,46 +388,46 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oTB-Fp-ndr">
-                                <rect key="frame" x="60" y="50.5" width="46" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="arrowshape.turn.up.backward.2.circle.fill" catalog="system">
-                                    <color key="titleColor" name="AccentColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="returnButtonTapped:" destination="Ssw-U2-RYa" eventType="touchUpInside" id="Hb8-hl-U3u"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nDZ-Ea-k4a">
-                                <rect key="frame" x="60" y="104.5" width="46" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemPurpleColor"/>
-                                <state key="normal" backgroundImage="house.circle.fill" catalog="system"/>
-                                <connections>
-                                    <action selector="homeButtonTapped:" destination="Ssw-U2-RYa" eventType="touchUpInside" id="7sK-yr-YBm"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o1v-as-gaH">
-                                <rect key="frame" x="60" y="300.5" width="46" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemGreenColor"/>
-                                <state key="normal" backgroundImage="pencil.circle.fill" catalog="system"/>
-                                <connections>
-                                    <action selector="puzzleButtonTapped:" destination="Ssw-U2-RYa" eventType="touchUpInside" id="NhA-7I-Hjm"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bo8-k7-63x">
-                                <rect key="frame" x="60" y="246.5" width="46" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemRedColor"/>
-                                <state key="normal" backgroundImage="cart.circle.fill" catalog="system"/>
-                                <connections>
-                                    <action selector="coinButtonTapped:" destination="Ssw-U2-RYa" eventType="touchUpInside" id="a9e-HH-AXZ"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="7ZK-ZX-jY0" userLabel="side_bar_stack">
+                                <rect key="frame" x="59" y="20" width="56" height="338"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jUQ-Ig-9MV" userLabel="back">
+                                        <rect key="frame" x="0.0" y="0.0" width="56" height="56"/>
+                                        <state key="normal" image="back"/>
+                                        <connections>
+                                            <action selector="returnButtonTapped:" destination="Ssw-U2-RYa" eventType="touchUpInside" id="DgR-Op-d1P"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7n0-pE-YBD" userLabel="home">
+                                        <rect key="frame" x="0.0" y="94" width="56" height="56"/>
+                                        <state key="normal" image="home"/>
+                                        <connections>
+                                            <action selector="homeButtonTapped:" destination="Ssw-U2-RYa" eventType="touchUpInside" id="44b-bh-LRO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eog-El-j0g" userLabel="coin">
+                                        <rect key="frame" x="0.0" y="188" width="56" height="56"/>
+                                        <state key="normal" image="bank"/>
+                                        <connections>
+                                            <action selector="coinButtonTapped:" destination="Ssw-U2-RYa" eventType="touchUpInside" id="734-yz-Vff"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pv2-vZ-b4i" userLabel="puzzle">
+                                        <rect key="frame" x="0.0" y="282" width="56" height="56"/>
+                                        <state key="normal" image="puzzle"/>
+                                        <connections>
+                                            <action selector="puzzleButtonTapped:" destination="Ssw-U2-RYa" eventType="touchUpInside" id="AUQ-LZ-Zjq"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VfU-wO-WP2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7ZK-ZX-jY0" firstAttribute="top" secondItem="VfU-wO-WP2" secondAttribute="top" constant="20" id="Tff-st-Br4"/>
+                            <constraint firstItem="7ZK-ZX-jY0" firstAttribute="leading" secondItem="VfU-wO-WP2" secondAttribute="leading" constant="15" id="cJL-mk-bZD"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vjX-Pr-w9r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -449,46 +449,46 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9P8-uh-p8Z">
-                                <rect key="frame" x="60" y="59.5" width="46" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="arrowshape.turn.up.backward.2.circle.fill" catalog="system">
-                                    <color key="titleColor" name="AccentColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="returnButtonTapped:" destination="W0e-VR-xL6" eventType="touchUpInside" id="iwU-eC-pcS"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ACp-JI-6Mu">
-                                <rect key="frame" x="60" y="112.5" width="46" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemPurpleColor"/>
-                                <state key="normal" backgroundImage="house.circle.fill" catalog="system"/>
-                                <connections>
-                                    <action selector="homeButtonTapped:" destination="W0e-VR-xL6" eventType="touchUpInside" id="KwJ-eX-efW"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DXH-lm-s86">
-                                <rect key="frame" x="60" y="308.5" width="46" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemGreenColor"/>
-                                <state key="normal" backgroundImage="pencil.circle.fill" catalog="system"/>
-                                <connections>
-                                    <action selector="puzzleButtonTapped:" destination="W0e-VR-xL6" eventType="touchUpInside" id="RnI-fL-MBE"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGI-1N-GFs">
-                                <rect key="frame" x="60" y="254.5" width="46" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemRedColor"/>
-                                <state key="normal" backgroundImage="cart.circle.fill" catalog="system"/>
-                                <connections>
-                                    <action selector="coinButtonTapped:" destination="W0e-VR-xL6" eventType="touchUpInside" id="RaS-f4-gMo"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="eLi-05-HL5" userLabel="side_bar_stack">
+                                <rect key="frame" x="59" y="20" width="56" height="338"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h7C-rh-M2L" userLabel="back">
+                                        <rect key="frame" x="0.0" y="0.0" width="56" height="56"/>
+                                        <state key="normal" image="back"/>
+                                        <connections>
+                                            <action selector="returnButtonTapped:" destination="W0e-VR-xL6" eventType="touchUpInside" id="uAB-6n-FGz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="adQ-YJ-3Y4" userLabel="home">
+                                        <rect key="frame" x="0.0" y="94" width="56" height="56"/>
+                                        <state key="normal" image="home"/>
+                                        <connections>
+                                            <action selector="homeButtonTapped:" destination="W0e-VR-xL6" eventType="touchUpInside" id="TGe-Cj-HnW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zce-Im-Xgd" userLabel="coin">
+                                        <rect key="frame" x="0.0" y="188" width="56" height="56"/>
+                                        <state key="normal" image="bank"/>
+                                        <connections>
+                                            <action selector="coinButtonTapped:" destination="W0e-VR-xL6" eventType="touchUpInside" id="ZZJ-qd-nsG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceH-eh-kgK" userLabel="puzzle">
+                                        <rect key="frame" x="0.0" y="282" width="56" height="56"/>
+                                        <state key="normal" image="puzzle"/>
+                                        <connections>
+                                            <action selector="puzzleButtonTapped:" destination="W0e-VR-xL6" eventType="touchUpInside" id="yuQ-dA-pwa"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Vbi-Qx-ZR5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eLi-05-HL5" firstAttribute="top" secondItem="Vbi-Qx-ZR5" secondAttribute="top" constant="20" id="eTi-39-Lgq"/>
+                            <constraint firstItem="eLi-05-HL5" firstAttribute="leading" secondItem="Vbi-Qx-ZR5" secondAttribute="leading" constant="15" id="unx-se-3Ma"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iMD-6y-hSk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -21,14 +21,12 @@ class PuzzleViewController: UIViewController {
     
     
     @IBAction func returnButtonTapped(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(identifier: "main_vc") as! ViewController
-        present(vc, animated: true)
+        self.dismiss(animated:true, completion: nil)
     }
     
     
     @IBAction func homeButtonTapped(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(identifier: "main_vc") as! ViewController
-        present(vc, animated: true)
+        self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func puzzleButtonTapped(_ sender: Any) {
