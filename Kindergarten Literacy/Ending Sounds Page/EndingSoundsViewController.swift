@@ -15,6 +15,10 @@ class EndingSoundsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    // reference to different storyboards
+    let endingSoundsStoryBoard:UIStoryboard = UIStoryboard(name: "EndingSoundsPages", bundle:nil)
+    let mainStoryBoard:UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+    
     
     @IBAction func endingSoundsOneButtonTapped(_ sender: Any) {
         let vc = endingSoundsStoryBoard.instantiateViewController(identifier: "ending_sounds1_vc")
@@ -39,9 +43,6 @@ class EndingSoundsViewController: UIViewController {
         present(vc, animated: true)
     }
     
-    // reference to different storyboards
-    let endingSoundsStoryBoard:UIStoryboard = UIStoryboard(name: "EndingSoundsPages", bundle:nil)
-    let mainStoryBoard:UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
     
     // functions for sidebar
     @IBAction func backButtonTapped(_ sender: Any) {
@@ -62,16 +63,6 @@ class EndingSoundsViewController: UIViewController {
         present(vc, animated: true)
     }
     
-    // code for main buttons (draft) (need to pass arguments)
-    @IBAction func toNameSelectListPage(_ sender: Any) {
-        let vc = endingSoundsStoryBoard.instantiateViewController(identifier: "nameSelectList_vc")
-        present(vc, animated: true)
-    }
-    
-    @IBAction func toSoundSelectListPage(_ sender: Any) {
-        let vc = endingSoundsStoryBoard.instantiateViewController(identifier: "nameSelectList_vc")
-        present(vc, animated: true)
-    }
     
     /*
     // MARK: - Navigation

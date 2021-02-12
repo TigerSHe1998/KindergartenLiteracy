@@ -117,7 +117,6 @@
                         <constraints>
                             <constraint firstItem="SZN-IG-MkD" firstAttribute="leading" secondItem="Qyd-b9-D3v" secondAttribute="trailing" constant="262" id="2eh-GJ-UH1"/>
                             <constraint firstItem="EPr-cr-sbS" firstAttribute="trailing" secondItem="IgL-rm-e6h" secondAttribute="trailing" constant="280" id="3N0-7c-evh"/>
-                            <constraint firstItem="EPr-cr-sbS" firstAttribute="bottom" secondItem="Qyd-b9-D3v" secondAttribute="bottom" constant="38" id="3xw-Lr-9oc"/>
                             <constraint firstItem="EPr-cr-sbS" firstAttribute="trailing" secondItem="SZN-IG-MkD" secondAttribute="trailing" constant="290" id="4lm-gb-N1M"/>
                             <constraint firstItem="cLT-QG-dJ3" firstAttribute="leading" secondItem="tm8-Aq-10l" secondAttribute="leading" constant="20" id="6oa-JR-hS2"/>
                             <constraint firstItem="EPr-cr-sbS" firstAttribute="trailing" secondItem="th9-Gw-N3W" secondAttribute="trailing" constant="241" id="7GT-oD-DFM"/>
@@ -166,7 +165,7 @@
                                             <color key="titleColor" name="AccentColor"/>
                                         </state>
                                         <connections>
-                                            <action selector="backButtonTapped:" destination="RK9-TE-cba" eventType="touchUpInside" id="jpD-Rx-JoP"/>
+                                            <action selector="backButtonTapped:" destination="RK9-TE-cba" eventType="touchUpInside" id="yL3-16-JvL"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Hj-X4-PCa" userLabel="Home">
@@ -177,7 +176,7 @@
                                         <color key="tintColor" systemColor="systemPurpleColor"/>
                                         <state key="normal" backgroundImage="home"/>
                                         <connections>
-                                            <action selector="homeButtonTapped:" destination="RK9-TE-cba" eventType="touchUpInside" id="LKc-b0-jYj"/>
+                                            <action selector="homeButtonTapped:" destination="RK9-TE-cba" eventType="touchUpInside" id="UYa-B5-FOD"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tkk-AV-49e" userLabel="Quiz">
@@ -202,7 +201,7 @@
                                         <color key="tintColor" systemColor="systemGreenColor"/>
                                         <state key="normal" backgroundImage="puzzle"/>
                                         <connections>
-                                            <action selector="puzzleButtonTapped:" destination="RK9-TE-cba" eventType="touchUpInside" id="zai-o4-u1W"/>
+                                            <action selector="puzzleButtonTapped:" destination="RK9-TE-cba" eventType="touchUpInside" id="2Nf-fK-Zu2"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iDU-J0-8kZ" userLabel="Bank">
@@ -213,7 +212,7 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" backgroundImage="bank"/>
                                         <connections>
-                                            <action selector="puzzleButtonTapped:" destination="RK9-TE-cba" eventType="touchUpInside" id="TvY-lm-p5N"/>
+                                            <action selector="coinButtonTapped:" destination="RK9-TE-cba" eventType="touchUpInside" id="jbF-CD-CdI"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -258,7 +257,7 @@
                                             <color key="titleColor" name="AccentColor"/>
                                         </state>
                                         <connections>
-                                            <action selector="returnButtonTapped:" destination="EMY-7p-7q5" eventType="touchUpInside" id="cd4-ZR-HR0"/>
+                                            <action selector="backButtonTapped:" destination="D1a-M2-ge1" eventType="touchUpInside" id="nWE-gd-0ed"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2z4-mL-8kJ" userLabel="Home">
@@ -269,7 +268,7 @@
                                         <color key="tintColor" systemColor="systemPurpleColor"/>
                                         <state key="normal" backgroundImage="home"/>
                                         <connections>
-                                            <action selector="homeButtonTapped:" destination="EMY-7p-7q5" eventType="touchUpInside" id="RYO-Om-jfs"/>
+                                            <action selector="homeButtonTapped:" destination="D1a-M2-ge1" eventType="touchUpInside" id="9s9-9J-Beg"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JA4-TM-CZr" userLabel="Quiz">
@@ -294,7 +293,7 @@
                                         <color key="tintColor" systemColor="systemGreenColor"/>
                                         <state key="normal" backgroundImage="puzzle"/>
                                         <connections>
-                                            <action selector="puzzleButtonTapped:" destination="EMY-7p-7q5" eventType="touchUpInside" id="8Oe-YW-MMT"/>
+                                            <action selector="puzzleButtonTapped:" destination="D1a-M2-ge1" eventType="touchUpInside" id="mij-De-xId"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wwo-pU-BN0" userLabel="Bank">
@@ -305,7 +304,7 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" backgroundImage="bank"/>
                                         <connections>
-                                            <action selector="coinButtonTapped:" destination="EMY-7p-7q5" eventType="touchUpInside" id="cX5-mi-knz"/>
+                                            <action selector="coinButtonTapped:" destination="D1a-M2-ge1" eventType="touchUpInside" id="zZo-KG-oCP"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -351,7 +350,7 @@
                                             <color key="titleColor" name="AccentColor"/>
                                         </state>
                                         <connections>
-                                            <action selector="returnButtonTapped:" destination="EMY-7p-7q5" eventType="touchUpInside" id="Ouc-ma-alV"/>
+                                            <action selector="backButtonTapped:" destination="qCM-AD-b7L" eventType="touchUpInside" id="PNq-O3-MKf"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mJr-VX-To6" userLabel="Home">
@@ -362,7 +361,7 @@
                                         <color key="tintColor" systemColor="systemPurpleColor"/>
                                         <state key="normal" backgroundImage="home"/>
                                         <connections>
-                                            <action selector="homeButtonTapped:" destination="EMY-7p-7q5" eventType="touchUpInside" id="VME-c3-Pf8"/>
+                                            <action selector="homeButtonTapped:" destination="qCM-AD-b7L" eventType="touchUpInside" id="Gcb-df-BkM"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wjs-ri-WsQ" userLabel="Quiz">
@@ -387,7 +386,7 @@
                                         <color key="tintColor" systemColor="systemGreenColor"/>
                                         <state key="normal" backgroundImage="puzzle"/>
                                         <connections>
-                                            <action selector="puzzleButtonTapped:" destination="EMY-7p-7q5" eventType="touchUpInside" id="F2E-2x-uBQ"/>
+                                            <action selector="puzzleButtonTapped:" destination="qCM-AD-b7L" eventType="touchUpInside" id="ZOk-aG-8TA"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9M-Q2-Uhz" userLabel="Bank">
@@ -398,7 +397,7 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" backgroundImage="bank"/>
                                         <connections>
-                                            <action selector="coinButtonTapped:" destination="EMY-7p-7q5" eventType="touchUpInside" id="gLp-4X-9nx"/>
+                                            <action selector="coinButtonTapped:" destination="qCM-AD-b7L" eventType="touchUpInside" id="BRz-Lm-FF9"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -444,7 +443,7 @@
                                             <color key="titleColor" name="AccentColor"/>
                                         </state>
                                         <connections>
-                                            <action selector="returnButtonTapped:" destination="EMY-7p-7q5" eventType="touchUpInside" id="8pD-df-S3j"/>
+                                            <action selector="backButtonTapped:" destination="KEr-mX-3b2" eventType="touchUpInside" id="yJb-d0-9qG"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ywm-Ul-PDH" userLabel="Home">
@@ -455,7 +454,7 @@
                                         <color key="tintColor" systemColor="systemPurpleColor"/>
                                         <state key="normal" backgroundImage="home"/>
                                         <connections>
-                                            <action selector="homeButtonTapped:" destination="EMY-7p-7q5" eventType="touchUpInside" id="jy1-PB-qfO"/>
+                                            <action selector="homeButtonTapped:" destination="KEr-mX-3b2" eventType="touchUpInside" id="xsb-f6-9zs"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QxQ-gS-rCt" userLabel="Quiz">
@@ -480,7 +479,7 @@
                                         <color key="tintColor" systemColor="systemGreenColor"/>
                                         <state key="normal" backgroundImage="puzzle"/>
                                         <connections>
-                                            <action selector="puzzleButtonTapped:" destination="EMY-7p-7q5" eventType="touchUpInside" id="9ij-Gs-dmR"/>
+                                            <action selector="puzzleButtonTapped:" destination="KEr-mX-3b2" eventType="touchUpInside" id="JIM-ic-9aD"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fqQ-4O-j9c" userLabel="Bank">
@@ -491,7 +490,7 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" backgroundImage="bank"/>
                                         <connections>
-                                            <action selector="coinButtonTapped:" destination="EMY-7p-7q5" eventType="touchUpInside" id="gwD-aL-cwV"/>
+                                            <action selector="coinButtonTapped:" destination="KEr-mX-3b2" eventType="touchUpInside" id="ElQ-rB-MFj"/>
                                         </connections>
                                     </button>
                                 </subviews>
