@@ -20,19 +20,16 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="k_ending_sounds" translatesAutoresizingMaskIntoConstraints="NO" id="cLT-QG-dJ3">
                                 <rect key="frame" x="20" y="20" width="832" height="374"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yKm-nP-SJH" userLabel="Button1">
-                                <rect key="frame" x="366" y="146" width="215" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yKm-nP-SJH" userLabel="Button2">
+                                <rect key="frame" x="366" y="116" width="30" height="30"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dje-62-qXd" userLabel="Button3">
-                                <rect key="frame" x="366" y="228" width="245" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dje-62-qXd" userLabel="Button3">
+                                <rect key="frame" x="366" y="140" width="226" height="73"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5JY-Cb-1Yg" userLabel="Button2">
-                                <rect key="frame" x="366" y="69" width="215" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5JY-Cb-1Yg" userLabel="Button1">
+                                <rect key="frame" x="366" y="69" width="215" height="30"/>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="equalSpacing" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="Qyd-b9-D3v" userLabel="Side Bar Stack View">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="Qyd-b9-D3v" userLabel="Side Bar Stack View">
                                 <rect key="frame" x="64" y="38" width="40" height="338"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCm-Uu-HaT" userLabel="Back">
@@ -96,12 +93,24 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="EPr-cr-sbS" firstAttribute="bottom" secondItem="Qyd-b9-D3v" secondAttribute="bottom" constant="38" id="3xw-Lr-9oc"/>
+                            <constraint firstItem="5JY-Cb-1Yg" firstAttribute="leading" secondItem="Qyd-b9-D3v" secondAttribute="trailing" constant="262" id="4Jc-LE-5Ff"/>
                             <constraint firstItem="cLT-QG-dJ3" firstAttribute="leading" secondItem="tm8-Aq-10l" secondAttribute="leading" constant="20" id="6oa-JR-hS2"/>
+                            <constraint firstItem="Qyd-b9-D3v" firstAttribute="top" secondItem="EPr-cr-sbS" secondAttribute="top" constant="38" id="7Mx-z2-wkZ"/>
+                            <constraint firstItem="dje-62-qXd" firstAttribute="top" secondItem="yKm-nP-SJH" secondAttribute="bottom" constant="17" id="CdX-gl-qZg"/>
+                            <constraint firstItem="yKm-nP-SJH" firstAttribute="leading" secondItem="Qyd-b9-D3v" secondAttribute="trailing" constant="262" id="EmZ-hi-J8h"/>
+                            <constraint firstItem="5JY-Cb-1Yg" firstAttribute="top" secondItem="EPr-cr-sbS" secondAttribute="top" constant="69" id="MrY-6C-MZg"/>
+                            <constraint firstItem="Qyd-b9-D3v" firstAttribute="leading" secondItem="EPr-cr-sbS" secondAttribute="leading" constant="20" id="NXq-uG-cEI"/>
+                            <constraint firstItem="EPr-cr-sbS" firstAttribute="trailing" secondItem="5JY-Cb-1Yg" secondAttribute="trailing" constant="271" id="SLt-6p-B8C"/>
                             <constraint firstItem="EPr-cr-sbS" firstAttribute="trailing" secondItem="cLT-QG-dJ3" secondAttribute="trailing" id="UEv-r2-CdN"/>
+                            <constraint firstItem="EPr-cr-sbS" firstAttribute="trailing" secondItem="yKm-nP-SJH" secondAttribute="trailing" constant="456" id="Vsw-qE-7XT"/>
                             <constraint firstItem="EPr-cr-sbS" firstAttribute="trailing" secondItem="cLT-QG-dJ3" secondAttribute="trailing" id="Wqy-tH-80z"/>
+                            <constraint firstItem="yKm-nP-SJH" firstAttribute="leading" secondItem="Qyd-b9-D3v" secondAttribute="trailing" constant="262" id="Z7W-Yg-tNP"/>
                             <constraint firstItem="EPr-cr-sbS" firstAttribute="bottom" secondItem="cLT-QG-dJ3" secondAttribute="bottom" constant="20" id="beV-NC-rVT"/>
+                            <constraint firstItem="yKm-nP-SJH" firstAttribute="top" secondItem="5JY-Cb-1Yg" secondAttribute="bottom" constant="17" id="cQp-vw-4Vr"/>
                             <constraint firstItem="cLT-QG-dJ3" firstAttribute="top" secondItem="tm8-Aq-10l" secondAttribute="top" constant="20" id="guV-j7-4sj"/>
                             <constraint firstItem="EPr-cr-sbS" firstAttribute="trailing" secondItem="cLT-QG-dJ3" secondAttribute="trailing" id="nbF-Vy-d4P"/>
+                            <constraint firstItem="EPr-cr-sbS" firstAttribute="bottom" secondItem="Qyd-b9-D3v" secondAttribute="bottom" constant="38" id="qfF-hI-OKb"/>
+                            <constraint firstItem="yKm-nP-SJH" firstAttribute="top" secondItem="5JY-Cb-1Yg" secondAttribute="bottom" constant="17" id="scM-FC-9ki"/>
                             <constraint firstItem="Qyd-b9-D3v" firstAttribute="top" secondItem="EPr-cr-sbS" secondAttribute="top" constant="38" id="zK4-5o-dF8"/>
                         </constraints>
                     </view>
@@ -118,7 +127,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="equalSpacing" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="qN7-dW-w09" userLabel="Side Bar Stack View">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="qN7-dW-w09" userLabel="Side Bar Stack View">
                                 <rect key="frame" x="60" y="38" width="40" height="338"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pVk-TF-Zzu" userLabel="Back">
@@ -190,6 +199,12 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Q2u-Md-WpJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qN7-dW-w09" firstAttribute="top" secondItem="Q2u-Md-WpJ" secondAttribute="top" constant="38" id="Cqv-Uq-iFI"/>
+                            <constraint firstItem="qN7-dW-w09" firstAttribute="leading" secondItem="Q2u-Md-WpJ" secondAttribute="leading" constant="16" id="R7c-AG-Lvf"/>
+                            <constraint firstItem="Q2u-Md-WpJ" firstAttribute="bottom" secondItem="qN7-dW-w09" secondAttribute="bottom" constant="17" id="g92-GH-iMn"/>
+                            <constraint firstItem="Q2u-Md-WpJ" firstAttribute="trailing" secondItem="qN7-dW-w09" secondAttribute="trailing" constant="752" id="xqI-xm-1Na"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hLp-g1-GEO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -204,7 +219,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="equalSpacing" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="umb-3M-XdI" userLabel="Side Bar Stack View">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="umb-3M-XdI" userLabel="Side Bar Stack View">
                                 <rect key="frame" x="60" y="38" width="40" height="338"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ljQ-FF-VSr" userLabel="Back">
@@ -277,7 +292,11 @@
                         <viewLayoutGuide key="safeArea" id="hxj-qw-J5U"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="hxj-qw-J5U" firstAttribute="trailing" secondItem="umb-3M-XdI" secondAttribute="trailing" constant="752" id="BTo-5i-q0e"/>
+                            <constraint firstItem="hxj-qw-J5U" firstAttribute="bottom" secondItem="umb-3M-XdI" secondAttribute="bottom" constant="17" id="DiN-DB-9Jn"/>
+                            <constraint firstItem="umb-3M-XdI" firstAttribute="top" secondItem="hxj-qw-J5U" secondAttribute="top" constant="38" id="LpK-il-p89"/>
                             <constraint firstItem="umb-3M-XdI" firstAttribute="leading" secondItem="hxj-qw-J5U" secondAttribute="leading" constant="16" id="Rgq-VJ-drn"/>
+                            <constraint firstItem="umb-3M-XdI" firstAttribute="leading" secondItem="hxj-qw-J5U" secondAttribute="leading" constant="16" id="jWk-XN-vmf"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -293,7 +312,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="equalSpacing" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="b0R-cP-szG" userLabel="Side Bar Stack View">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="b0R-cP-szG" userLabel="Side Bar Stack View">
                                 <rect key="frame" x="60" y="38" width="40" height="338"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ECp-in-NLi" userLabel="Back">
@@ -366,7 +385,11 @@
                         <viewLayoutGuide key="safeArea" id="WXk-9X-cy3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="b0R-cP-szG" firstAttribute="top" secondItem="WXk-9X-cy3" secondAttribute="top" constant="38" id="4qb-do-b0D"/>
+                            <constraint firstItem="b0R-cP-szG" firstAttribute="leading" secondItem="WXk-9X-cy3" secondAttribute="leading" constant="16" id="O9D-gC-3Vf"/>
+                            <constraint firstItem="WXk-9X-cy3" firstAttribute="trailing" secondItem="b0R-cP-szG" secondAttribute="trailing" constant="752" id="ame-qN-O65"/>
                             <constraint firstItem="b0R-cP-szG" firstAttribute="leading" secondItem="WXk-9X-cy3" secondAttribute="leading" constant="16" id="eAL-Gt-Pdo"/>
+                            <constraint firstItem="WXk-9X-cy3" firstAttribute="bottom" secondItem="b0R-cP-szG" secondAttribute="bottom" constant="17" id="mOA-nG-qgg"/>
                         </constraints>
                     </view>
                 </viewController>
