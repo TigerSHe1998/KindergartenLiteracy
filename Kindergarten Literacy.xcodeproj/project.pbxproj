@@ -17,6 +17,10 @@
 		34D981A825C68FCF00AD992F /* VowelBlackUViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D981A725C68FCF00AD992F /* VowelBlackUViewController.swift */; };
 		34D981AB25C6A7B600AD992F /* VowelQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D981AA25C6A7B600AD992F /* VowelQuizViewController.swift */; };
 		C05D1AA325D26B3E00A30442 /* EndingSoundsPages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C05D1AA225D26B3E00A30442 /* EndingSoundsPages.storyboard */; };
+		C0B508DD25D676550073B187 /* EndingSounds1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B508DC25D676550073B187 /* EndingSounds1.swift */; };
+		C0B508E025D676640073B187 /* EndingSounds2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B508DF25D676630073B187 /* EndingSounds2.swift */; };
+		C0B508E325D676720073B187 /* EndingSounds3.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B508E225D676720073B187 /* EndingSounds3.swift */; };
+		C0B508E625D676820073B187 /* EndingSounds4.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B508E525D676820073B187 /* EndingSounds4.swift */; };
 		C0BA854D256C6485000EBAEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BA854C256C6485000EBAEC /* AppDelegate.swift */; };
 		C0BA854F256C6485000EBAEC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BA854E256C6485000EBAEC /* SceneDelegate.swift */; };
 		C0BA8551256C6485000EBAEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BA8550256C6485000EBAEC /* ViewController.swift */; };
@@ -46,6 +50,10 @@
 		34D981A725C68FCF00AD992F /* VowelBlackUViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VowelBlackUViewController.swift; sourceTree = "<group>"; };
 		34D981AA25C6A7B600AD992F /* VowelQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VowelQuizViewController.swift; sourceTree = "<group>"; };
 		C05D1AA225D26B3E00A30442 /* EndingSoundsPages.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EndingSoundsPages.storyboard; sourceTree = "<group>"; };
+		C0B508DC25D676550073B187 /* EndingSounds1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndingSounds1.swift; sourceTree = "<group>"; };
+		C0B508DF25D676630073B187 /* EndingSounds2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndingSounds2.swift; sourceTree = "<group>"; };
+		C0B508E225D676720073B187 /* EndingSounds3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndingSounds3.swift; sourceTree = "<group>"; };
+		C0B508E525D676820073B187 /* EndingSounds4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndingSounds4.swift; sourceTree = "<group>"; };
 		C0BA8549256C6485000EBAEC /* Kindergarten Literacy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kindergarten Literacy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0BA854C256C6485000EBAEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0BA854E256C6485000EBAEC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,8 +88,12 @@
 		C05D1AA125D26B0D00A30442 /* Ending Sounds Page */ = {
 			isa = PBXGroup;
 			children = (
-				C0BA856E256CAAB5000EBAEC /* EndingSoundsViewController.swift */,
 				C05D1AA225D26B3E00A30442 /* EndingSoundsPages.storyboard */,
+				C0BA856E256CAAB5000EBAEC /* EndingSoundsViewController.swift */,
+				C0B508DC25D676550073B187 /* EndingSounds1.swift */,
+				C0B508DF25D676630073B187 /* EndingSounds2.swift */,
+				C0B508E225D676720073B187 /* EndingSounds3.swift */,
+				C0B508E525D676820073B187 /* EndingSounds4.swift */,
 			);
 			path = "Ending Sounds Page";
 			sourceTree = "<group>";
@@ -222,6 +234,7 @@
 				DC8EB4CB25CB1B7900FD7BB1 /* phonemeLearnPage.swift in Sources */,
 				DC8EB4C025CB17B300FD7BB1 /* CoinViewController.swift in Sources */,
 				34D9819F25C68F8C00AD992F /* VowelBlackIViewController.swift in Sources */,
+				C0B508E025D676640073B187 /* EndingSounds2.swift in Sources */,
 				C0BA856F256CAAB5000EBAEC /* EndingSoundsViewController.swift in Sources */,
 				34D981AB25C6A7B600AD992F /* VowelQuizViewController.swift in Sources */,
 				34D9819625C68D0B00AD992F /* VowelBlackAViewController.swift in Sources */,
@@ -232,7 +245,10 @@
 				34D9818D25C54B8800AD992F /* VowelViewController.swift in Sources */,
 				C0BA8551256C6485000EBAEC /* ViewController.swift in Sources */,
 				DC8EB4C525CB1A7B00FD7BB1 /* soundSelectListPage.swift in Sources */,
+				C0B508E325D676720073B187 /* EndingSounds3.swift in Sources */,
 				34D981A225C68FA100AD992F /* VowelGreenIViewController.swift in Sources */,
+				C0B508E625D676820073B187 /* EndingSounds4.swift in Sources */,
+				C0B508DD25D676550073B187 /* EndingSounds1.swift in Sources */,
 				C0BA854D256C6485000EBAEC /* AppDelegate.swift in Sources */,
 				C0BA856A256CAA93000EBAEC /* BeginningSoundsViewController.swift in Sources */,
 				C0BA854F256C6485000EBAEC /* SceneDelegate.swift in Sources */,

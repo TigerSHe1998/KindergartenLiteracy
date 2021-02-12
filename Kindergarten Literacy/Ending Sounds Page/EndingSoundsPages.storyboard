@@ -20,15 +20,6 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="k_ending_sounds" translatesAutoresizingMaskIntoConstraints="NO" id="cLT-QG-dJ3">
                                 <rect key="frame" x="20" y="20" width="832" height="374"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yKm-nP-SJH" userLabel="Button2">
-                                <rect key="frame" x="366" y="116" width="30" height="30"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dje-62-qXd" userLabel="Button3">
-                                <rect key="frame" x="366" y="140" width="226" height="73"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5JY-Cb-1Yg" userLabel="Button1">
-                                <rect key="frame" x="366" y="69" width="215" height="30"/>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="Qyd-b9-D3v" userLabel="Side Bar Stack View">
                                 <rect key="frame" x="64" y="38" width="40" height="338"/>
                                 <subviews>
@@ -41,7 +32,7 @@
                                             <color key="titleColor" name="AccentColor"/>
                                         </state>
                                         <connections>
-                                            <action selector="returnButtonTapped:" destination="EMY-7p-7q5" eventType="touchUpInside" id="oI0-EF-09K"/>
+                                            <action selector="backButtonTapped:" destination="EMY-7p-7q5" eventType="touchUpInside" id="myl-eD-vmo"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QGd-cc-oua" userLabel="Home">
@@ -52,7 +43,7 @@
                                         <color key="tintColor" systemColor="systemPurpleColor"/>
                                         <state key="normal" backgroundImage="home"/>
                                         <connections>
-                                            <action selector="homeButtonTapped:" destination="EMY-7p-7q5" eventType="touchUpInside" id="H3X-0d-xhl"/>
+                                            <action selector="homeButtonTapped:" destination="EMY-7p-7q5" eventType="touchUpInside" id="q3x-WN-au2"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ozN-fC-7if" userLabel="Puzzle">
@@ -63,7 +54,7 @@
                                         <color key="tintColor" systemColor="systemGreenColor"/>
                                         <state key="normal" backgroundImage="puzzle"/>
                                         <connections>
-                                            <action selector="puzzleButtonTapped:" destination="EMY-7p-7q5" eventType="touchUpInside" id="4uP-qU-7yb"/>
+                                            <action selector="puzzleButtonTapped:" destination="EMY-7p-7q5" eventType="touchUpInside" id="aVa-VA-dwd"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j1E-49-FOc" userLabel="Bank">
@@ -74,7 +65,7 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" backgroundImage="bank"/>
                                         <connections>
-                                            <action selector="coinButtonTapped:" destination="EMY-7p-7q5" eventType="touchUpInside" id="Pno-GU-lE4"/>
+                                            <action selector="coinButtonTapped:" destination="EMY-7p-7q5" eventType="touchUpInside" id="bUk-ue-qLv"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -84,33 +75,68 @@
                                     <constraint firstAttribute="height" constant="338" id="cLj-AI-nUM"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="th9-Gw-N3W" userLabel="Button4">
-                                <rect key="frame" x="366" y="310" width="245" height="66"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="th9-Gw-N3W" userLabel="Button4">
+                                <rect key="frame" x="366" y="316" width="245" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="udd-dk-QWf"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="endingSoundsFourButtonTapped:" destination="EMY-7p-7q5" eventType="touchUpInside" id="SB3-Ik-gTe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nP4-H6-hlC" userLabel="Button3">
+                                <rect key="frame" x="366" y="226" width="245" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="5aL-2T-1Sc"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="endingSoundsThreeButtonTapped:" destination="EMY-7p-7q5" eventType="touchUpInside" id="KUn-h0-9uU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IgL-rm-e6h" userLabel="Button2">
+                                <rect key="frame" x="366" y="146" width="206" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="3lp-JT-nmP"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="endingSoundsTwoButtonTapped:" destination="EMY-7p-7q5" eventType="touchUpInside" id="5Yp-iR-lv1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZN-IG-MkD" userLabel="Button1">
+                                <rect key="frame" x="366" y="76" width="196" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ccg-P4-4H9"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="endingSoundsOneButtonTapped:" destination="EMY-7p-7q5" eventType="touchUpInside" id="eae-O5-RXC"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="EPr-cr-sbS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="SZN-IG-MkD" firstAttribute="leading" secondItem="Qyd-b9-D3v" secondAttribute="trailing" constant="262" id="2eh-GJ-UH1"/>
+                            <constraint firstItem="EPr-cr-sbS" firstAttribute="trailing" secondItem="IgL-rm-e6h" secondAttribute="trailing" constant="280" id="3N0-7c-evh"/>
                             <constraint firstItem="EPr-cr-sbS" firstAttribute="bottom" secondItem="Qyd-b9-D3v" secondAttribute="bottom" constant="38" id="3xw-Lr-9oc"/>
-                            <constraint firstItem="5JY-Cb-1Yg" firstAttribute="leading" secondItem="Qyd-b9-D3v" secondAttribute="trailing" constant="262" id="4Jc-LE-5Ff"/>
+                            <constraint firstItem="EPr-cr-sbS" firstAttribute="trailing" secondItem="SZN-IG-MkD" secondAttribute="trailing" constant="290" id="4lm-gb-N1M"/>
                             <constraint firstItem="cLT-QG-dJ3" firstAttribute="leading" secondItem="tm8-Aq-10l" secondAttribute="leading" constant="20" id="6oa-JR-hS2"/>
+                            <constraint firstItem="EPr-cr-sbS" firstAttribute="trailing" secondItem="th9-Gw-N3W" secondAttribute="trailing" constant="241" id="7GT-oD-DFM"/>
                             <constraint firstItem="Qyd-b9-D3v" firstAttribute="top" secondItem="EPr-cr-sbS" secondAttribute="top" constant="38" id="7Mx-z2-wkZ"/>
-                            <constraint firstItem="dje-62-qXd" firstAttribute="top" secondItem="yKm-nP-SJH" secondAttribute="bottom" constant="17" id="CdX-gl-qZg"/>
-                            <constraint firstItem="yKm-nP-SJH" firstAttribute="leading" secondItem="Qyd-b9-D3v" secondAttribute="trailing" constant="262" id="EmZ-hi-J8h"/>
-                            <constraint firstItem="5JY-Cb-1Yg" firstAttribute="top" secondItem="EPr-cr-sbS" secondAttribute="top" constant="69" id="MrY-6C-MZg"/>
+                            <constraint firstItem="nP4-H6-hlC" firstAttribute="leading" secondItem="Qyd-b9-D3v" secondAttribute="trailing" constant="262" id="BFx-Sm-cdv"/>
+                            <constraint firstItem="IgL-rm-e6h" firstAttribute="leading" secondItem="Qyd-b9-D3v" secondAttribute="trailing" constant="262" id="CQH-3L-FBG"/>
+                            <constraint firstItem="IgL-rm-e6h" firstAttribute="top" secondItem="SZN-IG-MkD" secondAttribute="bottom" constant="20" id="Mor-SF-6Zg"/>
                             <constraint firstItem="Qyd-b9-D3v" firstAttribute="leading" secondItem="EPr-cr-sbS" secondAttribute="leading" constant="20" id="NXq-uG-cEI"/>
-                            <constraint firstItem="EPr-cr-sbS" firstAttribute="trailing" secondItem="5JY-Cb-1Yg" secondAttribute="trailing" constant="271" id="SLt-6p-B8C"/>
+                            <constraint firstItem="th9-Gw-N3W" firstAttribute="leading" secondItem="Qyd-b9-D3v" secondAttribute="trailing" constant="262" id="QhV-eD-xhQ"/>
                             <constraint firstItem="EPr-cr-sbS" firstAttribute="trailing" secondItem="cLT-QG-dJ3" secondAttribute="trailing" id="UEv-r2-CdN"/>
-                            <constraint firstItem="EPr-cr-sbS" firstAttribute="trailing" secondItem="yKm-nP-SJH" secondAttribute="trailing" constant="456" id="Vsw-qE-7XT"/>
+                            <constraint firstItem="th9-Gw-N3W" firstAttribute="top" secondItem="nP4-H6-hlC" secondAttribute="bottom" constant="30" id="Wf6-TL-gaL"/>
                             <constraint firstItem="EPr-cr-sbS" firstAttribute="trailing" secondItem="cLT-QG-dJ3" secondAttribute="trailing" id="Wqy-tH-80z"/>
-                            <constraint firstItem="yKm-nP-SJH" firstAttribute="leading" secondItem="Qyd-b9-D3v" secondAttribute="trailing" constant="262" id="Z7W-Yg-tNP"/>
                             <constraint firstItem="EPr-cr-sbS" firstAttribute="bottom" secondItem="cLT-QG-dJ3" secondAttribute="bottom" constant="20" id="beV-NC-rVT"/>
-                            <constraint firstItem="yKm-nP-SJH" firstAttribute="top" secondItem="5JY-Cb-1Yg" secondAttribute="bottom" constant="17" id="cQp-vw-4Vr"/>
+                            <constraint firstItem="EPr-cr-sbS" firstAttribute="trailing" secondItem="nP4-H6-hlC" secondAttribute="trailing" constant="241" id="gp8-9R-i50"/>
                             <constraint firstItem="cLT-QG-dJ3" firstAttribute="top" secondItem="tm8-Aq-10l" secondAttribute="top" constant="20" id="guV-j7-4sj"/>
+                            <constraint firstItem="nP4-H6-hlC" firstAttribute="top" secondItem="IgL-rm-e6h" secondAttribute="bottom" constant="20" id="jVr-Ml-KqS"/>
                             <constraint firstItem="EPr-cr-sbS" firstAttribute="trailing" secondItem="cLT-QG-dJ3" secondAttribute="trailing" id="nbF-Vy-d4P"/>
                             <constraint firstItem="EPr-cr-sbS" firstAttribute="bottom" secondItem="Qyd-b9-D3v" secondAttribute="bottom" constant="38" id="qfF-hI-OKb"/>
-                            <constraint firstItem="yKm-nP-SJH" firstAttribute="top" secondItem="5JY-Cb-1Yg" secondAttribute="bottom" constant="17" id="scM-FC-9ki"/>
+                            <constraint firstItem="EPr-cr-sbS" firstAttribute="bottom" secondItem="th9-Gw-N3W" secondAttribute="bottom" constant="48" id="uSN-4v-g11"/>
                             <constraint firstItem="Qyd-b9-D3v" firstAttribute="top" secondItem="EPr-cr-sbS" secondAttribute="top" constant="38" id="zK4-5o-dF8"/>
                         </constraints>
                     </view>
@@ -119,10 +145,10 @@
             </objects>
             <point key="canvasLocation" x="1144.4196428571429" y="92.753623188405811"/>
         </scene>
-        <!--View Controller-->
+        <!--Ending Sounds1-->
         <scene sceneID="EPr-TI-aTZ">
             <objects>
-                <viewController id="RK9-TE-cba" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ending_sounds1_vc" id="RK9-TE-cba" customClass="EndingSounds1" customModule="Kindergarten_Literacy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Oax-zA-Sxs">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -140,7 +166,7 @@
                                             <color key="titleColor" name="AccentColor"/>
                                         </state>
                                         <connections>
-                                            <action selector="returnButtonTapped:" destination="EMY-7p-7q5" eventType="touchUpInside" id="XRu-m4-QNL"/>
+                                            <action selector="backButtonTapped:" destination="RK9-TE-cba" eventType="touchUpInside" id="jpD-Rx-JoP"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Hj-X4-PCa" userLabel="Home">
@@ -151,7 +177,7 @@
                                         <color key="tintColor" systemColor="systemPurpleColor"/>
                                         <state key="normal" backgroundImage="home"/>
                                         <connections>
-                                            <action selector="homeButtonTapped:" destination="EMY-7p-7q5" eventType="touchUpInside" id="n96-mu-648"/>
+                                            <action selector="homeButtonTapped:" destination="RK9-TE-cba" eventType="touchUpInside" id="LKc-b0-jYj"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tkk-AV-49e" userLabel="Quiz">
@@ -176,7 +202,7 @@
                                         <color key="tintColor" systemColor="systemGreenColor"/>
                                         <state key="normal" backgroundImage="puzzle"/>
                                         <connections>
-                                            <action selector="puzzleButtonTapped:" destination="EMY-7p-7q5" eventType="touchUpInside" id="AKf-3R-kso"/>
+                                            <action selector="puzzleButtonTapped:" destination="RK9-TE-cba" eventType="touchUpInside" id="zai-o4-u1W"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iDU-J0-8kZ" userLabel="Bank">
@@ -187,7 +213,7 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" backgroundImage="bank"/>
                                         <connections>
-                                            <action selector="coinButtonTapped:" destination="EMY-7p-7q5" eventType="touchUpInside" id="BqP-vI-M2y"/>
+                                            <action selector="puzzleButtonTapped:" destination="RK9-TE-cba" eventType="touchUpInside" id="TvY-lm-p5N"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -211,10 +237,10 @@
             </objects>
             <point key="canvasLocation" x="1142" y="827"/>
         </scene>
-        <!--View Controller-->
+        <!--Ending Sounds2-->
         <scene sceneID="gvI-Kk-eQX">
             <objects>
-                <viewController id="D1a-M2-ge1" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ending_sounds2_vc" id="D1a-M2-ge1" customClass="EndingSounds2" customModule="Kindergarten_Literacy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SRN-o5-bsz">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -304,10 +330,10 @@
             </objects>
             <point key="canvasLocation" x="1151" y="1532"/>
         </scene>
-        <!--View Controller-->
+        <!--Ending Sounds3-->
         <scene sceneID="lzV-Zc-c0x">
             <objects>
-                <viewController id="qCM-AD-b7L" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ending_sounds3_vc" id="qCM-AD-b7L" customClass="EndingSounds3" customModule="Kindergarten_Literacy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OQZ-8B-Mob">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -396,6 +422,99 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qQj-tf-Nmh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1148" y="2272"/>
+        </scene>
+        <!--Ending Sounds4-->
+        <scene sceneID="JDZ-Sp-mY6">
+            <objects>
+                <viewController storyboardIdentifier="ending_sounds4_vc" id="KEr-mX-3b2" customClass="EndingSounds4" customModule="Kindergarten_Literacy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="atZ-r1-cNq">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="mgU-a0-tHb" userLabel="Side Bar Stack View">
+                                <rect key="frame" x="60" y="38" width="40" height="338"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iDa-lW-uhS" userLabel="Back">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="dS2-k5-a8R"/>
+                                            <constraint firstAttribute="height" constant="40" id="eKV-pt-emE"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="back">
+                                            <color key="titleColor" name="AccentColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="returnButtonTapped:" destination="EMY-7p-7q5" eventType="touchUpInside" id="8pD-df-S3j"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ywm-Ul-PDH" userLabel="Home">
+                                        <rect key="frame" x="0.0" y="59.5" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="mbf-jT-KDd"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="systemPurpleColor"/>
+                                        <state key="normal" backgroundImage="home"/>
+                                        <connections>
+                                            <action selector="homeButtonTapped:" destination="EMY-7p-7q5" eventType="touchUpInside" id="jy1-PB-qfO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QxQ-gS-rCt" userLabel="Quiz">
+                                        <rect key="frame" x="0.0" y="119" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="2Yq-HJ-LVC"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="quiz"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mKg-3a-LN5" userLabel="Repeat">
+                                        <rect key="frame" x="0.0" y="179" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="WN3-7v-SH8"/>
+                                        </constraints>
+                                        <state key="normal" image="repeat"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFG-k6-E4O" userLabel="Puzzle">
+                                        <rect key="frame" x="0.0" y="238.5" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="7Vr-U0-98h"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="systemGreenColor"/>
+                                        <state key="normal" backgroundImage="puzzle"/>
+                                        <connections>
+                                            <action selector="puzzleButtonTapped:" destination="EMY-7p-7q5" eventType="touchUpInside" id="9ij-Gs-dmR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fqQ-4O-j9c" userLabel="Bank">
+                                        <rect key="frame" x="0.0" y="298" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="qqe-aV-Upy"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="systemRedColor"/>
+                                        <state key="normal" backgroundImage="bank"/>
+                                        <connections>
+                                            <action selector="coinButtonTapped:" destination="EMY-7p-7q5" eventType="touchUpInside" id="gwD-aL-cwV"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="338" id="2Pr-JS-lAQ"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="338" id="5Fd-6K-J0T"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1wz-he-Vhm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1wz-he-Vhm" firstAttribute="bottom" secondItem="mgU-a0-tHb" secondAttribute="bottom" constant="17" id="CM2-Ki-X1S"/>
+                            <constraint firstItem="1wz-he-Vhm" firstAttribute="trailing" secondItem="mgU-a0-tHb" secondAttribute="trailing" constant="752" id="F12-Kw-M5X"/>
+                            <constraint firstItem="mgU-a0-tHb" firstAttribute="leading" secondItem="1wz-he-Vhm" secondAttribute="leading" constant="16" id="V4h-A1-2Hn"/>
+                            <constraint firstItem="mgU-a0-tHb" firstAttribute="leading" secondItem="1wz-he-Vhm" secondAttribute="leading" constant="16" id="ZBY-uw-g49"/>
+                            <constraint firstItem="mgU-a0-tHb" firstAttribute="top" secondItem="1wz-he-Vhm" secondAttribute="top" constant="38" id="og4-L1-adM"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5n2-vY-d6b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1141" y="3017"/>
         </scene>
     </scenes>
     <resources>

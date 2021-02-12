@@ -17,38 +17,59 @@ class EndingSoundsViewController: UIViewController {
     
     
     @IBAction func endingSoundsOneButtonTapped(_ sender: Any) {
+        let vc = endingSoundsStoryBoard.instantiateViewController(identifier: "ending_sounds1_vc")
+        present(vc, animated: true)
     }
     
     
     @IBAction func endingSoundsTwoButtonTapped(_ sender: Any) {
+        let vc = endingSoundsStoryBoard.instantiateViewController(identifier: "ending_sounds2_vc")
+        present(vc, animated: true)
     }
     
     
     @IBAction func endingSoundsThreeButtonTapped(_ sender: Any) {
+        let vc = endingSoundsStoryBoard.instantiateViewController(identifier: "ending_sounds3_vc")
+        present(vc, animated: true)
     }
     
     
     @IBAction func endingSoundsFourButtonTapped(_ sender: Any) {
-    }
-    
-    @IBAction func returnButtonTapped(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(identifier: "main_vc") as! ViewController
+        let vc = endingSoundsStoryBoard.instantiateViewController(identifier: "ending_sounds4_vc")
         present(vc, animated: true)
     }
     
+    // reference to different storyboards
+    let endingSoundsStoryBoard:UIStoryboard = UIStoryboard(name: "EndingSoundsPages", bundle:nil)
+    let mainStoryBoard:UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+    
+    // functions for sidebar
+    @IBAction func backButtonTapped(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
     @IBAction func homeButtonTapped(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(identifier: "main_vc") as! ViewController
-        present(vc, animated: true)
+        self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func puzzleButtonTapped(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(identifier: "puzzle_vc") as! PuzzleViewController
+        let vc = mainStoryBoard.instantiateViewController(identifier: "puzzle_vc")
         present(vc, animated: true)
     }
     
     @IBAction func coinButtonTapped(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(identifier: "coin_vc") as! CoinViewController
+        let vc = mainStoryBoard.instantiateViewController(identifier: "coin_vc")
+        present(vc, animated: true)
+    }
+    
+    // code for main buttons (draft) (need to pass arguments)
+    @IBAction func toNameSelectListPage(_ sender: Any) {
+        let vc = endingSoundsStoryBoard.instantiateViewController(identifier: "nameSelectList_vc")
+        present(vc, animated: true)
+    }
+    
+    @IBAction func toSoundSelectListPage(_ sender: Any) {
+        let vc = endingSoundsStoryBoard.instantiateViewController(identifier: "nameSelectList_vc")
         present(vc, animated: true)
     }
     
