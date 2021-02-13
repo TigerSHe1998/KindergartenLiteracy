@@ -7,9 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3441E8BF25D2903600CFF625 /* VowelPages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3441E8BE25D2903600CFF625 /* VowelPages.storyboard */; };
-		3441E8CC25D2931200CFF625 /* vowelMainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3441E8CB25D2931200CFF625 /* vowelMainPage.swift */; };
-		3441E8D225D2BCD900CFF625 /* ButtomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3441E8D125D2BCD900CFF625 /* ButtomViewController.swift */; };
+		34D9818D25C54B8800AD992F /* VowelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D9818C25C54B8800AD992F /* VowelViewController.swift */; };
+		34D9819625C68D0B00AD992F /* VowelBlackAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D9819525C68D0B00AD992F /* VowelBlackAViewController.swift */; };
+		34D9819925C68F5A00AD992F /* VowelGreenAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D9819825C68F5A00AD992F /* VowelGreenAViewController.swift */; };
+		34D9819C25C68F7A00AD992F /* VowelBlackEViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D9819B25C68F7A00AD992F /* VowelBlackEViewController.swift */; };
+		34D9819F25C68F8C00AD992F /* VowelBlackIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D9819E25C68F8C00AD992F /* VowelBlackIViewController.swift */; };
+		34D981A225C68FA100AD992F /* VowelGreenIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D981A125C68FA100AD992F /* VowelGreenIViewController.swift */; };
+		34D981A525C68FB200AD992F /* VowelBlackOViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D981A425C68FB200AD992F /* VowelBlackOViewController.swift */; };
+		34D981A825C68FCF00AD992F /* VowelBlackUViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D981A725C68FCF00AD992F /* VowelBlackUViewController.swift */; };
+		34D981AB25C6A7B600AD992F /* VowelQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D981AA25C6A7B600AD992F /* VowelQuizViewController.swift */; };
+		98358CED25D6A6C70092C8FF /* BeginningSoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98358CE225D6A6C70092C8FF /* BeginningSoundsViewController.swift */; };
+		98358CEE25D6A6C70092C8FF /* BeginningSoundsThreeButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98358CE325D6A6C70092C8FF /* BeginningSoundsThreeButtonViewController.swift */; };
+		98358CEF25D6A6C70092C8FF /* BeginningSoundsOneButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98358CE425D6A6C70092C8FF /* BeginningSoundsOneButtonViewController.swift */; };
+		98358CF025D6A6C70092C8FF /* ThreeButtonLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98358CE525D6A6C70092C8FF /* ThreeButtonLevelViewController.swift */; };
+		98358CF125D6A6C70092C8FF /* BeginningSoundsFourButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98358CE625D6A6C70092C8FF /* BeginningSoundsFourButtonViewController.swift */; };
+		98358CF225D6A6C70092C8FF /* BeginningSoundsQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98358CE725D6A6C70092C8FF /* BeginningSoundsQuizViewController.swift */; };
+		98358CF325D6A6C70092C8FF /* BeginningSoundsTwoButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98358CE825D6A6C70092C8FF /* BeginningSoundsTwoButtonViewController.swift */; };
+		98358CF425D6A6C70092C8FF /* OneButtonLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98358CE925D6A6C70092C8FF /* OneButtonLevelViewController.swift */; };
+		98358CF525D6A6C70092C8FF /* BeginningSounds.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98358CEA25D6A6C70092C8FF /* BeginningSounds.storyboard */; };
+		98358CF625D6A6C70092C8FF /* FourButtonLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98358CEB25D6A6C70092C8FF /* FourButtonLevelViewController.swift */; };
+		98358CF725D6A6C70092C8FF /* TwoButtonLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98358CEC25D6A6C70092C8FF /* TwoButtonLevelViewController.swift */; };
+		C05D1AA325D26B3E00A30442 /* EndingSoundsPages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C05D1AA225D26B3E00A30442 /* EndingSoundsPages.storyboard */; };
+		C0B508DD25D676550073B187 /* EndingSounds1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B508DC25D676550073B187 /* EndingSounds1.swift */; };
+		C0B508E025D676640073B187 /* EndingSounds2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B508DF25D676630073B187 /* EndingSounds2.swift */; };
+		C0B508E325D676720073B187 /* EndingSounds3.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B508E225D676720073B187 /* EndingSounds3.swift */; };
+		C0B508E625D676820073B187 /* EndingSounds4.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B508E525D676820073B187 /* EndingSounds4.swift */; };
 		C0BA854D256C6485000EBAEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BA854C256C6485000EBAEC /* AppDelegate.swift */; };
 		C0BA854F256C6485000EBAEC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BA854E256C6485000EBAEC /* SceneDelegate.swift */; };
 		C0BA8551256C6485000EBAEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BA8550256C6485000EBAEC /* ViewController.swift */; };
@@ -17,7 +39,6 @@
 		C0BA8556256C6487000EBAEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0BA8555256C6487000EBAEC /* Assets.xcassets */; };
 		C0BA8559256C6487000EBAEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0BA8557256C6487000EBAEC /* LaunchScreen.storyboard */; };
 		C0BA8567256CA9ED000EBAEC /* letterMainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BA8566256CA9ED000EBAEC /* letterMainPage.swift */; };
-		C0BA856A256CAA93000EBAEC /* BeginningSoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BA8569256CAA93000EBAEC /* BeginningSoundsViewController.swift */; };
 		C0BA856F256CAAB5000EBAEC /* EndingSoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BA856E256CAAB5000EBAEC /* EndingSoundsViewController.swift */; };
 		DC8EB4AF25CB117000FD7BB1 /* nameSelectListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8EB4AE25CB117000FD7BB1 /* nameSelectListPage.swift */; };
 		DC8EB4BF25CB17B300FD7BB1 /* PuzzleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8EB4BD25CB17B300FD7BB1 /* PuzzleViewController.swift */; };
@@ -29,9 +50,31 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3441E8BE25D2903600CFF625 /* VowelPages.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VowelPages.storyboard; sourceTree = "<group>"; };
-		3441E8CB25D2931200CFF625 /* vowelMainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vowelMainPage.swift; sourceTree = "<group>"; };
-		3441E8D125D2BCD900CFF625 /* ButtomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtomViewController.swift; sourceTree = "<group>"; };
+		34D9818C25C54B8800AD992F /* VowelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VowelViewController.swift; sourceTree = "<group>"; };
+		34D9819525C68D0B00AD992F /* VowelBlackAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VowelBlackAViewController.swift; sourceTree = "<group>"; };
+		34D9819825C68F5A00AD992F /* VowelGreenAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VowelGreenAViewController.swift; sourceTree = "<group>"; };
+		34D9819B25C68F7A00AD992F /* VowelBlackEViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VowelBlackEViewController.swift; sourceTree = "<group>"; };
+		34D9819E25C68F8C00AD992F /* VowelBlackIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VowelBlackIViewController.swift; sourceTree = "<group>"; };
+		34D981A125C68FA100AD992F /* VowelGreenIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VowelGreenIViewController.swift; sourceTree = "<group>"; };
+		34D981A425C68FB200AD992F /* VowelBlackOViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VowelBlackOViewController.swift; sourceTree = "<group>"; };
+		34D981A725C68FCF00AD992F /* VowelBlackUViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VowelBlackUViewController.swift; sourceTree = "<group>"; };
+		34D981AA25C6A7B600AD992F /* VowelQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VowelQuizViewController.swift; sourceTree = "<group>"; };
+		98358CE225D6A6C70092C8FF /* BeginningSoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeginningSoundsViewController.swift; sourceTree = "<group>"; };
+		98358CE325D6A6C70092C8FF /* BeginningSoundsThreeButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeginningSoundsThreeButtonViewController.swift; sourceTree = "<group>"; };
+		98358CE425D6A6C70092C8FF /* BeginningSoundsOneButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeginningSoundsOneButtonViewController.swift; sourceTree = "<group>"; };
+		98358CE525D6A6C70092C8FF /* ThreeButtonLevelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreeButtonLevelViewController.swift; sourceTree = "<group>"; };
+		98358CE625D6A6C70092C8FF /* BeginningSoundsFourButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeginningSoundsFourButtonViewController.swift; sourceTree = "<group>"; };
+		98358CE725D6A6C70092C8FF /* BeginningSoundsQuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeginningSoundsQuizViewController.swift; sourceTree = "<group>"; };
+		98358CE825D6A6C70092C8FF /* BeginningSoundsTwoButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeginningSoundsTwoButtonViewController.swift; sourceTree = "<group>"; };
+		98358CE925D6A6C70092C8FF /* OneButtonLevelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneButtonLevelViewController.swift; sourceTree = "<group>"; };
+		98358CEA25D6A6C70092C8FF /* BeginningSounds.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BeginningSounds.storyboard; sourceTree = "<group>"; };
+		98358CEB25D6A6C70092C8FF /* FourButtonLevelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourButtonLevelViewController.swift; sourceTree = "<group>"; };
+		98358CEC25D6A6C70092C8FF /* TwoButtonLevelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoButtonLevelViewController.swift; sourceTree = "<group>"; };
+		C05D1AA225D26B3E00A30442 /* EndingSoundsPages.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EndingSoundsPages.storyboard; sourceTree = "<group>"; };
+		C0B508DC25D676550073B187 /* EndingSounds1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndingSounds1.swift; sourceTree = "<group>"; };
+		C0B508DF25D676630073B187 /* EndingSounds2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndingSounds2.swift; sourceTree = "<group>"; };
+		C0B508E225D676720073B187 /* EndingSounds3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndingSounds3.swift; sourceTree = "<group>"; };
+		C0B508E525D676820073B187 /* EndingSounds4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndingSounds4.swift; sourceTree = "<group>"; };
 		C0BA8549256C6485000EBAEC /* Kindergarten Literacy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kindergarten Literacy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0BA854C256C6485000EBAEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0BA854E256C6485000EBAEC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,7 +84,6 @@
 		C0BA8558256C6487000EBAEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0BA855A256C6487000EBAEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0BA8566256CA9ED000EBAEC /* letterMainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = letterMainPage.swift; sourceTree = "<group>"; };
-		C0BA8569256CAA93000EBAEC /* BeginningSoundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginningSoundsViewController.swift; sourceTree = "<group>"; };
 		C0BA856E256CAAB5000EBAEC /* EndingSoundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndingSoundsViewController.swift; sourceTree = "<group>"; };
 		DC8EB4AE25CB117000FD7BB1 /* nameSelectListPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nameSelectListPage.swift; sourceTree = "<group>"; };
 		DC8EB4BD25CB17B300FD7BB1 /* PuzzleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PuzzleViewController.swift; sourceTree = "<group>"; };
@@ -63,14 +105,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3441E8BD25D28FFE00CFF625 /* Vowel Page */ = {
+		98358CE125D6A6C70092C8FF /* Beginning Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				3441E8BE25D2903600CFF625 /* VowelPages.storyboard */,
-				3441E8CB25D2931200CFF625 /* vowelMainPage.swift */,
-				3441E8D125D2BCD900CFF625 /* ButtomViewController.swift */,
+				98358CE225D6A6C70092C8FF /* BeginningSoundsViewController.swift */,
+				98358CE325D6A6C70092C8FF /* BeginningSoundsThreeButtonViewController.swift */,
+				98358CE425D6A6C70092C8FF /* BeginningSoundsOneButtonViewController.swift */,
+				98358CE525D6A6C70092C8FF /* ThreeButtonLevelViewController.swift */,
+				98358CE625D6A6C70092C8FF /* BeginningSoundsFourButtonViewController.swift */,
+				98358CE725D6A6C70092C8FF /* BeginningSoundsQuizViewController.swift */,
+				98358CE825D6A6C70092C8FF /* BeginningSoundsTwoButtonViewController.swift */,
+				98358CE925D6A6C70092C8FF /* OneButtonLevelViewController.swift */,
+				98358CEA25D6A6C70092C8FF /* BeginningSounds.storyboard */,
+				98358CEB25D6A6C70092C8FF /* FourButtonLevelViewController.swift */,
+				98358CEC25D6A6C70092C8FF /* TwoButtonLevelViewController.swift */,
 			);
-			path = "Vowel Page";
+			path = "Beginning Sounds";
+			sourceTree = "<group>";
+		};
+		C05D1AA125D26B0D00A30442 /* Ending Sounds Page */ = {
+			isa = PBXGroup;
+			children = (
+				C05D1AA225D26B3E00A30442 /* EndingSoundsPages.storyboard */,
+				C0BA856E256CAAB5000EBAEC /* EndingSoundsViewController.swift */,
+				C0B508DC25D676550073B187 /* EndingSounds1.swift */,
+				C0B508DF25D676630073B187 /* EndingSounds2.swift */,
+				C0B508E225D676720073B187 /* EndingSounds3.swift */,
+				C0B508E525D676820073B187 /* EndingSounds4.swift */,
+			);
+			path = "Ending Sounds Page";
 			sourceTree = "<group>";
 		};
 		C0BA8540256C6485000EBAEC = {
@@ -92,7 +155,7 @@
 		C0BA854B256C6485000EBAEC /* Kindergarten Literacy */ = {
 			isa = PBXGroup;
 			children = (
-				3441E8BD25D28FFE00CFF625 /* Vowel Page */,
+				98358CE125D6A6C70092C8FF /* Beginning Sounds */,
 				C0BA854C256C6485000EBAEC /* AppDelegate.swift */,
 				C0BA854E256C6485000EBAEC /* SceneDelegate.swift */,
 				C0BA855A256C6487000EBAEC /* Info.plist */,
@@ -100,10 +163,18 @@
 				C0BA8557256C6487000EBAEC /* LaunchScreen.storyboard */,
 				C0BA8552256C6485000EBAEC /* Main.storyboard */,
 				C0BA8550256C6485000EBAEC /* ViewController.swift */,
-				C0BA8569256CAA93000EBAEC /* BeginningSoundsViewController.swift */,
-				C0BA856E256CAAB5000EBAEC /* EndingSoundsViewController.swift */,
 				DC8EB4BE25CB17B300FD7BB1 /* CoinViewController.swift */,
 				DC8EB4BD25CB17B300FD7BB1 /* PuzzleViewController.swift */,
+				34D9819525C68D0B00AD992F /* VowelBlackAViewController.swift */,
+				34D9819B25C68F7A00AD992F /* VowelBlackEViewController.swift */,
+				34D9819E25C68F8C00AD992F /* VowelBlackIViewController.swift */,
+				34D981A425C68FB200AD992F /* VowelBlackOViewController.swift */,
+				34D981A725C68FCF00AD992F /* VowelBlackUViewController.swift */,
+				34D9819825C68F5A00AD992F /* VowelGreenAViewController.swift */,
+				34D981A125C68FA100AD992F /* VowelGreenIViewController.swift */,
+				34D981AA25C6A7B600AD992F /* VowelQuizViewController.swift */,
+				34D9818C25C54B8800AD992F /* VowelViewController.swift */,
+				C05D1AA125D26B0D00A30442 /* Ending Sounds Page */,
 				DC8EB4B125CB146300FD7BB1 /* Letter Page */,
 			);
 			path = "Kindergarten Literacy";
@@ -181,9 +252,10 @@
 			files = (
 				C0BA8559256C6487000EBAEC /* LaunchScreen.storyboard in Resources */,
 				DCD5CA3625CECD110095B416 /* LetterPages.storyboard in Resources */,
+				98358CF525D6A6C70092C8FF /* BeginningSounds.storyboard in Resources */,
 				C0BA8556256C6487000EBAEC /* Assets.xcassets in Resources */,
+				C05D1AA325D26B3E00A30442 /* EndingSoundsPages.storyboard in Resources */,
 				C0BA8554256C6485000EBAEC /* Main.storyboard in Resources */,
-				3441E8BF25D2903600CFF625 /* VowelPages.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,20 +266,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98358CEF25D6A6C70092C8FF /* BeginningSoundsOneButtonViewController.swift in Sources */,
+				34D9819925C68F5A00AD992F /* VowelGreenAViewController.swift in Sources */,
+				98358CF025D6A6C70092C8FF /* ThreeButtonLevelViewController.swift in Sources */,
+				98358CF225D6A6C70092C8FF /* BeginningSoundsQuizViewController.swift in Sources */,
 				DC8EB4AF25CB117000FD7BB1 /* nameSelectListPage.swift in Sources */,
 				DC8EB4C825CB1B1200FD7BB1 /* alphabetLearnPage.swift in Sources */,
+				34D981A525C68FB200AD992F /* VowelBlackOViewController.swift in Sources */,
 				DC8EB4CB25CB1B7900FD7BB1 /* phonemeLearnPage.swift in Sources */,
 				DC8EB4C025CB17B300FD7BB1 /* CoinViewController.swift in Sources */,
+				34D9819F25C68F8C00AD992F /* VowelBlackIViewController.swift in Sources */,
+				98358CF325D6A6C70092C8FF /* BeginningSoundsTwoButtonViewController.swift in Sources */,
+				98358CED25D6A6C70092C8FF /* BeginningSoundsViewController.swift in Sources */,
 				C0BA856F256CAAB5000EBAEC /* EndingSoundsViewController.swift in Sources */,
+				34D981AB25C6A7B600AD992F /* VowelQuizViewController.swift in Sources */,
+				34D9819625C68D0B00AD992F /* VowelBlackAViewController.swift in Sources */,
 				DC8EB4BF25CB17B300FD7BB1 /* PuzzleViewController.swift in Sources */,
+				34D9819C25C68F7A00AD992F /* VowelBlackEViewController.swift in Sources */,
+				98358CF125D6A6C70092C8FF /* BeginningSoundsFourButtonViewController.swift in Sources */,
+				98358CF725D6A6C70092C8FF /* TwoButtonLevelViewController.swift in Sources */,
 				C0BA8567256CA9ED000EBAEC /* letterMainPage.swift in Sources */,
-				3441E8D225D2BCD900CFF625 /* ButtomViewController.swift in Sources */,
+				98358CF625D6A6C70092C8FF /* FourButtonLevelViewController.swift in Sources */,
+				34D981A825C68FCF00AD992F /* VowelBlackUViewController.swift in Sources */,
+				98358CEE25D6A6C70092C8FF /* BeginningSoundsThreeButtonViewController.swift in Sources */,
+				34D9818D25C54B8800AD992F /* VowelViewController.swift in Sources */,
+				98358CF425D6A6C70092C8FF /* OneButtonLevelViewController.swift in Sources */,
 				C0BA8551256C6485000EBAEC /* ViewController.swift in Sources */,
 				DC8EB4C525CB1A7B00FD7BB1 /* soundSelectListPage.swift in Sources */,
+				C0B508E325D676720073B187 /* EndingSounds3.swift in Sources */,
+				34D981A225C68FA100AD992F /* VowelGreenIViewController.swift in Sources */,
+				C0B508E625D676820073B187 /* EndingSounds4.swift in Sources */,
+				C0B508DD25D676550073B187 /* EndingSounds1.swift in Sources */,
 				C0BA854D256C6485000EBAEC /* AppDelegate.swift in Sources */,
-				C0BA856A256CAA93000EBAEC /* BeginningSoundsViewController.swift in Sources */,
 				C0BA854F256C6485000EBAEC /* SceneDelegate.swift in Sources */,
-				3441E8CC25D2931200CFF625 /* vowelMainPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
