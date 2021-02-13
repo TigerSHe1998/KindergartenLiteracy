@@ -19,7 +19,6 @@ class VowelLetterViewController: UIViewController {
     @IBAction func RealVowelLetter(_ sender: Any) {
         let vc = storyboard?.instantiateViewController(identifier: "real_vowel_letter_vc") as! RealVowelViewController
         vc.desiredLabelOne = (sender as! UIButton).titleLabel!.text!
-        vc.desiredWordOne = 
         present(vc, animated: true)
     }
     

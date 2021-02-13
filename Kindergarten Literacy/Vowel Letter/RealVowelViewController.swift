@@ -11,13 +11,13 @@ import UIKit
 
 class RealVowelViewController: UIViewController {
     
-    var array = [["a", "a1", "a2", "a3"],
-                 ["a ", "a4", "a5", "a6"],
-                 ["e", "e1", "e2", "e3"],
-                 ["i", "i1", "i2", "i3"],
-                 ["i ", "i4", "i5", "i6"],
-                 ["o", "o1", "o2", "o3"],
-                 ["u", "u1", "u2", "u3"]]
+    var array = [["a", "bat", "cat", "ax"],
+                 ["a ", "ball", "fall", "swan"],
+                 ["e", "elf", "bed", "net"],
+                 ["i", "mittens", "hit", "fish"],
+                 ["i ", "taxi", "yeti", "skis"],
+                 ["o", "fox", "pot", "hot"],
+                 ["u", "bug", "bus", "cut"]]
     
     /*
     
