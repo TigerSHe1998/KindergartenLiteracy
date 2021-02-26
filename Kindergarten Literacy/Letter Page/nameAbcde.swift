@@ -6,12 +6,13 @@
 //
 
 import UIKit
+import AVFoundation
 
 class nameAbcde: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        playIntroMessage()
         // Do any additional setup after loading the view.
     }
     
@@ -28,9 +29,8 @@ class nameAbcde: UIViewController {
         self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func puzzleButtonTapped(_ sender: Any) {
-        let vc = mainStoryBoard.instantiateViewController(identifier: "puzzle_vc")
-        present(vc, animated: true)
+    @IBAction func replayButtonTapped(_ sender: Any) {
+        playIntroMessage()
     }
     
     @IBAction func coinButtonTapped(_ sender: Any) {
@@ -39,7 +39,20 @@ class nameAbcde: UIViewController {
     }
     
     
-
+    //play sound
+    var audioPlayer: AVAudioPlayer?
+    
+    func playIntroMessage() {
+        let pathToSound = Bundle.main.path(forResource: "00_Button_Audio_Win_A_Green_Ball_(Alphabet_Letters)", ofType: "mp3")!
+        let url = URL(fileURLWithPath: pathToSound)
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: url)
+            audioPlayer?.play()
+        } catch {
+            //bruh
+        }
+    }
+    
     /*
     // MARK: - Navigation
 

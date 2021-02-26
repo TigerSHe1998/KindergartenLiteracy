@@ -261,6 +261,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ly-F0-2oX" userLabel="coin">
                                         <rect key="frame" x="0.0" y="210" width="56" height="56"/>
                                         <state key="normal" image="repeat"/>
+                                        <connections>
+                                            <action selector="replayButtonTapped:" destination="DSc-dU-ctE" eventType="touchUpInside" id="cuT-zN-Qya"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uHV-wh-MBg" userLabel="puzzle">
                                         <rect key="frame" x="0.0" y="280" width="56" height="56"/>
@@ -580,6 +583,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Itr-S6-tPu" userLabel="coin">
                                         <rect key="frame" x="0.0" y="210" width="56" height="56"/>
                                         <state key="normal" image="repeat"/>
+                                        <connections>
+                                            <action selector="replayButtonTapped:" destination="Uee-nB-Czd" eventType="touchUpInside" id="Uqg-yb-qv5"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arH-bO-9md" userLabel="puzzle">
                                         <rect key="frame" x="0.0" y="280" width="56" height="56"/>
@@ -896,6 +902,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9aq-K4-ZkS" userLabel="coin">
                                         <rect key="frame" x="0.0" y="210" width="56" height="56"/>
                                         <state key="normal" image="repeat"/>
+                                        <connections>
+                                            <action selector="replayButtonTapped:" destination="Vfx-Ra-4gB" eventType="touchUpInside" id="Fbh-7a-2YU"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jmI-02-K75" userLabel="puzzle">
                                         <rect key="frame" x="0.0" y="280" width="56" height="56"/>
@@ -1212,6 +1221,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G2k-1f-Lpu" userLabel="coin">
                                         <rect key="frame" x="0.0" y="210" width="56" height="56"/>
                                         <state key="normal" image="repeat"/>
+                                        <connections>
+                                            <action selector="replayButtonTapped:" destination="nrq-vR-jIr" eventType="touchUpInside" id="WGc-97-Fnh"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NGd-Kw-ipP" userLabel="puzzle">
                                         <rect key="frame" x="0.0" y="280" width="56" height="56"/>
