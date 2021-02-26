@@ -53,6 +53,18 @@ class nameBmrasCap: UIViewController {
         }
     }
 
+    
+    //main button function to learn page
+    @IBAction func toAlphabetLearnPage(_ sender: Any) {
+        let vc = letterStoryBoard.instantiateViewController(identifier: "alphabetlearn_vc") as! alphabetLearn
+        vc.passedInLetter = (sender as! UIButton).titleLabel!.text!
+        vc.passedInArrayID = 1 // 1 for bmras cap letter array
+        present(vc, animated: true)
+    }
+    
+    
+    
+    
     /*
     // MARK: - Navigation
 

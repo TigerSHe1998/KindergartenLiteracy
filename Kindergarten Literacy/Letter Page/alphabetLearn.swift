@@ -76,7 +76,7 @@ class alphabetLearn: UIViewController {
         playLetterAudio(letter: displayButton.currentTitle!)
     }
     
-    //audio file pulling
+    //find correspond audio file and play audio
     func playLetterAudio(letter: String) {
         switch letter {
         case "a","A":

@@ -274,12 +274,12 @@
 			children = (
 				DC65327425E96ADB005A4320 /* Letter Page Sounds */,
 				DCD5CA3525CECD110095B416 /* LetterPages.storyboard */,
-				DC65326E25E95CCE005A4320 /* nameAbcdeCap.swift */,
+				C0BA8566256CA9ED000EBAEC /* letterMainPage.swift */,
 				DC65327125E95E97005A4320 /* alphabetLearn.swift */,
+				DC65326125E9266F005A4320 /* nameBmras.swift */,
 				DC65326825E9588F005A4320 /* nameBmrasCap.swift */,
 				DC65326B25E95AB5005A4320 /* nameAbcde.swift */,
-				DC65326125E9266F005A4320 /* nameBmras.swift */,
-				C0BA8566256CA9ED000EBAEC /* letterMainPage.swift */,
+				DC65326E25E95CCE005A4320 /* nameAbcdeCap.swift */,
 			);
 			path = "Letter Page";
 			sourceTree = "<group>";
