@@ -44,9 +44,9 @@ class ViewController: UIViewController {
         present(vc, animated: true)
     }
     
-    
+    let endingSoundsStoryBoard:UIStoryboard = UIStoryboard(name: "EndingSoundsPages", bundle:nil)
     @IBAction func endingSoundsButtonTapped(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(identifier: "ending_sounds_vc") as! EndingSoundsViewController
+        let vc = endingSoundsStoryBoard.instantiateViewController(identifier: "ending_sounds_vc")
         present(vc, animated: true)
     }
     

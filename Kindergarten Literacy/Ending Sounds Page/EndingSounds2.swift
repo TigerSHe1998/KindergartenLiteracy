@@ -1,13 +1,13 @@
 //
-//  EndingSoundsViewController.swift
+//  EndingSounds2.swift
 //  Kindergarten Literacy
 //
-//  Created by Bingqing Xu on 11/23/20.
+//  Created by Bingqing Xu on 2/12/21.
 //
 
 import UIKit
 
-class EndingSoundsViewController: UIViewController {
+class EndingSounds2: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,31 +18,6 @@ class EndingSoundsViewController: UIViewController {
     // reference to different storyboards
     let endingSoundsStoryBoard:UIStoryboard = UIStoryboard(name: "EndingSoundsPages", bundle:nil)
     let mainStoryBoard:UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-    
-    
-    @IBAction func endingSoundsOneButtonTapped(_ sender: Any) {
-        let vc = endingSoundsStoryBoard.instantiateViewController(identifier: "ending_sounds1_vc")
-        present(vc, animated: true)
-    }
-    
-    
-    @IBAction func endingSoundsTwoButtonTapped(_ sender: Any) {
-        let vc = endingSoundsStoryBoard.instantiateViewController(identifier: "ending_sounds2_vc")
-        present(vc, animated: true)
-    }
-    
-    
-    @IBAction func endingSoundsThreeButtonTapped(_ sender: Any) {
-        let vc = endingSoundsStoryBoard.instantiateViewController(identifier: "ending_sounds3_vc")
-        present(vc, animated: true)
-    }
-    
-    
-    @IBAction func endingSoundsFourButtonTapped(_ sender: Any) {
-        let vc = endingSoundsStoryBoard.instantiateViewController(identifier: "ending_sounds4_vc")
-        present(vc, animated: true)
-    }
-    
     
     // functions for sidebar
     @IBAction func backButtonTapped(_ sender: Any) {
@@ -63,7 +38,7 @@ class EndingSoundsViewController: UIViewController {
         present(vc, animated: true)
     }
     
-    
+
     /*
     // MARK: - Navigation
 
