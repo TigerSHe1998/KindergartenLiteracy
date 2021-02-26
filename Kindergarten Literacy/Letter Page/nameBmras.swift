@@ -1,13 +1,13 @@
 //
-//  nameSelectListPage.swift
+//  nameBmras.swift
 //  Kindergarten Literacy
 //
-//  Created by TigerSHe on 2021/2/4.
+//  Created by TigerSHe on 2021/2/26.
 //
 
 import UIKit
 
-class nameSelectListPage: UIViewController {
+class nameBmras: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +38,7 @@ class nameSelectListPage: UIViewController {
         present(vc, animated: true)
     }
     
-
+    
     /*
     // MARK: - Navigation
 

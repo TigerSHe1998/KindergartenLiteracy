@@ -39,9 +39,9 @@ class letterMainPage: UIViewController {
         present(vc, animated: true)
     }
     
-    // code for main buttons (draft) (need to pass arguments)
-    @IBAction func toNameSelectListPage(_ sender: Any) {
-        let vc = letterStoryBoard.instantiateViewController(identifier: "nameSelectList_vc")
+    // code for main level select buttons
+    @IBAction func toNameBmras(_ sender: Any) {
+        let vc = letterStoryBoard.instantiateViewController(identifier: "namebmras_vc")
         present(vc, animated: true)
     }
     
