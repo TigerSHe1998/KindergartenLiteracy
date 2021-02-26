@@ -68,6 +68,7 @@
 		DC6532AA25E97D7E005A4320 /* alphabetSound_M.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DC65329025E97D7E005A4320 /* alphabetSound_M.mp3 */; };
 		DC6532AB25E97D7E005A4320 /* alphabetSound_Z.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DC65329125E97D7E005A4320 /* alphabetSound_Z.mp3 */; };
 		DC6532AC25E97D7E005A4320 /* alphabetSound_L.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DC65329225E97D7E005A4320 /* alphabetSound_L.mp3 */; };
+		DC6532B025E98652005A4320 /* 00alphabet_letters.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DC6532AF25E98652005A4320 /* 00alphabet_letters.mp3 */; };
 		DC8EB4BF25CB17B300FD7BB1 /* PuzzleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8EB4BD25CB17B300FD7BB1 /* PuzzleViewController.swift */; };
 		DC8EB4C025CB17B300FD7BB1 /* CoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8EB4BE25CB17B300FD7BB1 /* CoinViewController.swift */; };
 		DCD5CA3625CECD110095B416 /* LetterPages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCD5CA3525CECD110095B416 /* LetterPages.storyboard */; };
@@ -137,6 +138,7 @@
 		DC65329025E97D7E005A4320 /* alphabetSound_M.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alphabetSound_M.mp3; sourceTree = "<group>"; };
 		DC65329125E97D7E005A4320 /* alphabetSound_Z.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alphabetSound_Z.mp3; sourceTree = "<group>"; };
 		DC65329225E97D7E005A4320 /* alphabetSound_L.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alphabetSound_L.mp3; sourceTree = "<group>"; };
+		DC6532AF25E98652005A4320 /* 00alphabet_letters.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 00alphabet_letters.mp3; sourceTree = "<group>"; };
 		DC8EB4BD25CB17B300FD7BB1 /* PuzzleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PuzzleViewController.swift; sourceTree = "<group>"; };
 		DC8EB4BE25CB17B300FD7BB1 /* CoinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinViewController.swift; sourceTree = "<group>"; };
 		DCD5CA3525CECD110095B416 /* LetterPages.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LetterPages.storyboard; sourceTree = "<group>"; };
@@ -229,6 +231,7 @@
 			children = (
 				DC65327825E97D7E005A4320 /* Alphabet Letters - audio */,
 				DC65327525E96C93005A4320 /* 00_Button_Audio_Win_A_Green_Ball_(Alphabet_Letters).mp3 */,
+				DC6532AF25E98652005A4320 /* 00alphabet_letters.mp3 */,
 			);
 			path = "Letter Page Sounds";
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 				DCD5CA3625CECD110095B416 /* LetterPages.storyboard in Resources */,
 				98358CF525D6A6C70092C8FF /* BeginningSounds.storyboard in Resources */,
 				DC65327625E96C93005A4320 /* 00_Button_Audio_Win_A_Green_Ball_(Alphabet_Letters).mp3 in Resources */,
+				DC6532B025E98652005A4320 /* 00alphabet_letters.mp3 in Resources */,
 				DC65329325E97D7E005A4320 /* alphabetSound_A.mp3 in Resources */,
 				DC6532A625E97D7E005A4320 /* alphabetSound_N.mp3 in Resources */,
 				DC6532A125E97D7E005A4320 /* alphabetSound_R.mp3 in Resources */,

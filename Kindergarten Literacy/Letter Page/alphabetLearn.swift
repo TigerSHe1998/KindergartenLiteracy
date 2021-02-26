@@ -13,9 +13,9 @@ class alphabetLearn: UIViewController {
     //content arrays
     //numbered as 0, 1, 2, 3 in order
     var bmrasArray = ["b", "m", "r", "a", "s", "t", "g", "n", "i", "p", "c", "h", "f", "o", "d", "l", "k", "u", "j", "w", "e", "y", "z", "v", "q", "x"]
-    var bmrasCapArray = ["B"]
-    var abcdeArray = ["a"]
-    var abcdeCapArray = ["A"]
+    var bmrasCapArray = ["B", "M", "R", "A", "S", "T", "G", "N", "I", "P", "C", "H", "F", "O", "D", "L", "K", "U", "J", "W", "E", "Y", "Z", "V", "Q", "X"]
+    var abcdeArray = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+    var abcdeCapArray = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
     
     //passed in argument from level select page
     var passedInLetter: String!
@@ -25,14 +25,14 @@ class alphabetLearn: UIViewController {
     var currentArray: Array<String>!
     @IBOutlet var displayButton: UIButton!;
     
-    //audio
+    //audio player from imported library
     var audioPlayer: AVAudioPlayer?
     
     // reference to different storyboards
     let letterStoryBoard:UIStoryboard = UIStoryboard(name: "LetterPages", bundle:nil)
     let mainStoryBoard:UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
     
-    //startup logic, assign content arrays + display text
+    //startup logic, assign content arrays + display text + play first audio
     override func viewDidLoad() {
         super.viewDidLoad()
         displayButton.setTitle(passedInLetter, for: .normal)
@@ -76,6 +76,7 @@ class alphabetLearn: UIViewController {
         playLetterAudio(letter: displayButton.currentTitle!)
     }
     
+    //audio file pulling
     func playLetterAudio(letter: String) {
         switch letter {
         case "a","A":
@@ -275,8 +276,7 @@ class alphabetLearn: UIViewController {
     }
     
     @IBAction func replayButtonTapped(_ sender: Any) {
-        let vc = mainStoryBoard.instantiateViewController(identifier: "puzzle_vc")
-        present(vc, animated: true)
+        playLetterAudio(letter: displayButton.currentTitle!)
     }
     
     @IBAction func coinButtonTapped(_ sender: Any) {
