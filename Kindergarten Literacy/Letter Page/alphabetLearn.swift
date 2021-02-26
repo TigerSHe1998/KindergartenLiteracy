@@ -92,6 +92,174 @@ class alphabetLearn: UIViewController {
                 audioPlayer = try AVAudioPlayer(contentsOf: url)
                 audioPlayer?.play()
             } catch {}
+        case "c","C":
+            let pathToSound = Bundle.main.path(forResource: "alphabetSound_C", ofType: "mp3")!
+            let url = URL(fileURLWithPath: pathToSound)
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOf: url)
+                audioPlayer?.play()
+            } catch {}
+        case "d","D":
+            let pathToSound = Bundle.main.path(forResource: "alphabetSound_D", ofType: "mp3")!
+            let url = URL(fileURLWithPath: pathToSound)
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOf: url)
+                audioPlayer?.play()
+            } catch {}
+        case "e","E":
+            let pathToSound = Bundle.main.path(forResource: "alphabetSound_E", ofType: "mp3")!
+            let url = URL(fileURLWithPath: pathToSound)
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOf: url)
+                audioPlayer?.play()
+            } catch {}
+        case "f","F":
+            let pathToSound = Bundle.main.path(forResource: "alphabetSound_F", ofType: "mp3")!
+            let url = URL(fileURLWithPath: pathToSound)
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOf: url)
+                audioPlayer?.play()
+            } catch {}
+        case "g","G":
+            let pathToSound = Bundle.main.path(forResource: "alphabetSound_G", ofType: "mp3")!
+            let url = URL(fileURLWithPath: pathToSound)
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOf: url)
+                audioPlayer?.play()
+            } catch {}
+        case "h","H":
+            let pathToSound = Bundle.main.path(forResource: "alphabetSound_H", ofType: "mp3")!
+            let url = URL(fileURLWithPath: pathToSound)
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOf: url)
+                audioPlayer?.play()
+            } catch {}
+        case "i","I":
+            let pathToSound = Bundle.main.path(forResource: "alphabetSound_I", ofType: "mp3")!
+            let url = URL(fileURLWithPath: pathToSound)
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOf: url)
+                audioPlayer?.play()
+            } catch {}
+        case "j","J":
+            let pathToSound = Bundle.main.path(forResource: "alphabetSound_J", ofType: "mp3")!
+            let url = URL(fileURLWithPath: pathToSound)
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOf: url)
+                audioPlayer?.play()
+            } catch {}
+        case "k","K":
+            let pathToSound = Bundle.main.path(forResource: "alphabetSound_K", ofType: "mp3")!
+            let url = URL(fileURLWithPath: pathToSound)
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOf: url)
+                audioPlayer?.play()
+            } catch {}
+        case "l","L":
+            let pathToSound = Bundle.main.path(forResource: "alphabetSound_L", ofType: "mp3")!
+            let url = URL(fileURLWithPath: pathToSound)
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOf: url)
+                audioPlayer?.play()
+            } catch {}
+        case "m","M":
+            let pathToSound = Bundle.main.path(forResource: "alphabetSound_M", ofType: "mp3")!
+            let url = URL(fileURLWithPath: pathToSound)
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOf: url)
+                audioPlayer?.play()
+            } catch {}
+        case "n","N":
+            let pathToSound = Bundle.main.path(forResource: "alphabetSound_N", ofType: "mp3")!
+            let url = URL(fileURLWithPath: pathToSound)
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOf: url)
+                audioPlayer?.play()
+            } catch {}
+        case "o","O":
+            let pathToSound = Bundle.main.path(forResource: "alphabetSound_O", ofType: "mp3")!
+            let url = URL(fileURLWithPath: pathToSound)
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOf: url)
+                audioPlayer?.play()
+            } catch {}
+        case "p","P":
+            let pathToSound = Bundle.main.path(forResource: "alphabetSound_P", ofType: "mp3")!
+            let url = URL(fileURLWithPath: pathToSound)
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOf: url)
+                audioPlayer?.play()
+            } catch {}
+        case "q","Q":
+            let pathToSound = Bundle.main.path(forResource: "alphabetSound_Q", ofType: "mp3")!
+            let url = URL(fileURLWithPath: pathToSound)
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOf: url)
+                audioPlayer?.play()
+            } catch {}
+        case "r","R":
+            let pathToSound = Bundle.main.path(forResource: "alphabetSound_R", ofType: "mp3")!
+            let url = URL(fileURLWithPath: pathToSound)
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOf: url)
+                audioPlayer?.play()
+            } catch {}
+        case "s","S":
+            let pathToSound = Bundle.main.path(forResource: "alphabetSound_S", ofType: "mp3")!
+            let url = URL(fileURLWithPath: pathToSound)
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOf: url)
+                audioPlayer?.play()
+            } catch {}
+        case "t","T":
+            let pathToSound = Bundle.main.path(forResource: "alphabetSound_T", ofType: "mp3")!
+            let url = URL(fileURLWithPath: pathToSound)
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOf: url)
+                audioPlayer?.play()
+            } catch {}
+        case "u","U":
+            let pathToSound = Bundle.main.path(forResource: "alphabetSound_U", ofType: "mp3")!
+            let url = URL(fileURLWithPath: pathToSound)
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOf: url)
+                audioPlayer?.play()
+            } catch {}
+        case "v","V":
+            let pathToSound = Bundle.main.path(forResource: "alphabetSound_V", ofType: "mp3")!
+            let url = URL(fileURLWithPath: pathToSound)
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOf: url)
+                audioPlayer?.play()
+            } catch {}
+        case "w","W":
+            let pathToSound = Bundle.main.path(forResource: "alphabetSound_W", ofType: "mp3")!
+            let url = URL(fileURLWithPath: pathToSound)
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOf: url)
+                audioPlayer?.play()
+            } catch {}
+        case "x","X":
+            let pathToSound = Bundle.main.path(forResource: "alphabetSound_X", ofType: "mp3")!
+            let url = URL(fileURLWithPath: pathToSound)
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOf: url)
+                audioPlayer?.play()
+            } catch {}
+        case "y","Y":
+            let pathToSound = Bundle.main.path(forResource: "alphabetSound_Y", ofType: "mp3")!
+            let url = URL(fileURLWithPath: pathToSound)
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOf: url)
+                audioPlayer?.play()
+            } catch {}
+        case "z","Z":
+            let pathToSound = Bundle.main.path(forResource: "alphabetSound_Z", ofType: "mp3")!
+            let url = URL(fileURLWithPath: pathToSound)
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOf: url)
+                audioPlayer?.play()
+            } catch {}
         default:
             break
         }
