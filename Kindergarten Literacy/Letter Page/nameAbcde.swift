@@ -1,13 +1,13 @@
 //
-//  nameBmras.swift
+//  nameAbcde.swift
 //  Kindergarten Literacy
 //
-//  Created by TigerSHe on 2021/2/26.
+//  Created by TigerSHe on 2021/2/27.
 //
 
 import UIKit
 
-class nameBmras: UIViewController {
+class nameAbcde: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,13 +39,7 @@ class nameBmras: UIViewController {
     }
     
     
-    //main buttons to learn page
-    @IBAction func toAlphabetLearnPage(_ sender: Any) {
-        let vc = letterStoryBoard.instantiateViewController(identifier: "alphabetlearn_vc")
-        present(vc, animated: true)
-    }
-    
-    
+
     /*
     // MARK: - Navigation
 

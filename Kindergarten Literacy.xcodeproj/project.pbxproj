@@ -37,6 +37,10 @@
 		C0BA8567256CA9ED000EBAEC /* letterMainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BA8566256CA9ED000EBAEC /* letterMainPage.swift */; };
 		C0BA856F256CAAB5000EBAEC /* EndingSoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BA856E256CAAB5000EBAEC /* EndingSoundsViewController.swift */; };
 		DC65326225E9266F005A4320 /* nameBmras.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC65326125E9266F005A4320 /* nameBmras.swift */; };
+		DC65326925E9588F005A4320 /* nameBmrasCap.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC65326825E9588F005A4320 /* nameBmrasCap.swift */; };
+		DC65326C25E95AB5005A4320 /* nameAbcde.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC65326B25E95AB5005A4320 /* nameAbcde.swift */; };
+		DC65326F25E95CCE005A4320 /* nameAbcdeCap.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC65326E25E95CCE005A4320 /* nameAbcdeCap.swift */; };
+		DC65327225E95E97005A4320 /* alphabetLearn.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC65327125E95E97005A4320 /* alphabetLearn.swift */; };
 		DC8EB4BF25CB17B300FD7BB1 /* PuzzleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8EB4BD25CB17B300FD7BB1 /* PuzzleViewController.swift */; };
 		DC8EB4C025CB17B300FD7BB1 /* CoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8EB4BE25CB17B300FD7BB1 /* CoinViewController.swift */; };
 		DCD5CA3625CECD110095B416 /* LetterPages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCD5CA3525CECD110095B416 /* LetterPages.storyboard */; };
@@ -75,6 +79,10 @@
 		C0BA8566256CA9ED000EBAEC /* letterMainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = letterMainPage.swift; sourceTree = "<group>"; };
 		C0BA856E256CAAB5000EBAEC /* EndingSoundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndingSoundsViewController.swift; sourceTree = "<group>"; };
 		DC65326125E9266F005A4320 /* nameBmras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nameBmras.swift; sourceTree = "<group>"; };
+		DC65326825E9588F005A4320 /* nameBmrasCap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nameBmrasCap.swift; sourceTree = "<group>"; };
+		DC65326B25E95AB5005A4320 /* nameAbcde.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nameAbcde.swift; sourceTree = "<group>"; };
+		DC65326E25E95CCE005A4320 /* nameAbcdeCap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nameAbcdeCap.swift; sourceTree = "<group>"; };
+		DC65327125E95E97005A4320 /* alphabetLearn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alphabetLearn.swift; sourceTree = "<group>"; };
 		DC8EB4BD25CB17B300FD7BB1 /* PuzzleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PuzzleViewController.swift; sourceTree = "<group>"; };
 		DC8EB4BE25CB17B300FD7BB1 /* CoinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinViewController.swift; sourceTree = "<group>"; };
 		DCD5CA3525CECD110095B416 /* LetterPages.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LetterPages.storyboard; sourceTree = "<group>"; };
@@ -166,6 +174,10 @@
 			isa = PBXGroup;
 			children = (
 				DCD5CA3525CECD110095B416 /* LetterPages.storyboard */,
+				DC65326E25E95CCE005A4320 /* nameAbcdeCap.swift */,
+				DC65327125E95E97005A4320 /* alphabetLearn.swift */,
+				DC65326825E9588F005A4320 /* nameBmrasCap.swift */,
+				DC65326B25E95AB5005A4320 /* nameAbcde.swift */,
 				DC65326125E9266F005A4320 /* nameBmras.swift */,
 				C0BA8566256CA9ED000EBAEC /* letterMainPage.swift */,
 			);
@@ -254,20 +266,24 @@
 				34D9819F25C68F8C00AD992F /* VowelBlackIViewController.swift in Sources */,
 				98358CF325D6A6C70092C8FF /* BeginningSoundsTwoButtonViewController.swift in Sources */,
 				98358CED25D6A6C70092C8FF /* BeginningSoundsViewController.swift in Sources */,
+				DC65327225E95E97005A4320 /* alphabetLearn.swift in Sources */,
 				C0BA856F256CAAB5000EBAEC /* EndingSoundsViewController.swift in Sources */,
 				34D981AB25C6A7B600AD992F /* VowelQuizViewController.swift in Sources */,
 				DC65326225E9266F005A4320 /* nameBmras.swift in Sources */,
 				34D9819625C68D0B00AD992F /* VowelBlackAViewController.swift in Sources */,
 				DC8EB4BF25CB17B300FD7BB1 /* PuzzleViewController.swift in Sources */,
 				34D9819C25C68F7A00AD992F /* VowelBlackEViewController.swift in Sources */,
+				DC65326F25E95CCE005A4320 /* nameAbcdeCap.swift in Sources */,
 				98358CF125D6A6C70092C8FF /* BeginningSoundsFourButtonViewController.swift in Sources */,
 				98358CF725D6A6C70092C8FF /* TwoButtonLevelViewController.swift in Sources */,
 				C0BA8567256CA9ED000EBAEC /* letterMainPage.swift in Sources */,
 				98358CF625D6A6C70092C8FF /* FourButtonLevelViewController.swift in Sources */,
+				DC65326925E9588F005A4320 /* nameBmrasCap.swift in Sources */,
 				34D981A825C68FCF00AD992F /* VowelBlackUViewController.swift in Sources */,
 				98358CEE25D6A6C70092C8FF /* BeginningSoundsThreeButtonViewController.swift in Sources */,
 				34D9818D25C54B8800AD992F /* VowelViewController.swift in Sources */,
 				98358CF425D6A6C70092C8FF /* OneButtonLevelViewController.swift in Sources */,
+				DC65326C25E95AB5005A4320 /* nameAbcde.swift in Sources */,
 				C0BA8551256C6485000EBAEC /* ViewController.swift in Sources */,
 				34D981A225C68FA100AD992F /* VowelGreenIViewController.swift in Sources */,
 				C0BA854D256C6485000EBAEC /* AppDelegate.swift in Sources */,

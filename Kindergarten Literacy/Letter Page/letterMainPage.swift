@@ -45,6 +45,21 @@ class letterMainPage: UIViewController {
         present(vc, animated: true)
     }
     
+    @IBAction func toNameBmrasCap(_ sender: Any) {
+        let vc = letterStoryBoard.instantiateViewController(identifier: "namebmrascap_vc")
+        present(vc, animated: true)
+    }
+    
+    @IBAction func toNameAbcde(_ sender: Any) {
+        let vc = letterStoryBoard.instantiateViewController(identifier: "nameabcde_vc")
+        present(vc, animated: true)
+    }
+    
+    @IBAction func toNameAbcdeCap(_ sender: Any) {
+        let vc = letterStoryBoard.instantiateViewController(identifier: "nameabcdecap_vc")
+        present(vc, animated: true)
+    }
+    
     @IBAction func toSoundSelectListPage(_ sender: Any) {
         let vc = letterStoryBoard.instantiateViewController(identifier: "nameSelectList_vc")
         present(vc, animated: true)
