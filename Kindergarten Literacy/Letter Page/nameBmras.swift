@@ -54,9 +54,11 @@ class nameBmras: UIViewController {
     }
     
     
-    //main buttons to learn page
+    //main button function to learn page
     @IBAction func toAlphabetLearnPage(_ sender: Any) {
-        let vc = letterStoryBoard.instantiateViewController(identifier: "alphabetlearn_vc")
+        let vc = letterStoryBoard.instantiateViewController(identifier: "alphabetlearn_vc") as! alphabetLearn
+        vc.passedInLetter = (sender as! UIButton).titleLabel!.text!
+        vc.passedInArrayID = 0 // 0 for bmras letter array
         present(vc, animated: true)
     }
     
