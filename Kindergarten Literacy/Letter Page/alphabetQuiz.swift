@@ -1,20 +1,21 @@
 //
-//  nameBmras.swift
+//  alphabetQuiz.swift
 //  Kindergarten Literacy
 //
-//  Created by TigerSHe on 2021/2/26.
+//  Created by TigerSHe on 2021/3/1.
 //
 
 import UIKit
 import AVFoundation
 
-class nameBmras: UIViewController {
+class alphabetQuiz: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        playIntroMessage()
+        playTempSound()
         // Do any additional setup after loading the view.
     }
+    
     
     // reference to different storyboards
     let letterStoryBoard:UIStoryboard = UIStoryboard(name: "LetterPages", bundle:nil)
@@ -30,7 +31,7 @@ class nameBmras: UIViewController {
     }
     
     @IBAction func replayButtonTapped(_ sender: Any) {
-        playIntroMessage()
+        //playIntroMessage()
     }
     
     @IBAction func coinButtonTapped(_ sender: Any) {
@@ -38,38 +39,18 @@ class nameBmras: UIViewController {
         present(vc, animated: true)
     }
     
-    @IBAction func quizButtonTapped(_ sender: Any) {
-        let vc = letterStoryBoard.instantiateViewController(identifier: "alphabetquiz_vc")
-        present(vc, animated: true)
-    }
-    
-    
-    //play sound
+    //play sound (temp)
     var audioPlayer: AVAudioPlayer?
     
-    func playIntroMessage() {
-        let pathToSound = Bundle.main.path(forResource: "00_Button_Audio_Win_A_Green_Ball_(Alphabet_Letters)", ofType: "mp3")!
+    func playTempSound() {
+        let pathToSound = Bundle.main.path(forResource: "alphabetSound_B", ofType: "mp3")!
         let url = URL(fileURLWithPath: pathToSound)
         do {
             audioPlayer = try AVAudioPlayer(contentsOf: url)
             audioPlayer?.play()
-        } catch {
-            //bruh
-        }
+        } catch {}
     }
-    
-    
-    //main button function to learn page
-    @IBAction func toAlphabetLearnPage(_ sender: Any) {
-        let vc = letterStoryBoard.instantiateViewController(identifier: "alphabetlearn_vc") as! alphabetLearn
-        vc.passedInLetter = (sender as! UIButton).titleLabel!.text!
-        vc.passedInArrayID = 0 // 0 for bmras letter array
-        present(vc, animated: true)
-    }
-    
-    
 
-    
     /*
     // MARK: - Navigation
 
