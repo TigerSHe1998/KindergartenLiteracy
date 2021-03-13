@@ -12,7 +12,7 @@
         <scene sceneID="jZL-yt-Td0">
             <objects>
                 <viewController storyboardIdentifier="letters_vc" id="mHA-37-G36" customClass="letterMainPage" customModule="Kindergarten_Literacy" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="BZ1-81-fUq">
+                    <view key="view" contentMode="scaleToFill" id="BZ1-81-fUq">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -67,23 +67,32 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" image="names_lowercase_bmras"/>
                                                 <connections>
-                                                    <action selector="toNameSelectListPage:" destination="mHA-37-G36" eventType="touchUpInside" id="5AE-L2-I0n"/>
+                                                    <action selector="toNameBmras:" destination="mHA-37-G36" eventType="touchUpInside" id="Cso-Za-6eB"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="f4y-FA-jrJ" userLabel="names_abcde">
                                                 <rect key="frame" x="0.0" y="68" width="208" height="52.5"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" image="names_lowercase_alphabetical"/>
+                                                <connections>
+                                                    <action selector="toNameAbcde:" destination="mHA-37-G36" eventType="touchUpInside" id="CPW-Mi-BqJ"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uB0-vS-m07" userLabel="names_BMRAS">
                                                 <rect key="frame" x="0.0" y="135.5" width="208" height="53"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" image="names_uppercase_bmras"/>
+                                                <connections>
+                                                    <action selector="toNameBmrasCap:" destination="mHA-37-G36" eventType="touchUpInside" id="2Up-Df-3gs"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fsw-qW-yNE" userLabel="names_ABCDE">
                                                 <rect key="frame" x="0.0" y="203.5" width="208" height="52.5"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" image="names_uppercase_alphabetical"/>
+                                                <connections>
+                                                    <action selector="toNameAbcdeCap:" destination="mHA-37-G36" eventType="touchUpInside" id="qNs-8S-Tq2"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -135,109 +144,1700 @@
             </objects>
             <point key="canvasLocation" x="-216.29464285714286" y="92.753623188405811"/>
         </scene>
-        <!--Name Select List Page-->
-        <scene sceneID="KIm-Aa-RQj">
+        <!--Alphabet Learn-->
+        <scene sceneID="sjV-sP-cF6">
             <objects>
-                <viewController storyboardIdentifier="nameSelectList_vc" id="DSc-dU-ctE" customClass="nameSelectListPage" customModule="Kindergarten_Literacy" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="U4W-0R-YXH">
+                <viewController storyboardIdentifier="alphabetlearn_vc" id="s8K-Da-xXG" customClass="alphabetLearn" customModule="Kindergarten_Literacy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EwF-Tz-AO6">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="Zof-0L-70V" userLabel="side_bar_stack">
-                                <rect key="frame" x="59" y="38" width="56" height="338"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="e7I-KY-08N" userLabel="side_bar_stack">
+                                <rect key="frame" x="59" y="39" width="56" height="336"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gxN-Hd-lXz" userLabel="back">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7M5-6Z-Dyh" userLabel="back">
                                         <rect key="frame" x="0.0" y="0.0" width="56" height="56"/>
                                         <state key="normal" image="back"/>
                                         <connections>
-                                            <action selector="backButtonTapped:" destination="DSc-dU-ctE" eventType="touchUpInside" id="tAN-1P-OnL"/>
+                                            <action selector="backButtonTapped:" destination="s8K-Da-xXG" eventType="touchUpInside" id="zT2-9q-HvN"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iOx-dX-kA5" userLabel="home">
-                                        <rect key="frame" x="0.0" y="94" width="56" height="56"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zej-Hj-FUV" userLabel="home">
+                                        <rect key="frame" x="0.0" y="70" width="56" height="56"/>
                                         <state key="normal" image="home"/>
                                         <connections>
-                                            <action selector="homeButtonTapped:" destination="DSc-dU-ctE" eventType="touchUpInside" id="ceY-JD-cfO"/>
+                                            <action selector="homeButtonTapped:" destination="s8K-Da-xXG" eventType="touchUpInside" id="7Y5-p2-zUh"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ly-F0-2oX" userLabel="coin">
-                                        <rect key="frame" x="0.0" y="188" width="56" height="56"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKi-YD-3ev" userLabel="quiz">
+                                        <rect key="frame" x="0.0" y="140" width="56" height="56"/>
+                                        <state key="normal" image="quiz"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TGF-61-ufU" userLabel="coin">
+                                        <rect key="frame" x="0.0" y="210" width="56" height="56"/>
+                                        <state key="normal" image="repeat"/>
+                                        <connections>
+                                            <action selector="replayButtonTapped:" destination="s8K-Da-xXG" eventType="touchUpInside" id="EbG-3O-dOB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l8S-r7-Cmu" userLabel="puzzle">
+                                        <rect key="frame" x="0.0" y="280" width="56" height="56"/>
                                         <state key="normal" image="bank"/>
                                         <connections>
-                                            <action selector="coinButtonTapped:" destination="DSc-dU-ctE" eventType="touchUpInside" id="dsh-l7-FhH"/>
+                                            <action selector="coinButtonTapped:" destination="s8K-Da-xXG" eventType="touchUpInside" id="38V-A9-Fep"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uHV-wh-MBg" userLabel="puzzle">
-                                        <rect key="frame" x="0.0" y="282" width="56" height="56"/>
-                                        <state key="normal" image="puzzle"/>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="lOX-JI-x8e" userLabel="letter_view_stack">
+                                <rect key="frame" x="263" y="138" width="450" height="138"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AW8-xH-l3f">
+                                        <rect key="frame" x="0.0" y="41" width="56" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="AW8-xH-l3f" secondAttribute="height" multiplier="1:1" id="l4y-G5-iXB"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="back"/>
                                         <connections>
-                                            <action selector="puzzleButtonTapped:" destination="DSc-dU-ctE" eventType="touchUpInside" id="PjG-rc-iSh"/>
+                                            <action selector="prevLetter:" destination="s8K-Da-xXG" eventType="touchUpInside" id="5hY-8P-JaR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qWS-71-w6b">
+                                        <rect key="frame" x="156" y="0.0" width="138" height="138"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="138" id="ZJW-D4-MRH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="105"/>
+                                        <state key="normal" title="E">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tapLetter:" destination="s8K-Da-xXG" eventType="touchUpInside" id="Z5f-ok-fJi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vdc-jp-IBL">
+                                        <rect key="frame" x="394" y="41" width="56" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Vdc-jp-IBL" secondAttribute="height" multiplier="1:1" id="tkk-91-aU7"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="forward"/>
+                                        <connections>
+                                            <action selector="nextLetter:" destination="s8K-Da-xXG" eventType="touchUpInside" id="elF-Dp-wSt"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="eQy-kc-XK2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lOX-JI-x8e" firstAttribute="centerY" secondItem="EwF-Tz-AO6" secondAttribute="centerY" id="KVf-tg-iKs"/>
+                            <constraint firstItem="e7I-KY-08N" firstAttribute="centerY" secondItem="EwF-Tz-AO6" secondAttribute="centerY" id="MIO-QT-CWs"/>
+                            <constraint firstItem="lOX-JI-x8e" firstAttribute="centerX" secondItem="EwF-Tz-AO6" secondAttribute="centerX" constant="40" id="Vrg-ys-TfA"/>
+                            <constraint firstItem="e7I-KY-08N" firstAttribute="leading" secondItem="eQy-kc-XK2" secondAttribute="leading" constant="15" id="lTt-no-q4H"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="displayButton" destination="qWS-71-w6b" id="PA7-JL-wF2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G5p-sW-VsS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="419" y="93"/>
+        </scene>
+        <!--Name Bmras-->
+        <scene sceneID="KIm-Aa-RQj">
+            <objects>
+                <viewController storyboardIdentifier="namebmras_vc" id="DSc-dU-ctE" customClass="nameBmras" customModule="Kindergarten_Literacy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U4W-0R-YXH">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="1600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="Zof-0L-70V" userLabel="side_bar_stack">
+                                <rect key="frame" x="59" y="632" width="56" height="336"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gxN-Hd-lXz" userLabel="back">
+                                        <rect key="frame" x="0.0" y="0.0" width="56" height="56"/>
+                                        <state key="normal" image="back"/>
+                                        <connections>
+                                            <action selector="backButtonTapped:" destination="DSc-dU-ctE" eventType="touchUpInside" id="DeN-t3-3dS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iOx-dX-kA5" userLabel="home">
+                                        <rect key="frame" x="0.0" y="70" width="56" height="56"/>
+                                        <state key="normal" image="home"/>
+                                        <connections>
+                                            <action selector="homeButtonTapped:" destination="DSc-dU-ctE" eventType="touchUpInside" id="TkI-9e-gSI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FYy-3K-5gg" userLabel="quiz">
+                                        <rect key="frame" x="0.0" y="140" width="56" height="56"/>
+                                        <state key="normal" image="quiz"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ly-F0-2oX" userLabel="coin">
+                                        <rect key="frame" x="0.0" y="210" width="56" height="56"/>
+                                        <state key="normal" image="repeat"/>
+                                        <connections>
+                                            <action selector="replayButtonTapped:" destination="DSc-dU-ctE" eventType="touchUpInside" id="p5d-8A-BqQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uHV-wh-MBg" userLabel="puzzle">
+                                        <rect key="frame" x="0.0" y="280" width="56" height="56"/>
+                                        <state key="normal" image="bank"/>
+                                        <connections>
+                                            <action selector="coinButtonTapped:" destination="DSc-dU-ctE" eventType="touchUpInside" id="Mfi-7b-NL0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="10K-OO-T2R">
+                                <rect key="frame" x="129" y="0.0" width="767" height="1600"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1JB-MI-yoL" userLabel="View1">
+                                        <rect key="frame" x="0.0" y="0.0" width="767" height="1600"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJQ-o8-yua">
+                                                <rect key="frame" x="480" y="20" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="r">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="DSc-dU-ctE" eventType="touchUpInside" id="zYZ-WD-3dW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FIB-fG-xT1">
+                                                <rect key="frame" x="0.0" y="20" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="b">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="DSc-dU-ctE" eventType="touchUpInside" id="Tgy-oJ-bwQ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rbL-Xl-gHk">
+                                                <rect key="frame" x="0.0" y="190" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="a">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="DSc-dU-ctE" eventType="touchUpInside" id="3Es-Cs-fLK"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lvk-9g-zsv">
+                                                <rect key="frame" x="480" y="190" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="t">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="DSc-dU-ctE" eventType="touchUpInside" id="gfX-h7-3EO"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XEr-dz-Zia">
+                                                <rect key="frame" x="0.0" y="360" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="g">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="DSc-dU-ctE" eventType="touchUpInside" id="OzU-bL-hdR"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X9r-Wi-J9p">
+                                                <rect key="frame" x="0.0" y="530" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="p">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="DSc-dU-ctE" eventType="touchUpInside" id="D6D-Tc-UpH"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ytS-1z-dDI">
+                                                <rect key="frame" x="0.0" y="700" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="f">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="DSc-dU-ctE" eventType="touchUpInside" id="gJb-sl-DiJ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xmP-II-EPn">
+                                                <rect key="frame" x="0.0" y="870" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="l">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="DSc-dU-ctE" eventType="touchUpInside" id="wp7-MN-mMs"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NFb-q8-M5X">
+                                                <rect key="frame" x="240" y="190" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="s">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="DSc-dU-ctE" eventType="touchUpInside" id="NUH-4z-2Ft"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3b3-uP-1wQ">
+                                                <rect key="frame" x="0.0" y="1040" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="j">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="DSc-dU-ctE" eventType="touchUpInside" id="PF8-eL-9C4"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vY5-WK-wiV">
+                                                <rect key="frame" x="240" y="360" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="n">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="DSc-dU-ctE" eventType="touchUpInside" id="2gf-K7-ZQh"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k8U-qi-Rg2">
+                                                <rect key="frame" x="480" y="360" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="i">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="DSc-dU-ctE" eventType="touchUpInside" id="mfk-Pp-gE3"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWs-CJ-KKJ">
+                                                <rect key="frame" x="240" y="530" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="c">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="DSc-dU-ctE" eventType="touchUpInside" id="xWT-of-Us6"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cu5-sc-pSu">
+                                                <rect key="frame" x="480" y="530" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="h">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="DSc-dU-ctE" eventType="touchUpInside" id="FPE-n1-aqF"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bc9-GB-FfD">
+                                                <rect key="frame" x="240" y="700" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="o">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="DSc-dU-ctE" eventType="touchUpInside" id="QVB-mW-hm3"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FmJ-n0-UKF">
+                                                <rect key="frame" x="480" y="700" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="d">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="DSc-dU-ctE" eventType="touchUpInside" id="sTz-pV-kVa"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kco-rs-ygr">
+                                                <rect key="frame" x="480" y="870" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="u">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="DSc-dU-ctE" eventType="touchUpInside" id="y6o-TR-KwM"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ax5-6y-tPy">
+                                                <rect key="frame" x="240" y="1040" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="w">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="DSc-dU-ctE" eventType="touchUpInside" id="OLc-0M-TPm"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bj-S1-fQn">
+                                                <rect key="frame" x="480" y="1040" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="e">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="DSc-dU-ctE" eventType="touchUpInside" id="iNX-lR-gNn"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="piD-9w-ILK">
+                                                <rect key="frame" x="240" y="20" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="m">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="DSc-dU-ctE" eventType="touchUpInside" id="Sx7-6Q-JSy"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oh5-CR-BUF">
+                                                <rect key="frame" x="240" y="870" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="k">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="DSc-dU-ctE" eventType="touchUpInside" id="sPF-zT-L9J"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yra-kg-nIm">
+                                                <rect key="frame" x="0.0" y="1210" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="y">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="DSc-dU-ctE" eventType="touchUpInside" id="2bk-wY-Ag3"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9d-c6-L5T">
+                                                <rect key="frame" x="0.0" y="1380" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="q">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="DSc-dU-ctE" eventType="touchUpInside" id="2NH-oG-84q"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5J-7X-zZB">
+                                                <rect key="frame" x="480" y="1210" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="v">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="DSc-dU-ctE" eventType="touchUpInside" id="lyd-Up-Tbv"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k4H-A8-unu">
+                                                <rect key="frame" x="240" y="1380" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="x">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="DSc-dU-ctE" eventType="touchUpInside" id="9LE-OX-mfQ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MzH-Od-3nk">
+                                                <rect key="frame" x="240" y="1210" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="z">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="DSc-dU-ctE" eventType="touchUpInside" id="9qB-85-g6i"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1600" id="FJA-a6-6l0"/>
+                                            <constraint firstAttribute="width" constant="767" id="h0Q-cI-WcX"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="1JB-MI-yoL" firstAttribute="top" secondItem="10K-OO-T2R" secondAttribute="top" id="1Ik-Hm-kRW"/>
+                                    <constraint firstAttribute="height" constant="1600" id="3JP-x2-9lF"/>
+                                    <constraint firstAttribute="trailing" secondItem="1JB-MI-yoL" secondAttribute="trailing" id="Fjd-mG-s5c"/>
+                                    <constraint firstAttribute="bottom" secondItem="1JB-MI-yoL" secondAttribute="bottom" id="JeG-JS-xnr"/>
+                                    <constraint firstItem="1JB-MI-yoL" firstAttribute="leading" secondItem="10K-OO-T2R" secondAttribute="leading" id="Ynp-Cr-Zko"/>
+                                    <constraint firstAttribute="width" constant="767" id="arz-Rw-vQx"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Ngc-Vd-AgX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Zof-0L-70V" firstAttribute="leading" secondItem="Ngc-Vd-AgX" secondAttribute="leading" constant="15" id="0U2-Qg-CsX"/>
-                            <constraint firstItem="Zof-0L-70V" firstAttribute="centerY" secondItem="U4W-0R-YXH" secondAttribute="centerY" id="WB2-Ls-7vm"/>
+                            <constraint firstAttribute="bottom" secondItem="10K-OO-T2R" secondAttribute="bottom" id="8Il-RA-MP6"/>
+                            <constraint firstItem="Zof-0L-70V" firstAttribute="centerY" secondItem="U4W-0R-YXH" secondAttribute="centerY" id="COE-Li-vIF"/>
+                            <constraint firstItem="10K-OO-T2R" firstAttribute="leading" secondItem="Zof-0L-70V" secondAttribute="trailing" constant="14" id="dng-bt-3jt"/>
+                            <constraint firstItem="10K-OO-T2R" firstAttribute="top" secondItem="Ngc-Vd-AgX" secondAttribute="top" id="hOO-o4-50R"/>
+                            <constraint firstItem="Zof-0L-70V" firstAttribute="leading" secondItem="Ngc-Vd-AgX" secondAttribute="leading" constant="15" id="sDK-OC-CG1"/>
                         </constraints>
                     </view>
+                    <size key="freeformSize" width="896" height="1600"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ggX-lN-rij" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-216" y="845"/>
+            <point key="canvasLocation" x="-216.29464285714286" y="1702.8985507246377"/>
         </scene>
-        <!--Sound Select List Page-->
-        <scene sceneID="nmY-hE-kcj">
+        <!--Name Bmras Cap-->
+        <scene sceneID="EWK-T9-eUf">
             <objects>
-                <viewController storyboardIdentifier="soundSelectList_vc" id="IeH-pJ-RRC" customClass="soundSelectListPage" customModule="Kindergarten_Literacy" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="h4g-Bj-Hfw">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                <viewController storyboardIdentifier="namebmrascap_vc" id="Uee-nB-Czd" customClass="nameBmrasCap" customModule="Kindergarten_Literacy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1wb-5K-OYd">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="1600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="466-1c-5FK"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="de6-e6-wd9" userLabel="side_bar_stack">
+                                <rect key="frame" x="59" y="632" width="56" height="336"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IkH-EH-4QN" userLabel="back">
+                                        <rect key="frame" x="0.0" y="0.0" width="56" height="56"/>
+                                        <state key="normal" image="back"/>
+                                        <connections>
+                                            <action selector="backButtonTapped:" destination="Uee-nB-Czd" eventType="touchUpInside" id="gaa-Ju-MC7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gxD-Tu-wbG" userLabel="home">
+                                        <rect key="frame" x="0.0" y="70" width="56" height="56"/>
+                                        <state key="normal" image="home"/>
+                                        <connections>
+                                            <action selector="homeButtonTapped:" destination="Uee-nB-Czd" eventType="touchUpInside" id="zzI-ES-uHE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F0W-Bn-1lM" userLabel="quiz">
+                                        <rect key="frame" x="0.0" y="140" width="56" height="56"/>
+                                        <state key="normal" image="quiz"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Itr-S6-tPu" userLabel="coin">
+                                        <rect key="frame" x="0.0" y="210" width="56" height="56"/>
+                                        <state key="normal" image="repeat"/>
+                                        <connections>
+                                            <action selector="replayButtonTapped:" destination="Uee-nB-Czd" eventType="touchUpInside" id="Uqg-yb-qv5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arH-bO-9md" userLabel="puzzle">
+                                        <rect key="frame" x="0.0" y="280" width="56" height="56"/>
+                                        <state key="normal" image="bank"/>
+                                        <connections>
+                                            <action selector="coinButtonTapped:" destination="Uee-nB-Czd" eventType="touchUpInside" id="qj8-Qc-fDa"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ikd-CP-GRf">
+                                <rect key="frame" x="129" y="0.0" width="767" height="1600"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pQH-if-J21" userLabel="View1">
+                                        <rect key="frame" x="0.0" y="0.0" width="767" height="1600"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gdh-YX-IA9">
+                                                <rect key="frame" x="480" y="20" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="R">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="Uee-nB-Czd" eventType="touchUpInside" id="09w-YO-HfY"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WCk-Ot-FM2">
+                                                <rect key="frame" x="0.0" y="20" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="B">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="Uee-nB-Czd" eventType="touchUpInside" id="upO-Rt-BJd"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wEM-Gw-fwJ">
+                                                <rect key="frame" x="0.0" y="190" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="A">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="Uee-nB-Czd" eventType="touchUpInside" id="o62-aI-f5r"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ICx-Ap-6iu">
+                                                <rect key="frame" x="480" y="190" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="T">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="Uee-nB-Czd" eventType="touchUpInside" id="IyS-qY-mT3"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gpI-MC-d6J">
+                                                <rect key="frame" x="0.0" y="360" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="G">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="Uee-nB-Czd" eventType="touchUpInside" id="qlf-DC-YVo"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nVg-Sb-sls">
+                                                <rect key="frame" x="0.0" y="530" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="P">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="Uee-nB-Czd" eventType="touchUpInside" id="aEB-43-Po4"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2un-od-AuL">
+                                                <rect key="frame" x="0.0" y="700" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="F">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="Uee-nB-Czd" eventType="touchUpInside" id="g9G-Vo-bTm"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="asa-x8-4RP">
+                                                <rect key="frame" x="0.0" y="870" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="L">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="Uee-nB-Czd" eventType="touchUpInside" id="4Ju-be-oA2"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cO-cp-A0l">
+                                                <rect key="frame" x="240" y="190" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="S">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="Uee-nB-Czd" eventType="touchUpInside" id="0fh-Mu-WMa"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycc-vi-O4h">
+                                                <rect key="frame" x="0.0" y="1040" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="J">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="Uee-nB-Czd" eventType="touchUpInside" id="DP9-pU-vKD"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PeM-ly-vw3">
+                                                <rect key="frame" x="240" y="360" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="N">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="Uee-nB-Czd" eventType="touchUpInside" id="x7Z-wq-a9C"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="09s-YI-hQo">
+                                                <rect key="frame" x="480" y="360" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="I">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="Uee-nB-Czd" eventType="touchUpInside" id="Vaq-QF-Cgc"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="laf-nu-sJM">
+                                                <rect key="frame" x="240" y="530" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="C">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="Uee-nB-Czd" eventType="touchUpInside" id="0ew-Ee-m10"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aiq-qc-ud4">
+                                                <rect key="frame" x="480" y="530" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="H">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="Uee-nB-Czd" eventType="touchUpInside" id="vHD-5Q-IyH"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a0N-09-scn">
+                                                <rect key="frame" x="240" y="700" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="O">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="Uee-nB-Czd" eventType="touchUpInside" id="Kpd-Ah-1Y7"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWo-Vi-lN6">
+                                                <rect key="frame" x="480" y="700" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="D">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="Uee-nB-Czd" eventType="touchUpInside" id="FXS-y2-mpz"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X1P-fZ-6FG">
+                                                <rect key="frame" x="480" y="870" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="U">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="Uee-nB-Czd" eventType="touchUpInside" id="oGa-0Z-kb0"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wky-dU-EiE">
+                                                <rect key="frame" x="240" y="1040" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="W">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="Uee-nB-Czd" eventType="touchUpInside" id="SXh-as-c4N"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r9e-he-UDW">
+                                                <rect key="frame" x="480" y="1040" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="E">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="Uee-nB-Czd" eventType="touchUpInside" id="meC-vo-dac"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z1h-ur-OF6">
+                                                <rect key="frame" x="240" y="20" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="M">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="Uee-nB-Czd" eventType="touchUpInside" id="N1O-lb-XRZ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9rY-IC-2f8">
+                                                <rect key="frame" x="240" y="870" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="K">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="Uee-nB-Czd" eventType="touchUpInside" id="Mrd-Z6-cNd"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W2k-kE-dTV">
+                                                <rect key="frame" x="0.0" y="1210" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="Y">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="Uee-nB-Czd" eventType="touchUpInside" id="30s-Ze-SFd"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oar-gk-S8Y">
+                                                <rect key="frame" x="0.0" y="1380" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="Q">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="Uee-nB-Czd" eventType="touchUpInside" id="VGk-9E-KXo"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rLi-a8-aLo">
+                                                <rect key="frame" x="480" y="1210" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="V">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="Uee-nB-Czd" eventType="touchUpInside" id="3vP-un-6Jy"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dd8-9u-Rcf">
+                                                <rect key="frame" x="240" y="1380" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="X">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="Uee-nB-Czd" eventType="touchUpInside" id="uoC-4L-XQe"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CVK-Z3-WNd">
+                                                <rect key="frame" x="240" y="1210" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="Z">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="Uee-nB-Czd" eventType="touchUpInside" id="a1Q-oa-T8d"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1600" id="4p1-Ic-Xof"/>
+                                            <constraint firstAttribute="width" constant="767" id="Ymu-4t-Hxu"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="767" id="6oG-t2-IHS"/>
+                                    <constraint firstAttribute="height" constant="1600" id="LX5-W8-4y4"/>
+                                    <constraint firstItem="pQH-if-J21" firstAttribute="top" secondItem="ikd-CP-GRf" secondAttribute="top" id="Wdb-Gf-2ua"/>
+                                    <constraint firstItem="pQH-if-J21" firstAttribute="leading" secondItem="ikd-CP-GRf" secondAttribute="leading" id="YQN-mj-eyo"/>
+                                    <constraint firstAttribute="trailing" secondItem="pQH-if-J21" secondAttribute="trailing" id="orJ-r9-j6q"/>
+                                    <constraint firstAttribute="bottom" secondItem="pQH-if-J21" secondAttribute="bottom" id="rug-9a-z8a"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Xm4-oE-iZl"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ikd-CP-GRf" firstAttribute="leading" secondItem="de6-e6-wd9" secondAttribute="trailing" constant="14" id="682-q3-xEy"/>
+                            <constraint firstItem="de6-e6-wd9" firstAttribute="leading" secondItem="Xm4-oE-iZl" secondAttribute="leading" constant="15" id="8a3-xV-7X7"/>
+                            <constraint firstAttribute="bottom" secondItem="ikd-CP-GRf" secondAttribute="bottom" id="FZ8-2f-YRj"/>
+                            <constraint firstItem="ikd-CP-GRf" firstAttribute="top" secondItem="Xm4-oE-iZl" secondAttribute="top" id="Xhw-4c-pMS"/>
+                            <constraint firstItem="de6-e6-wd9" firstAttribute="centerY" secondItem="1wb-5K-OYd" secondAttribute="centerY" id="gWy-lO-hzT"/>
+                        </constraints>
                     </view>
+                    <size key="freeformSize" width="896" height="1600"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YBa-MA-PDu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aPw-5r-7WU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-216" y="1563"/>
+            <point key="canvasLocation" x="419" y="1703"/>
         </scene>
-        <!--Alphabet Learn Page-->
-        <scene sceneID="QiQ-zb-HW4">
+        <!--Name Abcde-->
+        <scene sceneID="uWz-HR-bgR">
             <objects>
-                <viewController id="5rb-vH-NfV" customClass="alphabetLearnPage" customModule="Kindergarten_Literacy" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ezz-LG-U9N">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                <viewController storyboardIdentifier="nameabcde_vc" id="Vfx-Ra-4gB" customClass="nameAbcde" customModule="Kindergarten_Literacy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZzI-VK-umB">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="1600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="c8z-gu-5Sq"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="2lm-6j-Eqn" userLabel="side_bar_stack">
+                                <rect key="frame" x="59" y="632" width="56" height="336"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K37-Ge-r62" userLabel="back">
+                                        <rect key="frame" x="0.0" y="0.0" width="56" height="56"/>
+                                        <state key="normal" image="back"/>
+                                        <connections>
+                                            <action selector="backButtonTapped:" destination="Vfx-Ra-4gB" eventType="touchUpInside" id="vn9-lN-18m"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HBh-h6-7wU" userLabel="home">
+                                        <rect key="frame" x="0.0" y="70" width="56" height="56"/>
+                                        <state key="normal" image="home"/>
+                                        <connections>
+                                            <action selector="homeButtonTapped:" destination="Vfx-Ra-4gB" eventType="touchUpInside" id="asn-3e-Wiu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gbR-8M-hb7" userLabel="quiz">
+                                        <rect key="frame" x="0.0" y="140" width="56" height="56"/>
+                                        <state key="normal" image="quiz"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9aq-K4-ZkS" userLabel="coin">
+                                        <rect key="frame" x="0.0" y="210" width="56" height="56"/>
+                                        <state key="normal" image="repeat"/>
+                                        <connections>
+                                            <action selector="replayButtonTapped:" destination="Vfx-Ra-4gB" eventType="touchUpInside" id="Fbh-7a-2YU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jmI-02-K75" userLabel="puzzle">
+                                        <rect key="frame" x="0.0" y="280" width="56" height="56"/>
+                                        <state key="normal" image="bank"/>
+                                        <connections>
+                                            <action selector="coinButtonTapped:" destination="Vfx-Ra-4gB" eventType="touchUpInside" id="wdi-hC-9b4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ee2-DI-BtS">
+                                <rect key="frame" x="129" y="0.0" width="767" height="1600"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pbv-gQ-UTR" userLabel="View1">
+                                        <rect key="frame" x="0.0" y="0.0" width="767" height="1600"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iPF-bi-dTm">
+                                                <rect key="frame" x="480" y="20" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="c">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="Vfx-Ra-4gB" eventType="touchUpInside" id="7u6-BB-cL9"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CMR-91-FD0">
+                                                <rect key="frame" x="0.0" y="20" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="a">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="Vfx-Ra-4gB" eventType="touchUpInside" id="OI4-CF-NM2"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5oz-EB-WUf">
+                                                <rect key="frame" x="0.0" y="190" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="d">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="Vfx-Ra-4gB" eventType="touchUpInside" id="Tp3-y1-oJ2"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Adl-Tx-kJL">
+                                                <rect key="frame" x="480" y="190" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="f">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="Vfx-Ra-4gB" eventType="touchUpInside" id="Z4H-OU-uyo"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TpI-1n-eu3">
+                                                <rect key="frame" x="0.0" y="360" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="g">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="Vfx-Ra-4gB" eventType="touchUpInside" id="tZZ-k5-HRG"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BAD-rJ-sKb">
+                                                <rect key="frame" x="0.0" y="530" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="j">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="Vfx-Ra-4gB" eventType="touchUpInside" id="hEw-1h-OgR"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iot-kg-Hhb">
+                                                <rect key="frame" x="0.0" y="700" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="m">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="Vfx-Ra-4gB" eventType="touchUpInside" id="7dL-ZA-CpD"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gbI-hK-Jxh">
+                                                <rect key="frame" x="0.0" y="870" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="p">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="Vfx-Ra-4gB" eventType="touchUpInside" id="HJ8-pU-OlB"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xv6-ha-j9q">
+                                                <rect key="frame" x="240" y="190" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="e">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="Vfx-Ra-4gB" eventType="touchUpInside" id="LZ2-Zf-Www"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ZE-ej-kak">
+                                                <rect key="frame" x="0.0" y="1040" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="s">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="Vfx-Ra-4gB" eventType="touchUpInside" id="IX9-6i-Oqg"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="snJ-Dm-TJK">
+                                                <rect key="frame" x="240" y="360" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="h">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="Vfx-Ra-4gB" eventType="touchUpInside" id="6pR-ne-DDc"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rf4-N5-oFe">
+                                                <rect key="frame" x="480" y="360" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="i">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="Vfx-Ra-4gB" eventType="touchUpInside" id="BOU-t5-G8b"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nb8-lR-RmG">
+                                                <rect key="frame" x="240" y="530" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="k">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="Vfx-Ra-4gB" eventType="touchUpInside" id="cY7-xM-Bd7"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5sM-RG-MJp">
+                                                <rect key="frame" x="480" y="530" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="l">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="Vfx-Ra-4gB" eventType="touchUpInside" id="0oB-Yr-QhH"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6qC-UT-0Sy">
+                                                <rect key="frame" x="240" y="700" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="n">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="Vfx-Ra-4gB" eventType="touchUpInside" id="Yek-AP-eTI"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ruz-mg-bbQ">
+                                                <rect key="frame" x="480" y="700" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="o">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="Vfx-Ra-4gB" eventType="touchUpInside" id="bUJ-tv-PS3"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yAZ-le-0Iq">
+                                                <rect key="frame" x="480" y="870" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="r">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="Vfx-Ra-4gB" eventType="touchUpInside" id="RLB-Gr-arp"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="haI-rW-4sy">
+                                                <rect key="frame" x="240" y="1040" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="t">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="Vfx-Ra-4gB" eventType="touchUpInside" id="1Oq-Mr-m0E"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OBA-me-dif">
+                                                <rect key="frame" x="480" y="1040" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="u">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="Vfx-Ra-4gB" eventType="touchUpInside" id="hSe-ut-KWe"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2mx-fm-0rU">
+                                                <rect key="frame" x="240" y="20" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="b">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="Vfx-Ra-4gB" eventType="touchUpInside" id="bbs-4u-kHW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KDp-GP-9Dx">
+                                                <rect key="frame" x="240" y="870" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="q">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="Vfx-Ra-4gB" eventType="touchUpInside" id="ELT-aS-hlj"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fUh-FN-hkO">
+                                                <rect key="frame" x="0.0" y="1210" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="v">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="Vfx-Ra-4gB" eventType="touchUpInside" id="ttM-cb-4FR"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sO7-Ci-gzX">
+                                                <rect key="frame" x="0.0" y="1380" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="y">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="Vfx-Ra-4gB" eventType="touchUpInside" id="7uZ-i4-7sb"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UOZ-Sw-mKU">
+                                                <rect key="frame" x="480" y="1210" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="x">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="Vfx-Ra-4gB" eventType="touchUpInside" id="BnG-3B-Ut6"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lp7-rg-0Sd">
+                                                <rect key="frame" x="240" y="1380" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="z">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="Vfx-Ra-4gB" eventType="touchUpInside" id="2Ci-4B-m0S"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="67A-OC-evh">
+                                                <rect key="frame" x="240" y="1210" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="w">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="Vfx-Ra-4gB" eventType="touchUpInside" id="FQK-xM-1xg"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="767" id="FHf-5z-a6Z"/>
+                                            <constraint firstAttribute="height" constant="1600" id="Z3d-Sh-gVC"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1600" id="HWn-Jm-3JG"/>
+                                    <constraint firstItem="Pbv-gQ-UTR" firstAttribute="leading" secondItem="Ee2-DI-BtS" secondAttribute="leading" id="LNB-Uo-jH7"/>
+                                    <constraint firstItem="Pbv-gQ-UTR" firstAttribute="top" secondItem="Ee2-DI-BtS" secondAttribute="top" id="LRL-rj-gzY"/>
+                                    <constraint firstAttribute="trailing" secondItem="Pbv-gQ-UTR" secondAttribute="trailing" id="QIM-y2-0R2"/>
+                                    <constraint firstAttribute="width" constant="767" id="g9m-jb-Fxk"/>
+                                    <constraint firstAttribute="bottom" secondItem="Pbv-gQ-UTR" secondAttribute="bottom" id="xct-V3-lyf"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="faG-xq-wyt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Ee2-DI-BtS" secondAttribute="bottom" id="2Em-1f-98h"/>
+                            <constraint firstItem="2lm-6j-Eqn" firstAttribute="leading" secondItem="faG-xq-wyt" secondAttribute="leading" constant="15" id="2lg-fx-lUg"/>
+                            <constraint firstItem="Ee2-DI-BtS" firstAttribute="leading" secondItem="2lm-6j-Eqn" secondAttribute="trailing" constant="14" id="87Q-bU-n7m"/>
+                            <constraint firstItem="2lm-6j-Eqn" firstAttribute="centerY" secondItem="ZzI-VK-umB" secondAttribute="centerY" id="Ou6-Yi-LRa"/>
+                            <constraint firstItem="Ee2-DI-BtS" firstAttribute="top" secondItem="faG-xq-wyt" secondAttribute="top" id="PHX-iN-dPO"/>
+                        </constraints>
                     </view>
+                    <size key="freeformSize" width="896" height="1600"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2aR-Y0-Q1x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mxx-8X-IZp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-216" y="2277"/>
+            <point key="canvasLocation" x="1054" y="1703"/>
         </scene>
-        <!--Phoneme Learn Page-->
-        <scene sceneID="f6t-du-Gq2">
+        <!--Name Abcde Cap-->
+        <scene sceneID="Rnb-no-lAx">
             <objects>
-                <viewController id="CTk-JY-veO" customClass="phonemeLearnPage" customModule="Kindergarten_Literacy" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="xKi-fx-hwt">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                <viewController storyboardIdentifier="nameabcdecap_vc" id="nrq-vR-jIr" customClass="nameAbcdeCap" customModule="Kindergarten_Literacy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pDV-ar-4HY">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="1600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="HF3-5Z-xEp"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="V0m-te-Ljj" userLabel="side_bar_stack">
+                                <rect key="frame" x="59" y="632" width="56" height="336"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ScK-C3-1Q1" userLabel="back">
+                                        <rect key="frame" x="0.0" y="0.0" width="56" height="56"/>
+                                        <state key="normal" image="back"/>
+                                        <connections>
+                                            <action selector="backButtonTapped:" destination="nrq-vR-jIr" eventType="touchUpInside" id="mGL-1x-SAj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wVB-lv-sCl" userLabel="home">
+                                        <rect key="frame" x="0.0" y="70" width="56" height="56"/>
+                                        <state key="normal" image="home"/>
+                                        <connections>
+                                            <action selector="homeButtonTapped:" destination="nrq-vR-jIr" eventType="touchUpInside" id="gyr-G3-Mce"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pv7-hH-iB3" userLabel="quiz">
+                                        <rect key="frame" x="0.0" y="140" width="56" height="56"/>
+                                        <state key="normal" image="quiz"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G2k-1f-Lpu" userLabel="coin">
+                                        <rect key="frame" x="0.0" y="210" width="56" height="56"/>
+                                        <state key="normal" image="repeat"/>
+                                        <connections>
+                                            <action selector="replayButtonTapped:" destination="nrq-vR-jIr" eventType="touchUpInside" id="WGc-97-Fnh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NGd-Kw-ipP" userLabel="puzzle">
+                                        <rect key="frame" x="0.0" y="280" width="56" height="56"/>
+                                        <state key="normal" image="bank"/>
+                                        <connections>
+                                            <action selector="coinButtonTapped:" destination="nrq-vR-jIr" eventType="touchUpInside" id="eYv-vW-3km"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jBB-7J-4Pk">
+                                <rect key="frame" x="129" y="0.0" width="767" height="1600"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="thf-iL-D0C" userLabel="View1">
+                                        <rect key="frame" x="0.0" y="0.0" width="767" height="1600"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dT-Hh-vyX">
+                                                <rect key="frame" x="480" y="20" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="C">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="nrq-vR-jIr" eventType="touchUpInside" id="np7-mN-3Wo"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Mo-DX-SQ5">
+                                                <rect key="frame" x="0.0" y="20" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="A">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="nrq-vR-jIr" eventType="touchUpInside" id="T8n-4U-huU"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SB3-6z-uO0">
+                                                <rect key="frame" x="0.0" y="190" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="D">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="nrq-vR-jIr" eventType="touchUpInside" id="h0P-hW-lWc"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X28-Ie-8ai">
+                                                <rect key="frame" x="480" y="190" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="F">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="nrq-vR-jIr" eventType="touchUpInside" id="r7m-fO-ao9"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bbk-UU-WKD">
+                                                <rect key="frame" x="0.0" y="360" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="G">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="nrq-vR-jIr" eventType="touchUpInside" id="fXR-HJ-ANl"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggi-r5-bWU">
+                                                <rect key="frame" x="0.0" y="530" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="J">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="nrq-vR-jIr" eventType="touchUpInside" id="Jyb-hP-bFL"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VT2-1P-zMG">
+                                                <rect key="frame" x="0.0" y="700" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="M">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="nrq-vR-jIr" eventType="touchUpInside" id="3le-9R-WIP"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lB7-mD-fTC">
+                                                <rect key="frame" x="0.0" y="870" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="P">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="nrq-vR-jIr" eventType="touchUpInside" id="E5U-eW-B1M"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n36-tC-ZSc">
+                                                <rect key="frame" x="240" y="190" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="E">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="nrq-vR-jIr" eventType="touchUpInside" id="Ysk-oJ-Et6"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gag-EG-JcA">
+                                                <rect key="frame" x="0.0" y="1040" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="S">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="nrq-vR-jIr" eventType="touchUpInside" id="LPd-xE-x2z"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kgg-zK-ZN8">
+                                                <rect key="frame" x="240" y="360" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="H">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="nrq-vR-jIr" eventType="touchUpInside" id="PGp-HU-tfj"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UmG-c7-ChV">
+                                                <rect key="frame" x="480" y="360" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="I">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="nrq-vR-jIr" eventType="touchUpInside" id="6Bm-nH-YzV"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u02-gS-4oo">
+                                                <rect key="frame" x="240" y="530" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="K">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="nrq-vR-jIr" eventType="touchUpInside" id="bps-Co-95J"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ADv-kH-xVb">
+                                                <rect key="frame" x="480" y="530" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="L">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="nrq-vR-jIr" eventType="touchUpInside" id="njh-Ey-aCb"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8vz-Tt-Oa0">
+                                                <rect key="frame" x="240" y="700" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="N">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="nrq-vR-jIr" eventType="touchUpInside" id="DUg-Zm-m8H"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7t-Yi-USl">
+                                                <rect key="frame" x="480" y="700" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="O">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="nrq-vR-jIr" eventType="touchUpInside" id="f6D-BE-hQP"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qrx-ex-19F">
+                                                <rect key="frame" x="480" y="870" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="R">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="nrq-vR-jIr" eventType="touchUpInside" id="UPG-es-K4E"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yUb-uU-0wu">
+                                                <rect key="frame" x="240" y="1040" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="T">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="nrq-vR-jIr" eventType="touchUpInside" id="vLQ-gl-76s"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Dl-ns-Q3T">
+                                                <rect key="frame" x="480" y="1040" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="U">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="nrq-vR-jIr" eventType="touchUpInside" id="FY0-hX-oiJ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4S-AL-V8K">
+                                                <rect key="frame" x="240" y="20" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="B">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="nrq-vR-jIr" eventType="touchUpInside" id="VZf-Ug-YYT"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iDa-Gc-vtw">
+                                                <rect key="frame" x="240" y="870" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="Q">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="nrq-vR-jIr" eventType="touchUpInside" id="2G9-jF-Dsy"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEN-3y-ePW">
+                                                <rect key="frame" x="0.0" y="1210" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="V">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="nrq-vR-jIr" eventType="touchUpInside" id="JEm-nB-Xj8"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4a-Vr-evF">
+                                                <rect key="frame" x="0.0" y="1380" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="Y">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="nrq-vR-jIr" eventType="touchUpInside" id="wii-hP-VcZ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pgA-D2-BSn">
+                                                <rect key="frame" x="480" y="1210" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="X">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="nrq-vR-jIr" eventType="touchUpInside" id="z6G-WP-DDO"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="55V-e4-vav">
+                                                <rect key="frame" x="240" y="1380" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="Z">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="nrq-vR-jIr" eventType="touchUpInside" id="LXU-4X-92x"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gNh-zF-tgb">
+                                                <rect key="frame" x="240" y="1210" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="W">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toAlphabetLearnPage:" destination="nrq-vR-jIr" eventType="touchUpInside" id="OaM-8N-H47"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1600" id="4RJ-yv-d0f"/>
+                                            <constraint firstAttribute="width" constant="767" id="x9X-wG-8XO"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="thf-iL-D0C" secondAttribute="trailing" id="9Zt-Bu-xyH"/>
+                                    <constraint firstAttribute="height" constant="1600" id="FzL-pR-ssv"/>
+                                    <constraint firstAttribute="bottom" secondItem="thf-iL-D0C" secondAttribute="bottom" id="MAk-5p-ulR"/>
+                                    <constraint firstItem="thf-iL-D0C" firstAttribute="top" secondItem="jBB-7J-4Pk" secondAttribute="top" id="SIK-Pm-jyy"/>
+                                    <constraint firstAttribute="width" constant="767" id="a5i-mI-T8a"/>
+                                    <constraint firstItem="thf-iL-D0C" firstAttribute="leading" secondItem="jBB-7J-4Pk" secondAttribute="leading" id="iGL-qN-u0w"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xJW-M2-Xij"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jBB-7J-4Pk" firstAttribute="top" secondItem="xJW-M2-Xij" secondAttribute="top" id="3BO-En-R1m"/>
+                            <constraint firstItem="jBB-7J-4Pk" firstAttribute="leading" secondItem="V0m-te-Ljj" secondAttribute="trailing" constant="14" id="aXI-kq-d3w"/>
+                            <constraint firstItem="V0m-te-Ljj" firstAttribute="centerY" secondItem="pDV-ar-4HY" secondAttribute="centerY" id="ccE-Jw-N7O"/>
+                            <constraint firstAttribute="bottom" secondItem="jBB-7J-4Pk" secondAttribute="bottom" id="mI2-Gr-4Im"/>
+                            <constraint firstItem="V0m-te-Ljj" firstAttribute="leading" secondItem="xJW-M2-Xij" secondAttribute="leading" constant="15" id="sIB-J5-6bx"/>
+                        </constraints>
                     </view>
+                    <size key="freeformSize" width="896" height="1600"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8ZO-NT-RYC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j5X-OX-a9x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-216" y="3022"/>
+            <point key="canvasLocation" x="1682" y="1703"/>
         </scene>
     </scenes>
     <resources>
         <image name="back" width="56" height="56"/>
         <image name="bank" width="56" height="56"/>
+        <image name="forward" width="56" height="56"/>
         <image name="home" width="56" height="56"/>
         <image name="letters_entry_bg" width="1510" height="800"/>
         <image name="names_lowercase_alphabetical" width="429" height="108"/>
@@ -245,12 +1845,20 @@
         <image name="names_uppercase_alphabetical" width="429" height="108"/>
         <image name="names_uppercase_bmras" width="429" height="107"/>
         <image name="puzzle" width="56" height="56"/>
+        <image name="quiz" width="56" height="56"/>
+        <image name="repeat" width="56" height="56"/>
         <image name="sounds_lowercase_alphabetical" width="429" height="108"/>
         <image name="sounds_lowercase_bmras" width="429" height="107"/>
         <image name="sounds_uppercase_alphabetical" width="429" height="108"/>
         <image name="sounds_uppercase_bmras" width="429" height="107"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
