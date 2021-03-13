@@ -1,14 +1,13 @@
 //
-//  LettersViewController.swift
+//  vowelMainPage.swift
 //  Kindergarten Literacy
 //
-//  Created by Bingqing Xu on 11/23/20.
-//  Development taken over by TigerSHe
+//  Created by 徐浩云 on 2/9/21.
 //
 
 import UIKit
 
-class letterMainPage: UIViewController {
+class vowelMainPage: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,7 +16,7 @@ class letterMainPage: UIViewController {
     }
     
     // reference to different storyboards
-    let letterStoryBoard:UIStoryboard = UIStoryboard(name: "LetterPages", bundle:nil)
+    let letterStoryBoard:UIStoryboard = UIStoryboard(name: "VowelPages", bundle:nil)
     let mainStoryBoard:UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
     
     // functions for sidebar
@@ -39,16 +38,7 @@ class letterMainPage: UIViewController {
         present(vc, animated: true)
     }
     
-    // code for main buttons (draft) (need to pass arguments)
-    @IBAction func toNameSelectListPage(_ sender: Any) {
-        let vc = letterStoryBoard.instantiateViewController(identifier: "nameSelectList_vc")
-        present(vc, animated: true)
-    }
-    
-    @IBAction func toSoundSelectListPage(_ sender: Any) {
-        let vc = letterStoryBoard.instantiateViewController(identifier: "nameSelectList_vc")
-        present(vc, animated: true)
-    }
+   
     
 
     
@@ -63,3 +53,4 @@ class letterMainPage: UIViewController {
     */
 
 }
+

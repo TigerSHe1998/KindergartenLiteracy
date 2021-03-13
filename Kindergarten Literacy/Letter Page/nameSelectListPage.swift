@@ -1,14 +1,13 @@
 //
-//  LettersViewController.swift
+//  nameSelectListPage.swift
 //  Kindergarten Literacy
 //
-//  Created by Bingqing Xu on 11/23/20.
-//  Development taken over by TigerSHe
+//  Created by TigerSHe on 2021/2/4.
 //
 
 import UIKit
 
-class letterMainPage: UIViewController {
+class nameSelectListPage: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,19 +38,7 @@ class letterMainPage: UIViewController {
         present(vc, animated: true)
     }
     
-    // code for main buttons (draft) (need to pass arguments)
-    @IBAction func toNameSelectListPage(_ sender: Any) {
-        let vc = letterStoryBoard.instantiateViewController(identifier: "nameSelectList_vc")
-        present(vc, animated: true)
-    }
-    
-    @IBAction func toSoundSelectListPage(_ sender: Any) {
-        let vc = letterStoryBoard.instantiateViewController(identifier: "nameSelectList_vc")
-        present(vc, animated: true)
-    }
-    
 
-    
     /*
     // MARK: - Navigation
 
