@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 
-class RealVowelViewController: UIViewController {
+class VowelQuizViewController: UIViewController {
     
     var array = [["a", "bat", "cat", "ax", "bat.png", "cat.png", "ax.png"],
                  ["a ", "ball", "fall", "swan", "ball", "fall", "swan"],
@@ -19,18 +19,7 @@ class RealVowelViewController: UIViewController {
                  ["o", "fox", "pot", "hot", "fox", "pot", "hot"],
                  ["u", "bug", "bus", "cut", "bug", "bus", "cut"]]
     
-    /*
-    
-    var word_dict = ["a": ["worldOne", "worldTwo", "worldThree"],
-                "a ": ["worldOne", "worldTwo", "worldThree"],
-                "e": ["worldOne", "worldTwo", "worldThree"],
-                "i": ["worldOne", "worldTwo", "worldThree"],
-                "i ": ["worldOne", "worldTwo", "worldThree"],
-                "o": ["worldOne", "worldTwo", "worldThree"],
-                "u": ["worldOne", "worldTwo", "worldThree"],
-     ]
-    
- */
+
     
     
     
@@ -71,10 +60,7 @@ class RealVowelViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        myLabelOne.text = desiredLabelOne
-        myWordOne.text = desiredWordOne
-        myWordTwo.text = desiredWordTwo
-        myWordThree.text = desiredWordThree
+        
     }
     
     func showText(txt: String) {
@@ -130,7 +116,7 @@ class RealVowelViewController: UIViewController {
         self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
     }
     @IBAction func quiz(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(identifier: "vowel_quiz_vc") as! VowelQuizViewController
+        let vc = storyboard?.instantiateViewController(identifier: "vowel_quiz_vc") as! BeginningSoundsQuizViewController
         present(vc, animated: true)
     }
     
