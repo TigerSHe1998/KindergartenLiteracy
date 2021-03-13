@@ -33,7 +33,8 @@ class ViewController: UIViewController {
     
     
     @IBAction func vowelsButtonTapped(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(identifier: "vowels_vc") as! VowelViewController
+        let sb = UIStoryboard(name: "VowelLetter", bundle: nil)
+        let vc = sb.instantiateViewController(identifier: "vowels_vc") as! VowelLetterViewController
         present(vc, animated: true)
     }
     
