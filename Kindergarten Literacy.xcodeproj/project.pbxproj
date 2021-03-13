@@ -10,7 +10,6 @@
 		3407962725D799FA002191C5 /* VowelLetterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3407962625D799FA002191C5 /* VowelLetterViewController.swift */; };
 		3407962A25D79B61002191C5 /* RealVowelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3407962925D79B61002191C5 /* RealVowelViewController.swift */; };
 		3407962D25D79BC6002191C5 /* VowelLetter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3407962C25D79BC6002191C5 /* VowelLetter.storyboard */; };
-		342BDBFF25EA8A7000329781 /* VowelQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342BDBFE25EA8A7000329781 /* VowelQuizViewController.swift */; };
 		98358CED25D6A6C70092C8FF /* BeginningSoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98358CE225D6A6C70092C8FF /* BeginningSoundsViewController.swift */; };
 		98358CEE25D6A6C70092C8FF /* BeginningSoundsThreeButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98358CE325D6A6C70092C8FF /* BeginningSoundsThreeButtonViewController.swift */; };
 		98358CEF25D6A6C70092C8FF /* BeginningSoundsOneButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98358CE425D6A6C70092C8FF /* BeginningSoundsOneButtonViewController.swift */; };
@@ -47,7 +46,6 @@
 		3407962625D799FA002191C5 /* VowelLetterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VowelLetterViewController.swift; sourceTree = "<group>"; };
 		3407962925D79B61002191C5 /* RealVowelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealVowelViewController.swift; sourceTree = "<group>"; };
 		3407962C25D79BC6002191C5 /* VowelLetter.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VowelLetter.storyboard; sourceTree = "<group>"; };
-		342BDBFE25EA8A7000329781 /* VowelQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VowelQuizViewController.swift; sourceTree = "<group>"; };
 		98358CE225D6A6C70092C8FF /* BeginningSoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeginningSoundsViewController.swift; sourceTree = "<group>"; };
 		98358CE325D6A6C70092C8FF /* BeginningSoundsThreeButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeginningSoundsThreeButtonViewController.swift; sourceTree = "<group>"; };
 		98358CE425D6A6C70092C8FF /* BeginningSoundsOneButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeginningSoundsOneButtonViewController.swift; sourceTree = "<group>"; };
@@ -100,7 +98,6 @@
 				3407962625D799FA002191C5 /* VowelLetterViewController.swift */,
 				3407962925D79B61002191C5 /* RealVowelViewController.swift */,
 				3407962C25D79BC6002191C5 /* VowelLetter.storyboard */,
-				342BDBFE25EA8A7000329781 /* VowelQuizViewController.swift */,
 			);
 			path = "Vowel Letter";
 			sourceTree = "<group>";
@@ -275,7 +272,6 @@
 				98358CF725D6A6C70092C8FF /* TwoButtonLevelViewController.swift in Sources */,
 				C0BA8567256CA9ED000EBAEC /* letterMainPage.swift in Sources */,
 				98358CF625D6A6C70092C8FF /* FourButtonLevelViewController.swift in Sources */,
-				342BDBFF25EA8A7000329781 /* VowelQuizViewController.swift in Sources */,
 				98358CEE25D6A6C70092C8FF /* BeginningSoundsThreeButtonViewController.swift in Sources */,
 				98358CF425D6A6C70092C8FF /* OneButtonLevelViewController.swift in Sources */,
 				C0BA8551256C6485000EBAEC /* ViewController.swift in Sources */,

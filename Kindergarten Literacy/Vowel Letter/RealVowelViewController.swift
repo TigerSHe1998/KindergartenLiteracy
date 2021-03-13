@@ -11,13 +11,13 @@ import UIKit
 
 class RealVowelViewController: UIViewController {
     
-    var array = [["a", "bat", "cat", "ax", "bat.png", "cat.png", "ax.png"],
-                 ["a ", "ball", "fall", "swan", "ball", "fall", "swan"],
-                 ["e", "elf", "bed", "net", "elf", "bed", "net"],
-                 ["i", "mittens", "hit", "fish", "mittens", "hit", "fish"],
-                 ["i ", "taxi", "yeti", "skis", "taxi", "yeti", "skis"],
-                 ["o", "fox", "pot", "hot", "fox", "pot", "hot"],
-                 ["u", "bug", "bus", "cut", "bug", "bus", "cut"]]
+    var array = [["a", "bat", "cat", "ax"],
+                 ["a ", "ball", "fall", "swan"],
+                 ["e", "elf", "bed", "net"],
+                 ["i", "mittens", "hit", "fish"],
+                 ["i ", "taxi", "yeti", "skis"],
+                 ["o", "fox", "pot", "hot"],
+                 ["u", "bug", "bus", "cut"]]
     
     /*
     
@@ -43,14 +43,6 @@ class RealVowelViewController: UIViewController {
     
     var desiredWordThree: String!
     
-    var desiredImageOne: UIImage!
-    
-    var desiredImageTwo: UIImage!
-    
-    var desiredImageThree: UIImage!
-    
-    
-    
     @IBOutlet  var myLabelOne: UILabel!;
     
     @IBOutlet  var myWordOne: UILabel!;
@@ -58,15 +50,6 @@ class RealVowelViewController: UIViewController {
     @IBOutlet  var myWordTwo: UILabel!;
     
     @IBOutlet  var myWordThree: UILabel!;
-    
-    @IBOutlet  var myimageOne: UIImage!;
-    
-    @IBOutlet  var myimageTwo: UIImage!;
-    
-    @IBOutlet  var mtimageThree: UIImage!;
-    
-
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -130,7 +113,7 @@ class RealVowelViewController: UIViewController {
         self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
     }
     @IBAction func quiz(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(identifier: "vowel_quiz_vc") as! VowelQuizViewController
+        let vc = storyboard?.instantiateViewController(identifier: "vowel_quiz_vc") as! BeginningSoundsQuizViewController
         present(vc, animated: true)
     }
     
