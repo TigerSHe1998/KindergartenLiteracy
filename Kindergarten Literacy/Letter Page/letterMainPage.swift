@@ -7,18 +7,33 @@
 //
 
 import UIKit
+import AVFoundation
 
 class letterMainPage: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        playIntroMessage()
         // Do any additional setup after loading the view.
     }
     
     // reference to different storyboards
     let letterStoryBoard:UIStoryboard = UIStoryboard(name: "LetterPages", bundle:nil)
     let mainStoryBoard:UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+    
+    //play intro sound
+    var audioPlayer: AVAudioPlayer?
+    
+    func playIntroMessage() {
+        let pathToSound = Bundle.main.path(forResource: "00alphabet_letters", ofType: "mp3")!
+        let url = URL(fileURLWithPath: pathToSound)
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: url)
+            audioPlayer?.play()
+        } catch {
+            //bruh
+        }
+    }
     
     // functions for sidebar
     @IBAction func backButtonTapped(_ sender: Any) {
@@ -39,12 +54,30 @@ class letterMainPage: UIViewController {
         present(vc, animated: true)
     }
     
-    // code for main buttons (draft) (need to pass arguments)
-    @IBAction func toNameSelectListPage(_ sender: Any) {
-        let vc = letterStoryBoard.instantiateViewController(identifier: "nameSelectList_vc")
+    // code for main level select buttons
+    @IBAction func toNameBmras(_ sender: Any) {
+        let vc = letterStoryBoard.instantiateViewController(identifier: "namebmras_vc")
         present(vc, animated: true)
     }
     
+    @IBAction func toNameBmrasCap(_ sender: Any) {
+        let vc = letterStoryBoard.instantiateViewController(identifier: "namebmrascap_vc")
+        present(vc, animated: true)
+    }
+    
+    @IBAction func toNameAbcde(_ sender: Any) {
+        let vc = letterStoryBoard.instantiateViewController(identifier: "nameabcde_vc")
+        present(vc, animated: true)
+    }
+    
+    @IBAction func toNameAbcdeCap(_ sender: Any) {
+        let vc = letterStoryBoard.instantiateViewController(identifier: "nameabcdecap_vc")
+        present(vc, animated: true)
+    }
+    
+    
+    
+    //not yet implemented, waiting on teammates
     @IBAction func toSoundSelectListPage(_ sender: Any) {
         let vc = letterStoryBoard.instantiateViewController(identifier: "nameSelectList_vc")
         present(vc, animated: true)
