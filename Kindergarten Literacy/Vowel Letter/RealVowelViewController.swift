@@ -74,18 +74,31 @@ class RealVowelViewController: UIViewController {
     func transitionAudioandImage(letter: String) {
         switch letter {
         case "a","A":
-            let pathToSound = Bundle.main.path(forResource: "a1", ofType: "mp3")!
-            let url = URL(fileURLWithPath: pathToSound)
-            do {
-                audioPlayer = try AVAudioPlayer(contentsOf: url)
-                audioPlayer?.play()
-            } catch {}
+//            let pathToSound = Bundle.main.path(forResource: "a1", ofType: "mp3")!
+//            let url = URL(fileURLWithPath: pathToSound)
+//            do {
+//                audioPlayer = try AVAudioPlayer(contentsOf: url)
+//                audioPlayer?.play()
+//            } catch {}
+
+            // implement delay between words
             wordButton1.setImage(UIImage(named: "bat"), for: .normal)
             wordButton2.setImage(UIImage(named: "cat"), for: .normal)
             wordButton3.setImage(UIImage(named: "ax"), for: .normal)
             word1.text = "bat"
             word2.text = "cat"
             word3.text = "ax"
+            playBeginningSoundsAudio(letter: "a")
+            // use dispatch queue to add delay between words. the delay have to increase each time by 1
+            DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: {
+                self.playBeginningSoundsFirstWord(letter: "a")
+            })
+            DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2), execute: {
+                self.playBeginningSoundsSecondWord(letter: "a")
+            })
+            DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(3), execute: {
+                self.playBeginningSoundsThirdWord(letter: "a")
+            })
         case "a ","A ":
             let pathToSound = Bundle.main.path(forResource: "a2", ofType: "mp3")!
             let url = URL(fileURLWithPath: pathToSound)
