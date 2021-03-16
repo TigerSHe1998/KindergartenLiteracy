@@ -139,8 +139,8 @@ class LearnEndingSounds: UIViewController {
             showPicturesForLetter(firstPic: "fox", secondPic: "ax", thirdPic: "six")
             showWordsForLetter(first: "fox", second: "ax", third: "six")
         case "z","Z":
-            showPicturesForLetter(firstPic: "quiz", secondPic: "prize", thirdPic: "freeze")
-            showWordsForLetter(first: "quiz", second: "prize", third: "freeze")
+            showPicturesForLetter(firstPic: "quiz1", secondPic: "prize", thirdPic: "freeze")
+            showWordsForLetter(first: "quiz1", second: "prize", third: "freeze")
         default:
         break
         }
