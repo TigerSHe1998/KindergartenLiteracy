@@ -88,7 +88,7 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="i">
+                                                <state key="normal" title="i ">
                                                     <color key="titleColor" systemColor="systemGreenColor"/>
                                                 </state>
                                                 <connections>
@@ -100,7 +100,7 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="a">
+                                                <state key="normal" title="a ">
                                                     <color key="titleColor" systemColor="systemGreenColor"/>
                                                 </state>
                                                 <connections>
