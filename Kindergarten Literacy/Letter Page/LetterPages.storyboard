@@ -189,42 +189,68 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="b" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLN-L6-uTd">
-                                <rect key="frame" x="399" y="87" width="45" height="114"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nDY-C7-GgN" userLabel="letter_quiz_choice_1">
+                                <rect key="frame" x="365.5" y="84" width="45" height="126"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="80"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="d" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4nm-hs-0K9">
-                                <rect key="frame" x="509" y="87" width="42" height="114"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="b">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="quizChoice:" destination="Zgg-ez-kC8" eventType="touchUpInside" id="XtS-wr-VOz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K9I-NO-XCL" userLabel="letter_quiz_choice_2">
+                                <rect key="frame" x="365.5" y="204" width="45" height="126"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="80"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="a" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jn1-0E-fve">
-                                <rect key="frame" x="399" y="176" width="43" height="114"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="b">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="quizChoice:" destination="Zgg-ez-kC8" eventType="touchUpInside" id="ac7-OZ-ZpI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3C-Ng-SDQ" userLabel="letter_quiz_choice_3">
+                                <rect key="frame" x="485.5" y="204" width="45" height="126"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="80"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="e" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PlP-87-jOw">
-                                <rect key="frame" x="508" y="175" width="43" height="114"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="b">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="quizChoice:" destination="Zgg-ez-kC8" eventType="touchUpInside" id="VoF-xB-w8B"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uTK-xG-8Ot" userLabel="letter_quiz_choice_4">
+                                <rect key="frame" x="485.5" y="84" width="45" height="126"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="80"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <state key="normal" title="b">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="quizChoice:" destination="Zgg-ez-kC8" eventType="touchUpInside" id="Nkw-pQ-phr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jio-FK-zxE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="uTK-xG-8Ot" firstAttribute="centerY" secondItem="Dz7-jl-Nva" secondAttribute="centerY" constant="-60" id="6jP-fi-aTK"/>
+                            <constraint firstItem="S3C-Ng-SDQ" firstAttribute="centerY" secondItem="Dz7-jl-Nva" secondAttribute="centerY" constant="60" id="DWS-8q-IPi"/>
+                            <constraint firstItem="K9I-NO-XCL" firstAttribute="centerY" secondItem="Dz7-jl-Nva" secondAttribute="centerY" constant="60" id="IPI-GA-ilz"/>
+                            <constraint firstItem="nDY-C7-GgN" firstAttribute="centerY" secondItem="Dz7-jl-Nva" secondAttribute="centerY" constant="-60" id="Mta-A8-k6N"/>
                             <constraint firstItem="t2e-Y7-bc1" firstAttribute="centerY" secondItem="Dz7-jl-Nva" secondAttribute="centerY" id="PJU-46-ehw"/>
+                            <constraint firstItem="uTK-xG-8Ot" firstAttribute="centerX" secondItem="Dz7-jl-Nva" secondAttribute="centerX" constant="60" id="QoZ-hd-9Un"/>
+                            <constraint firstItem="nDY-C7-GgN" firstAttribute="centerX" secondItem="Dz7-jl-Nva" secondAttribute="centerX" constant="-60" id="UhY-F5-dsY"/>
+                            <constraint firstItem="S3C-Ng-SDQ" firstAttribute="centerX" secondItem="Dz7-jl-Nva" secondAttribute="centerX" constant="60" id="WzB-7i-efx"/>
+                            <constraint firstItem="K9I-NO-XCL" firstAttribute="centerX" secondItem="Dz7-jl-Nva" secondAttribute="centerX" constant="-60" id="rpj-D0-ihn"/>
                             <constraint firstItem="t2e-Y7-bc1" firstAttribute="leading" secondItem="jio-FK-zxE" secondAttribute="leading" constant="15" id="sPk-yn-DO8"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="choice1" destination="nDY-C7-GgN" id="BdN-LL-UYO"/>
+                        <outlet property="choice2" destination="K9I-NO-XCL" id="xOy-YW-xVQ"/>
+                        <outlet property="choice3" destination="S3C-Ng-SDQ" id="P6g-CL-D1O"/>
+                        <outlet property="choice4" destination="uTK-xG-8Ot" id="LDO-1e-PPI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ES8-yb-jy5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -258,6 +284,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKi-YD-3ev" userLabel="quiz">
                                         <rect key="frame" x="0.0" y="140" width="56" height="56"/>
                                         <state key="normal" image="quiz"/>
+                                        <connections>
+                                            <action selector="quizButtonTapped:" destination="s8K-Da-xXG" eventType="touchUpInside" id="ZH4-g3-aXU"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TGF-61-ufU" userLabel="coin">
                                         <rect key="frame" x="0.0" y="210" width="56" height="56"/>
@@ -759,6 +788,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F0W-Bn-1lM" userLabel="quiz">
                                         <rect key="frame" x="0.0" y="140" width="56" height="56"/>
                                         <state key="normal" image="quiz"/>
+                                        <connections>
+                                            <action selector="quizButtonTapped:" destination="Uee-nB-Czd" eventType="touchUpInside" id="pok-vH-gUr"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Itr-S6-tPu" userLabel="coin">
                                         <rect key="frame" x="0.0" y="210" width="56" height="56"/>
@@ -1156,6 +1188,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gbR-8M-hb7" userLabel="quiz">
                                         <rect key="frame" x="0.0" y="140" width="56" height="56"/>
                                         <state key="normal" image="quiz"/>
+                                        <connections>
+                                            <action selector="quizButtonTapped:" destination="Vfx-Ra-4gB" eventType="touchUpInside" id="Cns-dC-yJw"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9aq-K4-ZkS" userLabel="coin">
                                         <rect key="frame" x="0.0" y="210" width="56" height="56"/>
@@ -1553,6 +1588,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pv7-hH-iB3" userLabel="quiz">
                                         <rect key="frame" x="0.0" y="140" width="56" height="56"/>
                                         <state key="normal" image="quiz"/>
+                                        <connections>
+                                            <action selector="quizButtonTapped:" destination="nrq-vR-jIr" eventType="touchUpInside" id="mvK-Zm-5EU"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G2k-1f-Lpu" userLabel="coin">
                                         <rect key="frame" x="0.0" y="210" width="56" height="56"/>

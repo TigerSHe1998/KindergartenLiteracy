@@ -38,6 +38,14 @@ class nameBmrasCap: UIViewController {
         present(vc, animated: true)
     }
     
+    @IBAction func quizButtonTapped(_ sender: Any) {
+        audioPlayer?.stop()
+        let vc = letterStoryBoard.instantiateViewController(identifier: "alphabetquiz_vc") as! alphabetQuiz
+        vc.passedInLetter = "B"
+        vc.passedInArrayID = 1 // 1 for bmras cap letter array
+        present(vc, animated: true)
+    }
+    
     
     //play sound
     var audioPlayer: AVAudioPlayer?

@@ -38,6 +38,13 @@ class nameAbcde: UIViewController {
         present(vc, animated: true)
     }
     
+    @IBAction func quizButtonTapped(_ sender: Any) {
+        audioPlayer?.stop()
+        let vc = letterStoryBoard.instantiateViewController(identifier: "alphabetquiz_vc") as! alphabetQuiz
+        vc.passedInLetter = "a"
+        vc.passedInArrayID = 2 // 2 for abcde letter array
+        present(vc, animated: true)
+    }
     
     //play sound
     var audioPlayer: AVAudioPlayer?

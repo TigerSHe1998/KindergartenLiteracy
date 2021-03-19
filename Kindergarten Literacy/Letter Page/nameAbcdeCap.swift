@@ -38,6 +38,14 @@ class nameAbcdeCap: UIViewController {
         present(vc, animated: true)
     }
     
+    @IBAction func quizButtonTapped(_ sender: Any) {
+        audioPlayer?.stop()
+        let vc = letterStoryBoard.instantiateViewController(identifier: "alphabetquiz_vc") as! alphabetQuiz
+        vc.passedInLetter = "A"
+        vc.passedInArrayID = 3 // 3 for abcde cap letter array
+        present(vc, animated: true)
+    }
+    
     
     //play sound
     var audioPlayer: AVAudioPlayer?

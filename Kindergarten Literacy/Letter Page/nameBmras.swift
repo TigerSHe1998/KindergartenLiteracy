@@ -39,7 +39,10 @@ class nameBmras: UIViewController {
     }
     
     @IBAction func quizButtonTapped(_ sender: Any) {
-        let vc = letterStoryBoard.instantiateViewController(identifier: "alphabetquiz_vc")
+        audioPlayer?.stop()
+        let vc = letterStoryBoard.instantiateViewController(identifier: "alphabetquiz_vc") as! alphabetQuiz
+        vc.passedInLetter = "b"
+        vc.passedInArrayID = 0 // 0 for bmras letter array
         present(vc, animated: true)
     }
     

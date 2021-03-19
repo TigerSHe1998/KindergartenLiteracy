@@ -284,7 +284,13 @@ class alphabetLearn: UIViewController {
         present(vc, animated: true)
     }
     
-
+    @IBAction func quizButtonTapped(_ sender: Any) {
+        let vc = letterStoryBoard.instantiateViewController(identifier: "alphabetquiz_vc") as! alphabetQuiz
+        vc.passedInLetter = displayButton.currentTitle!
+        vc.passedInArrayID = passedInArrayID
+        present(vc, animated: true)
+    }
+    
     
     
     /*
