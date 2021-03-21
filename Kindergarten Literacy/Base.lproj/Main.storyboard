@@ -58,14 +58,12 @@
                                                 <state key="normal" backgroundImage="letters"/>
                                                 <connections>
                                                     <action selector="lettersButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ypD-1D-ny3"/>
-                                                    <action selector="sectionTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FHC-ze-5wn"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZrZ-HM-uLX">
                                                 <rect key="frame" x="0.0" y="155" width="200" height="145"/>
                                                 <state key="normal" backgroundImage="vowels"/>
                                                 <connections>
-                                                    <action selector="sectionTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kbr-sZ-Z0j"/>
                                                     <action selector="vowelsButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j2A-RO-gXn"/>
                                                 </connections>
                                             </button>
@@ -79,15 +77,14 @@
                                                 <state key="normal" backgroundImage="beginning sounds"/>
                                                 <connections>
                                                     <action selector="beginningSoundsButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rfc-AI-VXO"/>
-                                                    <action selector="sectionTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lZx-j1-oiJ"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vGR-iP-tef">
                                                 <rect key="frame" x="0.0" y="155" width="200" height="145"/>
                                                 <state key="normal" backgroundImage="ending sounds"/>
                                                 <connections>
+                                                    <action selector="SectionTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zcs-VP-KMW"/>
                                                     <action selector="endingSoundsButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tyh-oa-NfH"/>
-                                                    <action selector="sectionTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qi5-Jr-bDw"/>
                                                 </connections>
                                             </button>
                                         </subviews>

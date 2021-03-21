@@ -85,64 +85,17 @@ class ViewController: UIViewController {
     }
     
     
-    @IBAction func sectionTapped(_ sender: UIButton) {
-        // Tags:
-        // #1 letters
-        // #2 vowels
-        // #3 beginning sounds
-        // #4 ending sounds
-        
-        let selectedSection = sender.tag
-        switch selectedSection {
-            case 1:
-                let pathToSound = Bundle.main.path(forResource: "", ofType: "mp3")!
-                let url = URL(fileURLWithPath: pathToSound)
+    @IBAction func SectionTapped(_ sender: UIButton) {
+
+        let pathToSound = Bundle.main.path(forResource: "#Ending_Sounds", ofType:"mp3")!
+        let url = URL(fileURLWithPath: pathToSound)
                 
-                do {
-                    audioPlayer = try AVAudioPlayer(contentsOf: url)
-                    audioPlayer?.play()
-                } catch {
-                    // error handling
-                }
-            
-            case 2:
-                let pathToSound = Bundle.main.path(forResource: "", ofType: "mp3")!
-                let url = URL(fileURLWithPath: pathToSound)
-            
-                do {
-                    audioPlayer = try AVAudioPlayer(contentsOf: url)
-                    audioPlayer?.play()
-                } catch {
-                    // error handling
-                }
-            
-            case 3:
-                let pathToSound = Bundle.main.path(forResource: "", ofType: "mp3")!
-                let url = URL(fileURLWithPath: pathToSound)
-                
-                do {
-                    audioPlayer = try AVAudioPlayer(contentsOf: url)
-                    audioPlayer?.play()
-                } catch {
-                    // error handling
-                }
-            
-            case 4:
-                let pathToSound = Bundle.main.path(forResource: "#Ending_Sounds", ofType: "mp3")!
-                let url = URL(fileURLWithPath: pathToSound)
-                
-                do {
-                    audioPlayer = try AVAudioPlayer(contentsOf: url)
-                    audioPlayer?.play()
-                } catch {
-                    // error handling
-                }
-                
-            default:
-                return
-            
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: url)
+            audioPlayer?.play()
+        } catch {
+            // error handling
         }
-        
     
         
     }

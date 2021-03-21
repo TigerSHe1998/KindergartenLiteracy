@@ -434,7 +434,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="1VA-AM-yhD"/>
                                         </constraints>
-                                        <state key="normal" backgroundImage="quiz1"/>
+                                        <state key="normal" backgroundImage="quiz"/>
                                         <connections>
                                             <action selector="quizButtonTapped:" destination="RK9-TE-cba" eventType="touchUpInside" id="DTN-7A-dZo"/>
                                         </connections>
@@ -550,7 +550,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="aSO-Z4-NwD"/>
                                         </constraints>
-                                        <state key="normal" backgroundImage="quiz1"/>
+                                        <state key="normal" backgroundImage="quiz"/>
                                         <connections>
                                             <action selector="quizButtonTapped:" destination="f7e-Ib-aGP" eventType="touchUpInside" id="uNv-a2-X7t"/>
                                         </connections>
@@ -1161,7 +1161,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="hTw-SQ-xfu"/>
                                         </constraints>
-                                        <state key="normal" backgroundImage="quiz1"/>
+                                        <state key="normal" backgroundImage="quiz"/>
                                         <connections>
                                             <action selector="quizButtonTapped:" destination="D1a-M2-ge1" eventType="touchUpInside" id="X24-Iw-yd1"/>
                                         </connections>
@@ -1277,7 +1277,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="oEn-dS-tVT"/>
                                         </constraints>
-                                        <state key="normal" backgroundImage="quiz1"/>
+                                        <state key="normal" backgroundImage="quiz"/>
                                         <connections>
                                             <action selector="quizButtonTapped:" destination="0kz-R1-3sS" eventType="touchUpInside" id="FfB-e1-AqN"/>
                                         </connections>
@@ -1597,7 +1597,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="fwl-ld-Ukv"/>
                                         </constraints>
-                                        <state key="normal" backgroundImage="quiz1"/>
+                                        <state key="normal" backgroundImage="quiz"/>
                                         <connections>
                                             <action selector="quizButtonTapped:" destination="KEr-mX-3b2" eventType="touchUpInside" id="yu2-0R-UWQ"/>
                                         </connections>
@@ -1938,7 +1938,7 @@
         <image name="forward" width="56" height="56"/>
         <image name="home" width="56" height="56"/>
         <image name="puzzle" width="56" height="56"/>
-        <image name="quiz1" width="56" height="56"/>
+        <image name="quiz" width="56" height="56"/>
         <image name="repeat" width="56" height="56"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -507,6 +507,7 @@
 		C0A28E2125EC088A008A7564 /* Ending Sounds Audio */ = {
 			isa = PBXGroup;
 			children = (
+				C0A28E5025EC1DD1008A7564 /* #Ending_Sounds.mp3 */,
 				C05EF4EC25EED1A10006C5E0 /* Word */,
 				C0A28E7725EC30BA008A7564 /* Full */,
 				C0A28E2225EC08AB008A7564 /* Individual */,
@@ -534,14 +535,6 @@
 				C0A28EB225EC714C008A7564 /* kuh.mp3 */,
 			);
 			path = Individual;
-			sourceTree = "<group>";
-		};
-		C0A28E5625EC258E008A7564 /* Main Page Sounds */ = {
-			isa = PBXGroup;
-			children = (
-				C0A28E5025EC1DD1008A7564 /* #Ending_Sounds.mp3 */,
-			);
-			path = "Main Page Sounds";
 			sourceTree = "<group>";
 		};
 		C0A28E7725EC30BA008A7564 /* Full */ = {
@@ -585,7 +578,6 @@
 		C0BA854B256C6485000EBAEC /* Kindergarten Literacy */ = {
 			isa = PBXGroup;
 			children = (
-				C0A28E5625EC258E008A7564 /* Main Page Sounds */,
 				C0BA8555256C6487000EBAEC /* Assets.xcassets */,
 				3407962525D7999F002191C5 /* Vowel Letter */,
 				98358CE125D6A6C70092C8FF /* Beginning Sounds */,
