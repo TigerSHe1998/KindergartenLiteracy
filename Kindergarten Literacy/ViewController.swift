@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
     
@@ -16,6 +17,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var BeginningSoundButton: UIButton!
 
     @IBOutlet weak var EndingSoundButton: UIButton!
+    
+    var audioPlayer: AVAudioPlayer?
+    
     
     
     override func viewDidLoad() {
@@ -33,7 +37,8 @@ class ViewController: UIViewController {
     
     
     @IBAction func vowelsButtonTapped(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(identifier: "vowels_vc") as! VowelViewController
+        let sb = UIStoryboard(name: "VowelLetter", bundle: nil)
+        let vc = sb.instantiateViewController(identifier: "vowels_vc") as! VowelLetterViewController
         present(vc, animated: true)
     }
     
@@ -80,6 +85,20 @@ class ViewController: UIViewController {
     }
     
     
+    @IBAction func SectionTapped(_ sender: UIButton) {
+
+        let pathToSound = Bundle.main.path(forResource: "#Ending_Sounds", ofType:"mp3")!
+        let url = URL(fileURLWithPath: pathToSound)
+                
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: url)
+            audioPlayer?.play()
+        } catch {
+            // error handling
+        }
+    
+        
+    }
 }
 
 
