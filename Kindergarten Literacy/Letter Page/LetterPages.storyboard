@@ -144,6 +144,118 @@
             </objects>
             <point key="canvasLocation" x="-216.29464285714286" y="92.753623188405811"/>
         </scene>
+        <!--Alphabet Quiz-->
+        <scene sceneID="5Rt-nG-xdJ">
+            <objects>
+                <viewController storyboardIdentifier="alphabetquiz_vc" id="Zgg-ez-kC8" customClass="alphabetQuiz" customModule="Kindergarten_Literacy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dz7-jl-Nva">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="t2e-Y7-bc1" userLabel="side_bar_stack">
+                                <rect key="frame" x="59" y="38" width="56" height="338"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPH-FD-FVF" userLabel="back">
+                                        <rect key="frame" x="0.0" y="0.0" width="56" height="56"/>
+                                        <state key="normal" image="back"/>
+                                        <connections>
+                                            <action selector="backButtonTapped:" destination="Zgg-ez-kC8" eventType="touchUpInside" id="MGg-NE-Fho"/>
+                                            <action selector="backButtonTapped:" destination="mHA-37-G36" eventType="touchUpInside" id="m5g-GH-rVd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWn-7z-Jmg" userLabel="home">
+                                        <rect key="frame" x="0.0" y="94" width="56" height="56"/>
+                                        <state key="normal" image="home"/>
+                                        <connections>
+                                            <action selector="homeButtonTapped:" destination="mHA-37-G36" eventType="touchUpInside" id="h1S-JA-b3H"/>
+                                            <action selector="homeButtonTapped:" destination="Zgg-ez-kC8" eventType="touchUpInside" id="yR4-Zi-ljO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lHE-D6-0d5" userLabel="coin">
+                                        <rect key="frame" x="0.0" y="188" width="56" height="56"/>
+                                        <state key="normal" image="repeat"/>
+                                        <connections>
+                                            <action selector="puzzleButtonTapped:" destination="mHA-37-G36" eventType="touchUpInside" id="H93-Ad-mdE"/>
+                                            <action selector="replayButtonTapped:" destination="Zgg-ez-kC8" eventType="touchUpInside" id="XkI-y2-m2Y"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLh-Rt-5Ec" userLabel="puzzle">
+                                        <rect key="frame" x="0.0" y="282" width="56" height="56"/>
+                                        <state key="normal" image="bank"/>
+                                        <connections>
+                                            <action selector="coinButtonTapped:" destination="mHA-37-G36" eventType="touchUpInside" id="8He-gE-Sc0"/>
+                                            <action selector="coinButtonTapped:" destination="Zgg-ez-kC8" eventType="touchUpInside" id="hDy-1B-vsd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nDY-C7-GgN" userLabel="letter_quiz_choice_1">
+                                <rect key="frame" x="365.5" y="84" width="45" height="126"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="80"/>
+                                <state key="normal" title="b">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="quizChoice:" destination="Zgg-ez-kC8" eventType="touchUpInside" id="XtS-wr-VOz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K9I-NO-XCL" userLabel="letter_quiz_choice_2">
+                                <rect key="frame" x="365.5" y="204" width="45" height="126"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="80"/>
+                                <state key="normal" title="b">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="quizChoice:" destination="Zgg-ez-kC8" eventType="touchUpInside" id="ac7-OZ-ZpI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3C-Ng-SDQ" userLabel="letter_quiz_choice_3">
+                                <rect key="frame" x="485.5" y="204" width="45" height="126"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="80"/>
+                                <state key="normal" title="b">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="quizChoice:" destination="Zgg-ez-kC8" eventType="touchUpInside" id="VoF-xB-w8B"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uTK-xG-8Ot" userLabel="letter_quiz_choice_4">
+                                <rect key="frame" x="485.5" y="84" width="45" height="126"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="80"/>
+                                <state key="normal" title="b">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="quizChoice:" destination="Zgg-ez-kC8" eventType="touchUpInside" id="Nkw-pQ-phr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jio-FK-zxE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uTK-xG-8Ot" firstAttribute="centerY" secondItem="Dz7-jl-Nva" secondAttribute="centerY" constant="-60" id="6jP-fi-aTK"/>
+                            <constraint firstItem="S3C-Ng-SDQ" firstAttribute="centerY" secondItem="Dz7-jl-Nva" secondAttribute="centerY" constant="60" id="DWS-8q-IPi"/>
+                            <constraint firstItem="K9I-NO-XCL" firstAttribute="centerY" secondItem="Dz7-jl-Nva" secondAttribute="centerY" constant="60" id="IPI-GA-ilz"/>
+                            <constraint firstItem="nDY-C7-GgN" firstAttribute="centerY" secondItem="Dz7-jl-Nva" secondAttribute="centerY" constant="-60" id="Mta-A8-k6N"/>
+                            <constraint firstItem="t2e-Y7-bc1" firstAttribute="centerY" secondItem="Dz7-jl-Nva" secondAttribute="centerY" id="PJU-46-ehw"/>
+                            <constraint firstItem="uTK-xG-8Ot" firstAttribute="centerX" secondItem="Dz7-jl-Nva" secondAttribute="centerX" constant="60" id="QoZ-hd-9Un"/>
+                            <constraint firstItem="nDY-C7-GgN" firstAttribute="centerX" secondItem="Dz7-jl-Nva" secondAttribute="centerX" constant="-60" id="UhY-F5-dsY"/>
+                            <constraint firstItem="S3C-Ng-SDQ" firstAttribute="centerX" secondItem="Dz7-jl-Nva" secondAttribute="centerX" constant="60" id="WzB-7i-efx"/>
+                            <constraint firstItem="K9I-NO-XCL" firstAttribute="centerX" secondItem="Dz7-jl-Nva" secondAttribute="centerX" constant="-60" id="rpj-D0-ihn"/>
+                            <constraint firstItem="t2e-Y7-bc1" firstAttribute="leading" secondItem="jio-FK-zxE" secondAttribute="leading" constant="15" id="sPk-yn-DO8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="choice1" destination="nDY-C7-GgN" id="BdN-LL-UYO"/>
+                        <outlet property="choice2" destination="K9I-NO-XCL" id="xOy-YW-xVQ"/>
+                        <outlet property="choice3" destination="S3C-Ng-SDQ" id="P6g-CL-D1O"/>
+                        <outlet property="choice4" destination="uTK-xG-8Ot" id="LDO-1e-PPI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ES8-yb-jy5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1053.3482142857142" y="92.753623188405811"/>
+        </scene>
         <!--Alphabet Learn-->
         <scene sceneID="sjV-sP-cF6">
             <objects>
@@ -172,6 +284,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKi-YD-3ev" userLabel="quiz">
                                         <rect key="frame" x="0.0" y="140" width="56" height="56"/>
                                         <state key="normal" image="quiz"/>
+                                        <connections>
+                                            <action selector="quizButtonTapped:" destination="s8K-Da-xXG" eventType="touchUpInside" id="ZH4-g3-aXU"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TGF-61-ufU" userLabel="coin">
                                         <rect key="frame" x="0.0" y="210" width="56" height="56"/>
@@ -273,6 +388,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FYy-3K-5gg" userLabel="quiz">
                                         <rect key="frame" x="0.0" y="140" width="56" height="56"/>
                                         <state key="normal" image="quiz"/>
+                                        <connections>
+                                            <action selector="quizButtonTapped:" destination="DSc-dU-ctE" eventType="touchUpInside" id="3qD-ry-2lw"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ly-F0-2oX" userLabel="coin">
                                         <rect key="frame" x="0.0" y="210" width="56" height="56"/>
@@ -299,9 +417,8 @@
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJQ-o8-yua">
                                                 <rect key="frame" x="480" y="20" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="r">
+                                                <state key="normal" title="r" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -311,9 +428,8 @@
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FIB-fG-xT1">
                                                 <rect key="frame" x="0.0" y="20" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="b">
+                                                <state key="normal" title="b" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -323,9 +439,8 @@
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rbL-Xl-gHk">
                                                 <rect key="frame" x="0.0" y="190" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="a">
+                                                <state key="normal" title="a" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -335,9 +450,8 @@
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lvk-9g-zsv">
                                                 <rect key="frame" x="480" y="190" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="t">
+                                                <state key="normal" title="t" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -347,9 +461,8 @@
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XEr-dz-Zia">
                                                 <rect key="frame" x="0.0" y="360" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="g">
+                                                <state key="normal" title="g" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -395,9 +508,8 @@
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NFb-q8-M5X">
                                                 <rect key="frame" x="240" y="190" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="s">
+                                                <state key="normal" title="s" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -419,9 +531,8 @@
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vY5-WK-wiV">
                                                 <rect key="frame" x="240" y="360" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="n">
+                                                <state key="normal" title="n" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -431,9 +542,8 @@
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k8U-qi-Rg2">
                                                 <rect key="frame" x="480" y="360" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="i">
+                                                <state key="normal" title="i" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -527,9 +637,8 @@
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="piD-9w-ILK">
                                                 <rect key="frame" x="240" y="20" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="m">
+                                                <state key="normal" title="m" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -608,6 +717,30 @@
                                                     <action selector="toAlphabetLearnPage:" destination="DSc-dU-ctE" eventType="touchUpInside" id="9qB-85-g6i"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XPM-4v-vj9">
+                                                <rect key="frame" x="196" y="77" width="57" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="add star"/>
+                                                <connections>
+                                                    <action selector="addStar:" destination="DSc-dU-ctE" eventType="touchUpInside" id="KSL-ll-Qb3"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i7O-NO-kPD">
+                                                <rect key="frame" x="209" y="39" width="30" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="init"/>
+                                                <connections>
+                                                    <action selector="initTest:" destination="DSc-dU-ctE" eventType="touchUpInside" id="Gcq-7G-eCv"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hy7-kn-bNc">
+                                                <rect key="frame" x="184" y="115" width="81" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="remove star"/>
+                                                <connections>
+                                                    <action selector="removeStar:" destination="DSc-dU-ctE" eventType="touchUpInside" id="yEd-2a-OwB"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -637,6 +770,9 @@
                         </constraints>
                     </view>
                     <size key="freeformSize" width="896" height="1600"/>
+                    <connections>
+                        <outlet property="bButton" destination="FIB-fG-xT1" id="Zeu-qD-JMp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ggX-lN-rij" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -670,6 +806,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F0W-Bn-1lM" userLabel="quiz">
                                         <rect key="frame" x="0.0" y="140" width="56" height="56"/>
                                         <state key="normal" image="quiz"/>
+                                        <connections>
+                                            <action selector="quizButtonTapped:" destination="Uee-nB-Czd" eventType="touchUpInside" id="pok-vH-gUr"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Itr-S6-tPu" userLabel="coin">
                                         <rect key="frame" x="0.0" y="210" width="56" height="56"/>
@@ -1067,6 +1206,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gbR-8M-hb7" userLabel="quiz">
                                         <rect key="frame" x="0.0" y="140" width="56" height="56"/>
                                         <state key="normal" image="quiz"/>
+                                        <connections>
+                                            <action selector="quizButtonTapped:" destination="Vfx-Ra-4gB" eventType="touchUpInside" id="Cns-dC-yJw"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9aq-K4-ZkS" userLabel="coin">
                                         <rect key="frame" x="0.0" y="210" width="56" height="56"/>
@@ -1464,6 +1606,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pv7-hH-iB3" userLabel="quiz">
                                         <rect key="frame" x="0.0" y="140" width="56" height="56"/>
                                         <state key="normal" image="quiz"/>
+                                        <connections>
+                                            <action selector="quizButtonTapped:" destination="nrq-vR-jIr" eventType="touchUpInside" id="mvK-Zm-5EU"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G2k-1f-Lpu" userLabel="coin">
                                         <rect key="frame" x="0.0" y="210" width="56" height="56"/>
@@ -1840,6 +1985,7 @@
         <image name="forward" width="56" height="56"/>
         <image name="home" width="56" height="56"/>
         <image name="letters_entry_bg" width="1510" height="800"/>
+        <image name="level_button_0_star" width="549" height="444"/>
         <image name="names_lowercase_alphabetical" width="429" height="108"/>
         <image name="names_lowercase_bmras" width="429" height="107"/>
         <image name="names_uppercase_alphabetical" width="429" height="108"/>

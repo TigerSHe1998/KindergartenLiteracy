@@ -38,6 +38,14 @@ class nameBmras: UIViewController {
         present(vc, animated: true)
     }
     
+    @IBAction func quizButtonTapped(_ sender: Any) {
+        audioPlayer?.stop()
+        let vc = letterStoryBoard.instantiateViewController(identifier: "alphabetquiz_vc") as! alphabetQuiz
+        vc.passedInLetter = "b"
+        vc.passedInArrayID = 0 // 0 for bmras letter array
+        present(vc, animated: true)
+    }
+    
     
     //play sound
     var audioPlayer: AVAudioPlayer?
@@ -56,14 +64,46 @@ class nameBmras: UIViewController {
     
     //main button function to learn page
     @IBAction func toAlphabetLearnPage(_ sender: Any) {
+        audioPlayer?.stop()
         let vc = letterStoryBoard.instantiateViewController(identifier: "alphabetlearn_vc") as! alphabetLearn
         vc.passedInLetter = (sender as! UIButton).titleLabel!.text!
         vc.passedInArrayID = 0 // 0 for bmras letter array
         present(vc, animated: true)
     }
     
-    
+    // begin add star test area //
+    @IBOutlet var bButton: UIButton!
+    // set up array of images with different star count. Easy to add/remove
+    let i0 = UIImage(named: "level_button_0_star")
+    let i1 = UIImage(named: "level_button_1_star")
+    let i2 = UIImage(named: "level_button_2_star")
+    let i3 = UIImage(named: "level_button_3_star")
+    let i4 = UIImage(named: "level_button_4_star")
+    let i5 = UIImage(named: "level_button_5_star")
+    var starsImages: [UIImage?] { return [self.i0, self.i1, self.i2, self.i3, self.i4, self.i5] }
 
+    // init background image to 0 stars first
+    @IBAction func initTest(_ sender: Any) {
+        bButton.setBackgroundImage(starsImages[0], for: .normal)
+    }
+    
+    @IBAction func addStar(_ sender: Any) {
+        let currBG = bButton.backgroundImage(for: .normal)
+        let index = starsImages.firstIndex(of: currBG)!
+        if index < starsImages.count - 1 {
+            bButton.setBackgroundImage(starsImages[index + 1], for: .normal)
+        }
+    }
+    
+    @IBAction func removeStar(_ sender: Any) {
+        let currBG = bButton.backgroundImage(for: .normal)
+        let index = starsImages.firstIndex(of: currBG)!
+        if index > 0 {
+            bButton.setBackgroundImage(starsImages[index - 1], for: .normal)
+        }
+    }
+    // end test area //
+    
     
     /*
     // MARK: - Navigation

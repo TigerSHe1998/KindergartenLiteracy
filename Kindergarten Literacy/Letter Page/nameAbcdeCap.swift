@@ -38,6 +38,14 @@ class nameAbcdeCap: UIViewController {
         present(vc, animated: true)
     }
     
+    @IBAction func quizButtonTapped(_ sender: Any) {
+        audioPlayer?.stop()
+        let vc = letterStoryBoard.instantiateViewController(identifier: "alphabetquiz_vc") as! alphabetQuiz
+        vc.passedInLetter = "A"
+        vc.passedInArrayID = 3 // 3 for abcde cap letter array
+        present(vc, animated: true)
+    }
+    
     
     //play sound
     var audioPlayer: AVAudioPlayer?
@@ -56,6 +64,7 @@ class nameAbcdeCap: UIViewController {
     
     //main button function to learn page
     @IBAction func toAlphabetLearnPage(_ sender: Any) {
+        audioPlayer?.stop()
         let vc = letterStoryBoard.instantiateViewController(identifier: "alphabetlearn_vc") as! alphabetLearn
         vc.passedInLetter = (sender as! UIButton).titleLabel!.text!
         vc.passedInArrayID = 3 // 3 for abcde cap letter array

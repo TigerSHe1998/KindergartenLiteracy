@@ -288,7 +288,9 @@
 		DC6532B025E98652005A4320 /* 00alphabet_letters.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DC6532AF25E98652005A4320 /* 00alphabet_letters.mp3 */; };
 		DC8EB4BF25CB17B300FD7BB1 /* PuzzleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8EB4BD25CB17B300FD7BB1 /* PuzzleViewController.swift */; };
 		DC8EB4C025CB17B300FD7BB1 /* CoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8EB4BE25CB17B300FD7BB1 /* CoinViewController.swift */; };
+		DCC2567C2604FA0500E48B78 /* alphabetQuiz_correct.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC2567B2604FA0500E48B78 /* alphabetQuiz_correct.mp3 */; };
 		DCD5CA3625CECD110095B416 /* LetterPages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCD5CA3525CECD110095B416 /* LetterPages.storyboard */; };
+		DCECA4DA25EC0FC100FECDD8 /* alphabetQuiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCECA4D925EC0FC100FECDD8 /* alphabetQuiz.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -575,7 +577,9 @@
 		DC6532AF25E98652005A4320 /* 00alphabet_letters.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 00alphabet_letters.mp3; sourceTree = "<group>"; };
 		DC8EB4BD25CB17B300FD7BB1 /* PuzzleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PuzzleViewController.swift; sourceTree = "<group>"; };
 		DC8EB4BE25CB17B300FD7BB1 /* CoinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinViewController.swift; sourceTree = "<group>"; };
+		DCC2567B2604FA0500E48B78 /* alphabetQuiz_correct.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alphabetQuiz_correct.mp3; sourceTree = "<group>"; };
 		DCD5CA3525CECD110095B416 /* LetterPages.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LetterPages.storyboard; sourceTree = "<group>"; };
+		DCECA4D925EC0FC100FECDD8 /* alphabetQuiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alphabetQuiz.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -958,6 +962,7 @@
 		DC65327425E96ADB005A4320 /* Letter Page Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				DCC256792604EF2300E48B78 /* Alphabet Quiz - sfx */,
 				DC65327825E97D7E005A4320 /* Alphabet Letters - audio */,
 				DC65327525E96C93005A4320 /* 00_Button_Audio_Win_A_Green_Ball_(Alphabet_Letters).mp3 */,
 				DC6532AF25E98652005A4320 /* 00alphabet_letters.mp3 */,
@@ -1004,6 +1009,7 @@
 				DC65327425E96ADB005A4320 /* Letter Page Sounds */,
 				DCD5CA3525CECD110095B416 /* LetterPages.storyboard */,
 				C0BA8566256CA9ED000EBAEC /* letterMainPage.swift */,
+				DCECA4D925EC0FC100FECDD8 /* alphabetQuiz.swift */,
 				DC65327125E95E97005A4320 /* alphabetLearn.swift */,
 				DC65326125E9266F005A4320 /* nameBmras.swift */,
 				DC65326825E9588F005A4320 /* nameBmrasCap.swift */,
@@ -1011,6 +1017,14 @@
 				DC65326E25E95CCE005A4320 /* nameAbcdeCap.swift */,
 			);
 			path = "Letter Page";
+			sourceTree = "<group>";
+		};
+		DCC256792604EF2300E48B78 /* Alphabet Quiz - sfx */ = {
+			isa = PBXGroup;
+			children = (
+				DCC2567B2604FA0500E48B78 /* alphabetQuiz_correct.mp3 */,
+			);
+			path = "Alphabet Quiz - sfx";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1299,9 +1313,12 @@
 				98A571B826065B5E00C4C35E /* cat-b.mp3 in Resources */,
 				DC6532A925E97D7E005A4320 /* alphabetSound_O.mp3 in Resources */,
 
+				DCC2567C2604FA0500E48B78 /* alphabetQuiz_correct.mp3 in Resources */,
+
 				98A571AE26065B5E00C4C35E /* jump-b.mp3 in Resources */,
 				98A571B126065B5E00C4C35E /* monkey-b.mp3 in Resources */,
 				98A5722E2606733B00C4C35E /* voice-b.mp3 in Resources */,
+
 				DC6532A725E97D7E005A4320 /* alphabetSound_Y.mp3 in Resources */,
 				98672C9925EBB92E006487F5 /* d_duh_dog_drum_door.mp3 in Resources */,
 				98A571C626065B5E00C4C35E /* key-b.mp3 in Resources */,
@@ -1367,7 +1384,11 @@
 				3407962725D799FA002191C5 /* VowelLetterViewController.swift in Sources */,
 				DC8EB4C025CB17B300FD7BB1 /* CoinViewController.swift in Sources */,
 				98358CF325D6A6C70092C8FF /* BeginningSoundsTwoButtonViewController.swift in Sources */,
+
+				DCECA4DA25EC0FC100FECDD8 /* alphabetQuiz.swift in Sources */,
+
 				98A572202606666500C4C35E /* OneButtonLevelViewController.swift in Sources */,
+
 				98358CED25D6A6C70092C8FF /* BeginningSoundsViewController.swift in Sources */,
 				DC65327225E95E97005A4320 /* alphabetLearn.swift in Sources */,
 				C0BA856F256CAAB5000EBAEC /* EndingSoundsViewController.swift in Sources */,
@@ -1386,10 +1407,12 @@
 				98358CF425D6A6C70092C8FF /* OneButtonLevelViewController.swift in Sources */,
 				DC65326C25E95AB5005A4320 /* nameAbcde.swift in Sources */,
 				C0BA8551256C6485000EBAEC /* ViewController.swift in Sources */,
+
 				C0B508E325D676720073B187 /* EndingSoundsThree.swift in Sources */,
 				C0B508E625D676820073B187 /* EndingSoundsFour.swift in Sources */,
 				C0B508DD25D676550073B187 /* EndingSoundsOne.swift in Sources */,
 				C0A28E9025EC3F56008A7564 /* LearnEndingSounds.swift in Sources */,
+
 				3407962A25D79B61002191C5 /* RealVowelViewController.swift in Sources */,
 
 				C0BA854D256C6485000EBAEC /* AppDelegate.swift in Sources */,

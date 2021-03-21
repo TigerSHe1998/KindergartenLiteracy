@@ -1,15 +1,15 @@
 //
-//  alphabetLearn.swift
+//  alphabetQuiz.swift
 //  Kindergarten Literacy
 //
-//  Created by TigerSHe on 2021/2/27.
+//  Created by TigerSHe on 2021/3/1.
 //
 
 import UIKit
 import AVFoundation
 
-class alphabetLearn: UIViewController {
-    
+class alphabetQuiz: UIViewController {
+   
     //content arrays
     //numbered as 0, 1, 2, 3 in order
     var bmrasArray = ["b", "m", "r", "a", "s", "t", "g", "n", "i", "p", "c", "h", "f", "o", "d", "l", "k", "u", "j", "w", "e", "y", "z", "v", "q", "x"]
@@ -21,21 +21,27 @@ class alphabetLearn: UIViewController {
     var passedInLetter: String!
     var passedInArrayID: Int!
     
-    //global variables
-    var currentArray: Array<String>!
-    @IBOutlet var displayButton: UIButton!;
+    // choice buttons variables outlet
+    @IBOutlet var choice1: UIButton!;
+    @IBOutlet var choice2: UIButton!;
+    @IBOutlet var choice3: UIButton!;
+    @IBOutlet var choice4: UIButton!;
     
-    //audio player from imported library
+    // audio player
     var audioPlayer: AVAudioPlayer?
+    
+    // other globals
+    var currentArray: Array<String>!
+    var currentLetter: String!
     
     // reference to different storyboards
     let letterStoryBoard:UIStoryboard = UIStoryboard(name: "LetterPages", bundle:nil)
     let mainStoryBoard:UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
     
-    //startup logic, assign content arrays + display text + play first audio
+    // init setup
     override func viewDidLoad() {
         super.viewDidLoad()
-        displayButton.setTitle(passedInLetter, for: .normal)
+        // set up current Array + letter
         switch passedInArrayID {
         case 0:
             currentArray = bmrasArray
@@ -48,35 +54,135 @@ class alphabetLearn: UIViewController {
         default:
             currentArray = bmrasArray
         }
-        playLetterAudio(letter: passedInLetter)
+        currentLetter = passedInLetter
+        // play sound
+        playLetterAudio(letter: currentLetter)
+        // set up choices
+        setupChoices()
         // Do any additional setup after loading the view.
     }
     
-    //buttons for changing display letter
-    @IBAction func nextLetter(_ sender: Any) {
-        let curr: String = displayButton.currentTitle!
-        let index = currentArray.firstIndex(of: curr)!;
-        if index < currentArray.count - 1 {
-            displayButton.setTitle(currentArray[index + 1], for: .normal)
+    // function to determine correct choice (also plays animation and sets up next question)
+    @IBAction func quizChoice(_ sender: Any) {
+        let choiceLetter = (sender as! UIButton).titleLabel!.text!
+        if choiceLetter == currentLetter {
+            // sound fx
+            playCorrect()
+            // disable button to avoid tapping during animation
+            (sender as! UIButton).isEnabled = false
+            
+            // ANIMATION BLOCK //
+            // backup center points
+            let c1 = self.choice1.center
+            let c2 = self.choice2.center
+            let c3 = self.choice3.center
+            let c4 = self.choice4.center
+            // play animation
+            UIView.animate(withDuration: 1, animations: {
+                // center correct choice
+                (sender as! UIButton).center = self.view.center
+                // fade others if not correct choice
+                if self.choice1 != (sender as! UIButton) {
+                    self.choice1.alpha = 0.0
+                }
+                if self.choice2 != (sender as! UIButton) {
+                    self.choice2.alpha = 0.0
+                }
+                if self.choice3 != (sender as! UIButton) {
+                    self.choice3.alpha = 0.0
+                }
+                if self.choice4 != (sender as! UIButton) {
+                    self.choice4.alpha = 0.0
+                }
+            }, completion: { done in // excutes only after animation complete
+                if done {
+                    // sleep 1 second to keep answer on screen longer
+                    DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute : {
+                        // hide letter to avoid pop in
+                        (sender as! UIButton).alpha = 0.0
+                        // assign new choices and layout
+                        self.currentLetter = self.currentArray.randomElement()
+                        self.setupChoices()
+                        self.playLetterAudio(letter: self.currentLetter)
+                        // reset positions
+                        self.choice1.center = c1
+                        self.choice2.center = c2
+                        self.choice3.center = c3
+                        self.choice4.center = c4
+                        UIView.animate(withDuration: 0.5, animations: {
+                            // show hidden letter with grace (if no use animation will pop)
+                            self.choice1.alpha = 1.0
+                            self.choice2.alpha = 1.0
+                            self.choice3.alpha = 1.0
+                            self.choice4.alpha = 1.0
+                        })
+                        // re enable button
+                        (sender as! UIButton).isEnabled = true
+                    })
+                }
+            })
+            // END ANIMATION BLOCK //
         }
-        playLetterAudio(letter: displayButton.currentTitle!)
     }
     
-    @IBAction func prevLetter(_ sender: Any) {
-        let curr: String = displayButton.currentTitle!
-        let index = currentArray.firstIndex(of: curr)!;
-        if index > 0 {
-            displayButton.setTitle(currentArray[index - 1], for: .normal)
+    // setup random choices
+    func setupChoices() {
+        let whichIsCorrect = Int.random(in: 0..<4)
+        switch whichIsCorrect {
+        case 0:
+            choice1.setTitle(currentLetter, for: .normal)
+            choice2.setTitle(currentArray.randomElement(), for: .normal)
+            choice3.setTitle(currentArray.randomElement(), for: .normal)
+            choice4.setTitle(currentArray.randomElement(), for: .normal)
+        case 1:
+            choice1.setTitle(currentArray.randomElement(), for: .normal)
+            choice2.setTitle(currentLetter, for: .normal)
+            choice3.setTitle(currentArray.randomElement(), for: .normal)
+            choice4.setTitle(currentArray.randomElement(), for: .normal)
+        case 2:
+            choice1.setTitle(currentArray.randomElement(), for: .normal)
+            choice2.setTitle(currentArray.randomElement(), for: .normal)
+            choice3.setTitle(currentLetter, for: .normal)
+            choice4.setTitle(currentArray.randomElement(), for: .normal)
+        case 3:
+            choice1.setTitle(currentArray.randomElement(), for: .normal)
+            choice2.setTitle(currentArray.randomElement(), for: .normal)
+            choice3.setTitle(currentArray.randomElement(), for: .normal)
+            choice4.setTitle(currentLetter, for: .normal)
+        default:
+            break
         }
-        playLetterAudio(letter: displayButton.currentTitle!)
     }
     
-    //play audio for each letter
-    @IBAction func tapLetter(_ sender: Any) {
-        playLetterAudio(letter: displayButton.currentTitle!)
+    // functions for sidebar
+    @IBAction func backButtonTapped(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
     
-    //find correspond audio file and play audio
+    @IBAction func homeButtonTapped(_ sender: Any) {
+        self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func replayButtonTapped(_ sender: Any) {
+        playLetterAudio(letter: currentLetter)
+    }
+    
+    @IBAction func coinButtonTapped(_ sender: Any) {
+        let vc = mainStoryBoard.instantiateViewController(identifier: "coin_vc")
+        present(vc, animated: true)
+    }
+    
+    // play correct selection audio
+    func playCorrect() {
+        let pathToSound = Bundle.main.path(forResource: "alphabetQuiz_correct", ofType: "mp3")!
+        let url = URL(fileURLWithPath: pathToSound)
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: url)
+            audioPlayer?.play()
+        } catch {}
+    }
+        
+    //play correspond letter audio
     func playLetterAudio(letter: String) {
         switch letter {
         case "a","A":
@@ -265,34 +371,7 @@ class alphabetLearn: UIViewController {
             break
         }
     }
-    
-    // functions for sidebar
-    @IBAction func backButtonTapped(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
-    }
-    
-    @IBAction func homeButtonTapped(_ sender: Any) {
-        self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
-    }
-    
-    @IBAction func replayButtonTapped(_ sender: Any) {
-        playLetterAudio(letter: displayButton.currentTitle!)
-    }
-    
-    @IBAction func coinButtonTapped(_ sender: Any) {
-        let vc = mainStoryBoard.instantiateViewController(identifier: "coin_vc")
-        present(vc, animated: true)
-    }
-    
-    @IBAction func quizButtonTapped(_ sender: Any) {
-        let vc = letterStoryBoard.instantiateViewController(identifier: "alphabetquiz_vc") as! alphabetQuiz
-        vc.passedInLetter = displayButton.currentTitle!
-        vc.passedInArrayID = passedInArrayID
-        present(vc, animated: true)
-    }
-    
-    
-    
+
     /*
     // MARK: - Navigation
 
