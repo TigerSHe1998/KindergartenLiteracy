@@ -8,13 +8,26 @@
 
 import Foundation
 import UIKit
+import AVFoundation
 
 class BeginningSoundsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        playIntroMessage()
 
         // Do any additional setup after loading the view.
+    }
+    
+    var audioPlayer: AVAudioPlayer?
+    
+    func playIntroMessage() {
+        let pathToSound = Bundle.main.path(forResource: "beginning-sounds", ofType: "mp3")!
+        let url = URL(fileURLWithPath: pathToSound)
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: url)
+            audioPlayer?.play()
+        } catch {}
     }
     
     @IBAction func beginningSoundsOne(_ sender: Any) {
