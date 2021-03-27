@@ -13,6 +13,7 @@ class nameBmras: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         playIntroMessage()
+        initButtonBackground()
         // Do any additional setup after loading the view.
     }
     
@@ -71,8 +72,8 @@ class nameBmras: UIViewController {
         present(vc, animated: true)
     }
     
-    // begin add star test area //
-    @IBOutlet var bButton: UIButton!
+    
+    // set stars for each button
     // set up array of images with different star count. Easy to add/remove
     let i0 = UIImage(named: "level_button_0_star")
     let i1 = UIImage(named: "level_button_1_star")
@@ -82,27 +83,39 @@ class nameBmras: UIViewController {
     let i5 = UIImage(named: "level_button_5_star")
     var starsImages: [UIImage?] { return [self.i0, self.i1, self.i2, self.i3, self.i4, self.i5] }
 
-    // init background image to 0 stars first
-    @IBAction func initTest(_ sender: Any) {
-        bButton.setBackgroundImage(starsImages[0], for: .normal)
-    }
+    // collection of all buttons in current page
+    @IBOutlet var levelButtons: [UIButton]!
     
-    @IBAction func addStar(_ sender: Any) {
-        let currBG = bButton.backgroundImage(for: .normal)
-        let index = starsImages.firstIndex(of: currBG)!
-        if index < starsImages.count - 1 {
-            bButton.setBackgroundImage(starsImages[index + 1], for: .normal)
+    func initButtonBackground() {
+        // get savefile from userdefaults
+        let letterStarCount = UserDefaults.standard.dictionary(forKey: "letterStarCount")
+        for button in levelButtons {
+            let currentLetter = button.titleLabel!.text!
+            let currentStarCount = letterStarCount![currentLetter] as! Int
+            button.setBackgroundImage(starsImages[currentStarCount], for: .normal)
         }
     }
     
-    @IBAction func removeStar(_ sender: Any) {
-        let currBG = bButton.backgroundImage(for: .normal)
-        let index = starsImages.firstIndex(of: currBG)!
-        if index > 0 {
-            bButton.setBackgroundImage(starsImages[index - 1], for: .normal)
-        }
-    }
-    // end test area //
+//    // init background image to 0 stars first
+//    @IBAction func initTest(_ sender: Any) {
+//        bButton.setBackgroundImage(starsImages[0], for: .normal)
+//    }
+//
+//    @IBAction func addStar(_ sender: Any) {
+//        let currBG = bButton.backgroundImage(for: .normal)
+//        let index = starsImages.firstIndex(of: currBG)!
+//        if index < starsImages.count - 1 {
+//            bButton.setBackgroundImage(starsImages[index + 1], for: .normal)
+//        }
+//    }
+//
+//    @IBAction func removeStar(_ sender: Any) {
+//        let currBG = bButton.backgroundImage(for: .normal)
+//        let index = starsImages.firstIndex(of: currBG)!
+//        if index > 0 {
+//            bButton.setBackgroundImage(starsImages[index - 1], for: .normal)
+//        }
+//    }
     
     
     /*
