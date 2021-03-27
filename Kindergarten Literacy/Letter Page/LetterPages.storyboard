@@ -12,7 +12,7 @@
         <scene sceneID="jZL-yt-Td0">
             <objects>
                 <viewController storyboardIdentifier="letters_vc" id="mHA-37-G36" customClass="letterMainPage" customModule="Kindergarten_Literacy" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="BZ1-81-fUq">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="BZ1-81-fUq">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -305,10 +305,10 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="lOX-JI-x8e" userLabel="letter_view_stack">
-                                <rect key="frame" x="263" y="94.5" width="450" height="225"/>
+                                <rect key="frame" x="263" y="102.5" width="450" height="209"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AW8-xH-l3f">
-                                        <rect key="frame" x="0.0" y="84.5" width="56" height="56"/>
+                                        <rect key="frame" x="0.0" y="76.5" width="56" height="56"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="AW8-xH-l3f" secondAttribute="height" multiplier="1:1" id="l4y-G5-iXB"/>
                                         </constraints>
@@ -317,12 +317,12 @@
                                             <action selector="prevLetter:" destination="s8K-Da-xXG" eventType="touchUpInside" id="5hY-8P-JaR"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qWS-71-w6b">
-                                        <rect key="frame" x="156" y="0.0" width="138" height="225"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qWS-71-w6b">
+                                        <rect key="frame" x="156" y="0.0" width="138" height="209"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="138" id="ZJW-D4-MRH"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="150"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="139"/>
                                         <state key="normal" title="E">
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
@@ -331,7 +331,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vdc-jp-IBL">
-                                        <rect key="frame" x="394" y="84.5" width="56" height="56"/>
+                                        <rect key="frame" x="394" y="76.5" width="56" height="56"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Vdc-jp-IBL" secondAttribute="height" multiplier="1:1" id="tkk-91-aU7"/>
                                         </constraints>

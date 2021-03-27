@@ -14,6 +14,9 @@ class nameAbcde: UIViewController {
         super.viewDidLoad()
         playIntroMessage()
         initButtonBackground()
+        Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { timer in
+            self.initButtonBackground() // refresh star every second
+        })
         // Do any additional setup after loading the view.
     }
     
@@ -23,10 +26,12 @@ class nameAbcde: UIViewController {
     
     // functions for sidebar
     @IBAction func backButtonTapped(_ sender: Any) {
+        audioPlayer?.stop()
         self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func homeButtonTapped(_ sender: Any) {
+        audioPlayer?.stop()
         self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
     }
     
@@ -35,6 +40,7 @@ class nameAbcde: UIViewController {
     }
     
     @IBAction func coinButtonTapped(_ sender: Any) {
+        audioPlayer?.stop()
         let vc = mainStoryBoard.instantiateViewController(identifier: "coin_vc")
         present(vc, animated: true)
     }
@@ -46,6 +52,7 @@ class nameAbcde: UIViewController {
         vc.passedInArrayID = 2 // 2 for abcde letter array
         present(vc, animated: true)
     }
+    
     
     //play sound
     var audioPlayer: AVAudioPlayer?

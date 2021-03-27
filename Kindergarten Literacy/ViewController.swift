@@ -35,8 +35,8 @@ class ViewController: UIViewController {
        because it will be PERMANENT (unless you reset it here)
        !! add your own initial data state here !!
        !! make sure all changed states can be reset here !!
-       !! otherwise it would be hard to track !!
-       thank you */
+       !! otherwise it would be hard to track !!  */
+    
     @IBAction func resetSave(_ sender: Any) {
         
         // set all stars for letter levels to zero
@@ -69,6 +69,8 @@ class ViewController: UIViewController {
                                "z": 0]
         UserDefaults.standard.set(letterStarCount, forKey: "letterStarCount")
         
+        // set all stars for letter levels (Capital) to zero
+        // this is a dictionary
         let letterStarCountCap = ["A": 0,
                                "B": 0,
                                "C": 0,
