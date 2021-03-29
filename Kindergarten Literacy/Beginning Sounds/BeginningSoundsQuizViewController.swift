@@ -84,7 +84,6 @@ class BeginningSoundsQuizViewController: UIViewController {
     }
     
     func setupChoices() {
-        keepPlaying = 1
         switch desiredLabelOne {
         case "B", "b":
             let correct = Int.random(in: 0..<3)
