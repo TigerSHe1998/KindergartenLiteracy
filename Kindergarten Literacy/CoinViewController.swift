@@ -33,10 +33,5 @@ class CoinViewController: UIViewController {
         present(vc, animated: true)
     }
     
-    @IBAction func coinButtonTapped(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(identifier: "coin_vc") as! CoinViewController
-        present(vc, animated: true)
-    }
-    
     
 }

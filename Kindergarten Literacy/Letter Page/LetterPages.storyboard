@@ -44,14 +44,14 @@
                                         <rect key="frame" x="0.0" y="188" width="56" height="56"/>
                                         <state key="normal" image="bank"/>
                                         <connections>
-                                            <action selector="puzzleButtonTapped:" destination="mHA-37-G36" eventType="touchUpInside" id="guI-T9-Bqx"/>
+                                            <action selector="coinButtonTapped:" destination="mHA-37-G36" eventType="touchUpInside" id="Lc4-qh-JE4"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jEZ-kI-EKe" userLabel="puzzle">
                                         <rect key="frame" x="0.0" y="282" width="56" height="56"/>
                                         <state key="normal" image="puzzle"/>
                                         <connections>
-                                            <action selector="coinButtonTapped:" destination="mHA-37-G36" eventType="touchUpInside" id="Jvi-n5-HtE"/>
+                                            <action selector="puzzleButtonTapped:" destination="mHA-37-G36" eventType="touchUpInside" id="vSS-aM-tTU"/>
                                         </connections>
                                     </button>
                                 </subviews>

@@ -7,6 +7,7 @@
 
 import UIKit
 import AVFoundation
+import SwiftUI
 
 class ViewController: UIViewController {
     
@@ -134,7 +135,9 @@ class ViewController: UIViewController {
         present(vc, animated: true)
     }
     
+    
     let endingSoundsStoryBoard:UIStoryboard = UIStoryboard(name: "EndingSoundsPages", bundle:nil)
+    
     @IBAction func endingSoundsButtonTapped(_ sender: Any) {
         let vc = endingSoundsStoryBoard.instantiateViewController(identifier: "ending_sounds_vc")
         present(vc, animated: true)
@@ -159,8 +162,14 @@ class ViewController: UIViewController {
         self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
     }
     
+//    @IBAction func puzzleButtonTapped(_ sender: Any) {
+//        let vc = storyboard?.instantiateViewController(identifier: "puzzle_vc") as! PuzzleViewController
+//        present(vc, animated: true)
+//    }
+    
     @IBAction func puzzleButtonTapped(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(identifier: "puzzle_vc") as! PuzzleViewController
+        let vc = UIHostingController(rootView: PuzzleView())
+        vc.rootView.dismiss = {vc.dismiss(animated: true, completion: nil)}
         present(vc, animated: true)
     }
     
@@ -179,7 +188,6 @@ class ViewController: UIViewController {
             audioPlayer = try AVAudioPlayer(contentsOf: url)
             audioPlayer?.play()
         } catch {
-            // error handling
         }
     
         

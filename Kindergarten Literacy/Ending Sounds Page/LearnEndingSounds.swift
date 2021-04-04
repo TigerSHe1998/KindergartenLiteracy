@@ -7,19 +7,13 @@
 
 import UIKit
 import AVFoundation
+import SwiftUI
 
 class LearnEndingSounds: UIViewController {
     
-    //content arrays
-    //numbered as 0, 1, 2, 3 in order
-    var bcdfArray = ["b", "d", "f", "g", "k", "l", "m", "n", "p", "r", "s", "t", "v", "w", "x", "z"]
-    var bmrsArray = ["b", "m", "r", "s", "t", "g", "n", "p", "c", "f", "d", "l", "k", "w", "z", "v", "x"]
-    var bcdfCapArray = ["B", "C", "D", "F", "G", "K", "L", "M", "N", "P", "R", "S", "T", "V", "W", "X", "Z"]
-    var bmrsCapArray = ["B", "M", "R", "S", "T", "G", "N", "P", "C", "F", "D", "L", "K", "W", "Z", "V", "X"]
-    
     //passed in argument from level select page
     var passedInLetter: String!
-    var passedInArrayID: Int!
+    var passedInArray: [String]!
     
     //global variables
     var currentArray: Array<String>!
@@ -42,22 +36,11 @@ class LearnEndingSounds: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         letterButton.setTitle(passedInLetter, for: .normal)
-        switch passedInArrayID {
-        case 0:
-            currentArray = bcdfArray
-        case 1:
-            currentArray = bmrsArray
-        case 2:
-            currentArray = bcdfCapArray
-        case 3:
-            currentArray = bmrsCapArray
-        default:
-            currentArray = bcdfArray
-        }
+
+        currentArray = passedInArray
         playFullLetterAudio(letter: passedInLetter)
         showPicturesAndWords(letter: passedInLetter)
         
-        // Do any additional setup after loading the view.
     }
     
     //buttons for changing display letter
@@ -153,7 +136,7 @@ class LearnEndingSounds: UIViewController {
     }
     
     func showWordsForLetter(first: String, second: String, third: String) {
-        let firstTitle = NSAttributedString(string: first)
+        // let firstTitle = NSAttributedString(string: first)
         
         firstWord.setTitle(first, for: .normal)
         secondWord.setTitle(second, for: .normal)
@@ -358,17 +341,23 @@ class LearnEndingSounds: UIViewController {
     }
     
     @IBAction func puzzleButtonTapped(_ sender: Any) {
-        let vc = mainStoryBoard.instantiateViewController(identifier: "puzzle_vc")
+        // let vc = mainStoryBoard.instantiateViewController(identifier: "puzzle_vc")
+        let vc = UIHostingController(rootView: PuzzleView())
+        stopPlayingAudio()
         present(vc, animated: true)
     }
     
     @IBAction func coinButtonTapped(_ sender: Any) {
         let vc = mainStoryBoard.instantiateViewController(identifier: "coin_vc")
+        stopPlayingAudio()
         present(vc, animated: true)
     }
     
     @IBAction func quizButtonTapped(_ sender: Any) {
-        let vc = endingSoundsStoryBoard.instantiateViewController(identifier: "ending_sounds_quiz_vc")
+        let vc = endingSoundsStoryBoard.instantiateViewController(identifier: "ending_sounds_quiz_vc") as! EndingSoundsQuiz
+        vc.passedInLetter = letterButton.currentTitle!
+        vc.passedInArray = passedInArray
+        stopPlayingAudio()
         present(vc, animated: true)
     }
     
@@ -376,5 +365,8 @@ class LearnEndingSounds: UIViewController {
         playFullLetterAudio(letter: letterButton.currentTitle!)
     }
     
-
+    // stop playing sound
+    func stopPlayingAudio() {
+        audioPlayer?.stop()
+    }
 }
