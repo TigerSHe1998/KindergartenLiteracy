@@ -25,9 +25,22 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        initSave()
         // Do any additional setup after loading the view.
     }
     
+    // initialize savefile if no save is found. (prevents crash)
+    func initSave() {
+        if UserDefaults.standard.object(forKey: "firstStartup") == nil {
+            resetSave()
+            UserDefaults.standard.set(true, forKey: "firstStartup")
+        }
+    }
+    
+    // temporary function for the reset save button
+    @IBAction func resetSaveButton(_ sender: Any) {
+        resetSave()
+    }
     
     // function to reset savefile to beginning state
     /* the UserDefaults.standard is a DICTIONARY that is built into swift,
@@ -38,8 +51,7 @@ class ViewController: UIViewController {
        !! make sure all changed states can be reset here !!
        !! otherwise it would be hard to track !!  */
     
-    @IBAction func resetSave(_ sender: Any) {
-        
+    func resetSave() {
         // set all stars for letter levels to zero
         // this is a dictionary
         let letterStarCount = ["a": 0,
@@ -151,13 +163,7 @@ class ViewController: UIViewController {
     @IBAction func unwindToHome(_ sender: UIStoryboardSegue) {
     }
     
-    // this is not how to implement a back button!!!
-    //    @IBAction func returnButtonTapped(_ sender: Any) {
-    //        let vc = storyboard?.instantiateViewController(identifier: "main_vc") as! ViewController
-    //        present(vc, animated: true)
-    //    }
     
-    // you can copy these code below for home/puzzle/coin, back button logic please use UNWIND SEGUE (search google if you don't know)
     @IBAction func homeButtonTapped(_ sender: Any) {
         self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
     }

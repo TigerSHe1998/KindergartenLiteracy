@@ -85,6 +85,8 @@ class alphabetQuiz: UIViewController {
                     UserDefaults.standard.set(saveFile, forKey: "letterStarCountCap")
                 }
             }
+            // add 1 to coin count
+            UserDefaults.standard.set(UserDefaults.standard.integer(forKey: "coinCount") + 1, forKey: "coinCount")
             
             // sound fx
             playCorrect()
