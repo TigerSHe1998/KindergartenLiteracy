@@ -7,18 +7,22 @@
 
 import UIKit
 import AVFoundation
+import SwiftUI
 
 class EndingSoundsThree: UIViewController {
 
     @IBOutlet var buttons: [UIButton]!
+    var bcdfCapArray = ["B", "C", "D", "F", "G", "K", "L", "M", "N", "P", "R", "S", "T", "V", "W", "X", "Z"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         playIntroMessage()
 
         for button in buttons {
-            button.layer.cornerRadius = 20
-            button.backgroundColor = UIColor .systemBlue
+            // button.layer.cornerRadius = 20
+            button.contentHorizontalAlignment = .left
+            button.contentVerticalAlignment = .top
+            button.titleEdgeInsets = UIEdgeInsets(top: 20, left: 40, bottom: 0, right: 0)
         }
     }
     
@@ -36,7 +40,8 @@ class EndingSoundsThree: UIViewController {
     }
     
     @IBAction func puzzleButtonTapped(_ sender: Any) {
-        let vc = mainStoryBoard.instantiateViewController(identifier: "puzzle_vc")
+        // let vc = mainStoryBoard.instantiateViewController(identifier: "puzzle_vc")
+        let vc = UIHostingController(rootView: PuzzleView())
         present(vc, animated: true)
     }
     
@@ -46,7 +51,9 @@ class EndingSoundsThree: UIViewController {
     }
     
     @IBAction func quizButtonTapped(_ sender: Any) {
-        let vc = endingSoundsStoryBoard.instantiateViewController(identifier: "ending_sounds_quiz_vc")
+        let vc = endingSoundsStoryBoard.instantiateViewController(identifier: "ending_sounds_quiz_vc") as! EndingSoundsQuiz
+        vc.passedInLetter = bcdfCapArray.randomElement()
+        vc.passedInArray = bcdfCapArray
         present(vc, animated: true)
     }
     
@@ -78,7 +85,7 @@ class EndingSoundsThree: UIViewController {
     @IBAction func toLearnEndingSoundsPage(_ sender: Any) {
         let vc = endingSoundsStoryBoard.instantiateViewController(identifier: "learn_ending_sounds_vc") as! LearnEndingSounds
         vc.passedInLetter = (sender as! UIButton).titleLabel!.text!
-        vc.passedInArrayID = 2
+        vc.passedInArray = bcdfCapArray
         present(vc, animated: true)
         stopPlayingMessage()
     }

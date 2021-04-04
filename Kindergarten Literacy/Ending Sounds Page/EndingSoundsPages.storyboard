@@ -155,209 +155,265 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ibe-rh-kaO" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="788" height="1000"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p2z-jc-Ga0" userLabel="b">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p2z-jc-Ga0" userLabel="b">
                                                 <rect key="frame" x="20" y="8" width="208" height="144"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="208" id="1e0-as-VC8"/>
                                                     <constraint firstAttribute="height" constant="144" id="mFb-3a-IWC"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
-                                                <state key="normal" title="b" image="cub">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="b" backgroundImage="new_level_button_0_star">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="toLearnEndingSoundsPage:" destination="RK9-TE-cba" eventType="touchUpInside" id="gnf-yI-bb8"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6e-Pv-1GR" userLabel="f">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6e-Pv-1GR" userLabel="f">
                                                 <rect key="frame" x="500" y="8" width="208" height="144"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="208" id="HKw-nm-WOo"/>
                                                     <constraint firstAttribute="height" constant="144" id="qHU-0U-bBh"/>
                                                 </constraints>
-                                                <state key="normal" title="f" image="chef">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="f" backgroundImage="new_level_button_0_star">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="toLearnEndingSoundsPage:" destination="RK9-TE-cba" eventType="touchUpInside" id="yrA-2n-fAb"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSd-m8-BKV">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="scarf" translatesAutoresizingMaskIntoConstraints="NO" id="t24-zE-H1E">
+                                                <rect key="frame" x="608" y="8" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cub" translatesAutoresizingMaskIntoConstraints="NO" id="QAz-lh-cen">
+                                                <rect key="frame" x="111" y="178" width="117" height="119"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSd-m8-BKV">
                                                 <rect key="frame" x="260" y="8" width="208" height="144"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="208" id="FPs-lR-G8E"/>
                                                     <constraint firstAttribute="height" constant="144" id="nnO-od-seP"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="35"/>
-                                                <state key="normal" title="d" image="bird">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="d" backgroundImage="new_level_button_0_star">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="toLearnEndingSoundsPage:" destination="RK9-TE-cba" eventType="touchUpInside" id="uDx-GR-yIS"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u6c-Cb-oWx">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u6c-Cb-oWx">
                                                 <rect key="frame" x="260" y="178" width="208" height="144"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="144" id="42e-Ih-aQf"/>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="144" id="JaQ-WN-liB"/>
                                                     <constraint firstAttribute="width" constant="208" id="ufz-MM-Eu0"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="34"/>
-                                                <state key="normal" title="k">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="k" backgroundImage="new_level_button_0_star">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="toLearnEndingSoundsPage:" destination="RK9-TE-cba" eventType="touchUpInside" id="iUG-75-YpS"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dbw-9Q-QTx">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="elk" translatesAutoresizingMaskIntoConstraints="NO" id="M4g-7c-k9n">
+                                                <rect key="frame" x="368" y="178" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dbw-9Q-QTx">
                                                 <rect key="frame" x="500" y="178" width="208" height="144"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="144" id="OtJ-aC-hJF"/>
                                                     <constraint firstAttribute="width" constant="208" id="Yoi-g2-ykH"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
-                                                <state key="normal" title="l">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="l" backgroundImage="new_level_button_0_star">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="toLearnEndingSoundsPage:" destination="RK9-TE-cba" eventType="touchUpInside" id="Ptk-OU-L8n"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Oi-Mg-TiD">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="owl" translatesAutoresizingMaskIntoConstraints="NO" id="ACY-MK-HTS">
+                                                <rect key="frame" x="608" y="178" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Oi-Mg-TiD">
                                                 <rect key="frame" x="20" y="348" width="208" height="144"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="208" id="hXF-7b-iBg"/>
                                                     <constraint firstAttribute="height" constant="144" id="tsX-bA-TJ3"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
-                                                <state key="normal" title="m">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="m" backgroundImage="new_level_button_0_star">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="toLearnEndingSoundsPage:" destination="RK9-TE-cba" eventType="touchUpInside" id="bJO-VZ-eCP"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dML-Xr-lzD">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="swim" translatesAutoresizingMaskIntoConstraints="NO" id="2Pd-mm-3qu">
+                                                <rect key="frame" x="128" y="348" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dML-Xr-lzD">
                                                 <rect key="frame" x="20" y="178" width="208" height="144"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="208" id="LWJ-GJ-WnL"/>
                                                     <constraint firstAttribute="height" constant="144" id="iD9-e9-5UA"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
-                                                <state key="normal" title="g">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="g" backgroundImage="new_level_button_0_star">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="toLearnEndingSoundsPage:" destination="RK9-TE-cba" eventType="touchUpInside" id="7zw-H1-57R"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3FV-ZN-CIT">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3FV-ZN-CIT">
                                                 <rect key="frame" x="260" y="348" width="208" height="144"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="144" id="Z7O-Bs-IKZ"/>
                                                     <constraint firstAttribute="width" constant="208" id="ZTR-a0-kvu"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
-                                                <state key="normal" title="n">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="n" backgroundImage="new_level_button_0_star">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="toLearnEndingSoundsPage:" destination="RK9-TE-cba" eventType="touchUpInside" id="FB0-K2-XZ1"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ay-YH-cV9">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ay-YH-cV9">
                                                 <rect key="frame" x="500" y="348" width="208" height="144"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="144" id="7c2-qx-2VR"/>
                                                     <constraint firstAttribute="width" constant="208" id="ecq-bJ-m2S"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
-                                                <state key="normal" title="p">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="p" backgroundImage="new_level_button_0_star">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="toLearnEndingSoundsPage:" destination="RK9-TE-cba" eventType="touchUpInside" id="bm5-FU-Glr"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZzH-ZV-7Gh">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="drop" translatesAutoresizingMaskIntoConstraints="NO" id="bb8-od-u5r">
+                                                <rect key="frame" x="608" y="348" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZzH-ZV-7Gh">
                                                 <rect key="frame" x="20" y="518" width="208" height="144"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="208" id="2d5-uO-UZK"/>
                                                     <constraint firstAttribute="height" constant="144" id="EWg-5l-rsZ"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
-                                                <state key="normal" title="r">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="r" backgroundImage="new_level_button_0_star">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="toLearnEndingSoundsPage:" destination="RK9-TE-cba" eventType="touchUpInside" id="I37-hu-cQl"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGb-4d-AuZ">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="door" translatesAutoresizingMaskIntoConstraints="NO" id="LxI-CH-9w5">
+                                                <rect key="frame" x="128" y="518" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGb-4d-AuZ">
                                                 <rect key="frame" x="260" y="518" width="208" height="144"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="144" id="Q2d-2d-k0d"/>
                                                     <constraint firstAttribute="width" constant="208" id="f6O-md-vb4"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
-                                                <state key="normal" title="s">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="s" backgroundImage="new_level_button_0_star">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="toLearnEndingSoundsPage:" destination="RK9-TE-cba" eventType="touchUpInside" id="oQ3-C6-66d"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SA7-xM-HXJ">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SA7-xM-HXJ">
                                                 <rect key="frame" x="500" y="518" width="208" height="144"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="208" id="RN5-Ry-8h7"/>
                                                     <constraint firstAttribute="height" constant="144" id="ska-bu-kK5"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
-                                                <state key="normal" title="t">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="t" backgroundImage="new_level_button_0_star">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="toLearnEndingSoundsPage:" destination="RK9-TE-cba" eventType="touchUpInside" id="Chc-5W-DLi"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ekB-dL-cF7">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="net" translatesAutoresizingMaskIntoConstraints="NO" id="4x8-hb-lqr">
+                                                <rect key="frame" x="608" y="518" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ekB-dL-cF7">
                                                 <rect key="frame" x="20" y="688" width="208" height="144"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="144" id="AoT-mg-XO5"/>
                                                     <constraint firstAttribute="width" constant="208" id="aoJ-aE-QV2"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="30"/>
-                                                <state key="normal" title="x">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="x" backgroundImage="new_level_button_0_star">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="toLearnEndingSoundsPage:" destination="RK9-TE-cba" eventType="touchUpInside" id="SQl-b0-3oo"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arO-zB-Moy">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fox" translatesAutoresizingMaskIntoConstraints="NO" id="avn-KH-x9I">
+                                                <rect key="frame" x="128" y="688" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arO-zB-Moy">
                                                 <rect key="frame" x="260" y="688" width="208" height="144"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="144" id="ISv-Kc-sau"/>
                                                     <constraint firstAttribute="width" constant="208" id="VTI-5y-E0o"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
-                                                <state key="normal" title="z">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="z" backgroundImage="new_level_button_0_star">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="toLearnEndingSoundsPage:" destination="RK9-TE-cba" eventType="touchUpInside" id="zpl-ny-Ten"/>
                                                 </connections>
                                             </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cub" translatesAutoresizingMaskIntoConstraints="NO" id="AU3-U4-nUr">
+                                                <rect key="frame" x="128" y="8" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bird" translatesAutoresizingMaskIntoConstraints="NO" id="Tor-Kc-7iq">
+                                                <rect key="frame" x="368" y="8" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rain" translatesAutoresizingMaskIntoConstraints="NO" id="YLJ-3w-lrd">
+                                                <rect key="frame" x="368" y="348" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bus" translatesAutoresizingMaskIntoConstraints="NO" id="AmM-pE-6tK">
+                                                <rect key="frame" x="368" y="518" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="quiz1" translatesAutoresizingMaskIntoConstraints="NO" id="TUp-cH-bmj">
+                                                <rect key="frame" x="361" y="688" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="frog" translatesAutoresizingMaskIntoConstraints="NO" id="bpD-Jo-tNa">
+                                                <rect key="frame" x="128" y="178" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                                        <color key="backgroundColor" name="darkGreen"/>
                                         <constraints>
                                             <constraint firstItem="t6e-Pv-1GR" firstAttribute="top" secondItem="ibe-rh-kaO" secondAttribute="top" constant="8" id="2jC-ll-RLm"/>
                                             <constraint firstItem="7Oi-Mg-TiD" firstAttribute="top" secondItem="dML-Xr-lzD" secondAttribute="bottom" constant="26" id="4iJ-5b-mX4"/>
@@ -479,7 +535,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Q2u-Md-WpJ"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <color key="backgroundColor" name="mediumGreen"/>
                         <constraints>
                             <constraint firstItem="5Rx-qv-P2q" firstAttribute="leading" secondItem="Q2u-Md-WpJ" secondAttribute="leading" constant="16" id="GU8-sb-ZkL"/>
                             <constraint firstItem="kxx-g0-vak" firstAttribute="trailing" secondItem="Q2u-Md-WpJ" secondAttribute="trailing" constant="44" id="Kzm-f9-l7N"/>
@@ -599,204 +655,260 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xAj-WC-ZLi" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="788" height="900"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FYT-NC-AgJ" userLabel="b">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FYT-NC-AgJ" userLabel="b">
                                                 <rect key="frame" x="20" y="20" width="208" height="144"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="208" id="9g4-no-A57"/>
                                                     <constraint firstAttribute="height" constant="144" id="z65-EJ-eHn"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
-                                                <state key="normal" title="B">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="B" backgroundImage="new_level_button_0_star">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="toLearnEndingSoundsPage:" destination="f7e-Ib-aGP" eventType="touchUpInside" id="fXm-Uu-Gdh"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iDt-0J-apL" userLabel="b">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iDt-0J-apL" userLabel="b">
                                                 <rect key="frame" x="260" y="20" width="208" height="144"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="144" id="4sj-W3-YBd"/>
                                                     <constraint firstAttribute="width" constant="208" id="OR3-u2-U3L"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
-                                                <state key="normal" title="D">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="D" backgroundImage="new_level_button_0_star">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="toLearnEndingSoundsPage:" destination="f7e-Ib-aGP" eventType="touchUpInside" id="Dtb-GE-elE"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YO4-Em-phN" userLabel="b">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bird" translatesAutoresizingMaskIntoConstraints="NO" id="P0s-x4-Jin">
+                                                <rect key="frame" x="368" y="20" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YO4-Em-phN" userLabel="b">
                                                 <rect key="frame" x="500" y="20" width="208" height="144"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="208" id="3hF-Z4-ZSr"/>
                                                     <constraint firstAttribute="height" constant="144" id="NkS-bH-bXJ"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
-                                                <state key="normal" title="F">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="F" backgroundImage="new_level_button_0_star">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="toLearnEndingSoundsPage:" destination="f7e-Ib-aGP" eventType="touchUpInside" id="2ef-MJ-U7X"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUT-pV-YpR" userLabel="b">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="scarf" translatesAutoresizingMaskIntoConstraints="NO" id="8fr-av-rXe">
+                                                <rect key="frame" x="608" y="20" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUT-pV-YpR" userLabel="b">
                                                 <rect key="frame" x="20" y="190" width="208" height="144"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="208" id="bxk-Zs-R6k"/>
                                                     <constraint firstAttribute="height" constant="144" id="jVZ-Kd-ta8"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
-                                                <state key="normal" title="G">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="G" backgroundImage="new_level_button_0_star">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="toLearnEndingSoundsPage:" destination="f7e-Ib-aGP" eventType="touchUpInside" id="kpn-au-coa"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcq-KO-Tmt" userLabel="b">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="frog" translatesAutoresizingMaskIntoConstraints="NO" id="8ZV-5v-sW3">
+                                                <rect key="frame" x="128" y="190" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcq-KO-Tmt" userLabel="b">
                                                 <rect key="frame" x="260" y="190" width="208" height="144"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="208" id="OH6-7g-471"/>
                                                     <constraint firstAttribute="height" constant="144" id="aBT-UE-iLV"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
-                                                <state key="normal" title="K">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="K" backgroundImage="new_level_button_0_star">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="toLearnEndingSoundsPage:" destination="f7e-Ib-aGP" eventType="touchUpInside" id="Ked-dX-mOe"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PMQ-Ig-PyF" userLabel="b">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="elk" translatesAutoresizingMaskIntoConstraints="NO" id="jCD-Lk-u83">
+                                                <rect key="frame" x="368" y="190" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PMQ-Ig-PyF" userLabel="b">
                                                 <rect key="frame" x="500" y="190" width="208" height="144"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="208" id="46u-ic-ZJt"/>
                                                     <constraint firstAttribute="height" constant="144" id="E6V-Tl-SUI"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
-                                                <state key="normal" title="L">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="L" backgroundImage="new_level_button_0_star">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="toLearnEndingSoundsPage:" destination="f7e-Ib-aGP" eventType="touchUpInside" id="2rf-V3-t3Q"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZGY-7C-BdD" userLabel="b">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="owl" translatesAutoresizingMaskIntoConstraints="NO" id="1Og-Fz-Xdw">
+                                                <rect key="frame" x="608" y="190" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZGY-7C-BdD" userLabel="b">
                                                 <rect key="frame" x="20" y="360" width="208" height="144"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="144" id="BYM-f1-6fQ"/>
                                                     <constraint firstAttribute="width" constant="208" id="Ijs-co-KpB"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
-                                                <state key="normal" title="M">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="M" backgroundImage="new_level_button_0_star">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="toLearnEndingSoundsPage:" destination="f7e-Ib-aGP" eventType="touchUpInside" id="nRc-EL-k9h"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qno-7q-VUc" userLabel="b">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="swim" translatesAutoresizingMaskIntoConstraints="NO" id="Mew-5T-SOF">
+                                                <rect key="frame" x="128" y="360" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qno-7q-VUc" userLabel="b">
                                                 <rect key="frame" x="260" y="360" width="208" height="144"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="144" id="1R9-Rj-nyy"/>
                                                     <constraint firstAttribute="width" constant="208" id="jZ2-k3-Tph"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
-                                                <state key="normal" title="N">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="N" backgroundImage="new_level_button_0_star">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="toLearnEndingSoundsPage:" destination="f7e-Ib-aGP" eventType="touchUpInside" id="JoD-Tz-RDH"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mzq-gr-8L6" userLabel="b">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rain" translatesAutoresizingMaskIntoConstraints="NO" id="GfN-xC-Qlf">
+                                                <rect key="frame" x="368" y="360" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mzq-gr-8L6" userLabel="b">
                                                 <rect key="frame" x="500" y="360" width="208" height="144"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="208" id="EBq-Hm-fYU"/>
                                                     <constraint firstAttribute="height" constant="144" id="tfw-eT-kBC"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
-                                                <state key="normal" title="P">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="P" backgroundImage="new_level_button_0_star">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="toLearnEndingSoundsPage:" destination="f7e-Ib-aGP" eventType="touchUpInside" id="PvF-zL-wxI"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9WY-Am-Aga" userLabel="b">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="drop" translatesAutoresizingMaskIntoConstraints="NO" id="cMZ-LG-2nG">
+                                                <rect key="frame" x="608" y="360" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9WY-Am-Aga" userLabel="b">
                                                 <rect key="frame" x="20" y="530" width="208" height="144"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="208" id="4Bf-6q-zhT"/>
                                                     <constraint firstAttribute="height" constant="144" id="jwG-e5-Vpv"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
-                                                <state key="normal" title="R">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="R" backgroundImage="new_level_button_0_star">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="toLearnEndingSoundsPage:" destination="f7e-Ib-aGP" eventType="touchUpInside" id="mnr-kF-Hod"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xry-nu-yj8" userLabel="b">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="door" translatesAutoresizingMaskIntoConstraints="NO" id="gI5-ey-SQC">
+                                                <rect key="frame" x="128" y="530" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xry-nu-yj8" userLabel="b">
                                                 <rect key="frame" x="260" y="530" width="208" height="144"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="144" id="3IA-qw-4aG"/>
                                                     <constraint firstAttribute="width" constant="208" id="ovu-3U-uCn"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
-                                                <state key="normal" title="S">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="S" backgroundImage="new_level_button_0_star">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="toLearnEndingSoundsPage:" destination="f7e-Ib-aGP" eventType="touchUpInside" id="quM-rU-F6b"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3kP-dr-gT8" userLabel="b">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bus" translatesAutoresizingMaskIntoConstraints="NO" id="wch-j8-2E4">
+                                                <rect key="frame" x="368" y="530" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3kP-dr-gT8" userLabel="b">
                                                 <rect key="frame" x="500" y="530" width="208" height="144"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="144" id="ust-Qp-Vpz"/>
                                                     <constraint firstAttribute="width" constant="208" id="wAp-jf-s4C"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
-                                                <state key="normal" title="T">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="T" backgroundImage="new_level_button_0_star">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="toLearnEndingSoundsPage:" destination="f7e-Ib-aGP" eventType="touchUpInside" id="niH-bN-W5m"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yhx-9o-ZTK" userLabel="b">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="net" translatesAutoresizingMaskIntoConstraints="NO" id="doh-Cf-CAY">
+                                                <rect key="frame" x="608" y="530" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yhx-9o-ZTK" userLabel="b">
                                                 <rect key="frame" x="20" y="700" width="208" height="144"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="208" id="Eay-4z-8tU"/>
                                                     <constraint firstAttribute="height" constant="144" id="XPW-xG-uZl"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
-                                                <state key="normal" title="X">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="X" backgroundImage="new_level_button_0_star">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="toLearnEndingSoundsPage:" destination="f7e-Ib-aGP" eventType="touchUpInside" id="r8H-Si-GZA"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTB-8I-FwJ" userLabel="b">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fox" translatesAutoresizingMaskIntoConstraints="NO" id="be5-Eh-Xfy">
+                                                <rect key="frame" x="128" y="700" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTB-8I-FwJ" userLabel="b">
                                                 <rect key="frame" x="260" y="700" width="208" height="144"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="208" id="D4K-RA-Gfz"/>
                                                     <constraint firstAttribute="height" constant="144" id="vt7-F9-Teh"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
-                                                <state key="normal" title="Z">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="Z" backgroundImage="new_level_button_0_star">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="toLearnEndingSoundsPage:" destination="f7e-Ib-aGP" eventType="touchUpInside" id="36s-Fy-DnJ"/>
                                                 </connections>
                                             </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cub" translatesAutoresizingMaskIntoConstraints="NO" id="OQS-J4-kDx">
+                                                <rect key="frame" x="128" y="20" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="quiz1" translatesAutoresizingMaskIntoConstraints="NO" id="fIQ-WB-sHR">
+                                                <rect key="frame" x="368" y="700" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                                        <color key="backgroundColor" name="darkGreen"/>
                                         <constraints>
                                             <constraint firstItem="bcq-KO-Tmt" firstAttribute="top" secondItem="iDt-0J-apL" secondAttribute="bottom" constant="26" id="0vN-Hb-qga"/>
                                             <constraint firstItem="mzq-gr-8L6" firstAttribute="leading" secondItem="qno-7q-VUc" secondAttribute="trailing" constant="32" id="4Mx-QX-B2T"/>
@@ -841,7 +953,7 @@
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ME3-nl-ZJf"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <color key="backgroundColor" name="mediumGreen"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="Gre-6e-K8Q" secondAttribute="bottom" id="K1c-8W-lwc"/>
                             <constraint firstItem="Gre-6e-K8Q" firstAttribute="leading" secondItem="upx-wx-7hp" secondAttribute="trailing" constant="8" symbolic="YES" id="RpA-8a-NQk"/>
@@ -871,7 +983,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ih3-oI-crX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1145" y="2878"/>
+            <point key="canvasLocation" x="1144.4196428571429" y="2876.811594202899"/>
         </scene>
         <!--Ending Sounds Two-->
         <scene sceneID="gvI-Kk-eQX">
@@ -885,214 +997,270 @@
                                 <rect key="frame" x="108" y="0.0" width="788" height="1000"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kmg-WR-c9b" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="788" height="1000"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="808" height="1000"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vNt-sk-mHp">
-                                                <rect key="frame" x="0.0" y="8" width="208" height="144"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vNt-sk-mHp">
+                                                <rect key="frame" x="20" y="8" width="208" height="144"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="144" id="Yi5-Qz-Q6D"/>
                                                     <constraint firstAttribute="width" constant="208" id="uqH-PI-cT4"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
-                                                <state key="normal" title="b">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="b" backgroundImage="new_level_button_0_star">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="toLearnEndingSoundsPage:" destination="D1a-M2-ge1" eventType="touchUpInside" id="yoS-xO-G15"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QXr-dw-0YI">
-                                                <rect key="frame" x="240" y="8" width="208" height="144"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cub" translatesAutoresizingMaskIntoConstraints="NO" id="VV6-wn-lMZ">
+                                                <rect key="frame" x="108" y="8" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QXr-dw-0YI">
+                                                <rect key="frame" x="260" y="8" width="208" height="144"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="144" id="DUu-jM-CVR"/>
                                                     <constraint firstAttribute="width" constant="208" id="QqB-XH-XCa"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
-                                                <state key="normal" title="m">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="m" backgroundImage="new_level_button_0_star">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="toLearnEndingSoundsPage:" destination="D1a-M2-ge1" eventType="touchUpInside" id="cWH-WY-pp2"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JjV-8G-w6E">
-                                                <rect key="frame" x="480" y="8" width="208" height="144"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="swim" translatesAutoresizingMaskIntoConstraints="NO" id="v4P-ey-pUb">
+                                                <rect key="frame" x="348" y="8" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JjV-8G-w6E">
+                                                <rect key="frame" x="500" y="8" width="208" height="144"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="208" id="7lZ-WS-CqD"/>
                                                     <constraint firstAttribute="height" constant="144" id="mIg-J7-4gH"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
-                                                <state key="normal" title="r">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="r" backgroundImage="new_level_button_0_star">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="toLearnEndingSoundsPage:" destination="D1a-M2-ge1" eventType="touchUpInside" id="sNw-ec-fzw"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wC8-Hi-QyP">
-                                                <rect key="frame" x="0.0" y="178" width="208" height="144"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="door" translatesAutoresizingMaskIntoConstraints="NO" id="Uqf-eF-jLs">
+                                                <rect key="frame" x="588" y="8" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wC8-Hi-QyP">
+                                                <rect key="frame" x="20" y="178" width="208" height="144"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="208" id="d3t-Nb-KoU"/>
                                                     <constraint firstAttribute="height" constant="144" id="ke5-fS-7Yg"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
-                                                <state key="normal" title="s">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="s" backgroundImage="new_level_button_0_star">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="toLearnEndingSoundsPage:" destination="D1a-M2-ge1" eventType="touchUpInside" id="sDb-Df-jco"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5pQ-L1-rOt">
-                                                <rect key="frame" x="240" y="178" width="208" height="144"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bus" translatesAutoresizingMaskIntoConstraints="NO" id="Ixd-6y-ABV">
+                                                <rect key="frame" x="108" y="178" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5pQ-L1-rOt">
+                                                <rect key="frame" x="260" y="178" width="208" height="144"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="144" id="6Gh-nC-tGV"/>
                                                     <constraint firstAttribute="width" constant="208" id="J1S-wd-qZ7"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
-                                                <state key="normal" title="t">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="t" backgroundImage="new_level_button_0_star">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="toLearnEndingSoundsPage:" destination="D1a-M2-ge1" eventType="touchUpInside" id="iw6-Al-RpW"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6WP-uX-exc">
-                                                <rect key="frame" x="0.0" y="348" width="208" height="144"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="net" translatesAutoresizingMaskIntoConstraints="NO" id="vay-I9-gmQ">
+                                                <rect key="frame" x="348" y="178" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6WP-uX-exc">
+                                                <rect key="frame" x="20" y="348" width="208" height="144"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="144" id="JGN-wR-cv0"/>
                                                     <constraint firstAttribute="width" constant="208" id="u87-5z-0jh"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
-                                                <state key="normal" title="n">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="n" backgroundImage="new_level_button_0_star">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="toLearnEndingSoundsPage:" destination="D1a-M2-ge1" eventType="touchUpInside" id="rOS-ct-AOJ"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KOC-xG-ylT">
-                                                <rect key="frame" x="240" y="348" width="208" height="144"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rain" translatesAutoresizingMaskIntoConstraints="NO" id="Wbf-rb-pmd">
+                                                <rect key="frame" x="108" y="348" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KOC-xG-ylT">
+                                                <rect key="frame" x="260" y="348" width="208" height="144"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="208" id="2S6-aF-rMD"/>
                                                     <constraint firstAttribute="height" constant="144" id="f0W-0i-b4t"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
-                                                <state key="normal" title="p">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="p" backgroundImage="new_level_button_0_star">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="toLearnEndingSoundsPage:" destination="D1a-M2-ge1" eventType="touchUpInside" id="O0j-7P-VRI"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E3W-kr-401">
-                                                <rect key="frame" x="480" y="178" width="208" height="144"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="drop" translatesAutoresizingMaskIntoConstraints="NO" id="6u2-ec-uwQ">
+                                                <rect key="frame" x="348" y="348" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E3W-kr-401">
+                                                <rect key="frame" x="500" y="178" width="208" height="144"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="144" id="sp6-KD-PSo"/>
                                                     <constraint firstAttribute="width" constant="208" id="xBC-qo-gle"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
-                                                <state key="normal" title="g">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="g" backgroundImage="new_level_button_0_star">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="toLearnEndingSoundsPage:" destination="D1a-M2-ge1" eventType="touchUpInside" id="DZd-di-RP6"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Arc-Eo-2DV">
-                                                <rect key="frame" x="480" y="348" width="208" height="144"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="frog" translatesAutoresizingMaskIntoConstraints="NO" id="lhL-Qh-DVS">
+                                                <rect key="frame" x="588" y="178" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Arc-Eo-2DV">
+                                                <rect key="frame" x="500" y="348" width="208" height="144"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="208" id="qiv-fK-rwh"/>
                                                     <constraint firstAttribute="height" constant="144" id="shy-jw-e2X"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
-                                                <state key="normal" title="f">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="f" backgroundImage="new_level_button_0_star">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="toLearnEndingSoundsPage:" destination="D1a-M2-ge1" eventType="touchUpInside" id="suZ-Qk-wtt"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="70Y-Xy-GFd">
-                                                <rect key="frame" x="0.0" y="518" width="208" height="144"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="scarf" translatesAutoresizingMaskIntoConstraints="NO" id="YOp-hs-tao">
+                                                <rect key="frame" x="588" y="348" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="70Y-Xy-GFd">
+                                                <rect key="frame" x="20" y="518" width="208" height="144"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="144" id="ofT-Oz-zvj"/>
                                                     <constraint firstAttribute="width" constant="208" id="ybB-NO-akL"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
-                                                <state key="normal" title="d">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="d" backgroundImage="new_level_button_0_star">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="toLearnEndingSoundsPage:" destination="D1a-M2-ge1" eventType="touchUpInside" id="pKH-8V-rDZ"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mc1-tA-0pU">
-                                                <rect key="frame" x="240" y="518" width="208" height="144"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bird" translatesAutoresizingMaskIntoConstraints="NO" id="s9R-Ao-lwf">
+                                                <rect key="frame" x="108" y="518" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mc1-tA-0pU">
+                                                <rect key="frame" x="260" y="518" width="208" height="144"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="208" id="Ayo-xK-nbR"/>
                                                     <constraint firstAttribute="height" constant="144" id="dNF-CJ-SEK"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
-                                                <state key="normal" title="l">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="l" backgroundImage="new_level_button_0_star">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="toLearnEndingSoundsPage:" destination="D1a-M2-ge1" eventType="touchUpInside" id="glg-dx-Hpb"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cCh-AE-jQ2">
-                                                <rect key="frame" x="480" y="518" width="208" height="144"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="owl" translatesAutoresizingMaskIntoConstraints="NO" id="GdE-GR-3P6">
+                                                <rect key="frame" x="348" y="518" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cCh-AE-jQ2">
+                                                <rect key="frame" x="500" y="518" width="208" height="144"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="144" id="sKs-VO-cb6"/>
                                                     <constraint firstAttribute="width" constant="208" id="wEh-IJ-fDA"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
-                                                <state key="normal" title="k">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="k" backgroundImage="new_level_button_0_star">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="toLearnEndingSoundsPage:" destination="D1a-M2-ge1" eventType="touchUpInside" id="XQw-er-8AU"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7R-jB-5Tz">
-                                                <rect key="frame" x="0.0" y="688" width="208" height="144"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="elk" translatesAutoresizingMaskIntoConstraints="NO" id="vWe-1E-VxC">
+                                                <rect key="frame" x="588" y="518" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7R-jB-5Tz">
+                                                <rect key="frame" x="20" y="688" width="208" height="144"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="144" id="gtl-7f-51D"/>
                                                     <constraint firstAttribute="width" constant="208" id="lfI-Te-EPR"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
-                                                <state key="normal" title="z">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="z" backgroundImage="new_level_button_0_star">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="toLearnEndingSoundsPage:" destination="D1a-M2-ge1" eventType="touchUpInside" id="W5a-bO-MBS"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yck-UI-ASS">
-                                                <rect key="frame" x="240" y="688" width="208" height="144"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yck-UI-ASS">
+                                                <rect key="frame" x="260" y="688" width="208" height="144"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="208" id="7Pb-jR-j18"/>
                                                     <constraint firstAttribute="height" constant="144" id="adc-cF-frK"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
-                                                <state key="normal" title="x">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="x" backgroundImage="new_level_button_0_star">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="toLearnEndingSoundsPage:" destination="D1a-M2-ge1" eventType="touchUpInside" id="3uS-S2-k5c"/>
                                                 </connections>
                                             </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fox" translatesAutoresizingMaskIntoConstraints="NO" id="Dqk-Vj-zbq">
+                                                <rect key="frame" x="348" y="688" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="quiz1" translatesAutoresizingMaskIntoConstraints="NO" id="tNf-cg-v9e">
+                                                <rect key="frame" x="108" y="688" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                                        <color key="backgroundColor" name="darkGreen"/>
                                         <constraints>
                                             <constraint firstItem="wC8-Hi-QyP" firstAttribute="top" secondItem="QXr-dw-0YI" secondAttribute="bottom" constant="26" id="289-F3-i3F"/>
                                             <constraint firstItem="QXr-dw-0YI" firstAttribute="top" secondItem="Kmg-WR-c9b" secondAttribute="top" constant="8" id="3Bk-ru-ekj"/>
                                             <constraint firstAttribute="trailing" secondItem="JjV-8G-w6E" secondAttribute="trailing" constant="100" id="4wk-2F-Mf3"/>
-                                            <constraint firstItem="6WP-uX-exc" firstAttribute="leading" secondItem="Kmg-WR-c9b" secondAttribute="leading" id="7gL-Mn-gdg"/>
                                             <constraint firstItem="Yck-UI-ASS" firstAttribute="leading" secondItem="Y7R-jB-5Tz" secondAttribute="trailing" constant="32" id="9eM-AO-isU"/>
                                             <constraint firstItem="KOC-xG-ylT" firstAttribute="top" secondItem="5pQ-L1-rOt" secondAttribute="bottom" constant="26" id="9qQ-K2-0SB"/>
                                             <constraint firstItem="JjV-8G-w6E" firstAttribute="top" secondItem="Kmg-WR-c9b" secondAttribute="top" constant="8" id="Cg2-N6-jCb"/>
+                                            <constraint firstItem="6WP-uX-exc" firstAttribute="leading" secondItem="Kmg-WR-c9b" secondAttribute="leading" constant="20" id="FEE-nO-qCU"/>
                                             <constraint firstItem="Arc-Eo-2DV" firstAttribute="top" secondItem="E3W-kr-401" secondAttribute="bottom" constant="26" id="IHg-D6-o9g"/>
                                             <constraint firstItem="wC8-Hi-QyP" firstAttribute="leading" secondItem="vNt-sk-mHp" secondAttribute="leading" id="JYw-2t-xAa"/>
                                             <constraint firstItem="5pQ-L1-rOt" firstAttribute="top" secondItem="QXr-dw-0YI" secondAttribute="bottom" constant="26" id="JdU-e4-AFw"/>
@@ -1107,15 +1275,16 @@
                                             <constraint firstItem="cCh-AE-jQ2" firstAttribute="leading" secondItem="mc1-tA-0pU" secondAttribute="trailing" constant="32" id="Yyf-xk-VYn"/>
                                             <constraint firstItem="70Y-Xy-GFd" firstAttribute="top" secondItem="6WP-uX-exc" secondAttribute="bottom" constant="26" id="Z38-Av-cOm"/>
                                             <constraint firstItem="mc1-tA-0pU" firstAttribute="top" secondItem="KOC-xG-ylT" secondAttribute="bottom" constant="26" id="ZII-xI-r90"/>
-                                            <constraint firstItem="70Y-Xy-GFd" firstAttribute="leading" secondItem="Kmg-WR-c9b" secondAttribute="leading" id="bf3-eD-nkL"/>
-                                            <constraint firstItem="vNt-sk-mHp" firstAttribute="leading" secondItem="Kmg-WR-c9b" secondAttribute="leading" id="dDX-E9-bQr"/>
-                                            <constraint firstItem="Y7R-jB-5Tz" firstAttribute="leading" secondItem="Kmg-WR-c9b" secondAttribute="leading" id="ePK-Fc-sZ4"/>
+                                            <constraint firstItem="Y7R-jB-5Tz" firstAttribute="leading" secondItem="Kmg-WR-c9b" secondAttribute="leading" constant="20" id="aoX-xe-Trh"/>
                                             <constraint firstItem="cCh-AE-jQ2" firstAttribute="top" secondItem="Arc-Eo-2DV" secondAttribute="bottom" constant="26" id="hNF-Oy-E5y"/>
                                             <constraint firstItem="JjV-8G-w6E" firstAttribute="leading" secondItem="QXr-dw-0YI" secondAttribute="trailing" constant="32" id="nfT-DD-8Nx"/>
                                             <constraint firstItem="QXr-dw-0YI" firstAttribute="leading" secondItem="vNt-sk-mHp" secondAttribute="trailing" constant="32" id="obN-xI-ZV9"/>
                                             <constraint firstItem="Arc-Eo-2DV" firstAttribute="leading" secondItem="KOC-xG-ylT" secondAttribute="trailing" constant="32" id="pHt-gA-lie"/>
+                                            <constraint firstItem="70Y-Xy-GFd" firstAttribute="leading" secondItem="Kmg-WR-c9b" secondAttribute="leading" constant="20" id="pWf-l0-Ptc"/>
                                             <constraint firstItem="5pQ-L1-rOt" firstAttribute="leading" secondItem="wC8-Hi-QyP" secondAttribute="trailing" constant="32" id="qTP-HP-1gZ"/>
                                             <constraint firstAttribute="height" constant="1000" id="vUO-cf-8Ca"/>
+                                            <constraint firstItem="vNt-sk-mHp" firstAttribute="leading" secondItem="Kmg-WR-c9b" secondAttribute="leading" constant="20" id="wT3-EH-7w1"/>
+                                            <constraint firstItem="Y7R-jB-5Tz" firstAttribute="leading" secondItem="Kmg-WR-c9b" secondAttribute="leading" constant="20" id="zBQ-qj-CQZ"/>
                                             <constraint firstItem="Yck-UI-ASS" firstAttribute="top" secondItem="mc1-tA-0pU" secondAttribute="bottom" constant="26" id="zaQ-0l-0n9"/>
                                         </constraints>
                                     </view>
@@ -1206,7 +1375,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hxj-qw-J5U"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <color key="backgroundColor" name="mediumGreen"/>
                         <constraints>
                             <constraint firstItem="cyk-Pb-qYU" firstAttribute="leading" secondItem="hxj-qw-J5U" secondAttribute="leading" constant="16" id="ABf-h3-H2z"/>
                             <constraint firstItem="nGK-5Z-CFR" firstAttribute="bottom" secondItem="hxj-qw-J5U" secondAttribute="bottom" constant="21" id="YRJ-Sj-AKU"/>
@@ -1335,7 +1504,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIf-ta-ggK" userLabel="LetterButton">
                                                 <rect key="frame" x="233.5" y="0.0" width="233" height="184"/>
-                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="120"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="140"/>
                                                 <state key="normal" title="b">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -1362,15 +1531,15 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="200" height="209"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0b-bK-jCT">
-                                                        <rect key="frame" x="0.0" y="0.0" width="200" height="186.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="200" height="183.5"/>
                                                         <state key="normal" backgroundImage="cub"/>
                                                         <connections>
                                                             <action selector="tapFirstPic:" destination="0kz-R1-3sS" eventType="touchUpInside" id="Oqi-Yt-lBu"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gde-iV-Y8z">
-                                                        <rect key="frame" x="0.0" y="186.5" width="200" height="22.5"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                                        <rect key="frame" x="0.0" y="183.5" width="200" height="25.5"/>
+                                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="30"/>
                                                         <state key="normal" title="cub">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
@@ -1384,15 +1553,15 @@
                                                 <rect key="frame" x="250" y="0.0" width="200" height="209"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Deb-bG-MKb">
-                                                        <rect key="frame" x="0.0" y="0.0" width="200" height="186.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="200" height="183.5"/>
                                                         <state key="normal" backgroundImage="crab"/>
                                                         <connections>
                                                             <action selector="tapSecondPic:" destination="0kz-R1-3sS" eventType="touchUpInside" id="Ziu-ep-162"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="odU-jI-rXc">
-                                                        <rect key="frame" x="0.0" y="186.5" width="200" height="22.5"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                                        <rect key="frame" x="0.0" y="183.5" width="200" height="25.5"/>
+                                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="30"/>
                                                         <state key="normal" title="crab">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
@@ -1406,15 +1575,15 @@
                                                 <rect key="frame" x="500" y="0.0" width="200" height="209"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kxt-47-Mkm">
-                                                        <rect key="frame" x="0.0" y="0.0" width="200" height="186.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="200" height="183.5"/>
                                                         <state key="normal" backgroundImage="cobweb"/>
                                                         <connections>
                                                             <action selector="tapThirdPic:" destination="0kz-R1-3sS" eventType="touchUpInside" id="UFW-Cd-nSW"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p34-Vh-ahp">
-                                                        <rect key="frame" x="0.0" y="186.5" width="200" height="22.5"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                                        <rect key="frame" x="0.0" y="183.5" width="200" height="25.5"/>
+                                                        <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="30"/>
                                                         <state key="normal" title="cobweb">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
@@ -1464,6 +1633,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LIT-Dv-wQ0" userLabel="Letter Button">
+                                <rect key="frame" x="240" y="8" width="45" height="126"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="80"/>
+                                <state key="normal" title="b">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapLetter:" destination="8q8-8V-GdK" eventType="touchUpInside" id="cBR-U8-UBG"/>
+                                </connections>
+                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="OhN-sI-Awh" userLabel="Side Bar Stack View">
                                 <rect key="frame" x="60" y="38" width="40" height="338"/>
                                 <subviews>
@@ -1526,36 +1705,50 @@
                                     <constraint firstAttribute="width" constant="40" id="f9W-4N-RQo"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="W0S-Zf-31R" userLabel="Puzzle Stack View">
-                                <rect key="frame" x="123" y="8" width="110" height="377"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LIT-Dv-wQ0" userLabel="Letter Button">
-                                        <rect key="frame" x="0.0" y="0.0" width="110" height="188.5"/>
-                                        <state key="normal" title="Button"/>
-                                    </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="u4Z-ch-jA9">
-                                        <rect key="frame" x="0.0" y="188.5" width="110" height="188.5"/>
-                                    </imageView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="110" id="L3p-ma-0Qc"/>
-                                </constraints>
-                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YLB-m1-tcP" userLabel="Choice One">
+                                <rect key="frame" x="588" y="38" width="112" height="122"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="cub"/>
+                                <connections>
+                                    <action selector="choiceButtons:" destination="8q8-8V-GdK" eventType="touchUpInside" id="LYZ-t4-Q9w"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQ5-Uz-FoP" userLabel="Choice Two">
+                                <rect key="frame" x="445" y="215" width="112" height="122"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bird"/>
+                                <connections>
+                                    <action selector="choiceButtons:" destination="8q8-8V-GdK" eventType="touchUpInside" id="68l-Tu-arN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0S-0b-wdp" userLabel="Choice Three">
+                                <rect key="frame" x="724" y="215" width="112" height="122"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bug"/>
+                                <connections>
+                                    <action selector="choiceButtons:" destination="8q8-8V-GdK" eventType="touchUpInside" id="lo7-d0-bqe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rkX-rC-9oy"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="OhN-sI-Awh" firstAttribute="centerY" secondItem="ASv-7Q-CWV" secondAttribute="centerY" id="28g-c4-nZT"/>
-                            <constraint firstItem="rkX-rC-9oy" firstAttribute="bottom" secondItem="W0S-Zf-31R" secondAttribute="bottom" constant="8" id="8gr-TF-UKx"/>
-                            <constraint firstItem="W0S-Zf-31R" firstAttribute="leading" secondItem="OhN-sI-Awh" secondAttribute="trailing" constant="23" id="ARH-ay-bbW"/>
+                            <constraint firstItem="LIT-Dv-wQ0" firstAttribute="top" secondItem="rkX-rC-9oy" secondAttribute="top" constant="8" id="H5o-Q5-ZkL"/>
                             <constraint firstItem="OhN-sI-Awh" firstAttribute="leading" secondItem="rkX-rC-9oy" secondAttribute="leading" constant="16" id="Q7H-vX-pz1"/>
-                            <constraint firstItem="W0S-Zf-31R" firstAttribute="top" secondItem="rkX-rC-9oy" secondAttribute="top" constant="8" id="sSI-nF-PNz"/>
+                            <constraint firstItem="LIT-Dv-wQ0" firstAttribute="leading" secondItem="OhN-sI-Awh" secondAttribute="trailing" constant="140" id="cei-rz-dG9"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="choice1" destination="YLB-m1-tcP" id="A4l-Vq-fLo"/>
+                        <outlet property="choice2" destination="LQ5-Uz-FoP" id="fJz-JG-sMQ"/>
+                        <outlet property="choice3" destination="K0S-0b-wdp" id="nwy-Sa-SuS"/>
+                        <outlet property="letterButton" destination="LIT-Dv-wQ0" id="ulq-Tt-8WC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Jq-ES-0N9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1144.4196428571429" y="4915.9420289855079"/>
+            <point key="canvasLocation" x="1799" y="4070"/>
         </scene>
         <!--Ending Sounds Four-->
         <scene sceneID="JDZ-Sp-mY6">
@@ -1646,208 +1839,262 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ntp-UT-8G1" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="788" height="900"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hKE-AA-V3v">
-                                                <rect key="frame" x="0.0" y="8" width="208" height="144"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hKE-AA-V3v">
+                                                <rect key="frame" x="20" y="8" width="208" height="144"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="208" id="bhu-x6-27J"/>
                                                     <constraint firstAttribute="height" constant="144" id="d9g-G1-HxQ"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
-                                                <state key="normal" title="B">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="B" backgroundImage="new_level_button_0_star">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="toLearnEndingSoundsPage:" destination="KEr-mX-3b2" eventType="touchUpInside" id="eE2-9v-0aW"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8CX-hj-0eP">
-                                                <rect key="frame" x="240" y="8" width="208" height="144"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cub" translatesAutoresizingMaskIntoConstraints="NO" id="vZe-nv-N4j">
+                                                <rect key="frame" x="108" y="8" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8CX-hj-0eP">
+                                                <rect key="frame" x="260" y="8" width="208" height="144"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="144" id="Grp-2F-KTc"/>
                                                     <constraint firstAttribute="width" constant="208" id="g8G-52-Qux"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
-                                                <state key="normal" title="M">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="M" backgroundImage="new_level_button_0_star">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="toLearnEndingSoundsPage:" destination="KEr-mX-3b2" eventType="touchUpInside" id="pmb-0B-OAH"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Clb-ij-Kn1">
-                                                <rect key="frame" x="480" y="8" width="208" height="144"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="swim" translatesAutoresizingMaskIntoConstraints="NO" id="pHX-nF-9NL">
+                                                <rect key="frame" x="348" y="8" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Clb-ij-Kn1">
+                                                <rect key="frame" x="500" y="8" width="208" height="144"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="208" id="YeG-wS-kKX"/>
                                                     <constraint firstAttribute="height" constant="144" id="hsg-ha-Ez8"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
-                                                <state key="normal" title="R">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="R" backgroundImage="new_level_button_0_star">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="toLearnEndingSoundsPage:" destination="KEr-mX-3b2" eventType="touchUpInside" id="kML-zN-Wt1"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AjG-gb-ELq">
-                                                <rect key="frame" x="0.0" y="178" width="208" height="144"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="door" translatesAutoresizingMaskIntoConstraints="NO" id="Guf-fp-NmQ">
+                                                <rect key="frame" x="588" y="8" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AjG-gb-ELq">
+                                                <rect key="frame" x="20" y="178" width="208" height="144"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="144" id="QY9-yy-PMS"/>
                                                     <constraint firstAttribute="width" constant="208" id="XWz-Kc-Z0q"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
-                                                <state key="normal" title="S">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="S" backgroundImage="new_level_button_0_star">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="toLearnEndingSoundsPage:" destination="KEr-mX-3b2" eventType="touchUpInside" id="kMS-sx-OCF"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJI-7G-D2j">
-                                                <rect key="frame" x="231" y="178" width="208" height="144"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bus" translatesAutoresizingMaskIntoConstraints="NO" id="H9l-f5-HRD">
+                                                <rect key="frame" x="108" y="178" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJI-7G-D2j">
+                                                <rect key="frame" x="251" y="178" width="208" height="144"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="208" id="IT9-ca-4QY"/>
                                                     <constraint firstAttribute="height" constant="144" id="K61-dr-zHU"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
-                                                <state key="normal" title="T">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="T" backgroundImage="new_level_button_0_star">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="toLearnEndingSoundsPage:" destination="KEr-mX-3b2" eventType="touchUpInside" id="aAy-ER-ngR"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWR-mN-sCK">
-                                                <rect key="frame" x="471" y="178" width="208" height="144"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="net" translatesAutoresizingMaskIntoConstraints="NO" id="GuY-Pu-TOx">
+                                                <rect key="frame" x="339" y="178" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWR-mN-sCK">
+                                                <rect key="frame" x="491" y="178" width="208" height="144"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="144" id="OAy-BY-RMi"/>
                                                     <constraint firstAttribute="width" constant="208" id="oVo-6g-KuG"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
-                                                <state key="normal" title="G">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="G" backgroundImage="new_level_button_0_star">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="toLearnEndingSoundsPage:" destination="KEr-mX-3b2" eventType="touchUpInside" id="lng-Zo-Qvn"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QbE-M0-hrE">
-                                                <rect key="frame" x="0.0" y="348" width="208" height="144"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="frog" translatesAutoresizingMaskIntoConstraints="NO" id="yUa-PG-W4D">
+                                                <rect key="frame" x="579" y="178" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QbE-M0-hrE">
+                                                <rect key="frame" x="20" y="348" width="208" height="144"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="144" id="NRw-Uk-oQQ"/>
                                                     <constraint firstAttribute="width" constant="208" id="rzs-PZ-AmR"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
-                                                <state key="normal" title="N">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="N" backgroundImage="new_level_button_0_star">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="toLearnEndingSoundsPage:" destination="KEr-mX-3b2" eventType="touchUpInside" id="Wkr-AU-5Ie"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ATy-56-IGe">
-                                                <rect key="frame" x="240" y="348" width="208" height="144"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rain" translatesAutoresizingMaskIntoConstraints="NO" id="BIl-Et-d0J">
+                                                <rect key="frame" x="108" y="348" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ATy-56-IGe">
+                                                <rect key="frame" x="260" y="348" width="208" height="144"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="208" id="BNh-xb-3dL"/>
                                                     <constraint firstAttribute="height" constant="144" id="SRb-4F-y9N"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
-                                                <state key="normal" title="P">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="P" backgroundImage="new_level_button_0_star">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="toLearnEndingSoundsPage:" destination="KEr-mX-3b2" eventType="touchUpInside" id="9hg-nN-ht5"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l9Z-jA-hsy">
-                                                <rect key="frame" x="480" y="348" width="208" height="144"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l9Z-jA-hsy">
+                                                <rect key="frame" x="500" y="348" width="208" height="144"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="144" id="Soh-Bs-y9y"/>
                                                     <constraint firstAttribute="width" constant="208" id="iq0-EB-kVe"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
-                                                <state key="normal" title="F">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="F" backgroundImage="new_level_button_0_star">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="toLearnEndingSoundsPage:" destination="KEr-mX-3b2" eventType="touchUpInside" id="o8w-Be-eAU"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fG5-ch-MMK">
-                                                <rect key="frame" x="0.0" y="518" width="208" height="144"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="scarf" translatesAutoresizingMaskIntoConstraints="NO" id="xdy-Sf-qlh">
+                                                <rect key="frame" x="588" y="348" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fG5-ch-MMK">
+                                                <rect key="frame" x="20" y="518" width="208" height="144"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="208" id="3T0-ng-fpn"/>
                                                     <constraint firstAttribute="height" constant="144" id="WHa-Hg-dht"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
-                                                <state key="normal" title="D">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="D" backgroundImage="new_level_button_0_star">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="toLearnEndingSoundsPage:" destination="KEr-mX-3b2" eventType="touchUpInside" id="kYc-hK-1DS"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bLe-nj-Tad">
-                                                <rect key="frame" x="240" y="518" width="208" height="144"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bird" translatesAutoresizingMaskIntoConstraints="NO" id="XvW-pX-r97">
+                                                <rect key="frame" x="108" y="518" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bLe-nj-Tad">
+                                                <rect key="frame" x="260" y="518" width="208" height="144"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="208" id="S4d-to-Azi"/>
                                                     <constraint firstAttribute="height" constant="144" id="kKw-Py-mdg"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
-                                                <state key="normal" title="L">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="L" backgroundImage="new_level_button_0_star">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="toLearnEndingSoundsPage:" destination="KEr-mX-3b2" eventType="touchUpInside" id="4Qy-yX-mgJ"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDN-pJ-Jtc">
-                                                <rect key="frame" x="480" y="518" width="208" height="144"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="owl" translatesAutoresizingMaskIntoConstraints="NO" id="w7f-ud-vjv">
+                                                <rect key="frame" x="348" y="518" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDN-pJ-Jtc">
+                                                <rect key="frame" x="500" y="518" width="208" height="144"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="144" id="C1Z-ZL-AuN"/>
                                                     <constraint firstAttribute="width" constant="208" id="xl2-re-2MB"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
-                                                <state key="normal" title="K">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="K" backgroundImage="new_level_button_0_star">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="toLearnEndingSoundsPage:" destination="KEr-mX-3b2" eventType="touchUpInside" id="b0d-sg-g7O"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9mM-xh-6XP">
-                                                <rect key="frame" x="0.0" y="688" width="208" height="144"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="elk" translatesAutoresizingMaskIntoConstraints="NO" id="xUS-IJ-Gj9">
+                                                <rect key="frame" x="588" y="518" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9mM-xh-6XP">
+                                                <rect key="frame" x="20" y="688" width="208" height="144"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="144" id="e1B-pc-235"/>
                                                     <constraint firstAttribute="width" constant="208" id="pQN-co-9yW"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
-                                                <state key="normal" title="Z">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="Z" backgroundImage="new_level_button_0_star">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="toLearnEndingSoundsPage:" destination="KEr-mX-3b2" eventType="touchUpInside" id="7n6-cA-hVd"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMo-xM-5WN">
-                                                <rect key="frame" x="240" y="688" width="208" height="144"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMo-xM-5WN">
+                                                <rect key="frame" x="260" y="688" width="208" height="144"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="208" id="Ueo-jU-MMa"/>
                                                     <constraint firstAttribute="height" constant="144" id="eYv-At-91S"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
-                                                <state key="normal" title="X">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="X" backgroundImage="new_level_button_0_star">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="toLearnEndingSoundsPage:" destination="KEr-mX-3b2" eventType="touchUpInside" id="yTP-ws-Hct"/>
                                                 </connections>
                                             </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fox" translatesAutoresizingMaskIntoConstraints="NO" id="7ee-ns-JrH">
+                                                <rect key="frame" x="348" y="688" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="quiz1" translatesAutoresizingMaskIntoConstraints="NO" id="rPF-ZA-WSO">
+                                                <rect key="frame" x="108" y="688" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                                        <color key="backgroundColor" name="darkGreen"/>
                                         <constraints>
-                                            <constraint firstItem="QbE-M0-hrE" firstAttribute="leading" secondItem="ntp-UT-8G1" secondAttribute="leading" id="6Sc-Yc-1Zz"/>
                                             <constraint firstItem="8CX-hj-0eP" firstAttribute="top" secondItem="ntp-UT-8G1" secondAttribute="top" constant="8" id="7f6-WW-KC5"/>
                                             <constraint firstItem="l9Z-jA-hsy" firstAttribute="top" secondItem="lWR-mN-sCK" secondAttribute="bottom" constant="26" id="8tq-Ho-DyO"/>
+                                            <constraint firstItem="fG5-ch-MMK" firstAttribute="leading" secondItem="ntp-UT-8G1" secondAttribute="leading" constant="20" id="9a5-tG-cg9"/>
+                                            <constraint firstItem="QbE-M0-hrE" firstAttribute="leading" secondItem="ntp-UT-8G1" secondAttribute="leading" constant="20" id="BJx-Po-bBq"/>
+                                            <constraint firstItem="fG5-ch-MMK" firstAttribute="leading" secondItem="ntp-UT-8G1" secondAttribute="leading" constant="20" id="EBY-rW-7gK"/>
                                             <constraint firstItem="gMo-xM-5WN" firstAttribute="leading" secondItem="9mM-xh-6XP" secondAttribute="trailing" constant="32" id="EjA-gV-umn"/>
                                             <constraint firstItem="8CX-hj-0eP" firstAttribute="leading" secondItem="hKE-AA-V3v" secondAttribute="trailing" constant="32" id="Emr-3P-fNh"/>
                                             <constraint firstAttribute="height" constant="900" id="FBr-DG-T0e"/>
@@ -1858,24 +2105,27 @@
                                             <constraint firstItem="AjG-gb-ELq" firstAttribute="top" secondItem="hKE-AA-V3v" secondAttribute="bottom" constant="26" id="Sxm-li-t1e"/>
                                             <constraint firstItem="fJI-7G-D2j" firstAttribute="top" secondItem="8CX-hj-0eP" secondAttribute="bottom" constant="26" id="aBm-v7-oa0"/>
                                             <constraint firstItem="lWR-mN-sCK" firstAttribute="top" secondItem="Clb-ij-Kn1" secondAttribute="bottom" constant="26" id="aV9-Vn-aSy"/>
-                                            <constraint firstItem="fG5-ch-MMK" firstAttribute="leading" secondItem="ntp-UT-8G1" secondAttribute="leading" id="bgU-bf-R8e"/>
                                             <constraint firstItem="hKE-AA-V3v" firstAttribute="top" secondItem="ntp-UT-8G1" secondAttribute="top" constant="8" id="bqc-8u-HfN"/>
-                                            <constraint firstItem="hKE-AA-V3v" firstAttribute="leading" secondItem="ntp-UT-8G1" secondAttribute="leading" id="cl7-KT-QSt"/>
+                                            <constraint firstItem="9mM-xh-6XP" firstAttribute="leading" secondItem="ntp-UT-8G1" secondAttribute="leading" constant="20" id="d0l-vu-Ss1"/>
                                             <constraint firstItem="bLe-nj-Tad" firstAttribute="top" secondItem="ATy-56-IGe" secondAttribute="bottom" constant="26" id="dYw-8n-Xxy"/>
+                                            <constraint firstItem="hKE-AA-V3v" firstAttribute="leading" secondItem="ntp-UT-8G1" secondAttribute="leading" constant="20" id="dhz-qL-Vzw"/>
                                             <constraint firstItem="HDN-pJ-Jtc" firstAttribute="leading" secondItem="bLe-nj-Tad" secondAttribute="trailing" constant="32" id="inH-D4-mcT"/>
                                             <constraint firstItem="l9Z-jA-hsy" firstAttribute="leading" secondItem="ATy-56-IGe" secondAttribute="trailing" constant="32" id="j9d-78-MNi"/>
                                             <constraint firstItem="QbE-M0-hrE" firstAttribute="top" secondItem="AjG-gb-ELq" secondAttribute="bottom" constant="26" id="kHB-Z8-dbY"/>
                                             <constraint firstItem="9mM-xh-6XP" firstAttribute="top" secondItem="fG5-ch-MMK" secondAttribute="bottom" constant="26" id="kZS-to-CAM"/>
                                             <constraint firstItem="bLe-nj-Tad" firstAttribute="leading" secondItem="fG5-ch-MMK" secondAttribute="trailing" constant="32" id="p1e-k6-Wnb"/>
-                                            <constraint firstItem="9mM-xh-6XP" firstAttribute="leading" secondItem="ntp-UT-8G1" secondAttribute="leading" id="pgl-us-lOB"/>
                                             <constraint firstItem="Clb-ij-Kn1" firstAttribute="top" secondItem="ntp-UT-8G1" secondAttribute="top" constant="8" id="ps3-gf-0oP"/>
                                             <constraint firstItem="HDN-pJ-Jtc" firstAttribute="top" secondItem="l9Z-jA-hsy" secondAttribute="bottom" constant="26" id="qLD-kr-p77"/>
-                                            <constraint firstItem="AjG-gb-ELq" firstAttribute="leading" secondItem="ntp-UT-8G1" secondAttribute="leading" id="sAP-BP-cTP"/>
                                             <constraint firstItem="fJI-7G-D2j" firstAttribute="leading" secondItem="AjG-gb-ELq" secondAttribute="trailing" constant="23" id="tSj-Jo-l7L"/>
+                                            <constraint firstItem="AjG-gb-ELq" firstAttribute="leading" secondItem="ntp-UT-8G1" secondAttribute="leading" constant="20" id="ub8-lL-6Va"/>
                                             <constraint firstItem="gMo-xM-5WN" firstAttribute="top" secondItem="bLe-nj-Tad" secondAttribute="bottom" constant="26" id="x6i-f1-lU3"/>
                                             <constraint firstItem="lWR-mN-sCK" firstAttribute="leading" secondItem="fJI-7G-D2j" secondAttribute="trailing" constant="32" id="zwc-pS-EyW"/>
                                         </constraints>
                                     </view>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="drop" translatesAutoresizingMaskIntoConstraints="NO" id="GRq-hq-j1R">
+                                        <rect key="frame" x="353" y="348" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="ntp-UT-8G1" firstAttribute="top" secondItem="JCY-NM-RKx" secondAttribute="top" id="7mm-UR-kAP"/>
@@ -1887,7 +2137,7 @@
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1wz-he-Vhm"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <color key="backgroundColor" name="mediumGreen"/>
                         <constraints>
                             <constraint firstItem="onr-tz-vTu" firstAttribute="leading" secondItem="1wz-he-Vhm" secondAttribute="leading" constant="16" id="ADt-co-TFu"/>
                             <constraint firstAttribute="trailing" secondItem="JCY-NM-RKx" secondAttribute="trailing" id="GeC-tq-Qp5"/>
@@ -1931,17 +2181,36 @@
         <image name="back" width="56" height="56"/>
         <image name="bank" width="56" height="56"/>
         <image name="bird" width="400" height="400"/>
-        <image name="chef" width="400" height="400"/>
+        <image name="bug" width="474" height="370"/>
+        <image name="bus" width="542" height="420"/>
         <image name="cobweb" width="400" height="400"/>
         <image name="crab" width="400" height="400"/>
         <image name="cub" width="400" height="400"/>
+        <image name="door" width="400" height="400"/>
+        <image name="drop" width="400" height="400"/>
+        <image name="elk" width="400" height="400"/>
         <image name="forward" width="56" height="56"/>
+        <image name="fox" width="554" height="464"/>
+        <image name="frog" width="400" height="400"/>
         <image name="home" width="56" height="56"/>
+        <image name="net" width="468" height="476"/>
+        <image name="new_level_button_0_star" width="549" height="444"/>
+        <image name="owl" width="526" height="480"/>
         <image name="puzzle" width="56" height="56"/>
         <image name="quiz" width="56" height="56"/>
+        <image name="quiz1" width="400" height="400"/>
+        <image name="rain" width="400" height="400"/>
         <image name="repeat" width="56" height="56"/>
+        <image name="scarf" width="400" height="400"/>
+        <image name="swim" width="400" height="400"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="darkGreen">
+            <color red="0.4309999942779541" green="0.77999997138977051" blue="0.83099997043609619" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="mediumGreen">
+            <color red="0.76899999380111694" green="0.9100000262260437" blue="0.90200001001358032" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1954,9 +2223,6 @@
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemTealColor">
-            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

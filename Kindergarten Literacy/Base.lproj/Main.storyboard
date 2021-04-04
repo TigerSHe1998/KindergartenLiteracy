@@ -42,7 +42,7 @@
                                         <rect key="frame" x="0.0" y="282" width="56" height="56"/>
                                         <state key="normal" image="puzzle"/>
                                         <connections>
-                                            <action selector="puzzleButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GhM-Y4-cBr"/>
+                                            <action selector="puzzleButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sGg-W2-ybT"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -282,9 +282,6 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eog-El-j0g" userLabel="coin">
                                         <rect key="frame" x="0.0" y="188" width="56" height="56"/>
                                         <state key="normal" image="bank"/>
-                                        <connections>
-                                            <action selector="coinButtonTapped:" destination="Ssw-U2-RYa" eventType="touchUpInside" id="734-yz-Vff"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pv2-vZ-b4i" userLabel="puzzle">
                                         <rect key="frame" x="0.0" y="282" width="56" height="56"/>
