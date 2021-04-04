@@ -100,7 +100,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="reset save"/>
                                 <connections>
-                                    <action selector="resetSave:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gOZ-Hb-xlJ"/>
+                                    <action selector="resetSaveButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SQn-pi-uk5"/>
                                 </connections>
                             </button>
                         </subviews>
