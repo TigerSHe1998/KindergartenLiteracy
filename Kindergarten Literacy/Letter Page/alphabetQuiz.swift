@@ -65,7 +65,27 @@ class alphabetQuiz: UIViewController {
     // function to determine correct choice (also plays animation and sets up next question)
     @IBAction func quizChoice(_ sender: Any) {
         let choiceLetter = (sender as! UIButton).titleLabel!.text!
+        // get correct savefile
+        var saveFile = UserDefaults.standard.dictionary(forKey: "letterStarCount")
+        if currentArray == bmrasArray || currentArray == abcdeArray {
+            saveFile = UserDefaults.standard.dictionary(forKey: "letterStarCount")
+        } else {
+            saveFile = UserDefaults.standard.dictionary(forKey: "letterStarCountCap")
+        }
+        
         if choiceLetter == currentLetter {
+            // add score to current letter's savefile when correct button is tapped
+            var currScore:Int = saveFile![currentLetter] as! Int
+            if currScore < 5 {
+                currScore += 1
+                saveFile![currentLetter] = currScore
+                if currentArray == bmrasArray || currentArray == abcdeArray {
+                    UserDefaults.standard.set(saveFile, forKey: "letterStarCount")
+                } else {
+                    UserDefaults.standard.set(saveFile, forKey: "letterStarCountCap")
+                }
+            }
+            
             // sound fx
             playCorrect()
             // disable button to avoid tapping during animation
@@ -122,6 +142,18 @@ class alphabetQuiz: UIViewController {
                 }
             })
             // END ANIMATION BLOCK //
+        } else {
+            // decrese score for current letter if a wrong choice is tapped
+            var currScore:Int = saveFile![currentLetter] as! Int
+            if currScore > 0 {
+                currScore -= 1
+                saveFile![currentLetter] = currScore
+                if currentArray == bmrasArray || currentArray == abcdeArray {
+                    UserDefaults.standard.set(saveFile, forKey: "letterStarCount")
+                } else {
+                    UserDefaults.standard.set(saveFile, forKey: "letterStarCountCap")
+                }
+            }
         }
     }
     

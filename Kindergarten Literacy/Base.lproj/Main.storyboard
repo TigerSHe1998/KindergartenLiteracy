@@ -95,6 +95,14 @@
                                     <constraint firstAttribute="width" constant="420" id="pqn-vH-ErF"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eMC-Qa-rzX">
+                                <rect key="frame" x="661" y="45" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="reset save"/>
+                                <connections>
+                                    <action selector="resetSave:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gOZ-Hb-xlJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="RDL-S2-6O1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
