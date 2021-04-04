@@ -33,6 +33,7 @@ class ViewController: UIViewController {
     func initSave() {
         if UserDefaults.standard.object(forKey: "firstStartup") == nil {
             resetSave()
+            UserDefaults.standard.set(true, forKey: "firstStartup")
         }
     }
     
