@@ -21,6 +21,7 @@ class EndingSoundsFour: UIViewController {
 
         for button in buttons {
             // button.layer.cornerRadius = 20
+            button.setBackgroundImage(UIImage(named: "level_button_0_star"), for: .normal)
             button.contentHorizontalAlignment = .left
             button.contentVerticalAlignment = .top
             button.titleEdgeInsets = UIEdgeInsets(top: 20, left: 40, bottom: 0, right: 0)
@@ -91,14 +92,26 @@ class EndingSoundsFour: UIViewController {
         present(vc, animated: true)
         stopPlayingMessage()
     }
-    /*
-    // MARK: - Navigation
+    
+    // set stars for each button
+    // set up array of images with different star count. Easy to add/remove
+    let i0 = UIImage(named: "level_button_0_star")
+    let i1 = UIImage(named: "level_button_1_star")
+    let i2 = UIImage(named: "level_button_2_star")
+    let i3 = UIImage(named: "level_button_3_star")
+    let i4 = UIImage(named: "level_button_4_star")
+    let i5 = UIImage(named: "level_button_5_star")
+    var starsImages: [UIImage?] { return [self.i0, self.i1, self.i2, self.i3, self.i4, self.i5] }
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func initButtonBackground() {
+        // get savefile from userdefaults
+        let letterStarCount = UserDefaults.standard.dictionary(forKey: "letterStarCount")
+        for button in buttons {
+            let currentLetter = button.titleLabel!.text!
+            let currentStarCount = letterStarCount![currentLetter] as! Int
+            button.setBackgroundImage(starsImages[currentStarCount], for: .normal)
+        }
     }
-    */
 
 }

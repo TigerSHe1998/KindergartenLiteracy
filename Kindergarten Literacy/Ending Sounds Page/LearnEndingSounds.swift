@@ -39,8 +39,8 @@ class LearnEndingSounds: UIViewController {
 
         currentArray = passedInArray
         playFullLetterAudio(letter: passedInLetter)
-        showPicturesAndWords(letter: passedInLetter)
-        
+        showPictures(letter: passedInLetter)
+        showWords(letter: passedInLetter)
     }
     
     //buttons for changing display letter
@@ -51,7 +51,8 @@ class LearnEndingSounds: UIViewController {
             letterButton.setTitle(currentArray[index + 1], for: .normal)
         }
         playFullLetterAudio(letter: letterButton.currentTitle!)
-        showPicturesAndWords(letter: letterButton.currentTitle!)
+        showPictures(letter: letterButton.currentTitle!)
+        showWords(letter: letterButton.currentTitle!)
     }
     
     @IBAction func prevLetter(_ sender: Any) {
@@ -61,7 +62,8 @@ class LearnEndingSounds: UIViewController {
             letterButton.setTitle(currentArray[index - 1], for: .normal)
         }
         playFullLetterAudio(letter: letterButton.currentTitle!)
-        showPicturesAndWords(letter: letterButton.currentTitle!)
+        showPictures(letter: letterButton.currentTitle!)
+        showWords(letter: letterButton.currentTitle!)
     }
     
     //play audio for each letter
@@ -80,54 +82,41 @@ class LearnEndingSounds: UIViewController {
         playThirdPicAudio(letter: letterButton.currentTitle!)
     }
     
-    func showPicturesAndWords(letter: String) {
+    func showPictures(letter: String) {
         switch letter {
         case "b","B":
             showPicturesForLetter(firstPic: "cub", secondPic: "crab", thirdPic: "cobweb")
-            showWordsForLetter(first: "cub", second: "crab", third: "cobweb")
         case "d","D":
             showPicturesForLetter(firstPic: "bird", secondPic: "cold", thirdPic: "friend")
-            showWordsForLetter(first: "bird", second: "cold", third: "friend")
         case "f","F":
             showPicturesForLetter(firstPic: "scarf", secondPic: "thief", thirdPic: "chef")
-            showWordsForLetter(first: "scarf", second: "thief", third: "chef")
         case "g","G":
             showPicturesForLetter(firstPic: "frog", secondPic: "plug", thirdPic: "bug")
-            showWordsForLetter(first: "frog", second: "plug", third: "bug")
         case "k","K":
             showPicturesForLetter(firstPic: "elk", secondPic: "pick", thirdPic: "shark")
-            showWordsForLetter(first: "elk", second: "pick", third: "shark")
         case "l","L":
             showPicturesForLetter(firstPic: "owl", secondPic: "goal", thirdPic: "sail")
-            showWordsForLetter(first: "owl", second: "goal", third: "sail")
         case "m","M":
             showPicturesForLetter(firstPic: "swim", secondPic: "clam", thirdPic: "storm")
-            showWordsForLetter(first: "swim", second: "clam", third: "storm")
         case "n","N":
             showPicturesForLetter(firstPic: "rain", secondPic: "van", thirdPic: "fin")
-            showWordsForLetter(first: "rain", second: "van", third: "fin")
         case "p","P":
             showPicturesForLetter(firstPic: "drop", secondPic: "soap", thirdPic: "jeep")
-            showWordsForLetter(first: "drop", second: "soap", third: "jeep")
         case "r","R":
-            showPicturesForLetter(firstPic: "door", secondPic: "tiger", thirdPic: "polar-bear")
-            showWordsForLetter(first: "door", second: "tiger", third: "polar-bear")
+            showPicturesForLetter(firstPic: "door", secondPic: "tiger", thirdPic: "polar bear")
         case "s","S":
             showPicturesForLetter(firstPic: "bus", secondPic: "dress", thirdPic: "grapes")
-            showWordsForLetter(first: "bus", second: "dress", third: "grapes")
         case "t","T":
             showPicturesForLetter(firstPic: "net", secondPic: "paint", thirdPic: "tent")
-            showWordsForLetter(first: "net", second: "paint", third: "tent")
         case "x","X":
             showPicturesForLetter(firstPic: "fox", secondPic: "ax", thirdPic: "six")
-            showWordsForLetter(first: "fox", second: "ax", third: "six")
         case "z","Z":
             showPicturesForLetter(firstPic: "quiz1", secondPic: "prize", thirdPic: "freeze")
-            showWordsForLetter(first: "quiz1", second: "prize", third: "freeze")
         default:
-        break
+            break
         }
     }
+    
     
     func showPicturesForLetter(firstPic: String, secondPic: String, thirdPic: String) {
         firstWordPic.setBackgroundImage(UIImage(named: firstPic), for: .normal)
@@ -135,12 +124,85 @@ class LearnEndingSounds: UIViewController {
         thirdWordPic.setBackgroundImage(UIImage(named: thirdPic), for: .normal)
     }
     
-    func showWordsForLetter(first: String, second: String, third: String) {
-        // let firstTitle = NSAttributedString(string: first)
+    func showWords(letter: String) {
+        switch letter {
+        case "b":
+            showWordsForLetter(letter: "b", first: "cub", second: "crab", third: "cobweb")
+        case "d":
+            showWordsForLetter(letter: "d", first: "bird", second: "cold", third: "friend")
+        case "f":
+            showWordsForLetter(letter: "f", first: "scarf", second: "thief", third: "chef")
+        case "g":
+            showWordsForLetter(letter: "g", first: "frog", second: "plug", third: "bug")
+        case "k":
+            showWordsForLetter(letter: "k", first: "elk", second: "pick", third: "shark")
+        case "l":
+            showWordsForLetter(letter: "l", first: "owl", second: "goal", third: "sail")
+        case "m":
+            showWordsForLetter(letter: "m", first: "swim", second: "clam", third: "storm")
+        case "n":
+            showWordsForLetter(letter: "n", first: "rain", second: "van", third: "fin")
+        case "p":
+            showWordsForLetter(letter: "p", first: "drop", second: "soap", third: "jeep")
+        case "r":
+            showWordsForLetter(letter: "r", first: "door", second: "tiger", third: "polar bear")
+        case "s":
+            showWordsForLetter(letter: "s", first: "bus", second: "dress", third: "grapes")
+        case "t":
+            showWordsForLetter(letter: "t", first: "net", second: "paint", third: "tent")
+        case "x":
+            showWordsForLetter(letter: "x", first: "fox", second: "ax", third: "six")
+        case "z":
+            showWordsForLetter(letter: "z", first: "quiz", second: "prize", third: "freeze")
+        case "B":
+            showWordsForLetter(letter: "B", first: "CUB", second: "CRAB", third: "COBWEB")
+        case "D":
+            showWordsForLetter(letter: "D", first: "BIRD", second: "COLD", third: "FRIEND")
+        case "F":
+            showWordsForLetter(letter: "F", first: "SCARF", second: "THIEF", third: "CHEF")
+        case "G":
+            showWordsForLetter(letter: "G", first: "FROG", second: "PLUG", third: "BUG")
+        case "K":
+            showWordsForLetter(letter: "K", first: "ELK", second: "PICK", third: "SHARK")
+        case "L":
+            showWordsForLetter(letter: "L", first: "OWL", second: "GOAL", third: "SAIL")
+        case "M":
+            showWordsForLetter(letter: "M", first: "SWIM", second: "CLAM", third: "STORM")
+        case "N":
+            showWordsForLetter(letter: "N", first: "RAIN", second: "VAN", third: "FIN")
+        case "P":
+            showWordsForLetter(letter: "P", first: "DROP", second: "SOAP", third: "JEEP")
+        case "R":
+            showWordsForLetter(letter: "R", first: "DOOR", second: "TIGER", third: "POLAR BEAR")
+        case "S":
+            showWordsForLetter(letter: "S", first: "BUS", second: "DRESS", third: "GRAPES")
+        case "T":
+            showWordsForLetter(letter: "T", first: "NET", second: "PAINT", third: "TENT")
+        case "X":
+            showWordsForLetter(letter: "X", first: "FOX", second: "AX", third: "SIX")
+        case "Z":
+            showWordsForLetter(letter: "Z", first: "QUIZ", second: "PRIZE", third: "FREEZE")
+        default:
+            break
+        }
+    }
+    
+    func showWordsForLetter(letter: String, first: String, second: String, third: String) {
+        let letterToRed = letter
+        let range1 = (first as NSString).range(of: letterToRed)
+        let mutableFirst = NSMutableAttributedString(string: first)
+        mutableFirst.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: range1)
+        firstWord.setAttributedTitle(mutableFirst, for: .normal)
         
-        firstWord.setTitle(first, for: .normal)
-        secondWord.setTitle(second, for: .normal)
-        thirdWord.setTitle(third, for: .normal)
+        let range2 = (second as NSString).range(of: letterToRed)
+        let mutableSecond = NSMutableAttributedString(string: second)
+        mutableSecond.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: range2)
+        secondWord.setAttributedTitle(mutableSecond, for: .normal)
+        
+        let range3 = (third as NSString).range(of: letterToRed)
+        let mutableThird = NSMutableAttributedString(string: third)
+        mutableThird.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: range3)
+        thirdWord.setAttributedTitle(mutableThird, for: .normal)
     }
     
     
