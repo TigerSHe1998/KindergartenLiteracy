@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="landscape" appearance="light"/>
+    <device id="retina6_0" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -14,11 +14,11 @@
             <objects>
                 <viewController storyboardIdentifier="ending_sounds_vc" id="EMY-7p-7q5" customClass="EndingSoundsViewController" customModule="Kindergarten_Literacy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tm8-Aq-10l">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="Qyd-b9-D3v" userLabel="Side Bar Stack View">
-                                <rect key="frame" x="64" y="38" width="40" height="338"/>
+                                <rect key="frame" x="64" y="26" width="40" height="338"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCm-Uu-HaT" userLabel="Back">
                                         <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
@@ -33,7 +33,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QGd-cc-oua" userLabel="Home">
-                                        <rect key="frame" x="0.0" y="99.5" width="40" height="40"/>
+                                        <rect key="frame" x="0.0" y="99.333333333333329" width="40" height="39.999999999999986"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="pNq-jH-HNt"/>
                                         </constraints>
@@ -44,7 +44,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ozN-fC-7if" userLabel="Puzzle">
-                                        <rect key="frame" x="0.0" y="198.5" width="40" height="40"/>
+                                        <rect key="frame" x="0.0" y="198.66666666666666" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="j5p-Td-DcA"/>
                                         </constraints>
@@ -72,10 +72,10 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="QqT-kV-hLW">
-                                <rect key="frame" x="112" y="20" width="125" height="374"/>
+                                <rect key="frame" x="112" y="20" width="125" height="350"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EndingSoundsAnimals" translatesAutoresizingMaskIntoConstraints="NO" id="7Ik-93-aXr" userLabel="Image">
-                                        <rect key="frame" x="0.0" y="0.0" width="125" height="374"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="125" height="350"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
@@ -84,34 +84,34 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="mYy-AL-SAZ">
-                                <rect key="frame" x="297" y="32" width="300" height="350"/>
+                                <rect key="frame" x="297" y="20" width="300" height="350"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EndingSoundsTitle" translatesAutoresizingMaskIntoConstraints="NO" id="baE-LU-B5R">
-                                        <rect key="frame" x="0.0" y="0.0" width="300" height="63.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="63.666666666666664"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fI-9k-T5q" userLabel="Button1">
-                                        <rect key="frame" x="0.0" y="71.5" width="300" height="63.5"/>
+                                        <rect key="frame" x="0.0" y="71.666666666666671" width="300" height="63.666666666666671"/>
                                         <state key="normal" backgroundImage="EndingSounds1"/>
                                         <connections>
                                             <action selector="endingSoundsOneButtonTapped:" destination="EMY-7p-7q5" eventType="touchUpInside" id="hqz-lY-SGf"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zYc-Ct-C2G" userLabel="Button2">
-                                        <rect key="frame" x="0.0" y="143" width="300" height="64"/>
+                                        <rect key="frame" x="0.0" y="143.33333333333334" width="300" height="63.333333333333343"/>
                                         <state key="normal" backgroundImage="EndingSounds2"/>
                                         <connections>
                                             <action selector="endingSoundsTwoButtonTapped:" destination="EMY-7p-7q5" eventType="touchUpInside" id="inZ-cz-TSR"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="16t-s0-je4" userLabel="Button3">
-                                        <rect key="frame" x="0.0" y="215" width="300" height="63.5"/>
+                                        <rect key="frame" x="0.0" y="214.66666666666666" width="300" height="63.666666666666657"/>
                                         <state key="normal" backgroundImage="EndingSounds3"/>
                                         <connections>
                                             <action selector="endingSoundsThreeButtonTapped:" destination="EMY-7p-7q5" eventType="touchUpInside" id="qf3-U0-q4t"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tlb-Ri-d7i" userLabel="Button4">
-                                        <rect key="frame" x="0.0" y="286.5" width="300" height="63.5"/>
+                                        <rect key="frame" x="0.0" y="286.33333333333331" width="300" height="63.666666666666686"/>
                                         <state key="normal" backgroundImage="EndingSounds4"/>
                                         <connections>
                                             <action selector="endingSoundsFourButtonTapped:" destination="EMY-7p-7q5" eventType="touchUpInside" id="JiA-dw-gF8"/>
@@ -449,12 +449,12 @@
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="ibe-rh-kaO" firstAttribute="leading" secondItem="kxx-g0-vak" secondAttribute="leading" id="ITo-aG-nLb"/>
                                     <constraint firstAttribute="height" constant="1000" id="JGm-AZ-bxE"/>
+                                    <constraint firstAttribute="trailing" secondItem="ibe-rh-kaO" secondAttribute="trailing" id="LtO-GA-IyE"/>
                                     <constraint firstAttribute="width" constant="788" id="eQj-VG-otZ"/>
                                     <constraint firstItem="ibe-rh-kaO" firstAttribute="top" secondItem="kxx-g0-vak" secondAttribute="top" id="eVl-kS-fFR"/>
                                     <constraint firstItem="ibe-rh-kaO" firstAttribute="centerX" secondItem="kxx-g0-vak" secondAttribute="centerX" id="mFp-kn-Ghh"/>
-                                    <constraint firstItem="ibe-rh-kaO" firstAttribute="trailing" secondItem="kxx-g0-vak" secondAttribute="trailing" id="pNV-iv-Bpi"/>
+                                    <constraint firstItem="ibe-rh-kaO" firstAttribute="leading" secondItem="kxx-g0-vak" secondAttribute="leading" id="naz-d0-D1v"/>
                                     <constraint firstAttribute="bottom" secondItem="ibe-rh-kaO" secondAttribute="bottom" id="ukp-TE-YeY"/>
                                 </constraints>
                             </scrollView>
@@ -475,7 +475,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x20-AF-PQR" userLabel="Home">
-                                        <rect key="frame" x="0.0" y="59.5" width="40" height="40"/>
+                                        <rect key="frame" x="0.0" y="59.666666666666686" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="N49-zV-2r2"/>
                                         </constraints>
@@ -486,7 +486,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fa2-di-VEx" userLabel="Quiz">
-                                        <rect key="frame" x="0.0" y="119" width="40" height="40"/>
+                                        <rect key="frame" x="0.0" y="119.33333333333331" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="1VA-AM-yhD"/>
                                         </constraints>
@@ -496,7 +496,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lHy-gz-5nn" userLabel="Replay">
-                                        <rect key="frame" x="0.0" y="179" width="40" height="40"/>
+                                        <rect key="frame" x="0.0" y="178.66666666666669" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="pDM-mS-afJ"/>
                                         </constraints>
@@ -506,7 +506,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oUT-kW-kG9" userLabel="Puzzle">
-                                        <rect key="frame" x="0.0" y="238.5" width="40" height="40"/>
+                                        <rect key="frame" x="0.0" y="238.33333333333337" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="66q-tY-4ww"/>
                                         </constraints>
@@ -538,8 +538,8 @@
                         <color key="backgroundColor" name="mediumGreen"/>
                         <constraints>
                             <constraint firstItem="5Rx-qv-P2q" firstAttribute="leading" secondItem="Q2u-Md-WpJ" secondAttribute="leading" constant="16" id="GU8-sb-ZkL"/>
-                            <constraint firstItem="kxx-g0-vak" firstAttribute="trailing" secondItem="Q2u-Md-WpJ" secondAttribute="trailing" constant="44" id="Kzm-f9-l7N"/>
                             <constraint firstItem="5Rx-qv-P2q" firstAttribute="centerY" secondItem="Oax-zA-Sxs" secondAttribute="centerY" id="T6c-OD-s8Z"/>
+                            <constraint firstItem="kxx-g0-vak" firstAttribute="leading" secondItem="5Rx-qv-P2q" secondAttribute="trailing" constant="8" symbolic="YES" id="YPe-QW-RCS"/>
                             <constraint firstItem="kxx-g0-vak" firstAttribute="bottom" secondItem="Q2u-Md-WpJ" secondAttribute="bottom" constant="21" id="sBX-nC-QAA"/>
                             <constraint firstItem="kxx-g0-vak" firstAttribute="top" secondItem="Q2u-Md-WpJ" secondAttribute="top" id="yxo-Ms-2x4"/>
                         </constraints>
@@ -591,7 +591,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D9P-48-Oah" userLabel="Home">
-                                        <rect key="frame" x="0.0" y="59.5" width="40" height="40"/>
+                                        <rect key="frame" x="0.0" y="59.666666666666686" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="OhR-37-6x8"/>
                                         </constraints>
@@ -602,7 +602,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WZY-1M-iDc" userLabel="Quiz">
-                                        <rect key="frame" x="0.0" y="119" width="40" height="40"/>
+                                        <rect key="frame" x="0.0" y="119.33333333333331" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="aSO-Z4-NwD"/>
                                         </constraints>
@@ -612,7 +612,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12V-M6-Gjb" userLabel="Repeat">
-                                        <rect key="frame" x="0.0" y="179" width="40" height="40"/>
+                                        <rect key="frame" x="0.0" y="178.66666666666669" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="I13-lC-6IW"/>
                                         </constraints>
@@ -622,7 +622,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hbg-X7-GoR" userLabel="Puzzle">
-                                        <rect key="frame" x="0.0" y="238.5" width="40" height="40"/>
+                                        <rect key="frame" x="0.0" y="238.33333333333337" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="zZh-ah-cpV"/>
                                         </constraints>
@@ -997,7 +997,7 @@
                                 <rect key="frame" x="108" y="0.0" width="788" height="1000"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kmg-WR-c9b" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="808" height="1000"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="788" height="1000"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vNt-sk-mHp">
                                                 <rect key="frame" x="20" y="8" width="208" height="144"/>
@@ -1256,7 +1256,6 @@
                                         <constraints>
                                             <constraint firstItem="wC8-Hi-QyP" firstAttribute="top" secondItem="QXr-dw-0YI" secondAttribute="bottom" constant="26" id="289-F3-i3F"/>
                                             <constraint firstItem="QXr-dw-0YI" firstAttribute="top" secondItem="Kmg-WR-c9b" secondAttribute="top" constant="8" id="3Bk-ru-ekj"/>
-                                            <constraint firstAttribute="trailing" secondItem="JjV-8G-w6E" secondAttribute="trailing" constant="100" id="4wk-2F-Mf3"/>
                                             <constraint firstItem="Yck-UI-ASS" firstAttribute="leading" secondItem="Y7R-jB-5Tz" secondAttribute="trailing" constant="32" id="9eM-AO-isU"/>
                                             <constraint firstItem="KOC-xG-ylT" firstAttribute="top" secondItem="5pQ-L1-rOt" secondAttribute="bottom" constant="26" id="9qQ-K2-0SB"/>
                                             <constraint firstItem="JjV-8G-w6E" firstAttribute="top" secondItem="Kmg-WR-c9b" secondAttribute="top" constant="8" id="Cg2-N6-jCb"/>
@@ -1290,6 +1289,7 @@
                                     </view>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="Kmg-WR-c9b" firstAttribute="centerX" secondItem="nGK-5Z-CFR" secondAttribute="centerX" id="SqG-Gb-QzI"/>
                                     <constraint firstAttribute="width" constant="788" id="ToE-X6-i1W"/>
                                     <constraint firstAttribute="trailing" secondItem="Kmg-WR-c9b" secondAttribute="trailing" id="afH-EY-pYB"/>
                                     <constraint firstAttribute="height" constant="1000" id="biZ-Pk-JZT"/>
@@ -1315,7 +1315,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fQu-a5-bwW" userLabel="Home">
-                                        <rect key="frame" x="0.0" y="59.5" width="40" height="40"/>
+                                        <rect key="frame" x="0.0" y="59.666666666666686" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="8Wc-h4-JuE"/>
                                         </constraints>
@@ -1326,7 +1326,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uTb-ZL-BZT" userLabel="Quiz">
-                                        <rect key="frame" x="0.0" y="119" width="40" height="40"/>
+                                        <rect key="frame" x="0.0" y="119.33333333333331" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="hTw-SQ-xfu"/>
                                         </constraints>
@@ -1336,7 +1336,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ETg-9d-XYQ" userLabel="Replay">
-                                        <rect key="frame" x="0.0" y="179" width="40" height="40"/>
+                                        <rect key="frame" x="0.0" y="178.66666666666669" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="TcL-5t-X6X"/>
                                         </constraints>
@@ -1346,7 +1346,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rF0-gP-WNA" userLabel="Puzzle">
-                                        <rect key="frame" x="0.0" y="238.5" width="40" height="40"/>
+                                        <rect key="frame" x="0.0" y="238.33333333333337" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="agM-eJ-K0s"/>
                                         </constraints>
@@ -1378,9 +1378,9 @@
                         <color key="backgroundColor" name="mediumGreen"/>
                         <constraints>
                             <constraint firstItem="cyk-Pb-qYU" firstAttribute="leading" secondItem="hxj-qw-J5U" secondAttribute="leading" constant="16" id="ABf-h3-H2z"/>
+                            <constraint firstItem="nGK-5Z-CFR" firstAttribute="leading" secondItem="cyk-Pb-qYU" secondAttribute="trailing" constant="8" symbolic="YES" id="KW8-Pb-OzT"/>
                             <constraint firstItem="nGK-5Z-CFR" firstAttribute="bottom" secondItem="hxj-qw-J5U" secondAttribute="bottom" constant="21" id="YRJ-Sj-AKU"/>
                             <constraint firstItem="nGK-5Z-CFR" firstAttribute="top" secondItem="hxj-qw-J5U" secondAttribute="top" id="iwC-Du-Dea"/>
-                            <constraint firstItem="nGK-5Z-CFR" firstAttribute="trailing" secondItem="hxj-qw-J5U" secondAttribute="trailing" constant="44" id="vGb-HO-gSL"/>
                             <constraint firstItem="cyk-Pb-qYU" firstAttribute="centerY" secondItem="SRN-o5-bsz" secondAttribute="centerY" id="vwh-fL-FFk"/>
                         </constraints>
                     </view>
@@ -1411,11 +1411,11 @@
             <objects>
                 <viewController storyboardIdentifier="learn_ending_sounds_vc" id="0kz-R1-3sS" userLabel="Learn Ending Sounds" customClass="LearnEndingSounds" customModule="Kindergarten_Literacy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1BW-ek-Ydi">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="LAM-c8-OBl" userLabel="Side Bar Stack View">
-                                <rect key="frame" x="60" y="38" width="40" height="338"/>
+                                <rect key="frame" x="60" y="26" width="40" height="338"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EjA-oA-i0J" userLabel="Back">
                                         <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
@@ -1431,7 +1431,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTi-bP-RtT" userLabel="Home">
-                                        <rect key="frame" x="0.0" y="59.5" width="40" height="40"/>
+                                        <rect key="frame" x="0.0" y="59.666666666666671" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="xyG-3E-gWd"/>
                                         </constraints>
@@ -1442,7 +1442,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rNw-vJ-Hf2" userLabel="Quiz">
-                                        <rect key="frame" x="0.0" y="119" width="40" height="40"/>
+                                        <rect key="frame" x="0.0" y="119.33333333333334" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="oEn-dS-tVT"/>
                                         </constraints>
@@ -1452,7 +1452,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TTm-as-cUz" userLabel="Replay">
-                                        <rect key="frame" x="0.0" y="179" width="40" height="40"/>
+                                        <rect key="frame" x="0.0" y="178.66666666666666" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="6kb-y0-16l"/>
                                         </constraints>
@@ -1462,7 +1462,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Veh-pq-wl1" userLabel="Puzzle">
-                                        <rect key="frame" x="0.0" y="238.5" width="40" height="40"/>
+                                        <rect key="frame" x="0.0" y="238.33333333333331" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="rtv-LU-UF1"/>
                                         </constraints>
@@ -1490,20 +1490,20 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2zh-u4-tUW" userLabel="Main Stack View">
-                                <rect key="frame" x="108" y="10.5" width="700" height="393"/>
+                                <rect key="frame" x="108" y="-1.6666666666666572" width="648" height="393.33333333333326"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="bdh-9C-4Bp" userLabel="Letter Stack View">
-                                        <rect key="frame" x="0.0" y="0.0" width="700" height="184"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="648" height="184.33333333333334"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UF6-Gk-c6a" userLabel="Left Button">
-                                                <rect key="frame" x="0.0" y="0.0" width="233.5" height="184"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="216" height="184.33333333333334"/>
                                                 <state key="normal" title="Button" image="back"/>
                                                 <connections>
                                                     <action selector="prevLetter:" destination="0kz-R1-3sS" eventType="touchUpInside" id="xlx-Vx-sA5"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIf-ta-ggK" userLabel="LetterButton">
-                                                <rect key="frame" x="233.5" y="0.0" width="233" height="184"/>
+                                                <rect key="frame" x="216" y="0.0" width="216" height="184.33333333333334"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="140"/>
                                                 <state key="normal" title="b">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1513,7 +1513,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HR7-h9-Rss" userLabel="Right Button">
-                                                <rect key="frame" x="466.5" y="0.0" width="233.5" height="184"/>
+                                                <rect key="frame" x="432" y="0.0" width="216" height="184.33333333333334"/>
                                                 <state key="normal" title="Button" image="forward"/>
                                                 <connections>
                                                     <action selector="nextLetter:" destination="0kz-R1-3sS" eventType="touchUpInside" id="xPO-dw-Ea5"/>
@@ -1525,20 +1525,20 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="9Oc-2k-b12" userLabel="Word Stack View">
-                                        <rect key="frame" x="0.0" y="184" width="700" height="209"/>
+                                        <rect key="frame" x="0.0" y="184.33333333333331" width="648" height="209"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="hdM-md-KJl" userLabel="First Word Stack View">
-                                                <rect key="frame" x="0.0" y="0.0" width="200" height="209"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="182.66666666666666" height="209"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0b-bK-jCT">
-                                                        <rect key="frame" x="0.0" y="0.0" width="200" height="183.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="182.66666666666666" height="183.66666666666666"/>
                                                         <state key="normal" backgroundImage="cub"/>
                                                         <connections>
                                                             <action selector="tapFirstPic:" destination="0kz-R1-3sS" eventType="touchUpInside" id="Oqi-Yt-lBu"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gde-iV-Y8z">
-                                                        <rect key="frame" x="0.0" y="183.5" width="200" height="25.5"/>
+                                                        <rect key="frame" x="0.0" y="183.66666666666666" width="182.66666666666666" height="25.333333333333343"/>
                                                         <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="30"/>
                                                         <state key="normal" title="cub">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1550,17 +1550,17 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="ZBp-CH-x7r" userLabel="Second Word Stack View">
-                                                <rect key="frame" x="250" y="0.0" width="200" height="209"/>
+                                                <rect key="frame" x="232.66666666666669" y="0.0" width="182.66666666666669" height="209"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Deb-bG-MKb">
-                                                        <rect key="frame" x="0.0" y="0.0" width="200" height="183.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="182.66666666666666" height="183.66666666666666"/>
                                                         <state key="normal" backgroundImage="crab"/>
                                                         <connections>
                                                             <action selector="tapSecondPic:" destination="0kz-R1-3sS" eventType="touchUpInside" id="Ziu-ep-162"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="odU-jI-rXc">
-                                                        <rect key="frame" x="0.0" y="183.5" width="200" height="25.5"/>
+                                                        <rect key="frame" x="0.0" y="183.66666666666666" width="182.66666666666666" height="25.333333333333343"/>
                                                         <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="30"/>
                                                         <state key="normal" title="crab">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1572,17 +1572,17 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="soN-el-x4M" userLabel="Third Word Stack View">
-                                                <rect key="frame" x="500" y="0.0" width="200" height="209"/>
+                                                <rect key="frame" x="465.33333333333343" y="0.0" width="182.66666666666669" height="209"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kxt-47-Mkm">
-                                                        <rect key="frame" x="0.0" y="0.0" width="200" height="183.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="182.66666666666666" height="183.66666666666666"/>
                                                         <state key="normal" backgroundImage="cobweb"/>
                                                         <connections>
                                                             <action selector="tapThirdPic:" destination="0kz-R1-3sS" eventType="touchUpInside" id="UFW-Cd-nSW"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p34-Vh-ahp">
-                                                        <rect key="frame" x="0.0" y="183.5" width="200" height="25.5"/>
+                                                        <rect key="frame" x="0.0" y="183.66666666666666" width="182.66666666666666" height="25.333333333333343"/>
                                                         <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="30"/>
                                                         <state key="normal" title="cobweb">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1630,7 +1630,7 @@
             <objects>
                 <viewController storyboardIdentifier="ending_sounds_quiz_vc" id="8q8-8V-GdK" userLabel="Ending Sounds Quiz" customClass="EndingSoundsQuiz" customModule="Kindergarten_Literacy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ASv-7Q-CWV">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LIT-Dv-wQ0" userLabel="Letter Button">
@@ -1644,7 +1644,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="OhN-sI-Awh" userLabel="Side Bar Stack View">
-                                <rect key="frame" x="60" y="38" width="40" height="338"/>
+                                <rect key="frame" x="60" y="26" width="40" height="338"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ch-i3-rDC" userLabel="Back">
                                         <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
@@ -1660,7 +1660,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2o-w9-msT" userLabel="Home">
-                                        <rect key="frame" x="0.0" y="74.5" width="40" height="40"/>
+                                        <rect key="frame" x="0.0" y="74.666666666666671" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="2iw-Mu-7hX"/>
                                         </constraints>
@@ -1678,7 +1678,7 @@
                                         <state key="normal" image="repeat"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wZp-Ue-57b" userLabel="Puzzle">
-                                        <rect key="frame" x="0.0" y="223.5" width="40" height="40"/>
+                                        <rect key="frame" x="0.0" y="223.66666666666666" width="40" height="39.999999999999972"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="uzO-Fw-3fh"/>
                                         </constraints>
@@ -1775,7 +1775,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTy-rT-kaL" userLabel="Home">
-                                        <rect key="frame" x="0.0" y="59.5" width="40" height="40"/>
+                                        <rect key="frame" x="0.0" y="59.666666666666686" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="o54-yH-vkw"/>
                                         </constraints>
@@ -1786,7 +1786,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oi6-Wx-X7g" userLabel="Quiz">
-                                        <rect key="frame" x="0.0" y="119" width="40" height="40"/>
+                                        <rect key="frame" x="0.0" y="119.33333333333331" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="fwl-ld-Ukv"/>
                                         </constraints>
@@ -1796,7 +1796,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RCH-rK-8Hi" userLabel="Replay">
-                                        <rect key="frame" x="0.0" y="179" width="40" height="40"/>
+                                        <rect key="frame" x="0.0" y="178.66666666666669" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="prj-wL-YoI"/>
                                         </constraints>
@@ -1806,7 +1806,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cug-Ey-ocO" userLabel="Puzzle">
-                                        <rect key="frame" x="0.0" y="238.5" width="40" height="40"/>
+                                        <rect key="frame" x="0.0" y="238.33333333333337" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="DmS-xC-af6"/>
                                         </constraints>
@@ -1911,26 +1911,8 @@
                                                 <rect key="frame" x="108" y="178" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJI-7G-D2j">
-                                                <rect key="frame" x="251" y="178" width="208" height="144"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="208" id="IT9-ca-4QY"/>
-                                                    <constraint firstAttribute="height" constant="144" id="K61-dr-zHU"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
-                                                <state key="normal" title="T" backgroundImage="level_button_0_star">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="toLearnEndingSoundsPage:" destination="KEr-mX-3b2" eventType="touchUpInside" id="aAy-ER-ngR"/>
-                                                </connections>
-                                            </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="net" translatesAutoresizingMaskIntoConstraints="NO" id="GuY-Pu-TOx">
-                                                <rect key="frame" x="339" y="178" width="100" height="100"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWR-mN-sCK">
-                                                <rect key="frame" x="491" y="178" width="208" height="144"/>
+                                                <rect key="frame" x="500" y="178" width="208" height="144"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="144" id="OAy-BY-RMi"/>
                                                     <constraint firstAttribute="width" constant="208" id="oVo-6g-KuG"/>
@@ -2087,6 +2069,20 @@
                                                 <rect key="frame" x="108" y="688" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJI-7G-D2j">
+                                                <rect key="frame" x="260" y="178" width="208" height="144"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="208" id="IT9-ca-4QY"/>
+                                                    <constraint firstAttribute="height" constant="144" id="K61-dr-zHU"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="T" backgroundImage="level_button_0_star">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toLearnEndingSoundsPage:" destination="KEr-mX-3b2" eventType="touchUpInside" id="aAy-ER-ngR"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" name="darkGreen"/>
                                         <constraints>
@@ -2100,7 +2096,9 @@
                                             <constraint firstAttribute="height" constant="900" id="FBr-DG-T0e"/>
                                             <constraint firstItem="fG5-ch-MMK" firstAttribute="top" secondItem="QbE-M0-hrE" secondAttribute="bottom" constant="26" id="I9h-vI-KxQ"/>
                                             <constraint firstItem="ATy-56-IGe" firstAttribute="top" secondItem="fJI-7G-D2j" secondAttribute="bottom" constant="26" id="KK0-tR-CLo"/>
+                                            <constraint firstItem="lWR-mN-sCK" firstAttribute="leading" secondItem="fJI-7G-D2j" secondAttribute="trailing" constant="32" id="KQ8-FF-yfO"/>
                                             <constraint firstItem="ATy-56-IGe" firstAttribute="leading" secondItem="QbE-M0-hrE" secondAttribute="trailing" constant="32" id="Lqq-cN-VGp"/>
+                                            <constraint firstItem="fJI-7G-D2j" firstAttribute="leading" secondItem="AjG-gb-ELq" secondAttribute="trailing" constant="32" id="NhY-40-4F0"/>
                                             <constraint firstItem="Clb-ij-Kn1" firstAttribute="leading" secondItem="8CX-hj-0eP" secondAttribute="trailing" constant="32" id="OLa-cy-cVj"/>
                                             <constraint firstItem="AjG-gb-ELq" firstAttribute="top" secondItem="hKE-AA-V3v" secondAttribute="bottom" constant="26" id="Sxm-li-t1e"/>
                                             <constraint firstItem="fJI-7G-D2j" firstAttribute="top" secondItem="8CX-hj-0eP" secondAttribute="bottom" constant="26" id="aBm-v7-oa0"/>
@@ -2116,14 +2114,16 @@
                                             <constraint firstItem="bLe-nj-Tad" firstAttribute="leading" secondItem="fG5-ch-MMK" secondAttribute="trailing" constant="32" id="p1e-k6-Wnb"/>
                                             <constraint firstItem="Clb-ij-Kn1" firstAttribute="top" secondItem="ntp-UT-8G1" secondAttribute="top" constant="8" id="ps3-gf-0oP"/>
                                             <constraint firstItem="HDN-pJ-Jtc" firstAttribute="top" secondItem="l9Z-jA-hsy" secondAttribute="bottom" constant="26" id="qLD-kr-p77"/>
-                                            <constraint firstItem="fJI-7G-D2j" firstAttribute="leading" secondItem="AjG-gb-ELq" secondAttribute="trailing" constant="23" id="tSj-Jo-l7L"/>
                                             <constraint firstItem="AjG-gb-ELq" firstAttribute="leading" secondItem="ntp-UT-8G1" secondAttribute="leading" constant="20" id="ub8-lL-6Va"/>
                                             <constraint firstItem="gMo-xM-5WN" firstAttribute="top" secondItem="bLe-nj-Tad" secondAttribute="bottom" constant="26" id="x6i-f1-lU3"/>
-                                            <constraint firstItem="lWR-mN-sCK" firstAttribute="leading" secondItem="fJI-7G-D2j" secondAttribute="trailing" constant="32" id="zwc-pS-EyW"/>
                                         </constraints>
                                     </view>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="drop" translatesAutoresizingMaskIntoConstraints="NO" id="GRq-hq-j1R">
                                         <rect key="frame" x="353" y="348" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="net" translatesAutoresizingMaskIntoConstraints="NO" id="GuY-Pu-TOx">
+                                        <rect key="frame" x="353" y="185" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
@@ -2181,8 +2181,8 @@
         <image name="back" width="56" height="56"/>
         <image name="bank" width="56" height="56"/>
         <image name="bird" width="400" height="400"/>
-        <image name="bug" width="400" height="400"/>
-        <image name="bus" width="400" height="400"/>
+        <image name="bug" width="474" height="370"/>
+        <image name="bus" width="542" height="420"/>
         <image name="cobweb" width="400" height="400"/>
         <image name="crab" width="400" height="400"/>
         <image name="cub" width="400" height="400"/>
@@ -2190,7 +2190,7 @@
         <image name="drop" width="400" height="400"/>
         <image name="elk" width="400" height="400"/>
         <image name="forward" width="56" height="56"/>
-        <image name="fox" width="554" height="464"/>
+        <image name="fox" width="400" height="400"/>
         <image name="frog" width="400" height="400"/>
         <image name="home" width="56" height="56"/>
         <image name="level_button_0_star" width="549" height="444"/>
