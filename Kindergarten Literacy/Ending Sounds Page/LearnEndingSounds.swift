@@ -396,6 +396,7 @@ class LearnEndingSounds: UIViewController {
     // functions for sidebar
     @IBAction func backButtonTapped(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
+        //stopPlayingAudio()
     }
     
     @IBAction func homeButtonTapped(_ sender: Any) {

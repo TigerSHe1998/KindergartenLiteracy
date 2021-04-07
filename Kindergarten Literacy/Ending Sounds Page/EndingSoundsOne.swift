@@ -17,11 +17,13 @@ class EndingSoundsOne: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         playIntroMessage()
-
+        initButtonBackground()
+        Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { timer in
+            self.initButtonBackground() // refresh star every second
+        })
         
         for button in buttons {
             button.setBackgroundImage(UIImage(named: "level_button_0_star"), for: .normal)
-            // button.layer.cornerRadius = 20
             button.contentHorizontalAlignment = .left
             button.contentVerticalAlignment = .top
             button.titleEdgeInsets = UIEdgeInsets(top: 20, left: 40, bottom: 0, right: 0)
@@ -59,6 +61,7 @@ class EndingSoundsOne: UIViewController {
         let vc = endingSoundsStoryBoard.instantiateViewController(identifier: "ending_sounds_quiz_vc") as! EndingSoundsQuiz
         vc.passedInLetter = bcdfArray.randomElement()
         vc.passedInArray = bcdfArray
+        audioPlayer?.stop()
         present(vc, animated: true)
     }
     
@@ -80,11 +83,6 @@ class EndingSoundsOne: UIViewController {
         }
     }
     
-    // stop playing sound
-    func stopPlayingMessage() {
-        audioPlayer?.stop()
-    }
-    
     
     //main button function to learn page
     @IBAction func toLearnEndingSoundsPage(_ sender: Any) {
@@ -92,7 +90,7 @@ class EndingSoundsOne: UIViewController {
         vc.passedInLetter = (sender as! UIButton).titleLabel!.text!
         vc.passedInArray = bcdfArray
         present(vc, animated: true)
-        stopPlayingMessage()
+        audioPlayer?.stop()
     }
     
     
@@ -109,10 +107,10 @@ class EndingSoundsOne: UIViewController {
     
     func initButtonBackground() {
         // get savefile from userdefaults
-        let letterStarCount = UserDefaults.standard.dictionary(forKey: "letterStarCount")
+        let endingSoundsStarCount = UserDefaults.standard.dictionary(forKey: "endingSoundsStarCount")
         for button in buttons {
             let currentLetter = button.titleLabel!.text!
-            let currentStarCount = letterStarCount![currentLetter] as! Int
+            let currentStarCount = endingSoundsStarCount![currentLetter] as! Int
             button.setBackgroundImage(starsImages[currentStarCount], for: .normal)
         }
     }
