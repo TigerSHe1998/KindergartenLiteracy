@@ -83,7 +83,6 @@
                                                 <rect key="frame" x="0.0" y="155" width="200" height="145"/>
                                                 <state key="normal" backgroundImage="ending sounds"/>
                                                 <connections>
-                                                    <action selector="SectionTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zcs-VP-KMW"/>
                                                     <action selector="endingSoundsButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tyh-oa-NfH"/>
                                                 </connections>
                                             </button>

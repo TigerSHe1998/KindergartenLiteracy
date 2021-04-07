@@ -116,7 +116,21 @@ class ViewController: UIViewController {
         UserDefaults.standard.set(0, forKey: "coinCount")
         
         // add your save data here //
-        
+        let endingSoundsStarCount = ["b": 0,
+                               "d": 0,
+                               "f": 0,
+                               "g": 0,
+                               "k": 0,
+                               "l": 0,
+                               "m": 0,
+                               "n": 0,
+                               "p": 0,
+                               "r": 0,
+                               "s": 0,
+                               "t": 0,
+                               "x": 0,
+                               "z": 0]
+        UserDefaults.standard.set(endingSoundsStarCount, forKey: "endingSoundsStarCount")
         
         // add your save data above //
         
@@ -151,6 +165,15 @@ class ViewController: UIViewController {
     let endingSoundsStoryBoard:UIStoryboard = UIStoryboard(name: "EndingSoundsPages", bundle:nil)
     
     @IBAction func endingSoundsButtonTapped(_ sender: Any) {
+        let pathToSound = Bundle.main.path(forResource: "#Ending_Sounds", ofType:"mp3")!
+        let url = URL(fileURLWithPath: pathToSound)
+                
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: url)
+            audioPlayer?.play()
+        } catch {
+        }
+        
         let vc = endingSoundsStoryBoard.instantiateViewController(identifier: "ending_sounds_vc")
         present(vc, animated: true)
     }
@@ -185,19 +208,7 @@ class ViewController: UIViewController {
     }
     
     
-    @IBAction func SectionTapped(_ sender: UIButton) {
 
-        let pathToSound = Bundle.main.path(forResource: "#Ending_Sounds", ofType:"mp3")!
-        let url = URL(fileURLWithPath: pathToSound)
-                
-        do {
-            audioPlayer = try AVAudioPlayer(contentsOf: url)
-            audioPlayer?.play()
-        } catch {
-        }
-    
-        
-    }
 }
 
 
