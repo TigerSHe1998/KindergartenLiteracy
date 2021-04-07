@@ -45,6 +45,8 @@
 		348B4B162600E4D400DCFFD5 /* e.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 348B4AF32600E4D400DCFFD5 /* e.mp3 */; };
 		348B4B172600E4D400DCFFD5 /* a1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 348B4AF42600E4D400DCFFD5 /* a1.mp3 */; };
 		348B4B182600E4D400DCFFD5 /* elf.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 348B4AF52600E4D400DCFFD5 /* elf.mp3 */; };
+		34C462AF261D929200FA03B2 /* VowelQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C462AE261D929200FA03B2 /* VowelQuizViewController.swift */; };
+		34C462B2261D971800FA03B2 /* VowelRhymeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C462B1261D971800FA03B2 /* VowelRhymeViewController.swift */; };
 		98358CED25D6A6C70092C8FF /* BeginningSoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98358CE225D6A6C70092C8FF /* BeginningSoundsViewController.swift */; };
 		98358CEE25D6A6C70092C8FF /* BeginningSoundsThreeButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98358CE325D6A6C70092C8FF /* BeginningSoundsThreeButtonViewController.swift */; };
 		98358CEF25D6A6C70092C8FF /* BeginningSoundsOneButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98358CE425D6A6C70092C8FF /* BeginningSoundsOneButtonViewController.swift */; };
@@ -329,6 +331,8 @@
 		348B4AF32600E4D400DCFFD5 /* e.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = e.mp3; sourceTree = "<group>"; };
 		348B4AF42600E4D400DCFFD5 /* a1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = a1.mp3; sourceTree = "<group>"; };
 		348B4AF52600E4D400DCFFD5 /* elf.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = elf.mp3; sourceTree = "<group>"; };
+		34C462AE261D929200FA03B2 /* VowelQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VowelQuizViewController.swift; sourceTree = "<group>"; };
+		34C462B1261D971800FA03B2 /* VowelRhymeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VowelRhymeViewController.swift; sourceTree = "<group>"; };
 		98358CE225D6A6C70092C8FF /* BeginningSoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeginningSoundsViewController.swift; sourceTree = "<group>"; };
 		98358CE325D6A6C70092C8FF /* BeginningSoundsThreeButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeginningSoundsThreeButtonViewController.swift; sourceTree = "<group>"; };
 		98358CE425D6A6C70092C8FF /* BeginningSoundsOneButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeginningSoundsOneButtonViewController.swift; sourceTree = "<group>"; };
@@ -594,6 +598,8 @@
 				3407962625D799FA002191C5 /* VowelLetterViewController.swift */,
 				3407962925D79B61002191C5 /* RealVowelViewController.swift */,
 				3407962C25D79BC6002191C5 /* VowelLetter.storyboard */,
+				34C462AE261D929200FA03B2 /* VowelQuizViewController.swift */,
+				34C462B1261D971800FA03B2 /* VowelRhymeViewController.swift */,
 			);
 			path = "Vowel Letter";
 			sourceTree = "<group>";
@@ -1349,6 +1355,7 @@
 				98358CF225D6A6C70092C8FF /* BeginningSoundsQuizViewController.swift in Sources */,
 				3407962725D799FA002191C5 /* VowelLetterViewController.swift in Sources */,
 				DC8EB4C025CB17B300FD7BB1 /* CoinViewController.swift in Sources */,
+				34C462AF261D929200FA03B2 /* VowelQuizViewController.swift in Sources */,
 				98358CF325D6A6C70092C8FF /* BeginningSoundsTwoButtonViewController.swift in Sources */,
 				DCECA4DA25EC0FC100FECDD8 /* alphabetQuiz.swift in Sources */,
 				98A572202606666500C4C35E /* OneButtonLevelViewController.swift in Sources */,
@@ -1373,6 +1380,7 @@
 				C0B508DD25D676550073B187 /* EndingSoundsOne.swift in Sources */,
 				C0A28E9025EC3F56008A7564 /* LearnEndingSounds.swift in Sources */,
 				3407962A25D79B61002191C5 /* RealVowelViewController.swift in Sources */,
+				34C462B2261D971800FA03B2 /* VowelRhymeViewController.swift in Sources */,
 				C0BA854D256C6485000EBAEC /* AppDelegate.swift in Sources */,
 				C09F928C261421BC00FB5548 /* PuzzleView.swift in Sources */,
 				C0BA854F256C6485000EBAEC /* SceneDelegate.swift in Sources */,

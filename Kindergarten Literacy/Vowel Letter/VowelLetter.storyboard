@@ -434,7 +434,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jyz-vV-jKt">
-                                <rect key="frame" x="191" y="3" width="54" height="154"/>
+                                <rect key="frame" x="281" y="0.0" width="54" height="154"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="100"/>
                                 <state key="normal" title="a">
@@ -445,23 +445,39 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ba-YF-4uv">
-                                <rect key="frame" x="572" y="38" width="167" height="119"/>
+                                <rect key="frame" x="513" y="38" width="167" height="119"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="ax"/>
                                 <connections>
                                     <action selector="choiceButtons:" destination="RyI-HK-UHs" eventType="touchUpInside" id="3TP-7N-aJ5"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wsh-Yd-Nna">
-                                <rect key="frame" x="414" y="212" width="187" height="131"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bSa-KA-CVK">
+                                <rect key="frame" x="804" y="66" width="72" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="character.book.closed.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="rhymeButtonTapped:" destination="RyI-HK-UHs" eventType="touchUpInside" id="1nY-Na-QgX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2HE-s1-BnC">
+                                <rect key="frame" x="411" y="213" width="146" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="bat"/>
+                                <connections>
+                                    <action selector="choiceButtons:" destination="RyI-HK-UHs" eventType="touchUpInside" id="ERD-1R-Bsh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Q1-dn-nzh">
+                                <rect key="frame" x="626" y="214" width="155" height="107"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="bed"/>
                                 <connections>
-                                    <action selector="choiceButtons:" destination="RyI-HK-UHs" eventType="touchUpInside" id="J4L-xC-kHN"/>
+                                    <action selector="choiceButtons:" destination="RyI-HK-UHs" eventType="touchUpInside" id="jSI-Pe-Qrc"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="equalSpacing" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Rq4-6r-5mo" userLabel="Side Bar Stack View">
-                                <rect key="frame" x="77" y="38" width="40" height="338"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="equalSpacing" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Rq4-6r-5mo" userLabel="Side Bar Stack View">
+                                <rect key="frame" x="110" y="38" width="40" height="338"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eT9-sY-Gyg" userLabel="Back">
                                         <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
@@ -532,22 +548,18 @@
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="338" id="bBs-uI-McG"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mp3-XL-g4N">
-                                <rect key="frame" x="671" y="208" width="190" height="135"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="boat-b"/>
-                                <connections>
-                                    <action selector="choiceButtons:" destination="RyI-HK-UHs" eventType="touchUpInside" id="YWG-dY-1xc"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bZ4-p3-W68"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Rq4-6r-5mo" firstAttribute="leading" secondItem="bZ4-p3-W68" secondAttribute="leading" constant="82" id="2zf-Rk-Vhe"/>
+                            <constraint firstItem="Rq4-6r-5mo" firstAttribute="centerY" secondItem="G6l-BE-mkq" secondAttribute="centerY" id="jL2-M6-5gw"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="choice1" destination="9ba-YF-4uv" id="wLS-Cr-Css"/>
-                        <outlet property="choice2" destination="Mp3-XL-g4N" id="qL3-mb-aJ0"/>
-                        <outlet property="choice3" destination="Wsh-Yd-Nna" id="no6-dN-7jZ"/>
+                        <outlet property="choice2" destination="5Q1-dn-nzh" id="I89-ac-a1l"/>
+                        <outlet property="choice3" destination="2HE-s1-BnC" id="ZyL-zJ-sAV"/>
                         <outlet property="letterButton" destination="Jyz-vV-jKt" id="SeT-1y-bgb"/>
                     </connections>
                 </viewController>
@@ -555,16 +567,48 @@
             </objects>
             <point key="canvasLocation" x="1083.4821428571429" y="2004.3478260869567"/>
         </scene>
+        <!--Vowel Rhyme View Controller-->
+        <scene sceneID="OW0-m0-Aui">
+            <objects>
+                <viewController storyboardIdentifier="vowel_rhyme_vc" id="Nyv-2v-qWE" customClass="VowelRhymeViewController" customModule="Kindergarten_Literacy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nvw-8I-FZP">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGw-1M-ziM">
+                                <rect key="frame" x="134" y="77" width="245" height="261"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="puzzle-A-short-composite"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0cY-ep-FS9">
+                                <rect key="frame" x="432" y="91" width="318" height="232"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="a1words"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="a5O-5f-sHi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="pic" destination="WGw-1M-ziM" id="anA-aC-jQX"/>
+                        <outlet property="word" destination="0cY-ep-FS9" id="IY4-c5-jsL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YGa-Xh-guQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1083.4821428571429" y="992.75362318840587"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="a1words" width="756" height="532"/>
         <image name="ax" width="287" height="237"/>
         <image name="back" width="56" height="56"/>
         <image name="ball" width="217" height="216"/>
         <image name="bank" width="56" height="56"/>
         <image name="bat" width="518" height="450"/>
         <image name="bed" width="500" height="426"/>
-        <image name="boat-b" width="400" height="400"/>
         <image name="bug" width="400" height="400"/>
+        <image name="character.book.closed.fill" catalog="system" width="115" height="128"/>
         <image name="elf" width="366" height="472"/>
         <image name="forward" width="56" height="56"/>
         <image name="fox" width="400" height="400"/>
@@ -572,6 +616,7 @@
         <image name="level_button_0_star" width="549" height="444"/>
         <image name="mittens" width="498" height="476"/>
         <image name="puzzle" width="56" height="56"/>
+        <image name="puzzle-A-short-composite" width="450" height="600"/>
         <image name="quiz" width="56" height="56"/>
         <image name="repeat" width="56" height="56"/>
         <image name="taxi" width="578" height="470"/>

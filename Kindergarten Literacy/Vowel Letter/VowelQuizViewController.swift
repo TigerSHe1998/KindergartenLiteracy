@@ -1,3 +1,4 @@
+
 //
 //  VowelQuizViewController.swift
 //  Kindergarten Literacy
@@ -174,6 +175,17 @@ class VowelQuizViewController: UIViewController {
     @IBAction func choiceButtons(_ sender: Any) {
         if (sender as! UIButton) == correctButton {
             correctButtonAnimation()
+            var saveFile = UserDefaults.standard.dictionary(forKey: "letterStarCount")
+            var currScore:Int = saveFile![currentLetter] as! Int
+            if currScore < 5 {
+                currScore += 1
+                saveFile![currentLetter] = currScore
+                UserDefaults.standard.set(saveFile, forKey: "letterStarCount")
+            }
+            if currScore == 5{
+                let vc = storyboard?.instantiateViewController(identifier: "vowel_rhyme_vc") as! VowelRhymeViewController
+                vc.passedInLetter = correctButton.currentTitle!
+            }
             
             // disable button to avoid tapping during animation
             (sender as! UIButton).isEnabled = false
@@ -314,6 +326,9 @@ class VowelQuizViewController: UIViewController {
         if endingSoundsPuzzleProgress[0] > 6 {
             puzzleOne.image = UIImage(named: imageOne)
             puzzleFour.image = UIImage(named: imageFour)
+            let vc = storyboard?.instantiateViewController(identifier: "vowel_rhyme_vc") as! VowelRhymeViewController
+            vc.passedInLetter = correctButton.currentTitle!
+            
         }
             
     }
@@ -431,7 +446,14 @@ class VowelQuizViewController: UIViewController {
     @IBAction func replayButtonTapped(_ sender: Any) {
         playFullAudio(currentLetter: currentLetter, firstChoice: choice1.currentTitle!, secondChoice: choice2.currentTitle!, thirdChoice: choice3.currentTitle!)
     }
+    
+    @IBAction func rhymeButtonTapped(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(identifier: "vowel_rhyme_vc") as! VowelRhymeViewController
+        vc.passedInLetter = correctButton.currentTitle!
+    }
+    
+    
+    
 
 }
-
 
