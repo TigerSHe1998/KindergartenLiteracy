@@ -285,21 +285,19 @@ class VowelQuizViewController: UIViewController {
             self.animate(myview: puzzleTwelve)
         }
         if puzzleProgress[0] == 4 {
+            puzzleOne.image = UIImage(named: imageOne)
             puzzleEight.image = UIImage(named: imageEight)
             puzzleEleven.image = UIImage(named: imageEleven)
+            self.animate(myview: puzzleOne)
             self.animate(myview: puzzleEight)
             self.animate(myview: puzzleEleven)
         }
         if puzzleProgress[0] == 5 {
             puzzleTwo.image = UIImage(named: imageTwo)
             puzzleThree.image = UIImage(named: imageThree)
+            puzzleFour.image = UIImage(named: imageFour)
             self.animate(myview: puzzleTwo)
             self.animate(myview: puzzleThree)
-        }
-        if puzzleProgress[0] == 6 {
-            puzzleOne.image = UIImage(named: imageOne)
-            puzzleFour.image = UIImage(named: imageFour)
-            self.animate(myview: puzzleOne)
             self.animate(myview: puzzleFour)
         }
         puzzleProgress[0] += 1
