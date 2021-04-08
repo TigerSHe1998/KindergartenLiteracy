@@ -607,11 +607,11 @@
         <image name="bank" width="56" height="56"/>
         <image name="bat" width="518" height="450"/>
         <image name="bed" width="500" height="426"/>
-        <image name="bug" width="400" height="400"/>
+        <image name="bug" width="474" height="370"/>
         <image name="character.book.closed.fill" catalog="system" width="115" height="128"/>
         <image name="elf" width="366" height="472"/>
         <image name="forward" width="56" height="56"/>
-        <image name="fox" width="400" height="400"/>
+        <image name="fox" width="554" height="464"/>
         <image name="home" width="56" height="56"/>
         <image name="level_button_0_star" width="549" height="444"/>
         <image name="mittens" width="498" height="476"/>

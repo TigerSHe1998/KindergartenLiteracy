@@ -112,6 +112,19 @@ class ViewController: UIViewController {
                                "Z": 0]
         UserDefaults.standard.set(letterStarCountCap, forKey: "letterStarCountCap")
         
+        
+        
+        let vowelStarCount = ["a": 0,
+                              "a ": 0,
+                               "e": 0,
+                               "i": 0,
+                               "i ": 0,
+                               "o": 0,
+                               "u": 0]
+        UserDefaults.standard.set(vowelStarCount, forKey: "vowelStarCount")
+        
+   
+        
         // set global coin count to zero
         UserDefaults.standard.set(0, forKey: "coinCount")
         

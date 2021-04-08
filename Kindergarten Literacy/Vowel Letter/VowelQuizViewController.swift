@@ -173,14 +173,16 @@ class VowelQuizViewController: UIViewController {
     }
     
     @IBAction func choiceButtons(_ sender: Any) {
+        var saveFile = UserDefaults.standard.dictionary(forKey: "vowelStarCount")
+        
         if (sender as! UIButton) == correctButton {
             correctButtonAnimation()
-            var saveFile = UserDefaults.standard.dictionary(forKey: "letterStarCount")
+            
             var currScore:Int = saveFile![currentLetter] as! Int
             if currScore < 5 {
                 currScore += 1
                 saveFile![currentLetter] = currScore
-                UserDefaults.standard.set(saveFile, forKey: "letterStarCount")
+                UserDefaults.standard.set(saveFile, forKey: "vowelStarCount")
             }
             if currScore == 5{
                 let vc = storyboard?.instantiateViewController(identifier: "vowel_rhyme_vc") as! VowelRhymeViewController
@@ -448,8 +450,10 @@ class VowelQuizViewController: UIViewController {
     }
     
     @IBAction func rhymeButtonTapped(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(identifier: "vowel_rhyme_vc") as! VowelRhymeViewController
-        vc.passedInLetter = correctButton.currentTitle!
+        let sb = UIStoryboard(name: "VowelLetter", bundle: nil)
+        let vc = sb.instantiateViewController(identifier: "vowel_rhyme_vc") as! VowelRhymeViewController
+        present(vc, animated: true)
+        vc.passedInLetter = currentLetter
     }
     
     
