@@ -155,17 +155,17 @@ class VowelQuizViewController: UIViewController {
         switch currentLetter {
         case "a", "A":
             completePuzzle(imageOne: "puzzle-A-short-row0-col0", imageTwo: "puzzle-A-short-row0-col1", imageThree: "puzzle-A-short-row0-col2", imageFour: "puzzle-A-short-row1-col0", imageFive: "puzzle-A-short-row1-col1", imageSix: "puzzle-A-short-row1-col2", imageSeven: "puzzle-A-short-row2-col0", imageEight: "puzzle-A-short-row2-col1", imageNine: "puzzle-A-short-row2-col2", imageTen: "puzzle-A-short-row3-col0", imageEleven: "puzzle-A-short-row3-col1", imageTwelve: "puzzle-A-short-row3-col2")
-        case "d","D":
+        case "a ","A ":
             completePuzzle(imageOne: "puzzle-A-ahh-row0-col0", imageTwo: "puzzle-A-ahh-row0-col1", imageThree: "puzzle-A-ahh-row0-col2", imageFour: "puzzle-A-ahh-row1-col0", imageFive: "puzzle-A-ahh-row1-col1", imageSix: "puzzle-A-ahh-row1-col2", imageSeven: "puzzle-A-ahh-row2-col0", imageEight: "puzzle-A-ahh-row2-col1", imageNine: "puzzle-A-ahh-row2-col2", imageTen: "puzzle-A-ahh-row3-col0", imageEleven: "puzzle-A-ahh-row3-col1", imageTwelve: "puzzle-A-ahh-row3-col2")
-        case "f","F":
+        case "e","E":
             completePuzzle(imageOne: "puzzle-E-short-row0-col0", imageTwo: "puzzle-E-short-row0-col1", imageThree: "puzzle-E-short-row0-col2", imageFour: "puzzle-E-short-row1-col0", imageFive: "puzzle-E-short-row1-col1", imageSix: "puzzle-E-short-row1-col2", imageSeven: "puzzle-E-short-row2-col0", imageEight: "puzzle-E-short-row2-col1", imageNine: "puzzle-E-short-row2-col2", imageTen: "puzzle-E-short-row3-col0", imageEleven: "puzzle-E-short-row3-col1", imageTwelve: "puzzle-E-short-row3-col2")
-        case "g","G":
+        case "i","I":
             completePuzzle(imageOne: "puzzle-I-short-row0-col0", imageTwo: "puzzle-I-short-row0-col1", imageThree: "puzzle-I-short-row0-col2", imageFour: "puzzle-I-short-row1-col0", imageFive: "puzzle-I-short-row1-col1", imageSix: "puzzle-I-short-row1-col2", imageSeven: "puzzle-I-short-row2-col0", imageEight: "puzzle-I-short-row2-col1", imageNine: "puzzle-I-short-row2-col2", imageTen: "puzzle-I-short-row3-col0", imageEleven: "puzzle-I-short-row3-col1", imageTwelve: "puzzle-I-short-row3-col2")
-        case "k","K":
+        case "i ","I ":
             completePuzzle(imageOne: "puzzle-I-ee-row0-col1", imageTwo: "puzzle-I-ee-row0-col1", imageThree: "puzzle-I-ee-row0-col2", imageFour: "puzzle-I-ee-row1-col0", imageFive: "puzzle-I-ee-row1-col1", imageSix: "puzzle-I-ee-row1-col2", imageSeven: "puzzle-I-ee-row2-col0", imageEight: "puzzle-I-ee-row2-col1", imageNine: "puzzle-I-ee-row2-col2", imageTen: "puzzle-I-ee-row3-col0", imageEleven: "puzzle-I-ee-row3-col1", imageTwelve: "puzzle-I-ee-row3-col2")
-        case "l","L":
+        case "o","O":
             completePuzzle(imageOne: "puzzle-O-short-row0-col0", imageTwo: "puzzle-O-short-row0-col1", imageThree: "puzzle-O-short-row0-col2", imageFour: "puzzle-O-short-row1-col0", imageFive: "puzzle-O-short-row1-col1", imageSix: "puzzle-O-short-row1-col2", imageSeven: "puzzle-O-short-row2-col0", imageEight: "puzzle-O-short-row2-col1", imageNine: "puzzle-O-short-row2-col2", imageTen: "puzzle-O-short-row3-col0", imageEleven: "puzzle-O-short-row3-col1", imageTwelve: "puzzle-O-short-row3-col2")
-        case "m","M":
+        case "u","U":
             completePuzzle(imageOne: "puzzle-U-short-row0-col0", imageTwo: "puzzle-U-short-row0-col1", imageThree: "puzzle-U-short-row0-col2", imageFour: "puzzle-U-short-row1-col0", imageFive: "puzzle-U-short-row1-col1", imageSix: "puzzle-U-short-row1-col2", imageSeven: "puzzle-U-short-row2-col0", imageEight: "puzzle-U-short-row2-col1", imageNine: "puzzle-U-short-row2-col2", imageTen: "puzzle-U-short-row3-col0", imageEleven: "puzzle-U-short-row3-col1", imageTwelve: "puzzle-U-short-row3-col2")
         default:
             break
