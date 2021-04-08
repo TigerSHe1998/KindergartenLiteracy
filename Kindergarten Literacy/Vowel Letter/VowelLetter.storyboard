@@ -75,7 +75,6 @@
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fz-vM-FWG">
                                                 <rect key="frame" x="39" y="374" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
                                                 <state key="normal" title="u" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
@@ -607,7 +606,7 @@
         <image name="bank" width="56" height="56"/>
         <image name="bat" width="518" height="450"/>
         <image name="bed" width="500" height="426"/>
-        <image name="bug" width="474" height="370"/>
+        <image name="bug" width="400" height="400"/>
         <image name="character.book.closed.fill" catalog="system" width="115" height="128"/>
         <image name="elf" width="366" height="472"/>
         <image name="forward" width="56" height="56"/>

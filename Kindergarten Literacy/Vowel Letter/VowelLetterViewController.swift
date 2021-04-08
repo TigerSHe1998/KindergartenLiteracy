@@ -25,10 +25,10 @@ class VowelLetterViewController: UIViewController {
     
     func initButtonBackground() {
         // get savefile from userdefaults
-        let letterStarCount = UserDefaults.standard.dictionary(forKey: "letterStarCount")
+        let vowelStarCount = UserDefaults.standard.dictionary(forKey: "vowelStarCount")
         for button in levelButtons {
             let currentLetter = button.titleLabel!.text!
-            let currentStarCount = letterStarCount![currentLetter] as! Int
+            let currentStarCount = vowelStarCount![currentLetter] as! Int
             button.setBackgroundImage(starsImages[currentStarCount], for: .normal)
         }
     }
@@ -45,7 +45,10 @@ class VowelLetterViewController: UIViewController {
             button.contentVerticalAlignment = .top
             button.titleEdgeInsets = UIEdgeInsets(top: 20, left: 40, bottom: 0, right: 0)
         }
-        
+        initButtonBackground()
+        Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { timer in
+            self.initButtonBackground() // refresh star every second
+        })
         
     }
     
