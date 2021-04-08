@@ -26,7 +26,6 @@
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cv3-1p-7KD">
                                                 <rect key="frame" x="519" y="34" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
                                                 <state key="normal" title="e" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
@@ -38,7 +37,6 @@
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugM-Zv-zbL">
                                                 <rect key="frame" x="39" y="34" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
                                                 <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
                                                 <state key="normal" title="a" backgroundImage="level_button_0_star">
@@ -51,7 +49,6 @@
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKg-fR-6F3">
                                                 <rect key="frame" x="39" y="204" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
                                                 <state key="normal" title="i" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
@@ -63,7 +60,6 @@
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQF-YO-ToN">
                                                 <rect key="frame" x="519" y="204" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
                                                 <state key="normal" title="o" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
@@ -86,7 +82,6 @@
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JPY-hu-ymx">
                                                 <rect key="frame" x="279" y="204" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
                                                 <state key="normal" title="i " backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="systemGreenColor"/>
@@ -98,7 +93,6 @@
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CGV-Ro-Reg">
                                                 <rect key="frame" x="279" y="34" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
                                                 <state key="normal" title="a " backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="systemGreenColor"/>
@@ -132,7 +126,7 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="bug" translatesAutoresizingMaskIntoConstraints="NO" id="z5h-nH-sdg">
-                                                <rect key="frame" x="133" y="393" width="139" height="107"/>
+                                                <rect key="frame" x="133" y="393" width="91" height="93"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                         </subviews>
@@ -584,6 +578,19 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="a1words"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zoz-Ml-pWH" userLabel="Back">
+                                <rect key="frame" x="86" y="54" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="33G-bI-elp"/>
+                                    <constraint firstAttribute="height" constant="40" id="afY-sP-aFc"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="back">
+                                    <color key="titleColor" name="AccentColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="Nyv-2v-qWE" eventType="touchUpInside" id="qqv-Ok-uGT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="a5O-5f-sHi"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -606,7 +613,7 @@
         <image name="bank" width="56" height="56"/>
         <image name="bat" width="518" height="450"/>
         <image name="bed" width="500" height="426"/>
-        <image name="bug" width="400" height="400"/>
+        <image name="bug" width="474" height="370"/>
         <image name="character.book.closed.fill" catalog="system" width="115" height="128"/>
         <image name="elf" width="366" height="472"/>
         <image name="forward" width="56" height="56"/>
@@ -633,9 +640,6 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray5Color">
-            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

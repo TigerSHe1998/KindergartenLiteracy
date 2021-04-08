@@ -185,8 +185,10 @@ class VowelQuizViewController: UIViewController {
                 UserDefaults.standard.set(saveFile, forKey: "vowelStarCount")
             }
             if currScore == 5{
-                let vc = storyboard?.instantiateViewController(identifier: "vowel_rhyme_vc") as! VowelRhymeViewController
-                vc.passedInLetter = correctButton.currentTitle!
+                let sb = UIStoryboard(name: "VowelLetter", bundle: nil)
+                let vc = sb.instantiateViewController(identifier: "vowel_rhyme_vc") as! VowelRhymeViewController
+                vc.passedInLetter = currentLetter
+                present(vc, animated: true)
             }
             
             // disable button to avoid tapping during animation
