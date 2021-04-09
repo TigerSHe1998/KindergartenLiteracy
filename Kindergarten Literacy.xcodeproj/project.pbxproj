@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -164,6 +164,8 @@
 		98A572202606666500C4C35E /* OneButtonLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A5721F2606666500C4C35E /* OneButtonLevelViewController.swift */; };
 		98A5722A260671F900C4C35E /* sneak-b.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98A57228260671F900C4C35E /* sneak-b.mp3 */; };
 		98A5722E2606733B00C4C35E /* voice-b.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 98A5722D2606733B00C4C35E /* voice-b.mp3 */; };
+		C0008A82261FB2E6007C2255 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C0008A81261FB2E6007C2255 /* Alamofire */; };
+		C0008A85261FB315007C2255 /* APIFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0008A84261FB315007C2255 /* APIFunctions.swift */; };
 		C00358F625F0832700A8712C /* EndingSoundsQuiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00358F525F0832700A8712C /* EndingSoundsQuiz.swift */; };
 		C05D1AA325D26B3E00A30442 /* EndingSoundsPages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C05D1AA225D26B3E00A30442 /* EndingSoundsPages.storyboard */; };
 		C05EF4FC25EED1B10006C5E0 /* clam.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C05EF4EE25EED1B10006C5E0 /* clam.mp3 */; };
@@ -448,6 +450,7 @@
 		98A5721F2606666500C4C35E /* OneButtonLevelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneButtonLevelViewController.swift; sourceTree = "<group>"; };
 		98A57228260671F900C4C35E /* sneak-b.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sneak-b.mp3"; sourceTree = "<group>"; };
 		98A5722D2606733B00C4C35E /* voice-b.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "voice-b.mp3"; sourceTree = "<group>"; };
+		C0008A84261FB315007C2255 /* APIFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIFunctions.swift; sourceTree = "<group>"; };
 		C00358F525F0832700A8712C /* EndingSoundsQuiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndingSoundsQuiz.swift; sourceTree = "<group>"; };
 		C05D1AA225D26B3E00A30442 /* EndingSoundsPages.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EndingSoundsPages.storyboard; sourceTree = "<group>"; };
 		C05EF4EE25EED1B10006C5E0 /* clam.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = clam.mp3; sourceTree = "<group>"; };
@@ -581,6 +584,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0008A82261FB2E6007C2255 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -918,6 +922,7 @@
 		C0BA8540256C6485000EBAEC = {
 			isa = PBXGroup;
 			children = (
+				C0008A84261FB315007C2255 /* APIFunctions.swift */,
 				98A571E026065D7700C4C35E /* Assets.xcassets */,
 				C0BA854B256C6485000EBAEC /* Kindergarten Literacy */,
 				C0BA854A256C6485000EBAEC /* Products */,
@@ -1036,6 +1041,9 @@
 			dependencies = (
 			);
 			name = "Kindergarten Literacy";
+			packageProductDependencies = (
+				C0008A81261FB2E6007C2255 /* Alamofire */,
+			);
 			productName = "Kindergarten Literacy";
 			productReference = C0BA8549256C6485000EBAEC /* Kindergarten Literacy.app */;
 			productType = "com.apple.product-type.application";
@@ -1063,6 +1071,9 @@
 				Base,
 			);
 			mainGroup = C0BA8540256C6485000EBAEC;
+			packageReferences = (
+				C0008A80261FB2E6007C2255 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = C0BA854A256C6485000EBAEC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1352,6 +1363,7 @@
 				98358CF325D6A6C70092C8FF /* BeginningSoundsTwoButtonViewController.swift in Sources */,
 				DCECA4DA25EC0FC100FECDD8 /* alphabetQuiz.swift in Sources */,
 				98A572202606666500C4C35E /* OneButtonLevelViewController.swift in Sources */,
+				C0008A85261FB315007C2255 /* APIFunctions.swift in Sources */,
 				98358CED25D6A6C70092C8FF /* BeginningSoundsViewController.swift in Sources */,
 				DC65327225E95E97005A4320 /* alphabetLearn.swift in Sources */,
 				C0BA856F256CAAB5000EBAEC /* EndingSoundsViewController.swift in Sources */,
@@ -1578,6 +1590,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C0008A80261FB2E6007C2255 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C0008A81261FB2E6007C2255 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C0008A80261FB2E6007C2255 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C0BA8541256C6485000EBAEC /* Project object */;
 }

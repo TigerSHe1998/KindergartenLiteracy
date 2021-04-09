@@ -1410,16 +1410,12 @@
         <scene sceneID="26D-VR-XoN">
             <objects>
                 <viewController storyboardIdentifier="learn_ending_sounds_vc" id="0kz-R1-3sS" userLabel="Learn Ending Sounds" customClass="LearnEndingSounds" customModule="Kindergarten_Literacy" customModuleProvider="target" sceneMemberID="viewController">
-
                     <view key="view" contentMode="scaleToFill" ambiguous="YES" id="1BW-ek-Ydi">
-
                         <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="LAM-c8-OBl" userLabel="Side Bar Stack View">
-
                                 <rect key="frame" x="60" y="16" width="40" height="338"/>
-
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EjA-oA-i0J" userLabel="Back">
                                         <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
@@ -1466,9 +1462,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Veh-pq-wl1" userLabel="Puzzle">
-
                                         <rect key="frame" x="0.0" y="238.33333333333337" width="40" height="40"/>
-
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="rtv-LU-UF1"/>
                                         </constraints>
@@ -1496,7 +1490,6 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2zh-u4-tUW" userLabel="Main Stack View">
-
                                 <rect key="frame" x="108" y="10" width="648" height="350"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="bdh-9C-4Bp" userLabel="Letter Stack View">
@@ -1504,16 +1497,13 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UF6-Gk-c6a" userLabel="Left Button">
                                                 <rect key="frame" x="0.0" y="0.0" width="216" height="184"/>
-
                                                 <state key="normal" title="Button" image="back"/>
                                                 <connections>
                                                     <action selector="prevLetter:" destination="0kz-R1-3sS" eventType="touchUpInside" id="xlx-Vx-sA5"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIf-ta-ggK" userLabel="LetterButton">
-
                                                 <rect key="frame" x="216" y="0.0" width="216" height="184"/>
-
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="140"/>
                                                 <state key="normal" title="b">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1523,9 +1513,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HR7-h9-Rss" userLabel="Right Button">
-
                                                 <rect key="frame" x="432" y="0.0" width="216" height="184"/>
-
                                                 <state key="normal" title="Button" image="forward"/>
                                                 <connections>
                                                     <action selector="nextLetter:" destination="0kz-R1-3sS" eventType="touchUpInside" id="xPO-dw-Ea5"/>
@@ -1537,7 +1525,6 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="9Oc-2k-b12" userLabel="Word Stack View">
-
                                         <rect key="frame" x="0.0" y="184" width="648" height="166"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="hdM-md-KJl" userLabel="First Word Stack View">
@@ -1545,16 +1532,13 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0b-bK-jCT">
                                                         <rect key="frame" x="0.0" y="0.0" width="182.66666666666666" height="146"/>
-
                                                         <state key="normal" backgroundImage="cub"/>
                                                         <connections>
                                                             <action selector="tapFirstPic:" destination="0kz-R1-3sS" eventType="touchUpInside" id="Oqi-Yt-lBu"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gde-iV-Y8z">
-
                                                         <rect key="frame" x="0.0" y="146" width="182.66666666666666" height="20"/>
-
                                                         <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="30"/>
                                                         <state key="normal" title="cub">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1566,21 +1550,17 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="ZBp-CH-x7r" userLabel="Second Word Stack View">
-
                                                 <rect key="frame" x="232.66666666666669" y="0.0" width="182.66666666666669" height="166"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Deb-bG-MKb">
                                                         <rect key="frame" x="0.0" y="0.0" width="182.66666666666666" height="146"/>
-
                                                         <state key="normal" backgroundImage="crab"/>
                                                         <connections>
                                                             <action selector="tapSecondPic:" destination="0kz-R1-3sS" eventType="touchUpInside" id="Ziu-ep-162"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="odU-jI-rXc">
-
                                                         <rect key="frame" x="0.0" y="146" width="182.66666666666666" height="20"/>
-
                                                         <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="30"/>
                                                         <state key="normal" title="crab">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1592,21 +1572,17 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="soN-el-x4M" userLabel="Third Word Stack View">
-
                                                 <rect key="frame" x="465.33333333333343" y="0.0" width="182.66666666666669" height="166"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kxt-47-Mkm">
                                                         <rect key="frame" x="0.0" y="0.0" width="182.66666666666666" height="146"/>
-
                                                         <state key="normal" backgroundImage="cobweb"/>
                                                         <connections>
                                                             <action selector="tapThirdPic:" destination="0kz-R1-3sS" eventType="touchUpInside" id="UFW-Cd-nSW"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p34-Vh-ahp">
-
                                                         <rect key="frame" x="0.0" y="146" width="182.66666666666666" height="20"/>
-
                                                         <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="30"/>
                                                         <state key="normal" title="cobweb">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1629,7 +1605,6 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="2zh-u4-tUW" firstAttribute="leading" secondItem="LAM-c8-OBl" secondAttribute="trailing" constant="8" symbolic="YES" id="1Cq-94-hjg"/>
-                            <constraint firstAttribute="bottom" secondItem="2zh-u4-tUW" secondAttribute="bottom" constant="10" id="1V3-XO-sje"/>
                             <constraint firstItem="LAM-c8-OBl" firstAttribute="centerY" secondItem="1BW-ek-Ydi" secondAttribute="centerY" id="2Ge-nT-xRF"/>
                             <constraint firstItem="LAM-c8-OBl" firstAttribute="leading" secondItem="NWO-8o-jle" secondAttribute="leading" constant="16" id="2QQ-2x-agb"/>
                             <constraint firstItem="2zh-u4-tUW" firstAttribute="top" secondItem="NWO-8o-jle" secondAttribute="top" constant="10" id="7AN-g3-rHE"/>
@@ -2210,7 +2185,7 @@
         <image name="bank" width="56" height="56"/>
         <image name="bird" width="400" height="400"/>
         <image name="bug" width="474" height="370"/>
-        <image name="bus" width="542" height="420"/>
+        <image name="bus" width="400" height="400"/>
         <image name="cobweb" width="400" height="400"/>
         <image name="crab" width="400" height="400"/>
         <image name="cub" width="400" height="400"/>
@@ -2218,7 +2193,7 @@
         <image name="drop" width="400" height="400"/>
         <image name="elk" width="400" height="400"/>
         <image name="forward" width="56" height="56"/>
-        <image name="fox" width="400" height="400"/>
+        <image name="fox" width="554" height="464"/>
         <image name="frog" width="400" height="400"/>
         <image name="home" width="56" height="56"/>
         <image name="level_button_0_star" width="549" height="444"/>

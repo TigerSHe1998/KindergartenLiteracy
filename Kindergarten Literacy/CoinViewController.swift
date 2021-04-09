@@ -12,7 +12,7 @@ class CoinViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         initCoin()
-        // Do any additional setup after loading the view.
+
     }
     
     // temporary label for coin count

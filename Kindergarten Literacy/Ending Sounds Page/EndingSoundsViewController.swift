@@ -54,9 +54,9 @@ class EndingSoundsViewController: UIViewController {
     }
     
     @IBAction func puzzleButtonTapped(_ sender: Any) {
-        // let vc = mainStoryBoard.instantiateViewController(identifier: "puzzle_vc")
-        let vc = UIHostingController(rootView: PuzzleView())
-        vc.rootView.dismiss = {vc.dismiss(animated: true, completion: nil)}
+        let vc = mainStoryBoard.instantiateViewController(identifier: "puzzle_vc")
+//        let vc = UIHostingController(rootView: PuzzleView())
+//        vc.rootView.dismiss = {vc.dismiss(animated: true, completion: nil)}
         present(vc, animated: true)
     }
     
