@@ -191,16 +191,16 @@ class ViewController: UIViewController {
         self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
     }
     
-//    @IBAction func puzzleButtonTapped(_ sender: Any) {
-//        let vc = storyboard?.instantiateViewController(identifier: "puzzle_vc") as! PuzzleViewController
-//        present(vc, animated: true)
-//    }
-    
     @IBAction func puzzleButtonTapped(_ sender: Any) {
-        let vc = UIHostingController(rootView: PuzzleView())
-        vc.rootView.dismiss = {vc.dismiss(animated: true, completion: nil)}
+        let vc = storyboard?.instantiateViewController(identifier: "puzzle_vc") as! PuzzleViewController
         present(vc, animated: true)
     }
+    
+//    @IBAction func puzzleButtonTapped(_ sender: Any) {
+//        let vc = UIHostingController(rootView: PuzzleView())
+//        vc.rootView.dismiss = {vc.dismiss(animated: true, completion: nil)}
+//        present(vc, animated: true)
+//    }
     
     @IBAction func coinButtonTapped(_ sender: Any) {
         let vc = storyboard?.instantiateViewController(identifier: "coin_vc") as! CoinViewController
