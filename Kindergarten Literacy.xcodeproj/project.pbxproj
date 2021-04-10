@@ -287,6 +287,7 @@
 		DC6532B025E98652005A4320 /* 00alphabet_letters.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DC6532AF25E98652005A4320 /* 00alphabet_letters.mp3 */; };
 		DC8EB4BF25CB17B300FD7BB1 /* PuzzleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8EB4BD25CB17B300FD7BB1 /* PuzzleViewController.swift */; };
 		DC8EB4C025CB17B300FD7BB1 /* CoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8EB4BE25CB17B300FD7BB1 /* CoinViewController.swift */; };
+		DC9CA10B262213F6004BC17F /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9CA10A262213F6004BC17F /* LoginPage.swift */; };
 		DCC2567C2604FA0500E48B78 /* alphabetQuiz_correct.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCC2567B2604FA0500E48B78 /* alphabetQuiz_correct.mp3 */; };
 		DCD5CA3625CECD110095B416 /* LetterPages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCD5CA3525CECD110095B416 /* LetterPages.storyboard */; };
 		DCECA4DA25EC0FC100FECDD8 /* alphabetQuiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCECA4D925EC0FC100FECDD8 /* alphabetQuiz.swift */; };
@@ -574,6 +575,7 @@
 		DC6532AF25E98652005A4320 /* 00alphabet_letters.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 00alphabet_letters.mp3; sourceTree = "<group>"; };
 		DC8EB4BD25CB17B300FD7BB1 /* PuzzleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PuzzleViewController.swift; sourceTree = "<group>"; };
 		DC8EB4BE25CB17B300FD7BB1 /* CoinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinViewController.swift; sourceTree = "<group>"; };
+		DC9CA10A262213F6004BC17F /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
 		DCC2567B2604FA0500E48B78 /* alphabetQuiz_correct.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alphabetQuiz_correct.mp3; sourceTree = "<group>"; };
 		DCD5CA3525CECD110095B416 /* LetterPages.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LetterPages.storyboard; sourceTree = "<group>"; };
 		DCECA4D925EC0FC100FECDD8 /* alphabetQuiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alphabetQuiz.swift; sourceTree = "<group>"; };
@@ -947,6 +949,7 @@
 				C0BA855A256C6487000EBAEC /* Info.plist */,
 				C0BA8557256C6487000EBAEC /* LaunchScreen.storyboard */,
 				C0BA8552256C6485000EBAEC /* Main.storyboard */,
+				DC9CA10A262213F6004BC17F /* LoginPage.swift */,
 				C0BA8550256C6485000EBAEC /* ViewController.swift */,
 				DC8EB4BE25CB17B300FD7BB1 /* CoinViewController.swift */,
 				DC8EB4BD25CB17B300FD7BB1 /* PuzzleViewController.swift */,
@@ -1373,6 +1376,7 @@
 				DC65326F25E95CCE005A4320 /* nameAbcdeCap.swift in Sources */,
 				98358CF125D6A6C70092C8FF /* BeginningSoundsFourButtonViewController.swift in Sources */,
 				98358CF725D6A6C70092C8FF /* TwoButtonLevelViewController.swift in Sources */,
+				DC9CA10B262213F6004BC17F /* LoginPage.swift in Sources */,
 				C0BA8567256CA9ED000EBAEC /* letterMainPage.swift in Sources */,
 				98358CF625D6A6C70092C8FF /* FourButtonLevelViewController.swift in Sources */,
 				DC65326925E9588F005A4320 /* nameBmrasCap.swift in Sources */,

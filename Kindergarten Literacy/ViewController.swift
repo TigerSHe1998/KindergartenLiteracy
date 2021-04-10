@@ -29,6 +29,12 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    // pop login page after application load
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        popLogin()
+    }
+    
     // initialize savefile if no save is found. (prevents crash)
     func initSave() {
         if UserDefaults.standard.object(forKey: "firstStartup") == nil {
@@ -138,6 +144,11 @@ class ViewController: UIViewController {
     
     
     
+    // login page pop up call
+    func popLogin() {
+        let vc = storyboard?.instantiateViewController(identifier: "login_vc") as! LoginPage
+        present(vc, animated: true)
+    }
     
     // instantiate letterStoryboard for calling views under letter
     let letterStoryBoard:UIStoryboard = UIStoryboard(name: "LetterPages", bundle:nil)
