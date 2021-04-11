@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,32 +13,32 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch_splash_side" translatesAutoresizingMaskIntoConstraints="NO" id="Kr4-eI-cQf">
-                                <rect key="frame" x="57" y="148" width="300" height="600"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch_splash" translatesAutoresizingMaskIntoConstraints="NO" id="ozi-2D-13A">
+                                <rect key="frame" x="69" y="0.0" width="715" height="390"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="600" id="NF5-WI-buo"/>
-                                    <constraint firstAttribute="width" constant="300" id="fEO-os-Eh3"/>
+                                    <constraint firstAttribute="height" constant="390" id="13J-AL-lqh"/>
+                                    <constraint firstAttribute="width" constant="715" id="hGJ-LO-5Xy"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Kr4-eI-cQf" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="L2s-um-zKU"/>
-                            <constraint firstItem="Kr4-eI-cQf" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="gV2-9S-gfs"/>
+                            <constraint firstItem="ozi-2D-13A" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="EHF-Zs-xmf"/>
+                            <constraint firstItem="ozi-2D-13A" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="zHe-8k-oAJ"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.606635071090047" y="372.30769230769232"/>
         </scene>
     </scenes>
     <resources>
-        <image name="launch_splash_side" width="1000" height="2000"/>
+        <image name="launch_splash" width="2000" height="1000"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
