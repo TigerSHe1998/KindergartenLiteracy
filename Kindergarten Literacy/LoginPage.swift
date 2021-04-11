@@ -15,8 +15,45 @@ class LoginPage: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    var inputArray = ["bruh", "bruh", "bruh", "bruh", "bruh"]
+    var correctPassword = ["c", "c", "c", "c", "c"]
+    @IBOutlet var holders: [UIButton]!
+    
     @IBAction func login(_ sender: Any) {
-        self.dismiss(animated:true, completion: nil)
+        if inputArray == correctPassword {
+            self.dismiss(animated:true, completion: nil)
+        }
+    }
+    
+    @IBAction func keys(_ sender: Any) {
+        let text = (sender as! UIButton).titleLabel!.text!
+        for i in inputArray.indices {
+            if inputArray[i] == "bruh" {
+                inputArray[i] = text
+                holders[i].setBackgroundImage(UIImage(named: text), for: .normal)
+                break
+            }
+        }
+        //print(inputArray)
+    }
+    
+    @IBAction func holder(_ sender: Any) {
+        (sender as! UIButton).setBackgroundImage(UIImage(named: "empty_input"), for: .normal)
+        switch (sender as! UIButton).titleLabel!.text! {
+        case "holder1":
+            inputArray[0] = "bruh"
+        case "holder2":
+            inputArray[1] = "bruh"
+        case "holder3":
+            inputArray[2] = "bruh"
+        case "holder4":
+            inputArray[3] = "bruh"
+        case "holder5":
+            inputArray[4] = "bruh"
+        default:
+            break
+        }
+        //print(inputArray)
     }
     
     /*
