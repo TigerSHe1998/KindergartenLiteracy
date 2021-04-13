@@ -29,6 +29,12 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    // pop login page after application load
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        popLogin()
+    }
+    
     // initialize savefile if no save is found. (prevents crash)
     func initSave() {
         if UserDefaults.standard.object(forKey: "firstStartup") == nil {
@@ -132,7 +138,21 @@ class ViewController: UIViewController {
         UserDefaults.standard.set(0, forKey: "coinCount")
         
         // add your save data here //
-        
+        let endingSoundsStarCount = ["b": 0,
+                               "d": 0,
+                               "f": 0,
+                               "g": 0,
+                               "k": 0,
+                               "l": 0,
+                               "m": 0,
+                               "n": 0,
+                               "p": 0,
+                               "r": 0,
+                               "s": 0,
+                               "t": 0,
+                               "x": 0,
+                               "z": 0]
+        UserDefaults.standard.set(endingSoundsStarCount, forKey: "endingSoundsStarCount")
         
         // add your save data above //
         
@@ -140,6 +160,11 @@ class ViewController: UIViewController {
     
     
     
+    // login page pop up call
+    func popLogin() {
+        let vc = storyboard?.instantiateViewController(identifier: "login_vc") as! LoginPage
+        present(vc, animated: true)
+    }
     
     // instantiate letterStoryboard for calling views under letter
     let letterStoryBoard:UIStoryboard = UIStoryboard(name: "LetterPages", bundle:nil)
@@ -167,6 +192,15 @@ class ViewController: UIViewController {
     let endingSoundsStoryBoard:UIStoryboard = UIStoryboard(name: "EndingSoundsPages", bundle:nil)
     
     @IBAction func endingSoundsButtonTapped(_ sender: Any) {
+        let pathToSound = Bundle.main.path(forResource: "#Ending_Sounds", ofType:"mp3")!
+        let url = URL(fileURLWithPath: pathToSound)
+                
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: url)
+            audioPlayer?.play()
+        } catch {
+        }
+        
         let vc = endingSoundsStoryBoard.instantiateViewController(identifier: "ending_sounds_vc")
         present(vc, animated: true)
     }
@@ -184,16 +218,16 @@ class ViewController: UIViewController {
         self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
     }
     
-//    @IBAction func puzzleButtonTapped(_ sender: Any) {
-//        let vc = storyboard?.instantiateViewController(identifier: "puzzle_vc") as! PuzzleViewController
-//        present(vc, animated: true)
-//    }
-    
     @IBAction func puzzleButtonTapped(_ sender: Any) {
-        let vc = UIHostingController(rootView: PuzzleView())
-        vc.rootView.dismiss = {vc.dismiss(animated: true, completion: nil)}
+        let vc = storyboard?.instantiateViewController(identifier: "puzzle_vc") as! PuzzleViewController
         present(vc, animated: true)
     }
+    
+//    @IBAction func puzzleButtonTapped(_ sender: Any) {
+//        let vc = UIHostingController(rootView: PuzzleView())
+//        vc.rootView.dismiss = {vc.dismiss(animated: true, completion: nil)}
+//        present(vc, animated: true)
+//    }
     
     @IBAction func coinButtonTapped(_ sender: Any) {
         let vc = storyboard?.instantiateViewController(identifier: "coin_vc") as! CoinViewController
@@ -201,19 +235,7 @@ class ViewController: UIViewController {
     }
     
     
-    @IBAction func SectionTapped(_ sender: UIButton) {
 
-        let pathToSound = Bundle.main.path(forResource: "#Ending_Sounds", ofType:"mp3")!
-        let url = URL(fileURLWithPath: pathToSound)
-                
-        do {
-            audioPlayer = try AVAudioPlayer(contentsOf: url)
-            audioPlayer?.play()
-        } catch {
-        }
-    
-        
-    }
 }
 
 

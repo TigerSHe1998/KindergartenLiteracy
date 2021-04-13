@@ -396,6 +396,7 @@ class LearnEndingSounds: UIViewController {
     // functions for sidebar
     @IBAction func backButtonTapped(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
+        //stopPlayingAudio()
     }
     
     @IBAction func homeButtonTapped(_ sender: Any) {
@@ -403,8 +404,8 @@ class LearnEndingSounds: UIViewController {
     }
     
     @IBAction func puzzleButtonTapped(_ sender: Any) {
-        // let vc = mainStoryBoard.instantiateViewController(identifier: "puzzle_vc")
-        let vc = UIHostingController(rootView: PuzzleView())
+        let vc = mainStoryBoard.instantiateViewController(identifier: "puzzle_vc")
+//        let vc = UIHostingController(rootView: PuzzleView())
         stopPlayingAudio()
         present(vc, animated: true)
     }

@@ -18,9 +18,11 @@ class EndingSoundsFour: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         playIntroMessage()
-
+        initButtonBackground()
+        Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { timer in
+            self.initButtonBackground() // refresh star every second
+        })
         for button in buttons {
-            // button.layer.cornerRadius = 20
             button.setBackgroundImage(UIImage(named: "level_button_0_star"), for: .normal)
             button.contentHorizontalAlignment = .left
             button.contentVerticalAlignment = .top
@@ -42,8 +44,8 @@ class EndingSoundsFour: UIViewController {
     }
     
     @IBAction func puzzleButtonTapped(_ sender: Any) {
-        // let vc = mainStoryBoard.instantiateViewController(identifier: "puzzle_vc")
-        let vc = UIHostingController(rootView: PuzzleView())
+        let vc = mainStoryBoard.instantiateViewController(identifier: "puzzle_vc")
+//        let vc = UIHostingController(rootView: PuzzleView())
         present(vc, animated: true)
     }
     
@@ -56,6 +58,7 @@ class EndingSoundsFour: UIViewController {
         let vc = endingSoundsStoryBoard.instantiateViewController(identifier: "ending_sounds_quiz_vc") as! EndingSoundsQuiz
         vc.passedInLetter = bmrsCapArray.randomElement()
         vc.passedInArray = bmrsCapArray
+        audioPlayer?.stop()
         present(vc, animated: true)
     }
     
@@ -78,10 +81,6 @@ class EndingSoundsFour: UIViewController {
         }
     }
     
-    // stop playing sound
-    func stopPlayingMessage() {
-        audioPlayer?.stop()
-    }
     
     
     //main button function to learn page
@@ -90,7 +89,7 @@ class EndingSoundsFour: UIViewController {
         vc.passedInLetter = (sender as! UIButton).titleLabel!.text!
         vc.passedInArray = bmrsCapArray
         present(vc, animated: true)
-        stopPlayingMessage()
+        audioPlayer?.stop()
     }
     
     // set stars for each button
@@ -106,10 +105,10 @@ class EndingSoundsFour: UIViewController {
     
     func initButtonBackground() {
         // get savefile from userdefaults
-        let letterStarCount = UserDefaults.standard.dictionary(forKey: "letterStarCount")
+        let endingSoundsStarCount = UserDefaults.standard.dictionary(forKey: "endingSoundsStarCount")
         for button in buttons {
             let currentLetter = button.titleLabel!.text!
-            let currentStarCount = letterStarCount![currentLetter] as! Int
+            let currentStarCount = endingSoundsStarCount![currentLetter] as! Int
             button.setBackgroundImage(starsImages[currentStarCount], for: .normal)
         }
     }

@@ -200,9 +200,18 @@ class EndingSoundsQuiz: UIViewController {
     }
     
     @IBAction func choiceButtons(_ sender: Any) {
+        var saveFile = UserDefaults.standard.dictionary(forKey: "endingSoundsStarCount")
+        
         if (sender as! UIButton) == correctButton {
             correctButtonAnimation()
-            
+            var currScore:Int = saveFile![currentLetter] as! Int
+            if currScore < 5 {
+                currScore += 1
+                saveFile![currentLetter] = currScore
+                UserDefaults.standard.set(saveFile, forKey: "endingSoundsStarCount")
+            }
+            // add 1 to coin count
+            UserDefaults.standard.set(UserDefaults.standard.integer(forKey: "coinCount") + 1, forKey: "coinCount")
             // disable button to avoid tapping during animation
             (sender as! UIButton).isEnabled = false
             
@@ -245,13 +254,19 @@ class EndingSoundsQuiz: UIViewController {
                             self.choice2.alpha = 1.0
                             self.choice3.alpha = 1.0
                         })
-                        // re enable button
+                        // reenable button
                         (sender as! UIButton).isEnabled = true
                     })
                 }
             })
         } else {
             playFullAudio(currentLetter: currentLetter, firstChoice: choice1.currentTitle!, secondChoice: choice2.currentTitle!, thirdChoice: choice3.currentTitle!)
+            var currScore:Int = saveFile![currentLetter] as! Int
+            if currScore > 0 {
+                currScore -= 1
+                saveFile![currentLetter] = currScore
+                UserDefaults.standard.set(saveFile, forKey: "endingSoundsStarCount")
+            }
         }
     }
     
@@ -465,16 +480,18 @@ class EndingSoundsQuiz: UIViewController {
     
     // functions for sidebar
     @IBAction func backButtonTapped(_ sender: Any) {
+        audioPlayer?.stop()
         self.dismiss(animated: true, completion: nil)
     }
 
     @IBAction func homeButtonTapped(_ sender: Any) {
+        audioPlayer?.stop()
         self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func puzzleButtonTapped(_ sender: Any) {
-        // let vc = mainStoryBoard.instantiateViewController(identifier: "puzzle_vc")
-        let vc = UIHostingController(rootView: PuzzleView())
+        let vc = mainStoryBoard.instantiateViewController(identifier: "puzzle_vc")
+//        let vc = UIHostingController(rootView: PuzzleView())
         present(vc, animated: true)
     }
     
