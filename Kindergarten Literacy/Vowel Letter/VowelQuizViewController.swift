@@ -349,8 +349,10 @@ class VowelQuizViewController: UIViewController {
         if progressScore > 6 {
             puzzleOne.image = UIImage(named: imageOne)
             puzzleFour.image = UIImage(named: imageFour)
-            let vc = storyboard?.instantiateViewController(identifier: "rhyme_vc") as! RhymeViewController
-            vc.passedInLetter = correctButton.currentTitle!
+            let sb = UIStoryboard(name: "Main", bundle: nil)
+            let vc = sb.instantiateViewController(identifier: "rhyme_vc") as! RhymeViewController
+            vc.passedInLetter = currentLetter
+            present(vc, animated: true)
             
         }
             
