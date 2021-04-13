@@ -436,7 +436,9 @@ class RealVowelViewController: UIViewController {
         self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
     }
     @IBAction func quiz(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(identifier: "beginning_sounds_quiz_vc") as! BeginningSoundsQuizViewController
+        let vc = storyboard?.instantiateViewController(identifier: "vowel_quiz_vc") as! VowelQuizViewController
+        vc.passedInLetter = myButtonOne.currentTitle!
+        vc.passedInArray = array
         present(vc, animated: true)
     }
     

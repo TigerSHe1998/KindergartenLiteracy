@@ -1196,8 +1196,68 @@
             </objects>
             <point key="canvasLocation" x="-1554" y="93"/>
         </scene>
+        <!--Rhyme View Controller-->
+        <scene sceneID="eA8-Pg-ncL">
+            <objects>
+                <viewController storyboardIdentifier="rhyme_vc" id="eTr-Nj-UKU" customClass="RhymeViewController" customModule="Kindergarten_Literacy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tnf-aZ-N0M">
+                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8CZ-0y-Qio">
+                                <rect key="frame" x="162" y="62.666666666666657" width="200" height="265"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="265" id="SEO-6L-V36"/>
+                                    <constraint firstAttribute="width" constant="200" id="t5m-n4-1HZ"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="puzzle-A-short-composite"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5X9-a5-C54">
+                                <rect key="frame" x="59" y="20" width="110" height="56"/>
+                                <state key="normal" title="Button" image="back"/>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="eTr-Nj-UKU" eventType="touchUpInside" id="mfR-6T-fnY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="correct" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C1d-mF-CoP">
+                                <rect key="frame" x="101" y="312" width="55" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m6E-nB-Zv1">
+                                <rect key="frame" x="382" y="45" width="400" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="AHr-LU-DUO"/>
+                                    <constraint firstAttribute="width" constant="400" id="gFz-gJ-wui"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="a1words"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xOX-Kw-qFL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="m6E-nB-Zv1" firstAttribute="centerX" secondItem="Tnf-aZ-N0M" secondAttribute="centerX" constant="160" id="0Iu-bi-Cbd"/>
+                            <constraint firstItem="5X9-a5-C54" firstAttribute="top" secondItem="xOX-Kw-qFL" secondAttribute="top" constant="20" id="W9b-wm-LTT"/>
+                            <constraint firstItem="m6E-nB-Zv1" firstAttribute="centerY" secondItem="Tnf-aZ-N0M" secondAttribute="centerY" id="jFZ-fZ-1ob"/>
+                            <constraint firstItem="8CZ-0y-Qio" firstAttribute="centerX" secondItem="Tnf-aZ-N0M" secondAttribute="centerX" constant="-160" id="q8a-R1-gHs"/>
+                            <constraint firstItem="5X9-a5-C54" firstAttribute="leading" secondItem="xOX-Kw-qFL" secondAttribute="leading" constant="15" id="rQp-L9-OLt"/>
+                            <constraint firstItem="8CZ-0y-Qio" firstAttribute="centerY" secondItem="Tnf-aZ-N0M" secondAttribute="centerY" id="yP3-oB-cCk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pic" destination="8CZ-0y-Qio" id="IFi-I6-tdn"/>
+                        <outlet property="word" destination="m6E-nB-Zv1" id="Y3c-zw-WjK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Kj-m7-FCR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-265.16587677725119" y="33.846153846153847"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="a1words" width="756" height="532"/>
         <image name="0" width="605" height="680"/>
         <image name="1" width="605" height="680"/>
         <image name="2" width="605" height="680"/>
@@ -1240,6 +1300,7 @@
         <image name="p" width="607" height="680"/>
         <image name="pencil.circle.fill" catalog="system" width="128" height="121"/>
         <image name="puzzle" width="56" height="56"/>
+        <image name="puzzle-A-short-composite" width="450" height="600"/>
         <image name="q" width="657" height="688"/>
         <image name="questionmark.circle.fill" catalog="system" width="128" height="121"/>
         <image name="r" width="658" height="677"/>

@@ -7,9 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34066700261F04C5004C2B63 /* puzzle-O-short-rhyme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 340666F9261F04C5004C2B63 /* puzzle-O-short-rhyme.mp3 */; };
+		34066701261F04C5004C2B63 /* puzzle-E-short-rhyme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 340666FA261F04C5004C2B63 /* puzzle-E-short-rhyme.mp3 */; };
+		34066702261F04C5004C2B63 /* puzzle-I-short-rhyme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 340666FB261F04C5004C2B63 /* puzzle-I-short-rhyme.mp3 */; };
+		34066703261F04C5004C2B63 /* puzzle-U-short-rhyme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 340666FC261F04C5004C2B63 /* puzzle-U-short-rhyme.mp3 */; };
+		34066704261F04C5004C2B63 /* puzzle-A-short-rhyme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 340666FD261F04C5004C2B63 /* puzzle-A-short-rhyme.mp3 */; };
+		34066705261F04C5004C2B63 /* puzzle-A-ahh-rhyme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 340666FE261F04C5004C2B63 /* puzzle-A-ahh-rhyme.mp3 */; };
+		34066706261F04C5004C2B63 /* puzzle-I-ee-rhyme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 340666FF261F04C5004C2B63 /* puzzle-I-ee-rhyme.mp3 */; };
 		3407962725D799FA002191C5 /* VowelLetterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3407962625D799FA002191C5 /* VowelLetterViewController.swift */; };
 		3407962A25D79B61002191C5 /* RealVowelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3407962925D79B61002191C5 /* RealVowelViewController.swift */; };
 		3407962D25D79BC6002191C5 /* VowelLetter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3407962C25D79BC6002191C5 /* VowelLetter.storyboard */; };
+		34321E022624A86300678865 /* RhymeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34321E012624A86300678865 /* RhymeViewController.swift */; };
 		348B4AF62600E4D400DCFFD5 /* bus.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 348B4AD32600E4D300DCFFD5 /* bus.mp3 */; };
 		348B4AF72600E4D400DCFFD5 /* phoneme-A-short.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 348B4AD42600E4D300DCFFD5 /* phoneme-A-short.mp3 */; };
 		348B4AF82600E4D400DCFFD5 /* bat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 348B4AD52600E4D300DCFFD5 /* bat.mp3 */; };
@@ -45,6 +53,7 @@
 		348B4B162600E4D400DCFFD5 /* e.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 348B4AF32600E4D400DCFFD5 /* e.mp3 */; };
 		348B4B172600E4D400DCFFD5 /* a1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 348B4AF42600E4D400DCFFD5 /* a1.mp3 */; };
 		348B4B182600E4D400DCFFD5 /* elf.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 348B4AF52600E4D400DCFFD5 /* elf.mp3 */; };
+		34C462AF261D929200FA03B2 /* VowelQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C462AE261D929200FA03B2 /* VowelQuizViewController.swift */; };
 		98358CED25D6A6C70092C8FF /* BeginningSoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98358CE225D6A6C70092C8FF /* BeginningSoundsViewController.swift */; };
 		98358CEE25D6A6C70092C8FF /* BeginningSoundsThreeButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98358CE325D6A6C70092C8FF /* BeginningSoundsThreeButtonViewController.swift */; };
 		98358CEF25D6A6C70092C8FF /* BeginningSoundsOneButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98358CE425D6A6C70092C8FF /* BeginningSoundsOneButtonViewController.swift */; };
@@ -294,9 +303,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		340666F9261F04C5004C2B63 /* puzzle-O-short-rhyme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "puzzle-O-short-rhyme.mp3"; sourceTree = "<group>"; };
+		340666FA261F04C5004C2B63 /* puzzle-E-short-rhyme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "puzzle-E-short-rhyme.mp3"; sourceTree = "<group>"; };
+		340666FB261F04C5004C2B63 /* puzzle-I-short-rhyme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "puzzle-I-short-rhyme.mp3"; sourceTree = "<group>"; };
+		340666FC261F04C5004C2B63 /* puzzle-U-short-rhyme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "puzzle-U-short-rhyme.mp3"; sourceTree = "<group>"; };
+		340666FD261F04C5004C2B63 /* puzzle-A-short-rhyme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "puzzle-A-short-rhyme.mp3"; sourceTree = "<group>"; };
+		340666FE261F04C5004C2B63 /* puzzle-A-ahh-rhyme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "puzzle-A-ahh-rhyme.mp3"; sourceTree = "<group>"; };
+		340666FF261F04C5004C2B63 /* puzzle-I-ee-rhyme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "puzzle-I-ee-rhyme.mp3"; sourceTree = "<group>"; };
 		3407962625D799FA002191C5 /* VowelLetterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VowelLetterViewController.swift; sourceTree = "<group>"; };
 		3407962925D79B61002191C5 /* RealVowelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealVowelViewController.swift; sourceTree = "<group>"; };
 		3407962C25D79BC6002191C5 /* VowelLetter.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VowelLetter.storyboard; sourceTree = "<group>"; };
+		34321E012624A86300678865 /* RhymeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RhymeViewController.swift; sourceTree = "<group>"; };
 		348B4AD32600E4D300DCFFD5 /* bus.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bus.mp3; sourceTree = "<group>"; };
 		348B4AD42600E4D300DCFFD5 /* phoneme-A-short.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "phoneme-A-short.mp3"; sourceTree = "<group>"; };
 		348B4AD52600E4D300DCFFD5 /* bat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bat.mp3; sourceTree = "<group>"; };
@@ -332,6 +349,7 @@
 		348B4AF32600E4D400DCFFD5 /* e.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = e.mp3; sourceTree = "<group>"; };
 		348B4AF42600E4D400DCFFD5 /* a1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = a1.mp3; sourceTree = "<group>"; };
 		348B4AF52600E4D400DCFFD5 /* elf.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = elf.mp3; sourceTree = "<group>"; };
+		34C462AE261D929200FA03B2 /* VowelQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VowelQuizViewController.swift; sourceTree = "<group>"; };
 		98358CE225D6A6C70092C8FF /* BeginningSoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeginningSoundsViewController.swift; sourceTree = "<group>"; };
 		98358CE325D6A6C70092C8FF /* BeginningSoundsThreeButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeginningSoundsThreeButtonViewController.swift; sourceTree = "<group>"; };
 		98358CE425D6A6C70092C8FF /* BeginningSoundsOneButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeginningSoundsOneButtonViewController.swift; sourceTree = "<group>"; };
@@ -600,6 +618,7 @@
 				3407962625D799FA002191C5 /* VowelLetterViewController.swift */,
 				3407962925D79B61002191C5 /* RealVowelViewController.swift */,
 				3407962C25D79BC6002191C5 /* VowelLetter.storyboard */,
+				34C462AE261D929200FA03B2 /* VowelQuizViewController.swift */,
 			);
 			path = "Vowel Letter";
 			sourceTree = "<group>";
@@ -607,6 +626,13 @@
 		3442FB6626008F10007C2C3F /* Audio */ = {
 			isa = PBXGroup;
 			children = (
+				340666FE261F04C5004C2B63 /* puzzle-A-ahh-rhyme.mp3 */,
+				340666FD261F04C5004C2B63 /* puzzle-A-short-rhyme.mp3 */,
+				340666FA261F04C5004C2B63 /* puzzle-E-short-rhyme.mp3 */,
+				340666FF261F04C5004C2B63 /* puzzle-I-ee-rhyme.mp3 */,
+				340666FB261F04C5004C2B63 /* puzzle-I-short-rhyme.mp3 */,
+				340666F9261F04C5004C2B63 /* puzzle-O-short-rhyme.mp3 */,
+				340666FC261F04C5004C2B63 /* puzzle-U-short-rhyme.mp3 */,
 				348B4AF42600E4D400DCFFD5 /* a1.mp3 */,
 				348B4AEF2600E4D400DCFFD5 /* a2.mp3 */,
 				348B4ADD2600E4D300DCFFD5 /* ax.mp3 */,
@@ -956,6 +982,7 @@
 				C09F928B261421BC00FB5548 /* PuzzleView.swift */,
 				C05D1AA125D26B0D00A30442 /* Ending Sounds Page */,
 				DC8EB4B125CB146300FD7BB1 /* Letter Page */,
+				34321E012624A86300678865 /* RhymeViewController.swift */,
 			);
 			path = "Kindergarten Literacy";
 			sourceTree = "<group>";
@@ -1159,11 +1186,13 @@
 				DC65329825E97D7E005A4320 /* alphabetSound_T.mp3 in Resources */,
 				348B4AF92600E4D400DCFFD5 /* phoneme-O-short.mp3 in Resources */,
 				348B4B072600E4D400DCFFD5 /* phoneme-I-ee.mp3 in Resources */,
+				34066703261F04C5004C2B63 /* puzzle-U-short-rhyme.mp3 in Resources */,
 				348B4B032600E4D400DCFFD5 /* bed.mp3 in Resources */,
 				C0BA8559256C6487000EBAEC /* LaunchScreen.storyboard in Resources */,
 				348B4B112600E4D400DCFFD5 /* cat.mp3 in Resources */,
 				DC6532A025E97D7E005A4320 /* alphabetSound_E.mp3 in Resources */,
 				98A571B926065B5E00C4C35E /* pie-b.mp3 in Resources */,
+				34066702261F04C5004C2B63 /* puzzle-I-short-rhyme.mp3 in Resources */,
 				98A5720026065ECE00C4C35E /* B-buh-b.mp3 in Resources */,
 				98A571B226065B5E00C4C35E /* fox-b.mp3 in Resources */,
 				98A571FD26065ECE00C4C35E /* R-ruh-b.mp3 in Resources */,
@@ -1172,6 +1201,7 @@
 				98A571CC26065B5E00C4C35E /* cake-b.mp3 in Resources */,
 				98672BA325EB7343006487F5 /* beginning-sounds.mp3 in Resources */,
 				98A571A826065B5E00C4C35E /* hardhat-b.mp3 in Resources */,
+				34066705261F04C5004C2B63 /* puzzle-A-ahh-rhyme.mp3 in Resources */,
 				98672C8C25EBB92E006487F5 /* t_tuh_toe_toys_tail.mp3 in Resources */,
 				98672C9B25EBB92E006487F5 /* s_sss_suitcase_say_sneak.mp3 in Resources */,
 				98A571A726065B5E00C4C35E /* robot-b.mp3 in Resources */,
@@ -1196,6 +1226,7 @@
 				DCD5CA3625CECD110095B416 /* LetterPages.storyboard in Resources */,
 				98A571D426065B5E00C4C35E /* exam-b.mp3 in Resources */,
 				348B4B122600E4D400DCFFD5 /* a2.mp3 in Resources */,
+				34066701261F04C5004C2B63 /* puzzle-E-short-rhyme.mp3 in Resources */,
 				DCD5CA3625CECD110095B416 /* LetterPages.storyboard in Resources */,
 				C05EF51825EED1BD0006C5E0 /* door.mp3 in Resources */,
 				C05EF51F25EED1BD0006C5E0 /* fin.mp3 in Resources */,
@@ -1235,6 +1266,7 @@
 				C05EF53A25EED1D00006C5E0 /* quiz.mp3 in Resources */,
 				C0A28E7525EC30B5008A7564 /* puh_drop_soap_jeep.mp3 in Resources */,
 				C0A28EA425EC6FF4008A7564 /* zzz.mp3 in Resources */,
+				34066706261F04C5004C2B63 /* puzzle-I-ee-rhyme.mp3 in Resources */,
 				C0A28E8025EC3104008A7564 /* sss_bus_dress_grapes.mp3 in Resources */,
 				C0A28E6F25EC30A3008A7564 /* mmm_swim_clam_storm.mp3 in Resources */,
 				C0A28EA625EC6FF4008A7564 /* guh.mp3 in Resources */,
@@ -1318,12 +1350,14 @@
 				98A571CA26065B5E00C4C35E /* toe-b.mp3 in Resources */,
 				98A571DD26065B5E00C4C35E /* ax-b.mp3 in Resources */,
 				98672C9C25EBB92E006487F5 /* w_wuh_wagon_wolf_wind.mp3 in Resources */,
+				34066700261F04C5004C2B63 /* puzzle-O-short-rhyme.mp3 in Resources */,
 				348B4B0A2600E4D400DCFFD5 /* hit.mp3 in Resources */,
 				348B4B102600E4D400DCFFD5 /* phoneme-A-ahh.mp3 in Resources */,
 				DC6532A725E97D7E005A4320 /* alphabetSound_Y.mp3 in Resources */,
 				348B4B0F2600E4D400DCFFD5 /* phoneme-U-short.mp3 in Resources */,
 				DC6532A225E97D7E005A4320 /* alphabetSound_H.mp3 in Resources */,
 				98672C8B25EBB92E006487F5 /* c_sss_celery_cement truck_cymbals.mp3 in Resources */,
+				34066704261F04C5004C2B63 /* puzzle-A-short-rhyme.mp3 in Resources */,
 				98A5721026065ECE00C4C35E /* L-lll-b.mp3 in Resources */,
 				98A571CF26065B5E00C4C35E /* mermaid-b.mp3 in Resources */,
 				DC65329525E97D7E005A4320 /* alphabetSound_W.mp3 in Resources */,
@@ -1358,11 +1392,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34321E022624A86300678865 /* RhymeViewController.swift in Sources */,
 				98358CEF25D6A6C70092C8FF /* BeginningSoundsOneButtonViewController.swift in Sources */,
 				98358CF025D6A6C70092C8FF /* ThreeButtonLevelViewController.swift in Sources */,
 				98358CF225D6A6C70092C8FF /* BeginningSoundsQuizViewController.swift in Sources */,
 				3407962725D799FA002191C5 /* VowelLetterViewController.swift in Sources */,
 				DC8EB4C025CB17B300FD7BB1 /* CoinViewController.swift in Sources */,
+				34C462AF261D929200FA03B2 /* VowelQuizViewController.swift in Sources */,
 				98358CF325D6A6C70092C8FF /* BeginningSoundsTwoButtonViewController.swift in Sources */,
 				DCECA4DA25EC0FC100FECDD8 /* alphabetQuiz.swift in Sources */,
 				98A572202606666500C4C35E /* OneButtonLevelViewController.swift in Sources */,
