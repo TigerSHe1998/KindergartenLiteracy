@@ -123,6 +123,9 @@ class ViewController: UIViewController {
                                "u": 0]
         UserDefaults.standard.set(vowelStarCount, forKey: "vowelStarCount")
         
+        
+        let VowelPuzzleProgress = [1, 1, 1, 1, 1, 1, 1]
+        UserDefaults.standard.set(VowelPuzzleProgress, forKey: "VowelPuzzleProgress")
    
         
         // set global coin count to zero

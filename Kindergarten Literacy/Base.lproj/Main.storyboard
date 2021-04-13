@@ -550,8 +550,55 @@
             </objects>
             <point key="canvasLocation" x="-1554" y="93"/>
         </scene>
+        <!--Rhyme View Controller-->
+        <scene sceneID="eA8-Pg-ncL">
+            <objects>
+                <viewController storyboardIdentifier="rhyme_vc" id="eTr-Nj-UKU" customClass="RhymeViewController" customModule="Kindergarten_Literacy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tnf-aZ-N0M">
+                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8CZ-0y-Qio">
+                                <rect key="frame" x="181" y="49" width="200" height="265"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="puzzle-A-short-composite"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5X9-a5-C54">
+                                <rect key="frame" x="101" y="49" width="36" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="back"/>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="eTr-Nj-UKU" eventType="touchUpInside" id="mfR-6T-fnY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="correct" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C1d-mF-CoP">
+                                <rect key="frame" x="101" y="312" width="55" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m6E-nB-Zv1">
+                                <rect key="frame" x="397" y="49" width="387" height="284"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="a1words"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xOX-Kw-qFL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="pic" destination="8CZ-0y-Qio" id="IFi-I6-tdn"/>
+                        <outlet property="word" destination="m6E-nB-Zv1" id="Y3c-zw-WjK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Kj-m7-FCR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-265.16587677725119" y="33.846153846153847"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="a1words" width="756" height="532"/>
         <image name="arrow.backward.circle.fill" catalog="system" width="128" height="121"/>
         <image name="arrow.clockwise.circle.fill" catalog="system" width="128" height="121"/>
         <image name="arrow.forward.circle.fill" catalog="system" width="128" height="121"/>
@@ -566,6 +613,7 @@
         <image name="letters" width="219.33332824707031" height="150"/>
         <image name="pencil.circle.fill" catalog="system" width="128" height="121"/>
         <image name="puzzle" width="56" height="56"/>
+        <image name="puzzle-A-short-composite" width="450" height="600"/>
         <image name="questionmark.circle.fill" catalog="system" width="128" height="121"/>
         <image name="vowels" width="220.66667175292969" height="148.66667175292969"/>
         <namedColor name="AccentColor">

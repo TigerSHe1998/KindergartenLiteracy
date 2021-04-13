@@ -15,7 +15,7 @@ import SwiftUI
 
 class VowelQuizViewController: UIViewController {
     
-    var endingSoundsPuzzleProgress = [1, 1, 1, 1, 1, 1, 1]
+    // var VowelPuzzleProgress = [1, 1, 1, 1, 1, 1, 1]
     
     var images = ["bat", "cat", "ax", "ball", "fall", "swan", "elf", "bed", "net", "mittens", "hit", "fish", "taxi", "yeti", "skis", "fox","pot", "hot","bug","bus","cut"]
     
@@ -184,12 +184,7 @@ class VowelQuizViewController: UIViewController {
                 saveFile![currentLetter] = currScore
                 UserDefaults.standard.set(saveFile, forKey: "vowelStarCount")
             }
-            if currScore == 5{
-                let sb = UIStoryboard(name: "VowelLetter", bundle: nil)
-                let vc = sb.instantiateViewController(identifier: "vowel_rhyme_vc") as! VowelRhymeViewController
-                vc.passedInLetter = currentLetter
-                present(vc, animated: true)
-            }
+       
             
             // disable button to avoid tapping during animation
             (sender as! UIButton).isEnabled = false
@@ -266,71 +261,95 @@ class VowelQuizViewController: UIViewController {
     
     
     func correctButtonTapped(imageOne: String, imageTwo: String, imageThree: String, imageFour: String, imageFive: String, imageSix: String, imageSeven: String, imageEight: String, imageNine: String, imageTen: String, imageEleven: String, imageTwelve: String) {
-        if puzzleProgress[0] == 1 {
+        
+        var saveFile = UserDefaults.standard.array(forKey: "VowelPuzzleProgress")
+        
+        //var currScore:Int = saveFile![currentLetter] as! Int
+        var progressScore:Int = saveFile![0] as! Int
+        
+        
+        
+        if progressScore == 1 {
             puzzleFive.image = UIImage(named: imageFive)
             puzzleNine.image = UIImage(named: imageNine)
             self.animate(myview: puzzleFive)
             self.animate(myview: puzzleNine)
         }
-        if puzzleProgress[0] == 2 {
+        if progressScore == 2 {
             puzzleSeven.image = UIImage(named: imageSeven)
             puzzleTen.image = UIImage(named: imageTen)
             self.animate(myview: puzzleSeven)
             self.animate(myview: puzzleTen)
         }
-        if puzzleProgress[0] == 3 {
+        if progressScore == 3 {
             puzzleSix.image = UIImage(named: imageSix)
             puzzleTwelve.image = UIImage(named: imageTwelve)
             self.animate(myview: puzzleSix)
             self.animate(myview: puzzleTwelve)
         }
-        if puzzleProgress[0] == 4 {
+        if progressScore == 4 {
             puzzleEight.image = UIImage(named: imageEight)
             puzzleEleven.image = UIImage(named: imageEleven)
             self.animate(myview: puzzleEight)
             self.animate(myview: puzzleEleven)
         }
-        if puzzleProgress[0] == 5 {
+        if progressScore == 5 {
             puzzleTwo.image = UIImage(named: imageTwo)
             puzzleThree.image = UIImage(named: imageThree)
             self.animate(myview: puzzleTwo)
             self.animate(myview: puzzleThree)
         }
-        if puzzleProgress[0] == 6 {
+        if progressScore == 6 {
             puzzleOne.image = UIImage(named: imageOne)
             puzzleFour.image = UIImage(named: imageFour)
             self.animate(myview: puzzleOne)
             self.animate(myview: puzzleFour)
+            let sb = UIStoryboard(name: "Main", bundle: nil)
+            let vc = sb.instantiateViewController(identifier: "rhyme_vc") as! RhymeViewController
+            vc.passedInLetter = currentLetter
+            present(vc, animated: true)
         }
-        puzzleProgress[0] += 1
+        progressScore += 1
         playCorrectAudio()
+        
+        saveFile![0] = progressScore
+        
+        UserDefaults.standard.set(saveFile, forKey: "VowelPuzzleProgress")
     }
     
     func completePuzzle(imageOne: String, imageTwo: String, imageThree: String, imageFour: String, imageFive: String, imageSix: String, imageSeven: String, imageEight: String, imageNine: String, imageTen: String, imageEleven: String, imageTwelve: String) {
-        if endingSoundsPuzzleProgress[0] > 1 {
+        
+        var saveFile = UserDefaults.standard.array(forKey: "VowelPuzzleProgress")
+        
+        //var currScore:Int = saveFile![currentLetter] as! Int
+        var progressScore:Int = saveFile![0] as! Int
+        
+        UserDefaults.standard.set(saveFile, forKey: "VowelPuzzleProgress")
+        
+        if progressScore > 1 {
             puzzleFive.image = UIImage(named: imageFive)
             puzzleNine.image = UIImage(named: imageNine)
         }
-        if endingSoundsPuzzleProgress[0] > 2 {
+        if progressScore > 2 {
             puzzleSeven.image = UIImage(named: imageSeven)
             puzzleTen.image = UIImage(named: imageTen)
         }
-        if endingSoundsPuzzleProgress[0] > 3 {
+        if progressScore > 3 {
             puzzleSix.image = UIImage(named: imageSix)
             puzzleTwelve.image = UIImage(named: imageTwelve)
         }
-        if endingSoundsPuzzleProgress[0] > 4 {
+        if progressScore > 4 {
             puzzleEight.image = UIImage(named: imageEight)
             puzzleEleven.image = UIImage(named: imageEleven)
         }
-        if endingSoundsPuzzleProgress[0] > 5 {
+        if progressScore > 5 {
             puzzleTwo.image = UIImage(named: imageTwo)
             puzzleThree.image = UIImage(named: imageThree)
         }
-        if endingSoundsPuzzleProgress[0] > 6 {
+        if progressScore > 6 {
             puzzleOne.image = UIImage(named: imageOne)
             puzzleFour.image = UIImage(named: imageFour)
-            let vc = storyboard?.instantiateViewController(identifier: "vowel_rhyme_vc") as! VowelRhymeViewController
+            let vc = storyboard?.instantiateViewController(identifier: "rhyme_vc") as! RhymeViewController
             vc.passedInLetter = correctButton.currentTitle!
             
         }
@@ -452,8 +471,8 @@ class VowelQuizViewController: UIViewController {
     }
     
     @IBAction func rhymeButtonTapped(_ sender: Any) {
-        let sb = UIStoryboard(name: "VowelLetter", bundle: nil)
-        let vc = sb.instantiateViewController(identifier: "vowel_rhyme_vc") as! VowelRhymeViewController
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let vc = sb.instantiateViewController(identifier: "rhyme_vc") as! RhymeViewController
         vc.passedInLetter = currentLetter
         present(vc, animated: true)
     }
