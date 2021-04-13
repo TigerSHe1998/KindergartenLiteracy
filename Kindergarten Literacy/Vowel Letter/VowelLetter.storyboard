@@ -101,32 +101,32 @@
                                                     <action selector="RealVowelLetter:" destination="c99-6M-wtR" eventType="touchUpInside" id="oCz-Ot-sCW"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="ball" translatesAutoresizingMaskIntoConstraints="NO" id="liP-7d-rcd">
-                                                <rect key="frame" x="370" y="55" width="117" height="103"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="bat" translatesAutoresizingMaskIntoConstraints="NO" id="6ul-GT-d64">
-                                                <rect key="frame" x="133" y="40" width="114" height="132"/>
+                                                <rect key="frame" x="133" y="40" width="114" height="101"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="elf" translatesAutoresizingMaskIntoConstraints="NO" id="FkX-om-tzW">
-                                                <rect key="frame" x="628" y="33" width="86" height="139"/>
+                                                <rect key="frame" x="628" y="33" width="86" height="108"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="mittens" translatesAutoresizingMaskIntoConstraints="NO" id="mPq-r2-7bC">
-                                                <rect key="frame" x="129" y="198" width="118" height="156"/>
+                                                <rect key="frame" x="129" y="219" width="118" height="90"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="taxi" translatesAutoresizingMaskIntoConstraints="NO" id="Fee-b3-crD">
-                                                <rect key="frame" x="363" y="225" width="124" height="103"/>
+                                                <rect key="frame" x="366" y="206" width="124" height="103"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="fox" translatesAutoresizingMaskIntoConstraints="NO" id="58y-uw-4wo">
-                                                <rect key="frame" x="610" y="206" width="104" height="141"/>
+                                                <rect key="frame" x="610" y="206" width="104" height="97"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="bug" translatesAutoresizingMaskIntoConstraints="NO" id="z5h-nH-sdg">
                                                 <rect key="frame" x="133" y="393" width="91" height="93"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="ball" translatesAutoresizingMaskIntoConstraints="NO" id="liP-7d-rcd">
+                                                <rect key="frame" x="370" y="39" width="117" height="103"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                         </subviews>
@@ -470,7 +470,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="equalSpacing" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Rq4-6r-5mo" userLabel="Side Bar Stack View">
-                                <rect key="frame" x="110" y="38" width="40" height="338"/>
+                                <rect key="frame" x="60" y="38" width="40" height="338"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eT9-sY-Gyg" userLabel="Back">
                                         <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
