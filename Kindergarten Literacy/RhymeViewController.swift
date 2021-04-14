@@ -5,11 +5,8 @@
 //  Created by 徐浩云 on 4/7/21.
 //
 
-import Foundation
 import UIKit
 import AVFoundation
-import SwiftUI
-
 
 class RhymeViewController: UIViewController {
     
@@ -28,7 +25,7 @@ class RhymeViewController: UIViewController {
         switch passedInLetter{
             case "a", "A":
                 pic.setImage(UIImage(named: "puzzle-A-ahh-composite"), for: .normal)
-                word.setImage(UIImage(named: "a1words"), for: .normal)
+                word.setImage(UIImage(named: "a1"), for: .normal)
                 let pathToSound = Bundle.main.path(forResource: "puzzle-A-ahh-rhyme", ofType: "mp3")!
                 let url = URL(fileURLWithPath: pathToSound)
                 do {
@@ -107,6 +104,22 @@ class RhymeViewController: UIViewController {
     }
     
     
+    @IBAction func homeButtonTapped(_ sender: Any) {
+        self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
+    }
     
+    @IBAction func replayButtonTapped(_ sender: Any) {
+        
+    }
+    
+    
+    @IBAction func coinButtonTapped(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(identifier: "coin_vc") as! CoinViewController
+        present(vc, animated: true)
+    }
+    
+    @IBAction func puzzleButtonTapped(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
 }

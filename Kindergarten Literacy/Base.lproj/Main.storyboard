@@ -780,137 +780,6 @@
             </objects>
             <point key="canvasLocation" x="-897.32142857142856" y="-1175.3623188405797"/>
         </scene>
-        <!--Vowel View Controller-->
-        <scene sceneID="09z-DK-fmr">
-            <objects>
-                <viewController storyboardIdentifier="vowels_vc" id="jGV-1l-ZlQ" customClass="VowelViewController" customModule="Kindergarten_Literacy" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="N2Q-zU-SV7">
-                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Een-vn-q1S">
-                                <rect key="frame" x="142" y="27" width="208" height="144"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <state key="normal" title="a">
-                                    <color key="titleColor" systemColor="labelColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="VowelBlackATapped:" destination="jGV-1l-ZlQ" eventType="touchUpInside" id="4VH-wf-zLa"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RCW-Vv-3QG">
-                                <rect key="frame" x="628" y="28" width="208" height="143"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <state key="normal" title="e">
-                                    <color key="titleColor" systemColor="labelColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="VowelBlackETapped:" destination="jGV-1l-ZlQ" eventType="touchUpInside" id="bda-z9-Xfq"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gzY-gw-WQp">
-                                <rect key="frame" x="142" y="189" width="208" height="143"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <state key="normal" title="i">
-                                    <color key="titleColor" systemColor="labelColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="VowelBlackITapped:" destination="jGV-1l-ZlQ" eventType="touchUpInside" id="cdy-7T-cTW"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sbY-dx-Wkm">
-                                <rect key="frame" x="628" y="190" width="208" height="143"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <state key="normal" title="o">
-                                    <color key="titleColor" systemColor="labelColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="VowelBlackOTapped:" destination="jGV-1l-ZlQ" eventType="touchUpInside" id="NB9-3Q-VYL"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hye-c7-hAt">
-                                <rect key="frame" x="386" y="190" width="208" height="143"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <state key="normal" title="i">
-                                    <color key="titleColor" systemColor="systemGreenColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="VowelGreenITapped:" destination="jGV-1l-ZlQ" eventType="touchUpInside" id="bqK-WC-nfC"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="42b-7l-BJv">
-                                <rect key="frame" x="386" y="28" width="208" height="143"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <state key="normal" title="a">
-                                    <color key="titleColor" systemColor="systemGreenColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="VowelGreenATapped:" destination="jGV-1l-ZlQ" eventType="touchUpInside" id="L0z-cn-NvY"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9vg-Pi-oCH">
-                                <rect key="frame" x="142" y="353" width="208" height="143"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <state key="normal" title="u">
-                                    <color key="titleColor" systemColor="labelColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="VowelBlackUTapped:" destination="jGV-1l-ZlQ" eventType="touchUpInside" id="3RS-ZJ-Esh"/>
-                                </connections>
-                            </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="equalSpacing" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="JfA-HN-E5j" userLabel="side_bar_stack">
-                                <rect key="frame" x="60" y="28" width="56" height="338"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZTd-do-php" userLabel="back">
-                                        <rect key="frame" x="0.0" y="0.0" width="56" height="56"/>
-                                        <state key="normal" image="back"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UtK-Qs-1WF" userLabel="home">
-                                        <rect key="frame" x="0.0" y="94" width="56" height="56"/>
-                                        <state key="normal" image="home"/>
-                                        <connections>
-                                            <action selector="homeButtonTapped:" destination="jGV-1l-ZlQ" eventType="touchUpInside" id="8Qm-Iw-kz9"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEw-Lc-evg" userLabel="coin">
-                                        <rect key="frame" x="0.0" y="188" width="56" height="56"/>
-                                        <state key="normal" image="bank"/>
-                                        <connections>
-                                            <action selector="puzzleButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fiG-fB-IKh"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ib-gH-PEp" userLabel="puzzle">
-                                        <rect key="frame" x="0.0" y="282" width="56" height="56"/>
-                                        <state key="normal" image="puzzle"/>
-                                        <connections>
-                                            <action selector="coinButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nJM-2s-YGQ"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="pay-Kl-e5T"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jum-oW-nr5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-897.32142857142856" y="92.753623188405811"/>
-        </scene>
         <!--Coin View Controller-->
         <scene sceneID="jva-39-8Q2">
             <objects>
@@ -1030,172 +899,6 @@
             </objects>
             <point key="canvasLocation" x="-216.11374407582937" y="-1175.3846153846152"/>
         </scene>
-        <!--Vowel Letter View Controller-->
-        <scene sceneID="Lgp-0i-nNy">
-            <objects>
-                <viewController storyboardIdentifier="vowel_letter_vc" id="FSU-Jn-FJk" customClass="VowelLetterViewController" customModule="Kindergarten_Literacy" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="rdV-hu-YQH">
-                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="a" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7h2-Qj-Rd9">
-                                <rect key="frame" x="456" y="29" width="0.0" height="30"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btx-gk-rBI">
-                                <rect key="frame" x="60" y="59.5" width="46" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="arrowshape.turn.up.backward.2.circle.fill" catalog="system">
-                                    <color key="titleColor" name="AccentColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="returnButtonTapped:" destination="FSU-Jn-FJk" eventType="touchUpInside" id="GwF-PD-L5m"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6oh-tm-zP3">
-                                <rect key="frame" x="60" y="104.5" width="46" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemPurpleColor"/>
-                                <state key="normal" backgroundImage="house.circle.fill" catalog="system"/>
-                                <connections>
-                                    <action selector="homeButtonTapped:" destination="FSU-Jn-FJk" eventType="touchUpInside" id="lkW-Xa-zsW"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M9c-C4-Lmo">
-                                <rect key="frame" x="60" y="309.5" width="46" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemGreenColor"/>
-                                <state key="normal" backgroundImage="pencil.circle.fill" catalog="system"/>
-                                <connections>
-                                    <action selector="puzzleButtonTapped:" destination="FSU-Jn-FJk" eventType="touchUpInside" id="agv-cB-IEN"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GbR-e3-IBC">
-                                <rect key="frame" x="60" y="261.5" width="46" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemRedColor"/>
-                                <state key="normal" backgroundImage="cart.circle.fill" catalog="system"/>
-                                <connections>
-                                    <action selector="coinButtonTapped:" destination="FSU-Jn-FJk" eventType="touchUpInside" id="AKV-gc-3Xy"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d6K-55-hqO">
-                                <rect key="frame" x="60" y="167.5" width="46" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="questionmark.circle.fill" catalog="system"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Jq-v1-tHg">
-                                <rect key="frame" x="60" y="212.5" width="46" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemTealColor"/>
-                                <state key="normal" backgroundImage="arrow.clockwise.circle.fill" catalog="system"/>
-                                <connections>
-                                    <action selector="quizButtonTapped:" destination="jGV-1l-ZlQ" eventType="touchUpInside" id="KXj-PC-Jug"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="30L-24-ThL">
-                                <rect key="frame" x="562" y="105.5" width="49" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="arrow.forward.circle.fill" catalog="system"/>
-                                <connections>
-                                    <action selector="nextButtonTapped:" destination="FSU-Jn-FJk" eventType="touchUpInside" id="ggR-PB-cs6"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uTo-sz-6Fz">
-                                <rect key="frame" x="324" y="104.5" width="49" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="arrow.backward.circle.fill" catalog="system"/>
-                                <connections>
-                                    <action selector="prevButtonTapped:" destination="FSU-Jn-FJk" eventType="touchUpInside" id="AnA-hk-pPx"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="C0o-YG-Btc"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="t1z-a3-Z1H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-897.32142857142856" y="844.92753623188412"/>
-        </scene>
-        <!--Vowel Quiz View Controller-->
-        <scene sceneID="TQF-An-EYX">
-            <objects>
-                <viewController storyboardIdentifier="quiz_vc" id="D6L-zS-oqK" customClass="VowelQuizViewController" customModule="Kindergarten_Literacy" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="dNL-RU-SK4">
-                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FSx-Lc-Gxv">
-                                <rect key="frame" x="60" y="59.5" width="46" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="arrowshape.turn.up.backward.2.circle.fill" catalog="system">
-                                    <color key="titleColor" name="AccentColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="returnButtonTapped:" destination="D6L-zS-oqK" eventType="touchUpInside" id="3V6-Bq-Bfo"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jFA-Tz-8d4">
-                                <rect key="frame" x="60" y="104.5" width="46" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemPurpleColor"/>
-                                <state key="normal" backgroundImage="house.circle.fill" catalog="system"/>
-                                <connections>
-                                    <action selector="homeButtonTapped:" destination="D6L-zS-oqK" eventType="touchUpInside" id="FWi-ec-3xr"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bvM-6L-Osu">
-                                <rect key="frame" x="60" y="309.5" width="46" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemGreenColor"/>
-                                <state key="normal" backgroundImage="pencil.circle.fill" catalog="system"/>
-                                <connections>
-                                    <action selector="puzzleButtonTapped:" destination="D6L-zS-oqK" eventType="touchUpInside" id="aum-Z9-ZUA"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wMP-no-xIf">
-                                <rect key="frame" x="60" y="261.5" width="46" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemRedColor"/>
-                                <state key="normal" backgroundImage="cart.circle.fill" catalog="system"/>
-                                <connections>
-                                    <action selector="coinButtonTapped:" destination="D6L-zS-oqK" eventType="touchUpInside" id="LrV-ho-D0I"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qAo-gb-Y7h">
-                                <rect key="frame" x="60" y="167.5" width="46" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="questionmark.circle.fill" catalog="system"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OSh-NO-bGA">
-                                <rect key="frame" x="60" y="212.5" width="46" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemTealColor"/>
-                                <state key="normal" backgroundImage="arrow.clockwise.circle.fill" catalog="system"/>
-                                <connections>
-                                    <action selector="quizButtonTapped:" destination="jGV-1l-ZlQ" eventType="touchUpInside" id="Oh4-tR-uIC"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vowel Quiz Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcm-Jx-jkA">
-                                <rect key="frame" x="419" y="212" width="125" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="N66-Bz-2sa"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="P3N-NR-Cie" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1554" y="93"/>
-        </scene>
         <!--Rhyme View Controller-->
         <scene sceneID="eA8-Pg-ncL">
             <objects>
@@ -1204,60 +907,91 @@
                         <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8CZ-0y-Qio">
-                                <rect key="frame" x="162" y="62.666666666666657" width="200" height="265"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="NSu-Ne-Ds0" userLabel="Side Bar Stack View">
+                                <rect key="frame" x="44" y="20" width="40" height="338"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CEF-oe-C7o" userLabel="Back">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="exv-DV-pfT"/>
+                                            <constraint firstAttribute="height" constant="40" id="otQ-O8-N3L"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="back">
+                                            <color key="titleColor" name="AccentColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="backButtonTapped:" destination="eTr-Nj-UKU" eventType="touchUpInside" id="8wF-Qa-j4F"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gWO-we-3dS" userLabel="Home">
+                                        <rect key="frame" x="0.0" y="74.666666666666671" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="bZl-qh-kmO"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="systemPurpleColor"/>
+                                        <state key="normal" backgroundImage="home"/>
+                                        <connections>
+                                            <action selector="homeButtonTapped:" destination="eTr-Nj-UKU" eventType="touchUpInside" id="4py-Ub-OHT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7L3-pj-CJX" userLabel="Replay">
+                                        <rect key="frame" x="0.0" y="149" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="sJs-fS-O60"/>
+                                        </constraints>
+                                        <state key="normal" image="repeat"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zDh-vC-bsf" userLabel="Puzzle">
+                                        <rect key="frame" x="0.0" y="223.66666666666666" width="40" height="39.999999999999972"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Oaj-Tg-ReM"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="systemGreenColor"/>
+                                        <state key="normal" backgroundImage="puzzle"/>
+                                        <connections>
+                                            <action selector="puzzleButtonTapped:" destination="eTr-Nj-UKU" eventType="touchUpInside" id="hcf-ls-Kkx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LyS-aZ-K44" userLabel="Bank">
+                                        <rect key="frame" x="0.0" y="298" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="kM1-sn-eFq"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="systemRedColor"/>
+                                        <state key="normal" backgroundImage="bank"/>
+                                        <connections>
+                                            <action selector="coinButtonTapped:" destination="eTr-Nj-UKU" eventType="touchUpInside" id="NR0-Hk-d5a"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="265" id="SEO-6L-V36"/>
-                                    <constraint firstAttribute="width" constant="200" id="t5m-n4-1HZ"/>
+                                    <constraint firstAttribute="width" constant="40" id="RPc-2l-6Qz"/>
+                                    <constraint firstAttribute="height" constant="338" id="leD-W3-Kcn"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="puzzle-A-short-composite"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5X9-a5-C54">
-                                <rect key="frame" x="59" y="20" width="110" height="56"/>
-                                <state key="normal" title="Button" image="back"/>
-                                <connections>
-                                    <action selector="backButtonTapped:" destination="eTr-Nj-UKU" eventType="touchUpInside" id="mfR-6T-fnY"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="correct" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C1d-mF-CoP">
-                                <rect key="frame" x="101" y="312" width="55" height="21"/>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="a1" translatesAutoresizingMaskIntoConstraints="NO" id="F0d-UG-RwK">
+                                <rect key="frame" x="402" y="45" width="382" height="300"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m6E-nB-Zv1">
-                                <rect key="frame" x="382" y="45" width="400" height="300"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="AHr-LU-DUO"/>
-                                    <constraint firstAttribute="width" constant="400" id="gFz-gJ-wui"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="a1words"/>
-                            </button>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="puzzle-A-short-composite" translatesAutoresizingMaskIntoConstraints="NO" id="xaq-E1-Xvz" userLabel="Complete Puzzle">
+                                <rect key="frame" x="120" y="45" width="240" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xOX-Kw-qFL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="m6E-nB-Zv1" firstAttribute="centerX" secondItem="Tnf-aZ-N0M" secondAttribute="centerX" constant="160" id="0Iu-bi-Cbd"/>
-                            <constraint firstItem="5X9-a5-C54" firstAttribute="top" secondItem="xOX-Kw-qFL" secondAttribute="top" constant="20" id="W9b-wm-LTT"/>
-                            <constraint firstItem="m6E-nB-Zv1" firstAttribute="centerY" secondItem="Tnf-aZ-N0M" secondAttribute="centerY" id="jFZ-fZ-1ob"/>
-                            <constraint firstItem="8CZ-0y-Qio" firstAttribute="centerX" secondItem="Tnf-aZ-N0M" secondAttribute="centerX" constant="-160" id="q8a-R1-gHs"/>
-                            <constraint firstItem="5X9-a5-C54" firstAttribute="leading" secondItem="xOX-Kw-qFL" secondAttribute="leading" constant="15" id="rQp-L9-OLt"/>
-                            <constraint firstItem="8CZ-0y-Qio" firstAttribute="centerY" secondItem="Tnf-aZ-N0M" secondAttribute="centerY" id="yP3-oB-cCk"/>
+                            <constraint firstItem="NSu-Ne-Ds0" firstAttribute="leading" secondItem="xOX-Kw-qFL" secondAttribute="leading" id="kHU-Ux-oZS"/>
+                            <constraint firstItem="NSu-Ne-Ds0" firstAttribute="top" secondItem="Tnf-aZ-N0M" secondAttribute="top" constant="20" symbolic="YES" id="tq7-U1-wRY"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="pic" destination="8CZ-0y-Qio" id="IFi-I6-tdn"/>
-                        <outlet property="word" destination="m6E-nB-Zv1" id="Y3c-zw-WjK"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Kj-m7-FCR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-265.16587677725119" y="33.846153846153847"/>
+            <point key="canvasLocation" x="-898.57819905213262" y="-235.38461538461539"/>
         </scene>
     </scenes>
     <resources>
-        <image name="a1words" width="756" height="532"/>
         <image name="0" width="605" height="680"/>
         <image name="1" width="605" height="680"/>
         <image name="2" width="605" height="680"/>
@@ -1269,16 +1003,12 @@
         <image name="8" width="605" height="680"/>
         <image name="9" width="605" height="680"/>
         <image name="a" width="605" height="680"/>
-        <image name="arrow.backward.circle.fill" catalog="system" width="128" height="121"/>
-        <image name="arrow.clockwise.circle.fill" catalog="system" width="128" height="121"/>
-        <image name="arrow.forward.circle.fill" catalog="system" width="128" height="121"/>
-        <image name="arrowshape.turn.up.backward.2.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="a1" width="756" height="532"/>
         <image name="b" width="655" height="687"/>
         <image name="back" width="56" height="56"/>
         <image name="bank" width="56" height="56"/>
         <image name="beginning sounds" width="220" height="150"/>
         <image name="c" width="659" height="687"/>
-        <image name="cart.circle.fill" catalog="system" width="128" height="121"/>
         <image name="d" width="612" height="676"/>
         <image name="e" width="643" height="680"/>
         <image name="empty_input" width="106" height="106"/>
@@ -1287,7 +1017,6 @@
         <image name="g" width="662" height="671"/>
         <image name="h" width="658" height="681"/>
         <image name="home" width="56" height="56"/>
-        <image name="house.circle.fill" catalog="system" width="128" height="121"/>
         <image name="i" width="603" height="676"/>
         <image name="j" width="608" height="679"/>
         <image name="k" width="605" height="681"/>
@@ -1296,17 +1025,16 @@
         <image name="login_button" width="222" height="122"/>
         <image name="m" width="658" height="682"/>
         <image name="n" width="659" height="674"/>
-        <image name="o" width="607" height="674"/>
+        <image name="o" width="852" height="826"/>
         <image name="p" width="607" height="680"/>
-        <image name="pencil.circle.fill" catalog="system" width="128" height="121"/>
         <image name="puzzle" width="56" height="56"/>
         <image name="puzzle-A-short-composite" width="450" height="600"/>
         <image name="q" width="657" height="688"/>
-        <image name="questionmark.circle.fill" catalog="system" width="128" height="121"/>
         <image name="r" width="658" height="677"/>
+        <image name="repeat" width="56" height="56"/>
         <image name="s" width="606" height="679"/>
         <image name="t" width="606" height="681"/>
-        <image name="u" width="659" height="679"/>
+        <image name="u" width="776" height="560"/>
         <image name="v" width="659" height="670"/>
         <image name="vowels" width="220.66667175292969" height="148.66667175292969"/>
         <image name="w" width="659" height="677"/>
@@ -1319,14 +1047,8 @@
         <namedColor name="lightGreen">
             <color red="0.92500001192092896" green="0.97699999809265137" blue="0.93699997663497925" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray5Color">
-            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1336,9 +1058,6 @@
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemTealColor">
-            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

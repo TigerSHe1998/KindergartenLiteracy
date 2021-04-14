@@ -183,7 +183,7 @@
                                                     <action selector="toLearnEndingSoundsPage:" destination="RK9-TE-cba" eventType="touchUpInside" id="yrA-2n-fAb"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="scarf" translatesAutoresizingMaskIntoConstraints="NO" id="t24-zE-H1E">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="scarf-e" translatesAutoresizingMaskIntoConstraints="NO" id="t24-zE-H1E">
                                                 <rect key="frame" x="608" y="8" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -220,7 +220,7 @@
                                                     <action selector="toLearnEndingSoundsPage:" destination="RK9-TE-cba" eventType="touchUpInside" id="iUG-75-YpS"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="elk" translatesAutoresizingMaskIntoConstraints="NO" id="M4g-7c-k9n">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="elk-e" translatesAutoresizingMaskIntoConstraints="NO" id="M4g-7c-k9n">
                                                 <rect key="frame" x="368" y="178" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -238,7 +238,7 @@
                                                     <action selector="toLearnEndingSoundsPage:" destination="RK9-TE-cba" eventType="touchUpInside" id="Ptk-OU-L8n"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="owl" translatesAutoresizingMaskIntoConstraints="NO" id="ACY-MK-HTS">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="owl-e" translatesAutoresizingMaskIntoConstraints="NO" id="ACY-MK-HTS">
                                                 <rect key="frame" x="608" y="178" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -256,7 +256,7 @@
                                                     <action selector="toLearnEndingSoundsPage:" destination="RK9-TE-cba" eventType="touchUpInside" id="bJO-VZ-eCP"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="swim" translatesAutoresizingMaskIntoConstraints="NO" id="2Pd-mm-3qu">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="swim-e" translatesAutoresizingMaskIntoConstraints="NO" id="2Pd-mm-3qu">
                                                 <rect key="frame" x="128" y="348" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -302,7 +302,7 @@
                                                     <action selector="toLearnEndingSoundsPage:" destination="RK9-TE-cba" eventType="touchUpInside" id="bm5-FU-Glr"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="drop" translatesAutoresizingMaskIntoConstraints="NO" id="bb8-od-u5r">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="drop-e" translatesAutoresizingMaskIntoConstraints="NO" id="bb8-od-u5r">
                                                 <rect key="frame" x="608" y="348" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -320,7 +320,7 @@
                                                     <action selector="toLearnEndingSoundsPage:" destination="RK9-TE-cba" eventType="touchUpInside" id="I37-hu-cQl"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="door" translatesAutoresizingMaskIntoConstraints="NO" id="LxI-CH-9w5">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="door-e" translatesAutoresizingMaskIntoConstraints="NO" id="LxI-CH-9w5">
                                                 <rect key="frame" x="128" y="518" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -352,7 +352,7 @@
                                                     <action selector="toLearnEndingSoundsPage:" destination="RK9-TE-cba" eventType="touchUpInside" id="Chc-5W-DLi"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="net" translatesAutoresizingMaskIntoConstraints="NO" id="4x8-hb-lqr">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="net-e" translatesAutoresizingMaskIntoConstraints="NO" id="4x8-hb-lqr">
                                                 <rect key="frame" x="608" y="518" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -370,7 +370,7 @@
                                                     <action selector="toLearnEndingSoundsPage:" destination="RK9-TE-cba" eventType="touchUpInside" id="SQl-b0-3oo"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fox" translatesAutoresizingMaskIntoConstraints="NO" id="avn-KH-x9I">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fox-e" translatesAutoresizingMaskIntoConstraints="NO" id="avn-KH-x9I">
                                                 <rect key="frame" x="128" y="688" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -388,27 +388,27 @@
                                                     <action selector="toLearnEndingSoundsPage:" destination="RK9-TE-cba" eventType="touchUpInside" id="zpl-ny-Ten"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cub" translatesAutoresizingMaskIntoConstraints="NO" id="AU3-U4-nUr">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cub-e" translatesAutoresizingMaskIntoConstraints="NO" id="AU3-U4-nUr">
                                                 <rect key="frame" x="128" y="8" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bird" translatesAutoresizingMaskIntoConstraints="NO" id="Tor-Kc-7iq">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bird-e" translatesAutoresizingMaskIntoConstraints="NO" id="Tor-Kc-7iq">
                                                 <rect key="frame" x="368" y="8" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rain" translatesAutoresizingMaskIntoConstraints="NO" id="YLJ-3w-lrd">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rain-e" translatesAutoresizingMaskIntoConstraints="NO" id="YLJ-3w-lrd">
                                                 <rect key="frame" x="368" y="348" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bus" translatesAutoresizingMaskIntoConstraints="NO" id="AmM-pE-6tK">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bus-e" translatesAutoresizingMaskIntoConstraints="NO" id="AmM-pE-6tK">
                                                 <rect key="frame" x="368" y="518" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="quiz1" translatesAutoresizingMaskIntoConstraints="NO" id="TUp-cH-bmj">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="quiz-e" translatesAutoresizingMaskIntoConstraints="NO" id="TUp-cH-bmj">
                                                 <rect key="frame" x="361" y="688" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="frog" translatesAutoresizingMaskIntoConstraints="NO" id="bpD-Jo-tNa">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="frog-e" translatesAutoresizingMaskIntoConstraints="NO" id="bpD-Jo-tNa">
                                                 <rect key="frame" x="128" y="178" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -683,7 +683,7 @@
                                                     <action selector="toLearnEndingSoundsPage:" destination="f7e-Ib-aGP" eventType="touchUpInside" id="Dtb-GE-elE"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bird" translatesAutoresizingMaskIntoConstraints="NO" id="P0s-x4-Jin">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bird-e" translatesAutoresizingMaskIntoConstraints="NO" id="P0s-x4-Jin">
                                                 <rect key="frame" x="368" y="20" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -701,7 +701,7 @@
                                                     <action selector="toLearnEndingSoundsPage:" destination="f7e-Ib-aGP" eventType="touchUpInside" id="2ef-MJ-U7X"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="scarf" translatesAutoresizingMaskIntoConstraints="NO" id="8fr-av-rXe">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="scarf-e" translatesAutoresizingMaskIntoConstraints="NO" id="8fr-av-rXe">
                                                 <rect key="frame" x="608" y="20" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -719,7 +719,7 @@
                                                     <action selector="toLearnEndingSoundsPage:" destination="f7e-Ib-aGP" eventType="touchUpInside" id="kpn-au-coa"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="frog" translatesAutoresizingMaskIntoConstraints="NO" id="8ZV-5v-sW3">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="frog-e" translatesAutoresizingMaskIntoConstraints="NO" id="8ZV-5v-sW3">
                                                 <rect key="frame" x="128" y="190" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -737,7 +737,7 @@
                                                     <action selector="toLearnEndingSoundsPage:" destination="f7e-Ib-aGP" eventType="touchUpInside" id="Ked-dX-mOe"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="elk" translatesAutoresizingMaskIntoConstraints="NO" id="jCD-Lk-u83">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="elk-e" translatesAutoresizingMaskIntoConstraints="NO" id="jCD-Lk-u83">
                                                 <rect key="frame" x="368" y="190" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -755,7 +755,7 @@
                                                     <action selector="toLearnEndingSoundsPage:" destination="f7e-Ib-aGP" eventType="touchUpInside" id="2rf-V3-t3Q"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="owl" translatesAutoresizingMaskIntoConstraints="NO" id="1Og-Fz-Xdw">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="owl-e" translatesAutoresizingMaskIntoConstraints="NO" id="1Og-Fz-Xdw">
                                                 <rect key="frame" x="608" y="190" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -773,7 +773,7 @@
                                                     <action selector="toLearnEndingSoundsPage:" destination="f7e-Ib-aGP" eventType="touchUpInside" id="nRc-EL-k9h"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="swim" translatesAutoresizingMaskIntoConstraints="NO" id="Mew-5T-SOF">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="swim-e" translatesAutoresizingMaskIntoConstraints="NO" id="Mew-5T-SOF">
                                                 <rect key="frame" x="128" y="360" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -791,7 +791,7 @@
                                                     <action selector="toLearnEndingSoundsPage:" destination="f7e-Ib-aGP" eventType="touchUpInside" id="JoD-Tz-RDH"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rain" translatesAutoresizingMaskIntoConstraints="NO" id="GfN-xC-Qlf">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rain-e" translatesAutoresizingMaskIntoConstraints="NO" id="GfN-xC-Qlf">
                                                 <rect key="frame" x="368" y="360" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -809,7 +809,7 @@
                                                     <action selector="toLearnEndingSoundsPage:" destination="f7e-Ib-aGP" eventType="touchUpInside" id="PvF-zL-wxI"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="drop" translatesAutoresizingMaskIntoConstraints="NO" id="cMZ-LG-2nG">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="drop-e" translatesAutoresizingMaskIntoConstraints="NO" id="cMZ-LG-2nG">
                                                 <rect key="frame" x="608" y="360" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -827,7 +827,7 @@
                                                     <action selector="toLearnEndingSoundsPage:" destination="f7e-Ib-aGP" eventType="touchUpInside" id="mnr-kF-Hod"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="door" translatesAutoresizingMaskIntoConstraints="NO" id="gI5-ey-SQC">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="door-e" translatesAutoresizingMaskIntoConstraints="NO" id="gI5-ey-SQC">
                                                 <rect key="frame" x="128" y="530" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -845,7 +845,7 @@
                                                     <action selector="toLearnEndingSoundsPage:" destination="f7e-Ib-aGP" eventType="touchUpInside" id="quM-rU-F6b"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bus" translatesAutoresizingMaskIntoConstraints="NO" id="wch-j8-2E4">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bus-e" translatesAutoresizingMaskIntoConstraints="NO" id="wch-j8-2E4">
                                                 <rect key="frame" x="368" y="530" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -863,7 +863,7 @@
                                                     <action selector="toLearnEndingSoundsPage:" destination="f7e-Ib-aGP" eventType="touchUpInside" id="niH-bN-W5m"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="net" translatesAutoresizingMaskIntoConstraints="NO" id="doh-Cf-CAY">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="net-e" translatesAutoresizingMaskIntoConstraints="NO" id="doh-Cf-CAY">
                                                 <rect key="frame" x="608" y="530" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -881,7 +881,7 @@
                                                     <action selector="toLearnEndingSoundsPage:" destination="f7e-Ib-aGP" eventType="touchUpInside" id="r8H-Si-GZA"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fox" translatesAutoresizingMaskIntoConstraints="NO" id="be5-Eh-Xfy">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fox-e" translatesAutoresizingMaskIntoConstraints="NO" id="be5-Eh-Xfy">
                                                 <rect key="frame" x="128" y="700" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -899,11 +899,11 @@
                                                     <action selector="toLearnEndingSoundsPage:" destination="f7e-Ib-aGP" eventType="touchUpInside" id="36s-Fy-DnJ"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cub" translatesAutoresizingMaskIntoConstraints="NO" id="OQS-J4-kDx">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cub-e" translatesAutoresizingMaskIntoConstraints="NO" id="OQS-J4-kDx">
                                                 <rect key="frame" x="128" y="20" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="quiz1" translatesAutoresizingMaskIntoConstraints="NO" id="fIQ-WB-sHR">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="quiz-e" translatesAutoresizingMaskIntoConstraints="NO" id="fIQ-WB-sHR">
                                                 <rect key="frame" x="368" y="700" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -1013,7 +1013,7 @@
                                                     <action selector="toLearnEndingSoundsPage:" destination="D1a-M2-ge1" eventType="touchUpInside" id="yoS-xO-G15"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cub" translatesAutoresizingMaskIntoConstraints="NO" id="VV6-wn-lMZ">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cub-e" translatesAutoresizingMaskIntoConstraints="NO" id="VV6-wn-lMZ">
                                                 <rect key="frame" x="108" y="8" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -1031,7 +1031,7 @@
                                                     <action selector="toLearnEndingSoundsPage:" destination="D1a-M2-ge1" eventType="touchUpInside" id="cWH-WY-pp2"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="swim" translatesAutoresizingMaskIntoConstraints="NO" id="v4P-ey-pUb">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="swim-e" translatesAutoresizingMaskIntoConstraints="NO" id="v4P-ey-pUb">
                                                 <rect key="frame" x="348" y="8" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -1049,7 +1049,7 @@
                                                     <action selector="toLearnEndingSoundsPage:" destination="D1a-M2-ge1" eventType="touchUpInside" id="sNw-ec-fzw"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="door" translatesAutoresizingMaskIntoConstraints="NO" id="Uqf-eF-jLs">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="door-e" translatesAutoresizingMaskIntoConstraints="NO" id="Uqf-eF-jLs">
                                                 <rect key="frame" x="588" y="8" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -1067,7 +1067,7 @@
                                                     <action selector="toLearnEndingSoundsPage:" destination="D1a-M2-ge1" eventType="touchUpInside" id="sDb-Df-jco"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bus" translatesAutoresizingMaskIntoConstraints="NO" id="Ixd-6y-ABV">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bus-e" translatesAutoresizingMaskIntoConstraints="NO" id="Ixd-6y-ABV">
                                                 <rect key="frame" x="108" y="178" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -1085,7 +1085,7 @@
                                                     <action selector="toLearnEndingSoundsPage:" destination="D1a-M2-ge1" eventType="touchUpInside" id="iw6-Al-RpW"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="net" translatesAutoresizingMaskIntoConstraints="NO" id="vay-I9-gmQ">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="net-e" translatesAutoresizingMaskIntoConstraints="NO" id="vay-I9-gmQ">
                                                 <rect key="frame" x="348" y="178" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -1103,7 +1103,7 @@
                                                     <action selector="toLearnEndingSoundsPage:" destination="D1a-M2-ge1" eventType="touchUpInside" id="rOS-ct-AOJ"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rain" translatesAutoresizingMaskIntoConstraints="NO" id="Wbf-rb-pmd">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rain-e" translatesAutoresizingMaskIntoConstraints="NO" id="Wbf-rb-pmd">
                                                 <rect key="frame" x="108" y="348" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -1121,7 +1121,7 @@
                                                     <action selector="toLearnEndingSoundsPage:" destination="D1a-M2-ge1" eventType="touchUpInside" id="O0j-7P-VRI"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="drop" translatesAutoresizingMaskIntoConstraints="NO" id="6u2-ec-uwQ">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="drop-e" translatesAutoresizingMaskIntoConstraints="NO" id="6u2-ec-uwQ">
                                                 <rect key="frame" x="348" y="348" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -1139,7 +1139,7 @@
                                                     <action selector="toLearnEndingSoundsPage:" destination="D1a-M2-ge1" eventType="touchUpInside" id="DZd-di-RP6"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="frog" translatesAutoresizingMaskIntoConstraints="NO" id="lhL-Qh-DVS">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="frog-e" translatesAutoresizingMaskIntoConstraints="NO" id="lhL-Qh-DVS">
                                                 <rect key="frame" x="588" y="178" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -1157,7 +1157,7 @@
                                                     <action selector="toLearnEndingSoundsPage:" destination="D1a-M2-ge1" eventType="touchUpInside" id="suZ-Qk-wtt"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="scarf" translatesAutoresizingMaskIntoConstraints="NO" id="YOp-hs-tao">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="scarf-e" translatesAutoresizingMaskIntoConstraints="NO" id="YOp-hs-tao">
                                                 <rect key="frame" x="588" y="348" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -1175,7 +1175,7 @@
                                                     <action selector="toLearnEndingSoundsPage:" destination="D1a-M2-ge1" eventType="touchUpInside" id="pKH-8V-rDZ"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bird" translatesAutoresizingMaskIntoConstraints="NO" id="s9R-Ao-lwf">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bird-e" translatesAutoresizingMaskIntoConstraints="NO" id="s9R-Ao-lwf">
                                                 <rect key="frame" x="108" y="518" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -1193,7 +1193,7 @@
                                                     <action selector="toLearnEndingSoundsPage:" destination="D1a-M2-ge1" eventType="touchUpInside" id="glg-dx-Hpb"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="owl" translatesAutoresizingMaskIntoConstraints="NO" id="GdE-GR-3P6">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="owl-e" translatesAutoresizingMaskIntoConstraints="NO" id="GdE-GR-3P6">
                                                 <rect key="frame" x="348" y="518" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -1211,7 +1211,7 @@
                                                     <action selector="toLearnEndingSoundsPage:" destination="D1a-M2-ge1" eventType="touchUpInside" id="XQw-er-8AU"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="elk" translatesAutoresizingMaskIntoConstraints="NO" id="vWe-1E-VxC">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="elk-e" translatesAutoresizingMaskIntoConstraints="NO" id="vWe-1E-VxC">
                                                 <rect key="frame" x="588" y="518" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -1243,11 +1243,11 @@
                                                     <action selector="toLearnEndingSoundsPage:" destination="D1a-M2-ge1" eventType="touchUpInside" id="3uS-S2-k5c"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fox" translatesAutoresizingMaskIntoConstraints="NO" id="Dqk-Vj-zbq">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fox-e" translatesAutoresizingMaskIntoConstraints="NO" id="Dqk-Vj-zbq">
                                                 <rect key="frame" x="348" y="688" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="quiz1" translatesAutoresizingMaskIntoConstraints="NO" id="tNf-cg-v9e">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="quiz-e" translatesAutoresizingMaskIntoConstraints="NO" id="tNf-cg-v9e">
                                                 <rect key="frame" x="108" y="688" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -1410,12 +1410,12 @@
         <scene sceneID="26D-VR-XoN">
             <objects>
                 <viewController storyboardIdentifier="learn_ending_sounds_vc" id="0kz-R1-3sS" userLabel="Learn Ending Sounds" customClass="LearnEndingSounds" customModule="Kindergarten_Literacy" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="1BW-ek-Ydi">
+                    <view key="view" contentMode="scaleToFill" id="1BW-ek-Ydi">
                         <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="LAM-c8-OBl" userLabel="Side Bar Stack View">
-                                <rect key="frame" x="60" y="16" width="40" height="338"/>
+                                <rect key="frame" x="60" y="14" width="40" height="338"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EjA-oA-i0J" userLabel="Back">
                                         <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
@@ -1490,7 +1490,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2zh-u4-tUW" userLabel="Main Stack View">
-                                <rect key="frame" x="108" y="10" width="648" height="350"/>
+                                <rect key="frame" x="108" y="8" width="648" height="350"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="bdh-9C-4Bp" userLabel="Letter Stack View">
                                         <rect key="frame" x="0.0" y="0.0" width="648" height="184"/>
@@ -1532,7 +1532,7 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0b-bK-jCT">
                                                         <rect key="frame" x="0.0" y="0.0" width="182.66666666666666" height="146"/>
-                                                        <state key="normal" backgroundImage="cub"/>
+                                                        <state key="normal" backgroundImage="cub-e"/>
                                                         <connections>
                                                             <action selector="tapFirstPic:" destination="0kz-R1-3sS" eventType="touchUpInside" id="Oqi-Yt-lBu"/>
                                                         </connections>
@@ -1554,7 +1554,7 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Deb-bG-MKb">
                                                         <rect key="frame" x="0.0" y="0.0" width="182.66666666666666" height="146"/>
-                                                        <state key="normal" backgroundImage="crab"/>
+                                                        <state key="normal" backgroundImage="crab-e"/>
                                                         <connections>
                                                             <action selector="tapSecondPic:" destination="0kz-R1-3sS" eventType="touchUpInside" id="Ziu-ep-162"/>
                                                         </connections>
@@ -1576,7 +1576,7 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kxt-47-Mkm">
                                                         <rect key="frame" x="0.0" y="0.0" width="182.66666666666666" height="146"/>
-                                                        <state key="normal" backgroundImage="cobweb"/>
+                                                        <state key="normal" backgroundImage="cobweb-e"/>
                                                         <connections>
                                                             <action selector="tapThirdPic:" destination="0kz-R1-3sS" eventType="touchUpInside" id="UFW-Cd-nSW"/>
                                                         </connections>
@@ -1607,7 +1607,6 @@
                             <constraint firstItem="2zh-u4-tUW" firstAttribute="leading" secondItem="LAM-c8-OBl" secondAttribute="trailing" constant="8" symbolic="YES" id="1Cq-94-hjg"/>
                             <constraint firstItem="LAM-c8-OBl" firstAttribute="centerY" secondItem="1BW-ek-Ydi" secondAttribute="centerY" id="2Ge-nT-xRF"/>
                             <constraint firstItem="LAM-c8-OBl" firstAttribute="leading" secondItem="NWO-8o-jle" secondAttribute="leading" constant="16" id="2QQ-2x-agb"/>
-                            <constraint firstItem="2zh-u4-tUW" firstAttribute="top" secondItem="NWO-8o-jle" secondAttribute="top" constant="10" id="7AN-g3-rHE"/>
                             <constraint firstAttribute="bottom" secondItem="2zh-u4-tUW" secondAttribute="bottom" constant="8" id="9yl-wR-iBW"/>
                             <constraint firstItem="LAM-c8-OBl" firstAttribute="centerY" secondItem="2zh-u4-tUW" secondAttribute="centerY" id="U3R-Er-eNf"/>
                             <constraint firstItem="NWO-8o-jle" firstAttribute="trailing" secondItem="2zh-u4-tUW" secondAttribute="trailing" constant="44" id="jbT-qj-51P"/>
@@ -1711,7 +1710,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YLB-m1-tcP" userLabel="Choice One">
                                 <rect key="frame" x="588" y="38" width="112" height="122"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="cub"/>
+                                <state key="normal" image="cub-e"/>
                                 <connections>
                                     <action selector="choiceButtons:" destination="8q8-8V-GdK" eventType="touchUpInside" id="LYZ-t4-Q9w"/>
                                 </connections>
@@ -1719,7 +1718,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQ5-Uz-FoP" userLabel="Choice Two">
                                 <rect key="frame" x="445" y="215" width="112" height="122"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="bird"/>
+                                <state key="normal" image="bird-e"/>
                                 <connections>
                                     <action selector="choiceButtons:" destination="8q8-8V-GdK" eventType="touchUpInside" id="68l-Tu-arN"/>
                                 </connections>
@@ -1856,7 +1855,7 @@
                                                     <action selector="toLearnEndingSoundsPage:" destination="KEr-mX-3b2" eventType="touchUpInside" id="eE2-9v-0aW"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cub" translatesAutoresizingMaskIntoConstraints="NO" id="vZe-nv-N4j">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cub-e" translatesAutoresizingMaskIntoConstraints="NO" id="vZe-nv-N4j">
                                                 <rect key="frame" x="108" y="8" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -1874,7 +1873,7 @@
                                                     <action selector="toLearnEndingSoundsPage:" destination="KEr-mX-3b2" eventType="touchUpInside" id="pmb-0B-OAH"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="swim" translatesAutoresizingMaskIntoConstraints="NO" id="pHX-nF-9NL">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="swim-e" translatesAutoresizingMaskIntoConstraints="NO" id="pHX-nF-9NL">
                                                 <rect key="frame" x="348" y="8" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -1892,7 +1891,7 @@
                                                     <action selector="toLearnEndingSoundsPage:" destination="KEr-mX-3b2" eventType="touchUpInside" id="kML-zN-Wt1"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="door" translatesAutoresizingMaskIntoConstraints="NO" id="Guf-fp-NmQ">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="door-e" translatesAutoresizingMaskIntoConstraints="NO" id="Guf-fp-NmQ">
                                                 <rect key="frame" x="588" y="8" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -1910,7 +1909,7 @@
                                                     <action selector="toLearnEndingSoundsPage:" destination="KEr-mX-3b2" eventType="touchUpInside" id="kMS-sx-OCF"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bus" translatesAutoresizingMaskIntoConstraints="NO" id="H9l-f5-HRD">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bus-e" translatesAutoresizingMaskIntoConstraints="NO" id="H9l-f5-HRD">
                                                 <rect key="frame" x="108" y="178" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -1928,7 +1927,7 @@
                                                     <action selector="toLearnEndingSoundsPage:" destination="KEr-mX-3b2" eventType="touchUpInside" id="lng-Zo-Qvn"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="frog" translatesAutoresizingMaskIntoConstraints="NO" id="yUa-PG-W4D">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="frog-e" translatesAutoresizingMaskIntoConstraints="NO" id="yUa-PG-W4D">
                                                 <rect key="frame" x="579" y="178" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -1946,7 +1945,7 @@
                                                     <action selector="toLearnEndingSoundsPage:" destination="KEr-mX-3b2" eventType="touchUpInside" id="Wkr-AU-5Ie"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rain" translatesAutoresizingMaskIntoConstraints="NO" id="BIl-Et-d0J">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rain-e" translatesAutoresizingMaskIntoConstraints="NO" id="BIl-Et-d0J">
                                                 <rect key="frame" x="108" y="348" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -1978,7 +1977,7 @@
                                                     <action selector="toLearnEndingSoundsPage:" destination="KEr-mX-3b2" eventType="touchUpInside" id="o8w-Be-eAU"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="scarf" translatesAutoresizingMaskIntoConstraints="NO" id="xdy-Sf-qlh">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="scarf-e" translatesAutoresizingMaskIntoConstraints="NO" id="xdy-Sf-qlh">
                                                 <rect key="frame" x="588" y="348" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -1996,7 +1995,7 @@
                                                     <action selector="toLearnEndingSoundsPage:" destination="KEr-mX-3b2" eventType="touchUpInside" id="kYc-hK-1DS"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bird" translatesAutoresizingMaskIntoConstraints="NO" id="XvW-pX-r97">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bird-e" translatesAutoresizingMaskIntoConstraints="NO" id="XvW-pX-r97">
                                                 <rect key="frame" x="108" y="518" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -2014,7 +2013,7 @@
                                                     <action selector="toLearnEndingSoundsPage:" destination="KEr-mX-3b2" eventType="touchUpInside" id="4Qy-yX-mgJ"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="owl" translatesAutoresizingMaskIntoConstraints="NO" id="w7f-ud-vjv">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="owl-e" translatesAutoresizingMaskIntoConstraints="NO" id="w7f-ud-vjv">
                                                 <rect key="frame" x="348" y="518" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -2032,7 +2031,7 @@
                                                     <action selector="toLearnEndingSoundsPage:" destination="KEr-mX-3b2" eventType="touchUpInside" id="b0d-sg-g7O"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="elk" translatesAutoresizingMaskIntoConstraints="NO" id="xUS-IJ-Gj9">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="elk-e" translatesAutoresizingMaskIntoConstraints="NO" id="xUS-IJ-Gj9">
                                                 <rect key="frame" x="588" y="518" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -2064,11 +2063,11 @@
                                                     <action selector="toLearnEndingSoundsPage:" destination="KEr-mX-3b2" eventType="touchUpInside" id="yTP-ws-Hct"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fox" translatesAutoresizingMaskIntoConstraints="NO" id="7ee-ns-JrH">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fox-e" translatesAutoresizingMaskIntoConstraints="NO" id="7ee-ns-JrH">
                                                 <rect key="frame" x="348" y="688" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="quiz1" translatesAutoresizingMaskIntoConstraints="NO" id="rPF-ZA-WSO">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="quiz-e" translatesAutoresizingMaskIntoConstraints="NO" id="rPF-ZA-WSO">
                                                 <rect key="frame" x="108" y="688" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -2121,11 +2120,11 @@
                                             <constraint firstItem="gMo-xM-5WN" firstAttribute="top" secondItem="bLe-nj-Tad" secondAttribute="bottom" constant="26" id="x6i-f1-lU3"/>
                                         </constraints>
                                     </view>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="drop" translatesAutoresizingMaskIntoConstraints="NO" id="GRq-hq-j1R">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="drop-e" translatesAutoresizingMaskIntoConstraints="NO" id="GRq-hq-j1R">
                                         <rect key="frame" x="353" y="348" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="net" translatesAutoresizingMaskIntoConstraints="NO" id="GuY-Pu-TOx">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="net-e" translatesAutoresizingMaskIntoConstraints="NO" id="GuY-Pu-TOx">
                                         <rect key="frame" x="353" y="185" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -2183,29 +2182,30 @@
         <image name="EndingSoundsTitle" width="954" height="172"/>
         <image name="back" width="56" height="56"/>
         <image name="bank" width="56" height="56"/>
-        <image name="bird" width="400" height="400"/>
+        <image name="bird-e" width="400" height="400"/>
         <image name="bug" width="474" height="370"/>
-        <image name="bus" width="400" height="400"/>
-        <image name="cobweb" width="400" height="400"/>
-        <image name="crab" width="400" height="400"/>
+        <image name="bus-e" width="400" height="400"/>
+        <image name="cobweb-e" width="400" height="400"/>
+        <image name="crab-e" width="400" height="400"/>
         <image name="cub" width="400" height="400"/>
-        <image name="door" width="400" height="400"/>
-        <image name="drop" width="400" height="400"/>
-        <image name="elk" width="400" height="400"/>
+        <image name="cub-e" width="400" height="400"/>
+        <image name="door-e" width="400" height="400"/>
+        <image name="drop-e" width="400" height="400"/>
+        <image name="elk-e" width="400" height="400"/>
         <image name="forward" width="56" height="56"/>
-        <image name="fox" width="554" height="464"/>
-        <image name="frog" width="400" height="400"/>
+        <image name="fox-e" width="400" height="400"/>
+        <image name="frog-e" width="400" height="400"/>
         <image name="home" width="56" height="56"/>
         <image name="level_button_0_star" width="549" height="444"/>
-        <image name="net" width="400" height="400"/>
-        <image name="owl" width="526" height="480"/>
+        <image name="net-e" width="400" height="400"/>
+        <image name="owl-e" width="526" height="480"/>
         <image name="puzzle" width="56" height="56"/>
         <image name="quiz" width="56" height="56"/>
-        <image name="quiz1" width="400" height="400"/>
-        <image name="rain" width="400" height="400"/>
+        <image name="quiz-e" width="400" height="400"/>
+        <image name="rain-e" width="400" height="400"/>
         <image name="repeat" width="56" height="56"/>
-        <image name="scarf" width="400" height="400"/>
-        <image name="swim" width="400" height="400"/>
+        <image name="scarf-e" width="400" height="400"/>
+        <image name="swim-e" width="400" height="400"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

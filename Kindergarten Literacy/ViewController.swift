@@ -154,6 +154,9 @@ class ViewController: UIViewController {
                                "z": 0]
         UserDefaults.standard.set(endingSoundsStarCount, forKey: "endingSoundsStarCount")
         
+        let endingSoundsPuzzleProgress = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+        UserDefaults.standard.set(VowelPuzzleProgress, forKey: "endingSoundsPuzzleProgress")
+        
         // add your save data above //
         
     }

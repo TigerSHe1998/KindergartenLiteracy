@@ -15,7 +15,6 @@ import SwiftUI
 
 class VowelQuizViewController: UIViewController {
     
-    // var VowelPuzzleProgress = [1, 1, 1, 1, 1, 1, 1]
     
     var images = ["bat", "cat", "ax", "ball", "fall", "swan", "elf", "bed", "net", "mittens", "hit", "fish", "taxi", "yeti", "skis", "fox","pot", "hot","bug","bus","cut"]
     
@@ -319,10 +318,9 @@ class VowelQuizViewController: UIViewController {
     
     func completePuzzle(imageOne: String, imageTwo: String, imageThree: String, imageFour: String, imageFive: String, imageSix: String, imageSeven: String, imageEight: String, imageNine: String, imageTen: String, imageEleven: String, imageTwelve: String) {
         
-        var saveFile = UserDefaults.standard.array(forKey: "VowelPuzzleProgress")
+        let saveFile = UserDefaults.standard.array(forKey: "VowelPuzzleProgress")
         
-        //var currScore:Int = saveFile![currentLetter] as! Int
-        var progressScore:Int = saveFile![0] as! Int
+        let progressScore:Int = saveFile![0] as! Int
         
         UserDefaults.standard.set(saveFile, forKey: "VowelPuzzleProgress")
         

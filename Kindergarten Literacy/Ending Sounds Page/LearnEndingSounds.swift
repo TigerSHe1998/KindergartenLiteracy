@@ -85,33 +85,33 @@ class LearnEndingSounds: UIViewController {
     func showPictures(letter: String) {
         switch letter {
         case "b","B":
-            showPicturesForLetter(firstPic: "cub", secondPic: "crab", thirdPic: "cobweb")
+            showPicturesForLetter(firstPic: "cub-e", secondPic: "crab-e", thirdPic: "cobweb-e")
         case "d","D":
-            showPicturesForLetter(firstPic: "bird", secondPic: "cold", thirdPic: "friend")
+            showPicturesForLetter(firstPic: "bird-e", secondPic: "cold-e", thirdPic: "friend-e")
         case "f","F":
-            showPicturesForLetter(firstPic: "scarf", secondPic: "thief", thirdPic: "chef")
+            showPicturesForLetter(firstPic: "scarf-e", secondPic: "thief-e", thirdPic: "chef-e")
         case "g","G":
-            showPicturesForLetter(firstPic: "frog", secondPic: "plug", thirdPic: "bug")
+            showPicturesForLetter(firstPic: "frog-e", secondPic: "plug-e", thirdPic: "bug-e")
         case "k","K":
-            showPicturesForLetter(firstPic: "elk", secondPic: "pick", thirdPic: "shark")
+            showPicturesForLetter(firstPic: "elk-e", secondPic: "pick-e", thirdPic: "shark-e")
         case "l","L":
-            showPicturesForLetter(firstPic: "owl", secondPic: "goal", thirdPic: "sail")
+            showPicturesForLetter(firstPic: "owl-e", secondPic: "goal-e", thirdPic: "sail-e")
         case "m","M":
-            showPicturesForLetter(firstPic: "swim", secondPic: "clam", thirdPic: "storm")
+            showPicturesForLetter(firstPic: "swim-e", secondPic: "clam-e", thirdPic: "storm-e")
         case "n","N":
-            showPicturesForLetter(firstPic: "rain", secondPic: "van", thirdPic: "fin")
+            showPicturesForLetter(firstPic: "rain-e", secondPic: "van-e", thirdPic: "fin-e")
         case "p","P":
-            showPicturesForLetter(firstPic: "drop", secondPic: "soap", thirdPic: "jeep")
+            showPicturesForLetter(firstPic: "drop-e", secondPic: "soap-e", thirdPic: "jeep-e")
         case "r","R":
-            showPicturesForLetter(firstPic: "door", secondPic: "tiger", thirdPic: "polar bear")
+            showPicturesForLetter(firstPic: "door-e", secondPic: "tiger-e", thirdPic: "polar bear-e")
         case "s","S":
-            showPicturesForLetter(firstPic: "bus", secondPic: "dress", thirdPic: "grapes")
+            showPicturesForLetter(firstPic: "bus-e", secondPic: "dress-e", thirdPic: "grapes-e")
         case "t","T":
-            showPicturesForLetter(firstPic: "net", secondPic: "paint", thirdPic: "tent")
+            showPicturesForLetter(firstPic: "net-e", secondPic: "paint-e", thirdPic: "tent-e")
         case "x","X":
-            showPicturesForLetter(firstPic: "fox", secondPic: "ax", thirdPic: "six")
+            showPicturesForLetter(firstPic: "fox-e", secondPic: "ax-e", thirdPic: "six-e")
         case "z","Z":
-            showPicturesForLetter(firstPic: "quiz1", secondPic: "prize", thirdPic: "freeze")
+            showPicturesForLetter(firstPic: "quiz-e", secondPic: "prize-e", thirdPic: "freeze-e")
         default:
             break
         }

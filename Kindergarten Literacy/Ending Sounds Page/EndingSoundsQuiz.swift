@@ -9,14 +9,14 @@ import UIKit
 import AVFoundation
 import SwiftUI
 
-var endingSoundsPuzzleProgress = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
 
 class EndingSoundsQuiz: UIViewController {
     
-    var images = ["cub", "crab", "cobweb", "bird", "cold", "friend", "scarf", "thief", "chef", "frog", "plug", "bug",
-                    "elk", "pick", "shark", "owl", "goal", "sail", "swim", "clam", "storm", "rain", "van", "fin",
-                    "drop", "soap", "jeep", "door", "tiger", "polar bear", "bus", "dress", "grapes", "net", "paint",
-                    "tent", "fox", "ax", "six", "quiz1", "prize", "freeze"]
+    var images = ["cub-e", "crab-e", "cobweb-e", "bird-e", "cold-e", "friend-e", "scarf-e", "thief-e", "chef-e", "frog-e", "plug-e", "bug-e",
+                    "elk-e", "pick-e", "shark-e", "owl-e", "goal-e", "sail-e", "swim-e", "clam-e", "storm-e", "rain-e", "van-e", "fin-e",
+                    "drop-e", "soap-e", "jeep-e", "door-e", "tiger-e", "polar-bear-e", "bus-e", "dress-e", "grapes-e", "net-e", "paint-e",
+                    "tent-e", "fox-e", "ax-e", "six-e", "quiz-e", "prize-e", "freeze-e"]
     
     var puzzleOne: UIImageView!
     var puzzleTwo: UIImageView!
@@ -348,27 +348,33 @@ class EndingSoundsQuiz: UIViewController {
     }
     
     func completePuzzle(imageOne: String, imageTwo: String, imageThree: String, imageFour: String, imageFive: String, imageSix: String, imageSeven: String, imageEight: String, imageNine: String, imageTen: String, imageEleven: String, imageTwelve: String) {
-        if endingSoundsPuzzleProgress[0] > 1 {
+        let saveFile = UserDefaults.standard.array(forKey: "endingSoundsPuzzleProgress")
+        
+        let progress:Int = saveFile![0] as! Int
+        
+        UserDefaults.standard.set(saveFile, forKey: "endingSoundsPuzzleProgress")
+        
+        if progress > 1 {
             puzzleFive.image = UIImage(named: imageFive)
             puzzleNine.image = UIImage(named: imageNine)
         }
-        if endingSoundsPuzzleProgress[0] > 2 {
+        if progress > 2 {
             puzzleSeven.image = UIImage(named: imageSeven)
             puzzleTen.image = UIImage(named: imageTen)
         }
-        if endingSoundsPuzzleProgress[0] > 3 {
+        if progress > 3 {
             puzzleSix.image = UIImage(named: imageSix)
             puzzleTwelve.image = UIImage(named: imageTwelve)
         }
-        if endingSoundsPuzzleProgress[0] > 4 {
+        if progress > 4 {
             puzzleEight.image = UIImage(named: imageEight)
             puzzleEleven.image = UIImage(named: imageEleven)
         }
-        if endingSoundsPuzzleProgress[0] > 5 {
+        if progress > 5 {
             puzzleTwo.image = UIImage(named: imageTwo)
             puzzleThree.image = UIImage(named: imageThree)
         }
-        if endingSoundsPuzzleProgress[0] > 6 {
+        if progress > 6 {
             puzzleOne.image = UIImage(named: imageOne)
             puzzleFour.image = UIImage(named: imageFour)
         }
