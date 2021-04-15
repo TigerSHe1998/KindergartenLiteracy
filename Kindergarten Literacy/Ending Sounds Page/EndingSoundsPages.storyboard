@@ -1609,9 +1609,9 @@
                             <constraint firstItem="LAM-c8-OBl" firstAttribute="centerY" secondItem="1BW-ek-Ydi" secondAttribute="centerY" id="2Ge-nT-xRF"/>
                             <constraint firstItem="LAM-c8-OBl" firstAttribute="leading" secondItem="NWO-8o-jle" secondAttribute="leading" constant="16" id="2QQ-2x-agb"/>
                             <constraint firstAttribute="bottom" secondItem="2zh-u4-tUW" secondAttribute="bottom" constant="8" id="9yl-wR-iBW"/>
+                            <constraint firstItem="LAM-c8-OBl" firstAttribute="centerY" secondItem="2zh-u4-tUW" secondAttribute="centerY" id="Mzm-8w-8iP"/>
                             <constraint firstItem="NWO-8o-jle" firstAttribute="trailing" secondItem="2zh-u4-tUW" secondAttribute="trailing" constant="44" id="jbT-qj-51P"/>
                             <constraint firstItem="2zh-u4-tUW" firstAttribute="centerY" secondItem="1BW-ek-Ydi" secondAttribute="centerY" id="lsr-xb-fDu"/>
-                            <constraint firstItem="LAM-c8-OBl" firstAttribute="centerY" secondItem="2zh-u4-tUW" secondAttribute="centerY" id="tYU-kf-uY2"/>
                         </constraints>
                     </view>
                     <connections>
@@ -1637,8 +1637,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LIT-Dv-wQ0" userLabel="Letter Button">
-                                <rect key="frame" x="240" y="8" width="45" height="126"/>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="80"/>
+                                <rect key="frame" x="240" y="0.0" width="40" height="112"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="70"/>
                                 <state key="normal" title="b">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -1737,9 +1737,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="OhN-sI-Awh" firstAttribute="centerY" secondItem="ASv-7Q-CWV" secondAttribute="centerY" id="28g-c4-nZT"/>
-                            <constraint firstItem="LIT-Dv-wQ0" firstAttribute="top" secondItem="rkX-rC-9oy" secondAttribute="top" constant="8" id="H5o-Q5-ZkL"/>
                             <constraint firstItem="OhN-sI-Awh" firstAttribute="leading" secondItem="rkX-rC-9oy" secondAttribute="leading" constant="16" id="Q7H-vX-pz1"/>
                             <constraint firstItem="LIT-Dv-wQ0" firstAttribute="leading" secondItem="OhN-sI-Awh" secondAttribute="trailing" constant="140" id="cei-rz-dG9"/>
+                            <constraint firstItem="LIT-Dv-wQ0" firstAttribute="top" secondItem="rkX-rC-9oy" secondAttribute="top" id="zHK-pk-TBs"/>
                         </constraints>
                     </view>
                     <connections>

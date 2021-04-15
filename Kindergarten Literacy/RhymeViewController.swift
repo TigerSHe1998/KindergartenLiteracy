@@ -55,7 +55,7 @@ class RhymeViewController: UIViewController {
                         rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:2,length:1))
                     rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:8,length:1))
                         rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:12,length:1))
-                        rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:33,length:1))
+                        rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:32,length:1))
                     rhymeLabel.attributedText = rhyme
                 }
             case "c", "C":
@@ -65,7 +65,7 @@ class RhymeViewController: UIViewController {
                     configure(puzzleImage: "puzzle-D-duh-begin-composite", rhymeAudio: "puzzle-D-duh-begin-rhyme")
                 } else if letterCategory == "end" {
                     configure(puzzleImage: "puzzle-D-duh-end-composite", rhymeAudio: "puzzle-D-duh-end-rhyme")
-                    let rhyme = NSMutableAttributedString(string: "Peter, Peter, pumpkin eater,\nHad a wife and couldn’t keep her,\nHe put her in a pumpkin shell,\nAnd then he kept her very well.\nPeter, Peter, pumpkin eater,\nHad another, and didn’t love her,\nPeter learned to read and spell,\nAnd then he loved her very well.", attributes: [NSAttributedString.Key.font :UIFont(name: "Helvetica", size: 16.0)!])
+                    let rhyme = NSMutableAttributedString(string: "Peter, Peter, pumpkin eater,\nHad a wife and couldn’t keep her,\nHe put her in a pumpkin shell,\nAnd then he kept her very well.\n\nPeter, Peter, pumpkin eater,\nHad another, and didn’t love her,\nPeter learned to read and spell,\nAnd then he loved her very well.", attributes: [NSAttributedString.Key.font :UIFont(name: "Helvetica", size: 16.0)!])
                     rhyme.addAttribute(.paragraphStyle, value: style, range: NSRange(location: 0, length: rhyme.length))
                     rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:31,length:1))
                     rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:158,length:1))
@@ -150,6 +150,7 @@ class RhymeViewController: UIViewController {
                     rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:146,length:1))
                     rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:166,length:1))
                     rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:283,length:1))
+                    rhymeLabel.attributedText = rhyme
                 }
             case "n", "N":
                 if letterCategory == "begin" {

@@ -43,10 +43,6 @@ class EndingSoundsOne: UIViewController {
     }
     
     
-    
-
-    
-    
     // reference to different storyboards
     let endingSoundsStoryBoard:UIStoryboard = UIStoryboard(name: "EndingSoundsPages", bundle:nil)
     let mainStoryBoard:UIStoryboard = UIStoryboard(name: "Main", bundle:nil)

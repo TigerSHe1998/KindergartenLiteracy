@@ -18,18 +18,19 @@ class EndingSoundsQuiz: UIViewController {
                     "drop-e", "soap-e", "jeep-e", "door-e", "tiger-e", "polar-bear-e", "bus-e", "dress-e", "grapes-e", "net-e", "paint-e",
                     "tent-e", "fox-e", "ax-e", "six-e", "quiz-e", "prize-e", "freeze-e"]
     
-    var puzzleOne: UIImageView!
-    var puzzleTwo: UIImageView!
-    var puzzleThree: UIImageView!
-    var puzzleFour: UIImageView!
-    var puzzleFive: UIImageView!
-    var puzzleSix: UIImageView!
-    var puzzleSeven: UIImageView!
-    var puzzleEight: UIImageView!
-    var puzzleNine: UIImageView!
-    var puzzleTen: UIImageView!
-    var puzzleEleven: UIImageView!
-    var puzzleTwelve: UIImageView!
+    var puzzleOne: UIButton!
+    var puzzleTwo: UIButton!
+    var puzzleThree: UIButton!
+    var puzzleFour: UIButton!
+    var puzzleFive: UIButton!
+    var puzzleSix: UIButton!
+    var puzzleSeven: UIButton!
+    var puzzleEight: UIButton!
+    var puzzleNine: UIButton!
+    var puzzleTen: UIButton!
+    var puzzleEleven: UIButton!
+    var puzzleTwelve: UIButton!
+    
     
     //passed in argument from level select page
     var passedInLetter: String!
@@ -63,30 +64,31 @@ class EndingSoundsQuiz: UIViewController {
         super.viewDidLoad()
         letterButton.setTitle(passedInLetter, for: .normal)
         
-        puzzleOne = UIImageView(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
+        puzzleOne = UIButton(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
         self.view.addSubview(puzzleOne)
-        puzzleTwo = UIImageView(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
+        puzzleTwo = UIButton(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
         self.view.insertSubview(puzzleTwo, belowSubview: puzzleOne)
-        puzzleThree = UIImageView(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
+        puzzleThree = UIButton(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
         self.view.insertSubview(puzzleThree, belowSubview: puzzleTwo)
-        puzzleFour = UIImageView(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
+        puzzleFour = UIButton(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
         self.view.insertSubview(puzzleFour, belowSubview: puzzleThree)
-        puzzleFive = UIImageView(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
+        puzzleFive = UIButton(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
         self.view.insertSubview(puzzleFive, belowSubview: puzzleFour)
-        puzzleSix = UIImageView(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
+        puzzleSix = UIButton(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
         self.view.insertSubview(puzzleSix, belowSubview: puzzleFive)
-        puzzleSeven = UIImageView(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
+        puzzleSeven = UIButton(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
         self.view.insertSubview(puzzleSeven, belowSubview: puzzleSix)
-        puzzleEight = UIImageView(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
+        puzzleEight = UIButton(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
         self.view.insertSubview(puzzleEight, belowSubview: puzzleSeven)
-        puzzleNine = UIImageView(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
+        puzzleNine = UIButton(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
         self.view.insertSubview(puzzleNine, belowSubview: puzzleEight)
-        puzzleTen = UIImageView(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
+        puzzleTen = UIButton(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
         self.view.insertSubview(puzzleTen, belowSubview: puzzleNine)
-        puzzleEleven = UIImageView(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
+        puzzleEleven = UIButton(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
         self.view.insertSubview(puzzleEleven, belowSubview: puzzleTen)
-        puzzleTwelve = UIImageView(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
+        puzzleTwelve = UIButton(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
         self.view.insertSubview(puzzleTwelve, belowSubview: puzzleEleven)
+        
         
         currentArray = passedInArray
         currentLetter = passedInLetter
@@ -175,7 +177,7 @@ class EndingSoundsQuiz: UIViewController {
         case "g","G":
             completePuzzle(imageOne: "puzzle-G-guh-end-row0-col0", imageTwo: "puzzle-G-guh-end-row0-col1", imageThree: "puzzle-G-guh-end-row0-col2", imageFour: "puzzle-G-guh-end-row1-col0", imageFive: "puzzle-G-guh-end-row1-col1", imageSix: "puzzle-G-guh-end-row1-col2", imageSeven: "puzzle-G-guh-end-row2-col0", imageEight: "puzzle-G-guh-end-row2-col1", imageNine: "puzzle-G-guh-end-row2-col2", imageTen: "puzzle-G-guh-end-row3-col0", imageEleven: "puzzle-G-guh-end-row3-col1", imageTwelve: "puzzle-G-guh-end-row3-col2")
         case "k","K":
-            completePuzzle(imageOne: "puzzle-K-kuh-end-row0-col1", imageTwo: "puzzle-K-kuh-end-row0-col1", imageThree: "puzzle-K-kuh-end-row0-col2", imageFour: "puzzle-K-kuh-end-row1-col0", imageFive: "puzzle-K-kuh-end-row1-col1", imageSix: "puzzle-K-kuh-end-row1-col2", imageSeven: "puzzle-K-kuh-end-row2-col0", imageEight: "puzzle-K-kuh-end-row2-col1", imageNine: "puzzle-K-kuh-end-row2-col2", imageTen: "puzzle-K-kuh-end-row3-col0", imageEleven: "puzzle-K-kuh-end-row3-col1", imageTwelve: "puzzle-K-kuh-end-row3-col2")
+            completePuzzle(imageOne: "puzzle-K-kuh-end-row0-col0", imageTwo: "puzzle-K-kuh-end-row0-col1", imageThree: "puzzle-K-kuh-end-row0-col2", imageFour: "puzzle-K-kuh-end-row1-col0", imageFive: "puzzle-K-kuh-end-row1-col1", imageSix: "puzzle-K-kuh-end-row1-col2", imageSeven: "puzzle-K-kuh-end-row2-col0", imageEight: "puzzle-K-kuh-end-row2-col1", imageNine: "puzzle-K-kuh-end-row2-col2", imageTen: "puzzle-K-kuh-end-row3-col0", imageEleven: "puzzle-K-kuh-end-row3-col1", imageTwelve: "puzzle-K-kuh-end-row3-col2")
         case "l","L":
             completePuzzle(imageOne: "puzzle-L-lll-end-row0-col0", imageTwo: "puzzle-L-lll-end-row0-col1", imageThree: "puzzle-L-lll-end-row0-col2", imageFour: "puzzle-L-lll-end-row1-col0", imageFive: "puzzle-L-lll-end-row1-col1", imageSix: "puzzle-L-lll-end-row1-col2", imageSeven: "puzzle-L-lll-end-row2-col0", imageEight: "puzzle-L-lll-end-row2-col1", imageNine: "puzzle-L-lll-end-row2-col2", imageTen: "puzzle-L-lll-end-row3-col0", imageEleven: "puzzle-L-lll-end-row3-col1", imageTwelve: "puzzle-L-lll-end-row3-col2")
         case "m","M":
@@ -281,7 +283,7 @@ class EndingSoundsQuiz: UIViewController {
         case "g","G":
             correctButtonTapped(imageOne: "puzzle-G-guh-end-row0-col0", imageTwo: "puzzle-G-guh-end-row0-col1", imageThree: "puzzle-G-guh-end-row0-col2", imageFour: "puzzle-G-guh-end-row1-col0", imageFive: "puzzle-G-guh-end-row1-col1", imageSix: "puzzle-G-guh-end-row1-col2", imageSeven: "puzzle-G-guh-end-row2-col0", imageEight: "puzzle-G-guh-end-row2-col1", imageNine: "puzzle-G-guh-end-row2-col2", imageTen: "puzzle-G-guh-end-row3-col0", imageEleven: "puzzle-G-guh-end-row3-col1", imageTwelve: "puzzle-G-guh-end-row3-col2")
         case "k","K":
-            correctButtonTapped(imageOne: "puzzle-K-kuh-end-row0-col1", imageTwo: "puzzle-K-kuh-end-row0-col1", imageThree: "puzzle-K-kuh-end-row0-col2", imageFour: "puzzle-K-kuh-end-row1-col0", imageFive: "puzzle-K-kuh-end-row1-col1", imageSix: "puzzle-K-kuh-end-row1-col2", imageSeven: "puzzle-K-kuh-end-row2-col0", imageEight: "puzzle-K-kuh-end-row2-col1", imageNine: "puzzle-K-kuh-end-row2-col2", imageTen: "puzzle-K-kuh-end-row3-col0", imageEleven: "puzzle-K-kuh-end-row3-col1", imageTwelve: "puzzle-K-kuh-end-row3-col2")
+            correctButtonTapped(imageOne: "puzzle-K-kuh-end-row0-col0", imageTwo: "puzzle-K-kuh-end-row0-col1", imageThree: "puzzle-K-kuh-end-row0-col2", imageFour: "puzzle-K-kuh-end-row1-col0", imageFive: "puzzle-K-kuh-end-row1-col1", imageSix: "puzzle-K-kuh-end-row1-col2", imageSeven: "puzzle-K-kuh-end-row2-col0", imageEight: "puzzle-K-kuh-end-row2-col1", imageNine: "puzzle-K-kuh-end-row2-col2", imageTen: "puzzle-K-kuh-end-row3-col0", imageEleven: "puzzle-K-kuh-end-row3-col1", imageTwelve: "puzzle-K-kuh-end-row3-col2")
         case "l","L":
             correctButtonTapped(imageOne: "puzzle-L-lll-end-row0-col0", imageTwo: "puzzle-L-lll-end-row0-col1", imageThree: "puzzle-L-lll-end-row0-col2", imageFour: "puzzle-L-lll-end-row1-col0", imageFive: "puzzle-L-lll-end-row1-col1", imageSix: "puzzle-L-lll-end-row1-col2", imageSeven: "puzzle-L-lll-end-row2-col0", imageEight: "puzzle-L-lll-end-row2-col1", imageNine: "puzzle-L-lll-end-row2-col2", imageTen: "puzzle-L-lll-end-row3-col0", imageEleven: "puzzle-L-lll-end-row3-col1", imageTwelve: "puzzle-L-lll-end-row3-col2")
         case "m","M":
@@ -311,40 +313,41 @@ class EndingSoundsQuiz: UIViewController {
         var progress:Int = saveFile![currentLetter.lowercased()] as! Int
         
         if progress == 1 {
-            puzzleFive.image = UIImage(named: imageFive)
-            puzzleNine.image = UIImage(named: imageNine)
-            self.animate(myview: puzzleFive)
-            self.animate(myview: puzzleNine)
+            puzzleFive.setImage(UIImage(named: imageFive), for: .normal)
+            puzzleNine.setImage(UIImage(named: imageNine), for: .normal)
+            self.animate(mybutton: puzzleFive)
+            self.animate(mybutton: puzzleNine)
         }
         if progress == 2 {
-            puzzleSeven.image = UIImage(named: imageSeven)
-            puzzleTen.image = UIImage(named: imageTen)
-            self.animate(myview: puzzleSeven)
-            self.animate(myview: puzzleTen)
+            puzzleSeven.setImage(UIImage(named: imageSeven), for: .normal)
+            puzzleTen.setImage(UIImage(named: imageTen), for: .normal)
+            self.animate(mybutton: puzzleSeven)
+            self.animate(mybutton: puzzleTen)
         }
         if progress == 3 {
-            puzzleSix.image = UIImage(named: imageSix)
-            puzzleTwelve.image = UIImage(named: imageTwelve)
-            self.animate(myview: puzzleSix)
-            self.animate(myview: puzzleTwelve)
+            puzzleSix.setImage(UIImage(named: imageSix), for: .normal)
+            puzzleTwelve.setImage(UIImage(named: imageTwelve), for: .normal)
+            self.animate(mybutton: puzzleSix)
+            self.animate(mybutton: puzzleTwelve)
         }
         if progress == 4 {
-            puzzleEight.image = UIImage(named: imageEight)
-            puzzleEleven.image = UIImage(named: imageEleven)
-            self.animate(myview: puzzleEight)
-            self.animate(myview: puzzleEleven)
+            puzzleEight.setImage(UIImage(named: imageEight), for: .normal)
+            puzzleEleven.setImage(UIImage(named: imageEleven), for: .normal)
+            self.animate(mybutton: puzzleEight)
+            self.animate(mybutton: puzzleEleven)
         }
         if progress == 5 {
-            puzzleTwo.image = UIImage(named: imageTwo)
-            puzzleThree.image = UIImage(named: imageThree)
-            self.animate(myview: puzzleTwo)
-            self.animate(myview: puzzleThree)
+            puzzleTwo.setImage(UIImage(named: imageTwo), for: .normal)
+            puzzleThree.setImage(UIImage(named: imageThree), for: .normal)
+            self.animate(mybutton: puzzleTwo)
+            self.animate(mybutton: puzzleThree)
         }
         if progress == 6 {
-            puzzleOne.image = UIImage(named: imageOne)
-            puzzleFour.image = UIImage(named: imageFour)
-            self.animate(myview: puzzleOne)
-            self.animate(myview: puzzleFour)
+            puzzleOne.setImage(UIImage(named: imageOne), for: .normal)
+            puzzleFour.setImage(UIImage(named: imageFour), for: .normal)
+            self.animate(mybutton: puzzleOne)
+            self.animate(mybutton: puzzleFour)
+            puzzleOne.addTarget(self, action: #selector(self.puzzleTapped), for: .touchUpInside)
             let vc = mainStoryBoard.instantiateViewController(identifier: "rhyme_vc") as! RhymeViewController
             vc.passedInLetter = currentLetter
             vc.letterCategory = "end"
@@ -358,39 +361,50 @@ class EndingSoundsQuiz: UIViewController {
         UserDefaults.standard.set(saveFile, forKey: "endingSoundsPuzzleProgress")
     }
     
+    
     func completePuzzle(imageOne: String, imageTwo: String, imageThree: String, imageFour: String, imageFive: String, imageSix: String, imageSeven: String, imageEight: String, imageNine: String, imageTen: String, imageEleven: String, imageTwelve: String) {
         let saveFile = UserDefaults.standard.dictionary(forKey: "endingSoundsPuzzleProgress")
-        
+
         let progress:Int = saveFile![currentLetter.lowercased()] as! Int
-        
+
         UserDefaults.standard.set(saveFile, forKey: "endingSoundsPuzzleProgress")
-        
+
         if progress > 1 {
-            puzzleFive.image = UIImage(named: imageFive)
-            puzzleNine.image = UIImage(named: imageNine)
+            puzzleFive.setImage(UIImage(named: imageFive), for: .normal)
+            puzzleNine.setImage(UIImage(named: imageNine), for: .normal)
         }
         if progress > 2 {
-            puzzleSeven.image = UIImage(named: imageSeven)
-            puzzleTen.image = UIImage(named: imageTen)
+            puzzleSeven.setImage(UIImage(named: imageSeven), for: .normal)
+            puzzleTen.setImage(UIImage(named: imageTen), for: .normal)
         }
         if progress > 3 {
-            puzzleSix.image = UIImage(named: imageSix)
-            puzzleTwelve.image = UIImage(named: imageTwelve)
+            puzzleSix.setImage(UIImage(named: imageSix), for: .normal)
+            puzzleTwelve.setImage(UIImage(named: imageTwelve), for: .normal)
         }
         if progress > 4 {
-            puzzleEight.image = UIImage(named: imageEight)
-            puzzleEleven.image = UIImage(named: imageEleven)
+            puzzleEight.setImage(UIImage(named: imageEight), for: .normal)
+            puzzleEleven.setImage(UIImage(named: imageEleven), for: .normal)
         }
         if progress > 5 {
-            puzzleTwo.image = UIImage(named: imageTwo)
-            puzzleThree.image = UIImage(named: imageThree)
+            puzzleTwo.setImage(UIImage(named: imageTwo), for: .normal)
+            puzzleThree.setImage(UIImage(named: imageThree), for: .normal)
         }
         if progress > 6 {
-            puzzleOne.image = UIImage(named: imageOne)
-            puzzleFour.image = UIImage(named: imageFour)
-        }
+            puzzleOne.setImage(UIImage(named: imageOne), for: .normal)
+            puzzleFour.setImage(UIImage(named: imageFour), for: .normal)
             
+            puzzleOne.addTarget(self, action: #selector(self.puzzleTapped), for: .touchUpInside)
+        }
+
     }
+    
+    @objc func puzzleTapped(sender: UIButton) {
+        let vc = mainStoryBoard.instantiateViewController(identifier: "rhyme_vc") as! RhymeViewController
+        vc.passedInLetter = currentLetter
+        vc.letterCategory = "end"
+        present(vc, animated: true)
+    }
+    
     
     func getRandomChoices(firstPic: Int, secondPic: Int, thirdPic: Int) {
         let correct = Int.random(in: firstPic..<(thirdPic + 1))
@@ -410,15 +424,13 @@ class EndingSoundsQuiz: UIViewController {
         playIndividualLetterAudio(letter: letterButton.currentTitle!)
     }
     
-    func animate(myview: UIImageView) {
-        UIImageView.animate(withDuration: 1, animations: {
-            myview.frame = CGRect(x: 150, y: 110, width: 230, height: 270)
-            myview.center = myview.center
+    func animate(mybutton: UIButton) {
+        UIView.animate(withDuration: 1.0, animations:{
+            mybutton.frame = CGRect(x: mybutton.frame.origin.x, y: mybutton.frame.origin.y - 5, width: mybutton.frame.size.width, height: mybutton.frame.size.height)
         }, completion: {done in
             if done {
-                UIImageView.animate(withDuration: 1, animations: {
-                    myview.frame = CGRect(x: 150, y: 110, width: 220, height: 260)
-                    myview.center = myview.center
+                UIView.animate(withDuration: 1.0, animations:{
+                    mybutton.frame = CGRect(x: mybutton.frame.origin.x, y: mybutton.frame.origin.y + 5, width: mybutton.frame.size.width, height: mybutton.frame.size.height)
                 }, completion:  {done in
                     if done {
                     }

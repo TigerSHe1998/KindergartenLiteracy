@@ -972,22 +972,31 @@
                                     <constraint firstAttribute="height" constant="338" id="leD-W3-Kcn"/>
                                 </constraints>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="puzzle-A-short-composite" translatesAutoresizingMaskIntoConstraints="NO" id="xaq-E1-Xvz" userLabel="Complete Puzzle">
-                                <rect key="frame" x="120" y="45" width="240" height="300"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LJm-5b-egv" userLabel="Rhyme">
-                                <rect key="frame" x="368" y="45" width="416" height="300"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LJm-5b-egv" userLabel="Rhyme">
+                                <rect key="frame" x="415" y="45" width="369" height="300"/>
                                 <attributedString key="attributedText"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="puzzle-A-short-composite" translatesAutoresizingMaskIntoConstraints="NO" id="xaq-E1-Xvz" userLabel="Complete Puzzle">
+                                <rect key="frame" x="167" y="45" width="240" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="GMO-7j-isr"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xOX-Kw-qFL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="xaq-E1-Xvz" firstAttribute="top" secondItem="LJm-5b-egv" secondAttribute="top" id="4NR-Xa-bVP"/>
+                            <constraint firstItem="LJm-5b-egv" firstAttribute="leading" secondItem="xaq-E1-Xvz" secondAttribute="trailing" constant="8" id="GvN-l0-dY1"/>
+                            <constraint firstItem="xOX-Kw-qFL" firstAttribute="trailing" secondItem="LJm-5b-egv" secondAttribute="trailing" constant="16" id="XsT-MS-Ayn"/>
+                            <constraint firstItem="xaq-E1-Xvz" firstAttribute="bottom" secondItem="LJm-5b-egv" secondAttribute="bottom" id="YO4-G1-W3W"/>
+                            <constraint firstItem="LJm-5b-egv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="xaq-E1-Xvz" secondAttribute="trailing" constant="8" symbolic="YES" id="fVU-1C-PgA"/>
+                            <constraint firstItem="xaq-E1-Xvz" firstAttribute="leading" secondItem="NSu-Ne-Ds0" secondAttribute="trailing" constant="83" id="hdU-s5-NxN"/>
+                            <constraint firstItem="xaq-E1-Xvz" firstAttribute="top" secondItem="xOX-Kw-qFL" secondAttribute="top" constant="45" id="jOl-9X-M1J"/>
                             <constraint firstItem="NSu-Ne-Ds0" firstAttribute="leading" secondItem="xOX-Kw-qFL" secondAttribute="leading" id="kHU-Ux-oZS"/>
                             <constraint firstItem="NSu-Ne-Ds0" firstAttribute="top" secondItem="Tnf-aZ-N0M" secondAttribute="top" constant="20" symbolic="YES" id="tq7-U1-wRY"/>
+                            <constraint firstItem="xaq-E1-Xvz" firstAttribute="centerY" secondItem="Tnf-aZ-N0M" secondAttribute="centerY" id="wRx-Gj-I5h"/>
                         </constraints>
                     </view>
                     <connections>
@@ -1018,7 +1027,7 @@
         <image name="beginning sounds" width="220" height="150"/>
         <image name="c" width="659" height="687"/>
         <image name="d" width="612" height="676"/>
-        <image name="e" width="643" height="680"/>
+        <image name="e" width="900" height="460"/>
         <image name="empty_input" width="106" height="106"/>
         <image name="ending sounds" width="220.66667175292969" height="148.66667175292969"/>
         <image name="f" width="607" height="680"/>
