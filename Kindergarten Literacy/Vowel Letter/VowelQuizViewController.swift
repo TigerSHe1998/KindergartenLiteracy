@@ -261,9 +261,9 @@ class VowelQuizViewController: UIViewController {
     
     func correctButtonTapped(imageOne: String, imageTwo: String, imageThree: String, imageFour: String, imageFive: String, imageSix: String, imageSeven: String, imageEight: String, imageNine: String, imageTen: String, imageEleven: String, imageTwelve: String) {
         
-        var saveFile = UserDefaults.standard.array(forKey: "VowelPuzzleProgress")
+        var saveFile = UserDefaults.standard.dictionary(forKey: "VowelPuzzleProgress")
         
-        var progressScore:Int = saveFile![0] as! Int
+        var progressScore:Int = saveFile![currentLetter] as! Int
         
         
         
@@ -310,16 +310,16 @@ class VowelQuizViewController: UIViewController {
         progressScore += 1
         playCorrectAudio()
         
-        saveFile![0] = progressScore
+        saveFile![currentLetter] = progressScore
         
         UserDefaults.standard.set(saveFile, forKey: "VowelPuzzleProgress")
     }
     
     func completePuzzle(imageOne: String, imageTwo: String, imageThree: String, imageFour: String, imageFive: String, imageSix: String, imageSeven: String, imageEight: String, imageNine: String, imageTen: String, imageEleven: String, imageTwelve: String) {
         
-        let saveFile = UserDefaults.standard.array(forKey: "VowelPuzzleProgress")
+        let saveFile = UserDefaults.standard.dictionary(forKey: "VowelPuzzleProgress")
         
-        var progressScore:Int = saveFile![0] as! Int
+        let progressScore:Int = saveFile![currentLetter] as! Int
         
         UserDefaults.standard.set(saveFile, forKey: "VowelPuzzleProgress")
         

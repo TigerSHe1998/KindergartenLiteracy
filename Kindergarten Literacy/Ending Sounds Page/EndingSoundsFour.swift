@@ -13,7 +13,7 @@ class EndingSoundsFour: UIViewController {
 
     @IBOutlet var buttons: [UIButton]!
     
-    var bmrsCapArray = ["B", "M", "R", "S", "T", "G", "N", "P", "C", "F", "D", "L", "K", "W", "Z", "V", "X"]
+    var bmrsCapArray = ["B", "M", "R", "S", "T", "G", "N", "P", "F", "D", "L", "K", "Z", "X"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

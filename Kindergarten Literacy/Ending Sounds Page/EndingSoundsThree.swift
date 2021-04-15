@@ -12,7 +12,7 @@ import SwiftUI
 class EndingSoundsThree: UIViewController {
 
     @IBOutlet var buttons: [UIButton]!
-    var bcdfCapArray = ["B", "C", "D", "F", "G", "K", "L", "M", "N", "P", "R", "S", "T", "V", "W", "X", "Z"]
+    var bcdfCapArray = ["B", "D", "F", "G", "K", "L", "M", "N", "P", "R", "S", "T", "X", "Z"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

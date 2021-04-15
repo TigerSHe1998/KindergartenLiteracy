@@ -99,7 +99,13 @@ class ViewController: UIViewController {
         UserDefaults.standard.set(vowelStarCount, forKey: "vowelStarCount")
         
         
-        let VowelPuzzleProgress = [1, 1, 1, 1, 1, 1, 1]
+        let VowelPuzzleProgress = ["a": 1,
+                                   "a ": 1,
+                                    "e": 1,
+                                    "i": 1,
+                                    "i ": 1,
+                                    "o": 1,
+                                    "u": 1]
         UserDefaults.standard.set(VowelPuzzleProgress, forKey: "VowelPuzzleProgress")
    
         

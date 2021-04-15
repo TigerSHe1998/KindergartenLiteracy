@@ -16,7 +16,7 @@ class EndingSoundsOne: UIViewController {
     @IBOutlet var quizButton: UIButton!
     
     
-    var bcdfArray = ["b", "d", "f", "g", "k", "l", "m", "n", "p", "r", "s", "t", "v", "w", "x", "z"]
+    var bcdfArray = ["b", "d", "f", "g", "k", "l", "m", "n", "p", "r", "s", "t", "x", "z"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

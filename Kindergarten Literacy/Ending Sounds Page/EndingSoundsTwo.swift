@@ -12,7 +12,7 @@ import SwiftUI
 class EndingSoundsTwo: UIViewController {
 
     @IBOutlet var buttons: [UIButton]!
-    var bmrsArray = ["b", "m", "r", "s", "t", "g", "n", "p", "c", "f", "d", "l", "k", "w", "z", "v", "x"]
+    var bmrsArray = ["b", "m", "r", "s", "t", "g", "n", "p", "f", "d", "l", "k", "z", "x"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
