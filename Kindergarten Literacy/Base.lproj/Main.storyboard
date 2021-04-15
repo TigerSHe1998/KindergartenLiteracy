@@ -969,7 +969,7 @@
                                     <constraint firstAttribute="height" constant="338" id="leD-W3-Kcn"/>
                                 </constraints>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="a1" translatesAutoresizingMaskIntoConstraints="NO" id="F0d-UG-RwK">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="a1" translatesAutoresizingMaskIntoConstraints="NO" id="F0d-UG-RwK" userLabel="Rhyme Pic">
                                 <rect key="frame" x="402" y="45" width="382" height="300"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -985,6 +985,10 @@
                             <constraint firstItem="NSu-Ne-Ds0" firstAttribute="top" secondItem="Tnf-aZ-N0M" secondAttribute="top" constant="20" symbolic="YES" id="tq7-U1-wRY"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="completePuzzle" destination="xaq-E1-Xvz" id="Lym-A2-vHh"/>
+                        <outlet property="rhymePic" destination="F0d-UG-RwK" id="VTL-dk-ad5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Kj-m7-FCR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

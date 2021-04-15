@@ -204,10 +204,10 @@ class EndingSoundsQuiz: UIViewController {
         
         if (sender as! UIButton) == correctButton {
             correctButtonAnimation()
-            var currScore:Int = saveFile![currentLetter] as! Int
+            var currScore:Int = saveFile![currentLetter.lowercased()] as! Int
             if currScore < 5 {
                 currScore += 1
-                saveFile![currentLetter] = currScore
+                saveFile![currentLetter.lowercased()] = currScore
                 UserDefaults.standard.set(saveFile, forKey: "endingSoundsStarCount")
             }
             // add 1 to coin count
@@ -261,10 +261,10 @@ class EndingSoundsQuiz: UIViewController {
             })
         } else {
             playFullAudio(currentLetter: currentLetter, firstChoice: choice1.currentTitle!, secondChoice: choice2.currentTitle!, thirdChoice: choice3.currentTitle!)
-            var currScore:Int = saveFile![currentLetter] as! Int
+            var currScore:Int = saveFile![currentLetter.lowercased()] as! Int
             if currScore > 0 {
                 currScore -= 1
-                saveFile![currentLetter] = currScore
+                saveFile![currentLetter.lowercased()] = currScore
                 UserDefaults.standard.set(saveFile, forKey: "endingSoundsStarCount")
             }
         }
@@ -307,50 +307,61 @@ class EndingSoundsQuiz: UIViewController {
     
     
     func correctButtonTapped(imageOne: String, imageTwo: String, imageThree: String, imageFour: String, imageFive: String, imageSix: String, imageSeven: String, imageEight: String, imageNine: String, imageTen: String, imageEleven: String, imageTwelve: String) {
-        if puzzleProgress[0] == 1 {
+        var saveFile = UserDefaults.standard.dictionary(forKey: "endingSoundsPuzzleProgress")
+        var progress:Int = saveFile![currentLetter.lowercased()] as! Int
+        
+        if progress == 1 {
             puzzleFive.image = UIImage(named: imageFive)
             puzzleNine.image = UIImage(named: imageNine)
             self.animate(myview: puzzleFive)
             self.animate(myview: puzzleNine)
         }
-        if puzzleProgress[0] == 2 {
+        if progress == 2 {
             puzzleSeven.image = UIImage(named: imageSeven)
             puzzleTen.image = UIImage(named: imageTen)
             self.animate(myview: puzzleSeven)
             self.animate(myview: puzzleTen)
         }
-        if puzzleProgress[0] == 3 {
+        if progress == 3 {
             puzzleSix.image = UIImage(named: imageSix)
             puzzleTwelve.image = UIImage(named: imageTwelve)
             self.animate(myview: puzzleSix)
             self.animate(myview: puzzleTwelve)
         }
-        if puzzleProgress[0] == 4 {
+        if progress == 4 {
             puzzleEight.image = UIImage(named: imageEight)
             puzzleEleven.image = UIImage(named: imageEleven)
             self.animate(myview: puzzleEight)
             self.animate(myview: puzzleEleven)
         }
-        if puzzleProgress[0] == 5 {
+        if progress == 5 {
             puzzleTwo.image = UIImage(named: imageTwo)
             puzzleThree.image = UIImage(named: imageThree)
             self.animate(myview: puzzleTwo)
             self.animate(myview: puzzleThree)
         }
-        if puzzleProgress[0] == 6 {
+        if progress == 6 {
             puzzleOne.image = UIImage(named: imageOne)
             puzzleFour.image = UIImage(named: imageFour)
             self.animate(myview: puzzleOne)
             self.animate(myview: puzzleFour)
+            let vc = mainStoryBoard.instantiateViewController(identifier: "rhyme_vc") as! RhymeViewController
+            vc.passedInLetter = currentLetter
+            vc.letterCategory = "end"
+            present(vc, animated: true)
         }
-        puzzleProgress[0] += 1
+        progress += 1
         playCorrectAudio()
+        
+        saveFile![currentLetter.lowercased()] = progress
+        
+        UserDefaults.standard.set(saveFile, forKey: "endingSoundsPuzzleProgress")
     }
     
     func completePuzzle(imageOne: String, imageTwo: String, imageThree: String, imageFour: String, imageFive: String, imageSix: String, imageSeven: String, imageEight: String, imageNine: String, imageTen: String, imageEleven: String, imageTwelve: String) {
-        let saveFile = UserDefaults.standard.array(forKey: "endingSoundsPuzzleProgress")
+        let saveFile = UserDefaults.standard.dictionary(forKey: "endingSoundsPuzzleProgress")
         
-        let progress:Int = saveFile![0] as! Int
+        let progress:Int = saveFile![currentLetter.lowercased()] as! Int
         
         UserDefaults.standard.set(saveFile, forKey: "endingSoundsPuzzleProgress")
         

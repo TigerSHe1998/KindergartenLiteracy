@@ -546,6 +546,7 @@
                     </view>
                     <size key="freeformSize" width="896" height="1000"/>
                     <connections>
+                        <outlet property="quizButton" destination="Fa2-di-VEx" id="5Cr-Kg-hjN"/>
                         <outletCollection property="buttons" destination="jSd-m8-BKV" collectionClass="NSMutableArray" id="yZP-1f-czJ"/>
                         <outletCollection property="buttons" destination="t6e-Pv-1GR" collectionClass="NSMutableArray" id="j2a-Pi-e2d"/>
                         <outletCollection property="buttons" destination="dML-Xr-lzD" collectionClass="NSMutableArray" id="9H5-Xp-sMu"/>
@@ -1608,9 +1609,9 @@
                             <constraint firstItem="LAM-c8-OBl" firstAttribute="centerY" secondItem="1BW-ek-Ydi" secondAttribute="centerY" id="2Ge-nT-xRF"/>
                             <constraint firstItem="LAM-c8-OBl" firstAttribute="leading" secondItem="NWO-8o-jle" secondAttribute="leading" constant="16" id="2QQ-2x-agb"/>
                             <constraint firstAttribute="bottom" secondItem="2zh-u4-tUW" secondAttribute="bottom" constant="8" id="9yl-wR-iBW"/>
-                            <constraint firstItem="LAM-c8-OBl" firstAttribute="centerY" secondItem="2zh-u4-tUW" secondAttribute="centerY" id="U3R-Er-eNf"/>
                             <constraint firstItem="NWO-8o-jle" firstAttribute="trailing" secondItem="2zh-u4-tUW" secondAttribute="trailing" constant="44" id="jbT-qj-51P"/>
                             <constraint firstItem="2zh-u4-tUW" firstAttribute="centerY" secondItem="1BW-ek-Ydi" secondAttribute="centerY" id="lsr-xb-fDu"/>
+                            <constraint firstItem="LAM-c8-OBl" firstAttribute="centerY" secondItem="2zh-u4-tUW" secondAttribute="centerY" id="tYU-kf-uY2"/>
                         </constraints>
                     </view>
                     <connections>

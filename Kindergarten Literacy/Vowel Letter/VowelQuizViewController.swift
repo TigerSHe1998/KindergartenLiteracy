@@ -263,7 +263,6 @@ class VowelQuizViewController: UIViewController {
         
         var saveFile = UserDefaults.standard.array(forKey: "VowelPuzzleProgress")
         
-        //var currScore:Int = saveFile![currentLetter] as! Int
         var progressScore:Int = saveFile![0] as! Int
         
         
@@ -320,7 +319,7 @@ class VowelQuizViewController: UIViewController {
         
         let saveFile = UserDefaults.standard.array(forKey: "VowelPuzzleProgress")
         
-        let progressScore:Int = saveFile![0] as! Int
+        var progressScore:Int = saveFile![0] as! Int
         
         UserDefaults.standard.set(saveFile, forKey: "VowelPuzzleProgress")
         
@@ -456,8 +455,7 @@ class VowelQuizViewController: UIViewController {
     }
     
     @IBAction func puzzleButtonTapped(_ sender: Any) {
-        // let vc = mainStoryBoard.instantiateViewController(identifier: "puzzle_vc")
-        let vc = UIHostingController(rootView: PuzzleView())
+        let vc = mainStoryBoard.instantiateViewController(identifier: "puzzle_vc")
         present(vc, animated: true)
     }
     

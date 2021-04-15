@@ -78,111 +78,115 @@ class PuzzleViewController: UIViewController {
         configure(currentTitle: "i", currentButton: iLetterButton)
         scrollView.addSubview(iLetterButton)
 
-        let jButton = UIButton(frame: CGRect(x: 1120, y: 0, width: 140, height:175))
+        let iVowelButton = UIButton(frame: CGRect(x: 1120, y: 0, width: 140, height:175))
+        configure(currentTitle: "i", currentButton: iVowelButton)
+        scrollView.addSubview(iVowelButton)
+
+        let jButton = UIButton(frame: CGRect(x: 1120, y: 195, width: 140, height:175))
         configure(currentTitle: "j", currentButton: jButton)
         scrollView.addSubview(jButton)
 
-        let kBeginButton = UIButton(frame: CGRect(x: 1120, y: 195, width: 140, height:175))
+        let kBeginButton = UIButton(frame: CGRect(x: 1280, y: 0, width: 140, height:175))
         configure(currentTitle: "k", currentButton: kBeginButton)
         scrollView.addSubview(kBeginButton)
 
-        let kEndButton = UIButton(frame: CGRect(x: 1280, y: 0, width: 140, height:175))
+        let kEndButton = UIButton(frame: CGRect(x: 1280, y: 195, width: 140, height:175))
         configure(currentTitle: "k", currentButton: kEndButton)
         scrollView.addSubview(kEndButton)
 
-        let lBeginButton = UIButton(frame: CGRect(x: 1280, y: 195, width: 140, height:175))
+        let lBeginButton = UIButton(frame: CGRect(x: 1440, y: 0, width: 140, height:175))
         configure(currentTitle: "l", currentButton: lBeginButton)
         scrollView.addSubview(lBeginButton)
 
-        let lEndButton = UIButton(frame: CGRect(x: 1440, y: 0, width: 140, height:175))
+        let lEndButton = UIButton(frame: CGRect(x: 1440, y: 195, width: 140, height:175))
         configure(currentTitle: "l", currentButton: lEndButton)
         scrollView.addSubview(lEndButton)
 
-        let mBeginButton = UIButton(frame: CGRect(x: 1440, y: 195, width: 140, height:175))
+        let mBeginButton = UIButton(frame: CGRect(x: 1600, y: 0, width: 140, height:175))
         configure(currentTitle: "m", currentButton: mBeginButton)
         scrollView.addSubview(mBeginButton)
 
-        let mEndButton = UIButton(frame: CGRect(x: 1600, y: 0, width: 140, height:175))
+        let mEndButton = UIButton(frame: CGRect(x: 1600, y: 195, width: 140, height:175))
         configure(currentTitle: "m", currentButton: mEndButton)
         scrollView.addSubview(mEndButton)
 
-        let nBeginButton = UIButton(frame: CGRect(x: 1600, y: 195, width: 140, height:175))
+        let nBeginButton = UIButton(frame: CGRect(x: 1760, y: 0, width: 140, height:175))
         configure(currentTitle: "n", currentButton: nBeginButton)
         scrollView.addSubview(nBeginButton)
 
-        let nEndButton = UIButton(frame: CGRect(x: 1760, y: 0, width: 140, height:175))
+        let nEndButton = UIButton(frame: CGRect(x: 1760, y: 195, width: 140, height:175))
         configure(currentTitle: "n", currentButton: nEndButton)
         scrollView.addSubview(nEndButton)
 
-        let oButton = UIButton(frame: CGRect(x: 1760, y: 195, width: 140, height:175))
+        let oButton = UIButton(frame: CGRect(x: 1920, y: 0, width: 140, height:175))
         configure(currentTitle: "o", currentButton: oButton)
         scrollView.addSubview(oButton)
 
-        let pBeginButton = UIButton(frame: CGRect(x: 1920, y: 0, width: 140, height:175))
+        let pBeginButton = UIButton(frame: CGRect(x: 1920, y: 195, width: 140, height:175))
         configure(currentTitle: "p", currentButton: pBeginButton)
         scrollView.addSubview(pBeginButton)
 
-        let pEndButton = UIButton(frame: CGRect(x: 1920, y: 195, width: 140, height:175))
+        let pEndButton = UIButton(frame: CGRect(x: 2080, y: 0, width: 140, height:175))
         configure(currentTitle: "p", currentButton: pEndButton)
         scrollView.addSubview(pEndButton)
 
-        let qButton = UIButton(frame: CGRect(x: 2080, y: 0, width: 140, height:175))
+        let qButton = UIButton(frame: CGRect(x: 2080, y: 195, width: 140, height:175))
         configure(currentTitle: "q", currentButton: qButton)
         scrollView.addSubview(qButton)
 
-        let rBeginButton = UIButton(frame: CGRect(x: 2080, y: 195, width: 140, height:175))
+        let rBeginButton = UIButton(frame: CGRect(x: 2240, y: 0, width: 140, height:175))
         configure(currentTitle: "r", currentButton: rBeginButton)
         scrollView.addSubview(rBeginButton)
 
-        let rEndButton = UIButton(frame: CGRect(x: 2240, y: 0, width: 140, height:175))
+        let rEndButton = UIButton(frame: CGRect(x: 2240, y: 195, width: 140, height:175))
         configure(currentTitle: "r", currentButton: rEndButton)
         scrollView.addSubview(rEndButton)
 
-        let sBeginButton = UIButton(frame: CGRect(x: 2240, y: 195, width: 140, height:175))
+        let sBeginButton = UIButton(frame: CGRect(x: 2400, y: 0, width: 140, height:175))
         configure(currentTitle: "s", currentButton: sBeginButton)
         scrollView.addSubview(sBeginButton)
 
-        let sEndButton = UIButton(frame: CGRect(x: 2400, y: 0, width: 140, height:175))
+        let sEndButton = UIButton(frame: CGRect(x: 2400, y: 195, width: 140, height:175))
         configure(currentTitle: "s", currentButton: sEndButton)
         scrollView.addSubview(sEndButton)
 
-        let tBeginButton = UIButton(frame: CGRect(x: 2400, y: 195, width: 140, height:175))
+        let tBeginButton = UIButton(frame: CGRect(x: 2560, y: 0, width: 140, height:175))
         configure(currentTitle: "t", currentButton: tBeginButton)
         scrollView.addSubview(tBeginButton)
 
-        let tEndButton = UIButton(frame: CGRect(x: 2560, y: 0, width: 140, height:175))
+        let tEndButton = UIButton(frame: CGRect(x: 2560, y: 195, width: 140, height:175))
         configure(currentTitle: "t", currentButton: tEndButton)
         scrollView.addSubview(tEndButton)
 
-        let uButton = UIButton(frame: CGRect(x: 2560, y: 195, width: 140, height:175))
+        let uButton = UIButton(frame: CGRect(x: 2720, y: 0, width: 140, height:175))
         configure(currentTitle: "u", currentButton: uButton)
         scrollView.addSubview(uButton)
 
-        let vButton = UIButton(frame: CGRect(x: 2720, y: 0, width: 140, height:175))
+        let vButton = UIButton(frame: CGRect(x: 2720, y: 195, width: 140, height:175))
         configure(currentTitle: "v", currentButton: vButton)
         scrollView.addSubview(vButton)
 
-        let wButton = UIButton(frame: CGRect(x: 2720, y: 195, width: 140, height:175))
+        let wButton = UIButton(frame: CGRect(x: 2880, y: 0, width: 140, height:175))
         configure(currentTitle: "w", currentButton: wButton)
         scrollView.addSubview(wButton)
 
-        let xBeginButton = UIButton(frame: CGRect(x: 2880, y: 0, width: 140, height:175))
+        let xBeginButton = UIButton(frame: CGRect(x: 2880, y: 195, width: 140, height:175))
         configure(currentTitle: "x", currentButton: xBeginButton)
         scrollView.addSubview(xBeginButton)
 
-        let xEndButton = UIButton(frame: CGRect(x: 2880, y: 195, width: 140, height:175))
+        let xEndButton = UIButton(frame: CGRect(x: 3040, y: 0, width: 140, height:175))
         configure(currentTitle: "x", currentButton: xEndButton)
         scrollView.addSubview(xEndButton)
 
-        let yButton = UIButton(frame: CGRect(x: 3040, y: 0, width: 140, height:175))
+        let yButton = UIButton(frame: CGRect(x: 3040, y: 195, width: 140, height:175))
         configure(currentTitle: "y", currentButton: yButton)
         scrollView.addSubview(yButton)
 
-        let zBeginButton = UIButton(frame: CGRect(x: 3040, y: 195, width: 140, height:175))
+        let zBeginButton = UIButton(frame: CGRect(x: 3200, y: 0, width: 140, height:175))
         configure(currentTitle: "z", currentButton: zBeginButton)
         scrollView.addSubview(zBeginButton)
-
-        let zEndButton = UIButton(frame: CGRect(x: 3200, y: 0, width: 140, height:175))
+        
+        let zEndButton = UIButton(frame: CGRect(x: 3200, y: 195, width: 140, height:175))
         configure(currentTitle: "z", currentButton: zEndButton)
         scrollView.addSubview(zEndButton)
         
@@ -195,6 +199,16 @@ class PuzzleViewController: UIViewController {
         currentButton.backgroundColor = UIColor(named: "lightGreen")
         currentButton.setTitleColor(.black, for: .normal)
         currentButton.titleLabel?.font = UIFont(name: "Chalkboard SE", size: 50)
+        currentButton.addTarget(self, action: #selector(self.buttonTapped), for: .touchUpInside)
+    }
+    
+    @objc func buttonTapped(sender: UIButton) {
+        switch sender.currentTitle {
+        case "aBeginButton":
+            self.dismiss(animated:true, completion: nil)
+        default:
+            break
+        }
     }
     
     @IBAction func returnButtonTapped(_ sender: Any) {

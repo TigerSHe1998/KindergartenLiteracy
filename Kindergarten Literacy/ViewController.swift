@@ -88,37 +88,6 @@ class ViewController: UIViewController {
                                "z": 0]
         UserDefaults.standard.set(letterStarCount, forKey: "letterStarCount")
         
-        // set all stars for letter levels (Capital) to zero
-        // this is a dictionary
-        let letterStarCountCap = ["A": 0,
-                               "B": 0,
-                               "C": 0,
-                               "D": 0,
-                               "E": 0,
-                               "F": 0,
-                               "G": 0,
-                               "H": 0,
-                               "I": 0,
-                               "J": 0,
-                               "K": 0,
-                               "L": 0,
-                               "M": 0,
-                               "N": 0,
-                               "O": 0,
-                               "P": 0,
-                               "Q": 0,
-                               "R": 0,
-                               "S": 0,
-                               "T": 0,
-                               "U": 0,
-                               "V": 0,
-                               "W": 0,
-                               "X": 0,
-                               "Y": 0,
-                               "Z": 0]
-        UserDefaults.standard.set(letterStarCountCap, forKey: "letterStarCountCap")
-        
-        
         
         let vowelStarCount = ["a": 0,
                               "a ": 0,
@@ -154,8 +123,21 @@ class ViewController: UIViewController {
                                "z": 0]
         UserDefaults.standard.set(endingSoundsStarCount, forKey: "endingSoundsStarCount")
         
-        let endingSoundsPuzzleProgress = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
-        UserDefaults.standard.set(VowelPuzzleProgress, forKey: "endingSoundsPuzzleProgress")
+        let endingSoundsPuzzleProgress = ["b": 1,
+                                          "d": 1,
+                                          "f": 1,
+                                          "g": 1,
+                                          "k": 1,
+                                          "l": 1,
+                                          "m": 1,
+                                          "n": 1,
+                                          "p": 1,
+                                          "r": 1,
+                                          "s": 1,
+                                          "t": 1,
+                                          "x": 1,
+                                          "z": 1]
+        UserDefaults.standard.set(endingSoundsPuzzleProgress, forKey: "endingSoundsPuzzleProgress")
         
         // add your save data above //
         

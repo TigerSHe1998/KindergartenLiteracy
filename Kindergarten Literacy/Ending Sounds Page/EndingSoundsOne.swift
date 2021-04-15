@@ -12,6 +12,10 @@ import SwiftUI
 class EndingSoundsOne: UIViewController {
 
     @IBOutlet var buttons: [UIButton]!
+
+    @IBOutlet var quizButton: UIButton!
+    
+    
     var bcdfArray = ["b", "d", "f", "g", "k", "l", "m", "n", "p", "r", "s", "t", "v", "w", "x", "z"]
     
     override func viewDidLoad() {
@@ -29,7 +33,19 @@ class EndingSoundsOne: UIViewController {
             button.titleEdgeInsets = UIEdgeInsets(top: 20, left: 40, bottom: 0, right: 0)
         }
         
+//        UIView.animate(withDuration: 1,
+//                       delay: 0,
+//                       options: [UIView.AnimationOptions.autoreverse, UIView.AnimationOptions.repeat],
+//                       animations: {
+//                        self.quizButton.frame = CGRect(x: 200, y: 400, width: 42, height: 42)
+//                        self.quizButton.frame = CGRect(x: 200, y: 400, width: 38, height: 38)
+//                       }, completion: nil)
     }
+    
+    
+    
+
+    
     
     // reference to different storyboards
     let endingSoundsStoryBoard:UIStoryboard = UIStoryboard(name: "EndingSoundsPages", bundle:nil)

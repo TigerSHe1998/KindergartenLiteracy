@@ -28,6 +28,8 @@ class EndingSoundsTwo: UIViewController {
             button.contentVerticalAlignment = .top
             button.titleEdgeInsets = UIEdgeInsets(top: 20, left: 40, bottom: 0, right: 0)
         }
+        
+        
     }
     
     // reference to different storyboards

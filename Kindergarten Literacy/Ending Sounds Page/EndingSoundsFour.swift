@@ -107,7 +107,7 @@ class EndingSoundsFour: UIViewController {
         // get savefile from userdefaults
         let endingSoundsStarCount = UserDefaults.standard.dictionary(forKey: "endingSoundsStarCount")
         for button in buttons {
-            let currentLetter = button.titleLabel!.text!
+            let currentLetter = button.titleLabel!.text!.lowercased()
             let currentStarCount = endingSoundsStarCount![currentLetter] as! Int
             button.setBackgroundImage(starsImages[currentStarCount], for: .normal)
         }

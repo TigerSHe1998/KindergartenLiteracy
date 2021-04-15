@@ -17,7 +17,6 @@ class nameAbcdeCap: UIViewController {
         Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { timer in
             self.initButtonBackground() // refresh star every second
         })
-        // Do any additional setup after loading the view.
     }
     
     // reference to different storyboards
@@ -94,23 +93,13 @@ class nameAbcdeCap: UIViewController {
     
     func initButtonBackground() {
         // get savefile from userdefaults
-        let letterStarCount = UserDefaults.standard.dictionary(forKey: "letterStarCountCap")
+        let letterStarCount = UserDefaults.standard.dictionary(forKey: "letterStarCount")
         for button in levelButtons {
-            let currentLetter = button.titleLabel!.text!
+            let currentLetter = button.titleLabel!.text!.lowercased()
             let currentStarCount = letterStarCount![currentLetter] as! Int
             button.setBackgroundImage(starsImages[currentStarCount], for: .normal)
         }
     }
-    
-    
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
