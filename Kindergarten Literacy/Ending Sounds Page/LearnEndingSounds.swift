@@ -282,33 +282,33 @@ class LearnEndingSounds: UIViewController {
     func playFirstPicAudio(letter: String) {
         switch letter {
         case "b","B":
-            playAudio(audioName: "cub")
+            playAudio(audioName: "cub-e")
         case "d","D":
-            playAudio(audioName: "bird")
+            playAudio(audioName: "bird-e")
         case "f","F":
-            playAudio(audioName: "scarf")
+            playAudio(audioName: "scarf-e")
         case "g","G":
-            playAudio(audioName: "frog")
+            playAudio(audioName: "frog-e")
         case "k","K":
-            playAudio(audioName: "elk")
+            playAudio(audioName: "elk-e")
         case "l","L":
-            playAudio(audioName: "owl")
+            playAudio(audioName: "owl-e")
         case "m","M":
-            playAudio(audioName: "swim")
+            playAudio(audioName: "swim-e")
         case "n","N":
-            playAudio(audioName: "rain")
+            playAudio(audioName: "rain-e")
         case "p","P":
-            playAudio(audioName: "drop")
+            playAudio(audioName: "drop-e")
         case "r","R":
-            playAudio(audioName: "door")
+            playAudio(audioName: "door-e")
         case "s","S":
-            playAudio(audioName: "bus")
+            playAudio(audioName: "bus-e")
         case "t","T":
-            playAudio(audioName: "net")
+            playAudio(audioName: "net-e")
         case "x","X":
-            playAudio(audioName: "fox")
+            playAudio(audioName: "fox-e")
         case "z","Z":
-            playAudio(audioName: "quiz")
+            playAudio(audioName: "quiz-e")
         default:
             break
         }
@@ -317,29 +317,29 @@ class LearnEndingSounds: UIViewController {
     func playSecondPicAudio(letter: String) {
         switch letter {
         case "b","B":
-            playAudio(audioName: "crab")
+            playAudio(audioName: "crab-e")
         case "d","D":
-            playAudio(audioName: "cold")
+            playAudio(audioName: "cold-e")
         case "f","F":
-            playAudio(audioName: "thief")
+            playAudio(audioName: "thief-e")
         case "g","G":
-            playAudio(audioName: "plug")
+            playAudio(audioName: "plug-e")
         case "k","K":
-            playAudio(audioName: "pick")
+            playAudio(audioName: "pick-e")
         case "l","L":
-            playAudio(audioName: "goal")
+            playAudio(audioName: "goal-e")
         case "m","M":
-            playAudio(audioName: "clam")
+            playAudio(audioName: "clam-e")
         case "n","N":
-            playAudio(audioName: "van")
+            playAudio(audioName: "van-e")
         case "p","P":
-            playAudio(audioName: "soap")
+            playAudio(audioName: "soap-e")
         case "r","R":
-            playAudio(audioName: "tiger")
+            playAudio(audioName: "tiger-e")
         case "s","S":
-            playAudio(audioName: "dress")
+            playAudio(audioName: "dress-e")
         case "t","T":
-            playAudio(audioName: "paint")
+            playAudio(audioName: "paint-e")
         case "x","X":
             playAudio(audioName: "ax")
         case "z","Z":
@@ -352,33 +352,33 @@ class LearnEndingSounds: UIViewController {
     func playThirdPicAudio(letter: String) {
         switch letter {
         case "b","B":
-            playAudio(audioName: "cobweb")
+            playAudio(audioName: "cobweb-e")
         case "d","D":
-            playAudio(audioName: "friend")
+            playAudio(audioName: "friend-e")
         case "f","F":
-            playAudio(audioName: "chef")
+            playAudio(audioName: "chef-e")
         case "g","G":
-            playAudio(audioName: "bug")
+            playAudio(audioName: "bug-e")
         case "k","K":
-            playAudio(audioName: "shark")
+            playAudio(audioName: "shark-e")
         case "l","L":
-            playAudio(audioName: "sail")
+            playAudio(audioName: "sail-e")
         case "m","M":
-            playAudio(audioName: "storm")
+            playAudio(audioName: "storm-e")
         case "n","N":
-            playAudio(audioName: "fin")
+            playAudio(audioName: "fin-e")
         case "p","P":
-            playAudio(audioName: "jeep")
+            playAudio(audioName: "jeep-e")
         case "r","R":
-            playAudio(audioName: "polar-bear")
+            playAudio(audioName: "polar-bear-e")
         case "s","S":
-            playAudio(audioName: "grapes")
+            playAudio(audioName: "grapes-e")
         case "t","T":
-            playAudio(audioName: "tent")
+            playAudio(audioName: "tent-e")
         case "x","X":
-            playAudio(audioName: "six")
+            playAudio(audioName: "six-e")
         case "z","Z":
-            playAudio(audioName: "freeze")
+            playAudio(audioName: "freeze-e")
         default:
             break
         }
