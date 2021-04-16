@@ -13,7 +13,7 @@
         <scene sceneID="jZL-yt-Td0">
             <objects>
                 <viewController storyboardIdentifier="letters_vc" id="mHA-37-G36" customClass="letterMainPage" customModule="Kindergarten_Literacy" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="BZ1-81-fUq">
+                    <view key="view" contentMode="scaleToFill" id="BZ1-81-fUq">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -104,21 +104,33 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="207.5" height="53"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" image="sounds_lowercase_bmras"/>
+                                                <connections>
+                                                    <action selector="toSoundBmras:" destination="mHA-37-G36" eventType="touchUpInside" id="wFM-xz-Sjy"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CeG-X6-7S2" userLabel="sounds_abcde">
                                                 <rect key="frame" x="0.0" y="68" width="207.5" height="52.5"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" image="sounds_lowercase_alphabetical"/>
+                                                <connections>
+                                                    <action selector="toSoundAbcde:" destination="mHA-37-G36" eventType="touchUpInside" id="qQO-0C-t7y"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="NWj-KT-Aiv" userLabel="sounds_BMRAS">
                                                 <rect key="frame" x="0.0" y="135.5" width="207.5" height="53"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" image="sounds_uppercase_bmras"/>
+                                                <connections>
+                                                    <action selector="toSoundBmrasCap:" destination="mHA-37-G36" eventType="touchUpInside" id="KKM-1e-W0A"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qKP-UN-rzO" userLabel="sounds_ABCDE">
                                                 <rect key="frame" x="0.0" y="203.5" width="207.5" height="52.5"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" image="sounds_uppercase_alphabetical"/>
+                                                <connections>
+                                                    <action selector="toSoundAbcdeCap:" destination="mHA-37-G36" eventType="touchUpInside" id="p28-JZ-Nc9"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -705,7 +717,6 @@
                                         <color key="backgroundColor" name="darkGreen"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1600" id="FJA-a6-6l0"/>
-                                            <constraint firstAttribute="width" constant="767" id="h0Q-cI-WcX"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -715,7 +726,8 @@
                                     <constraint firstAttribute="trailing" secondItem="1JB-MI-yoL" secondAttribute="trailing" id="Fjd-mG-s5c"/>
                                     <constraint firstAttribute="bottom" secondItem="1JB-MI-yoL" secondAttribute="bottom" id="JeG-JS-xnr"/>
                                     <constraint firstItem="1JB-MI-yoL" firstAttribute="leading" secondItem="10K-OO-T2R" secondAttribute="leading" id="Ynp-Cr-Zko"/>
-                                    <constraint firstAttribute="width" constant="767" id="arz-Rw-vQx"/>
+                                    <constraint firstItem="1JB-MI-yoL" firstAttribute="width" secondItem="10K-OO-T2R" secondAttribute="width" id="dkA-Ws-Qnd"/>
+                                    <constraint firstAttribute="width" constant="767" id="irY-5r-9I0"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
