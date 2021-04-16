@@ -788,15 +788,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current Coin Count:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jYD-jx-yl2">
-                                <rect key="frame" x="268" y="179" width="223" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="7ZK-ZX-jY0" userLabel="side_bar_stack">
-                                <rect key="frame" x="59" y="20" width="56" height="338"/>
+                                <rect key="frame" x="59" y="26" width="56" height="338"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jUQ-Ig-9MV" userLabel="back">
                                         <rect key="frame" x="0.0" y="0.0" width="56" height="56"/>
@@ -825,23 +818,65 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FCC-bR-IF7">
-                                <rect key="frame" x="520" y="135" width="61" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reward_coin_5" translatesAutoresizingMaskIntoConstraints="NO" id="sIy-87-V2W">
+                                <rect key="frame" x="272" y="165" width="300" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="RPt-er-F7t"/>
+                                    <constraint firstAttribute="width" constant="300" id="UHc-Cf-ZVI"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reward_stack_5" translatesAutoresizingMaskIntoConstraints="NO" id="IX1-ug-bf4">
+                                <rect key="frame" x="272" y="97" width="300" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="cWT-Ba-3oa"/>
+                                    <constraint firstAttribute="width" constant="300" id="kOg-iF-bEB"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reward_bag_5" translatesAutoresizingMaskIntoConstraints="NO" id="l4R-gH-Tby">
+                                <rect key="frame" x="272" y="233" width="300" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="1hD-As-a3Q"/>
+                                    <constraint firstAttribute="width" constant="300" id="Tia-H0-Q5R"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reward_bank_5" translatesAutoresizingMaskIntoConstraints="NO" id="8X4-Xu-3TL">
+                                <rect key="frame" x="272" y="301" width="300" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Aol-OB-bJN"/>
+                                    <constraint firstAttribute="width" constant="300" id="gLt-4j-KU1"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reward_acar_5" translatesAutoresizingMaskIntoConstraints="NO" id="Hm6-4e-kB4">
+                                <rect key="frame" x="272" y="29" width="300" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="eYp-P0-3vl"/>
+                                    <constraint firstAttribute="width" constant="300" id="o8e-kR-u0f"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VfU-wO-WP2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="7ZK-ZX-jY0" firstAttribute="top" secondItem="VfU-wO-WP2" secondAttribute="top" constant="20" id="Tff-st-Br4"/>
+                            <constraint firstItem="IX1-ug-bf4" firstAttribute="top" secondItem="Hm6-4e-kB4" secondAttribute="bottom" constant="8" symbolic="YES" id="7wd-XE-VxF"/>
+                            <constraint firstItem="sIy-87-V2W" firstAttribute="centerY" secondItem="Sgf-KJ-vxz" secondAttribute="centerY" id="B8E-hS-Wog"/>
+                            <constraint firstItem="sIy-87-V2W" firstAttribute="top" secondItem="IX1-ug-bf4" secondAttribute="bottom" constant="8" symbolic="YES" id="IO6-5a-Wr0"/>
+                            <constraint firstItem="IX1-ug-bf4" firstAttribute="centerX" secondItem="sIy-87-V2W" secondAttribute="centerX" id="M2F-pP-VI2"/>
+                            <constraint firstItem="l4R-gH-Tby" firstAttribute="centerX" secondItem="sIy-87-V2W" secondAttribute="centerX" id="S5W-tF-xv9"/>
+                            <constraint firstItem="sIy-87-V2W" firstAttribute="centerX" secondItem="Sgf-KJ-vxz" secondAttribute="centerX" id="SuR-Bi-7Rn"/>
+                            <constraint firstItem="7ZK-ZX-jY0" firstAttribute="centerY" secondItem="Sgf-KJ-vxz" secondAttribute="centerY" id="Wc5-jh-4tp"/>
                             <constraint firstItem="7ZK-ZX-jY0" firstAttribute="leading" secondItem="VfU-wO-WP2" secondAttribute="leading" constant="15" id="cJL-mk-bZD"/>
+                            <constraint firstItem="Hm6-4e-kB4" firstAttribute="centerX" secondItem="IX1-ug-bf4" secondAttribute="centerX" id="ep4-GS-aNs"/>
+                            <constraint firstItem="8X4-Xu-3TL" firstAttribute="top" secondItem="l4R-gH-Tby" secondAttribute="bottom" constant="8" symbolic="YES" id="f7N-6E-i9r"/>
+                            <constraint firstItem="8X4-Xu-3TL" firstAttribute="centerX" secondItem="l4R-gH-Tby" secondAttribute="centerX" id="pfc-bK-tNj"/>
+                            <constraint firstItem="l4R-gH-Tby" firstAttribute="top" secondItem="sIy-87-V2W" secondAttribute="bottom" constant="8" symbolic="YES" id="z0t-wb-ape"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="tempLabel" destination="FCC-bR-IF7" id="H7S-QN-83B"/>
+                        <outlet property="acarImage" destination="Hm6-4e-kB4" id="qjn-2H-Idk"/>
+                        <outlet property="bagImage" destination="l4R-gH-Tby" id="7Lw-Z4-284"/>
+                        <outlet property="bankImage" destination="8X4-Xu-3TL" id="qOI-Rf-V0c"/>
+                        <outlet property="coinImage" destination="sIy-87-V2W" id="auv-rt-fJQ"/>
+                        <outlet property="stackImage" destination="IX1-ug-bf4" id="MSD-jk-LUA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vjX-Pr-w9r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1027,7 +1062,7 @@
         <image name="beginning sounds" width="220" height="150"/>
         <image name="c" width="659" height="687"/>
         <image name="d" width="612" height="676"/>
-        <image name="e" width="900" height="460"/>
+        <image name="e" width="643" height="680"/>
         <image name="empty_input" width="106" height="106"/>
         <image name="ending sounds" width="220.66667175292969" height="148.66667175292969"/>
         <image name="f" width="607" height="680"/>
@@ -1042,16 +1077,21 @@
         <image name="login_button" width="222" height="122"/>
         <image name="m" width="658" height="682"/>
         <image name="n" width="659" height="674"/>
-        <image name="o" width="852" height="826"/>
+        <image name="o" width="607" height="674"/>
         <image name="p" width="607" height="680"/>
         <image name="puzzle" width="56" height="56"/>
         <image name="puzzle-A-short-composite" width="450" height="600"/>
         <image name="q" width="657" height="688"/>
         <image name="r" width="658" height="677"/>
         <image name="repeat" width="56" height="56"/>
+        <image name="reward_acar_5" width="1000" height="200"/>
+        <image name="reward_bag_5" width="1000" height="200"/>
+        <image name="reward_bank_5" width="1000" height="200"/>
+        <image name="reward_coin_5" width="1000" height="200"/>
+        <image name="reward_stack_5" width="1000" height="200"/>
         <image name="s" width="606" height="679"/>
         <image name="t" width="606" height="681"/>
-        <image name="u" width="776" height="560"/>
+        <image name="u" width="659" height="679"/>
         <image name="v" width="659" height="670"/>
         <image name="vowels" width="220.66667175292969" height="148.66667175292969"/>
         <image name="w" width="659" height="677"/>
