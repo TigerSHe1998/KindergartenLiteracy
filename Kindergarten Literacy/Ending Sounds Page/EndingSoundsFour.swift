@@ -18,16 +18,17 @@ class EndingSoundsFour: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         playIntroMessage()
-        initButtonBackground()
-        Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { timer in
-            self.initButtonBackground() // refresh star every second
-        })
+
         for button in buttons {
             button.setBackgroundImage(UIImage(named: "level_button_0_star"), for: .normal)
             button.contentHorizontalAlignment = .left
             button.contentVerticalAlignment = .top
             button.titleEdgeInsets = UIEdgeInsets(top: 20, left: 40, bottom: 0, right: 0)
         }
+        initButtonBackground()
+        Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { timer in
+            self.initButtonBackground() // refresh star every second
+        })
     }
     
     // reference to different storyboards
@@ -36,6 +37,7 @@ class EndingSoundsFour: UIViewController {
     
     // functions for sidebar
     @IBAction func backButtonTapped(_ sender: Any) {
+        audioPlayer?.stop()
         self.dismiss(animated: true, completion: nil)
     }
     
