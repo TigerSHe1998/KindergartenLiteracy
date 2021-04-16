@@ -51,6 +51,7 @@ class EndingSoundsOne: UIViewController {
     
     // functions for sidebar
     @IBAction func backButtonTapped(_ sender: Any) {
+        audioPlayer?.stop()
         self.dismiss(animated: true, completion: nil)
     }
 
