@@ -75,6 +75,8 @@ class BeginningSoundsViewController: UIViewController {
 
     @IBAction func quiz(_ sender: Any) {
         let vc = storyboard?.instantiateViewController(identifier: "beginning_sounds_quiz_vc") as! BeginningSoundsQuizViewController
+        vc.desiredLabelOne = "b"
+        audioPlayer!.stop()
         present(vc, animated: true)
     }
     
