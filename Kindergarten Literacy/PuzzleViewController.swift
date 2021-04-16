@@ -20,9 +20,12 @@ class PuzzleViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
-        let scrollView = UIScrollView(frame: CGRect(x: 150, y: 10, width: view.frame.size.width - 10, height: view.frame.size.height - 10))
+        let scrollView = UIScrollView(frame: CGRect(x: 130, y: (view.frame.size.height / 2) - 190, width: view.frame.size.width - 10, height: 380))
         scrollView.backgroundColor = .white
+
         view.addSubview(scrollView)
+        //scrollView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        //NSLayoutConstraint(item: scrollView, attribute: NSLayoutConstraint.Attribute.centerY, relatedBy: NSLayoutConstraint.Relation.equal, toItem: view, attribute: NSLayoutConstraint.Attribute.centerY, multiplier: 1, constant: 0).isActive = true
         
         let aFirstVowelButton = PuzzleButton(frame: CGRect(x: 0, y: 0, width: 140, height:175))
         configure(currentTitle: "a", currentButton: aFirstVowelButton, category: "vowel")
@@ -192,7 +195,7 @@ class PuzzleViewController: UIViewController {
         configure(currentTitle: "z", currentButton: zEndButton, category: "end")
         scrollView.addSubview(zEndButton)
         
-        scrollView.contentSize = CGSize(width: 3500, height: view.frame.size.height - 10)
+        scrollView.contentSize = CGSize(width: 3500, height: 380)
         
     }
     
