@@ -7,19 +7,13 @@
 
 import UIKit
 import AVFoundation
+import SwiftUI
 
 class LearnEndingSounds: UIViewController {
     
-    //content arrays
-    //numbered as 0, 1, 2, 3 in order
-    var bcdfArray = ["b", "d", "f", "g", "k", "l", "m", "n", "p", "r", "s", "t", "v", "w", "x", "z"]
-    var bmrsArray = ["b", "m", "r", "s", "t", "g", "n", "p", "c", "f", "d", "l", "k", "w", "z", "v", "x"]
-    var bcdfCapArray = ["B", "C", "D", "F", "G", "K", "L", "M", "N", "P", "R", "S", "T", "V", "W", "X", "Z"]
-    var bmrsCapArray = ["B", "M", "R", "S", "T", "G", "N", "P", "C", "F", "D", "L", "K", "W", "Z", "V", "X"]
-    
     //passed in argument from level select page
     var passedInLetter: String!
-    var passedInArrayID: Int!
+    var passedInArray: [String]!
     
     //global variables
     var currentArray: Array<String>!
@@ -42,22 +36,11 @@ class LearnEndingSounds: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         letterButton.setTitle(passedInLetter, for: .normal)
-        switch passedInArrayID {
-        case 0:
-            currentArray = bcdfArray
-        case 1:
-            currentArray = bmrsArray
-        case 2:
-            currentArray = bcdfCapArray
-        case 3:
-            currentArray = bmrsCapArray
-        default:
-            currentArray = bcdfArray
-        }
+
+        currentArray = passedInArray
         playFullLetterAudio(letter: passedInLetter)
-        showPicturesAndWords(letter: passedInLetter)
-        
-        // Do any additional setup after loading the view.
+        showPictures(letter: passedInLetter)
+        showWords(letter: passedInLetter)
     }
     
     //buttons for changing display letter
@@ -68,7 +51,8 @@ class LearnEndingSounds: UIViewController {
             letterButton.setTitle(currentArray[index + 1], for: .normal)
         }
         playFullLetterAudio(letter: letterButton.currentTitle!)
-        showPicturesAndWords(letter: letterButton.currentTitle!)
+        showPictures(letter: letterButton.currentTitle!)
+        showWords(letter: letterButton.currentTitle!)
     }
     
     @IBAction func prevLetter(_ sender: Any) {
@@ -78,7 +62,8 @@ class LearnEndingSounds: UIViewController {
             letterButton.setTitle(currentArray[index - 1], for: .normal)
         }
         playFullLetterAudio(letter: letterButton.currentTitle!)
-        showPicturesAndWords(letter: letterButton.currentTitle!)
+        showPictures(letter: letterButton.currentTitle!)
+        showWords(letter: letterButton.currentTitle!)
     }
     
     //play audio for each letter
@@ -97,54 +82,41 @@ class LearnEndingSounds: UIViewController {
         playThirdPicAudio(letter: letterButton.currentTitle!)
     }
     
-    func showPicturesAndWords(letter: String) {
+    func showPictures(letter: String) {
         switch letter {
         case "b","B":
-            showPicturesForLetter(firstPic: "cub", secondPic: "crab", thirdPic: "cobweb")
-            showWordsForLetter(first: "cub", second: "crab", third: "cobweb")
+            showPicturesForLetter(firstPic: "cub-e", secondPic: "crab-e", thirdPic: "cobweb-e")
         case "d","D":
-            showPicturesForLetter(firstPic: "bird", secondPic: "cold", thirdPic: "friend")
-            showWordsForLetter(first: "bird", second: "cold", third: "friend")
+            showPicturesForLetter(firstPic: "bird-e", secondPic: "cold-e", thirdPic: "friend-e")
         case "f","F":
-            showPicturesForLetter(firstPic: "scarf", secondPic: "thief", thirdPic: "chef")
-            showWordsForLetter(first: "scarf", second: "thief", third: "chef")
+            showPicturesForLetter(firstPic: "scarf-e", secondPic: "thief-e", thirdPic: "chef-e")
         case "g","G":
-            showPicturesForLetter(firstPic: "frog", secondPic: "plug", thirdPic: "bug")
-            showWordsForLetter(first: "frog", second: "plug", third: "bug")
+            showPicturesForLetter(firstPic: "frog-e", secondPic: "plug-e", thirdPic: "bug-e")
         case "k","K":
-            showPicturesForLetter(firstPic: "elk", secondPic: "pick", thirdPic: "shark")
-            showWordsForLetter(first: "elk", second: "pick", third: "shark")
+            showPicturesForLetter(firstPic: "elk-e", secondPic: "pick-e", thirdPic: "shark-e")
         case "l","L":
-            showPicturesForLetter(firstPic: "owl", secondPic: "goal", thirdPic: "sail")
-            showWordsForLetter(first: "owl", second: "goal", third: "sail")
+            showPicturesForLetter(firstPic: "owl-e", secondPic: "goal-e", thirdPic: "sail-e")
         case "m","M":
-            showPicturesForLetter(firstPic: "swim", secondPic: "clam", thirdPic: "storm")
-            showWordsForLetter(first: "swim", second: "clam", third: "storm")
+            showPicturesForLetter(firstPic: "swim-e", secondPic: "clam-e", thirdPic: "storm-e")
         case "n","N":
-            showPicturesForLetter(firstPic: "rain", secondPic: "van", thirdPic: "fin")
-            showWordsForLetter(first: "rain", second: "van", third: "fin")
+            showPicturesForLetter(firstPic: "rain-e", secondPic: "van-e", thirdPic: "fin-e")
         case "p","P":
-            showPicturesForLetter(firstPic: "drop", secondPic: "soap", thirdPic: "jeep")
-            showWordsForLetter(first: "drop", second: "soap", third: "jeep")
+            showPicturesForLetter(firstPic: "drop-e", secondPic: "soap-e", thirdPic: "jeep-e")
         case "r","R":
-            showPicturesForLetter(firstPic: "door", secondPic: "tiger", thirdPic: "polar-bear")
-            showWordsForLetter(first: "door", second: "tiger", third: "polar-bear")
+            showPicturesForLetter(firstPic: "door-e", secondPic: "tiger-e", thirdPic: "polar bear-e")
         case "s","S":
-            showPicturesForLetter(firstPic: "bus", secondPic: "dress", thirdPic: "grapes")
-            showWordsForLetter(first: "bus", second: "dress", third: "grapes")
+            showPicturesForLetter(firstPic: "bus-e", secondPic: "dress-e", thirdPic: "grapes-e")
         case "t","T":
-            showPicturesForLetter(firstPic: "net", secondPic: "paint", thirdPic: "tent")
-            showWordsForLetter(first: "net", second: "paint", third: "tent")
+            showPicturesForLetter(firstPic: "net-e", secondPic: "paint-e", thirdPic: "tent-e")
         case "x","X":
-            showPicturesForLetter(firstPic: "fox", secondPic: "ax", thirdPic: "six")
-            showWordsForLetter(first: "fox", second: "ax", third: "six")
+            showPicturesForLetter(firstPic: "fox-e", secondPic: "ax-e", thirdPic: "six-e")
         case "z","Z":
-            showPicturesForLetter(firstPic: "quiz1", secondPic: "prize", thirdPic: "freeze")
-            showWordsForLetter(first: "quiz1", second: "prize", third: "freeze")
+            showPicturesForLetter(firstPic: "quiz-e", secondPic: "prize-e", thirdPic: "freeze-e")
         default:
-        break
+            break
         }
     }
+    
     
     func showPicturesForLetter(firstPic: String, secondPic: String, thirdPic: String) {
         firstWordPic.setBackgroundImage(UIImage(named: firstPic), for: .normal)
@@ -152,12 +124,85 @@ class LearnEndingSounds: UIViewController {
         thirdWordPic.setBackgroundImage(UIImage(named: thirdPic), for: .normal)
     }
     
-    func showWordsForLetter(first: String, second: String, third: String) {
-        let firstTitle = NSAttributedString(string: first)
+    func showWords(letter: String) {
+        switch letter {
+        case "b":
+            showWordsForLetter(letter: "b", first: "cub", second: "crab", third: "cobweb")
+        case "d":
+            showWordsForLetter(letter: "d", first: "bird", second: "cold", third: "friend")
+        case "f":
+            showWordsForLetter(letter: "f", first: "scarf", second: "thief", third: "chef")
+        case "g":
+            showWordsForLetter(letter: "g", first: "frog", second: "plug", third: "bug")
+        case "k":
+            showWordsForLetter(letter: "k", first: "elk", second: "pick", third: "shark")
+        case "l":
+            showWordsForLetter(letter: "l", first: "owl", second: "goal", third: "sail")
+        case "m":
+            showWordsForLetter(letter: "m", first: "swim", second: "clam", third: "storm")
+        case "n":
+            showWordsForLetter(letter: "n", first: "rain", second: "van", third: "fin")
+        case "p":
+            showWordsForLetter(letter: "p", first: "drop", second: "soap", third: "jeep")
+        case "r":
+            showWordsForLetter(letter: "r", first: "door", second: "tiger", third: "polar bear")
+        case "s":
+            showWordsForLetter(letter: "s", first: "bus", second: "dress", third: "grapes")
+        case "t":
+            showWordsForLetter(letter: "t", first: "net", second: "paint", third: "tent")
+        case "x":
+            showWordsForLetter(letter: "x", first: "fox", second: "ax", third: "six")
+        case "z":
+            showWordsForLetter(letter: "z", first: "quiz", second: "prize", third: "freeze")
+        case "B":
+            showWordsForLetter(letter: "B", first: "CUB", second: "CRAB", third: "COBWEB")
+        case "D":
+            showWordsForLetter(letter: "D", first: "BIRD", second: "COLD", third: "FRIEND")
+        case "F":
+            showWordsForLetter(letter: "F", first: "SCARF", second: "THIEF", third: "CHEF")
+        case "G":
+            showWordsForLetter(letter: "G", first: "FROG", second: "PLUG", third: "BUG")
+        case "K":
+            showWordsForLetter(letter: "K", first: "ELK", second: "PICK", third: "SHARK")
+        case "L":
+            showWordsForLetter(letter: "L", first: "OWL", second: "GOAL", third: "SAIL")
+        case "M":
+            showWordsForLetter(letter: "M", first: "SWIM", second: "CLAM", third: "STORM")
+        case "N":
+            showWordsForLetter(letter: "N", first: "RAIN", second: "VAN", third: "FIN")
+        case "P":
+            showWordsForLetter(letter: "P", first: "DROP", second: "SOAP", third: "JEEP")
+        case "R":
+            showWordsForLetter(letter: "R", first: "DOOR", second: "TIGER", third: "POLAR BEAR")
+        case "S":
+            showWordsForLetter(letter: "S", first: "BUS", second: "DRESS", third: "GRAPES")
+        case "T":
+            showWordsForLetter(letter: "T", first: "NET", second: "PAINT", third: "TENT")
+        case "X":
+            showWordsForLetter(letter: "X", first: "FOX", second: "AX", third: "SIX")
+        case "Z":
+            showWordsForLetter(letter: "Z", first: "QUIZ", second: "PRIZE", third: "FREEZE")
+        default:
+            break
+        }
+    }
+    
+    func showWordsForLetter(letter: String, first: String, second: String, third: String) {
+        let letterToRed = letter
+        let range1 = (first as NSString).range(of: letterToRed)
+        let mutableFirst = NSMutableAttributedString(string: first)
+        mutableFirst.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: range1)
+        firstWord.setAttributedTitle(mutableFirst, for: .normal)
         
-        firstWord.setTitle(first, for: .normal)
-        secondWord.setTitle(second, for: .normal)
-        thirdWord.setTitle(third, for: .normal)
+        let range2 = (second as NSString).range(of: letterToRed)
+        let mutableSecond = NSMutableAttributedString(string: second)
+        mutableSecond.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: range2)
+        secondWord.setAttributedTitle(mutableSecond, for: .normal)
+        
+        let range3 = (third as NSString).range(of: letterToRed)
+        let mutableThird = NSMutableAttributedString(string: third)
+        mutableThird.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: range3)
+        thirdWord.setAttributedTitle(mutableThird, for: .normal)
     }
     
     
@@ -237,33 +282,33 @@ class LearnEndingSounds: UIViewController {
     func playFirstPicAudio(letter: String) {
         switch letter {
         case "b","B":
-            playAudio(audioName: "cub")
+            playAudio(audioName: "cub-e")
         case "d","D":
-            playAudio(audioName: "bird")
+            playAudio(audioName: "bird-e")
         case "f","F":
-            playAudio(audioName: "scarf")
+            playAudio(audioName: "scarf-e")
         case "g","G":
-            playAudio(audioName: "frog")
+            playAudio(audioName: "frog-e")
         case "k","K":
-            playAudio(audioName: "elk")
+            playAudio(audioName: "elk-e")
         case "l","L":
-            playAudio(audioName: "owl")
+            playAudio(audioName: "owl-e")
         case "m","M":
-            playAudio(audioName: "swim")
+            playAudio(audioName: "swim-e")
         case "n","N":
-            playAudio(audioName: "rain")
+            playAudio(audioName: "rain-e")
         case "p","P":
-            playAudio(audioName: "drop")
+            playAudio(audioName: "drop-e")
         case "r","R":
-            playAudio(audioName: "door")
+            playAudio(audioName: "door-e")
         case "s","S":
-            playAudio(audioName: "bus")
+            playAudio(audioName: "bus-e")
         case "t","T":
-            playAudio(audioName: "net")
+            playAudio(audioName: "net-e")
         case "x","X":
-            playAudio(audioName: "fox")
+            playAudio(audioName: "fox-e")
         case "z","Z":
-            playAudio(audioName: "quiz")
+            playAudio(audioName: "quiz-e")
         default:
             break
         }
@@ -272,29 +317,29 @@ class LearnEndingSounds: UIViewController {
     func playSecondPicAudio(letter: String) {
         switch letter {
         case "b","B":
-            playAudio(audioName: "crab")
+            playAudio(audioName: "crab-e")
         case "d","D":
-            playAudio(audioName: "cold")
+            playAudio(audioName: "cold-e")
         case "f","F":
-            playAudio(audioName: "thief")
+            playAudio(audioName: "thief-e")
         case "g","G":
-            playAudio(audioName: "plug")
+            playAudio(audioName: "plug-e")
         case "k","K":
-            playAudio(audioName: "pick")
+            playAudio(audioName: "pick-e")
         case "l","L":
-            playAudio(audioName: "goal")
+            playAudio(audioName: "goal-e")
         case "m","M":
-            playAudio(audioName: "clam")
+            playAudio(audioName: "clam-e")
         case "n","N":
-            playAudio(audioName: "van")
+            playAudio(audioName: "van-e")
         case "p","P":
-            playAudio(audioName: "soap")
+            playAudio(audioName: "soap-e")
         case "r","R":
-            playAudio(audioName: "tiger")
+            playAudio(audioName: "tiger-e")
         case "s","S":
-            playAudio(audioName: "dress")
+            playAudio(audioName: "dress-e")
         case "t","T":
-            playAudio(audioName: "paint")
+            playAudio(audioName: "paint-e")
         case "x","X":
             playAudio(audioName: "ax")
         case "z","Z":
@@ -307,33 +352,33 @@ class LearnEndingSounds: UIViewController {
     func playThirdPicAudio(letter: String) {
         switch letter {
         case "b","B":
-            playAudio(audioName: "cobweb")
+            playAudio(audioName: "cobweb-e")
         case "d","D":
-            playAudio(audioName: "friend")
+            playAudio(audioName: "friend-e")
         case "f","F":
-            playAudio(audioName: "chef")
+            playAudio(audioName: "chef-e")
         case "g","G":
-            playAudio(audioName: "bug")
+            playAudio(audioName: "bug-e")
         case "k","K":
-            playAudio(audioName: "shark")
+            playAudio(audioName: "shark-e")
         case "l","L":
-            playAudio(audioName: "sail")
+            playAudio(audioName: "sail-e")
         case "m","M":
-            playAudio(audioName: "storm")
+            playAudio(audioName: "storm-e")
         case "n","N":
-            playAudio(audioName: "fin")
+            playAudio(audioName: "fin-e")
         case "p","P":
-            playAudio(audioName: "jeep")
+            playAudio(audioName: "jeep-e")
         case "r","R":
-            playAudio(audioName: "polar-bear")
+            playAudio(audioName: "polar-bear-e")
         case "s","S":
-            playAudio(audioName: "grapes")
+            playAudio(audioName: "grapes-e")
         case "t","T":
-            playAudio(audioName: "tent")
+            playAudio(audioName: "tent-e")
         case "x","X":
-            playAudio(audioName: "six")
+            playAudio(audioName: "six-e")
         case "z","Z":
-            playAudio(audioName: "freeze")
+            playAudio(audioName: "freeze-e")
         default:
             break
         }
@@ -351,6 +396,7 @@ class LearnEndingSounds: UIViewController {
     // functions for sidebar
     @IBAction func backButtonTapped(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
+        //stopPlayingAudio()
     }
     
     @IBAction func homeButtonTapped(_ sender: Any) {
@@ -359,16 +405,22 @@ class LearnEndingSounds: UIViewController {
     
     @IBAction func puzzleButtonTapped(_ sender: Any) {
         let vc = mainStoryBoard.instantiateViewController(identifier: "puzzle_vc")
+//        let vc = UIHostingController(rootView: PuzzleView())
+        stopPlayingAudio()
         present(vc, animated: true)
     }
     
     @IBAction func coinButtonTapped(_ sender: Any) {
         let vc = mainStoryBoard.instantiateViewController(identifier: "coin_vc")
+        stopPlayingAudio()
         present(vc, animated: true)
     }
     
     @IBAction func quizButtonTapped(_ sender: Any) {
-        let vc = endingSoundsStoryBoard.instantiateViewController(identifier: "ending_sounds_quiz_vc")
+        let vc = endingSoundsStoryBoard.instantiateViewController(identifier: "ending_sounds_quiz_vc") as! EndingSoundsQuiz
+        vc.passedInLetter = letterButton.currentTitle!
+        vc.passedInArray = passedInArray
+        stopPlayingAudio()
         present(vc, animated: true)
     }
     
@@ -376,5 +428,8 @@ class LearnEndingSounds: UIViewController {
         playFullLetterAudio(letter: letterButton.currentTitle!)
     }
     
-
+    // stop playing sound
+    func stopPlayingAudio() {
+        audioPlayer?.stop()
+    }
 }

@@ -7,6 +7,7 @@
 
 import UIKit
 import AVFoundation
+import SwiftUI
 
 class ViewController: UIViewController {
     
@@ -24,9 +25,28 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        initSave()
         // Do any additional setup after loading the view.
     }
     
+    // pop login page after application load
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        popLogin()
+    }
+    
+    // initialize savefile if no save is found. (prevents crash)
+    func initSave() {
+        if UserDefaults.standard.object(forKey: "firstStartup") == nil {
+            resetSave()
+            UserDefaults.standard.set(true, forKey: "firstStartup")
+        }
+    }
+    
+    // temporary function for the reset save button
+    @IBAction func resetSaveButton(_ sender: Any) {
+        resetSave()
+    }
     
     // function to reset savefile to beginning state
     /* the UserDefaults.standard is a DICTIONARY that is built into swift,
@@ -37,8 +57,7 @@ class ViewController: UIViewController {
        !! make sure all changed states can be reset here !!
        !! otherwise it would be hard to track !!  */
     
-    @IBAction func resetSave(_ sender: Any) {
-        
+    func resetSave() {
         // set all stars for letter levels to zero
         // this is a dictionary
         let letterStarCount = ["a": 0,
@@ -69,51 +88,82 @@ class ViewController: UIViewController {
                                "z": 0]
         UserDefaults.standard.set(letterStarCount, forKey: "letterStarCount")
         
-        // set all stars for letter levels (Capital) to zero
-        // this is a dictionary
-        let letterStarCountCap = ["A": 0,
-                               "B": 0,
-                               "C": 0,
-                               "D": 0,
-                               "E": 0,
-                               "F": 0,
-                               "G": 0,
-                               "H": 0,
-                               "I": 0,
-                               "J": 0,
-                               "K": 0,
-                               "L": 0,
-                               "M": 0,
-                               "N": 0,
-                               "O": 0,
-                               "P": 0,
-                               "Q": 0,
-                               "R": 0,
-                               "S": 0,
-                               "T": 0,
-                               "U": 0,
-                               "V": 0,
-                               "W": 0,
-                               "X": 0,
-                               "Y": 0,
-                               "Z": 0]
-        UserDefaults.standard.set(letterStarCountCap, forKey: "letterStarCountCap")
+        
+        let vowelStarCount = ["a": 0,
+                              "a ": 0,
+                               "e": 0,
+                               "i": 0,
+                               "i ": 0,
+                               "o": 0,
+                               "u": 0]
+        UserDefaults.standard.set(vowelStarCount, forKey: "vowelStarCount")
+        
+        
+        let VowelPuzzleProgress = ["a": 1,
+                                   "a ": 1,
+                                    "e": 1,
+                                    "i": 1,
+                                    "i ": 1,
+                                    "o": 1,
+                                    "u": 1]
+        UserDefaults.standard.set(VowelPuzzleProgress, forKey: "VowelPuzzleProgress")
+   
         
         // set global coin count to zero
         UserDefaults.standard.set(0, forKey: "coinCount")
         
         // add your save data here //
+
         let BeginningSoundsPuzzleProgress = ["b": 0, "c": 0, "d": 0, "f": 0, "g": 0, "h": 0, "j": 0, "k": 0, "l": 0, "m": 0, "n": 0, "p": 0, "q": 0, "r": 0, "s": 0, "t": 0, "v": 0, "w": 0, "x": 0, "y": 0, "z": 0]
         UserDefaults.standard.set(BeginningSoundsPuzzleProgress, forKey: "BP")
         
         let BeginningSoundsStar = ["B": 0, "C": 0, "D": 0, "F": 0, "G": 0, "H": 0, "J": 0, "K": 0, "L": 0, "M": 0, "N": 0, "P": 0, "Q": 0, "R": 0, "S": 0, "T": 0, "V": 0, "W": 0, "X": 0, "Y": 0, "Z": 0]
         UserDefaults.standard.set(BeginningSoundsStar, forKey: "BS")
+
+        let endingSoundsStarCount = ["b": 0,
+                               "d": 0,
+                               "f": 0,
+                               "g": 0,
+                               "k": 0,
+                               "l": 0,
+                               "m": 0,
+                               "n": 0,
+                               "p": 0,
+                               "r": 0,
+                               "s": 0,
+                               "t": 0,
+                               "x": 0,
+                               "z": 0]
+        UserDefaults.standard.set(endingSoundsStarCount, forKey: "endingSoundsStarCount")
+        
+        let endingSoundsPuzzleProgress = ["b": 1,
+                                          "d": 1,
+                                          "f": 1,
+                                          "g": 1,
+                                          "k": 1,
+                                          "l": 1,
+                                          "m": 1,
+                                          "n": 1,
+                                          "p": 1,
+                                          "r": 1,
+                                          "s": 1,
+                                          "t": 1,
+                                          "x": 1,
+                                          "z": 1]
+        UserDefaults.standard.set(endingSoundsPuzzleProgress, forKey: "endingSoundsPuzzleProgress")
+        
+
         // add your save data above //
         
     }
     
     
     
+    // login page pop up call
+    func popLogin() {
+        let vc = storyboard?.instantiateViewController(identifier: "login_vc") as! LoginPage
+        present(vc, animated: true)
+    }
     
     // instantiate letterStoryboard for calling views under letter
     let letterStoryBoard:UIStoryboard = UIStoryboard(name: "LetterPages", bundle:nil)
@@ -137,8 +187,19 @@ class ViewController: UIViewController {
         present(vc, animated: true)
     }
     
+    
     let endingSoundsStoryBoard:UIStoryboard = UIStoryboard(name: "EndingSoundsPages", bundle:nil)
+    
     @IBAction func endingSoundsButtonTapped(_ sender: Any) {
+        let pathToSound = Bundle.main.path(forResource: "#Ending_Sounds", ofType:"mp3")!
+        let url = URL(fileURLWithPath: pathToSound)
+                
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: url)
+            audioPlayer?.play()
+        } catch {
+        }
+        
         let vc = endingSoundsStoryBoard.instantiateViewController(identifier: "ending_sounds_vc")
         present(vc, animated: true)
     }
@@ -151,13 +212,7 @@ class ViewController: UIViewController {
     @IBAction func unwindToHome(_ sender: UIStoryboardSegue) {
     }
     
-    // this is not how to implement a back button!!!
-    //    @IBAction func returnButtonTapped(_ sender: Any) {
-    //        let vc = storyboard?.instantiateViewController(identifier: "main_vc") as! ViewController
-    //        present(vc, animated: true)
-    //    }
     
-    // you can copy these code below for home/puzzle/coin, back button logic please use UNWIND SEGUE (search google if you don't know)
     @IBAction func homeButtonTapped(_ sender: Any) {
         self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
     }
@@ -167,26 +222,19 @@ class ViewController: UIViewController {
         present(vc, animated: true)
     }
     
+//    @IBAction func puzzleButtonTapped(_ sender: Any) {
+//        let vc = UIHostingController(rootView: PuzzleView())
+//        vc.rootView.dismiss = {vc.dismiss(animated: true, completion: nil)}
+//        present(vc, animated: true)
+//    }
+    
     @IBAction func coinButtonTapped(_ sender: Any) {
         let vc = storyboard?.instantiateViewController(identifier: "coin_vc") as! CoinViewController
         present(vc, animated: true)
     }
     
     
-    @IBAction func SectionTapped(_ sender: UIButton) {
 
-        let pathToSound = Bundle.main.path(forResource: "#Ending_Sounds", ofType:"mp3")!
-        let url = URL(fileURLWithPath: pathToSound)
-                
-        do {
-            audioPlayer = try AVAudioPlayer(contentsOf: url)
-            audioPlayer?.play()
-        } catch {
-            // error handling
-        }
-    
-        
-    }
 }
 
 

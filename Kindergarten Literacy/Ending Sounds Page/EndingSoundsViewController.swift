@@ -6,13 +6,13 @@
 //
 
 import UIKit
+import SwiftUI
 
 class EndingSoundsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
     // reference to different storyboards
@@ -55,6 +55,8 @@ class EndingSoundsViewController: UIViewController {
     
     @IBAction func puzzleButtonTapped(_ sender: Any) {
         let vc = mainStoryBoard.instantiateViewController(identifier: "puzzle_vc")
+//        let vc = UIHostingController(rootView: PuzzleView())
+//        vc.rootView.dismiss = {vc.dismiss(animated: true, completion: nil)}
         present(vc, animated: true)
     }
     
@@ -63,15 +65,5 @@ class EndingSoundsViewController: UIViewController {
         present(vc, animated: true)
     }
     
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

@@ -20,6 +20,7 @@ class letterMainPage: UIViewController {
     // reference to different storyboards
     let letterStoryBoard:UIStoryboard = UIStoryboard(name: "LetterPages", bundle:nil)
     let mainStoryBoard:UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+    let beginStoryBoard:UIStoryboard = UIStoryboard(name: "BeginningSounds", bundle:nil)
     
     //play intro sound
     var audioPlayer: AVAudioPlayer?
@@ -77,12 +78,26 @@ class letterMainPage: UIViewController {
     
     
     
-    //not yet implemented, waiting on teammates
-    @IBAction func toSoundSelectListPage(_ sender: Any) {
-        let vc = letterStoryBoard.instantiateViewController(identifier: "nameSelectList_vc")
+    //goes to beginning sound
+    @IBAction func toSoundBmras(_ sender: Any) {
+        let vc = beginStoryBoard.instantiateViewController(identifier: "twoButton_vc")
         present(vc, animated: true)
     }
     
+    @IBAction func toSoundAbcde(_ sender: Any) {
+        let vc = beginStoryBoard.instantiateViewController(identifier: "oneButton_vc")
+        present(vc, animated: true)
+    }
+    
+    @IBAction func toSoundBmrasCap(_ sender: Any) {
+        let vc = beginStoryBoard.instantiateViewController(identifier: "fourButton_vc")
+        present(vc, animated: true)
+    }
+    
+    @IBAction func toSoundAbcdeCap(_ sender: Any) {
+        let vc = beginStoryBoard.instantiateViewController(identifier: "threeButton_vc")
+        present(vc, animated: true)
+    }
 
     
     /*

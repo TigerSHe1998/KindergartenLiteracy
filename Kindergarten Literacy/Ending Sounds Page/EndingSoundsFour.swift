@@ -7,19 +7,28 @@
 
 import UIKit
 import AVFoundation
+import SwiftUI
 
 class EndingSoundsFour: UIViewController {
 
     @IBOutlet var buttons: [UIButton]!
+    
+    var bmrsCapArray = ["B", "M", "R", "S", "T", "G", "N", "P", "F", "D", "L", "K", "Z", "X"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         playIntroMessage()
 
         for button in buttons {
-            button.layer.cornerRadius = 20
-            button.backgroundColor = UIColor .systemBlue
+            button.setBackgroundImage(UIImage(named: "level_button_0_star"), for: .normal)
+            button.contentHorizontalAlignment = .left
+            button.contentVerticalAlignment = .top
+            button.titleEdgeInsets = UIEdgeInsets(top: 20, left: 40, bottom: 0, right: 0)
         }
+        initButtonBackground()
+        Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { timer in
+            self.initButtonBackground() // refresh star every second
+        })
     }
     
     // reference to different storyboards
@@ -28,6 +37,7 @@ class EndingSoundsFour: UIViewController {
     
     // functions for sidebar
     @IBAction func backButtonTapped(_ sender: Any) {
+        audioPlayer?.stop()
         self.dismiss(animated: true, completion: nil)
     }
     
@@ -37,6 +47,7 @@ class EndingSoundsFour: UIViewController {
     
     @IBAction func puzzleButtonTapped(_ sender: Any) {
         let vc = mainStoryBoard.instantiateViewController(identifier: "puzzle_vc")
+//        let vc = UIHostingController(rootView: PuzzleView())
         present(vc, animated: true)
     }
     
@@ -46,7 +57,10 @@ class EndingSoundsFour: UIViewController {
     }
     
     @IBAction func quizButtonTapped(_ sender: Any) {
-        let vc = endingSoundsStoryBoard.instantiateViewController(identifier: "ending_sounds_quiz_vc")
+        let vc = endingSoundsStoryBoard.instantiateViewController(identifier: "ending_sounds_quiz_vc") as! EndingSoundsQuiz
+        vc.passedInLetter = bmrsCapArray.randomElement()
+        vc.passedInArray = bmrsCapArray
+        audioPlayer?.stop()
         present(vc, animated: true)
     }
     
@@ -69,28 +83,36 @@ class EndingSoundsFour: UIViewController {
         }
     }
     
-    // stop playing sound
-    func stopPlayingMessage() {
-        audioPlayer?.stop()
-    }
     
     
     //main button function to learn page
     @IBAction func toLearnEndingSoundsPage(_ sender: Any) {
         let vc = endingSoundsStoryBoard.instantiateViewController(identifier: "learn_ending_sounds_vc") as! LearnEndingSounds
         vc.passedInLetter = (sender as! UIButton).titleLabel!.text!
-        vc.passedInArrayID = 3
+        vc.passedInArray = bmrsCapArray
         present(vc, animated: true)
-        stopPlayingMessage()
+        audioPlayer?.stop()
     }
-    /*
-    // MARK: - Navigation
+    
+    // set stars for each button
+    // set up array of images with different star count. Easy to add/remove
+    let i0 = UIImage(named: "level_button_0_star")
+    let i1 = UIImage(named: "level_button_1_star")
+    let i2 = UIImage(named: "level_button_2_star")
+    let i3 = UIImage(named: "level_button_3_star")
+    let i4 = UIImage(named: "level_button_4_star")
+    let i5 = UIImage(named: "level_button_5_star")
+    var starsImages: [UIImage?] { return [self.i0, self.i1, self.i2, self.i3, self.i4, self.i5] }
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func initButtonBackground() {
+        // get savefile from userdefaults
+        let endingSoundsStarCount = UserDefaults.standard.dictionary(forKey: "endingSoundsStarCount")
+        for button in buttons {
+            let currentLetter = button.titleLabel!.text!.lowercased()
+            let currentStarCount = endingSoundsStarCount![currentLetter] as! Int
+            button.setBackgroundImage(starsImages[currentStarCount], for: .normal)
+        }
     }
-    */
 
 }

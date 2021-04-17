@@ -67,24 +67,17 @@ class alphabetQuiz: UIViewController {
         let choiceLetter = (sender as! UIButton).titleLabel!.text!
         // get correct savefile
         var saveFile = UserDefaults.standard.dictionary(forKey: "letterStarCount")
-        if currentArray == bmrasArray || currentArray == abcdeArray {
-            saveFile = UserDefaults.standard.dictionary(forKey: "letterStarCount")
-        } else {
-            saveFile = UserDefaults.standard.dictionary(forKey: "letterStarCountCap")
-        }
         
         if choiceLetter == currentLetter {
             // add score to current letter's savefile when correct button is tapped
-            var currScore:Int = saveFile![currentLetter] as! Int
+            var currScore:Int = saveFile![currentLetter.lowercased()] as! Int
             if currScore < 5 {
                 currScore += 1
-                saveFile![currentLetter] = currScore
-                if currentArray == bmrasArray || currentArray == abcdeArray {
-                    UserDefaults.standard.set(saveFile, forKey: "letterStarCount")
-                } else {
-                    UserDefaults.standard.set(saveFile, forKey: "letterStarCountCap")
-                }
+                saveFile![currentLetter.lowercased()] = currScore
+                UserDefaults.standard.set(saveFile, forKey: "letterStarCount")
             }
+            // add 1 to coin count
+            UserDefaults.standard.set(UserDefaults.standard.integer(forKey: "coinCount") + 1, forKey: "coinCount")
             
             // sound fx
             playCorrect()
@@ -144,15 +137,11 @@ class alphabetQuiz: UIViewController {
             // END ANIMATION BLOCK //
         } else {
             // decrese score for current letter if a wrong choice is tapped
-            var currScore:Int = saveFile![currentLetter] as! Int
+            var currScore:Int = saveFile![currentLetter.lowercased()] as! Int
             if currScore > 0 {
                 currScore -= 1
-                saveFile![currentLetter] = currScore
-                if currentArray == bmrasArray || currentArray == abcdeArray {
-                    UserDefaults.standard.set(saveFile, forKey: "letterStarCount")
-                } else {
-                    UserDefaults.standard.set(saveFile, forKey: "letterStarCountCap")
-                }
+                saveFile![currentLetter.lowercased()] = currScore
+                UserDefaults.standard.set(saveFile, forKey: "letterStarCount")
             }
         }
     }
@@ -404,14 +393,5 @@ class alphabetQuiz: UIViewController {
         }
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
