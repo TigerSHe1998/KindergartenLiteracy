@@ -69,7 +69,7 @@ class BeginningSoundsQuizViewController: UIViewController {
     var vPuzzles = ["puzzle-V-vv-begin-row1-col1", "puzzle-V-vv-begin-row2-col2", "puzzle-V-vv-begin-row2-col0", "puzzle-V-vv-begin-row3-col0", "puzzle-V-vv-begin-row1-col2", "puzzle-V-vv-begin-row3-col2", "puzzle-T-tttt-begin-row2-col1", "puzzle-V-vv-begin-row3-col1", "puzzle-V-vv-begin-row0-col1", "puzzle-V-vv-begin-row0-col2", "puzzle-V-vv-begin-row0-col0", "puzzle-V-vv-begin-row1-col0"]
     var wPuzzles = ["puzzle-W-wuh-begin-row1-col1", "puzzle-W-wuh-begin-row2-col2", "puzzle-W-wuh-begin-row2-col0", "puzzle-W-wuh-begin-row3-col0", "puzzle-W-wuh-begin-row1-col2", "puzzle-W-wuh-begin-row3-col2", "puzzle-W-wuh-begin-row2-col1", "puzzle-W-wuh-begin-row3-col1", "puzzle-W-wuh-begin-row0-col1", "puzzle-W-wuh-begin-row0-col2", "puzzle-W-wuh-begin-row0-col0", "puzzle-W-wuh-begin-row1-col0"]
     var xPuzzles = ["puzzle-X-ks-begin-row1-col1", "puzzle-X-ks-begin-row2-col2", "puzzle-X-ks-begin-row2-col0", "puzzle-X-ks-begin-row3-col0", "puzzle-X-ks-begin-row1-col2", "puzzle-X-ks-begin-row3-col2", "puzzle-X-ks-begin-row2-col1", "puzzle-X-ks-begin-row3-col1", "puzzle-X-ks-begin-row0-col1", "puzzle-X-ks-begin-row0-col2", "puzzle-X-ks-begin-row0-col0", "puzzle-X-ks-begin-row1-col0"]
-    var yPuzzles = ["puzzle-Y-yuh-begin-row1-col1", "puzzle-Y-yuh-begin-row2-col2", "puzzle-Y-yuh-begin-row2-col0", "puzzle-Y-yuh-begin-row3-col0", "puzzle-Y-yuh-begin-row1-col2", "puzzle-Y-yuh-begin-row3-col2", "puzzle-Y-yuh-begin-row2-col1", "puzzle-Y-yuh-begin-row3-col1", "puzzle-Y-yuh-begin-row0-col1", "puzzle-Y-yuh-begin-row0-col2", "puzzle-Y-yuh-begin-row0-col0", "puzzle-Y-yuh-begin-row1-col0"]
+    var yPuzzles = ["puzzle-Y-yuh-row1-col1", "puzzle-Y-yuh-row2-col2", "puzzle-Y-yuh-row2-col0", "puzzle-Y-yuh-row3-col0", "puzzle-Y-yuh-row1-col2", "puzzle-Y-yuh-row3-col2", "puzzle-Y-yuh-row2-col1", "puzzle-Y-yuh-row3-col1", "puzzle-Y-yuh-row0-col1", "puzzle-Y-yuh-row0-col2", "puzzle-Y-yuh-row0-col0", "puzzle-Y-yuh-row1-col0"]
     var zPuzzles = ["puzzle-Z-zzz-begin-row1-col1", "puzzle-Z-zzz-begin-row2-col2", "puzzle-Z-zzz-begin-row2-col0", "puzzle-Z-zzz-begin-row3-col0", "puzzle-Z-zzz-begin-row1-col2", "puzzle-Z-zzz-begin-row3-col2", "puzzle-Z-zzz-begin-row2-col1", "puzzle-Z-zzz-begin-row3-col1", "puzzle-Z-zzz-begin-row0-col1", "puzzle-Z-zzz-begin-row0-col2", "puzzle-Z-zzz-begin-row0-col0", "puzzle-Z-zzz-begin-row1-col0"]
     
     
@@ -286,7 +286,7 @@ class BeginningSoundsQuizViewController: UIViewController {
             while (wrongOne == "toe-b" || wrongOne == "toys-b" ||  wrongOne == "tail-b") {
                 wrongOne = images.randomElement()
             }
-            while (wrongTwo == "toe-b" || wrongTwo == "tails-b" || wrongTwo == "toys-b" || wrongTwo == wrongOne) {
+            while (wrongTwo == "toe-b" || wrongTwo == "tail-b" || wrongTwo == "toys-b" || wrongTwo == wrongOne) {
                 wrongTwo = images.randomElement()
             }
         case "V", "v":
@@ -358,7 +358,9 @@ class BeginningSoundsQuizViewController: UIViewController {
             returnButton.isEnabled = false
             homeButton.isEnabled = false
             redoButton.isEnabled = false
-                
+            wordButton1.isEnabled = false
+            wordButton2.isEnabled = false
+            wordButton3.isEnabled = false
             let seconds = 1.5
             DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
                 let pathToSound = Bundle.main.path(forResource: self.correctImage, ofType: "mp3")!
@@ -383,9 +385,14 @@ class BeginningSoundsQuizViewController: UIViewController {
                     self.audioPlayer = try AVAudioPlayer(contentsOf: url)
                     self.audioPlayer?.play()
                 } catch {}
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 4 * seconds) {
                 self.returnButton.isEnabled = true
                 self.homeButton.isEnabled = true
                 self.redoButton.isEnabled = true
+                self.wordButton1.isEnabled = true
+                self.wordButton2.isEnabled = true
+                self.wordButton3.isEnabled = true
             }
             let pathToSound = Bundle.main.path(forResource: "B-buh-b", ofType: "mp3")!
             let url = URL(fileURLWithPath: pathToSound)
@@ -401,7 +408,9 @@ class BeginningSoundsQuizViewController: UIViewController {
             returnButton.isEnabled = false
             homeButton.isEnabled = false
             redoButton.isEnabled = false
-                
+            wordButton1.isEnabled = false
+            wordButton2.isEnabled = false
+            wordButton3.isEnabled = false
             let seconds = 1.5
             DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
                 let pathToSound = Bundle.main.path(forResource: wrongOne, ofType: "mp3")!
@@ -426,9 +435,14 @@ class BeginningSoundsQuizViewController: UIViewController {
                         self.audioPlayer = try AVAudioPlayer(contentsOf: url)
                         self.audioPlayer?.play()
                 } catch {}
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 4 * seconds) {
                 self.returnButton.isEnabled = true
                 self.homeButton.isEnabled = true
                 self.redoButton.isEnabled = true
+                self.wordButton1.isEnabled = true
+                self.wordButton2.isEnabled = true
+                self.wordButton3.isEnabled = true
             }
             let pathToSound = Bundle.main.path(forResource: "B-buh-b", ofType: "mp3")!
             let url = URL(fileURLWithPath: pathToSound)
@@ -444,6 +458,9 @@ class BeginningSoundsQuizViewController: UIViewController {
             returnButton.isEnabled = false
             homeButton.isEnabled = false
             redoButton.isEnabled = false
+            wordButton1.isEnabled = false
+            wordButton2.isEnabled = false
+            wordButton3.isEnabled = false
             let seconds = 1.5
             DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
                 let pathToSound = Bundle.main.path(forResource: wrongTwo, ofType: "mp3")!
@@ -468,9 +485,14 @@ class BeginningSoundsQuizViewController: UIViewController {
                         self.audioPlayer = try AVAudioPlayer(contentsOf: url)
                         self.audioPlayer?.play()
                 } catch {}
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 4 * seconds) {
                 self.returnButton.isEnabled = true
                 self.homeButton.isEnabled = true
                 self.redoButton.isEnabled = true
+                self.wordButton1.isEnabled = true
+                self.wordButton2.isEnabled = true
+                self.wordButton3.isEnabled = true
             }
             let pathToSound = Bundle.main.path(forResource: "B-buh-b", ofType: "mp3")!
             let url = URL(fileURLWithPath: pathToSound)
@@ -672,6 +694,7 @@ class BeginningSoundsQuizViewController: UIViewController {
     @IBAction func choiceButtons(_ sender: Any) {
         if (sender as! UIButton) == correctButton {
             var saveFile = UserDefaults.standard.dictionary(forKey: "BP")
+            var saveFile1 = UserDefaults.standard.dictionary(forKey: "BS")
             switch desiredLabelOne {
             case "b", "B":
                 var curr:Int = saveFile!["b"] as! Int
@@ -805,6 +828,12 @@ class BeginningSoundsQuizViewController: UIViewController {
                         curr += 1
                     }
                 }
+                var currScore:Int = saveFile1!["B"] as! Int
+                if currScore < 5 {
+                    currScore += 1
+                    saveFile1!["B"] = currScore
+                    UserDefaults.standard.set(saveFile1, forKey: "BS")
+                }
                 saveFile!["b"] = curr
                 UserDefaults.standard.set(saveFile, forKey: "BP")
             case "C", "c":
@@ -829,6 +858,12 @@ class BeginningSoundsQuizViewController: UIViewController {
                         self.animate(myview: puzzleArray[curr]!)
                         curr += 1
                     }
+                }
+                var currScore:Int = saveFile1!["C"] as! Int
+                if currScore < 5 {
+                    currScore += 1
+                    saveFile1!["C"] = currScore
+                    UserDefaults.standard.set(saveFile1, forKey: "BS")
                 }
                 saveFile!["c"] = curr
                 UserDefaults.standard.set(saveFile, forKey: "BP")
@@ -855,6 +890,12 @@ class BeginningSoundsQuizViewController: UIViewController {
                         curr += 1
                     }
                 }
+                var currScore:Int = saveFile1!["D"] as! Int
+                if currScore < 5 {
+                    currScore += 1
+                    saveFile1!["D"] = currScore
+                    UserDefaults.standard.set(saveFile1, forKey: "BS")
+                }
                 saveFile!["d"] = curr
                 UserDefaults.standard.set(saveFile, forKey: "BP")
             case "F", "f":
@@ -879,6 +920,12 @@ class BeginningSoundsQuizViewController: UIViewController {
                         self.animate(myview: puzzleArray[curr]!)
                         curr += 1
                     }
+                }
+                var currScore:Int = saveFile1!["F"] as! Int
+                if currScore < 5 {
+                    currScore += 1
+                    saveFile1!["F"] = currScore
+                    UserDefaults.standard.set(saveFile1, forKey: "BS")
                 }
                 saveFile!["f"] = curr
                 UserDefaults.standard.set(saveFile, forKey: "BP")
@@ -905,6 +952,12 @@ class BeginningSoundsQuizViewController: UIViewController {
                         curr += 1
                     }
                 }
+                var currScore:Int = saveFile1!["G"] as! Int
+                if currScore < 5 {
+                    currScore += 1
+                    saveFile1!["G"] = currScore
+                    UserDefaults.standard.set(saveFile1, forKey: "BS")
+                }
                 saveFile!["g"] = curr
                 UserDefaults.standard.set(saveFile, forKey: "BP")
             case "H", "h":
@@ -929,6 +982,12 @@ class BeginningSoundsQuizViewController: UIViewController {
                         self.animate(myview: puzzleArray[curr]!)
                         curr += 1
                     }
+                }
+                var currScore:Int = saveFile1!["H"] as! Int
+                if currScore < 5 {
+                    currScore += 1
+                    saveFile1!["H"] = currScore
+                    UserDefaults.standard.set(saveFile1, forKey: "BS")
                 }
                 saveFile!["h"] = curr
                 UserDefaults.standard.set(saveFile, forKey: "BP")
@@ -955,6 +1014,12 @@ class BeginningSoundsQuizViewController: UIViewController {
                         curr += 1
                     }
                 }
+                var currScore:Int = saveFile1!["J"] as! Int
+                if currScore < 5 {
+                    currScore += 1
+                    saveFile1!["J"] = currScore
+                    UserDefaults.standard.set(saveFile1, forKey: "BS")
+                }
                 saveFile!["j"] = curr
                 UserDefaults.standard.set(saveFile, forKey: "BP")
             case "K", "k":
@@ -979,6 +1044,12 @@ class BeginningSoundsQuizViewController: UIViewController {
                         self.animate(myview: puzzleArray[curr]!)
                         curr += 1
                     }
+                }
+                var currScore:Int = saveFile1!["K"] as! Int
+                if currScore < 5 {
+                    currScore += 1
+                    saveFile1!["K"] = currScore
+                    UserDefaults.standard.set(saveFile1, forKey: "BS")
                 }
                 saveFile!["k"] = curr
                 UserDefaults.standard.set(saveFile, forKey: "BP")
@@ -1005,6 +1076,12 @@ class BeginningSoundsQuizViewController: UIViewController {
                         curr += 1
                     }
                 }
+                var currScore:Int = saveFile1!["L"] as! Int
+                if currScore < 5 {
+                    currScore += 1
+                    saveFile1!["L"] = currScore
+                    UserDefaults.standard.set(saveFile1, forKey: "BS")
+                }
                 saveFile!["l"] = curr
                 UserDefaults.standard.set(saveFile, forKey: "BP")
             case "M", "m":
@@ -1029,6 +1106,12 @@ class BeginningSoundsQuizViewController: UIViewController {
                         self.animate(myview: puzzleArray[curr]!)
                         curr += 1
                     }
+                }
+                var currScore:Int = saveFile1!["M"] as! Int
+                if currScore < 5 {
+                    currScore += 1
+                    saveFile1!["M"] = currScore
+                    UserDefaults.standard.set(saveFile1, forKey: "BS")
                 }
                 saveFile!["m"] = curr
                 UserDefaults.standard.set(saveFile, forKey: "BP")
@@ -1055,6 +1138,12 @@ class BeginningSoundsQuizViewController: UIViewController {
                         curr += 1
                     }
                 }
+                var currScore:Int = saveFile1!["N"] as! Int
+                if currScore < 5 {
+                    currScore += 1
+                    saveFile1!["N"] = currScore
+                    UserDefaults.standard.set(saveFile1, forKey: "BS")
+                }
                 saveFile!["n"] = curr
                 UserDefaults.standard.set(saveFile, forKey: "BP")
             case "P", "p":
@@ -1079,6 +1168,12 @@ class BeginningSoundsQuizViewController: UIViewController {
                         self.animate(myview: puzzleArray[curr]!)
                         curr += 1
                     }
+                }
+                var currScore:Int = saveFile1!["P"] as! Int
+                if currScore < 5 {
+                    currScore += 1
+                    saveFile1!["P"] = currScore
+                    UserDefaults.standard.set(saveFile1, forKey: "BS")
                 }
                 saveFile!["p"] = curr
                 UserDefaults.standard.set(saveFile, forKey: "BP")
@@ -1105,6 +1200,12 @@ class BeginningSoundsQuizViewController: UIViewController {
                         curr += 1
                     }
                 }
+                var currScore:Int = saveFile1!["Q"] as! Int
+                if currScore < 5 {
+                    currScore += 1
+                    saveFile1!["Q"] = currScore
+                    UserDefaults.standard.set(saveFile1, forKey: "BS")
+                }
                 saveFile!["q"] = curr
                 UserDefaults.standard.set(saveFile, forKey: "BP")
             case "R", "r":
@@ -1129,6 +1230,12 @@ class BeginningSoundsQuizViewController: UIViewController {
                         self.animate(myview: puzzleArray[curr]!)
                         curr += 1
                     }
+                }
+                var currScore:Int = saveFile1!["R"] as! Int
+                if currScore < 5 {
+                    currScore += 1
+                    saveFile1!["R"] = currScore
+                    UserDefaults.standard.set(saveFile1, forKey: "BS")
                 }
                 saveFile!["r"] = curr
                 UserDefaults.standard.set(saveFile, forKey: "BP")
@@ -1155,6 +1262,12 @@ class BeginningSoundsQuizViewController: UIViewController {
                         curr += 1
                     }
                 }
+                var currScore:Int = saveFile1!["S"] as! Int
+                if currScore < 5 {
+                    currScore += 1
+                    saveFile1!["S"] = currScore
+                    UserDefaults.standard.set(saveFile1, forKey: "BS")
+                }
                 saveFile!["s"] = curr
                 UserDefaults.standard.set(saveFile, forKey: "BP")
             case "T", "t":
@@ -1179,6 +1292,12 @@ class BeginningSoundsQuizViewController: UIViewController {
                         self.animate(myview: puzzleArray[curr]!)
                         curr += 1
                     }
+                }
+                var currScore:Int = saveFile1!["T"] as! Int
+                if currScore < 5 {
+                    currScore += 1
+                    saveFile1!["T"] = currScore
+                    UserDefaults.standard.set(saveFile1, forKey: "BS")
                 }
                 saveFile!["t"] = curr
                 UserDefaults.standard.set(saveFile, forKey: "BP")
@@ -1205,10 +1324,16 @@ class BeginningSoundsQuizViewController: UIViewController {
                         curr += 1
                     }
                 }
+                var currScore:Int = saveFile1!["V"] as! Int
+                if currScore < 5 {
+                    currScore += 1
+                    saveFile1!["V"] = currScore
+                    UserDefaults.standard.set(saveFile1, forKey: "BS")
+                }
                 saveFile!["v"] = curr
                 UserDefaults.standard.set(saveFile, forKey: "BP")
             case "W", "w":
-                var curr:Int = saveFile!["c"] as! Int
+                var curr:Int = saveFile!["w"] as! Int
                 if correctChoice == 2 {
                     if curr < 12 {
                         if curr == 11 {
@@ -1229,6 +1354,12 @@ class BeginningSoundsQuizViewController: UIViewController {
                         self.animate(myview: puzzleArray[curr]!)
                         curr += 1
                     }
+                }
+                var currScore:Int = saveFile1!["W"] as! Int
+                if currScore < 5 {
+                    currScore += 1
+                    saveFile1!["W"] = currScore
+                    UserDefaults.standard.set(saveFile1, forKey: "BS")
                 }
                 saveFile!["w"] = curr
                 UserDefaults.standard.set(saveFile, forKey: "BP")
@@ -1255,6 +1386,12 @@ class BeginningSoundsQuizViewController: UIViewController {
                         curr += 1
                     }
                 }
+                var currScore:Int = saveFile1!["X"] as! Int
+                if currScore < 5 {
+                    currScore += 1
+                    saveFile1!["X"] = currScore
+                    UserDefaults.standard.set(saveFile1, forKey: "BS")
+                }
                 saveFile!["x"] = curr
                 UserDefaults.standard.set(saveFile, forKey: "BP")
             case "Y", "y":
@@ -1280,6 +1417,12 @@ class BeginningSoundsQuizViewController: UIViewController {
                         curr += 1
                     }
                 }
+                var currScore:Int = saveFile1!["Y"] as! Int
+                if currScore < 5 {
+                    currScore += 1
+                    saveFile1!["Y"] = currScore
+                    UserDefaults.standard.set(saveFile1, forKey: "BS")
+                }
                 saveFile!["y"] = curr
                 UserDefaults.standard.set(saveFile, forKey: "BP")
             case "Z", "z":
@@ -1304,6 +1447,12 @@ class BeginningSoundsQuizViewController: UIViewController {
                         self.animate(myview: puzzleArray[curr]!)
                         curr += 1
                     }
+                }
+                var currScore:Int = saveFile1!["Z"] as! Int
+                if currScore < 5 {
+                    currScore += 1
+                    saveFile1!["Z"] = currScore
+                    UserDefaults.standard.set(saveFile1, forKey: "BS")
                 }
                 saveFile!["z"] = curr
                 UserDefaults.standard.set(saveFile, forKey: "BP")
@@ -1360,7 +1509,7 @@ class BeginningSoundsQuizViewController: UIViewController {
                             self.wordButton3.alpha = 1.0
                         })
                         // re enable button
-                        (sender as! UIButton).isEnabled = true
+                        //(sender as! UIButton).isEnabled = true
                     })
                 }
             })
@@ -1369,6 +1518,61 @@ class BeginningSoundsQuizViewController: UIViewController {
             if correctChoice > 0{
                 correctChoice -= 1
             }
+            switch desiredLabelOne {
+            case "B", "b":
+                decreaseStar(s: "B")
+            case "C", "c":
+                decreaseStar(s: "C")
+            case "D", "d":
+                decreaseStar(s: "D")
+            case "F", "f":
+                decreaseStar(s: "F")
+            case "G", "g":
+                decreaseStar(s: "G")
+            case "H", "h":
+                decreaseStar(s: "H")
+            case "J", "j":
+                decreaseStar(s: "J")
+            case "K", "k":
+                decreaseStar(s: "K")
+            case "L", "l":
+                decreaseStar(s: "L")
+            case "M", "m":
+                decreaseStar(s: "M")
+            case "N", "n":
+                decreaseStar(s: "N")
+            case "P", "p":
+                decreaseStar(s: "p")
+            case "Q", "q":
+                decreaseStar(s: "Q")
+            case "R", "r":
+                decreaseStar(s: "R")
+            case "S", "s":
+                decreaseStar(s: "S")
+            case "T", "t":
+                decreaseStar(s: "T")
+            case "V", "v":
+                decreaseStar(s: "V")
+            case "W", "w":
+                decreaseStar(s: "W")
+            case "X", "x":
+                decreaseStar(s: "X")
+            case "Y", "y":
+                decreaseStar(s: "Y")
+            case "Z", "z":
+                decreaseStar(s: "Z")
+            default: break
+            }
+        }
+    }
+    
+    func decreaseStar(s: String) {
+        var saveFile1 = UserDefaults.standard.dictionary(forKey: "BS")
+        var currScore:Int = saveFile1![s] as! Int
+        if currScore > 0 && currScore != 5 {
+            currScore -= 1
+            saveFile1![s] = currScore
+            UserDefaults.standard.set(saveFile1, forKey: "BS")
         }
     }
     

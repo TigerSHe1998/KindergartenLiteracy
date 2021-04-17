@@ -12,9 +12,34 @@ class BeginningSoundsFourButtonViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        initButtonBackground()
+        Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { timer in
+            self.initButtonBackground() // refresh star every second
+        })
         // Do any additional setup after loading the view.
     }
+    
+    let i0 = UIImage(named: "level_button_0_star")
+    let i1 = UIImage(named: "level_button_1_star")
+    let i2 = UIImage(named: "level_button_2_star")
+    let i3 = UIImage(named: "level_button_3_star")
+    let i4 = UIImage(named: "level_button_4_star")
+    let i5 = UIImage(named: "level_button_5_star")
+    var starsImages: [UIImage?] { return [self.i0, self.i1, self.i2, self.i3, self.i4, self.i5] }
+
+    // collection of all buttons in current page
+    @IBOutlet var levelButtons: [UIButton]!
+    
+    func initButtonBackground() {
+        // get savefile from userdefaults
+        let letterStarCount = UserDefaults.standard.dictionary(forKey: "BS")
+        for button in levelButtons {
+            let currentLetter = button.titleLabel!.text!.capitalized
+            let currentStarCount = letterStarCount![currentLetter] as! Int
+            button.setBackgroundImage(starsImages[currentStarCount], for: .normal)
+        }
+    }
+    
     @IBAction func fourButtonLevel(_ sender: Any) {
         let vc = storyboard?.instantiateViewController(identifier: "fourButtonLevel_vc") as! FourButtonLevelViewController
         vc.desiredLabelFour = (sender as! UIButton).titleLabel!.text!
