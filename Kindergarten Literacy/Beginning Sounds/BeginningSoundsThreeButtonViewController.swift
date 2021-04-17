@@ -32,6 +32,7 @@ class BeginningSoundsThreeButtonViewController: UIViewController {
 
     @IBAction func quiz(_ sender: Any) {
         let vc = storyboard?.instantiateViewController(identifier: "beginning_sounds_quiz_vc") as! BeginningSoundsQuizViewController
+        vc.desiredLabelOne = "B"
         present(vc, animated: true)
     }
     

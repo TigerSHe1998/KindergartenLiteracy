@@ -14,7 +14,6 @@ class BeginningSoundsQuizViewController: UIViewController {
     
     var correctChoice = 2
     
-    var array = ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "w", "x", "y", "z"]
     var images = ["boat-b", "boy-b", "bubble-b", "cake-b", "canary-b", "cat-b", "dog-b", "door-b", "drum-b", "fish-b", "foot-b", "fox-b", "goat-b", "gold-b", "goose-b", "hardhat-b", "hide-b", "hug-b", "jeep-b", "joy-b", "jump-b", "kangaroo-b", "kayak-b", "key-b", "leaf-b", "lion-b", "love-b", "mermaid-b", "mole-b", "monkey-b", "nail-b", "nest-b", "noise-b", "penguin-b", "pie-b", "puppy-b", "queen-b", "question-b", "quick-b", "raccoons-b", "robot-b", "run-b", "say-b", "sneak-b", "suitcase-b", "tail-b", "toe-b", "toys-b", "van-b", "voice-b", "volcano-b", "wagon-b", "wind-b", "wolf-b", "ax-b", "exam-b", "excavator-b", "yawn-b", "yellow-b", "yoyo-b", "zebra-b", "zipper-b", "zoo-b"]
     
     
@@ -30,6 +29,8 @@ class BeginningSoundsQuizViewController: UIViewController {
     var puzzleTen: UIImageView!
     var puzzleEleven: UIImageView!
     var puzzleTwelve: UIImageView!
+    
+    var puzzleArray: [UIImageView?] { return [puzzleFive, puzzleNine, puzzleSeven, puzzleTen, puzzleSix, puzzleTwelve, puzzleEight, puzzleEleven, puzzleTwo, puzzleThree, puzzleOne, puzzleFour] }
     
     var correctImage: String!
     
@@ -49,6 +50,28 @@ class BeginningSoundsQuizViewController: UIViewController {
     @IBOutlet weak var wordButton1: UIButton!
     @IBOutlet weak var wordButton2: UIButton!;
     @IBOutlet weak var wordButton3: UIButton!
+    
+    var cPuzzles = ["puzzle-C-kuh-begin-row1-col1", "puzzle-C-kuh-begin-row2-col2", "puzzle-C-kuh-begin-row2-col0", "puzzle-C-kuh-begin-row3-col0", "puzzle-C-kuh-begin-row1-col2", "puzzle-C-kuh-begin-row3-col2", "puzzle-C-kuh-begin-row2-col1", "puzzle-C-kuh-begin-row3-col1", "puzzle-C-kuh-begin-row0-col1", "puzzle-C-kuh-begin-row0-col2", "puzzle-C-kuh-begin-row0-col0", "puzzle-C-kuh-begin-row1-col0"]
+    var dPuzzles = ["puzzle-D-duh-begin-row1-col1", "puzzle-D-duh-begin-row2-col2", "puzzle-D-duh-begin-row2-col0", "puzzle-D-duh-begin-row3-col0", "puzzle-D-duh-begin-row1-col2", "puzzle-D-duh-begin-row3-col2", "puzzle-D-duh-begin-row2-col1", "puzzle-D-duh-begin-row3-col1", "puzzle-D-duh-begin-row0-col1", "puzzle-D-duh-begin-row0-col2", "puzzle-D-duh-begin-row0-col0", "puzzle-D-duh-begin-row1-col0"]
+    var fPuzzles = ["puzzle-F-fuh-begin-row1-col1", "puzzle-F-fuh-begin-row2-col2", "puzzle-F-fuh-begin-row2-col0", "puzzle-F-fuh-begin-row3-col0", "puzzle-F-fuh-begin-row1-col2", "puzzle-F-fuh-begin-row3-col2", "puzzle-F-fuh-begin-row2-col1", "puzzle-F-fuh-begin-row3-col1", "puzzle-F-fuh-begin-row0-col1", "puzzle-F-fuh-begin-row0-col2", "puzzle-F-fuh-begin-row0-col0", "puzzle-F-fuh-begin-row1-col0"]
+    var gPuzzles = ["puzzle-G-guh-begin-row1-col1", "puzzle-G-guh-begin-row2-col2", "puzzle-G-guh-begin-row2-col0", "puzzle-G-guh-begin-row3-col0", "puzzle-G-guh-begin-row1-col2", "puzzle-G-guh-begin-row3-col2", "puzzle-G-guh-begin-row2-col1", "puzzle-G-guh-begin-row3-col1", "puzzle-G-guh-begin-row0-col1", "puzzle-G-guh-begin-row0-col2", "puzzle-G-guh-begin-row0-col0", "puzzle-G-guh-begin-row1-col0"]
+    var hPuzzles = ["puzzle-H-huh-begin-row1-col1", "puzzle-H-huh-begin-row2-col2", "puzzle-H-huh-begin-row2-col0", "puzzle-H-huh-begin-row3-col0", "puzzle-H-huh-begin-row1-col2", "puzzle-H-huh-begin-row3-col2", "puzzle-H-huh-begin-row2-col1", "puzzle-H-huh-begin-row3-col1", "puzzle-H-huh-begin-row0-col1", "puzzle-H-huh-begin-row0-col2", "puzzle-H-huh-begin-row0-col0", "puzzle-H-huh-begin-row1-col0"]
+    var jPuzzles = ["puzzle-J-juh-begin-row1-col1", "puzzle-J-juh-begin-row2-col2", "puzzle-J-juh-begin-row2-col0", "puzzle-J-juh-begin-row3-col0", "puzzle-J-juh-begin-row1-col2", "puzzle-J-juh-begin-row3-col2", "puzzle-J-juh-begin-row2-col1", "puzzle-J-juh-begin-row3-col1", "puzzle-J-juh-begin-row0-col1", "puzzle-J-juh-begin-row0-col2", "puzzle-J-juh-begin-row0-col0", "puzzle-J-juh-begin-row1-col0"]
+    var kPuzzles = ["puzzle-K-kuh-begin-row1-col1", "puzzle-K-kuh-begin-row2-col2", "puzzle-K-kuh-begin-row2-col0", "puzzle-K-kuh-begin-row3-col0", "puzzle-K-kuh-begin-row1-col2", "puzzle-K-kuh-begin-row3-col2", "puzzle-K-kuh-begin-row2-col1", "puzzle-K-kuh-begin-row3-col1", "puzzle-K-kuh-begin-row0-col1", "puzzle-K-kuh-begin-row0-col2", "puzzle-K-kuh-begin-row0-col0", "puzzle-K-kuh-begin-row1-col0"]
+    var lPuzzles = ["puzzle-L-lll-begin-row1-col1", "puzzle-L-lll-begin-row2-col2", "puzzle-L-lll-begin-row2-col0", "puzzle-L-lll-begin-row3-col0", "puzzle-L-lll-begin-row1-col2", "puzzle-L-lll-begin-row3-col2", "puzzle-L-lll-begin-row2-col1", "puzzle-L-lll-begin-row3-col1", "puzzle-L-lll-begin-row0-col1", "puzzle-L-lll-begin-row0-col2", "puzzle-L-lll-begin-row0-col0", "puzzle-L-lll-begin-row1-col0"]
+    var mPuzzles = ["puzzle-M-mmm-begin-row1-col1", "puzzle-M-mmm-begin-row2-col2", "puzzle-M-mmm-begin-row2-col0", "puzzle-M-mmm-begin-row3-col0", "puzzle-M-mmm-begin-row1-col2", "puzzle-M-mmm-begin-row3-col2", "puzzle-M-mmm-begin-row2-col1", "puzzle-M-mmm-begin-row3-col1", "puzzle-M-mmm-begin-row0-col1", "puzzle-M-mmm-begin-row0-col2", "puzzle-M-mmm-begin-row0-col0", "puzzle-M-mmm-begin-row1-col0"]
+    var nPuzzles = ["puzzle-N-nnn-begin-row1-col1", "puzzle-N-nnn-begin-row2-col2", "puzzle-N-nnn-begin-row2-col0", "puzzle-N-nnn-begin-row3-col0", "puzzle-N-nnn-begin-row1-col2", "puzzle-N-nnn-begin-row3-col2", "puzzle-N-nnn-begin-row2-col1", "puzzle-N-nnn-begin-row3-col1", "puzzle-N-nnn-begin-row0-col1", "puzzle-N-nnn-begin-row0-col2", "puzzle-N-nnn-begin-row0-col0", "puzzle-N-nnn-begin-row1-col0"]
+    var pPuzzles = ["puzzle-P-puh-begin-row1-col1", "puzzle-P-puh-begin-row2-col2", "puzzle-P-puh-begin-row2-col0", "puzzle-P-puh-begin-row3-col0", "puzzle-P-puh-begin-row1-col2", "puzzle-P-puh-begin-row3-col2", "puzzle-P-puh-begin-row2-col1", "puzzle-P-puh-begin-row3-col1", "puzzle-P-puh-begin-row0-col1", "puzzle-P-puh-begin-row0-col2", "puzzle-P-puh-begin-row0-col0", "puzzle-P-puh-begin-row1-col0"]
+    var qPuzzles = ["puzzle-Q-qwuh-begin-row1-col1", "puzzle-Q-qwuh-begin-row2-col2", "puzzle-Q-qwuh-begin-row2-col0", "puzzle-Q-qwuh-begin-row3-col0", "puzzle-Q-qwuh-begin-row1-col2", "puzzle-Q-qwuh-begin-row3-col2", "puzzle-Q-qwuh-begin-row2-col1", "puzzle-Q-qwuh-begin-row3-col1", "puzzle-Q-qwuh-begin-row0-col1", "puzzle-Q-qwuh-begin-row0-col2", "puzzle-Q-qwuh-begin-row0-col0", "puzzle-Q-qwuh-begin-row1-col0"]
+    var rPuzzles = ["puzzle-R-ruh-begin-row1-col1", "puzzle-R-ruh-begin-row2-col2", "puzzle-R-ruh-begin-row2-col0", "puzzle-R-ruh-begin-row3-col0", "puzzle-R-ruh-begin-row1-col2", "puzzle-R-ruh-begin-row3-col2", "puzzle-R-ruh-begin-row2-col1", "puzzle-R-ruh-begin-row3-col1", "puzzle-R-ruh-begin-row0-col1", "puzzle-R-ruh-begin-row0-col2", "puzzle-R-ruh-begin-row0-col0", "puzzle-R-ruh-begin-row1-col0"]
+    var sPuzzles = ["puzzle-S-sss-begin-row1-col1", "puzzle-S-sss-begin-row2-col2", "puzzle-S-sss-begin-row2-col0", "puzzle-S-sss-begin-row3-col0", "puzzle-S-sss-begin-row1-col2", "puzzle-S-sss-begin-row3-col2", "puzzle-S-sss-begin-row2-col1", "puzzle-S-sss-begin-row3-col1", "puzzle-S-sss-begin-row0-col1", "puzzle-S-sss-begin-row0-col2", "puzzle-S-sss-begin-row0-col0", "puzzle-S-sss-begin-row1-col0"]
+    var tPuzzles = ["puzzle-T-tttt-begin-row1-col1", "puzzle-T-tttt-begin-row2-col2", "puzzle-T-tttt-begin-row2-col0", "puzzle-T-tttt-begin-row3-col0", "puzzle-T-tttt-begin-row1-col2", "puzzle-T-tttt-begin-row3-col2", "puzzle-T-tttt-begin-row2-col1", "puzzle-T-tttt-begin-row3-col1", "puzzle-T-tttt-begin-row0-col1", "puzzle-T-tttt-begin-row0-col2", "puzzle-T-tttt-begin-row0-col0", "puzzle-T-tttt-begin-row1-col0"]
+    var vPuzzles = ["puzzle-V-vv-begin-row1-col1", "puzzle-V-vv-begin-row2-col2", "puzzle-V-vv-begin-row2-col0", "puzzle-V-vv-begin-row3-col0", "puzzle-V-vv-begin-row1-col2", "puzzle-V-vv-begin-row3-col2", "puzzle-T-tttt-begin-row2-col1", "puzzle-V-vv-begin-row3-col1", "puzzle-V-vv-begin-row0-col1", "puzzle-V-vv-begin-row0-col2", "puzzle-V-vv-begin-row0-col0", "puzzle-V-vv-begin-row1-col0"]
+    var wPuzzles = ["puzzle-W-wuh-begin-row1-col1", "puzzle-W-wuh-begin-row2-col2", "puzzle-W-wuh-begin-row2-col0", "puzzle-W-wuh-begin-row3-col0", "puzzle-W-wuh-begin-row1-col2", "puzzle-W-wuh-begin-row3-col2", "puzzle-W-wuh-begin-row2-col1", "puzzle-W-wuh-begin-row3-col1", "puzzle-W-wuh-begin-row0-col1", "puzzle-W-wuh-begin-row0-col2", "puzzle-W-wuh-begin-row0-col0", "puzzle-W-wuh-begin-row1-col0"]
+    var xPuzzles = ["puzzle-X-ks-begin-row1-col1", "puzzle-X-ks-begin-row2-col2", "puzzle-X-ks-begin-row2-col0", "puzzle-X-ks-begin-row3-col0", "puzzle-X-ks-begin-row1-col2", "puzzle-X-ks-begin-row3-col2", "puzzle-X-ks-begin-row2-col1", "puzzle-X-ks-begin-row3-col1", "puzzle-X-ks-begin-row0-col1", "puzzle-X-ks-begin-row0-col2", "puzzle-X-ks-begin-row0-col0", "puzzle-X-ks-begin-row1-col0"]
+    var yPuzzles = ["puzzle-Y-yuh-begin-row1-col1", "puzzle-Y-yuh-begin-row2-col2", "puzzle-Y-yuh-begin-row2-col0", "puzzle-Y-yuh-begin-row3-col0", "puzzle-Y-yuh-begin-row1-col2", "puzzle-Y-yuh-begin-row3-col2", "puzzle-Y-yuh-begin-row2-col1", "puzzle-Y-yuh-begin-row3-col1", "puzzle-Y-yuh-begin-row0-col1", "puzzle-Y-yuh-begin-row0-col2", "puzzle-Y-yuh-begin-row0-col0", "puzzle-Y-yuh-begin-row1-col0"]
+    var zPuzzles = ["puzzle-Z-zzz-begin-row1-col1", "puzzle-Z-zzz-begin-row2-col2", "puzzle-Z-zzz-begin-row2-col0", "puzzle-Z-zzz-begin-row3-col0", "puzzle-Z-zzz-begin-row1-col2", "puzzle-Z-zzz-begin-row3-col2", "puzzle-Z-zzz-begin-row2-col1", "puzzle-Z-zzz-begin-row3-col1", "puzzle-Z-zzz-begin-row0-col1", "puzzle-Z-zzz-begin-row0-col2", "puzzle-Z-zzz-begin-row0-col0", "puzzle-Z-zzz-begin-row1-col0"]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -501,6 +524,146 @@ class BeginningSoundsQuizViewController: UIViewController {
             if curr > 11 {
                 puzzleFour.image = UIImage(named: "puzzle-B-buh-begin-row1-col0")
             }
+        case "C", "c":
+            let curr:Int = saveFile!["c"] as! Int
+            if curr > 0 {
+                for i in 0...(curr - 1) {
+                    puzzleArray[i]!.image = UIImage(named: cPuzzles[i])
+                }
+            }
+        case "D", "d":
+            let curr:Int = saveFile!["d"] as! Int
+            if curr > 0 {
+                for i in 0...(curr - 1) {
+                    puzzleArray[i]!.image = UIImage(named: dPuzzles[i])
+                }
+            }
+        case "F", "f":
+            let curr:Int = saveFile!["f"] as! Int
+            if curr > 0 {
+                for i in 0...(curr - 1) {
+                    puzzleArray[i]!.image = UIImage(named: fPuzzles[i])
+                }
+            }
+        case "G", "g":
+            let curr:Int = saveFile!["g"] as! Int
+            if curr > 0 {
+                for i in 0...(curr - 1) {
+                    puzzleArray[i]!.image = UIImage(named: gPuzzles[i])
+                }
+            }
+        case "H", "h":
+            let curr:Int = saveFile!["h"] as! Int
+            if curr > 0 {
+                for i in 0...(curr - 1) {
+                    puzzleArray[i]!.image = UIImage(named: hPuzzles[i])
+                }
+            }
+        case "J", "j":
+            let curr:Int = saveFile!["j"] as! Int
+            if curr > 0 {
+                for i in 0...(curr - 1) {
+                    puzzleArray[i]!.image = UIImage(named: jPuzzles[i])
+                }
+            }
+        case "K", "k":
+            let curr:Int = saveFile!["k"] as! Int
+            if curr > 0 {
+                for i in 0...(curr - 1) {
+                    puzzleArray[i]!.image = UIImage(named: kPuzzles[i])
+                }
+            }
+        case "L", "l":
+            let curr:Int = saveFile!["l"] as! Int
+            if curr > 0 {
+                for i in 0...(curr - 1) {
+                    puzzleArray[i]!.image = UIImage(named: lPuzzles[i])
+                }
+            }
+        case "M", "m":
+            let curr:Int = saveFile!["m"] as! Int
+            if curr > 0 {
+                for i in 0...(curr - 1) {
+                    puzzleArray[i]!.image = UIImage(named: mPuzzles[i])
+                }
+            }
+        case "N", "n":
+            let curr:Int = saveFile!["n"] as! Int
+            if curr > 0 {
+                for i in 0...(curr - 1) {
+                    puzzleArray[i]!.image = UIImage(named: nPuzzles[i])
+                }
+            }
+        case "P", "p":
+            let curr:Int = saveFile!["p"] as! Int
+            if curr > 0 {
+                for i in 0...(curr - 1) {
+                    puzzleArray[i]!.image = UIImage(named: pPuzzles[i])
+                }
+            }
+        case "Q", "q":
+            let curr:Int = saveFile!["q"] as! Int
+            if curr > 0 {
+                for i in 0...(curr - 1) {
+                    puzzleArray[i]!.image = UIImage(named: qPuzzles[i])
+                }
+            }
+        case "R", "r":
+            let curr:Int = saveFile!["r"] as! Int
+            if curr > 0 {
+                for i in 0...(curr - 1) {
+                    puzzleArray[i]!.image = UIImage(named: rPuzzles[i])
+                }
+            }
+        case "S", "s":
+            let curr:Int = saveFile!["s"] as! Int
+            if curr > 0 {
+                for i in 0...(curr - 1) {
+                    puzzleArray[i]!.image = UIImage(named: sPuzzles[i])
+                }
+            }
+        case "T", "t":
+            let curr:Int = saveFile!["t"] as! Int
+            if curr > 0 {
+                for i in 0...(curr - 1) {
+                    puzzleArray[i]!.image = UIImage(named: tPuzzles[i])
+                }
+            }
+        case "V", "v":
+            let curr:Int = saveFile!["v"] as! Int
+            if curr > 0 {
+                for i in 0...(curr - 1) {
+                    puzzleArray[i]!.image = UIImage(named: vPuzzles[i])
+                }
+            }
+        case "W", "w":
+            let curr:Int = saveFile!["w"] as! Int
+            if curr > 0 {
+                for i in 0...(curr - 1) {
+                    puzzleArray[i]!.image = UIImage(named: wPuzzles[i])
+                }
+            }
+        case "X", "x":
+            let curr:Int = saveFile!["x"] as! Int
+            if curr > 0 {
+                for i in 0...(curr - 1) {
+                    puzzleArray[i]!.image = UIImage(named: xPuzzles[i])
+                }
+            }
+        case "Y", "y":
+            let curr:Int = saveFile!["y"] as! Int
+            if curr > 0 {
+                for i in 0...(curr - 1) {
+                    puzzleArray[i]!.image = UIImage(named: yPuzzles[i])
+                }
+            }
+        case "Z", "z":
+            let curr:Int = saveFile!["z"] as! Int
+            if curr > 0 {
+                for i in 0...(curr - 1) {
+                    puzzleArray[i]!.image = UIImage(named: zPuzzles[i])
+                }
+            }
         default: break
         }
     }
@@ -644,6 +807,506 @@ class BeginningSoundsQuizViewController: UIViewController {
                 }
                 saveFile!["b"] = curr
                 UserDefaults.standard.set(saveFile, forKey: "BP")
+            case "C", "c":
+                var curr:Int = saveFile!["c"] as! Int
+                if correctChoice == 2 {
+                    if curr < 12 {
+                        if curr == 11 {
+                            puzzleArray[curr]!.image = UIImage(named: cPuzzles[curr])
+                            self.animate(myview: puzzleArray[curr]!)
+                            curr += 1
+                        } else {
+                            puzzleArray[curr]!.image = UIImage(named: cPuzzles[curr])
+                            puzzleArray[curr + 1]!.image = UIImage(named: cPuzzles[curr + 1])
+                            self.animate(myview: puzzleArray[curr]!)
+                            self.animate(myview: puzzleArray[curr + 1]!)
+                            curr += 2
+                        }
+                    }
+                } else if correctChoice == 1 {
+                    if curr < 12 {
+                        puzzleArray[curr]!.image = UIImage(named: cPuzzles[curr])
+                        self.animate(myview: puzzleArray[curr]!)
+                        curr += 1
+                    }
+                }
+                saveFile!["c"] = curr
+                UserDefaults.standard.set(saveFile, forKey: "BP")
+            case "D", "d":
+                var curr:Int = saveFile!["d"] as! Int
+                if correctChoice == 2 {
+                    if curr < 12 {
+                        if curr == 11 {
+                            puzzleArray[curr]!.image = UIImage(named: dPuzzles[curr])
+                            self.animate(myview: puzzleArray[curr]!)
+                            curr += 1
+                        } else {
+                            puzzleArray[curr]!.image = UIImage(named: dPuzzles[curr])
+                            puzzleArray[curr + 1]!.image = UIImage(named: dPuzzles[curr + 1])
+                            self.animate(myview: puzzleArray[curr]!)
+                            self.animate(myview: puzzleArray[curr + 1]!)
+                            curr += 2
+                        }
+                    }
+                } else if correctChoice == 1 {
+                    if curr < 12 {
+                        puzzleArray[curr]!.image = UIImage(named: dPuzzles[curr])
+                        self.animate(myview: puzzleArray[curr]!)
+                        curr += 1
+                    }
+                }
+                saveFile!["d"] = curr
+                UserDefaults.standard.set(saveFile, forKey: "BP")
+            case "F", "f":
+                var curr:Int = saveFile!["f"] as! Int
+                if correctChoice == 2 {
+                    if curr < 12 {
+                        if curr == 11 {
+                            puzzleArray[curr]!.image = UIImage(named: fPuzzles[curr])
+                            self.animate(myview: puzzleArray[curr]!)
+                            curr += 1
+                        } else {
+                            puzzleArray[curr]!.image = UIImage(named: fPuzzles[curr])
+                            puzzleArray[curr + 1]!.image = UIImage(named: fPuzzles[curr + 1])
+                            self.animate(myview: puzzleArray[curr]!)
+                            self.animate(myview: puzzleArray[curr + 1]!)
+                            curr += 2
+                        }
+                    }
+                } else if correctChoice == 1 {
+                    if curr < 12 {
+                        puzzleArray[curr]!.image = UIImage(named: fPuzzles[curr])
+                        self.animate(myview: puzzleArray[curr]!)
+                        curr += 1
+                    }
+                }
+                saveFile!["f"] = curr
+                UserDefaults.standard.set(saveFile, forKey: "BP")
+            case "G", "g":
+                var curr:Int = saveFile!["g"] as! Int
+                if correctChoice == 2 {
+                    if curr < 12 {
+                        if curr == 11 {
+                            puzzleArray[curr]!.image = UIImage(named: gPuzzles[curr])
+                            self.animate(myview: puzzleArray[curr]!)
+                            curr += 1
+                        } else {
+                            puzzleArray[curr]!.image = UIImage(named: gPuzzles[curr])
+                            puzzleArray[curr + 1]!.image = UIImage(named: gPuzzles[curr + 1])
+                            self.animate(myview: puzzleArray[curr]!)
+                            self.animate(myview: puzzleArray[curr + 1]!)
+                            curr += 2
+                        }
+                    }
+                } else if correctChoice == 1 {
+                    if curr < 12 {
+                        puzzleArray[curr]!.image = UIImage(named: gPuzzles[curr])
+                        self.animate(myview: puzzleArray[curr]!)
+                        curr += 1
+                    }
+                }
+                saveFile!["g"] = curr
+                UserDefaults.standard.set(saveFile, forKey: "BP")
+            case "H", "h":
+                var curr:Int = saveFile!["h"] as! Int
+                if correctChoice == 2 {
+                    if curr < 12 {
+                        if curr == 11 {
+                            puzzleArray[curr]!.image = UIImage(named: hPuzzles[curr])
+                            self.animate(myview: puzzleArray[curr]!)
+                            curr += 1
+                        } else {
+                            puzzleArray[curr]!.image = UIImage(named: hPuzzles[curr])
+                            puzzleArray[curr + 1]!.image = UIImage(named: hPuzzles[curr + 1])
+                            self.animate(myview: puzzleArray[curr]!)
+                            self.animate(myview: puzzleArray[curr + 1]!)
+                            curr += 2
+                        }
+                    }
+                } else if correctChoice == 1 {
+                    if curr < 12 {
+                        puzzleArray[curr]!.image = UIImage(named: hPuzzles[curr])
+                        self.animate(myview: puzzleArray[curr]!)
+                        curr += 1
+                    }
+                }
+                saveFile!["h"] = curr
+                UserDefaults.standard.set(saveFile, forKey: "BP")
+            case "J", "j":
+                var curr:Int = saveFile!["j"] as! Int
+                if correctChoice == 2 {
+                    if curr < 12 {
+                        if curr == 11 {
+                            puzzleArray[curr]!.image = UIImage(named: jPuzzles[curr])
+                            self.animate(myview: puzzleArray[curr]!)
+                            curr += 1
+                        } else {
+                            puzzleArray[curr]!.image = UIImage(named: jPuzzles[curr])
+                            puzzleArray[curr + 1]!.image = UIImage(named: jPuzzles[curr + 1])
+                            self.animate(myview: puzzleArray[curr]!)
+                            self.animate(myview: puzzleArray[curr + 1]!)
+                            curr += 2
+                        }
+                    }
+                } else if correctChoice == 1 {
+                    if curr < 12 {
+                        puzzleArray[curr]!.image = UIImage(named: jPuzzles[curr])
+                        self.animate(myview: puzzleArray[curr]!)
+                        curr += 1
+                    }
+                }
+                saveFile!["j"] = curr
+                UserDefaults.standard.set(saveFile, forKey: "BP")
+            case "K", "k":
+                var curr:Int = saveFile!["k"] as! Int
+                if correctChoice == 2 {
+                    if curr < 12 {
+                        if curr == 11 {
+                            puzzleArray[curr]!.image = UIImage(named: kPuzzles[curr])
+                            self.animate(myview: puzzleArray[curr]!)
+                            curr += 1
+                        } else {
+                            puzzleArray[curr]!.image = UIImage(named: kPuzzles[curr])
+                            puzzleArray[curr + 1]!.image = UIImage(named: kPuzzles[curr + 1])
+                            self.animate(myview: puzzleArray[curr]!)
+                            self.animate(myview: puzzleArray[curr + 1]!)
+                            curr += 2
+                        }
+                    }
+                } else if correctChoice == 1 {
+                    if curr < 12 {
+                        puzzleArray[curr]!.image = UIImage(named: kPuzzles[curr])
+                        self.animate(myview: puzzleArray[curr]!)
+                        curr += 1
+                    }
+                }
+                saveFile!["k"] = curr
+                UserDefaults.standard.set(saveFile, forKey: "BP")
+            case "L", "l":
+                var curr:Int = saveFile!["l"] as! Int
+                if correctChoice == 2 {
+                    if curr < 12 {
+                        if curr == 11 {
+                            puzzleArray[curr]!.image = UIImage(named: lPuzzles[curr])
+                            self.animate(myview: puzzleArray[curr]!)
+                            curr += 1
+                        } else {
+                            puzzleArray[curr]!.image = UIImage(named: lPuzzles[curr])
+                            puzzleArray[curr + 1]!.image = UIImage(named: lPuzzles[curr + 1])
+                            self.animate(myview: puzzleArray[curr]!)
+                            self.animate(myview: puzzleArray[curr + 1]!)
+                            curr += 2
+                        }
+                    }
+                } else if correctChoice == 1 {
+                    if curr < 12 {
+                        puzzleArray[curr]!.image = UIImage(named: lPuzzles[curr])
+                        self.animate(myview: puzzleArray[curr]!)
+                        curr += 1
+                    }
+                }
+                saveFile!["l"] = curr
+                UserDefaults.standard.set(saveFile, forKey: "BP")
+            case "M", "m":
+                var curr:Int = saveFile!["m"] as! Int
+                if correctChoice == 2 {
+                    if curr < 12 {
+                        if curr == 11 {
+                            puzzleArray[curr]!.image = UIImage(named: mPuzzles[curr])
+                            self.animate(myview: puzzleArray[curr]!)
+                            curr += 1
+                        } else {
+                            puzzleArray[curr]!.image = UIImage(named: mPuzzles[curr])
+                            puzzleArray[curr + 1]!.image = UIImage(named: mPuzzles[curr + 1])
+                            self.animate(myview: puzzleArray[curr]!)
+                            self.animate(myview: puzzleArray[curr + 1]!)
+                            curr += 2
+                        }
+                    }
+                } else if correctChoice == 1 {
+                    if curr < 12 {
+                        puzzleArray[curr]!.image = UIImage(named: mPuzzles[curr])
+                        self.animate(myview: puzzleArray[curr]!)
+                        curr += 1
+                    }
+                }
+                saveFile!["m"] = curr
+                UserDefaults.standard.set(saveFile, forKey: "BP")
+            case "N", "n":
+                var curr:Int = saveFile!["n"] as! Int
+                if correctChoice == 2 {
+                    if curr < 12 {
+                        if curr == 11 {
+                            puzzleArray[curr]!.image = UIImage(named: nPuzzles[curr])
+                            self.animate(myview: puzzleArray[curr]!)
+                            curr += 1
+                        } else {
+                            puzzleArray[curr]!.image = UIImage(named: nPuzzles[curr])
+                            puzzleArray[curr + 1]!.image = UIImage(named: nPuzzles[curr + 1])
+                            self.animate(myview: puzzleArray[curr]!)
+                            self.animate(myview: puzzleArray[curr + 1]!)
+                            curr += 2
+                        }
+                    }
+                } else if correctChoice == 1 {
+                    if curr < 12 {
+                        puzzleArray[curr]!.image = UIImage(named: nPuzzles[curr])
+                        self.animate(myview: puzzleArray[curr]!)
+                        curr += 1
+                    }
+                }
+                saveFile!["n"] = curr
+                UserDefaults.standard.set(saveFile, forKey: "BP")
+            case "P", "p":
+                var curr:Int = saveFile!["p"] as! Int
+                if correctChoice == 2 {
+                    if curr < 12 {
+                        if curr == 11 {
+                            puzzleArray[curr]!.image = UIImage(named: pPuzzles[curr])
+                            self.animate(myview: puzzleArray[curr]!)
+                            curr += 1
+                        } else {
+                            puzzleArray[curr]!.image = UIImage(named: pPuzzles[curr])
+                            puzzleArray[curr + 1]!.image = UIImage(named: pPuzzles[curr + 1])
+                            self.animate(myview: puzzleArray[curr]!)
+                            self.animate(myview: puzzleArray[curr + 1]!)
+                            curr += 2
+                        }
+                    }
+                } else if correctChoice == 1 {
+                    if curr < 12 {
+                        puzzleArray[curr]!.image = UIImage(named: pPuzzles[curr])
+                        self.animate(myview: puzzleArray[curr]!)
+                        curr += 1
+                    }
+                }
+                saveFile!["p"] = curr
+                UserDefaults.standard.set(saveFile, forKey: "BP")
+            case "Q", "q":
+                var curr:Int = saveFile!["q"] as! Int
+                if correctChoice == 2 {
+                    if curr < 12 {
+                        if curr == 11 {
+                            puzzleArray[curr]!.image = UIImage(named: qPuzzles[curr])
+                            self.animate(myview: puzzleArray[curr]!)
+                            curr += 1
+                        } else {
+                            puzzleArray[curr]!.image = UIImage(named: qPuzzles[curr])
+                            puzzleArray[curr + 1]!.image = UIImage(named: qPuzzles[curr + 1])
+                            self.animate(myview: puzzleArray[curr]!)
+                            self.animate(myview: puzzleArray[curr + 1]!)
+                            curr += 2
+                        }
+                    }
+                } else if correctChoice == 1 {
+                    if curr < 12 {
+                        puzzleArray[curr]!.image = UIImage(named: qPuzzles[curr])
+                        self.animate(myview: puzzleArray[curr]!)
+                        curr += 1
+                    }
+                }
+                saveFile!["q"] = curr
+                UserDefaults.standard.set(saveFile, forKey: "BP")
+            case "R", "r":
+                var curr:Int = saveFile!["r"] as! Int
+                if correctChoice == 2 {
+                    if curr < 12 {
+                        if curr == 11 {
+                            puzzleArray[curr]!.image = UIImage(named: rPuzzles[curr])
+                            self.animate(myview: puzzleArray[curr]!)
+                            curr += 1
+                        } else {
+                            puzzleArray[curr]!.image = UIImage(named: rPuzzles[curr])
+                            puzzleArray[curr + 1]!.image = UIImage(named: rPuzzles[curr + 1])
+                            self.animate(myview: puzzleArray[curr]!)
+                            self.animate(myview: puzzleArray[curr + 1]!)
+                            curr += 2
+                        }
+                    }
+                } else if correctChoice == 1 {
+                    if curr < 12 {
+                        puzzleArray[curr]!.image = UIImage(named: rPuzzles[curr])
+                        self.animate(myview: puzzleArray[curr]!)
+                        curr += 1
+                    }
+                }
+                saveFile!["r"] = curr
+                UserDefaults.standard.set(saveFile, forKey: "BP")
+            case "S", "s":
+                var curr:Int = saveFile!["s"] as! Int
+                if correctChoice == 2 {
+                    if curr < 12 {
+                        if curr == 11 {
+                            puzzleArray[curr]!.image = UIImage(named: sPuzzles[curr])
+                            self.animate(myview: puzzleArray[curr]!)
+                            curr += 1
+                        } else {
+                            puzzleArray[curr]!.image = UIImage(named: sPuzzles[curr])
+                            puzzleArray[curr + 1]!.image = UIImage(named: sPuzzles[curr + 1])
+                            self.animate(myview: puzzleArray[curr]!)
+                            self.animate(myview: puzzleArray[curr + 1]!)
+                            curr += 2
+                        }
+                    }
+                } else if correctChoice == 1 {
+                    if curr < 12 {
+                        puzzleArray[curr]!.image = UIImage(named: sPuzzles[curr])
+                        self.animate(myview: puzzleArray[curr]!)
+                        curr += 1
+                    }
+                }
+                saveFile!["s"] = curr
+                UserDefaults.standard.set(saveFile, forKey: "BP")
+            case "T", "t":
+                var curr:Int = saveFile!["t"] as! Int
+                if correctChoice == 2 {
+                    if curr < 12 {
+                        if curr == 11 {
+                            puzzleArray[curr]!.image = UIImage(named: tPuzzles[curr])
+                            self.animate(myview: puzzleArray[curr]!)
+                            curr += 1
+                        } else {
+                            puzzleArray[curr]!.image = UIImage(named: tPuzzles[curr])
+                            puzzleArray[curr + 1]!.image = UIImage(named: tPuzzles[curr + 1])
+                            self.animate(myview: puzzleArray[curr]!)
+                            self.animate(myview: puzzleArray[curr + 1]!)
+                            curr += 2
+                        }
+                    }
+                } else if correctChoice == 1 {
+                    if curr < 12 {
+                        puzzleArray[curr]!.image = UIImage(named: tPuzzles[curr])
+                        self.animate(myview: puzzleArray[curr]!)
+                        curr += 1
+                    }
+                }
+                saveFile!["t"] = curr
+                UserDefaults.standard.set(saveFile, forKey: "BP")
+            case "V", "v":
+                var curr:Int = saveFile!["v"] as! Int
+                if correctChoice == 2 {
+                    if curr < 12 {
+                        if curr == 11 {
+                            puzzleArray[curr]!.image = UIImage(named: vPuzzles[curr])
+                            self.animate(myview: puzzleArray[curr]!)
+                            curr += 1
+                        } else {
+                            puzzleArray[curr]!.image = UIImage(named: vPuzzles[curr])
+                            puzzleArray[curr + 1]!.image = UIImage(named: vPuzzles[curr + 1])
+                            self.animate(myview: puzzleArray[curr]!)
+                            self.animate(myview: puzzleArray[curr + 1]!)
+                            curr += 2
+                        }
+                    }
+                } else if correctChoice == 1 {
+                    if curr < 12 {
+                        puzzleArray[curr]!.image = UIImage(named: vPuzzles[curr])
+                        self.animate(myview: puzzleArray[curr]!)
+                        curr += 1
+                    }
+                }
+                saveFile!["v"] = curr
+                UserDefaults.standard.set(saveFile, forKey: "BP")
+            case "W", "w":
+                var curr:Int = saveFile!["c"] as! Int
+                if correctChoice == 2 {
+                    if curr < 12 {
+                        if curr == 11 {
+                            puzzleArray[curr]!.image = UIImage(named: wPuzzles[curr])
+                            self.animate(myview: puzzleArray[curr]!)
+                            curr += 1
+                        } else {
+                            puzzleArray[curr]!.image = UIImage(named: wPuzzles[curr])
+                            puzzleArray[curr + 1]!.image = UIImage(named: wPuzzles[curr + 1])
+                            self.animate(myview: puzzleArray[curr]!)
+                            self.animate(myview: puzzleArray[curr + 1]!)
+                            curr += 2
+                        }
+                    }
+                } else if correctChoice == 1 {
+                    if curr < 12 {
+                        puzzleArray[curr]!.image = UIImage(named: wPuzzles[curr])
+                        self.animate(myview: puzzleArray[curr]!)
+                        curr += 1
+                    }
+                }
+                saveFile!["w"] = curr
+                UserDefaults.standard.set(saveFile, forKey: "BP")
+            case "X", "x":
+                var curr:Int = saveFile!["x"] as! Int
+                if correctChoice == 2 {
+                    if curr < 12 {
+                        if curr == 11 {
+                            puzzleArray[curr]!.image = UIImage(named: xPuzzles[curr])
+                            self.animate(myview: puzzleArray[curr]!)
+                            curr += 1
+                        } else {
+                            puzzleArray[curr]!.image = UIImage(named: xPuzzles[curr])
+                            puzzleArray[curr + 1]!.image = UIImage(named: xPuzzles[curr + 1])
+                            self.animate(myview: puzzleArray[curr]!)
+                            self.animate(myview: puzzleArray[curr + 1]!)
+                            curr += 2
+                        }
+                    }
+                } else if correctChoice == 1 {
+                    if curr < 12 {
+                        puzzleArray[curr]!.image = UIImage(named: xPuzzles[curr])
+                        self.animate(myview: puzzleArray[curr]!)
+                        curr += 1
+                    }
+                }
+                saveFile!["x"] = curr
+                UserDefaults.standard.set(saveFile, forKey: "BP")
+            case "Y", "y":
+                var curr:Int = saveFile!["y"] as! Int
+                if correctChoice == 2 {
+                    if curr < 12 {
+                        if curr == 11 {
+                            puzzleArray[curr]!.image = UIImage(named: yPuzzles[curr])
+                            self.animate(myview: puzzleArray[curr]!)
+                            curr += 1
+                        } else {
+                            puzzleArray[curr]!.image = UIImage(named: yPuzzles[curr])
+                            puzzleArray[curr + 1]!.image = UIImage(named: yPuzzles[curr + 1])
+                            self.animate(myview: puzzleArray[curr]!)
+                            self.animate(myview: puzzleArray[curr + 1]!)
+                            curr += 2
+                        }
+                    }
+                } else if correctChoice == 1 {
+                    if curr < 12 {
+                        puzzleArray[curr]!.image = UIImage(named: yPuzzles[curr])
+                        self.animate(myview: puzzleArray[curr]!)
+                        curr += 1
+                    }
+                }
+                saveFile!["y"] = curr
+                UserDefaults.standard.set(saveFile, forKey: "BP")
+            case "Z", "z":
+                var curr:Int = saveFile!["z"] as! Int
+                if correctChoice == 2 {
+                    if curr < 12 {
+                        if curr == 11 {
+                            puzzleArray[curr]!.image = UIImage(named: zPuzzles[curr])
+                            self.animate(myview: puzzleArray[curr]!)
+                            curr += 1
+                        } else {
+                            puzzleArray[curr]!.image = UIImage(named: zPuzzles[curr])
+                            puzzleArray[curr + 1]!.image = UIImage(named: zPuzzles[curr + 1])
+                            self.animate(myview: puzzleArray[curr]!)
+                            self.animate(myview: puzzleArray[curr + 1]!)
+                            curr += 2
+                        }
+                    }
+                } else if correctChoice == 1 {
+                    if curr < 12 {
+                        puzzleArray[curr]!.image = UIImage(named: zPuzzles[curr])
+                        self.animate(myview: puzzleArray[curr]!)
+                        curr += 1
+                    }
+                }
+                saveFile!["z"] = curr
+                UserDefaults.standard.set(saveFile, forKey: "BP")
             default: break
             }
             // sound fx
@@ -666,7 +1329,7 @@ class BeginningSoundsQuizViewController: UIViewController {
             UIView.animate(withDuration: 1, animations: {
                 // center correct choice
                 var center = self.wordButton1.center
-                center.y += 90
+                center.y = self.view.center.y
                 (sender as! UIButton).center = center
                 // fade others if not correct choice
                 if self.wordButton1 != (sender as! UIButton) {

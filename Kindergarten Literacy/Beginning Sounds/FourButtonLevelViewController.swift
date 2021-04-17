@@ -972,6 +972,8 @@ class FourButtonLevelViewController: UIViewController {
     }
     @IBAction func quiz(_ sender: Any) {
         let vc = storyboard?.instantiateViewController(identifier: "beginning_sounds_quiz_vc") as! BeginningSoundsQuizViewController
+        vc.desiredLabelOne = myButtonFour.currentTitle
+        audioPlayer!.stop()
         present(vc, animated: true)
     }
     @IBAction func coin(_ sender: Any) {
