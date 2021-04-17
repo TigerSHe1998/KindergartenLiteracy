@@ -41,17 +41,6 @@
                                     <action selector="choiceButtons:" destination="u6N-2x-HEq" eventType="touchUpInside" id="0zt-6W-Sh1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oEA-DU-eXg">
-                                <rect key="frame" x="260" y="20" width="45" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="80"/>
-                                <state key="normal" title="b">
-                                    <color key="titleColor" systemColor="labelColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="play:" destination="u6N-2x-HEq" eventType="touchUpInside" id="U6X-r6-sPU"/>
-                                </connections>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="AQ4-L0-6F1" userLabel="Side Bar Stack View">
                                 <rect key="frame" x="60" y="26" width="40" height="338"/>
                                 <subviews>
@@ -120,6 +109,17 @@
                                     <constraint firstAttribute="height" constant="338" id="hFH-2h-zWQ"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oEA-DU-eXg">
+                                <rect key="frame" x="213" y="20" width="80" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="80"/>
+                                <state key="normal" title="b">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="play:" destination="u6N-2x-HEq" eventType="touchUpInside" id="U6X-r6-sPU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="JDF-Vt-1IP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -129,7 +129,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="homeButton" destination="aeF-TB-sad" id="W8H-Gc-xeq"/>
                         <outlet property="myButtonOne" destination="oEA-DU-eXg" id="xcF-yE-SVM"/>
+                        <outlet property="redoButton" destination="AHD-V6-Yiv" id="zqQ-cL-0gT"/>
+                        <outlet property="returnButton" destination="J5l-Wj-ikK" id="6hQ-MH-0mV"/>
                         <outlet property="wordButton1" destination="vAJ-0M-xGo" id="il7-gW-qVY"/>
                         <outlet property="wordButton2" destination="e0a-tL-rQn" id="0cb-6k-hx0"/>
                         <outlet property="wordButton3" destination="Twn-Dm-stk" id="tue-AK-VcO"/>
@@ -305,8 +308,8 @@
                                                 <rect key="frame" x="480" y="20" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="d">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="d" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -317,8 +320,8 @@
                                                 <rect key="frame" x="0.0" y="20" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="b">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="b" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -329,8 +332,8 @@
                                                 <rect key="frame" x="0.0" y="190" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="f">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="f" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -341,8 +344,8 @@
                                                 <rect key="frame" x="480" y="190" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="h">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="h" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -353,8 +356,8 @@
                                                 <rect key="frame" x="0.0" y="360" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="j">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="j" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -365,8 +368,8 @@
                                                 <rect key="frame" x="0.0" y="530" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="m">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="m" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -377,8 +380,8 @@
                                                 <rect key="frame" x="0.0" y="700" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="q">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="q" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -389,8 +392,8 @@
                                                 <rect key="frame" x="0.0" y="870" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="t">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="t" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -401,8 +404,8 @@
                                                 <rect key="frame" x="240" y="190" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="g">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="g" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -413,8 +416,8 @@
                                                 <rect key="frame" x="0.0" y="1040" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="x">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="x" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -425,8 +428,8 @@
                                                 <rect key="frame" x="240" y="360" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="k">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="k" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -437,8 +440,8 @@
                                                 <rect key="frame" x="480" y="360" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="l">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="l" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -449,8 +452,8 @@
                                                 <rect key="frame" x="240" y="530" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="n">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="n" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -461,8 +464,8 @@
                                                 <rect key="frame" x="480" y="530" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="p">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="p" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -473,8 +476,8 @@
                                                 <rect key="frame" x="240" y="700" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="r">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="r" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -485,8 +488,8 @@
                                                 <rect key="frame" x="480" y="700" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="s">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="s" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -497,8 +500,8 @@
                                                 <rect key="frame" x="480" y="870" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="w">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="w" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -509,8 +512,8 @@
                                                 <rect key="frame" x="240" y="1040" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="y">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="y" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -521,8 +524,8 @@
                                                 <rect key="frame" x="480" y="1040" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="z">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="z" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -533,8 +536,8 @@
                                                 <rect key="frame" x="240" y="20" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="c">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="c" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -545,8 +548,8 @@
                                                 <rect key="frame" x="240" y="870" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="v">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="v" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -654,6 +657,29 @@
                     </view>
                     <navigationItem key="navigationItem" id="eEQ-cZ-fNI"/>
                     <size key="freeformSize" width="896" height="1200"/>
+                    <connections>
+                        <outletCollection property="levelButtons" destination="SmN-ss-g8u" collectionClass="NSMutableArray" id="peU-Cq-xET"/>
+                        <outletCollection property="levelButtons" destination="n1Y-2v-BK0" collectionClass="NSMutableArray" id="IaG-b0-6ag"/>
+                        <outletCollection property="levelButtons" destination="ZuJ-bt-Kaa" collectionClass="NSMutableArray" id="1uR-Tz-TMA"/>
+                        <outletCollection property="levelButtons" destination="2Db-Dr-dT9" collectionClass="NSMutableArray" id="rjw-Yd-I7r"/>
+                        <outletCollection property="levelButtons" destination="ovV-tq-Ytx" collectionClass="NSMutableArray" id="mEY-WI-xEj"/>
+                        <outletCollection property="levelButtons" destination="rc4-ta-Mbc" collectionClass="NSMutableArray" id="Z5i-7b-2CS"/>
+                        <outletCollection property="levelButtons" destination="y2Y-mb-rXw" collectionClass="NSMutableArray" id="i6x-k7-8cS"/>
+                        <outletCollection property="levelButtons" destination="DHj-BM-hpR" collectionClass="NSMutableArray" id="biQ-XD-bdG"/>
+                        <outletCollection property="levelButtons" destination="vCK-qO-HoR" collectionClass="NSMutableArray" id="zmQ-aG-RI8"/>
+                        <outletCollection property="levelButtons" destination="qtm-8X-vCV" collectionClass="NSMutableArray" id="Zc1-QX-vtz"/>
+                        <outletCollection property="levelButtons" destination="Htb-dC-JVA" collectionClass="NSMutableArray" id="1iG-9g-AXb"/>
+                        <outletCollection property="levelButtons" destination="IcI-Dz-LTk" collectionClass="NSMutableArray" id="G2e-L6-45H"/>
+                        <outletCollection property="levelButtons" destination="Uqo-Ue-niV" collectionClass="NSMutableArray" id="g9k-tv-d1U"/>
+                        <outletCollection property="levelButtons" destination="fXC-me-8q9" collectionClass="NSMutableArray" id="OrJ-81-s4n"/>
+                        <outletCollection property="levelButtons" destination="v69-2B-pFx" collectionClass="NSMutableArray" id="NQf-CQ-z0s"/>
+                        <outletCollection property="levelButtons" destination="RyF-h9-RpR" collectionClass="NSMutableArray" id="6gw-aJ-ZOd"/>
+                        <outletCollection property="levelButtons" destination="g1h-0e-4yh" collectionClass="NSMutableArray" id="B1L-nr-BgU"/>
+                        <outletCollection property="levelButtons" destination="dIR-l5-Oo5" collectionClass="NSMutableArray" id="RRE-CY-o9g"/>
+                        <outletCollection property="levelButtons" destination="AT7-2m-smy" collectionClass="NSMutableArray" id="mzv-Oh-yDy"/>
+                        <outletCollection property="levelButtons" destination="zdu-hz-Jlz" collectionClass="NSMutableArray" id="xYq-zc-b8l"/>
+                        <outletCollection property="levelButtons" destination="vCR-sZ-Jf0" collectionClass="NSMutableArray" id="tPH-wC-3OA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Enx-e8-V6r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -851,8 +877,8 @@
                                                 <rect key="frame" x="480" y="20" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="r">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="r" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -863,8 +889,8 @@
                                                 <rect key="frame" x="0.0" y="20" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="b">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="b" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -875,8 +901,8 @@
                                                 <rect key="frame" x="0.0" y="190" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="s">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="s" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -887,8 +913,8 @@
                                                 <rect key="frame" x="480" y="190" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="g">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="g" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -899,8 +925,8 @@
                                                 <rect key="frame" x="0.0" y="360" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="n">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="n" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -911,8 +937,8 @@
                                                 <rect key="frame" x="0.0" y="530" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="h">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="h" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -923,8 +949,8 @@
                                                 <rect key="frame" x="0.0" y="700" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="l">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="l" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -935,8 +961,8 @@
                                                 <rect key="frame" x="0.0" y="870" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="w">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="w" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -947,8 +973,8 @@
                                                 <rect key="frame" x="240" y="190" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="t">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="t" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -959,8 +985,8 @@
                                                 <rect key="frame" x="0.0" y="1040" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="v">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="v" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -971,8 +997,8 @@
                                                 <rect key="frame" x="240" y="360" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="p">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="p" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -983,8 +1009,8 @@
                                                 <rect key="frame" x="480" y="360" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="c">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="c" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -995,8 +1021,8 @@
                                                 <rect key="frame" x="240" y="530" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="f">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="f" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -1007,8 +1033,8 @@
                                                 <rect key="frame" x="480" y="530" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="d">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="d" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -1019,8 +1045,8 @@
                                                 <rect key="frame" x="240" y="700" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="k">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="k" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -1031,8 +1057,8 @@
                                                 <rect key="frame" x="480" y="700" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="j">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="j" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -1043,8 +1069,8 @@
                                                 <rect key="frame" x="480" y="870" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="z">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="z" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -1055,8 +1081,8 @@
                                                 <rect key="frame" x="240" y="1040" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="q">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="q" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -1067,8 +1093,8 @@
                                                 <rect key="frame" x="480" y="1040" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="x">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="x" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -1079,8 +1105,8 @@
                                                 <rect key="frame" x="240" y="20" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="m">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="m" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -1091,8 +1117,8 @@
                                                 <rect key="frame" x="240" y="870" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="y">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="y" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -1200,6 +1226,29 @@
                     </view>
                     <navigationItem key="navigationItem" id="vAz-oW-aTm"/>
                     <size key="freeformSize" width="896" height="1200"/>
+                    <connections>
+                        <outletCollection property="levelButtons" destination="Nr1-jw-2w5" collectionClass="NSMutableArray" id="bCb-3e-enZ"/>
+                        <outletCollection property="levelButtons" destination="bU7-WF-CHs" collectionClass="NSMutableArray" id="QXq-cV-Y6Z"/>
+                        <outletCollection property="levelButtons" destination="8zF-Jz-x77" collectionClass="NSMutableArray" id="ZPH-8e-pBb"/>
+                        <outletCollection property="levelButtons" destination="CaV-pF-Nwe" collectionClass="NSMutableArray" id="7Rd-8q-Avq"/>
+                        <outletCollection property="levelButtons" destination="JOJ-16-tG2" collectionClass="NSMutableArray" id="ACK-FF-IL0"/>
+                        <outletCollection property="levelButtons" destination="gQU-yR-51H" collectionClass="NSMutableArray" id="jFS-m5-8Of"/>
+                        <outletCollection property="levelButtons" destination="vEr-sQ-Ohh" collectionClass="NSMutableArray" id="bqm-bx-m9j"/>
+                        <outletCollection property="levelButtons" destination="Q58-aO-H5a" collectionClass="NSMutableArray" id="hQT-Zv-JGT"/>
+                        <outletCollection property="levelButtons" destination="5rR-dH-S6v" collectionClass="NSMutableArray" id="cSq-G7-jf9"/>
+                        <outletCollection property="levelButtons" destination="5TN-NL-IPJ" collectionClass="NSMutableArray" id="GLt-zi-Ojp"/>
+                        <outletCollection property="levelButtons" destination="TED-B0-T2n" collectionClass="NSMutableArray" id="keK-dE-ibz"/>
+                        <outletCollection property="levelButtons" destination="3Y2-3d-EYW" collectionClass="NSMutableArray" id="udY-tf-xWV"/>
+                        <outletCollection property="levelButtons" destination="MS4-0b-K20" collectionClass="NSMutableArray" id="PLp-Tu-MWJ"/>
+                        <outletCollection property="levelButtons" destination="6ms-RL-dBq" collectionClass="NSMutableArray" id="C0g-pB-81D"/>
+                        <outletCollection property="levelButtons" destination="SwX-x8-7S7" collectionClass="NSMutableArray" id="gQf-0J-bfk"/>
+                        <outletCollection property="levelButtons" destination="ndi-Y3-5ek" collectionClass="NSMutableArray" id="eqC-4a-E8F"/>
+                        <outletCollection property="levelButtons" destination="Z1i-eZ-gjM" collectionClass="NSMutableArray" id="BaG-Pb-zkt"/>
+                        <outletCollection property="levelButtons" destination="igu-jV-XAw" collectionClass="NSMutableArray" id="bJn-0d-vXC"/>
+                        <outletCollection property="levelButtons" destination="wmE-3T-WPL" collectionClass="NSMutableArray" id="Qyt-Y2-7wd"/>
+                        <outletCollection property="levelButtons" destination="UBi-XL-TMq" collectionClass="NSMutableArray" id="PFT-15-nPH"/>
+                        <outletCollection property="levelButtons" destination="QJH-YF-vod" collectionClass="NSMutableArray" id="DFK-5a-3AS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L5I-qC-eWT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1397,8 +1446,8 @@
                                                 <rect key="frame" x="480" y="20" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="D">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="D" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -1409,8 +1458,8 @@
                                                 <rect key="frame" x="0.0" y="20" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="B">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="B" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -1421,8 +1470,8 @@
                                                 <rect key="frame" x="0.0" y="190" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="F">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="F" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -1433,8 +1482,8 @@
                                                 <rect key="frame" x="480" y="190" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="H">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="H" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -1445,8 +1494,8 @@
                                                 <rect key="frame" x="0.0" y="360" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="J">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="J" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -1457,8 +1506,8 @@
                                                 <rect key="frame" x="0.0" y="530" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="M">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="M" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -1469,8 +1518,8 @@
                                                 <rect key="frame" x="0.0" y="700" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="Q">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="Q" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -1481,8 +1530,8 @@
                                                 <rect key="frame" x="0.0" y="870" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="T">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="T" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -1493,8 +1542,8 @@
                                                 <rect key="frame" x="240" y="190" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="G">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="G" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -1505,8 +1554,8 @@
                                                 <rect key="frame" x="0.0" y="1040" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="X">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="X" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -1517,8 +1566,8 @@
                                                 <rect key="frame" x="240" y="360" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="K">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="K" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -1529,8 +1578,8 @@
                                                 <rect key="frame" x="480" y="360" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="L">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="L" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -1541,8 +1590,8 @@
                                                 <rect key="frame" x="240" y="530" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="N">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="N" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -1553,8 +1602,8 @@
                                                 <rect key="frame" x="480" y="530" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="P">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="P" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -1565,8 +1614,8 @@
                                                 <rect key="frame" x="240" y="700" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="R">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="R" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -1577,8 +1626,8 @@
                                                 <rect key="frame" x="480" y="700" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="S">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="S" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -1589,8 +1638,8 @@
                                                 <rect key="frame" x="480" y="870" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="W">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="W" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -1601,8 +1650,8 @@
                                                 <rect key="frame" x="240" y="1040" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="Y">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="Y" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -1613,8 +1662,8 @@
                                                 <rect key="frame" x="480" y="1040" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="Z">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="Z" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -1625,8 +1674,8 @@
                                                 <rect key="frame" x="240" y="20" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="C">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="C" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -1637,8 +1686,8 @@
                                                 <rect key="frame" x="240" y="870" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="V">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="V" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -1746,6 +1795,29 @@
                     </view>
                     <navigationItem key="navigationItem" id="740-Px-tCq"/>
                     <size key="freeformSize" width="896" height="1200"/>
+                    <connections>
+                        <outletCollection property="levelButtons" destination="mVo-Al-0fe" collectionClass="NSMutableArray" id="ePd-tt-fDj"/>
+                        <outletCollection property="levelButtons" destination="e3F-EZ-Cp8" collectionClass="NSMutableArray" id="x90-UQ-FpS"/>
+                        <outletCollection property="levelButtons" destination="5b6-Ml-w5n" collectionClass="NSMutableArray" id="q23-bT-TdX"/>
+                        <outletCollection property="levelButtons" destination="L0h-pp-V9A" collectionClass="NSMutableArray" id="Whm-NJ-ROf"/>
+                        <outletCollection property="levelButtons" destination="wG8-K4-Og5" collectionClass="NSMutableArray" id="GRj-cW-Hkt"/>
+                        <outletCollection property="levelButtons" destination="clp-tq-AZR" collectionClass="NSMutableArray" id="bB2-Ag-u4t"/>
+                        <outletCollection property="levelButtons" destination="s5D-9r-w8o" collectionClass="NSMutableArray" id="bF4-uu-9eL"/>
+                        <outletCollection property="levelButtons" destination="OEb-Fb-GlK" collectionClass="NSMutableArray" id="2Wd-wH-iJM"/>
+                        <outletCollection property="levelButtons" destination="cyS-wP-qh8" collectionClass="NSMutableArray" id="EKB-58-wgp"/>
+                        <outletCollection property="levelButtons" destination="YB9-ZK-qhn" collectionClass="NSMutableArray" id="fHd-AF-PqO"/>
+                        <outletCollection property="levelButtons" destination="YhR-Ml-fpv" collectionClass="NSMutableArray" id="rBA-qa-4T0"/>
+                        <outletCollection property="levelButtons" destination="HEd-o4-mH8" collectionClass="NSMutableArray" id="tVo-xp-kZ0"/>
+                        <outletCollection property="levelButtons" destination="Bbl-kh-Ofj" collectionClass="NSMutableArray" id="afQ-MU-dJO"/>
+                        <outletCollection property="levelButtons" destination="rxD-Rr-AO6" collectionClass="NSMutableArray" id="uvA-KE-JGd"/>
+                        <outletCollection property="levelButtons" destination="Ypd-ly-fc1" collectionClass="NSMutableArray" id="EYj-9S-Rum"/>
+                        <outletCollection property="levelButtons" destination="p1n-HO-YPh" collectionClass="NSMutableArray" id="maF-CU-xgO"/>
+                        <outletCollection property="levelButtons" destination="Mig-2y-KB8" collectionClass="NSMutableArray" id="biZ-Jp-v3C"/>
+                        <outletCollection property="levelButtons" destination="xGa-XR-8DV" collectionClass="NSMutableArray" id="kdI-RM-doH"/>
+                        <outletCollection property="levelButtons" destination="ciA-zv-brc" collectionClass="NSMutableArray" id="u1q-fB-0xI"/>
+                        <outletCollection property="levelButtons" destination="Csa-A4-FfS" collectionClass="NSMutableArray" id="nVW-oy-wqD"/>
+                        <outletCollection property="levelButtons" destination="NoN-ot-fOf" collectionClass="NSMutableArray" id="ROm-Vq-GyF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nhg-uA-FJW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1848,7 +1920,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M1S-eZ-nQs">
-                                <rect key="frame" x="420" y="25" width="46" height="60"/>
+                                <rect key="frame" x="396" y="0.0" width="85" height="119"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="60"/>
                                 <state key="normal" title="b">
@@ -1923,7 +1995,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7cI-e1-hJX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1766" y="2937"/>
+            <point key="canvasLocation" x="1765.8767772511846" y="2936.9230769230767"/>
         </scene>
         <!--Beginning Sounds Four Button View Controller-->
         <scene sceneID="Ve3-9I-sAp">
@@ -1943,8 +2015,8 @@
                                                 <rect key="frame" x="480" y="20" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="R">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="R" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -1955,8 +2027,8 @@
                                                 <rect key="frame" x="0.0" y="20" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="B">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="B" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -1967,8 +2039,8 @@
                                                 <rect key="frame" x="0.0" y="190" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="S">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="S" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -1979,8 +2051,8 @@
                                                 <rect key="frame" x="480" y="190" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="G">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="G" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -1991,8 +2063,8 @@
                                                 <rect key="frame" x="0.0" y="360" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="N">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="N" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -2003,8 +2075,8 @@
                                                 <rect key="frame" x="0.0" y="530" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="H">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="H" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -2015,8 +2087,8 @@
                                                 <rect key="frame" x="0.0" y="700" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="L">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="L" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -2027,8 +2099,8 @@
                                                 <rect key="frame" x="0.0" y="870" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="W">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="W" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -2039,8 +2111,8 @@
                                                 <rect key="frame" x="240" y="190" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="T">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="T" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -2051,8 +2123,8 @@
                                                 <rect key="frame" x="0.0" y="1040" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="V">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="V" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -2063,8 +2135,8 @@
                                                 <rect key="frame" x="240" y="360" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="P">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="P" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -2075,8 +2147,8 @@
                                                 <rect key="frame" x="480" y="360" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="C">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="C" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -2087,8 +2159,8 @@
                                                 <rect key="frame" x="240" y="530" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="F">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="F" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -2099,8 +2171,8 @@
                                                 <rect key="frame" x="480" y="530" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="D">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="D" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -2111,8 +2183,8 @@
                                                 <rect key="frame" x="240" y="700" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="K">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="K" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -2123,8 +2195,8 @@
                                                 <rect key="frame" x="480" y="700" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="J">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="J" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -2135,8 +2207,8 @@
                                                 <rect key="frame" x="480" y="870" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="Z">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="Z" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -2147,8 +2219,8 @@
                                                 <rect key="frame" x="240" y="1040" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="Q">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="Q" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -2159,8 +2231,8 @@
                                                 <rect key="frame" x="480" y="1040" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="X">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="X" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -2171,8 +2243,8 @@
                                                 <rect key="frame" x="240" y="20" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="M">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="M" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -2183,8 +2255,8 @@
                                                 <rect key="frame" x="240" y="870" width="208" height="144"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                <state key="normal" title="Y">
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                                <state key="normal" title="Y" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
@@ -2292,6 +2364,29 @@
                     </view>
                     <navigationItem key="navigationItem" id="8Yl-yj-hGP"/>
                     <size key="freeformSize" width="896" height="1200"/>
+                    <connections>
+                        <outletCollection property="levelButtons" destination="1jx-Wz-Mmw" collectionClass="NSMutableArray" id="cRz-aK-g5s"/>
+                        <outletCollection property="levelButtons" destination="FP3-iy-4i1" collectionClass="NSMutableArray" id="OVi-Kv-VmS"/>
+                        <outletCollection property="levelButtons" destination="d0h-EJ-48B" collectionClass="NSMutableArray" id="Jo2-FP-waV"/>
+                        <outletCollection property="levelButtons" destination="fU8-ZH-7dE" collectionClass="NSMutableArray" id="RnC-D3-tom"/>
+                        <outletCollection property="levelButtons" destination="Sun-PU-kso" collectionClass="NSMutableArray" id="Wet-6S-2l8"/>
+                        <outletCollection property="levelButtons" destination="N5f-X8-jmF" collectionClass="NSMutableArray" id="6P6-Xp-urx"/>
+                        <outletCollection property="levelButtons" destination="EAG-Ml-N7A" collectionClass="NSMutableArray" id="MJW-by-NdV"/>
+                        <outletCollection property="levelButtons" destination="kY0-kD-KLG" collectionClass="NSMutableArray" id="dCH-0d-Ojt"/>
+                        <outletCollection property="levelButtons" destination="eQr-mg-8eM" collectionClass="NSMutableArray" id="IC3-gT-Kbv"/>
+                        <outletCollection property="levelButtons" destination="ZBS-JS-j95" collectionClass="NSMutableArray" id="DYJ-09-DSg"/>
+                        <outletCollection property="levelButtons" destination="f9g-hm-wwN" collectionClass="NSMutableArray" id="lMg-6L-LaZ"/>
+                        <outletCollection property="levelButtons" destination="UwS-VJ-tNF" collectionClass="NSMutableArray" id="De6-Bs-mAV"/>
+                        <outletCollection property="levelButtons" destination="PCv-UH-GtV" collectionClass="NSMutableArray" id="h8G-aT-VL9"/>
+                        <outletCollection property="levelButtons" destination="2Qh-tJ-4GT" collectionClass="NSMutableArray" id="KKV-RA-SJC"/>
+                        <outletCollection property="levelButtons" destination="VYf-zi-QcK" collectionClass="NSMutableArray" id="Fex-7c-JWH"/>
+                        <outletCollection property="levelButtons" destination="R3j-oe-WOs" collectionClass="NSMutableArray" id="BMM-mE-gJ9"/>
+                        <outletCollection property="levelButtons" destination="nYv-jp-X6i" collectionClass="NSMutableArray" id="twW-Cb-nde"/>
+                        <outletCollection property="levelButtons" destination="9JQ-M1-qAZ" collectionClass="NSMutableArray" id="hFP-SO-SeA"/>
+                        <outletCollection property="levelButtons" destination="g14-Nj-juq" collectionClass="NSMutableArray" id="SoK-5h-OoY"/>
+                        <outletCollection property="levelButtons" destination="TXy-FH-w1W" collectionClass="NSMutableArray" id="25S-gJ-Xfm"/>
+                        <outletCollection property="levelButtons" destination="DC4-X3-NZL" collectionClass="NSMutableArray" id="5r9-dO-sn4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wPz-Sf-w9Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2394,7 +2489,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="73Y-A5-QEi">
-                                <rect key="frame" x="420" y="25" width="46" height="60"/>
+                                <rect key="frame" x="399" y="0.0" width="89" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="60"/>
                                 <state key="normal" title="b">
@@ -2469,7 +2564,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zC5-2Y-Chx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2432" y="2937"/>
+            <point key="canvasLocation" x="2431.990521327014" y="2936.9230769230767"/>
         </scene>
     </scenes>
     <resources>
@@ -2485,6 +2580,7 @@
         <image name="bubble-b" width="400" height="400"/>
         <image name="forward" width="56" height="56"/>
         <image name="home" width="56" height="56"/>
+        <image name="level_button_0_star" width="549" height="444"/>
         <image name="puzzle" width="56" height="56"/>
         <image name="quiz" width="56" height="56"/>
         <image name="repeat" width="56" height="56"/>
