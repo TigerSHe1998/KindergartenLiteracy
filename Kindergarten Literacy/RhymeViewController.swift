@@ -31,7 +31,7 @@ class RhymeViewController: UIViewController {
         style.lineSpacing = 2
         
         switch passedInLetter{
-            case "a", "A":
+            case "a ", "A ":
                 configure(puzzleImage: "puzzle-A-ahh-composite", rhymeAudio: "puzzle-A-ahh-rhyme")
                 let rhyme = NSMutableAttributedString(string: "Bat, bat,\nCome under my hat,\nAnd I'll give you a slice of bacon,\nAnd when I bake,\nI'll give you a cake,\nIf I am not mistaken.", attributes: [NSAttributedString.Key.font :UIFont(name: "Helvetica", size: 16.0)!])
                 rhyme.addAttribute(.paragraphStyle, value: style, range: NSRange(location: 0, length: rhyme.length))
@@ -41,7 +41,7 @@ class RhymeViewController: UIViewController {
                 rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:109,length:1))
                 rhymeLabel.attributedText = rhyme
                 
-            case "a ", "A ":
+            case "a", "A":
                 configure(puzzleImage: "puzzle-A-short-composite", rhymeAudio: "puzzle-A-short-rhyme")
                 let rhyme = NSMutableAttributedString(string: "Children call me Father Goose,\nBecause when I want to wander,\nI ride through the air\nOn a very fine gander.", attributes: [NSAttributedString.Key.font :UIFont(name: "Helvetica", size: 20.0)!])
                 rhyme.addAttribute(.paragraphStyle, value: style, range: NSRange(location: 0, length: rhyme.length))

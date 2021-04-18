@@ -53,7 +53,7 @@ class VowelQuizViewController: UIViewController {
     var wrongTwo: String!
     
     var correctButton: UIButton!
-    var wrongTimes = 0
+    var increment = 2
     
     // reference to different storyboards
     let VowelLetterStoryBoard:UIStoryboard = UIStoryboard(name: "VowelLetter", bundle:nil)
@@ -175,19 +175,24 @@ class VowelQuizViewController: UIViewController {
         var saveFile = UserDefaults.standard.dictionary(forKey: "vowelStarCount")
 
         if (sender as! UIButton) == correctButton {
-            correctButtonAnimation()
+            
             
             var currScore:Int = saveFile![currentLetter] as! Int
-            if currScore < 5 {
-                currScore += 1
-                saveFile![currentLetter] = currScore
-                UserDefaults.standard.set(saveFile, forKey: "vowelStarCount")
+            if currScore < 11 {
+                while increment > 0{
+                    currScore += 1
+                    correctButtonAnimation()
+                    increment -= 1
+                }
+                increment = 2
+                if currScore < 6{
+                    saveFile![currentLetter] = currScore
+                    UserDefaults.standard.set(saveFile, forKey: "vowelStarCount")
+                }
+                
             }
-       
-            
             // disable button to avoid tapping during animation
             (sender as! UIButton).isEnabled = false
-            
             // ANIMATION BLOCK //
             // backup center points
             let c1 = self.choice1.center
@@ -232,8 +237,11 @@ class VowelQuizViewController: UIViewController {
                     })
                 }
             })
-        } else {
-            playFullAudio(currentLetter: currentLetter, firstChoice: choice1.currentTitle!, secondChoice: choice2.currentTitle!, thirdChoice: choice3.currentTitle!)
+    } else {
+        if increment > 0{
+            increment -= 1
+        }
+        playFullAudio(currentLetter: currentLetter, firstChoice: choice1.currentTitle!, secondChoice: choice2.currentTitle!, thirdChoice: choice3.currentTitle!)
         }
     }
     
@@ -269,39 +277,51 @@ class VowelQuizViewController: UIViewController {
         
         if progress == 1 {
             puzzleFive.setImage(UIImage(named: imageFive), for: .normal)
-            puzzleNine.setImage(UIImage(named: imageNine), for: .normal)
             self.animate(mybutton: puzzleFive)
+        }
+        if progress == 2{
+            puzzleNine.setImage(UIImage(named: imageNine), for: .normal)
             self.animate(mybutton: puzzleNine)
         }
-        if progress == 2 {
-            puzzleSeven.setImage(UIImage(named: imageSeven), for: .normal)
+        if progress == 3 {
             puzzleTen.setImage(UIImage(named: imageTen), for: .normal)
-            self.animate(mybutton: puzzleSeven)
             self.animate(mybutton: puzzleTen)
         }
-        if progress == 3 {
+        if progress == 4{
+            puzzleSeven.setImage(UIImage(named: imageSeven), for: .normal)
+            self.animate(mybutton: puzzleSeven)
+        }
+        if progress == 5{
             puzzleSix.setImage(UIImage(named: imageSix), for: .normal)
-            puzzleTwelve.setImage(UIImage(named: imageTwelve), for: .normal)
             self.animate(mybutton: puzzleSix)
+        }
+        if progress == 6{
+            puzzleTwelve.setImage(UIImage(named: imageTwelve), for: .normal)
             self.animate(mybutton: puzzleTwelve)
         }
-        if progress == 4 {
+        if progress == 7 {
             puzzleEight.setImage(UIImage(named: imageEight), for: .normal)
-            puzzleEleven.setImage(UIImage(named: imageEleven), for: .normal)
             self.animate(mybutton: puzzleEight)
+        }
+        if progress == 8{
+            puzzleEleven.setImage(UIImage(named: imageEleven), for: .normal)
             self.animate(mybutton: puzzleEleven)
         }
-        if progress == 5 {
+        if progress == 9{
             puzzleTwo.setImage(UIImage(named: imageTwo), for: .normal)
-            puzzleThree.setImage(UIImage(named: imageThree), for: .normal)
             self.animate(mybutton: puzzleTwo)
+        }
+        if progress == 10{
+            puzzleThree.setImage(UIImage(named: imageThree), for: .normal)
             self.animate(mybutton: puzzleThree)
         }
-        if progress == 6 {
-            puzzleOne.setImage(UIImage(named: imageOne), for: .normal)
+        if progress == 11{
             puzzleFour.setImage(UIImage(named: imageFour), for: .normal)
-            self.animate(mybutton: puzzleOne)
             self.animate(mybutton: puzzleFour)
+        }
+        if progress == 12 {
+            puzzleOne.setImage(UIImage(named: imageOne), for: .normal)
+            self.animate(mybutton: puzzleOne)
             puzzleOne.addTarget(self, action: #selector(self.puzzleTapped), for: .touchUpInside)
             let vc = mainStoryBoard.instantiateViewController(identifier: "rhyme_vc") as! RhymeViewController
             vc.passedInLetter = currentLetter
@@ -326,28 +346,39 @@ class VowelQuizViewController: UIViewController {
         
         if progress > 1 {
             puzzleFive.setImage(UIImage(named: imageFive), for: .normal)
-            puzzleNine.setImage(UIImage(named: imageNine), for: .normal)
         }
         if progress > 2 {
-            puzzleSeven.setImage(UIImage(named: imageSeven), for: .normal)
-            puzzleTen.setImage(UIImage(named: imageTen), for: .normal)
+            puzzleNine.setImage(UIImage(named: imageNine), for: .normal)
         }
         if progress > 3 {
-            puzzleSix.setImage(UIImage(named: imageSix), for: .normal)
-            puzzleTwelve.setImage(UIImage(named: imageTwelve), for: .normal)
+            puzzleTen.setImage(UIImage(named: imageTen), for: .normal)
         }
         if progress > 4 {
-            puzzleEight.setImage(UIImage(named: imageEight), for: .normal)
-            puzzleEleven.setImage(UIImage(named: imageEleven), for: .normal)
+            puzzleSeven.setImage(UIImage(named: imageSeven), for: .normal)
         }
         if progress > 5 {
-            puzzleTwo.setImage(UIImage(named: imageTwo), for: .normal)
-            puzzleThree.setImage(UIImage(named: imageThree), for: .normal)
+            puzzleSix.setImage(UIImage(named: imageSix), for: .normal)
         }
         if progress > 6 {
-            puzzleOne.setImage(UIImage(named: imageOne), for: .normal)
+            puzzleTwelve.setImage(UIImage(named: imageTwelve), for: .normal)
+        }
+        if progress > 7 {
+            puzzleEight.setImage(UIImage(named: imageEight), for: .normal)
+        }
+        if progress > 8 {
+            puzzleEleven.setImage(UIImage(named: imageEleven), for: .normal)
+        }
+        if progress > 9 {
+            puzzleTwo.setImage(UIImage(named: imageTwo), for: .normal)
+        }
+        if progress > 10 {
+            puzzleThree.setImage(UIImage(named: imageThree), for: .normal)
+        }
+        if progress > 11 {
             puzzleFour.setImage(UIImage(named: imageFour), for: .normal)
-            
+        }
+        if progress > 12 {
+            puzzleOne.setImage(UIImage(named: imageOne), for: .normal)
             puzzleOne.addTarget(self, action: #selector(self.puzzleTapped), for: .touchUpInside)
         }
 
