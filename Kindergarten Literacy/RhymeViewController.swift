@@ -31,9 +31,9 @@ class RhymeViewController: UIViewController {
         style.lineSpacing = 2
         
         switch passedInLetter{
-            case "a ", "A ":
-                configure(puzzleImage: "puzzle-A-ahh-composite", rhymeAudio: "puzzle-A-ahh-rhyme")
-                let rhyme = NSMutableAttributedString(string: "Children call me Father Goose,\nBecause when I want to wander,\nI ride through the air\nOn a very fine gander.", attributes: [NSAttributedString.Key.font :UIFont(name: "Helvetica", size: 20.0)!])
+            case "a", "A":
+                configure(puzzleImage: "puzzle-A-short-composite", rhymeAudio: "puzzle-A-short-rhyme")
+                let rhyme = NSMutableAttributedString(string: "Bat, bat,\nCome under my hat,\nAnd I'll give you a slice of bacon,\nAnd when I bake,\nI'll give you a cake,\nIf I am not mistaken.", attributes: [NSAttributedString.Key.font :UIFont(name: "Helvetica", size: 16.0)!])
                 rhyme.addAttribute(.paragraphStyle, value: style, range: NSRange(location: 0, length: rhyme.length))
                 rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:1,length:1))
                 rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:6,length:1))
@@ -41,9 +41,9 @@ class RhymeViewController: UIViewController {
                 rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:109,length:1))
                 rhymeLabel.attributedText = rhyme
                 
-            case "a", "A":
-                configure(puzzleImage: "puzzle-A-short-composite", rhymeAudio: "puzzle-A-short-rhyme")
-                let rhyme = NSMutableAttributedString(string: "Bat, bat,\nCome under my hat,\nAnd I'll give you a slice of bacon,\nAnd when I bake,\nI'll give you a cake,\nIf I am not mistaken.", attributes: [NSAttributedString.Key.font :UIFont(name: "Helvetica", size: 16.0)!])
+            case "a ", "A ":
+                configure(puzzleImage: "puzzle-A-ahh-composite", rhymeAudio: "puzzle-A-ahh-rhyme")
+                let rhyme = NSMutableAttributedString(string: "Children call me Father Goose,\nBecause when I want to wander,\nI ride through the air\nOn a very fine gander.", attributes: [NSAttributedString.Key.font :UIFont(name: "Helvetica", size: 20.0)!])
                 rhyme.addAttribute(.paragraphStyle, value: style, range: NSRange(location: 0, length: rhyme.length))
                 rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:18,length:1))
                 rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:47,length:1))
@@ -55,13 +55,12 @@ class RhymeViewController: UIViewController {
                     configure(puzzleImage: "puzzle-B-buh-begin-composite", rhymeAudio: "puzzle-B-buh-begin-rhyme")
                     let rhyme = NSMutableAttributedString(string: "Rock-a-bye, Baby, on the tree top,\nWhen the wind blows the cradle will rock,\nWhen the bough breaks the cradle will fall,\nand down will come Baby, cradle, and all.", attributes: [NSAttributedString.Key.font :UIFont(name: "Helvetica", size: 20.0)!])
                     rhyme.addAttribute(.paragraphStyle, value: style, range: NSRange(location: 0, length: rhyme.length))
-                    rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:7,length:1))
-                    rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:12,length:1))
-                    rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:49,length:1))
-                    rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:86,length:1))
-                    rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:92,length:1))
-                    rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:140,length:1))
+                    rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:18,length:1))
+                    rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:47,length:1))
+                    rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:55,length:1))
                     rhymeLabel.attributedText = rhyme
+                    
+                    
                 } else if letterCategory == "end" {
                     configure(puzzleImage: "puzzle-B-buh-end-composite", rhymeAudio: "puzzle-B-buh-end-rhyme")
                     let rhyme = NSMutableAttributedString(string: "Rub a dub dub,\nThree men in a tub,\nAnd who do you think they be?\nThe butcher, the baker,\nThe candlestick-maker,\nTurn’em out,\nknaves all three!", attributes: [NSAttributedString.Key.font :UIFont(name: "Helvetica", size: 16.0)!])
@@ -181,31 +180,35 @@ class RhymeViewController: UIViewController {
                     rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:76,length:1))
                     rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:120,length:1))
                     rhymeLabel.attributedText = rhyme
-            case "i", "I":
+            case "i ", "I ":
                 configure(puzzleImage: "puzzle-I-ee-composite", rhymeAudio: "puzzle-I-ee-rhyme")
                 let rhyme = NSMutableAttributedString(string: "While eating hot chili,\nThey planned a safari\nTo bring back a yeti.\nBoth dressed in new khaki,\nTopped off with a kepi,\nBut learned that their taxi,\nHad almost hit Bambi,\n\nSo instead took a jet ski\nAnd found a bikini!\n(But just an emoji.)", attributes: [NSAttributedString.Key.font :UIFont(name: "Helvetica", size: 20.0)!])
-                    rhyme.addAttribute(.paragraphStyle, value: style, range: NSRange(location: 0, length: rhyme.length))
-                    rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:10,length:1))
-                    rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:28,length:1))
-                    rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:61,length:1))
-                    rhymeLabel.attributedText = rhyme
+                rhyme.addAttribute(.paragraphStyle, value: style, range: NSRange(location: 0, length: rhyme.length))
+                rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:21,length:1))
+                rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:44,length:1))
+                rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:65,length:1))
+                rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:92,length:1))
+                rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:116,length:1))
+                rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:145,length:1))
+                rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:167,length:1))
+                rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:195,length:1))
+                rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:212,length:1))
+                rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:214,length:1))
+                rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:234,length:1))
+                rhymeLabel.attributedText = rhyme
+                    
 
-            case "i ", "I ":
+            case "i", "I":
                 configure(puzzleImage: "puzzle-I-short-composite", rhymeAudio: "puzzle-I-short-rhyme")
                 let rhyme = NSMutableAttributedString(string: "Jack, be nimble, Jack, be quick.\nJack, jump over the candlestick.", attributes: [NSAttributedString.Key.font :UIFont(name: "Helvetica", size: 20.0)!])
-                    rhyme.addAttribute(.paragraphStyle, value: style, range: NSRange(location: 0, length: rhyme.length))
-                    rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:21,length:1))
-                    rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:44,length:1))
-                    rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:65,length:1))
-                    rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:92,length:1))
-                    rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:116,length:1))
-                    rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:145,length:1))
-                    rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:167,length:1))
-                    rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:195,length:1))
-                    rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:212,length:1))
-                    rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:214,length:1))
-                    rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:234,length:1))
-                    rhymeLabel.attributedText = rhyme
+                
+                
+                rhyme.addAttribute(.paragraphStyle, value: style, range: NSRange(location: 0, length: rhyme.length))
+                rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:10,length:1))
+                rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:28,length:1))
+                rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:61,length:1))
+                rhymeLabel.attributedText = rhyme
+                    
             case "j", "J":
                 configure(puzzleImage: "puzzle-J-juh-begin-composite", rhymeAudio: "puzzle-J-juh-begin-rhyme")
                 let rhyme = NSMutableAttributedString(string: "Here am I, Little jumping Joan,\nWhen nobody's with me,\nI’m always alone.", attributes: [NSAttributedString.Key.font :UIFont(name: "Helvetica", size: 20.0)!])
