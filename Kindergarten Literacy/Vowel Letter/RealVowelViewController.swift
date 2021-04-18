@@ -57,16 +57,16 @@ class RealVowelViewController: UIViewController {
     }
     
     @IBAction func playLetter(_ sender: Any) {
-        playBeginningSoundsAudio(letter: myButtonOne.currentTitle!)
+        playVowelAudio(letter: myButtonOne.currentTitle!)
     }
     @IBAction func playFirst(_ sender: Any) {
-        playBeginningSoundsFirstWord(letter: myButtonOne.currentTitle!)
+        playVowelFirstWord(letter: myButtonOne.currentTitle!)
     }
     @IBAction func playSecond(_ sender: Any) {
-        playBeginningSoundsSecondWord(letter: myButtonOne.currentTitle!)
+        playVowelSecondWord(letter: myButtonOne.currentTitle!)
     }
     @IBAction func playThird(_ sender: Any) {
-        playBeginningSoundsThirdWord(letter: myButtonOne.currentTitle!)
+        playVowelThirdWord(letter: myButtonOne.currentTitle!)
     }
     
     
@@ -80,28 +80,28 @@ class RealVowelViewController: UIViewController {
             word1.text = "bat"
             word2.text = "cat"
             word3.text = "ax"
-            playBeginningSoundsAudio(letter: "a")
+            playVowelAudio(letter: "a")
             // use dispatch queue to add delay between words. the delay have to increase each time by 1
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: {
-                self.playBeginningSoundsFirstWord(letter: "a")
+                self.playVowelFirstWord(letter: "a")
             })
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2), execute: {
-                self.playBeginningSoundsSecondWord(letter: "a")
+                self.playVowelSecondWord(letter: "a")
             })
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(3), execute: {
-                self.playBeginningSoundsThirdWord(letter: "a")
+                self.playVowelThirdWord(letter: "a")
             })
         case "a ","A ":
-            playBeginningSoundsAudio(letter: "a ")
+            playVowelAudio(letter: "a ")
             // use dispatch queue to add delay between words. the delay have to increase each time by 1
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: {
-                self.playBeginningSoundsFirstWord(letter: "a ")
+                self.playVowelFirstWord(letter: "a ")
             })
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2), execute: {
-                self.playBeginningSoundsSecondWord(letter: "a ")
+                self.playVowelSecondWord(letter: "a ")
             })
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(3), execute: {
-                self.playBeginningSoundsThirdWord(letter: "a ")
+                self.playVowelThirdWord(letter: "a ")
             })
             wordButton1.setImage(UIImage(named: "ball"), for: .normal)
             wordButton2.setImage(UIImage(named: "fall"), for: .normal)
@@ -110,16 +110,16 @@ class RealVowelViewController: UIViewController {
             word2.text = "fall"
             word3.text = "swan"
         case "e","E":
-            playBeginningSoundsAudio(letter: "e")
+            playVowelAudio(letter: "e")
             // use dispatch queue to add delay between words. the delay have to increase each time by 1
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: {
-                self.playBeginningSoundsFirstWord(letter: "e")
+                self.playVowelFirstWord(letter: "e")
             })
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2), execute: {
-                self.playBeginningSoundsSecondWord(letter: "e")
+                self.playVowelSecondWord(letter: "e")
             })
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(3), execute: {
-                self.playBeginningSoundsThirdWord(letter: "e")
+                self.playVowelThirdWord(letter: "e")
             })
             wordButton1.setImage(UIImage(named: "elf"), for: .normal)
             wordButton2.setImage(UIImage(named: "bed"), for: .normal)
@@ -128,16 +128,16 @@ class RealVowelViewController: UIViewController {
             word2.text = "bed"
             word3.text = "net"
         case "i","I":
-            playBeginningSoundsAudio(letter: "i")
+            playVowelAudio(letter: "i")
             // use dispatch queue to add delay between words. the delay have to increase each time by 1
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: {
-                self.playBeginningSoundsFirstWord(letter: "i")
+                self.playVowelFirstWord(letter: "i")
             })
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2), execute: {
-                self.playBeginningSoundsSecondWord(letter: "i")
+                self.playVowelSecondWord(letter: "i")
             })
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(3), execute: {
-                self.playBeginningSoundsThirdWord(letter: "i")
+                self.playVowelThirdWord(letter: "i")
             })
             wordButton1.setImage(UIImage(named: "mittens"), for: .normal)
             wordButton2.setImage(UIImage(named: "hit"), for: .normal)
@@ -146,16 +146,16 @@ class RealVowelViewController: UIViewController {
             word2.text = "hit"
             word3.text = "fish"
         case "i ","I ":
-            playBeginningSoundsAudio(letter: "i ")
+            playVowelAudio(letter: "i ")
             // use dispatch queue to add delay between words. the delay have to increase each time by 1
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: {
-                self.playBeginningSoundsFirstWord(letter: "i ")
+                self.playVowelFirstWord(letter: "i ")
             })
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2), execute: {
-                self.playBeginningSoundsSecondWord(letter: "i ")
+                self.playVowelSecondWord(letter: "i ")
             })
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(3), execute: {
-                self.playBeginningSoundsThirdWord(letter: "i ")
+                self.playVowelThirdWord(letter: "i ")
             })
             wordButton1.setImage(UIImage(named: "taxi"), for: .normal)
             wordButton2.setImage(UIImage(named: "yeti"), for: .normal)
@@ -164,16 +164,16 @@ class RealVowelViewController: UIViewController {
             word2.text = "yeti"
             word3.text = "skis"
         case "o","O":
-            playBeginningSoundsAudio(letter: "o")
+            playVowelAudio(letter: "o")
             // use dispatch queue to add delay between words. the delay have to increase each time by 1
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: {
-                self.playBeginningSoundsFirstWord(letter: "o")
+                self.playVowelFirstWord(letter: "o")
             })
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2), execute: {
-                self.playBeginningSoundsSecondWord(letter: "o")
+                self.playVowelSecondWord(letter: "o")
             })
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(3), execute: {
-                self.playBeginningSoundsThirdWord(letter: "o")
+                self.playVowelThirdWord(letter: "o")
             })
             wordButton1.setImage(UIImage(named: "fox"), for: .normal)
             wordButton2.setImage(UIImage(named: "pot"), for: .normal)
@@ -182,16 +182,16 @@ class RealVowelViewController: UIViewController {
             word2.text = "pot"
             word3.text = "hot"
         case "u","U":
-            playBeginningSoundsAudio(letter: "u")
+            playVowelAudio(letter: "u")
             // use dispatch queue to add delay between words. the delay have to increase each time by 1
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: {
-                self.playBeginningSoundsFirstWord(letter: "u")
+                self.playVowelFirstWord(letter: "u")
             })
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2), execute: {
-                self.playBeginningSoundsSecondWord(letter: "u")
+                self.playVowelSecondWord(letter: "u")
             })
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(3), execute: {
-                self.playBeginningSoundsThirdWord(letter: "u")
+                self.playVowelThirdWord(letter: "u")
             })
             wordButton1.setImage(UIImage(named: "bug"), for: .normal)
             wordButton2.setImage(UIImage(named: "bus"), for: .normal)
@@ -204,7 +204,7 @@ class RealVowelViewController: UIViewController {
         }
     }
     
-    func playBeginningSoundsAudio(letter: String) {
+    func playVowelAudio(letter: String) {
         switch letter {
         case "a","A":
             let pathToSound = Bundle.main.path(forResource: "phoneme-A-short", ofType: "mp3")!
@@ -260,7 +260,7 @@ class RealVowelViewController: UIViewController {
         }
     }
     
-    func playBeginningSoundsFirstWord(letter: String) {
+    func playVowelFirstWord(letter: String) {
         switch letter {
         case "a","A":
             let pathToSound = Bundle.main.path(forResource: "bat", ofType: "mp3")!
@@ -316,7 +316,7 @@ class RealVowelViewController: UIViewController {
         }
     }
     
-    func playBeginningSoundsSecondWord(letter: String) {
+    func playVowelSecondWord(letter: String) {
         switch letter {
         case "a","A":
             let pathToSound = Bundle.main.path(forResource: "cat", ofType: "mp3")!
@@ -372,7 +372,7 @@ class RealVowelViewController: UIViewController {
         }
     }
     
-    func playBeginningSoundsThirdWord(letter: String) {
+    func playVowelThirdWord(letter: String) {
         switch letter {
         case "a","A":
             let pathToSound = Bundle.main.path(forResource: "ax", ofType: "mp3")!

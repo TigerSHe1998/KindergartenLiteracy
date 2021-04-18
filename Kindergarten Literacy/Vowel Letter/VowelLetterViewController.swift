@@ -7,10 +7,13 @@
 
 import Foundation
 import UIKit
+import AVFoundation
 
 class VowelLetterViewController: UIViewController {
     
     var array = ["a", "a ", "e", "i", "i ", "o", "u"]
+    
+    var audioPlayer: AVAudioPlayer?
     
     let i0 = UIImage(named: "level_button_0_star")
     let i1 = UIImage(named: "level_button_1_star")
@@ -36,6 +39,13 @@ class VowelLetterViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let pathToSound = Bundle.main.path(forResource: "vowels", ofType: "mp3")!
+        let url = URL(fileURLWithPath: pathToSound)
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: url)
+            audioPlayer?.play()
+        } catch {}
 
         // Do any additional setup after loading the view.
         for button in levelButtons {
