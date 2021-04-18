@@ -37,9 +37,9 @@ class VowelQuizViewController: UIViewController {
     
     // choice buttons variables outlet
     @IBOutlet var letterButton: UIButton!
-    @IBOutlet var choice1: UIButton!;
-    @IBOutlet var choice2: UIButton!;
-    @IBOutlet var choice3: UIButton!;
+    @IBOutlet weak var choice1: UIButton!;
+    @IBOutlet weak var choice2: UIButton!;
+    @IBOutlet weak var choice3: UIButton!;
     
     // audio player
     var audioPlayer: AVAudioPlayer?
@@ -126,6 +126,23 @@ class VowelQuizViewController: UIViewController {
             choice3.setImage(UIImage(named: String(wrongTwo!)), for: .normal)
             choice3.setTitle(wrongTwo, for: .normal)
             correctButton = choice1
+  
+            choice1.isEnabled = false
+            choice2.isEnabled = false
+            choice3.isEnabled = false
+
+            let seconds = 6.0
+            
+            playFullAudio(currentLetter: currentLetter, firstChoice: choice1.currentTitle!, secondChoice: choice2.currentTitle!, thirdChoice: choice3.currentTitle!)
+
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
+ 
+                self.choice1.isEnabled = true
+                self.choice2.isEnabled = true
+                self.choice3.isEnabled = true
+            }
+            
         case 1:
             choice1.setImage(UIImage(named: String(wrongOne!)), for: .normal)
             choice1.setTitle(wrongOne, for: .normal)
@@ -134,6 +151,20 @@ class VowelQuizViewController: UIViewController {
             choice3.setImage(UIImage(named: String(wrongTwo!)), for: .normal)
             choice3.setTitle(wrongTwo, for: .normal)
             correctButton = choice2
+
+            choice1.isEnabled = false
+            choice2.isEnabled = false
+            choice3.isEnabled = false
+
+            playFullAudio(currentLetter: currentLetter, firstChoice: choice1.currentTitle!, secondChoice: choice2.currentTitle!, thirdChoice: choice3.currentTitle!)
+
+            let seconds = 6.0
+            DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
+
+                self.choice1.isEnabled = true
+                self.choice2.isEnabled = true
+                self.choice3.isEnabled = true
+            }
         case 2:
             choice1.setImage(UIImage(named: String(wrongOne!)), for: .normal)
             choice1.setTitle(wrongOne, for: .normal)
@@ -142,11 +173,25 @@ class VowelQuizViewController: UIViewController {
             choice3.setImage(UIImage(named: correctImage), for: .normal)
             choice3.setTitle(correctImage, for: .normal)
             correctButton = choice3
+  
+            choice1.isEnabled = false
+            choice2.isEnabled = false
+            choice3.isEnabled = false
+
+            playFullAudio(currentLetter: currentLetter, firstChoice: choice1.currentTitle!, secondChoice: choice2.currentTitle!, thirdChoice: choice3.currentTitle!)
+
+            let seconds = 6.0
+            DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
+
+                self.choice1.isEnabled = true
+                self.choice2.isEnabled = true
+                self.choice3.isEnabled = true
+            }
         default:
             break
         }
         
-        playFullAudio(currentLetter: currentLetter, firstChoice: choice1.currentTitle!, secondChoice: choice2.currentTitle!, thirdChoice: choice3.currentTitle!)
+        
         
     }
     
@@ -233,7 +278,7 @@ class VowelQuizViewController: UIViewController {
                             self.choice3.alpha = 1.0
                         })
                         // re enable button
-                        (sender as! UIButton).isEnabled = true
+                        
                     })
                 }
             })
@@ -455,9 +500,9 @@ class VowelQuizViewController: UIViewController {
         switch letter {
         
         case "a","A":
-            playAudio(audioName: "phoneme-A-ahh")
-        case "a ","A ":
             playAudio(audioName: "phoneme-A-short")
+        case "a ","A ":
+            playAudio(audioName: "phoneme-A-ahh")
         case "e","E":
             playAudio(audioName: "phoneme-E-short")
         case "i","I":

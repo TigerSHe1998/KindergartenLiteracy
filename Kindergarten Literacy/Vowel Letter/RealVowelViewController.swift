@@ -36,14 +36,18 @@ class RealVowelViewController: UIViewController {
         transitionAudioandImage(letter: desiredLabelOne)
     }
     
-    func showText(txt: String) {
-        myButtonOne.setTitle(txt, for: .normal)
+    func showText(letter: String, first: String) {
+        let letterToRed = letter
+        let range1 = (first as NSString).range(of: letterToRed)
+        let mutableFirst = NSMutableAttributedString(string: first)
+        mutableFirst.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: range1)
+        myButtonOne.setTitle(letter, for: .normal)
     }
     
     @IBAction func prev(_ sender: Any) {
         let i = array.firstIndex(of: myButtonOne.currentTitle!)!;
         if i > 0 {
-            showText(txt: array[i - 1])
+            showText(letter: myButtonOne.currentTitle!, first: array[i - 1])
         }
         transitionAudioandImage(letter: myButtonOne.currentTitle!)
     }
@@ -51,7 +55,7 @@ class RealVowelViewController: UIViewController {
     @IBAction func next(_ sender: Any) {
         let i = array.firstIndex(of: myButtonOne.currentTitle!)!;
         if i < 6 {
-            showText(txt: array[i + 1])
+            showText(letter: myButtonOne.currentTitle!, first: array[i + 1])
         }
         transitionAudioandImage(letter: myButtonOne.currentTitle!)
     }
