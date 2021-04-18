@@ -552,10 +552,16 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backButton" destination="eT9-sY-Gyg" id="XhR-VD-ahb"/>
                         <outlet property="choice1" destination="9ba-YF-4uv" id="wLS-Cr-Css"/>
                         <outlet property="choice2" destination="5Q1-dn-nzh" id="I89-ac-a1l"/>
                         <outlet property="choice3" destination="2HE-s1-BnC" id="ZyL-zJ-sAV"/>
+                        <outlet property="coinButton" destination="lH1-GK-bG8" id="HWt-WS-qb0"/>
+                        <outlet property="homeButton" destination="hN5-4W-17D" id="rzg-mT-cC1"/>
                         <outlet property="letterButton" destination="Jyz-vV-jKt" id="SeT-1y-bgb"/>
+                        <outlet property="puzzleButton" destination="ag9-Hm-pcY" id="xUl-ke-h3V"/>
+                        <outlet property="quizButton" destination="0gT-IV-4dk" id="sMs-0O-ZDo"/>
+                        <outlet property="replayButton" destination="jX5-BJ-aCe" id="kur-Mc-bvH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MLu-Oc-YDQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

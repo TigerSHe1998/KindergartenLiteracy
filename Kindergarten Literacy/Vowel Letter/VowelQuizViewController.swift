@@ -31,6 +31,14 @@ class VowelQuizViewController: UIViewController {
     var puzzleEleven: UIButton!
     var puzzleTwelve: UIButton!
     
+    
+    @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var homeButton: UIButton!
+    @IBOutlet weak var replayButton: UIButton!
+    @IBOutlet weak var coinButton: UIButton!
+    @IBOutlet weak var puzzleButton: UIButton!
+    @IBOutlet weak var quizButton: UIButton!
+    
     //passed in argument from level select page
     var passedInLetter: String!
     var passedInArray: [String]!
@@ -62,6 +70,8 @@ class VowelQuizViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         letterButton.setTitle(passedInLetter, for: .normal)
+        
+        quizButton.isEnabled = false
         
         puzzleOne = UIButton(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
         self.view.addSubview(puzzleOne)
@@ -130,6 +140,11 @@ class VowelQuizViewController: UIViewController {
             choice1.isEnabled = false
             choice2.isEnabled = false
             choice3.isEnabled = false
+            backButton.isEnabled = false
+            homeButton.isEnabled = false
+            replayButton.isEnabled = false
+            coinButton.isEnabled = false
+            puzzleButton.isEnabled = false
 
             let seconds = 6.0
             
@@ -141,6 +156,11 @@ class VowelQuizViewController: UIViewController {
                 self.choice1.isEnabled = true
                 self.choice2.isEnabled = true
                 self.choice3.isEnabled = true
+                self.backButton.isEnabled = true
+                self.homeButton.isEnabled = true
+                self.replayButton.isEnabled = true
+                self.coinButton.isEnabled = true
+                self.puzzleButton.isEnabled = true
             }
             
         case 1:
@@ -155,6 +175,11 @@ class VowelQuizViewController: UIViewController {
             choice1.isEnabled = false
             choice2.isEnabled = false
             choice3.isEnabled = false
+            backButton.isEnabled = false
+            homeButton.isEnabled = false
+            replayButton.isEnabled = false
+            coinButton.isEnabled = false
+            puzzleButton.isEnabled = false
 
             playFullAudio(currentLetter: currentLetter, firstChoice: choice1.currentTitle!, secondChoice: choice2.currentTitle!, thirdChoice: choice3.currentTitle!)
 
@@ -164,6 +189,12 @@ class VowelQuizViewController: UIViewController {
                 self.choice1.isEnabled = true
                 self.choice2.isEnabled = true
                 self.choice3.isEnabled = true
+                
+                self.backButton.isEnabled = true
+                self.homeButton.isEnabled = true
+                self.replayButton.isEnabled = true
+                self.coinButton.isEnabled = true
+                self.puzzleButton.isEnabled = true
             }
         case 2:
             choice1.setImage(UIImage(named: String(wrongOne!)), for: .normal)
@@ -177,6 +208,11 @@ class VowelQuizViewController: UIViewController {
             choice1.isEnabled = false
             choice2.isEnabled = false
             choice3.isEnabled = false
+            backButton.isEnabled = false
+            homeButton.isEnabled = false
+            replayButton.isEnabled = false
+            coinButton.isEnabled = false
+            puzzleButton.isEnabled = false
 
             playFullAudio(currentLetter: currentLetter, firstChoice: choice1.currentTitle!, secondChoice: choice2.currentTitle!, thirdChoice: choice3.currentTitle!)
 
@@ -186,6 +222,12 @@ class VowelQuizViewController: UIViewController {
                 self.choice1.isEnabled = true
                 self.choice2.isEnabled = true
                 self.choice3.isEnabled = true
+             
+                self.backButton.isEnabled = true
+                self.homeButton.isEnabled = true
+                self.replayButton.isEnabled = true
+                self.coinButton.isEnabled = true
+                self.puzzleButton.isEnabled = true
             }
         default:
             break
@@ -223,7 +265,7 @@ class VowelQuizViewController: UIViewController {
             
             
             var currScore:Int = saveFile![currentLetter] as! Int
-            if currScore < 11 {
+            if currScore < 12 {
                 while increment > 0{
                     currScore += 1
                     correctButtonAnimation()
@@ -286,7 +328,7 @@ class VowelQuizViewController: UIViewController {
         if increment > 0{
             increment -= 1
         }
-        playFullAudio(currentLetter: currentLetter, firstChoice: choice1.currentTitle!, secondChoice: choice2.currentTitle!, thirdChoice: choice3.currentTitle!)
+       // playFullAudio(currentLetter: currentLetter, firstChoice: choice1.currentTitle!, secondChoice: choice2.currentTitle!, thirdChoice: choice3.currentTitle!)
         }
     }
     

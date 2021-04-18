@@ -40,7 +40,7 @@ class VowelLetterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let pathToSound = Bundle.main.path(forResource: "vowels", ofType: "mp3")!
+        let pathToSound = Bundle.main.path(forResource: "vowels_intro", ofType: "mp3")!
         let url = URL(fileURLWithPath: pathToSound)
         do {
             audioPlayer = try AVAudioPlayer(contentsOf: url)

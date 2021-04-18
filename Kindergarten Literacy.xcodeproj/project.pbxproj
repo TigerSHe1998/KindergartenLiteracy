@@ -54,6 +54,7 @@
 		348B4B172600E4D400DCFFD5 /* a1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 348B4AF42600E4D400DCFFD5 /* a1.mp3 */; };
 		348B4B182600E4D400DCFFD5 /* elf.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 348B4AF52600E4D400DCFFD5 /* elf.mp3 */; };
 		34C462AF261D929200FA03B2 /* VowelQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C462AE261D929200FA03B2 /* VowelQuizViewController.swift */; };
+		34C6A62E262C49C60022FBFC /* vowels_intro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 34C6A62D262C49C60022FBFC /* vowels_intro.mp3 */; };
 		34D764DD262BC75300B42D83 /* vowels.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 34D764DC262BC75300B42D83 /* vowels.mp3 */; };
 		98358CED25D6A6C70092C8FF /* BeginningSoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98358CE225D6A6C70092C8FF /* BeginningSoundsViewController.swift */; };
 		98358CEE25D6A6C70092C8FF /* BeginningSoundsThreeButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98358CE325D6A6C70092C8FF /* BeginningSoundsThreeButtonViewController.swift */; };
@@ -391,6 +392,7 @@
 		348B4AF42600E4D400DCFFD5 /* a1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = a1.mp3; sourceTree = "<group>"; };
 		348B4AF52600E4D400DCFFD5 /* elf.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = elf.mp3; sourceTree = "<group>"; };
 		34C462AE261D929200FA03B2 /* VowelQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VowelQuizViewController.swift; sourceTree = "<group>"; };
+		34C6A62D262C49C60022FBFC /* vowels_intro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = vowels_intro.mp3; sourceTree = "<group>"; };
 		34D764DC262BC75300B42D83 /* vowels.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = vowels.mp3; sourceTree = "<group>"; };
 		98358CE225D6A6C70092C8FF /* BeginningSoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeginningSoundsViewController.swift; sourceTree = "<group>"; };
 		98358CE325D6A6C70092C8FF /* BeginningSoundsThreeButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeginningSoundsThreeButtonViewController.swift; sourceTree = "<group>"; };
@@ -708,6 +710,7 @@
 		3442FB6626008F10007C2C3F /* Audio */ = {
 			isa = PBXGroup;
 			children = (
+				34C6A62D262C49C60022FBFC /* vowels_intro.mp3 */,
 				34D764DC262BC75300B42D83 /* vowels.mp3 */,
 				348B4ADD2600E4D300DCFFD5 /* ax.mp3 */,
 				348B4AE22600E4D400DCFFD5 /* ball.mp3 */,
@@ -1540,6 +1543,7 @@
 				DC6532A825E97D7E005A4320 /* alphabetSound_X.mp3 in Resources */,
 				98A571BC26065B5E00C4C35E /* gold-b.mp3 in Resources */,
 				C09E53FF262772990042A957 /* polar-bear-e.mp3 in Resources */,
+				34C6A62E262C49C60022FBFC /* vowels_intro.mp3 in Resources */,
 				98A571BB26065B5E00C4C35E /* foot-b.mp3 in Resources */,
 				348B4B042600E4D400DCFFD5 /* hot.mp3 in Resources */,
 				C09E541B262772990042A957 /* dress-e.mp3 in Resources */,
