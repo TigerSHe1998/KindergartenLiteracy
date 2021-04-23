@@ -401,12 +401,12 @@ class BeginningSoundsQuizViewController: UIViewController {
             wordButton2.setImage(UIImage(named: correctImage), for: .normal)
             wordButton3.setImage(UIImage(named: String(wrongTwo!)), for: .normal)
             correctButton = wordButton2
-            returnButton.isEnabled = false
-            homeButton.isEnabled = false
-            redoButton.isEnabled = false
-            wordButton1.isEnabled = false
-            wordButton2.isEnabled = false
-            wordButton3.isEnabled = false
+            self.returnButton.isEnabled = false
+            self.homeButton.isEnabled = false
+            self.redoButton.isEnabled = false
+            self.wordButton1.isEnabled = false
+            self.wordButton2.isEnabled = false
+            self.wordButton3.isEnabled = false
             let seconds = 1.5
             DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
                 let pathToSound = Bundle.main.path(forResource: wrongOne, ofType: "mp3")!
@@ -683,6 +683,7 @@ class BeginningSoundsQuizViewController: UIViewController {
     
     @IBAction func choiceButtons(_ sender: Any) {
         if (sender as! UIButton) == correctButton {
+            UserDefaults.standard.set(UserDefaults.standard.integer(forKey: "coinCount") + 1, forKey: "coinCount")
             var saveFile = UserDefaults.standard.dictionary(forKey: "BP")
             var saveFile1 = UserDefaults.standard.dictionary(forKey: "BS")
             var curr:Int = 0
