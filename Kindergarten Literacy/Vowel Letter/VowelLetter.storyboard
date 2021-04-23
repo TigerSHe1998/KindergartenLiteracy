@@ -557,6 +557,7 @@
                         <outlet property="coinButton" destination="lH1-GK-bG8" id="HWt-WS-qb0"/>
                         <outlet property="homeButton" destination="hN5-4W-17D" id="rzg-mT-cC1"/>
                         <outlet property="letterButton" destination="Jyz-vV-jKt" id="SeT-1y-bgb"/>
+                        <outlet property="letterDisplay" destination="Jyz-vV-jKt" id="Uoi-ho-eoL"/>
                         <outlet property="puzzleButton" destination="ag9-Hm-pcY" id="xUl-ke-h3V"/>
                         <outlet property="replayButton" destination="jX5-BJ-aCe" id="kur-Mc-bvH"/>
                     </connections>

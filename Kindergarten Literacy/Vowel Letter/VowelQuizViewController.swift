@@ -62,6 +62,8 @@ class VowelQuizViewController: UIViewController {
     var correctButton: UIButton!
     var increment = 2
     
+    @IBOutlet var letterDisplay: UIButton!
+    
     // reference to different storyboards
     let VowelLetterStoryBoard:UIStoryboard = UIStoryboard(name: "VowelLetter", bundle:nil)
     let mainStoryBoard:UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
@@ -70,30 +72,32 @@ class VowelQuizViewController: UIViewController {
         super.viewDidLoad()
         letterButton.setTitle(passedInLetter, for: .normal)
         
+        let xLocation = letterDisplay.frame.origin.x
+        let yLocation = letterDisplay.frame.origin.y
         
-        puzzleOne = UIButton(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
+        puzzleOne = UIButton(frame: CGRect(x: xLocation, y: yLocation, width: 220, height: 260))
         self.view.addSubview(puzzleOne)
-        puzzleTwo = UIButton(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
+        puzzleTwo = UIButton(frame: CGRect(x: xLocation, y: yLocation, width: 220, height: 260))
         self.view.insertSubview(puzzleTwo, belowSubview: puzzleOne)
-        puzzleThree = UIButton(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
+        puzzleThree = UIButton(frame: CGRect(x: xLocation, y: yLocation, width: 220, height: 260))
         self.view.insertSubview(puzzleThree, belowSubview: puzzleTwo)
-        puzzleFour = UIButton(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
+        puzzleFour = UIButton(frame: CGRect(x: xLocation, y: yLocation, width: 220, height: 260))
         self.view.insertSubview(puzzleFour, belowSubview: puzzleThree)
-        puzzleFive = UIButton(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
+        puzzleFive = UIButton(frame: CGRect(x: xLocation, y: yLocation, width: 220, height: 260))
         self.view.insertSubview(puzzleFive, belowSubview: puzzleFour)
-        puzzleSix = UIButton(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
+        puzzleSix = UIButton(frame: CGRect(x: xLocation, y: yLocation, width: 220, height: 260))
         self.view.insertSubview(puzzleSix, belowSubview: puzzleFive)
-        puzzleSeven = UIButton(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
+        puzzleSeven = UIButton(frame: CGRect(x: xLocation, y: yLocation, width: 220, height: 260))
         self.view.insertSubview(puzzleSeven, belowSubview: puzzleSix)
-        puzzleEight = UIButton(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
+        puzzleEight = UIButton(frame: CGRect(x: xLocation, y: yLocation, width: 220, height: 260))
         self.view.insertSubview(puzzleEight, belowSubview: puzzleSeven)
-        puzzleNine = UIButton(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
+        puzzleNine = UIButton(frame: CGRect(x: xLocation, y: yLocation, width: 220, height: 260))
         self.view.insertSubview(puzzleNine, belowSubview: puzzleEight)
-        puzzleTen = UIButton(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
+        puzzleTen = UIButton(frame: CGRect(x: xLocation, y: yLocation, width: 220, height: 260))
         self.view.insertSubview(puzzleTen, belowSubview: puzzleNine)
-        puzzleEleven = UIButton(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
+        puzzleEleven = UIButton(frame: CGRect(x: xLocation, y: yLocation, width: 220, height: 260))
         self.view.insertSubview(puzzleEleven, belowSubview: puzzleTen)
-        puzzleTwelve = UIButton(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
+        puzzleTwelve = UIButton(frame: CGRect(x: xLocation, y: yLocation, width: 220, height: 260))
         self.view.insertSubview(puzzleTwelve, belowSubview: puzzleEleven)
         
         currentArray = passedInArray
@@ -102,6 +106,26 @@ class VowelQuizViewController: UIViewController {
         setupChoices()
         // set up puzzles
         setupPuzzles()
+    }
+    
+    // fixing puzzle location
+    override func viewDidLayoutSubviews() {
+        var Loc = letterDisplay.frame.origin
+        Loc.x -= 90
+        Loc.y += 115
+        
+        puzzleOne.frame.origin = Loc
+        puzzleTwo.frame.origin = Loc
+        puzzleThree.frame.origin = Loc
+        puzzleFour.frame.origin = Loc
+        puzzleFive.frame.origin = Loc
+        puzzleSix.frame.origin = Loc
+        puzzleSeven.frame.origin = Loc
+        puzzleEight.frame.origin = Loc
+        puzzleNine.frame.origin = Loc
+        puzzleTen.frame.origin = Loc
+        puzzleEleven.frame.origin = Loc
+        puzzleTwelve.frame.origin = Loc
     }
     
     func setupChoices() {
