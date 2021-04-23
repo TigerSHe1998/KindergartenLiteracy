@@ -7,11 +7,22 @@
 
 import Foundation
 import UIKit
+import AVFoundation
 
 class BeginningSoundsTwoButtonViewController: UIViewController {
+    
+    var audioPlayer: AVAudioPlayer?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let pathToSound = Bundle.main.path(forResource: "00_Button_Audio_Win_A_Green_Ball_(Alphabet_Letters)", ofType: "mp3")!
+        let url = URL(fileURLWithPath: pathToSound)
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: url)
+            audioPlayer?.play()
+        } catch {
+            
+        }
         initButtonBackground()
         Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { timer in
             self.initButtonBackground() // refresh star every second
@@ -42,6 +53,7 @@ class BeginningSoundsTwoButtonViewController: UIViewController {
     
     
     @IBAction func twoButtonLevel(_ sender: Any) {
+        audioPlayer!.stop()
         let vc = storyboard?.instantiateViewController(identifier: "twoButtonLevel_vc") as! TwoButtonLevelViewController
         vc.desiredLabelTwo = (sender as! UIButton).titleLabel!.text!
         present(vc, animated: true)

@@ -81,9 +81,11 @@ class ThreeButtonLevelViewController: UIViewController {
             wordButton1.setImage(UIImage(named: "boy-b"), for: .normal)
             wordButton2.setImage(UIImage(named: "bubble-b"), for: .normal)
             wordButton3.setImage(UIImage(named: "boat-b"), for: .normal)
-            word1.text = "BOY"
-            word2.text = "BUBBLE"
-            word3.text = "BOAT"
+            if letter == "b" {
+                showWordsForLetter(letter: "b", first: "boy", second: "bubble", third: "boat")
+            } else {
+                showWordsForLetter(letter: "B", first: "BOY", second: "BUBBLE", third: "BOAT")
+            }
         case "c","C":
             let pathToSound = Bundle.main.path(forResource: "c_cuh_cat_canary_cake", ofType: "mp3")!
             let url = URL(fileURLWithPath: pathToSound)
@@ -94,9 +96,11 @@ class ThreeButtonLevelViewController: UIViewController {
             wordButton1.setImage(UIImage(named: "cat-b"), for: .normal)
             wordButton2.setImage(UIImage(named: "canary-b"), for: .normal)
             wordButton3.setImage(UIImage(named: "cake-b"), for: .normal)
-            word1.text = "CAT"
-            word2.text = "CANARY"
-            word3.text = "CAKE"
+            if letter == "c" {
+                showWordsForLetter(letter: "c", first: "cat", second: "canary", third: "cake")
+            } else {
+                showWordsForLetter(letter: "C", first: "CAT", second: "CANARY", third: "CAKE")
+            }
         case "d","D":
             let pathToSound = Bundle.main.path(forResource: "d_duh_dog_drum_door", ofType: "mp3")!
             let url = URL(fileURLWithPath: pathToSound)
@@ -107,9 +111,11 @@ class ThreeButtonLevelViewController: UIViewController {
             wordButton1.setImage(UIImage(named: "dog-b"), for: .normal)
             wordButton2.setImage(UIImage(named: "drum-b"), for: .normal)
             wordButton3.setImage(UIImage(named: "door-b"), for: .normal)
-            word1.text = "DOG"
-            word2.text = "DRUM"
-            word3.text = "DOOR"
+            if letter == "d" {
+                showWordsForLetter(letter: "d", first: "dog", second: "drum", third: "door")
+            } else {
+                showWordsForLetter(letter: "D", first: "DOG", second: "DRUM", third: "DOOR")
+            }
         case "f","F":
             let pathToSound = Bundle.main.path(forResource: "f_fuh_fox_fish_foot", ofType: "mp3")!
             let url = URL(fileURLWithPath: pathToSound)
@@ -120,9 +126,11 @@ class ThreeButtonLevelViewController: UIViewController {
             wordButton1.setImage(UIImage(named: "fish-b"), for: .normal)
             wordButton2.setImage(UIImage(named: "fox-b"), for: .normal)
             wordButton3.setImage(UIImage(named: "foot-b"), for: .normal)
-            word1.text = "FISH"
-            word2.text = "FOX"
-            word3.text = "FOOT"
+            if letter == "f" {
+                showWordsForLetter(letter: "f", first: "fish", second: "fox", third: "foot")
+            } else {
+                showWordsForLetter(letter: "F", first: "FISH", second: "FOX", third: "FOOT")
+            }
         case "g","G":
             let pathToSound = Bundle.main.path(forResource: "g_guh_goose_goat_gold", ofType: "mp3")!
             let url = URL(fileURLWithPath: pathToSound)
@@ -133,9 +141,11 @@ class ThreeButtonLevelViewController: UIViewController {
             wordButton1.setImage(UIImage(named: "goose-b"), for: .normal)
             wordButton2.setImage(UIImage(named: "goat-b"), for: .normal)
             wordButton3.setImage(UIImage(named: "gold-b"), for: .normal)
-            word1.text = "GOOSE"
-            word2.text = "GOAT"
-            word3.text = "GOLD"
+            if letter == "g" {
+                showWordsForLetter(letter: "g", first: "goose", second: "goat", third: "gold")
+            } else {
+                showWordsForLetter(letter: "G", first: "GOOSE", second: "GOAT", third: "GOLD")
+            }
         case "h","H":
             let pathToSound = Bundle.main.path(forResource: "h_huh_hug_hardhat_hide", ofType: "mp3")!
             let url = URL(fileURLWithPath: pathToSound)
@@ -146,9 +156,11 @@ class ThreeButtonLevelViewController: UIViewController {
             wordButton1.setImage(UIImage(named: "hug-b"), for: .normal)
             wordButton2.setImage(UIImage(named: "hardhat-b"), for: .normal)
             wordButton3.setImage(UIImage(named: "hide-b"), for: .normal)
-            word1.text = "HUG"
-            word2.text = "HARDHAT"
-            word3.text = "HIDE"
+            if letter == "h" {
+                showWordsForLetter(letter: "h", first: "hug", second: "hardhat", third: "hide")
+            } else {
+                showWordsForLetter(letter: "H", first: "HUG", second: "HARDHAT", third: "HIDE")
+            }
         case "j","J":
             let pathToSound = Bundle.main.path(forResource: "j_juh_jump_jay_jeep", ofType: "mp3")!
             let url = URL(fileURLWithPath: pathToSound)
@@ -159,9 +171,11 @@ class ThreeButtonLevelViewController: UIViewController {
             wordButton1.setImage(UIImage(named: "jump-b"), for: .normal)
             wordButton2.setImage(UIImage(named: "joy-b"), for: .normal)
             wordButton3.setImage(UIImage(named: "jeep-b"), for: .normal)
-            word1.text = "JUMP"
-            word2.text = "JOY"
-            word3.text = "JEEP"
+            if letter == "j" {
+                showWordsForLetter(letter: "j", first: "jump", second: "joy", third: "jeep")
+            } else {
+                showWordsForLetter(letter: "J", first: "JUMP", second: "JOY", third: "JEEP")
+            }
         case "k","K":
             let pathToSound = Bundle.main.path(forResource: "k_kuh_key_kayak_kangaroo", ofType: "mp3")!
             let url = URL(fileURLWithPath: pathToSound)
@@ -172,9 +186,11 @@ class ThreeButtonLevelViewController: UIViewController {
             wordButton1.setImage(UIImage(named: "key-b"), for: .normal)
             wordButton2.setImage(UIImage(named: "kayak-b"), for: .normal)
             wordButton3.setImage(UIImage(named: "kangaroo-b"), for: .normal)
-            word1.text = "KEY"
-            word2.text = "KAYAK"
-            word3.text = "KANGAROO"
+            if letter == "k" {
+                showWordsForLetter(letter: "k", first: "key", second: "kayak", third: "kangaroo")
+            } else {
+                showWordsForLetter(letter: "K", first: "KEY", second: "KAYAK", third: "KANGAROO")
+            }
         case "l","L":
             let pathToSound = Bundle.main.path(forResource: "l_luh_love_leaf_lion", ofType: "mp3")!
             let url = URL(fileURLWithPath: pathToSound)
@@ -185,9 +201,11 @@ class ThreeButtonLevelViewController: UIViewController {
             wordButton1.setImage(UIImage(named: "love-b"), for: .normal)
             wordButton2.setImage(UIImage(named: "leaf-b"), for: .normal)
             wordButton3.setImage(UIImage(named: "lion-b"), for: .normal)
-            word1.text = "LOVE"
-            word2.text = "LEAF"
-            word3.text = "LION"
+            if letter == "l" {
+                showWordsForLetter(letter: "l", first: "love", second: "leaf", third: "lion")
+            } else {
+                showWordsForLetter(letter: "L", first: "LOVE", second: "LEAF", third: "LION")
+            }
         case "m","M":
             let pathToSound = Bundle.main.path(forResource: "m_mmm_monkey_mole_mermaid", ofType: "mp3")!
             let url = URL(fileURLWithPath: pathToSound)
@@ -198,9 +216,11 @@ class ThreeButtonLevelViewController: UIViewController {
             wordButton1.setImage(UIImage(named: "monkey-b"), for: .normal)
             wordButton2.setImage(UIImage(named: "mole-b"), for: .normal)
             wordButton3.setImage(UIImage(named: "mermaid-b"), for: .normal)
-            word1.text = "MONKEY"
-            word2.text = "MOLE"
-            word3.text = "MERMAID"
+            if letter == "m" {
+                showWordsForLetter(letter: "m", first: "monkey", second: "mole", third: "mermaid")
+            } else {
+                showWordsForLetter(letter: "M", first: "MONKEY", second: "MOLE", third: "MERMAID")
+            }
         case "n","N":
             let pathToSound = Bundle.main.path(forResource: "n_nnn_nose_nail_nest", ofType: "mp3")!
             let url = URL(fileURLWithPath: pathToSound)
@@ -211,9 +231,11 @@ class ThreeButtonLevelViewController: UIViewController {
             wordButton1.setImage(UIImage(named: "noise-b"), for: .normal)
             wordButton2.setImage(UIImage(named: "nail-b"), for: .normal)
             wordButton3.setImage(UIImage(named: "nest-b"), for: .normal)
-            word1.text = "NOISE"
-            word2.text = "NAIL"
-            word3.text = "NEST"
+            if letter == "n" {
+                showWordsForLetter(letter: "n", first: "noise", second: "nail", third: "nest")
+            } else {
+                showWordsForLetter(letter: "N", first: "NOISE", second: "NAIL", third: "NEST")
+            }
         case "p","P":
             let pathToSound = Bundle.main.path(forResource: "p_puh_puppy_penguin_pie", ofType: "mp3")!
             let url = URL(fileURLWithPath: pathToSound)
@@ -224,9 +246,11 @@ class ThreeButtonLevelViewController: UIViewController {
             wordButton1.setImage(UIImage(named: "puppy-b"), for: .normal)
             wordButton2.setImage(UIImage(named: "penguin-b"), for: .normal)
             wordButton3.setImage(UIImage(named: "pie-b"), for: .normal)
-            word1.text = "PUPPY"
-            word2.text = "PENGUIN"
-            word3.text = "PIE"
+            if letter == "p" {
+                showWordsForLetter(letter: "p", first: "puppy", second: "penguin", third: "pie")
+            } else {
+                showWordsForLetter(letter: "P", first: "PUPPY", second: "PENGUIN", third: "PIE")
+            }
         case "q","Q":
             let pathToSound = Bundle.main.path(forResource: "q_quh_queen_question_quick", ofType: "mp3")!
             let url = URL(fileURLWithPath: pathToSound)
@@ -237,9 +261,11 @@ class ThreeButtonLevelViewController: UIViewController {
             wordButton1.setImage(UIImage(named: "queen-b"), for: .normal)
             wordButton2.setImage(UIImage(named: "question-b"), for: .normal)
             wordButton3.setImage(UIImage(named: "quick-b"), for: .normal)
-            word1.text = "QUEEN"
-            word2.text = "QUESTION"
-            word3.text = "QUICK"
+            if letter == "q" {
+                showWordsForLetter(letter: "q", first: "queen", second: "question", third: "quick")
+            } else {
+                showWordsForLetter(letter: "Q", first: "QUEEN", second: "QUESTION", third: "QUICK")
+            }
         case "r","R":
             let pathToSound = Bundle.main.path(forResource: "r_ruh_raccoon_robot_run", ofType: "mp3")!
             let url = URL(fileURLWithPath: pathToSound)
@@ -250,9 +276,11 @@ class ThreeButtonLevelViewController: UIViewController {
             wordButton1.setImage(UIImage(named: "raccoons-b"), for: .normal)
             wordButton2.setImage(UIImage(named: "robot-b"), for: .normal)
             wordButton3.setImage(UIImage(named: "run-b"), for: .normal)
-            word1.text = "RACCOONS"
-            word2.text = "ROBOT"
-            word3.text = "RUN"
+            if letter == "r" {
+                showWordsForLetter(letter: "r", first: "raccoons", second: "robot", third: "run")
+            } else {
+                showWordsForLetter(letter: "R", first: "RACCOONS", second: "ROBOT", third: "RUN")
+            }
         case "s","S":
             let pathToSound = Bundle.main.path(forResource: "s_sss_suitcase_say_sneak", ofType: "mp3")!
             let url = URL(fileURLWithPath: pathToSound)
@@ -263,9 +291,11 @@ class ThreeButtonLevelViewController: UIViewController {
             wordButton1.setImage(UIImage(named: "suitcase-b"), for: .normal)
             wordButton2.setImage(UIImage(named: "say-b"), for: .normal)
             wordButton3.setImage(UIImage(named: "sneak-b"), for: .normal)
-            word1.text = "SUITCASE"
-            word2.text = "SAY"
-            word3.text = "SNEAK"
+            if letter == "s" {
+                showWordsForLetter(letter: "s", first: "suitcase", second: "say", third: "sneak")
+            } else {
+                showWordsForLetter(letter: "S", first: "SUITCASE", second: "SAY", third: "SNEAK")
+            }
         case "t","T":
             let pathToSound = Bundle.main.path(forResource: "t_tuh_toe_toys_tail", ofType: "mp3")!
             let url = URL(fileURLWithPath: pathToSound)
@@ -276,9 +306,11 @@ class ThreeButtonLevelViewController: UIViewController {
             wordButton1.setImage(UIImage(named: "toe-b"), for: .normal)
             wordButton2.setImage(UIImage(named: "toys-b"), for: .normal)
             wordButton3.setImage(UIImage(named: "tail-b"), for: .normal)
-            word1.text = "TOE"
-            word2.text = "TOYS"
-            word3.text = "TAIL"
+            if letter == "t" {
+                showWordsForLetter(letter: "t", first: "toe", second: "toys", third: "tail")
+            } else {
+                showWordsForLetter(letter: "T", first: "TOE", second: "TOYS", third: "TAIL")
+            }
         case "v","V":
             let pathToSound = Bundle.main.path(forResource: "v_vuh_volcano_van_voice", ofType: "mp3")!
             let url = URL(fileURLWithPath: pathToSound)
@@ -289,9 +321,11 @@ class ThreeButtonLevelViewController: UIViewController {
             wordButton1.setImage(UIImage(named: "volcano-b"), for: .normal)
             wordButton2.setImage(UIImage(named: "van-b"), for: .normal)
             wordButton3.setImage(UIImage(named: "voice-b"), for: .normal)
-            word1.text = "VOLCANO"
-            word2.text = "VAN"
-            word3.text = "VOICE"
+            if letter == "v" {
+                showWordsForLetter(letter: "v", first: "volcano", second: "van", third: "voice")
+            } else {
+                showWordsForLetter(letter: "V", first: "VOLCANO", second: "VAN", third: "VOICE")
+            }
         case "w","W":
             let pathToSound = Bundle.main.path(forResource: "w_wuh_wagon_wolf_wind", ofType: "mp3")!
             let url = URL(fileURLWithPath: pathToSound)
@@ -302,9 +336,11 @@ class ThreeButtonLevelViewController: UIViewController {
             wordButton1.setImage(UIImage(named: "wagon-b"), for: .normal)
             wordButton2.setImage(UIImage(named: "wolf-b"), for: .normal)
             wordButton3.setImage(UIImage(named: "wind-b"), for: .normal)
-            word1.text = "WAGON"
-            word2.text = "WOLF"
-            word3.text = "WIND"
+            if letter == "w" {
+                showWordsForLetter(letter: "w", first: "wagon", second: "wolf", third: "wind")
+            } else {
+                showWordsForLetter(letter: "W", first: "WAGON", second: "WOLF", third: "WIND")
+            }
         case "x","X":
             let pathToSound = Bundle.main.path(forResource: "x_kss_excavator_axe_exam", ofType: "mp3")!
             let url = URL(fileURLWithPath: pathToSound)
@@ -315,9 +351,11 @@ class ThreeButtonLevelViewController: UIViewController {
             wordButton1.setImage(UIImage(named: "excavator-b"), for: .normal)
             wordButton2.setImage(UIImage(named: "ax-b"), for: .normal)
             wordButton3.setImage(UIImage(named: "exam-b"), for: .normal)
-            word1.text = "EXCAVATOR"
-            word2.text = "AX"
-            word3.text = "EXAM"
+            if letter == "x" {
+                showWordsForLetter(letter: "x", first: "excavator", second: "ax", third: "exam")
+            } else {
+                showWordsForLetter(letter: "X", first: "EXCAVATOR", second: "AX", third: "EXAM")
+            }
         case "y","Y":
             let pathToSound = Bundle.main.path(forResource: "y_yuh_yellow_yoyo_yawn", ofType: "mp3")!
             let url = URL(fileURLWithPath: pathToSound)
@@ -328,9 +366,11 @@ class ThreeButtonLevelViewController: UIViewController {
             wordButton1.setImage(UIImage(named: "yellow-b"), for: .normal)
             wordButton2.setImage(UIImage(named: "yoyo-b"), for: .normal)
             wordButton3.setImage(UIImage(named: "yawn-b"), for: .normal)
-            word1.text = "YELLOW"
-            word2.text = "YOYO"
-            word3.text = "YAWN"
+            if letter == "y" {
+                showWordsForLetter(letter: "y", first: "yellow", second: "yoyo", third: "yawn")
+            } else {
+                showWordsForLetter(letter: "Y", first: "YELLOW", second: "YOYO", third: "YAWN")
+            }
         case "z","Z":
             let pathToSound = Bundle.main.path(forResource: "z_zzz_zebra_zoo_zipper", ofType: "mp3")!
             let url = URL(fileURLWithPath: pathToSound)
@@ -341,12 +381,31 @@ class ThreeButtonLevelViewController: UIViewController {
             wordButton1.setImage(UIImage(named: "zebra-b"), for: .normal)
             wordButton2.setImage(UIImage(named: "zipper-b"), for: .normal)
             wordButton3.setImage(UIImage(named: "zoo-b"), for: .normal)
-            word1.text = "ZEBRA"
-            word2.text = "ZIPPER"
-            word3.text = "ZOO"
+            if letter == "z" {
+                showWordsForLetter(letter: "z", first: "zebra", second: "zipper", third: "zoo")
+            } else {
+                showWordsForLetter(letter: "Z", first: "ZEBRA", second: "ZIPPER", third: "ZOO")
+            }
         default:
             break
         }
+    }
+    func showWordsForLetter(letter: String, first: String, second: String, third: String) {
+        let letterToRed = letter
+        let range1 = (first as NSString).range(of: letterToRed)
+        let mutableFirst = NSMutableAttributedString(string: first)
+        mutableFirst.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: range1)
+        word1.attributedText = mutableFirst
+        
+        let range2 = (second as NSString).range(of: letterToRed)
+        let mutableSecond = NSMutableAttributedString(string: second)
+        mutableSecond.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: range2)
+        word2.attributedText = mutableSecond
+        
+        let range3 = (third as NSString).range(of: letterToRed)
+        let mutableThird = NSMutableAttributedString(string: third)
+        mutableThird.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: range3)
+        word3.attributedText = mutableThird
     }
     
     func playBeginningSoundsAudio(letter: String) {

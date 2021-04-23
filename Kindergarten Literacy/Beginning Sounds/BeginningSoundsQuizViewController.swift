@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 import AVFoundation
 
+var puzzleJump = ["B": 0, "C": 0, "D": 0, "F": 0, "G": 0, "H": 0, "J": 0, "K": 0, "L": 0, "M": 0, "N": 0, "P": 0, "Q": 0, "R": 0, "S": 0, "T": 0, "V": 0, "W": 0, "X": 0, "Y": 0, "Z": 0]
 
 class BeginningSoundsQuizViewController: UIViewController {
     
@@ -17,20 +18,20 @@ class BeginningSoundsQuizViewController: UIViewController {
     var images = ["boat-b", "boy-b", "bubble-b", "cake-b", "canary-b", "cat-b", "dog-b", "door-b", "drum-b", "fish-b", "foot-b", "fox-b", "goat-b", "gold-b", "goose-b", "hardhat-b", "hide-b", "hug-b", "jeep-b", "joy-b", "jump-b", "kangaroo-b", "kayak-b", "key-b", "leaf-b", "lion-b", "love-b", "mermaid-b", "mole-b", "monkey-b", "nail-b", "nest-b", "noise-b", "penguin-b", "pie-b", "puppy-b", "queen-b", "question-b", "quick-b", "raccoons-b", "robot-b", "run-b", "say-b", "sneak-b", "suitcase-b", "tail-b", "toe-b", "toys-b", "van-b", "voice-b", "volcano-b", "wagon-b", "wind-b", "wolf-b", "ax-b", "exam-b", "excavator-b", "yawn-b", "yellow-b", "yoyo-b", "zebra-b", "zipper-b", "zoo-b"]
     
     
-    var puzzleOne: UIImageView!
-    var puzzleTwo: UIImageView!
-    var puzzleThree: UIImageView!
-    var puzzleFour: UIImageView!
-    var puzzleFive: UIImageView!
-    var puzzleSix: UIImageView!
-    var puzzleSeven: UIImageView!
-    var puzzleEight: UIImageView!
-    var puzzleNine: UIImageView!
-    var puzzleTen: UIImageView!
-    var puzzleEleven: UIImageView!
-    var puzzleTwelve: UIImageView!
+    var puzzleOne: UIButton!
+    var puzzleTwo: UIButton!
+    var puzzleThree: UIButton!
+    var puzzleFour: UIButton!
+    var puzzleFive: UIButton!
+    var puzzleSix: UIButton!
+    var puzzleSeven: UIButton!
+    var puzzleEight: UIButton!
+    var puzzleNine: UIButton!
+    var puzzleTen: UIButton!
+    var puzzleEleven: UIButton!
+    var puzzleTwelve: UIButton!
     
-    var puzzleArray: [UIImageView?] { return [puzzleFive, puzzleNine, puzzleSeven, puzzleTen, puzzleSix, puzzleTwelve, puzzleEight, puzzleEleven, puzzleTwo, puzzleThree, puzzleOne, puzzleFour] }
+    var puzzleArray: [UIButton?] { return [puzzleFive, puzzleNine, puzzleSeven, puzzleTen, puzzleSix, puzzleTwelve, puzzleEight, puzzleEleven, puzzleTwo, puzzleThree, puzzleOne, puzzleFour] }
     
     var correctImage: String!
     
@@ -77,29 +78,29 @@ class BeginningSoundsQuizViewController: UIViewController {
         super.viewDidLoad()
         
         
-        puzzleOne = UIImageView(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
+        puzzleOne = UIButton(frame: CGRect(x: 150, y: view.center.y - view.frame.size.height * 0.19, width: 220, height: 260))
         self.view.addSubview(puzzleOne)
-        puzzleTwo = UIImageView(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
+        puzzleTwo = UIButton(frame: CGRect(x: 150, y: view.center.y - view.frame.size.height * 0.19, width: 220, height: 260))
         self.view.insertSubview(puzzleTwo, belowSubview: puzzleOne)
-        puzzleThree = UIImageView(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
+        puzzleThree = UIButton(frame: CGRect(x: 150, y: view.center.y - view.frame.size.height * 0.19, width: 220, height: 260))
         self.view.insertSubview(puzzleThree, belowSubview: puzzleTwo)
-        puzzleFour = UIImageView(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
+        puzzleFour = UIButton(frame: CGRect(x: 150, y: view.center.y - view.frame.size.height * 0.19, width: 220, height: 260))
         self.view.insertSubview(puzzleFour, belowSubview: puzzleThree)
-        puzzleFive = UIImageView(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
+        puzzleFive = UIButton(frame: CGRect(x: 150, y: view.center.y - view.frame.size.height * 0.19, width: 220, height: 260))
         self.view.insertSubview(puzzleFive, belowSubview: puzzleFour)
-        puzzleSix = UIImageView(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
+        puzzleSix = UIButton(frame: CGRect(x: 150, y: view.center.y - view.frame.size.height * 0.19, width: 220, height: 260))
         self.view.insertSubview(puzzleSix, belowSubview: puzzleFive)
-        puzzleSeven = UIImageView(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
+        puzzleSeven = UIButton(frame: CGRect(x: 150, y: view.center.y - view.frame.size.height * 0.19, width: 220, height: 260))
         self.view.insertSubview(puzzleSeven, belowSubview: puzzleSix)
-        puzzleEight = UIImageView(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
+        puzzleEight = UIButton(frame: CGRect(x: 150, y: view.center.y - view.frame.size.height * 0.19, width: 220, height: 260))
         self.view.insertSubview(puzzleEight, belowSubview: puzzleSeven)
-        puzzleNine = UIImageView(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
+        puzzleNine = UIButton(frame: CGRect(x: 150, y: view.center.y - view.frame.size.height * 0.19, width: 220, height: 260))
         self.view.insertSubview(puzzleNine, belowSubview: puzzleEight)
-        puzzleTen = UIImageView(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
+        puzzleTen = UIButton(frame: CGRect(x: 150, y: view.center.y - view.frame.size.height * 0.19, width: 220, height: 260))
         self.view.insertSubview(puzzleTen, belowSubview: puzzleNine)
-        puzzleEleven = UIImageView(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
+        puzzleEleven = UIButton(frame: CGRect(x: 150, y: view.center.y - view.frame.size.height * 0.19, width: 220, height: 260))
         self.view.insertSubview(puzzleEleven, belowSubview: puzzleTen)
-        puzzleTwelve = UIImageView(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
+        puzzleTwelve = UIButton(frame: CGRect(x: 150, y: view.center.y - view.frame.size.height * 0.19, width: 220, height: 260))
         self.view.insertSubview(puzzleTwelve, belowSubview: puzzleEleven)
         
         myButtonOne.setTitle(desiredLabelOne, for: .normal)
@@ -492,186 +493,190 @@ class BeginningSoundsQuizViewController: UIViewController {
     
     func setupPuzzles() {
         let saveFile = UserDefaults.standard.dictionary(forKey: "BP")
+        var curr:Int = 0
         switch desiredLabelOne {
         case "B", "b":
-            let curr:Int = saveFile!["b"] as! Int
+            curr = saveFile!["b"] as! Int
             if curr > 0 {
-                puzzleFive.image = UIImage(named: "puzzle-B-buh-begin-row1-col1")
+                puzzleFive.setImage(UIImage(named: "puzzle-B-buh-begin-row1-col1"), for: .normal)
             }
             if curr > 1 {
-                puzzleNine.image = UIImage(named: "puzzle-B-buh-begin-row2-col2")
+                puzzleNine.setImage(UIImage(named: "puzzle-B-buh-begin-row2-col2"), for: .normal)
             }
             if curr > 2 {
-                puzzleSeven.image = UIImage(named: "puzzle-B-buh-begin-row2-col0")
+                puzzleSeven.setImage(UIImage(named: "puzzle-B-buh-begin-row2-col0"), for: .normal)
             }
             if curr > 3 {
-                puzzleTen.image = UIImage(named: "puzzle-B-buh-begin-row3-col0")
+                puzzleTen.setImage(UIImage(named: "puzzle-B-buh-begin-row3-col0"), for: .normal)
             }
             if curr > 4 {
-                puzzleSix.image = UIImage(named: "puzzle-B-buh-begin-row1-col2")
+                puzzleSix.setImage(UIImage(named: "puzzle-B-buh-begin-row1-col2"), for: .normal)
             }
             if curr > 5 {
-                puzzleTwelve.image = UIImage(named: "puzzle-B-buh-begin-row3-col2")
+                puzzleTwelve.setImage(UIImage(named: "puzzle-B-buh-begin-row3-col2"), for: .normal)
             }
             if curr > 6 {
-                puzzleEight.image = UIImage(named: "puzzle-B-buh-begin-row2-col1")
+                puzzleEight.setImage(UIImage(named: "puzzle-B-buh-begin-row2-col1"), for: .normal)
             }
             if curr > 7 {
-                puzzleEleven.image = UIImage(named: "puzzle-B-buh-begin-row3-col1")
+                puzzleEleven.setImage(UIImage(named: "puzzle-B-buh-begin-row3-col1"), for: .normal)
             }
             if curr > 8 {
-                puzzleTwo.image = UIImage(named: "puzzle-B-buh-begin-row0-col1")
+                puzzleTwo.setImage(UIImage(named: "puzzle-B-buh-begin-row0-col1"), for: .normal)
             }
             if curr > 9 {
-                puzzleThree.image = UIImage(named: "puzzle-B-buh-begin-row0-col2")
+                puzzleThree.setImage(UIImage(named: "puzzle-B-buh-begin-row0-col2"), for: .normal)
             }
             if curr > 10 {
-                puzzleOne.image = UIImage(named: "puzzle-B-buh-begin-row0-col0")
+                puzzleOne.setImage(UIImage(named: "puzzle-B-buh-begin-row0-col0"), for: .normal)
             }
             if curr > 11 {
-                puzzleFour.image = UIImage(named: "puzzle-B-buh-begin-row1-col0")
+                puzzleFour.setImage(UIImage(named: "puzzle-B-buh-begin-row1-col0"), for: .normal)
             }
         case "C", "c":
-            let curr:Int = saveFile!["c"] as! Int
+            curr = saveFile!["c"] as! Int
             if curr > 0 {
                 for i in 0...(curr - 1) {
-                    puzzleArray[i]!.image = UIImage(named: cPuzzles[i])
+                    puzzleArray[i]!.setImage(UIImage(named: cPuzzles[i]), for: .normal)
                 }
             }
         case "D", "d":
-            let curr:Int = saveFile!["d"] as! Int
+            curr = saveFile!["d"] as! Int
             if curr > 0 {
                 for i in 0...(curr - 1) {
-                    puzzleArray[i]!.image = UIImage(named: dPuzzles[i])
+                    puzzleArray[i]!.setImage(UIImage(named: dPuzzles[i]), for: .normal)
                 }
             }
         case "F", "f":
-            let curr:Int = saveFile!["f"] as! Int
+            curr = saveFile!["f"] as! Int
             if curr > 0 {
                 for i in 0...(curr - 1) {
-                    puzzleArray[i]!.image = UIImage(named: fPuzzles[i])
+                    puzzleArray[i]!.setImage(UIImage(named: fPuzzles[i]), for: .normal)
                 }
             }
         case "G", "g":
-            let curr:Int = saveFile!["g"] as! Int
+            curr = saveFile!["g"] as! Int
             if curr > 0 {
                 for i in 0...(curr - 1) {
-                    puzzleArray[i]!.image = UIImage(named: gPuzzles[i])
+                    puzzleArray[i]!.setImage(UIImage(named: gPuzzles[i]), for: .normal)
                 }
             }
         case "H", "h":
-            let curr:Int = saveFile!["h"] as! Int
+            curr = saveFile!["h"] as! Int
             if curr > 0 {
                 for i in 0...(curr - 1) {
-                    puzzleArray[i]!.image = UIImage(named: hPuzzles[i])
+                    puzzleArray[i]!.setImage(UIImage(named: hPuzzles[i]), for: .normal)
                 }
             }
         case "J", "j":
-            let curr:Int = saveFile!["j"] as! Int
+            curr = saveFile!["j"] as! Int
             if curr > 0 {
                 for i in 0...(curr - 1) {
-                    puzzleArray[i]!.image = UIImage(named: jPuzzles[i])
+                    puzzleArray[i]!.setImage(UIImage(named: jPuzzles[i]), for: .normal)
                 }
             }
         case "K", "k":
-            let curr:Int = saveFile!["k"] as! Int
+            curr = saveFile!["k"] as! Int
             if curr > 0 {
                 for i in 0...(curr - 1) {
-                    puzzleArray[i]!.image = UIImage(named: kPuzzles[i])
+                    puzzleArray[i]!.setImage(UIImage(named: kPuzzles[i]), for: .normal)
                 }
             }
         case "L", "l":
-            let curr:Int = saveFile!["l"] as! Int
+            curr = saveFile!["l"] as! Int
             if curr > 0 {
                 for i in 0...(curr - 1) {
-                    puzzleArray[i]!.image = UIImage(named: lPuzzles[i])
+                    puzzleArray[i]!.setImage(UIImage(named: lPuzzles[i]), for: .normal)
                 }
             }
         case "M", "m":
-            let curr:Int = saveFile!["m"] as! Int
+            curr = saveFile!["m"] as! Int
             if curr > 0 {
                 for i in 0...(curr - 1) {
-                    puzzleArray[i]!.image = UIImage(named: mPuzzles[i])
+                    puzzleArray[i]!.setImage(UIImage(named: mPuzzles[i]), for: .normal)
                 }
             }
         case "N", "n":
-            let curr:Int = saveFile!["n"] as! Int
+            curr = saveFile!["n"] as! Int
             if curr > 0 {
                 for i in 0...(curr - 1) {
-                    puzzleArray[i]!.image = UIImage(named: nPuzzles[i])
+                    puzzleArray[i]!.setImage(UIImage(named: nPuzzles[i]), for: .normal)
                 }
             }
         case "P", "p":
-            let curr:Int = saveFile!["p"] as! Int
+            curr = saveFile!["p"] as! Int
             if curr > 0 {
                 for i in 0...(curr - 1) {
-                    puzzleArray[i]!.image = UIImage(named: pPuzzles[i])
+                    puzzleArray[i]!.setImage(UIImage(named: pPuzzles[i]), for: .normal)
                 }
             }
         case "Q", "q":
-            let curr:Int = saveFile!["q"] as! Int
+            curr = saveFile!["q"] as! Int
             if curr > 0 {
                 for i in 0...(curr - 1) {
-                    puzzleArray[i]!.image = UIImage(named: qPuzzles[i])
+                    puzzleArray[i]!.setImage(UIImage(named: qPuzzles[i]), for: .normal)
                 }
             }
         case "R", "r":
-            let curr:Int = saveFile!["r"] as! Int
+            curr = saveFile!["r"] as! Int
             if curr > 0 {
                 for i in 0...(curr - 1) {
-                    puzzleArray[i]!.image = UIImage(named: rPuzzles[i])
+                    puzzleArray[i]!.setImage(UIImage(named: rPuzzles[i]), for: .normal)
                 }
             }
         case "S", "s":
-            let curr:Int = saveFile!["s"] as! Int
+            curr = saveFile!["s"] as! Int
             if curr > 0 {
                 for i in 0...(curr - 1) {
-                    puzzleArray[i]!.image = UIImage(named: sPuzzles[i])
+                    puzzleArray[i]!.setImage(UIImage(named: sPuzzles[i]), for: .normal)
                 }
             }
         case "T", "t":
-            let curr:Int = saveFile!["t"] as! Int
+            curr = saveFile!["t"] as! Int
             if curr > 0 {
                 for i in 0...(curr - 1) {
-                    puzzleArray[i]!.image = UIImage(named: tPuzzles[i])
+                    puzzleArray[i]!.setImage(UIImage(named: tPuzzles[i]), for: .normal)
                 }
             }
         case "V", "v":
-            let curr:Int = saveFile!["v"] as! Int
+            curr = saveFile!["v"] as! Int
             if curr > 0 {
                 for i in 0...(curr - 1) {
-                    puzzleArray[i]!.image = UIImage(named: vPuzzles[i])
+                    puzzleArray[i]!.setImage(UIImage(named: vPuzzles[i]), for: .normal)
                 }
             }
         case "W", "w":
-            let curr:Int = saveFile!["w"] as! Int
+            curr = saveFile!["w"] as! Int
             if curr > 0 {
                 for i in 0...(curr - 1) {
-                    puzzleArray[i]!.image = UIImage(named: wPuzzles[i])
+                    puzzleArray[i]!.setImage(UIImage(named: wPuzzles[i]), for: .normal)
                 }
             }
         case "X", "x":
-            let curr:Int = saveFile!["x"] as! Int
+            curr = saveFile!["x"] as! Int
             if curr > 0 {
                 for i in 0...(curr - 1) {
-                    puzzleArray[i]!.image = UIImage(named: xPuzzles[i])
+                    puzzleArray[i]!.setImage(UIImage(named: xPuzzles[i]), for: .normal)
                 }
             }
         case "Y", "y":
-            let curr:Int = saveFile!["y"] as! Int
+            curr = saveFile!["y"] as! Int
             if curr > 0 {
                 for i in 0...(curr - 1) {
-                    puzzleArray[i]!.image = UIImage(named: yPuzzles[i])
+                    puzzleArray[i]!.setImage(UIImage(named: yPuzzles[i]), for: .normal)
                 }
             }
         case "Z", "z":
-            let curr:Int = saveFile!["z"] as! Int
+            curr = saveFile!["z"] as! Int
             if curr > 0 {
                 for i in 0...(curr - 1) {
-                    puzzleArray[i]!.image = UIImage(named: zPuzzles[i])
+                    puzzleArray[i]!.setImage(UIImage(named: zPuzzles[i]), for: .normal)
                 }
             }
         default: break
+        }
+        if curr >= 12 {
+            puzzleOne.addTarget(self, action: #selector(self.puzzleTapped), for: .touchUpInside)
         }
     }
     
@@ -680,79 +685,80 @@ class BeginningSoundsQuizViewController: UIViewController {
         if (sender as! UIButton) == correctButton {
             var saveFile = UserDefaults.standard.dictionary(forKey: "BP")
             var saveFile1 = UserDefaults.standard.dictionary(forKey: "BS")
+            var curr:Int = 0
             switch desiredLabelOne {
             case "b", "B":
-                var curr:Int = saveFile!["b"] as! Int
+                curr = saveFile!["b"] as! Int
                 if correctChoice == 2 {
                     if curr == 0 {
-                        puzzleFive.image = UIImage(named: "puzzle-B-buh-begin-row1-col1")
-                        puzzleNine.image = UIImage(named: "puzzle-B-buh-begin-row2-col2")
-                        self.animate(myview: puzzleFive)
-                        self.animate(myview: puzzleNine)
+                        puzzleFive.setImage(UIImage(named: "puzzle-B-buh-begin-row1-col1"), for: .normal)
+                        puzzleNine.setImage(UIImage(named: "puzzle-B-buh-begin-row2-col2"), for: .normal)
+                        self.animate(mybutton: puzzleFive)
+                        self.animate(mybutton: puzzleNine)
                     }
                     if curr == 1 {
-                        puzzleNine.image = UIImage(named: "puzzle-B-buh-begin-row2-col2")
-                        puzzleSeven.image = UIImage(named: "puzzle-B-buh-begin-row2-col0")
-                        self.animate(myview: puzzleNine)
-                        self.animate(myview: puzzleSeven)
+                        puzzleNine.setImage(UIImage(named: "puzzle-B-buh-begin-row2-col2"), for: .normal)
+                        puzzleSeven.setImage(UIImage(named: "puzzle-B-buh-begin-row2-col0"), for: .normal)
+                        self.animate(mybutton: puzzleNine)
+                        self.animate(mybutton: puzzleSeven)
                     }
                     if curr == 2 {
-                        puzzleSeven.image = UIImage(named: "puzzle-B-buh-begin-row2-col0")
-                        puzzleTen.image = UIImage(named: "puzzle-B-buh-begin-row3-col0")
-                        self.animate(myview: puzzleSeven)
-                        self.animate(myview: puzzleTen)
+                        puzzleSeven.setImage(UIImage(named: "puzzle-B-buh-begin-row2-col0"), for: .normal)
+                        puzzleTen.setImage(UIImage(named: "puzzle-B-buh-begin-row3-col0"), for: .normal)
+                        self.animate(mybutton: puzzleSeven)
+                        self.animate(mybutton: puzzleTen)
                     }
                     if curr == 3 {
-                        puzzleTen.image = UIImage(named: "puzzle-B-buh-begin-row3-col0")
-                        puzzleSix.image = UIImage(named: "puzzle-B-buh-begin-row1-col2")
-                        self.animate(myview: puzzleTen)
-                        self.animate(myview: puzzleSix)
+                        puzzleTen.setImage(UIImage(named: "puzzle-B-buh-begin-row3-col0"), for: .normal)
+                        puzzleSix.setImage(UIImage(named: "puzzle-B-buh-begin-row1-col2"), for: .normal)
+                        self.animate(mybutton: puzzleTen)
+                        self.animate(mybutton: puzzleSix)
                     }
                     if curr == 4 {
-                        puzzleSix.image = UIImage(named: "puzzle-B-buh-begin-row1-col2")
-                        puzzleTwelve.image = UIImage(named: "puzzle-B-buh-begin-row3-col2")
-                        self.animate(myview: puzzleSix)
-                        self.animate(myview: puzzleTwelve)
+                        puzzleSix.setImage(UIImage(named: "puzzle-B-buh-begin-row1-col2"), for: .normal)
+                        puzzleTwelve.setImage(UIImage(named: "puzzle-B-buh-begin-row3-col2"), for: .normal)
+                        self.animate(mybutton: puzzleSix)
+                        self.animate(mybutton: puzzleTwelve)
                     }
                     if curr == 5 {
-                        puzzleTwelve.image = UIImage(named: "puzzle-B-buh-begin-row3-col2")
-                        puzzleEight.image = UIImage(named: "puzzle-B-buh-begin-row2-col1")
-                        self.animate(myview: puzzleTwelve)
-                        self.animate(myview: puzzleEight)
+                        puzzleTwelve.setImage(UIImage(named: "puzzle-B-buh-begin-row3-col2"), for: .normal)
+                        puzzleEight.setImage(UIImage(named: "puzzle-B-buh-begin-row2-col1"), for: .normal)
+                        self.animate(mybutton: puzzleTwelve)
+                        self.animate(mybutton: puzzleEight)
                     }
                     if curr == 6 {
-                        puzzleEight.image = UIImage(named: "puzzle-B-buh-begin-row2-col1")
-                        puzzleEleven.image = UIImage(named: "puzzle-B-buh-begin-row3-col1")
-                        self.animate(myview: puzzleEight)
-                        self.animate(myview: puzzleEleven)
+                        puzzleEight.setImage(UIImage(named: "puzzle-B-buh-begin-row2-col1"), for: .normal)
+                        puzzleEleven.setImage(UIImage(named: "puzzle-B-buh-begin-row3-col1"), for: .normal)
+                        self.animate(mybutton: puzzleEight)
+                        self.animate(mybutton: puzzleEleven)
                     }
                     if curr == 7 {
-                        puzzleEleven.image = UIImage(named: "puzzle-B-buh-begin-row3-col1")
-                        puzzleTwo.image = UIImage(named: "puzzle-B-buh-begin-row0-col1")
-                        self.animate(myview: puzzleEleven)
-                        self.animate(myview: puzzleTwo)
+                        puzzleEleven.setImage(UIImage(named: "puzzle-B-buh-begin-row3-col1"), for: .normal)
+                        puzzleTwo.setImage(UIImage(named: "puzzle-B-buh-begin-row0-col1"), for: .normal)
+                        self.animate(mybutton: puzzleEleven)
+                        self.animate(mybutton: puzzleTwo)
                     }
                     if curr == 8 {
-                        puzzleTwo.image = UIImage(named: "puzzle-B-buh-begin-row0-col1")
-                        puzzleThree.image = UIImage(named: "puzzle-B-buh-begin-row0-col2")
-                        self.animate(myview: puzzleTwo)
-                        self.animate(myview: puzzleThree)
+                        puzzleTwo.setImage(UIImage(named: "puzzle-B-buh-begin-row0-col1"), for: .normal)
+                        puzzleThree.setImage(UIImage(named: "puzzle-B-buh-begin-row0-col2"), for: .normal)
+                        self.animate(mybutton: puzzleTwo)
+                        self.animate(mybutton: puzzleThree)
                     }
                     if curr == 9 {
-                        puzzleThree.image = UIImage(named: "puzzle-B-buh-begin-row0-col2")
-                        puzzleOne.image = UIImage(named: "puzzle-B-buh-begin-row0-col0")
-                        self.animate(myview: puzzleThree)
-                        self.animate(myview: puzzleOne)
+                        puzzleThree.setImage(UIImage(named: "puzzle-B-buh-begin-row0-col2"), for: .normal)
+                        puzzleOne.setImage(UIImage(named: "puzzle-B-buh-begin-row0-col0"), for: .normal)
+                        self.animate(mybutton: puzzleThree)
+                        self.animate(mybutton: puzzleOne)
                     }
                     if curr == 10 {
-                        puzzleOne.image = UIImage(named: "puzzle-B-buh-begin-row0-col0")
-                        puzzleFour.image = UIImage(named: "puzzle-B-buh-begin-row1-col0")
-                        self.animate(myview: puzzleOne)
-                        self.animate(myview: puzzleFour)
+                        puzzleOne.setImage(UIImage(named: "puzzle-B-buh-begin-row0-col0"), for: .normal)
+                        puzzleFour.setImage(UIImage(named: "puzzle-B-buh-begin-row1-col0"), for: .normal)
+                        self.animate(mybutton: puzzleOne)
+                        self.animate(mybutton: puzzleFour)
                     }
                     if curr == 11 {
-                        puzzleFour.image = UIImage(named: "puzzle-B-buh-begin-row1-col0")
-                        self.animate(myview: puzzleFour)
+                        puzzleFour.setImage(UIImage(named: "puzzle-B-buh-begin-row1-col0"), for: .normal)
+                        self.animate(mybutton: puzzleFour)
                     }
                     if curr < 11 {
                         curr += 2
@@ -762,52 +768,52 @@ class BeginningSoundsQuizViewController: UIViewController {
                 }
                 if correctChoice == 1 {
                     if curr == 0 {
-                        puzzleFive.image = UIImage(named: "puzzle-B-buh-begin-row1-col1")
-                        self.animate(myview: puzzleFive)
+                        puzzleFive.setImage(UIImage(named: "puzzle-B-buh-begin-row1-col1"), for: .normal)
+                        self.animate(mybutton: puzzleFive)
                     }
                     if curr == 1 {
-                        puzzleNine.image = UIImage(named: "puzzle-B-buh-begin-row2-col2")
-                        self.animate(myview: puzzleNine)
+                        puzzleNine.setImage(UIImage(named: "puzzle-B-buh-begin-row2-col2"), for: .normal)
+                        self.animate(mybutton: puzzleNine)
                     }
                     if curr == 2 {
-                        puzzleSeven.image = UIImage(named: "puzzle-B-buh-begin-row2-col0")
-                        self.animate(myview: puzzleSeven)
+                        puzzleSeven.setImage(UIImage(named: "puzzle-B-buh-begin-row2-col0"), for: .normal)
+                        self.animate(mybutton: puzzleSeven)
                     }
                     if curr == 3 {
-                        puzzleTen.image = UIImage(named: "puzzle-B-buh-begin-row3-col0")
-                        self.animate(myview: puzzleTen)
+                        puzzleTen.setImage(UIImage(named: "puzzle-B-buh-begin-row3-col0"), for: .normal)
+                        self.animate(mybutton: puzzleTen)
                     }
                     if curr == 4 {
-                        puzzleSix.image = UIImage(named: "puzzle-B-buh-begin-row1-col2")
-                        self.animate(myview: puzzleSix)
+                        puzzleSix.setImage(UIImage(named: "puzzle-B-buh-begin-row1-col2"), for: .normal)
+                        self.animate(mybutton: puzzleSix)
                     }
                     if curr == 5 {
-                        puzzleTwelve.image = UIImage(named: "puzzle-B-buh-begin-row3-col2")
-                        self.animate(myview: puzzleTwelve)
+                        puzzleTwelve.setImage(UIImage(named: "puzzle-B-buh-begin-row3-col2"), for: .normal)
+                        self.animate(mybutton: puzzleTwelve)
                     }
                     if curr == 6 {
-                        puzzleEight.image = UIImage(named: "puzzle-B-buh-begin-row2-col1")
-                        self.animate(myview: puzzleEight)
+                        puzzleEight.setImage(UIImage(named: "puzzle-B-buh-begin-row2-col1"), for: .normal)
+                        self.animate(mybutton: puzzleEight)
                     }
                     if curr == 7 {
-                        puzzleEleven.image = UIImage(named: "puzzle-B-buh-begin-row3-col1")
-                        self.animate(myview: puzzleEleven)
+                        puzzleEleven.setImage(UIImage(named: "puzzle-B-buh-begin-row3-col1"), for: .normal)
+                        self.animate(mybutton: puzzleEleven)
                     }
                     if curr == 8 {
-                        puzzleTwo.image = UIImage(named: "puzzle-B-buh-begin-row0-col1")
-                        self.animate(myview: puzzleTwo)
+                        puzzleTwo.setImage(UIImage(named: "puzzle-B-buh-begin-row0-col1"), for: .normal)
+                        self.animate(mybutton: puzzleTwo)
                     }
                     if curr == 9 {
-                        puzzleThree.image = UIImage(named: "puzzle-B-buh-begin-row0-col2")
-                        self.animate(myview: puzzleThree)
+                        puzzleThree.setImage(UIImage(named: "puzzle-B-buh-begin-row0-col2"), for: .normal)
+                        self.animate(mybutton: puzzleThree)
                     }
                     if curr == 10 {
-                        puzzleOne.image = UIImage(named: "puzzle-B-buh-begin-row0-col0")
-                        self.animate(myview: puzzleOne)
+                        puzzleOne.setImage(UIImage(named: "puzzle-B-buh-begin-row0-col0"), for: .normal)
+                        self.animate(mybutton: puzzleOne)
                     }
                     if curr == 11 {
-                        puzzleFour.image = UIImage(named: "puzzle-B-buh-begin-row1-col0")
-                        self.animate(myview: puzzleFour)
+                        puzzleFour.setImage(UIImage(named: "puzzle-B-buh-begin-row1-col0"), for: .normal)
+                        self.animate(mybutton: puzzleFour)
                     }
                     if curr < 12 {
                         curr += 1
@@ -822,25 +828,25 @@ class BeginningSoundsQuizViewController: UIViewController {
                 saveFile!["b"] = curr
                 UserDefaults.standard.set(saveFile, forKey: "BP")
             case "C", "c":
-                var curr:Int = saveFile!["c"] as! Int
+                curr = saveFile!["c"] as! Int
                 if correctChoice == 2 {
                     if curr < 12 {
                         if curr == 11 {
-                            puzzleArray[curr]!.image = UIImage(named: cPuzzles[curr])
-                            self.animate(myview: puzzleArray[curr]!)
+                            puzzleArray[curr]!.setImage(UIImage(named: cPuzzles[curr]), for: .normal)
+                            self.animate(mybutton: puzzleArray[curr]!)
                             curr += 1
                         } else {
-                            puzzleArray[curr]!.image = UIImage(named: cPuzzles[curr])
-                            puzzleArray[curr + 1]!.image = UIImage(named: cPuzzles[curr + 1])
-                            self.animate(myview: puzzleArray[curr]!)
-                            self.animate(myview: puzzleArray[curr + 1]!)
+                            puzzleArray[curr]!.setImage(UIImage(named: cPuzzles[curr]), for: .normal)
+                            puzzleArray[curr + 1]!.setImage(UIImage(named: cPuzzles[curr + 1]), for: .normal)
+                            self.animate(mybutton: puzzleArray[curr]!)
+                            self.animate(mybutton: puzzleArray[curr + 1]!)
                             curr += 2
                         }
                     }
                 } else if correctChoice == 1 {
                     if curr < 12 {
-                        puzzleArray[curr]!.image = UIImage(named: cPuzzles[curr])
-                        self.animate(myview: puzzleArray[curr]!)
+                        puzzleArray[curr]!.setImage(UIImage(named: cPuzzles[curr]), for: .normal)
+                        self.animate(mybutton: puzzleArray[curr]!)
                         curr += 1
                     }
                 }
@@ -853,25 +859,25 @@ class BeginningSoundsQuizViewController: UIViewController {
                 saveFile!["c"] = curr
                 UserDefaults.standard.set(saveFile, forKey: "BP")
             case "D", "d":
-                var curr:Int = saveFile!["d"] as! Int
+                curr = saveFile!["d"] as! Int
                 if correctChoice == 2 {
                     if curr < 12 {
                         if curr == 11 {
-                            puzzleArray[curr]!.image = UIImage(named: dPuzzles[curr])
-                            self.animate(myview: puzzleArray[curr]!)
+                            puzzleArray[curr]!.setImage(UIImage(named: dPuzzles[curr]), for: .normal)
+                            self.animate(mybutton: puzzleArray[curr]!)
                             curr += 1
                         } else {
-                            puzzleArray[curr]!.image = UIImage(named: dPuzzles[curr])
-                            puzzleArray[curr + 1]!.image = UIImage(named: dPuzzles[curr + 1])
-                            self.animate(myview: puzzleArray[curr]!)
-                            self.animate(myview: puzzleArray[curr + 1]!)
+                            puzzleArray[curr]!.setImage(UIImage(named: dPuzzles[curr]), for: .normal)
+                            puzzleArray[curr + 1]!.setImage(UIImage(named: dPuzzles[curr + 1]), for: .normal)
+                            self.animate(mybutton: puzzleArray[curr]!)
+                            self.animate(mybutton: puzzleArray[curr + 1]!)
                             curr += 2
                         }
                     }
                 } else if correctChoice == 1 {
                     if curr < 12 {
-                        puzzleArray[curr]!.image = UIImage(named: dPuzzles[curr])
-                        self.animate(myview: puzzleArray[curr]!)
+                        puzzleArray[curr]!.setImage(UIImage(named: dPuzzles[curr]), for: .normal)
+                        self.animate(mybutton: puzzleArray[curr]!)
                         curr += 1
                     }
                 }
@@ -884,25 +890,25 @@ class BeginningSoundsQuizViewController: UIViewController {
                 saveFile!["d"] = curr
                 UserDefaults.standard.set(saveFile, forKey: "BP")
             case "F", "f":
-                var curr:Int = saveFile!["f"] as! Int
+                curr = saveFile!["f"] as! Int
                 if correctChoice == 2 {
                     if curr < 12 {
                         if curr == 11 {
-                            puzzleArray[curr]!.image = UIImage(named: fPuzzles[curr])
-                            self.animate(myview: puzzleArray[curr]!)
+                            puzzleArray[curr]!.setImage(UIImage(named: fPuzzles[curr]), for: .normal)
+                            self.animate(mybutton: puzzleArray[curr]!)
                             curr += 1
                         } else {
-                            puzzleArray[curr]!.image = UIImage(named: fPuzzles[curr])
-                            puzzleArray[curr + 1]!.image = UIImage(named: fPuzzles[curr + 1])
-                            self.animate(myview: puzzleArray[curr]!)
-                            self.animate(myview: puzzleArray[curr + 1]!)
+                            puzzleArray[curr]!.setImage(UIImage(named: fPuzzles[curr]), for: .normal)
+                            puzzleArray[curr + 1]!.setImage(UIImage(named: fPuzzles[curr + 1]), for: .normal)
+                            self.animate(mybutton: puzzleArray[curr]!)
+                            self.animate(mybutton: puzzleArray[curr + 1]!)
                             curr += 2
                         }
                     }
                 } else if correctChoice == 1 {
                     if curr < 12 {
-                        puzzleArray[curr]!.image = UIImage(named: fPuzzles[curr])
-                        self.animate(myview: puzzleArray[curr]!)
+                        puzzleArray[curr]!.setImage(UIImage(named: fPuzzles[curr]), for: .normal)
+                        self.animate(mybutton: puzzleArray[curr]!)
                         curr += 1
                     }
                 }
@@ -915,25 +921,25 @@ class BeginningSoundsQuizViewController: UIViewController {
                 saveFile!["f"] = curr
                 UserDefaults.standard.set(saveFile, forKey: "BP")
             case "G", "g":
-                var curr:Int = saveFile!["g"] as! Int
+                curr = saveFile!["g"] as! Int
                 if correctChoice == 2 {
                     if curr < 12 {
                         if curr == 11 {
-                            puzzleArray[curr]!.image = UIImage(named: gPuzzles[curr])
-                            self.animate(myview: puzzleArray[curr]!)
+                            puzzleArray[curr]!.setImage(UIImage(named: gPuzzles[curr]), for: .normal)
+                            self.animate(mybutton: puzzleArray[curr]!)
                             curr += 1
                         } else {
-                            puzzleArray[curr]!.image = UIImage(named: gPuzzles[curr])
-                            puzzleArray[curr + 1]!.image = UIImage(named: gPuzzles[curr + 1])
-                            self.animate(myview: puzzleArray[curr]!)
-                            self.animate(myview: puzzleArray[curr + 1]!)
+                            puzzleArray[curr]!.setImage(UIImage(named: gPuzzles[curr]), for: .normal)
+                            puzzleArray[curr + 1]!.setImage(UIImage(named: gPuzzles[curr + 1]), for: .normal)
+                            self.animate(mybutton: puzzleArray[curr]!)
+                            self.animate(mybutton: puzzleArray[curr + 1]!)
                             curr += 2
                         }
                     }
                 } else if correctChoice == 1 {
                     if curr < 12 {
-                        puzzleArray[curr]!.image = UIImage(named: gPuzzles[curr])
-                        self.animate(myview: puzzleArray[curr]!)
+                        puzzleArray[curr]!.setImage(UIImage(named: gPuzzles[curr]), for: .normal)
+                        self.animate(mybutton: puzzleArray[curr]!)
                         curr += 1
                     }
                 }
@@ -946,25 +952,25 @@ class BeginningSoundsQuizViewController: UIViewController {
                 saveFile!["g"] = curr
                 UserDefaults.standard.set(saveFile, forKey: "BP")
             case "H", "h":
-                var curr:Int = saveFile!["h"] as! Int
+                curr = saveFile!["h"] as! Int
                 if correctChoice == 2 {
                     if curr < 12 {
                         if curr == 11 {
-                            puzzleArray[curr]!.image = UIImage(named: hPuzzles[curr])
-                            self.animate(myview: puzzleArray[curr]!)
+                            puzzleArray[curr]!.setImage(UIImage(named: hPuzzles[curr]), for: .normal)
+                            self.animate(mybutton: puzzleArray[curr]!)
                             curr += 1
                         } else {
-                            puzzleArray[curr]!.image = UIImage(named: hPuzzles[curr])
-                            puzzleArray[curr + 1]!.image = UIImage(named: hPuzzles[curr + 1])
-                            self.animate(myview: puzzleArray[curr]!)
-                            self.animate(myview: puzzleArray[curr + 1]!)
+                            puzzleArray[curr]!.setImage(UIImage(named: hPuzzles[curr]), for: .normal)
+                            puzzleArray[curr + 1]!.setImage(UIImage(named: hPuzzles[curr + 1]), for: .normal)
+                            self.animate(mybutton: puzzleArray[curr]!)
+                            self.animate(mybutton: puzzleArray[curr + 1]!)
                             curr += 2
                         }
                     }
                 } else if correctChoice == 1 {
                     if curr < 12 {
-                        puzzleArray[curr]!.image = UIImage(named: hPuzzles[curr])
-                        self.animate(myview: puzzleArray[curr]!)
+                        puzzleArray[curr]!.setImage(UIImage(named: hPuzzles[curr]), for: .normal)
+                        self.animate(mybutton: puzzleArray[curr]!)
                         curr += 1
                     }
                 }
@@ -977,25 +983,25 @@ class BeginningSoundsQuizViewController: UIViewController {
                 saveFile!["h"] = curr
                 UserDefaults.standard.set(saveFile, forKey: "BP")
             case "J", "j":
-                var curr:Int = saveFile!["j"] as! Int
+                curr = saveFile!["j"] as! Int
                 if correctChoice == 2 {
                     if curr < 12 {
                         if curr == 11 {
-                            puzzleArray[curr]!.image = UIImage(named: jPuzzles[curr])
-                            self.animate(myview: puzzleArray[curr]!)
+                            puzzleArray[curr]!.setImage(UIImage(named: jPuzzles[curr]), for: .normal)
+                            self.animate(mybutton: puzzleArray[curr]!)
                             curr += 1
                         } else {
-                            puzzleArray[curr]!.image = UIImage(named: jPuzzles[curr])
-                            puzzleArray[curr + 1]!.image = UIImage(named: jPuzzles[curr + 1])
-                            self.animate(myview: puzzleArray[curr]!)
-                            self.animate(myview: puzzleArray[curr + 1]!)
+                            puzzleArray[curr]!.setImage(UIImage(named: jPuzzles[curr]), for: .normal)
+                            puzzleArray[curr + 1]!.setImage(UIImage(named: jPuzzles[curr + 1]), for: .normal)
+                            self.animate(mybutton: puzzleArray[curr]!)
+                            self.animate(mybutton: puzzleArray[curr + 1]!)
                             curr += 2
                         }
                     }
                 } else if correctChoice == 1 {
                     if curr < 12 {
-                        puzzleArray[curr]!.image = UIImage(named: jPuzzles[curr])
-                        self.animate(myview: puzzleArray[curr]!)
+                        puzzleArray[curr]!.setImage(UIImage(named: jPuzzles[curr]), for: .normal)
+                        self.animate(mybutton: puzzleArray[curr]!)
                         curr += 1
                     }
                 }
@@ -1008,25 +1014,25 @@ class BeginningSoundsQuizViewController: UIViewController {
                 saveFile!["j"] = curr
                 UserDefaults.standard.set(saveFile, forKey: "BP")
             case "K", "k":
-                var curr:Int = saveFile!["k"] as! Int
+                curr = saveFile!["k"] as! Int
                 if correctChoice == 2 {
                     if curr < 12 {
                         if curr == 11 {
-                            puzzleArray[curr]!.image = UIImage(named: kPuzzles[curr])
-                            self.animate(myview: puzzleArray[curr]!)
+                            puzzleArray[curr]!.setImage(UIImage(named: kPuzzles[curr]), for: .normal)
+                            self.animate(mybutton: puzzleArray[curr]!)
                             curr += 1
                         } else {
-                            puzzleArray[curr]!.image = UIImage(named: kPuzzles[curr])
-                            puzzleArray[curr + 1]!.image = UIImage(named: kPuzzles[curr + 1])
-                            self.animate(myview: puzzleArray[curr]!)
-                            self.animate(myview: puzzleArray[curr + 1]!)
+                            puzzleArray[curr]!.setImage(UIImage(named: kPuzzles[curr]), for: .normal)
+                            puzzleArray[curr + 1]!.setImage(UIImage(named: kPuzzles[curr + 1]), for: .normal)
+                            self.animate(mybutton: puzzleArray[curr]!)
+                            self.animate(mybutton: puzzleArray[curr + 1]!)
                             curr += 2
                         }
                     }
                 } else if correctChoice == 1 {
                     if curr < 12 {
-                        puzzleArray[curr]!.image = UIImage(named: kPuzzles[curr])
-                        self.animate(myview: puzzleArray[curr]!)
+                        puzzleArray[curr]!.setImage(UIImage(named: kPuzzles[curr]), for: .normal)
+                        self.animate(mybutton: puzzleArray[curr]!)
                         curr += 1
                     }
                 }
@@ -1039,25 +1045,25 @@ class BeginningSoundsQuizViewController: UIViewController {
                 saveFile!["k"] = curr
                 UserDefaults.standard.set(saveFile, forKey: "BP")
             case "L", "l":
-                var curr:Int = saveFile!["l"] as! Int
+                curr = saveFile!["l"] as! Int
                 if correctChoice == 2 {
                     if curr < 12 {
                         if curr == 11 {
-                            puzzleArray[curr]!.image = UIImage(named: lPuzzles[curr])
-                            self.animate(myview: puzzleArray[curr]!)
+                            puzzleArray[curr]!.setImage(UIImage(named: lPuzzles[curr]), for: .normal)
+                            self.animate(mybutton: puzzleArray[curr]!)
                             curr += 1
                         } else {
-                            puzzleArray[curr]!.image = UIImage(named: lPuzzles[curr])
-                            puzzleArray[curr + 1]!.image = UIImage(named: lPuzzles[curr + 1])
-                            self.animate(myview: puzzleArray[curr]!)
-                            self.animate(myview: puzzleArray[curr + 1]!)
+                            puzzleArray[curr]!.setImage(UIImage(named: lPuzzles[curr]), for: .normal)
+                            puzzleArray[curr + 1]!.setImage(UIImage(named: lPuzzles[curr + 1]), for: .normal)
+                            self.animate(mybutton: puzzleArray[curr]!)
+                            self.animate(mybutton: puzzleArray[curr + 1]!)
                             curr += 2
                         }
                     }
                 } else if correctChoice == 1 {
                     if curr < 12 {
-                        puzzleArray[curr]!.image = UIImage(named: lPuzzles[curr])
-                        self.animate(myview: puzzleArray[curr]!)
+                        puzzleArray[curr]!.setImage(UIImage(named: lPuzzles[curr]), for: .normal)
+                        self.animate(mybutton: puzzleArray[curr]!)
                         curr += 1
                     }
                 }
@@ -1070,25 +1076,25 @@ class BeginningSoundsQuizViewController: UIViewController {
                 saveFile!["l"] = curr
                 UserDefaults.standard.set(saveFile, forKey: "BP")
             case "M", "m":
-                var curr:Int = saveFile!["m"] as! Int
+                curr = saveFile!["m"] as! Int
                 if correctChoice == 2 {
                     if curr < 12 {
                         if curr == 11 {
-                            puzzleArray[curr]!.image = UIImage(named: mPuzzles[curr])
-                            self.animate(myview: puzzleArray[curr]!)
+                            puzzleArray[curr]!.setImage(UIImage(named: mPuzzles[curr]), for: .normal)
+                            self.animate(mybutton: puzzleArray[curr]!)
                             curr += 1
                         } else {
-                            puzzleArray[curr]!.image = UIImage(named: mPuzzles[curr])
-                            puzzleArray[curr + 1]!.image = UIImage(named: mPuzzles[curr + 1])
-                            self.animate(myview: puzzleArray[curr]!)
-                            self.animate(myview: puzzleArray[curr + 1]!)
+                            puzzleArray[curr]!.setImage(UIImage(named: mPuzzles[curr]), for: .normal)
+                            puzzleArray[curr + 1]!.setImage(UIImage(named: mPuzzles[curr + 1]), for: .normal)
+                            self.animate(mybutton: puzzleArray[curr]!)
+                            self.animate(mybutton: puzzleArray[curr + 1]!)
                             curr += 2
                         }
                     }
                 } else if correctChoice == 1 {
                     if curr < 12 {
-                        puzzleArray[curr]!.image = UIImage(named: mPuzzles[curr])
-                        self.animate(myview: puzzleArray[curr]!)
+                        puzzleArray[curr]!.setImage(UIImage(named: mPuzzles[curr]), for: .normal)
+                        self.animate(mybutton: puzzleArray[curr]!)
                         curr += 1
                     }
                 }
@@ -1101,25 +1107,25 @@ class BeginningSoundsQuizViewController: UIViewController {
                 saveFile!["m"] = curr
                 UserDefaults.standard.set(saveFile, forKey: "BP")
             case "N", "n":
-                var curr:Int = saveFile!["n"] as! Int
+                curr = saveFile!["n"] as! Int
                 if correctChoice == 2 {
                     if curr < 12 {
                         if curr == 11 {
-                            puzzleArray[curr]!.image = UIImage(named: nPuzzles[curr])
-                            self.animate(myview: puzzleArray[curr]!)
+                            puzzleArray[curr]!.setImage(UIImage(named: nPuzzles[curr]), for: .normal)
+                            self.animate(mybutton: puzzleArray[curr]!)
                             curr += 1
                         } else {
-                            puzzleArray[curr]!.image = UIImage(named: nPuzzles[curr])
-                            puzzleArray[curr + 1]!.image = UIImage(named: nPuzzles[curr + 1])
-                            self.animate(myview: puzzleArray[curr]!)
-                            self.animate(myview: puzzleArray[curr + 1]!)
+                            puzzleArray[curr]!.setImage(UIImage(named: nPuzzles[curr]), for: .normal)
+                            puzzleArray[curr + 1]!.setImage(UIImage(named: nPuzzles[curr + 1]), for: .normal)
+                            self.animate(mybutton: puzzleArray[curr]!)
+                            self.animate(mybutton: puzzleArray[curr + 1]!)
                             curr += 2
                         }
                     }
                 } else if correctChoice == 1 {
                     if curr < 12 {
-                        puzzleArray[curr]!.image = UIImage(named: nPuzzles[curr])
-                        self.animate(myview: puzzleArray[curr]!)
+                        puzzleArray[curr]!.setImage(UIImage(named: nPuzzles[curr]), for: .normal)
+                        self.animate(mybutton: puzzleArray[curr]!)
                         curr += 1
                     }
                 }
@@ -1132,25 +1138,25 @@ class BeginningSoundsQuizViewController: UIViewController {
                 saveFile!["n"] = curr
                 UserDefaults.standard.set(saveFile, forKey: "BP")
             case "P", "p":
-                var curr:Int = saveFile!["p"] as! Int
+                curr = saveFile!["p"] as! Int
                 if correctChoice == 2 {
                     if curr < 12 {
                         if curr == 11 {
-                            puzzleArray[curr]!.image = UIImage(named: pPuzzles[curr])
-                            self.animate(myview: puzzleArray[curr]!)
+                            puzzleArray[curr]!.setImage(UIImage(named: pPuzzles[curr]), for: .normal)
+                            self.animate(mybutton: puzzleArray[curr]!)
                             curr += 1
                         } else {
-                            puzzleArray[curr]!.image = UIImage(named: pPuzzles[curr])
-                            puzzleArray[curr + 1]!.image = UIImage(named: pPuzzles[curr + 1])
-                            self.animate(myview: puzzleArray[curr]!)
-                            self.animate(myview: puzzleArray[curr + 1]!)
+                            puzzleArray[curr]!.setImage(UIImage(named: pPuzzles[curr]), for: .normal)
+                            puzzleArray[curr + 1]!.setImage(UIImage(named: pPuzzles[curr + 1]), for: .normal)
+                            self.animate(mybutton: puzzleArray[curr]!)
+                            self.animate(mybutton: puzzleArray[curr + 1]!)
                             curr += 2
                         }
                     }
                 } else if correctChoice == 1 {
                     if curr < 12 {
-                        puzzleArray[curr]!.image = UIImage(named: pPuzzles[curr])
-                        self.animate(myview: puzzleArray[curr]!)
+                        puzzleArray[curr]!.setImage(UIImage(named: pPuzzles[curr]), for: .normal)
+                        self.animate(mybutton: puzzleArray[curr]!)
                         curr += 1
                     }
                 }
@@ -1163,25 +1169,25 @@ class BeginningSoundsQuizViewController: UIViewController {
                 saveFile!["p"] = curr
                 UserDefaults.standard.set(saveFile, forKey: "BP")
             case "Q", "q":
-                var curr:Int = saveFile!["q"] as! Int
+                curr = saveFile!["q"] as! Int
                 if correctChoice == 2 {
                     if curr < 12 {
                         if curr == 11 {
-                            puzzleArray[curr]!.image = UIImage(named: qPuzzles[curr])
-                            self.animate(myview: puzzleArray[curr]!)
+                            puzzleArray[curr]!.setImage(UIImage(named: qPuzzles[curr]), for: .normal)
+                            self.animate(mybutton: puzzleArray[curr]!)
                             curr += 1
                         } else {
-                            puzzleArray[curr]!.image = UIImage(named: qPuzzles[curr])
-                            puzzleArray[curr + 1]!.image = UIImage(named: qPuzzles[curr + 1])
-                            self.animate(myview: puzzleArray[curr]!)
-                            self.animate(myview: puzzleArray[curr + 1]!)
+                            puzzleArray[curr]!.setImage(UIImage(named: qPuzzles[curr]), for: .normal)
+                            puzzleArray[curr + 1]!.setImage(UIImage(named: qPuzzles[curr + 1]), for: .normal)
+                            self.animate(mybutton: puzzleArray[curr]!)
+                            self.animate(mybutton: puzzleArray[curr + 1]!)
                             curr += 2
                         }
                     }
                 } else if correctChoice == 1 {
                     if curr < 12 {
-                        puzzleArray[curr]!.image = UIImage(named: qPuzzles[curr])
-                        self.animate(myview: puzzleArray[curr]!)
+                        puzzleArray[curr]!.setImage(UIImage(named: qPuzzles[curr]), for: .normal)
+                        self.animate(mybutton: puzzleArray[curr]!)
                         curr += 1
                     }
                 }
@@ -1194,25 +1200,25 @@ class BeginningSoundsQuizViewController: UIViewController {
                 saveFile!["q"] = curr
                 UserDefaults.standard.set(saveFile, forKey: "BP")
             case "R", "r":
-                var curr:Int = saveFile!["r"] as! Int
+                curr = saveFile!["r"] as! Int
                 if correctChoice == 2 {
                     if curr < 12 {
                         if curr == 11 {
-                            puzzleArray[curr]!.image = UIImage(named: rPuzzles[curr])
-                            self.animate(myview: puzzleArray[curr]!)
+                            puzzleArray[curr]!.setImage(UIImage(named: rPuzzles[curr]), for: .normal)
+                            self.animate(mybutton: puzzleArray[curr]!)
                             curr += 1
                         } else {
-                            puzzleArray[curr]!.image = UIImage(named: rPuzzles[curr])
-                            puzzleArray[curr + 1]!.image = UIImage(named: rPuzzles[curr + 1])
-                            self.animate(myview: puzzleArray[curr]!)
-                            self.animate(myview: puzzleArray[curr + 1]!)
+                            puzzleArray[curr]!.setImage(UIImage(named: rPuzzles[curr]), for: .normal)
+                            puzzleArray[curr + 1]!.setImage(UIImage(named: rPuzzles[curr + 1]), for: .normal)
+                            self.animate(mybutton: puzzleArray[curr]!)
+                            self.animate(mybutton: puzzleArray[curr + 1]!)
                             curr += 2
                         }
                     }
                 } else if correctChoice == 1 {
                     if curr < 12 {
-                        puzzleArray[curr]!.image = UIImage(named: rPuzzles[curr])
-                        self.animate(myview: puzzleArray[curr]!)
+                        puzzleArray[curr]!.setImage(UIImage(named: rPuzzles[curr]), for: .normal)
+                        self.animate(mybutton: puzzleArray[curr]!)
                         curr += 1
                     }
                 }
@@ -1225,25 +1231,25 @@ class BeginningSoundsQuizViewController: UIViewController {
                 saveFile!["r"] = curr
                 UserDefaults.standard.set(saveFile, forKey: "BP")
             case "S", "s":
-                var curr:Int = saveFile!["s"] as! Int
+                curr = saveFile!["s"] as! Int
                 if correctChoice == 2 {
                     if curr < 12 {
                         if curr == 11 {
-                            puzzleArray[curr]!.image = UIImage(named: sPuzzles[curr])
-                            self.animate(myview: puzzleArray[curr]!)
+                            puzzleArray[curr]!.setImage(UIImage(named: sPuzzles[curr]), for: .normal)
+                            self.animate(mybutton: puzzleArray[curr]!)
                             curr += 1
                         } else {
-                            puzzleArray[curr]!.image = UIImage(named: sPuzzles[curr])
-                            puzzleArray[curr + 1]!.image = UIImage(named: sPuzzles[curr + 1])
-                            self.animate(myview: puzzleArray[curr]!)
-                            self.animate(myview: puzzleArray[curr + 1]!)
+                            puzzleArray[curr]!.setImage(UIImage(named: sPuzzles[curr]), for: .normal)
+                            puzzleArray[curr + 1]!.setImage(UIImage(named: sPuzzles[curr + 1]), for: .normal)
+                            self.animate(mybutton: puzzleArray[curr]!)
+                            self.animate(mybutton: puzzleArray[curr + 1]!)
                             curr += 2
                         }
                     }
                 } else if correctChoice == 1 {
                     if curr < 12 {
-                        puzzleArray[curr]!.image = UIImage(named: sPuzzles[curr])
-                        self.animate(myview: puzzleArray[curr]!)
+                        puzzleArray[curr]!.setImage(UIImage(named: sPuzzles[curr]), for: .normal)
+                        self.animate(mybutton: puzzleArray[curr]!)
                         curr += 1
                     }
                 }
@@ -1256,25 +1262,25 @@ class BeginningSoundsQuizViewController: UIViewController {
                 saveFile!["s"] = curr
                 UserDefaults.standard.set(saveFile, forKey: "BP")
             case "T", "t":
-                var curr:Int = saveFile!["t"] as! Int
+                curr = saveFile!["t"] as! Int
                 if correctChoice == 2 {
                     if curr < 12 {
                         if curr == 11 {
-                            puzzleArray[curr]!.image = UIImage(named: tPuzzles[curr])
-                            self.animate(myview: puzzleArray[curr]!)
+                            puzzleArray[curr]!.setImage(UIImage(named: tPuzzles[curr]), for: .normal)
+                            self.animate(mybutton: puzzleArray[curr]!)
                             curr += 1
                         } else {
-                            puzzleArray[curr]!.image = UIImage(named: tPuzzles[curr])
-                            puzzleArray[curr + 1]!.image = UIImage(named: tPuzzles[curr + 1])
-                            self.animate(myview: puzzleArray[curr]!)
-                            self.animate(myview: puzzleArray[curr + 1]!)
+                            puzzleArray[curr]!.setImage(UIImage(named: tPuzzles[curr]), for: .normal)
+                            puzzleArray[curr + 1]!.setImage(UIImage(named: tPuzzles[curr + 1]), for: .normal)
+                            self.animate(mybutton: puzzleArray[curr]!)
+                            self.animate(mybutton: puzzleArray[curr + 1]!)
                             curr += 2
                         }
                     }
                 } else if correctChoice == 1 {
                     if curr < 12 {
-                        puzzleArray[curr]!.image = UIImage(named: tPuzzles[curr])
-                        self.animate(myview: puzzleArray[curr]!)
+                        puzzleArray[curr]!.setImage(UIImage(named: tPuzzles[curr]), for: .normal)
+                        self.animate(mybutton: puzzleArray[curr]!)
                         curr += 1
                     }
                 }
@@ -1287,25 +1293,25 @@ class BeginningSoundsQuizViewController: UIViewController {
                 saveFile!["t"] = curr
                 UserDefaults.standard.set(saveFile, forKey: "BP")
             case "V", "v":
-                var curr:Int = saveFile!["v"] as! Int
+                curr = saveFile!["v"] as! Int
                 if correctChoice == 2 {
                     if curr < 12 {
                         if curr == 11 {
-                            puzzleArray[curr]!.image = UIImage(named: vPuzzles[curr])
-                            self.animate(myview: puzzleArray[curr]!)
+                            puzzleArray[curr]!.setImage(UIImage(named: vPuzzles[curr]), for: .normal)
+                            self.animate(mybutton: puzzleArray[curr]!)
                             curr += 1
                         } else {
-                            puzzleArray[curr]!.image = UIImage(named: vPuzzles[curr])
-                            puzzleArray[curr + 1]!.image = UIImage(named: vPuzzles[curr + 1])
-                            self.animate(myview: puzzleArray[curr]!)
-                            self.animate(myview: puzzleArray[curr + 1]!)
+                            puzzleArray[curr]!.setImage(UIImage(named: vPuzzles[curr]), for: .normal)
+                            puzzleArray[curr + 1]!.setImage(UIImage(named: vPuzzles[curr + 1]), for: .normal)
+                            self.animate(mybutton: puzzleArray[curr]!)
+                            self.animate(mybutton: puzzleArray[curr + 1]!)
                             curr += 2
                         }
                     }
                 } else if correctChoice == 1 {
                     if curr < 12 {
-                        puzzleArray[curr]!.image = UIImage(named: vPuzzles[curr])
-                        self.animate(myview: puzzleArray[curr]!)
+                        puzzleArray[curr]!.setImage(UIImage(named: vPuzzles[curr]), for: .normal)
+                        self.animate(mybutton: puzzleArray[curr]!)
                         curr += 1
                     }
                 }
@@ -1318,25 +1324,25 @@ class BeginningSoundsQuizViewController: UIViewController {
                 saveFile!["v"] = curr
                 UserDefaults.standard.set(saveFile, forKey: "BP")
             case "W", "w":
-                var curr:Int = saveFile!["w"] as! Int
+                curr = saveFile!["w"] as! Int
                 if correctChoice == 2 {
                     if curr < 12 {
                         if curr == 11 {
-                            puzzleArray[curr]!.image = UIImage(named: wPuzzles[curr])
-                            self.animate(myview: puzzleArray[curr]!)
+                            puzzleArray[curr]!.setImage(UIImage(named: wPuzzles[curr]), for: .normal)
+                            self.animate(mybutton: puzzleArray[curr]!)
                             curr += 1
                         } else {
-                            puzzleArray[curr]!.image = UIImage(named: wPuzzles[curr])
-                            puzzleArray[curr + 1]!.image = UIImage(named: wPuzzles[curr + 1])
-                            self.animate(myview: puzzleArray[curr]!)
-                            self.animate(myview: puzzleArray[curr + 1]!)
+                            puzzleArray[curr]!.setImage(UIImage(named: wPuzzles[curr]), for: .normal)
+                            puzzleArray[curr + 1]!.setImage(UIImage(named: wPuzzles[curr + 1]), for: .normal)
+                            self.animate(mybutton: puzzleArray[curr]!)
+                            self.animate(mybutton: puzzleArray[curr + 1]!)
                             curr += 2
                         }
                     }
                 } else if correctChoice == 1 {
                     if curr < 12 {
-                        puzzleArray[curr]!.image = UIImage(named: wPuzzles[curr])
-                        self.animate(myview: puzzleArray[curr]!)
+                        puzzleArray[curr]!.setImage(UIImage(named: wPuzzles[curr]), for: .normal)
+                        self.animate(mybutton: puzzleArray[curr]!)
                         curr += 1
                     }
                 }
@@ -1349,25 +1355,25 @@ class BeginningSoundsQuizViewController: UIViewController {
                 saveFile!["w"] = curr
                 UserDefaults.standard.set(saveFile, forKey: "BP")
             case "X", "x":
-                var curr:Int = saveFile!["x"] as! Int
+                curr = saveFile!["x"] as! Int
                 if correctChoice == 2 {
                     if curr < 12 {
                         if curr == 11 {
-                            puzzleArray[curr]!.image = UIImage(named: xPuzzles[curr])
-                            self.animate(myview: puzzleArray[curr]!)
+                            puzzleArray[curr]!.setImage(UIImage(named: xPuzzles[curr]), for: .normal)
+                            self.animate(mybutton: puzzleArray[curr]!)
                             curr += 1
                         } else {
-                            puzzleArray[curr]!.image = UIImage(named: xPuzzles[curr])
-                            puzzleArray[curr + 1]!.image = UIImage(named: xPuzzles[curr + 1])
-                            self.animate(myview: puzzleArray[curr]!)
-                            self.animate(myview: puzzleArray[curr + 1]!)
+                            puzzleArray[curr]!.setImage(UIImage(named: xPuzzles[curr]), for: .normal)
+                            puzzleArray[curr + 1]!.setImage(UIImage(named: xPuzzles[curr + 1]), for: .normal)
+                            self.animate(mybutton: puzzleArray[curr]!)
+                            self.animate(mybutton: puzzleArray[curr + 1]!)
                             curr += 2
                         }
                     }
                 } else if correctChoice == 1 {
                     if curr < 12 {
-                        puzzleArray[curr]!.image = UIImage(named: xPuzzles[curr])
-                        self.animate(myview: puzzleArray[curr]!)
+                        puzzleArray[curr]!.setImage(UIImage(named: xPuzzles[curr]), for: .normal)
+                        self.animate(mybutton: puzzleArray[curr]!)
                         curr += 1
                     }
                 }
@@ -1380,25 +1386,25 @@ class BeginningSoundsQuizViewController: UIViewController {
                 saveFile!["x"] = curr
                 UserDefaults.standard.set(saveFile, forKey: "BP")
             case "Y", "y":
-                var curr:Int = saveFile!["y"] as! Int
+                curr = saveFile!["y"] as! Int
                 if correctChoice == 2 {
                     if curr < 12 {
                         if curr == 11 {
-                            puzzleArray[curr]!.image = UIImage(named: yPuzzles[curr])
-                            self.animate(myview: puzzleArray[curr]!)
+                            puzzleArray[curr]!.setImage(UIImage(named: yPuzzles[curr]), for: .normal)
+                            self.animate(mybutton: puzzleArray[curr]!)
                             curr += 1
                         } else {
-                            puzzleArray[curr]!.image = UIImage(named: yPuzzles[curr])
-                            puzzleArray[curr + 1]!.image = UIImage(named: yPuzzles[curr + 1])
-                            self.animate(myview: puzzleArray[curr]!)
-                            self.animate(myview: puzzleArray[curr + 1]!)
+                            puzzleArray[curr]!.setImage(UIImage(named: yPuzzles[curr]), for: .normal)
+                            puzzleArray[curr + 1]!.setImage(UIImage(named: yPuzzles[curr + 1]), for: .normal)
+                            self.animate(mybutton: puzzleArray[curr]!)
+                            self.animate(mybutton: puzzleArray[curr + 1]!)
                             curr += 2
                         }
                     }
                 } else if correctChoice == 1 {
                     if curr < 12 {
-                        puzzleArray[curr]!.image = UIImage(named: yPuzzles[curr])
-                        self.animate(myview: puzzleArray[curr]!)
+                        puzzleArray[curr]!.setImage(UIImage(named: yPuzzles[curr]), for: .normal)
+                        self.animate(mybutton: puzzleArray[curr]!)
                         curr += 1
                     }
                 }
@@ -1411,25 +1417,25 @@ class BeginningSoundsQuizViewController: UIViewController {
                 saveFile!["y"] = curr
                 UserDefaults.standard.set(saveFile, forKey: "BP")
             case "Z", "z":
-                var curr:Int = saveFile!["z"] as! Int
+                curr = saveFile!["z"] as! Int
                 if correctChoice == 2 {
                     if curr < 12 {
                         if curr == 11 {
-                            puzzleArray[curr]!.image = UIImage(named: zPuzzles[curr])
-                            self.animate(myview: puzzleArray[curr]!)
+                            puzzleArray[curr]!.setImage(UIImage(named: zPuzzles[curr]), for: .normal)
+                            self.animate(mybutton: puzzleArray[curr]!)
                             curr += 1
                         } else {
-                            puzzleArray[curr]!.image = UIImage(named: zPuzzles[curr])
-                            puzzleArray[curr + 1]!.image = UIImage(named: zPuzzles[curr + 1])
-                            self.animate(myview: puzzleArray[curr]!)
-                            self.animate(myview: puzzleArray[curr + 1]!)
+                            puzzleArray[curr]!.setImage(UIImage(named: zPuzzles[curr]), for: .normal)
+                            puzzleArray[curr + 1]!.setImage(UIImage(named: zPuzzles[curr + 1]), for: .normal)
+                            self.animate(mybutton: puzzleArray[curr]!)
+                            self.animate(mybutton: puzzleArray[curr + 1]!)
                             curr += 2
                         }
                     }
                 } else if correctChoice == 1 {
                     if curr < 12 {
-                        puzzleArray[curr]!.image = UIImage(named: zPuzzles[curr])
-                        self.animate(myview: puzzleArray[curr]!)
+                        puzzleArray[curr]!.setImage(UIImage(named: zPuzzles[curr]), for: .normal)
+                        self.animate(mybutton: puzzleArray[curr]!)
                         curr += 1
                     }
                 }
@@ -1445,7 +1451,7 @@ class BeginningSoundsQuizViewController: UIViewController {
             }
             // sound fx
             audioPlayer!.stop()
-            let pathToSound = Bundle.main.path(forResource: correctImage, ofType: "mp3")!
+            let pathToSound = Bundle.main.path(forResource: "alphabetQuiz_correct", ofType: "mp3")!
             let url = URL(fileURLWithPath: pathToSound)
             do {
                 audioPlayer = try AVAudioPlayer(contentsOf: url)
@@ -1498,6 +1504,17 @@ class BeginningSoundsQuizViewController: UIViewController {
                     })
                 }
             })
+            if curr >= 12 {
+                puzzleOne.addTarget(self, action: #selector(self.puzzleTapped), for: .touchUpInside)
+                if puzzleJump[desiredLabelOne.capitalized] == 0 {
+                    let sb = UIStoryboard(name: "Main", bundle: nil)
+                    let vc = sb.instantiateViewController(identifier: "rhyme_vc") as! RhymeViewController
+                    vc.passedInLetter = desiredLabelOne
+                    vc.letterCategory = "begin"
+                    present(vc, animated: true)
+                }
+                puzzleJump[desiredLabelOne.capitalized] = 1
+            }
             correctChoice = 2
         } else {
             if correctChoice > 0{
@@ -1551,6 +1568,14 @@ class BeginningSoundsQuizViewController: UIViewController {
         }
     }
     
+    @objc func puzzleTapped(sender: UIButton) {
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let vc = sb.instantiateViewController(identifier: "rhyme_vc") as! RhymeViewController
+        vc.passedInLetter = desiredLabelOne
+        vc.letterCategory = "begin"
+        present(vc, animated: true)
+    }
+    
     func decreaseStar(s: String) {
         var saveFile1 = UserDefaults.standard.dictionary(forKey: "BS")
         var currScore:Int = saveFile1![s] as! Int
@@ -1561,15 +1586,13 @@ class BeginningSoundsQuizViewController: UIViewController {
         }
     }
     
-    func animate(myview: UIImageView) {
-        UIImageView.animate(withDuration: 1, animations: {
-            myview.frame = CGRect(x: 150, y: 110, width: 230, height: 270)
-            myview.center = myview.center
+    func animate(mybutton: UIButton) {
+        UIView.animate(withDuration: 1.0, animations:{
+            mybutton.frame = CGRect(x: mybutton.frame.origin.x, y: mybutton.frame.origin.y - 5, width: mybutton.frame.size.width, height: mybutton.frame.size.height)
         }, completion: {done in
             if done {
-                UIImageView.animate(withDuration: 1, animations: {
-                    myview.frame = CGRect(x: 150, y: 110, width: 220, height: 260)
-                    myview.center = myview.center
+                UIView.animate(withDuration: 1.0, animations:{
+                    mybutton.frame = CGRect(x: mybutton.frame.origin.x, y: mybutton.frame.origin.y + 5, width: mybutton.frame.size.width, height: mybutton.frame.size.height)
                 }, completion:  {done in
                     if done {
                     }
