@@ -55,6 +55,7 @@ class VowelLetterViewController: UIViewController {
             button.contentVerticalAlignment = .top
             button.titleEdgeInsets = UIEdgeInsets(top: 20, left: 40, bottom: 0, right: 0)
         }
+        self.initButtonBackground()
         Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { timer in
             self.initButtonBackground() // refresh star every second
         })

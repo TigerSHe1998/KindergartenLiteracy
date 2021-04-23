@@ -229,15 +229,15 @@ class PuzzleViewController: UIViewController {
     
     func setVowelCompositePuzzle(currentButton: PuzzleButton) {
         switch currentButton.currentTitle {
-        case "a":
-            currentButton.setImage(UIImage(named: "puzzle-A-ahh-composite-L"), for: .normal)
         case "a ":
+            currentButton.setImage(UIImage(named: "puzzle-A-ahh-composite-L"), for: .normal)
+        case "a":
             currentButton.setImage(UIImage(named: "puzzle-A-short-composite-L"), for: .normal)
         case "e":
             currentButton.setImage(UIImage(named: "puzzle-E-short-composite-L"), for: .normal)
-        case "i":
-            currentButton.setImage(UIImage(named: "puzzle-I-ee-composite-L"), for: .normal)
         case "i ":
+            currentButton.setImage(UIImage(named: "puzzle-I-ee-composite-L"), for: .normal)
+        case "i":
             currentButton.setImage(UIImage(named: "puzzle-I-short-composite-L"), for: .normal)
         case "o":
             currentButton.setImage(UIImage(named: "puzzle-O-short-composite-L"), for: .normal)
