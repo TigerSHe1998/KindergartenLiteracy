@@ -114,6 +114,27 @@ class BeginningSoundsQuizViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    // fixing puzzle location
+    override func viewDidLayoutSubviews() {
+        var Loc = myButtonOne.frame.origin
+        Loc.x -= 90
+        Loc.y += 115
+        
+        puzzleOne.frame.origin = Loc
+        puzzleTwo.frame.origin = Loc
+        puzzleThree.frame.origin = Loc
+        puzzleFour.frame.origin = Loc
+        puzzleFive.frame.origin = Loc
+        puzzleSix.frame.origin = Loc
+        puzzleSeven.frame.origin = Loc
+        puzzleEight.frame.origin = Loc
+        puzzleNine.frame.origin = Loc
+        puzzleTen.frame.origin = Loc
+        puzzleEleven.frame.origin = Loc
+        puzzleTwelve.frame.origin = Loc
+    }
+    
+    
     func setupChoices() {
         var wrongOne = images.randomElement()
         var wrongTwo = images.randomElement()
