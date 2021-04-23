@@ -17,39 +17,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e0a-tL-rQn">
-                                <rect key="frame" x="470" y="205" width="112" height="122"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e0a-tL-rQn">
+                                <rect key="frame" x="449.66666666666674" y="212.66666666666663" width="125" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="Lpk-M5-04h"/>
+                                    <constraint firstAttribute="width" constant="125" id="sD9-1h-5AC"/>
+                                </constraints>
                                 <state key="normal" image="boat-b"/>
                                 <connections>
                                     <action selector="choiceButtons:" destination="u6N-2x-HEq" eventType="touchUpInside" id="6bR-wJ-KoE"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vAJ-0M-xGo">
-                                <rect key="frame" x="570" y="35" width="112" height="122"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vAJ-0M-xGo">
+                                <rect key="frame" x="534.66666666666663" y="42.666666666666657" width="125" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="Hxs-dY-yZu"/>
+                                    <constraint firstAttribute="height" constant="125" id="pD2-Pu-IZt"/>
+                                </constraints>
                                 <state key="normal" image="boat-b"/>
                                 <connections>
                                     <action selector="choiceButtons:" destination="u6N-2x-HEq" eventType="touchUpInside" id="0TM-4v-ydQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Twn-Dm-stk">
-                                <rect key="frame" x="670" y="205" width="112" height="122"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Twn-Dm-stk">
+                                <rect key="frame" x="619.66666666666663" y="212.66666666666663" width="125" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="5K3-Pc-WE4"/>
+                                    <constraint firstAttribute="height" constant="125" id="GdB-fa-bBA"/>
+                                </constraints>
                                 <state key="normal" image="boat-b"/>
                                 <connections>
                                     <action selector="choiceButtons:" destination="u6N-2x-HEq" eventType="touchUpInside" id="0zt-6W-Sh1"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="AQ4-L0-6F1" userLabel="Side Bar Stack View">
-                                <rect key="frame" x="60" y="26" width="40" height="338"/>
+                                <rect key="frame" x="59" y="27" width="56" height="336"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J5l-Wj-ikK" userLabel="Back">
-                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="40" id="Gur-da-LUf"/>
-                                            <constraint firstAttribute="height" constant="40" id="xX7-HR-dYu"/>
-                                        </constraints>
+                                        <rect key="frame" x="0.0" y="0.0" width="56" height="56"/>
                                         <state key="normal" backgroundImage="back">
                                             <color key="titleColor" name="AccentColor"/>
                                         </state>
@@ -59,10 +64,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aeF-TB-sad" userLabel="Home">
-                                        <rect key="frame" x="0.0" y="74.666666666666671" width="40" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="33p-RE-2YX"/>
-                                        </constraints>
+                                        <rect key="frame" x="0.0" y="70" width="56" height="56"/>
                                         <color key="tintColor" systemColor="systemPurpleColor"/>
                                         <state key="normal" backgroundImage="home"/>
                                         <connections>
@@ -71,20 +73,14 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AHD-V6-Yiv" userLabel="Repeat">
-                                        <rect key="frame" x="0.0" y="149" width="40" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="PVB-H9-dB9"/>
-                                        </constraints>
+                                        <rect key="frame" x="0.0" y="140" width="56" height="56"/>
                                         <state key="normal" image="repeat"/>
                                         <connections>
                                             <action selector="replay:" destination="u6N-2x-HEq" eventType="touchUpInside" id="tSV-ac-ZLb"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xI5-Zm-lZG" userLabel="Bank">
-                                        <rect key="frame" x="0.0" y="223.66666666666666" width="40" height="39.999999999999972"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="d2R-on-P8Z"/>
-                                        </constraints>
+                                        <rect key="frame" x="0.0" y="210" width="56" height="56"/>
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" backgroundImage="bank"/>
                                         <connections>
@@ -93,10 +89,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afX-pg-gK9" userLabel="Puzzle">
-                                        <rect key="frame" x="0.0" y="298" width="40" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="WoW-BP-moA"/>
-                                        </constraints>
+                                        <rect key="frame" x="0.0" y="280" width="56" height="56"/>
                                         <color key="tintColor" systemColor="systemGreenColor"/>
                                         <state key="normal" backgroundImage="puzzle"/>
                                         <connections>
@@ -106,13 +99,13 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="338" id="hFH-2h-zWQ"/>
+                                    <constraint firstAttribute="width" constant="56" id="4R3-Ye-QP9"/>
+                                    <constraint firstAttribute="height" constant="336" id="fpq-XA-ldx"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oEA-DU-eXg">
-                                <rect key="frame" x="213" y="20" width="80" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="80"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oEA-DU-eXg">
+                                <rect key="frame" x="242" y="-6" width="40" height="112"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="70"/>
                                 <state key="normal" title="b">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
@@ -124,8 +117,16 @@
                         <viewLayoutGuide key="safeArea" id="JDF-Vt-1IP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="AQ4-L0-6F1" firstAttribute="leading" secondItem="Dz0-fY-605" secondAttribute="leadingMargin" id="Suo-30-sia"/>
-                            <constraint firstItem="AQ4-L0-6F1" firstAttribute="centerY" secondItem="Dz0-fY-605" secondAttribute="centerY" id="oKa-ab-a4G"/>
+                            <constraint firstItem="e0a-tL-rQn" firstAttribute="centerY" secondItem="Dz0-fY-605" secondAttribute="centerY" constant="80" id="10y-BY-X89"/>
+                            <constraint firstItem="e0a-tL-rQn" firstAttribute="centerX" secondItem="Dz0-fY-605" secondAttribute="centerX" constant="90" id="6Zd-xo-dvh"/>
+                            <constraint firstItem="oEA-DU-eXg" firstAttribute="centerY" secondItem="Dz0-fY-605" secondAttribute="centerY" constant="-145" id="Ns7-QW-mUR"/>
+                            <constraint firstItem="Twn-Dm-stk" firstAttribute="centerY" secondItem="Dz0-fY-605" secondAttribute="centerY" constant="80" id="OPf-GX-PcH"/>
+                            <constraint firstItem="AQ4-L0-6F1" firstAttribute="leading" secondItem="JDF-Vt-1IP" secondAttribute="leading" constant="15" id="cjQ-2z-qVn"/>
+                            <constraint firstItem="oEA-DU-eXg" firstAttribute="centerX" secondItem="Dz0-fY-605" secondAttribute="centerX" constant="-160" id="hTs-lJ-AXH"/>
+                            <constraint firstItem="vAJ-0M-xGo" firstAttribute="centerX" secondItem="Dz0-fY-605" secondAttribute="centerX" constant="175" id="jPN-p9-mw9"/>
+                            <constraint firstItem="AQ4-L0-6F1" firstAttribute="centerY" secondItem="Dz0-fY-605" secondAttribute="centerY" id="yiv-iZ-Rr2"/>
+                            <constraint firstItem="Twn-Dm-stk" firstAttribute="centerX" secondItem="Dz0-fY-605" secondAttribute="centerX" constant="260" id="zEb-kX-jS8"/>
+                            <constraint firstItem="vAJ-0M-xGo" firstAttribute="centerY" secondItem="Dz0-fY-605" secondAttribute="centerY" constant="-90" id="zio-ec-xMg"/>
                         </constraints>
                     </view>
                     <connections>
@@ -150,43 +151,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L9E-59-fE0">
-                                <rect key="frame" x="97" y="20" width="650" height="350"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="L9E-59-fE0">
+                                <rect key="frame" x="122" y="20" width="600" height="350"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="EoE-9B-229">
-                                        <rect key="frame" x="0.0" y="0.0" width="200" height="350"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="225" height="350"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="TXi-3Q-0Z3">
-                                                <rect key="frame" x="0.0" y="0.0" width="200" height="350"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="225" height="350"/>
                                             </imageView>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="RVh-o3-taY">
-                                        <rect key="frame" x="200" y="0.0" width="450" height="350"/>
+                                        <rect key="frame" x="225" y="0.0" width="375" height="350"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ma7-iG-3es">
-                                                <rect key="frame" x="0.0" y="0.0" width="450" height="83.666666666666671"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="83.666666666666671"/>
                                                 <state key="normal" backgroundImage="beginning sounds 1"/>
                                                 <connections>
                                                     <action selector="beginningSoundsOne:" destination="g8G-LS-BP2" eventType="touchUpInside" id="TxT-1I-vDW"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s6j-ly-o99">
-                                                <rect key="frame" x="0.0" y="88.666666666666686" width="450" height="84"/>
+                                                <rect key="frame" x="0.0" y="88.666666666666686" width="375" height="84"/>
                                                 <state key="normal" backgroundImage="beginning sounds 2"/>
                                                 <connections>
                                                     <action selector="beginningSoundsTwo:" destination="g8G-LS-BP2" eventType="touchUpInside" id="dQJ-S8-nyq"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hc0-iD-L2o">
-                                                <rect key="frame" x="0.0" y="177.66666666666666" width="450" height="83.666666666666657"/>
+                                                <rect key="frame" x="0.0" y="177.66666666666666" width="375" height="83.666666666666657"/>
                                                 <state key="normal" backgroundImage="beginning sounds 3"/>
                                                 <connections>
                                                     <action selector="beginningSoundsThree:" destination="g8G-LS-BP2" eventType="touchUpInside" id="9Fn-xq-srD"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IDg-Xr-aYF">
-                                                <rect key="frame" x="0.0" y="266.33333333333331" width="450" height="83.666666666666686"/>
+                                                <rect key="frame" x="0.0" y="266.33333333333331" width="375" height="83.666666666666686"/>
                                                 <state key="normal" backgroundImage="beginning sounds 4"/>
                                                 <connections>
                                                     <action selector="beginningSoundsFourButtonTapped:" destination="g8G-LS-BP2" eventType="touchUpInside" id="M21-Ra-KRG"/>
@@ -194,24 +195,20 @@
                                             </button>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="450" id="4KN-kW-B3S"/>
+                                            <constraint firstAttribute="width" constant="375" id="4KN-kW-B3S"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="350" id="1u3-Yv-VM7"/>
-                                    <constraint firstAttribute="width" constant="650" id="OzQ-Qc-VLO"/>
+                                    <constraint firstAttribute="width" constant="600" id="OzQ-Qc-VLO"/>
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="16I-sw-fJw" userLabel="Side Bar Stack View">
-                                <rect key="frame" x="59" y="26" width="40" height="338"/>
+                                <rect key="frame" x="59" y="27" width="56" height="336"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h5l-um-sqM" userLabel="Back">
-                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="40" id="TUX-eW-EEO"/>
-                                            <constraint firstAttribute="height" constant="40" id="lc0-GA-WEK"/>
-                                        </constraints>
+                                        <rect key="frame" x="0.0" y="0.0" width="56" height="56"/>
                                         <state key="normal" backgroundImage="back">
                                             <color key="titleColor" name="AccentColor"/>
                                         </state>
@@ -220,38 +217,15 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hiN-kJ-oQi" userLabel="Home">
-                                        <rect key="frame" x="0.0" y="59.666666666666671" width="40" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="Ga2-Fn-7Eo"/>
-                                        </constraints>
+                                        <rect key="frame" x="0.0" y="93.333333333333329" width="56" height="55.999999999999986"/>
                                         <color key="tintColor" systemColor="systemPurpleColor"/>
                                         <state key="normal" backgroundImage="home"/>
                                         <connections>
                                             <action selector="home:" destination="g8G-LS-BP2" eventType="touchUpInside" id="VEM-8D-8Dd"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3He-Jq-O73" userLabel="Quiz">
-                                        <rect key="frame" x="0.0" y="119.33333333333334" width="40" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="5kn-Z7-blj"/>
-                                        </constraints>
-                                        <state key="normal" backgroundImage="quiz"/>
-                                        <connections>
-                                            <action selector="quiz:" destination="g8G-LS-BP2" eventType="touchUpInside" id="mHP-kQ-fCS"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cVI-29-0u3" userLabel="Repeat">
-                                        <rect key="frame" x="0.0" y="178.66666666666666" width="40" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="GmH-4G-JPQ"/>
-                                        </constraints>
-                                        <state key="normal" image="repeat"/>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Q7-dZ-fDI" userLabel="Bank">
-                                        <rect key="frame" x="0.0" y="238.33333333333331" width="40" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="avk-e8-MDP"/>
-                                        </constraints>
+                                        <rect key="frame" x="0.0" y="186.66666666666666" width="56" height="56"/>
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" backgroundImage="bank"/>
                                         <connections>
@@ -259,10 +233,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C9a-3I-yBb" userLabel="Puzzle">
-                                        <rect key="frame" x="0.0" y="298" width="40" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="jon-C9-qhh"/>
-                                        </constraints>
+                                        <rect key="frame" x="0.0" y="280" width="56" height="56"/>
                                         <color key="tintColor" systemColor="systemGreenColor"/>
                                         <state key="normal" backgroundImage="puzzle"/>
                                         <connections>
@@ -271,24 +242,24 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="338" id="Gt6-Tq-NdR"/>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="338" id="Yiq-2z-kga"/>
+                                    <constraint firstAttribute="width" constant="56" id="DQA-bF-U5z"/>
+                                    <constraint firstAttribute="height" constant="336" id="xvq-fa-QW0"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DdX-1t-6oo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="16I-sw-fJw" firstAttribute="centerY" secondItem="L9E-59-fE0" secondAttribute="centerY" id="2nU-Ua-prP"/>
                             <constraint firstItem="L9E-59-fE0" firstAttribute="centerX" secondItem="bfM-Rs-L28" secondAttribute="centerX" id="6Fv-VT-UYh"/>
+                            <constraint firstItem="16I-sw-fJw" firstAttribute="centerY" secondItem="bfM-Rs-L28" secondAttribute="centerY" id="CWR-R0-vIp"/>
+                            <constraint firstItem="16I-sw-fJw" firstAttribute="leading" secondItem="DdX-1t-6oo" secondAttribute="leading" constant="15" id="JlB-d4-vix"/>
                             <constraint firstItem="L9E-59-fE0" firstAttribute="centerY" secondItem="bfM-Rs-L28" secondAttribute="centerY" id="SSV-Xv-alX"/>
-                            <constraint firstItem="16I-sw-fJw" firstAttribute="leading" secondItem="DdX-1t-6oo" secondAttribute="leading" constant="15" id="UdL-bF-lm4"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qj9-vI-Q0e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="456" y="225"/>
+            <point key="canvasLocation" x="450" y="222"/>
         </scene>
         <!--Beginning Sounds One Button View Controller-->
         <scene sceneID="UGA-D6-kzq">
@@ -299,15 +270,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7am-1K-dHQ">
-                                <rect key="frame" x="130" y="0.0" width="766" height="1200"/>
+                                <rect key="frame" x="129" y="0.0" width="767" height="1200"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YqU-az-Qgo" userLabel="View1">
-                                        <rect key="frame" x="0.0" y="0.0" width="766" height="1200"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="767" height="1200"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZuJ-bt-Kaa">
-                                                <rect key="frame" x="480" y="20" width="208" height="144"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <rect key="frame" x="510" y="20" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
                                                 <state key="normal" title="d" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
@@ -317,9 +287,8 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SmN-ss-g8u">
-                                                <rect key="frame" x="0.0" y="20" width="208" height="144"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <rect key="frame" x="30" y="20" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
                                                 <state key="normal" title="b" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
@@ -329,9 +298,8 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Db-Dr-dT9">
-                                                <rect key="frame" x="0.0" y="190" width="208" height="144"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <rect key="frame" x="30" y="190" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
                                                 <state key="normal" title="f" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
@@ -341,9 +309,8 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rc4-ta-Mbc">
-                                                <rect key="frame" x="480" y="190" width="208" height="144"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <rect key="frame" x="510" y="190" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
                                                 <state key="normal" title="h" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
@@ -353,9 +320,8 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2Y-mb-rXw">
-                                                <rect key="frame" x="0.0" y="360" width="208" height="144"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <rect key="frame" x="30" y="360" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
                                                 <state key="normal" title="j" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
@@ -365,9 +331,8 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qtm-8X-vCV">
-                                                <rect key="frame" x="0.0" y="530" width="208" height="144"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <rect key="frame" x="30" y="530" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
                                                 <state key="normal" title="m" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
@@ -377,9 +342,8 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uqo-Ue-niV">
-                                                <rect key="frame" x="0.0" y="700" width="208" height="144"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <rect key="frame" x="30" y="700" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
                                                 <state key="normal" title="q" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
@@ -389,9 +353,8 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RyF-h9-RpR">
-                                                <rect key="frame" x="0.0" y="870" width="208" height="144"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <rect key="frame" x="30" y="870" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
                                                 <state key="normal" title="t" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
@@ -401,9 +364,8 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ovV-tq-Ytx">
-                                                <rect key="frame" x="240" y="190" width="208" height="144"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <rect key="frame" x="270" y="190" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
                                                 <state key="normal" title="g" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
@@ -413,9 +375,8 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AT7-2m-smy">
-                                                <rect key="frame" x="0.0" y="1040" width="208" height="144"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <rect key="frame" x="30" y="1040" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
                                                 <state key="normal" title="x" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
@@ -425,9 +386,8 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DHj-BM-hpR">
-                                                <rect key="frame" x="240" y="360" width="208" height="144"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <rect key="frame" x="270" y="360" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
                                                 <state key="normal" title="k" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
@@ -437,9 +397,8 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vCK-qO-HoR">
-                                                <rect key="frame" x="480" y="360" width="208" height="144"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <rect key="frame" x="510" y="360" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
                                                 <state key="normal" title="l" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
@@ -449,9 +408,8 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Htb-dC-JVA">
-                                                <rect key="frame" x="240" y="530" width="208" height="144"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <rect key="frame" x="270" y="530" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
                                                 <state key="normal" title="n" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
@@ -461,9 +419,8 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IcI-Dz-LTk">
-                                                <rect key="frame" x="480" y="530" width="208" height="144"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <rect key="frame" x="510" y="530" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
                                                 <state key="normal" title="p" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
@@ -473,9 +430,8 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fXC-me-8q9">
-                                                <rect key="frame" x="240" y="700" width="208" height="144"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <rect key="frame" x="270" y="700" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
                                                 <state key="normal" title="r" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
@@ -485,9 +441,8 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v69-2B-pFx">
-                                                <rect key="frame" x="480" y="700" width="208" height="144"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <rect key="frame" x="510" y="700" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
                                                 <state key="normal" title="s" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
@@ -497,9 +452,8 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIR-l5-Oo5">
-                                                <rect key="frame" x="480" y="870" width="208" height="144"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <rect key="frame" x="510" y="870" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
                                                 <state key="normal" title="w" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
@@ -509,9 +463,8 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zdu-hz-Jlz">
-                                                <rect key="frame" x="240" y="1040" width="208" height="144"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <rect key="frame" x="270" y="1040" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
                                                 <state key="normal" title="y" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
@@ -521,9 +474,8 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vCR-sZ-Jf0">
-                                                <rect key="frame" x="480" y="1040" width="208" height="144"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <rect key="frame" x="510" y="1040" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
                                                 <state key="normal" title="z" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
@@ -533,9 +485,8 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n1Y-2v-BK0">
-                                                <rect key="frame" x="240" y="20" width="208" height="144"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <rect key="frame" x="270" y="20" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
                                                 <state key="normal" title="c" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
@@ -545,9 +496,8 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g1h-0e-4yh">
-                                                <rect key="frame" x="240" y="870" width="208" height="144"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <rect key="frame" x="270" y="870" width="208" height="144"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
                                                 <state key="normal" title="v" backgroundImage="level_button_0_star">
                                                     <color key="titleColor" systemColor="labelColor"/>
@@ -557,29 +507,26 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" name="darkGreen"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="1200" id="puc-Km-NkE"/>
+                                            <constraint firstAttribute="height" constant="1200" id="4H4-Ow-qrf"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="YqU-az-Qgo" firstAttribute="top" secondItem="7am-1K-dHQ" secondAttribute="top" id="GE2-gn-Lkw"/>
-                                    <constraint firstItem="YqU-az-Qgo" firstAttribute="bottom" secondItem="7am-1K-dHQ" secondAttribute="bottom" id="ghd-iQ-8zQ"/>
-                                    <constraint firstItem="YqU-az-Qgo" firstAttribute="trailing" secondItem="7am-1K-dHQ" secondAttribute="trailing" id="iHO-sq-IDh"/>
-                                    <constraint firstItem="YqU-az-Qgo" firstAttribute="leading" secondItem="7am-1K-dHQ" secondAttribute="leading" id="kK4-nx-8gu"/>
-                                    <constraint firstItem="YqU-az-Qgo" firstAttribute="width" secondItem="7am-1K-dHQ" secondAttribute="width" id="t5Z-5i-lXT"/>
+                                    <constraint firstAttribute="bottom" secondItem="YqU-az-Qgo" secondAttribute="bottom" id="Fmb-qW-LVA"/>
+                                    <constraint firstAttribute="height" constant="1200" id="SjJ-0M-b1C"/>
+                                    <constraint firstItem="YqU-az-Qgo" firstAttribute="centerX" secondItem="7am-1K-dHQ" secondAttribute="centerX" id="l0Q-KZ-n5J"/>
+                                    <constraint firstItem="YqU-az-Qgo" firstAttribute="top" secondItem="7am-1K-dHQ" secondAttribute="top" id="pKw-zy-GM6"/>
+                                    <constraint firstItem="YqU-az-Qgo" firstAttribute="leading" secondItem="7am-1K-dHQ" secondAttribute="leading" id="sBQ-bq-v7U"/>
+                                    <constraint firstAttribute="trailing" secondItem="YqU-az-Qgo" secondAttribute="trailing" id="vqu-zf-lWa"/>
                                 </constraints>
                             </scrollView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="qbs-hX-6rH" userLabel="Side Bar Stack View">
-                                <rect key="frame" x="59" y="20" width="40" height="338"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="qbs-hX-6rH" userLabel="Side Bar Stack View">
+                                <rect key="frame" x="59" y="420" width="56" height="360"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdN-vE-sIx" userLabel="Back">
-                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="40" id="TKx-7N-f2R"/>
-                                            <constraint firstAttribute="height" constant="40" id="Vws-0d-xf3"/>
-                                        </constraints>
+                                        <rect key="frame" x="0.0" y="0.0" width="56" height="56"/>
                                         <state key="normal" backgroundImage="back">
                                             <color key="titleColor" name="AccentColor"/>
                                         </state>
@@ -588,10 +535,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oel-gx-IRo" userLabel="Home">
-                                        <rect key="frame" x="0.0" y="59.666666666666671" width="40" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="qDe-i0-5kb"/>
-                                        </constraints>
+                                        <rect key="frame" x="0.0" y="60.666666666666686" width="56" height="56"/>
                                         <color key="tintColor" systemColor="systemPurpleColor"/>
                                         <state key="normal" backgroundImage="home"/>
                                         <connections>
@@ -599,30 +543,21 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DzR-Zx-nxy" userLabel="Quiz">
-                                        <rect key="frame" x="0.0" y="119.33333333333334" width="40" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="AKA-JE-4xS"/>
-                                        </constraints>
+                                        <rect key="frame" x="0.0" y="121.66666666666663" width="56" height="56"/>
                                         <state key="normal" backgroundImage="quiz"/>
                                         <connections>
                                             <action selector="quiz:" destination="deS-uM-ZXT" eventType="touchUpInside" id="aLC-u9-J8T"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y12-UX-JgK" userLabel="Repeat">
-                                        <rect key="frame" x="0.0" y="178.66666666666666" width="40" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="An9-67-UWj"/>
-                                        </constraints>
+                                        <rect key="frame" x="0.0" y="182.33333333333337" width="56" height="56"/>
                                         <state key="normal" image="repeat"/>
                                         <connections>
                                             <action selector="replay:" destination="deS-uM-ZXT" eventType="touchUpInside" id="3il-HE-5Sh"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DGh-Pn-wxp" userLabel="Bank">
-                                        <rect key="frame" x="0.0" y="238.33333333333331" width="40" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="JQi-WU-t1C"/>
-                                        </constraints>
+                                        <rect key="frame" x="0.0" y="243.33333333333337" width="56" height="56"/>
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" backgroundImage="bank"/>
                                         <connections>
@@ -630,10 +565,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0gM-je-GYj" userLabel="Puzzle">
-                                        <rect key="frame" x="0.0" y="298" width="40" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="Kls-dY-JTe"/>
-                                        </constraints>
+                                        <rect key="frame" x="0.0" y="304" width="56" height="56"/>
                                         <color key="tintColor" systemColor="systemGreenColor"/>
                                         <state key="normal" backgroundImage="puzzle"/>
                                         <connections>
@@ -642,23 +574,22 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="338" id="36J-ny-kfO"/>
-                                    <constraint firstAttribute="height" constant="338" id="YqB-DQ-nAp"/>
+                                    <constraint firstAttribute="width" constant="56" id="AhU-d8-eOQ"/>
+                                    <constraint firstAttribute="height" constant="360" id="cgV-CE-FhK"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zy2-vc-Lju"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="mediumGreen"/>
                         <constraints>
-                            <constraint firstItem="qbs-hX-6rH" firstAttribute="top" secondItem="zy2-vc-Lju" secondAttribute="top" constant="20" id="0Lc-KE-5cb"/>
-                            <constraint firstItem="7am-1K-dHQ" firstAttribute="leading" secondItem="zy2-vc-Lju" secondAttribute="leading" constant="86" id="2PL-hT-AJH"/>
-                            <constraint firstAttribute="trailing" secondItem="7am-1K-dHQ" secondAttribute="trailing" id="5X9-eE-xvh"/>
-                            <constraint firstAttribute="bottom" secondItem="7am-1K-dHQ" secondAttribute="bottom" id="M7W-rB-GwF"/>
-                            <constraint firstItem="7am-1K-dHQ" firstAttribute="top" secondItem="zy2-vc-Lju" secondAttribute="top" id="TtM-Bf-Pct"/>
-                            <constraint firstItem="qbs-hX-6rH" firstAttribute="leading" secondItem="zy2-vc-Lju" secondAttribute="leading" constant="15" id="dl5-Sz-oYU"/>
+                            <constraint firstItem="7am-1K-dHQ" firstAttribute="top" secondItem="zy2-vc-Lju" secondAttribute="top" id="0fH-lL-BeE"/>
+                            <constraint firstAttribute="trailing" secondItem="7am-1K-dHQ" secondAttribute="trailing" id="1rA-Yi-aou"/>
+                            <constraint firstAttribute="bottom" secondItem="7am-1K-dHQ" secondAttribute="bottom" id="WWr-jV-FhC"/>
+                            <constraint firstItem="qbs-hX-6rH" firstAttribute="leading" secondItem="zy2-vc-Lju" secondAttribute="leading" constant="15" id="bfv-Cm-MAJ"/>
+                            <constraint firstItem="7am-1K-dHQ" firstAttribute="leading" secondItem="qbs-hX-6rH" secondAttribute="trailing" constant="14" id="pe7-Yj-Imw"/>
+                            <constraint firstItem="qbs-hX-6rH" firstAttribute="centerY" secondItem="qHg-Y9-Frr" secondAttribute="centerY" id="y9n-HJ-HMF"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="eEQ-cZ-fNI"/>
                     <size key="freeformSize" width="896" height="1200"/>
                     <connections>
                         <outletCollection property="levelButtons" destination="SmN-ss-g8u" collectionClass="NSMutableArray" id="peU-Cq-xET"/>
@@ -2610,6 +2541,12 @@
         <image name="repeat" width="56" height="56"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="darkGreen">
+            <color red="0.4309999942779541" green="0.77999997138977051" blue="0.83099997043609619" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="mediumGreen">
+            <color red="0.76899999380111694" green="0.9100000262260437" blue="0.90200001001358032" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
