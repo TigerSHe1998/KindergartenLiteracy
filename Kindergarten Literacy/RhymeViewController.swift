@@ -3,7 +3,7 @@
 //  Kindergarten Literacy
 //
 //  Created by 徐浩云 on 4/7/21.
-//
+//  Developed by Bingqing Xu
 
 import UIKit
 import AVFoundation
@@ -54,10 +54,12 @@ class RhymeViewController: UIViewController {
                 if letterCategory == "begin" {
                     configure(puzzleImage: "puzzle-B-buh-begin-composite", rhymeAudio: "puzzle-B-buh-begin-rhyme")
                     let rhyme = NSMutableAttributedString(string: "Rock-a-bye, Baby, on the tree top,\nWhen the wind blows the cradle will rock,\nWhen the bough breaks the cradle will fall,\nand down will come Baby, cradle, and all.", attributes: [NSAttributedString.Key.font :UIFont(name: "Helvetica", size: 20.0)!])
-                    rhyme.addAttribute(.paragraphStyle, value: style, range: NSRange(location: 0, length: rhyme.length))
-                    rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:18,length:1))
-                    rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:47,length:1))
-                    rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:55,length:1))
+                    rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:7,length:1))
+                    rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:12,length:1))
+                    rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:49,length:1))
+                    rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:86,length:1))
+                    rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:92,length:1))
+                    rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:140,length:1))
                     rhymeLabel.attributedText = rhyme
                     
                     

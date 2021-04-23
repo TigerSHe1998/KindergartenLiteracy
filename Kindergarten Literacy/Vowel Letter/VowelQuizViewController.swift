@@ -279,8 +279,6 @@ class VowelQuizViewController: UIViewController {
     @IBAction func choiceButtons(_ sender: Any) {
         var saveFile = UserDefaults.standard.dictionary(forKey: "vowelStarCount")
         
-        
-        
 
         if (sender as! UIButton) == correctButton {
             UserDefaults.standard.set(UserDefaults.standard.integer(forKey: "coinCount") + 1, forKey: "coinCount")
@@ -296,7 +294,7 @@ class VowelQuizViewController: UIViewController {
                 increment = 2
                 if currScore < 6{
                     saveFile![currentLetter] = currScore
-                    UserDefaults.standard.set(saveFile, forKey: "vowelStarCount")
+                    UserDefaults.standard.set(saveFile, forKey: "VowelStarCount")
                 }
                 
             }
@@ -338,8 +336,6 @@ class VowelQuizViewController: UIViewController {
                         if puzprog != 13 && puzprog != 14 {
                             self.setupChoices()
                         }
-                        
-
 
                         // reset positions
                         self.choice1.center = c1
@@ -360,7 +356,27 @@ class VowelQuizViewController: UIViewController {
         if increment > 0{
             increment -= 1
         }
-       // playFullAudio(currentLetter: currentLetter, firstChoice: choice1.currentTitle!, secondChoice: choice2.currentTitle!, thirdChoice: choice3.currentTitle!)
+        choice1.isEnabled = false
+        choice2.isEnabled = false
+        choice3.isEnabled = false
+        backButton.isEnabled = false
+        homeButton.isEnabled = false
+        replayButton.isEnabled = false
+        
+        playFullAudio(currentLetter: currentLetter, firstChoice: choice1.currentTitle!, secondChoice: choice2.currentTitle!, thirdChoice: choice3.currentTitle!)
+        }
+        
+        let seconds = 6.0
+        DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
+
+            self.choice1.isEnabled = true
+            self.choice2.isEnabled = true
+            self.choice3.isEnabled = true
+         
+            self.backButton.isEnabled = true
+            self.homeButton.isEnabled = true
+            self.replayButton.isEnabled = true
+
         }
     }
     
@@ -391,8 +407,6 @@ class VowelQuizViewController: UIViewController {
         var saveFile = UserDefaults.standard.dictionary(forKey: "VowelPuzzleProgress")
         
         var progress:Int = saveFile![currentLetter] as! Int
-        
-        
         
         if progress == 1 {
             puzzleFive.setImage(UIImage(named: imageFive), for: .normal)
@@ -435,16 +449,15 @@ class VowelQuizViewController: UIViewController {
             self.animate(mybutton: puzzleThree)
         }
         if progress == 11{
-            puzzleFour.setImage(UIImage(named: imageFour), for: .normal)
+            puzzleOne.setImage(UIImage(named: imageOne), for: .normal)
             self.animate(mybutton: puzzleFour)
         }
         if progress == 12 {
-            puzzleOne.setImage(UIImage(named: imageOne), for: .normal)
+            puzzleFour.setImage(UIImage(named: imageFour), for: .normal)
             self.animate(mybutton: puzzleOne)
             puzzleOne.addTarget(self, action: #selector(self.puzzleTapped), for: .touchUpInside)
             let vc = mainStoryBoard.instantiateViewController(identifier: "rhyme_vc") as! RhymeViewController
             vc.passedInLetter = currentLetter
-            vc.letterCategory = "end"
             present(vc, animated: true)
         }
         progress += 1
@@ -494,10 +507,10 @@ class VowelQuizViewController: UIViewController {
             puzzleThree.setImage(UIImage(named: imageThree), for: .normal)
         }
         if progress > 11 {
-            puzzleFour.setImage(UIImage(named: imageFour), for: .normal)
+            puzzleOne.setImage(UIImage(named: imageOne), for: .normal)
         }
         if progress > 12 {
-            puzzleOne.setImage(UIImage(named: imageOne), for: .normal)
+            puzzleFour.setImage(UIImage(named: imageFour), for: .normal)
             puzzleOne.addTarget(self, action: #selector(self.puzzleTapped), for: .touchUpInside)
         }
 
@@ -621,7 +634,28 @@ class VowelQuizViewController: UIViewController {
     }
     
     @IBAction func replayButtonTapped(_ sender: Any) {
+        choice1.isEnabled = false
+        choice2.isEnabled = false
+        choice3.isEnabled = false
+        backButton.isEnabled = false
+        homeButton.isEnabled = false
+        replayButton.isEnabled = false
+        
         playFullAudio(currentLetter: currentLetter, firstChoice: choice1.currentTitle!, secondChoice: choice2.currentTitle!, thirdChoice: choice3.currentTitle!)
+        
+        let seconds = 6.0
+    
+        DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
+
+            self.choice1.isEnabled = true
+            self.choice2.isEnabled = true
+            self.choice3.isEnabled = true
+         
+            self.backButton.isEnabled = true
+            self.homeButton.isEnabled = true
+            self.replayButton.isEnabled = true
+
+        }
     }
     
     @IBAction func rhymeButtonTapped(_ sender: Any) {
@@ -630,7 +664,6 @@ class VowelQuizViewController: UIViewController {
         vc.passedInLetter = currentLetter
         present(vc, animated: true)
     }
-    
     
     
 

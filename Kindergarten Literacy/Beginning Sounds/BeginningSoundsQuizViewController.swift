@@ -1561,6 +1561,48 @@ class BeginningSoundsQuizViewController: UIViewController {
             if correctChoice > 0{
                 correctChoice -= 1
             }
+            
+            returnButton.isEnabled = false
+            homeButton.isEnabled = false
+            redoButton.isEnabled = false
+            wordButton1.isEnabled = false
+            wordButton2.isEnabled = false
+            wordButton3.isEnabled = false
+            let seconds = 1.5
+            DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
+                let pathToSound = Bundle.main.path(forResource: self.first, ofType: "mp3")!
+                let url = URL(fileURLWithPath: pathToSound)
+                do {
+                        self.audioPlayer = try AVAudioPlayer(contentsOf: url)
+                        self.audioPlayer?.play()
+                } catch {}
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2 * seconds) {
+                let pathToSound = Bundle.main.path(forResource: self.second, ofType: "mp3")!
+                let url = URL(fileURLWithPath: pathToSound)
+                do {
+                        self.audioPlayer = try AVAudioPlayer(contentsOf: url)
+                        self.audioPlayer?.play()
+                } catch {}
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3 * seconds) {
+                let pathToSound = Bundle.main.path(forResource: self.third, ofType: "mp3")!
+                let url = URL(fileURLWithPath: pathToSound)
+                do {
+                        self.audioPlayer = try AVAudioPlayer(contentsOf: url)
+                        self.audioPlayer?.play()
+                } catch {}
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 4 * seconds) {
+                self.returnButton.isEnabled = true
+                self.homeButton.isEnabled = true
+                self.redoButton.isEnabled = true
+                self.wordButton1.isEnabled = true
+                self.wordButton2.isEnabled = true
+                self.wordButton3.isEnabled = true
+            }
+            playLetter(s: desiredLabelOne)
+            
             switch desiredLabelOne {
             case "B", "b":
                 decreaseStar(s: "B")

@@ -3,7 +3,7 @@
 //  Kindergarten Literacy
 //
 //  Created by Haoyun Xu on 1/30/21.
-//
+//  Developed by Bingqing Xu
 
 import UIKit
 

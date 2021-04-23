@@ -42,6 +42,12 @@ class EndingSoundsQuiz: UIViewController {
     @IBOutlet var choice2: UIButton!;
     @IBOutlet var choice3: UIButton!;
     
+    @IBOutlet var backButton: UIButton!
+    @IBOutlet var homeButton: UIButton!
+    @IBOutlet var replayButton: UIButton!
+    @IBOutlet var coinButton: UIButton!
+    @IBOutlet var puzzleButton: UIButton!
+    
     // audio player
     var audioPlayer: AVAudioPlayer?
     
@@ -54,7 +60,7 @@ class EndingSoundsQuiz: UIViewController {
     var wrongTwo: String!
     
     var correctButton: UIButton!
-    var wrongTimes = 0
+    var puzzleIncrement = 2
     
     // reference to different storyboards
     let endingSoundsStoryBoard:UIStoryboard = UIStoryboard(name: "EndingSoundsPages", bundle:nil)
@@ -182,9 +188,30 @@ class EndingSoundsQuiz: UIViewController {
         default:
             break
         }
+        choice1.isEnabled = false
+        choice2.isEnabled = false
+        choice3.isEnabled = false
+        backButton.isEnabled = false
+        homeButton.isEnabled = false
+        replayButton.isEnabled = false
+
         
-        playFullAudio(currentLetter: currentLetter, firstChoice: choice1.currentTitle!, secondChoice: choice2.currentTitle!, thirdChoice: choice3.currentTitle!)
-        
+        playFullAudio(currentLetter: currentLetter, firstChoice: choice1.currentTitle!, secondChoice: choice3.currentTitle!, thirdChoice: choice2.currentTitle!)
+
+
+        let seconds = 6.0
+        DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
+
+            self.choice1.isEnabled = true
+            self.choice2.isEnabled = true
+            self.choice3.isEnabled = true
+
+            self.backButton.isEnabled = true
+            self.homeButton.isEnabled = true
+            self.replayButton.isEnabled = true
+
+        }
+
     }
     
     func setupPuzzles() {
@@ -222,22 +249,102 @@ class EndingSoundsQuiz: UIViewController {
         }
     }
     
+//    @IBAction func choiceButtons(_ sender: Any) {
+//        var saveFile = UserDefaults.standard.dictionary(forKey: "endingSoundsStarCount")
+//
+//        if (sender as! UIButton) == correctButton {
+//            correctButtonAnimation()
+//            var currScore:Int = saveFile![currentLetter.lowercased()] as! Int
+//            if currScore < 5 {
+//                currScore += 1
+//                saveFile![currentLetter.lowercased()] = currScore
+//                UserDefaults.standard.set(saveFile, forKey: "endingSoundsStarCount")
+//            }
+//            // add 1 to coin count
+//            UserDefaults.standard.set(UserDefaults.standard.integer(forKey: "coinCount") + 1, forKey: "coinCount")
+//            // disable button to avoid tapping during animation
+//            (sender as! UIButton).isEnabled = false
+//
+//            // ANIMATION BLOCK //
+//            // backup center points
+//            let c1 = self.choice1.center
+//            let c2 = self.choice2.center
+//            let c3 = self.choice3.center
+//            // play animation
+//            UIView.animate(withDuration: 1, animations: {
+//                // center correct choice
+//                var center = self.choice1.center
+//                center.y += 90
+//                (sender as! UIButton).center = center
+//                // fade others if not correct choice
+//                if self.choice1 != (sender as! UIButton) {
+//                    self.choice1.alpha = 0.0
+//                }
+//                if self.choice2 != (sender as! UIButton) {
+//                    self.choice2.alpha = 0.0
+//                }
+//                if self.choice3 != (sender as! UIButton) {
+//                    self.choice3.alpha = 0.0
+//                }
+//            }, completion: { done in // excutes only after animation complete
+//                if done {
+//                    // sleep 1 second to keep answer on screen longer
+//                    DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute : {
+//                        // hide letter to avoid pop in
+//                        (sender as! UIButton).alpha = 0.0
+//                        // assign new choices and layout
+//                        self.setupChoices()
+//                        // reset positions
+//                        self.choice1.center = c1
+//                        self.choice2.center = c2
+//                        self.choice3.center = c3
+//                        UIView.animate(withDuration: 0.5, animations: {
+//                            // show hidden letter with grace (if no use animation will pop)
+//                            self.choice1.alpha = 1.0
+//                            self.choice2.alpha = 1.0
+//                            self.choice3.alpha = 1.0
+//                        })
+//                        // reenable button
+//                        (sender as! UIButton).isEnabled = true
+//                    })
+//                }
+//            })
+//        } else {
+//            playFullAudio(currentLetter: currentLetter, firstChoice: choice1.currentTitle!, secondChoice: choice2.currentTitle!, thirdChoice: choice3.currentTitle!)
+//            var currScore:Int = saveFile![currentLetter.lowercased()] as! Int
+//            if currScore > 0 {
+//                currScore -= 1
+//                saveFile![currentLetter.lowercased()] = currScore
+//                UserDefaults.standard.set(saveFile, forKey: "endingSoundsStarCount")
+//            }
+//        }
+//    }
+    
+    
     @IBAction func choiceButtons(_ sender: Any) {
         var saveFile = UserDefaults.standard.dictionary(forKey: "endingSoundsStarCount")
         
+
         if (sender as! UIButton) == correctButton {
-            correctButtonAnimation()
-            var currScore:Int = saveFile![currentLetter.lowercased()] as! Int
-            if currScore < 5 {
-                currScore += 1
-                saveFile![currentLetter.lowercased()] = currScore
-                UserDefaults.standard.set(saveFile, forKey: "endingSoundsStarCount")
-            }
-            // add 1 to coin count
             UserDefaults.standard.set(UserDefaults.standard.integer(forKey: "coinCount") + 1, forKey: "coinCount")
+            
+            
+            var currScore:Int = saveFile![currentLetter.lowercased()] as! Int
+            currScore += 1
+            if currScore < 12 {
+                while puzzleIncrement > 0{
+                    correctButtonAnimation()
+                    puzzleIncrement -= 1
+                }
+                puzzleIncrement = 2
+                if currScore < 6{
+                    saveFile![currentLetter] = currScore
+                    UserDefaults.standard.set(saveFile, forKey: "endingSoundsStarCount")
+                }
+                
+            }
             // disable button to avoid tapping during animation
             (sender as! UIButton).isEnabled = false
-            
             // ANIMATION BLOCK //
             // backup center points
             let c1 = self.choice1.center
@@ -262,11 +369,17 @@ class EndingSoundsQuiz: UIViewController {
             }, completion: { done in // excutes only after animation complete
                 if done {
                     // sleep 1 second to keep answer on screen longer
-                    DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute : {
+                    Dispatch.DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute : {
                         // hide letter to avoid pop in
                         (sender as! UIButton).alpha = 0.0
                         // assign new choices and layout
-                        self.setupChoices()
+                        let saveFile = UserDefaults.standard.dictionary(forKey: "endingSoundsPuzzleProgress")
+                        let puzprog:Int = saveFile![self.currentLetter.lowercased()] as! Int
+                        //print(puzprog)
+                        if puzprog != 13 && puzprog != 14 {
+                            self.setupChoices()
+                        }
+
                         // reset positions
                         self.choice1.center = c1
                         self.choice2.center = c2
@@ -277,19 +390,36 @@ class EndingSoundsQuiz: UIViewController {
                             self.choice2.alpha = 1.0
                             self.choice3.alpha = 1.0
                         })
-                        // reenable button
-                        (sender as! UIButton).isEnabled = true
+                        // re enable button
+                        
                     })
                 }
             })
-        } else {
-            playFullAudio(currentLetter: currentLetter, firstChoice: choice1.currentTitle!, secondChoice: choice2.currentTitle!, thirdChoice: choice3.currentTitle!)
-            var currScore:Int = saveFile![currentLetter.lowercased()] as! Int
-            if currScore > 0 {
-                currScore -= 1
-                saveFile![currentLetter.lowercased()] = currScore
-                UserDefaults.standard.set(saveFile, forKey: "endingSoundsStarCount")
-            }
+    } else {
+        if puzzleIncrement > 0{
+            puzzleIncrement -= 1
+        }
+        choice1.isEnabled = false
+        choice2.isEnabled = false
+        choice3.isEnabled = false
+        backButton.isEnabled = false
+        homeButton.isEnabled = false
+        replayButton.isEnabled = false
+        
+        playFullAudio(currentLetter: currentLetter, firstChoice: choice1.currentTitle!, secondChoice: choice2.currentTitle!, thirdChoice: choice3.currentTitle!)
+        }
+        
+        let seconds = 8.0
+        Dispatch.DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
+
+            self.choice1.isEnabled = true
+            self.choice2.isEnabled = true
+            self.choice3.isEnabled = true
+         
+            self.backButton.isEnabled = true
+            self.homeButton.isEnabled = true
+            self.replayButton.isEnabled = true
+
         }
     }
     
@@ -335,36 +465,49 @@ class EndingSoundsQuiz: UIViewController {
         
         if progress == 1 {
             puzzleFive.setImage(UIImage(named: imageFive), for: .normal)
-            puzzleNine.setImage(UIImage(named: imageNine), for: .normal)
             self.animate(mybutton: puzzleFive)
+        }
+        if progress == 2{
+            puzzleNine.setImage(UIImage(named: imageNine), for: .normal)
             self.animate(mybutton: puzzleNine)
         }
-        if progress == 2 {
-            puzzleSeven.setImage(UIImage(named: imageSeven), for: .normal)
+        if progress == 3 {
             puzzleTen.setImage(UIImage(named: imageTen), for: .normal)
-            self.animate(mybutton: puzzleSeven)
             self.animate(mybutton: puzzleTen)
         }
-        if progress == 3 {
+        if progress == 4{
+            puzzleSeven.setImage(UIImage(named: imageSeven), for: .normal)
+            self.animate(mybutton: puzzleSeven)
+        }
+        if progress == 5{
             puzzleSix.setImage(UIImage(named: imageSix), for: .normal)
-            puzzleTwelve.setImage(UIImage(named: imageTwelve), for: .normal)
             self.animate(mybutton: puzzleSix)
+        }
+        if progress == 6{
+            puzzleTwelve.setImage(UIImage(named: imageTwelve), for: .normal)
             self.animate(mybutton: puzzleTwelve)
         }
-        if progress == 4 {
+        if progress == 7 {
             puzzleEight.setImage(UIImage(named: imageEight), for: .normal)
-            puzzleEleven.setImage(UIImage(named: imageEleven), for: .normal)
             self.animate(mybutton: puzzleEight)
+        }
+        if progress == 8{
+            puzzleEleven.setImage(UIImage(named: imageEleven), for: .normal)
             self.animate(mybutton: puzzleEleven)
         }
-        if progress == 5 {
+        if progress == 9{
             puzzleTwo.setImage(UIImage(named: imageTwo), for: .normal)
-            puzzleThree.setImage(UIImage(named: imageThree), for: .normal)
             self.animate(mybutton: puzzleTwo)
+        }
+        if progress == 10{
+            puzzleThree.setImage(UIImage(named: imageThree), for: .normal)
             self.animate(mybutton: puzzleThree)
         }
-        if progress == 6 {
+        if progress == 11{
             puzzleOne.setImage(UIImage(named: imageOne), for: .normal)
+            self.animate(mybutton: puzzleFour)
+        }
+        if progress == 12 {
             puzzleFour.setImage(UIImage(named: imageFour), for: .normal)
             self.animate(mybutton: puzzleOne)
             self.animate(mybutton: puzzleFour)
@@ -392,26 +535,38 @@ class EndingSoundsQuiz: UIViewController {
 
         if progress > 1 {
             puzzleFive.setImage(UIImage(named: imageFive), for: .normal)
-            puzzleNine.setImage(UIImage(named: imageNine), for: .normal)
         }
         if progress > 2 {
-            puzzleSeven.setImage(UIImage(named: imageSeven), for: .normal)
-            puzzleTen.setImage(UIImage(named: imageTen), for: .normal)
+            puzzleNine.setImage(UIImage(named: imageNine), for: .normal)
         }
         if progress > 3 {
-            puzzleSix.setImage(UIImage(named: imageSix), for: .normal)
-            puzzleTwelve.setImage(UIImage(named: imageTwelve), for: .normal)
+            puzzleTen.setImage(UIImage(named: imageTen), for: .normal)
         }
         if progress > 4 {
-            puzzleEight.setImage(UIImage(named: imageEight), for: .normal)
-            puzzleEleven.setImage(UIImage(named: imageEleven), for: .normal)
+            puzzleSeven.setImage(UIImage(named: imageSeven), for: .normal)
         }
         if progress > 5 {
-            puzzleTwo.setImage(UIImage(named: imageTwo), for: .normal)
-            puzzleThree.setImage(UIImage(named: imageThree), for: .normal)
+            puzzleSix.setImage(UIImage(named: imageSix), for: .normal)
         }
         if progress > 6 {
+            puzzleTwelve.setImage(UIImage(named: imageTwelve), for: .normal)
+        }
+        if progress > 7 {
+            puzzleEight.setImage(UIImage(named: imageEight), for: .normal)
+        }
+        if progress > 8 {
+            puzzleEleven.setImage(UIImage(named: imageEleven), for: .normal)
+        }
+        if progress > 9 {
+            puzzleTwo.setImage(UIImage(named: imageTwo), for: .normal)
+        }
+        if progress > 10 {
+            puzzleThree.setImage(UIImage(named: imageThree), for: .normal)
+        }
+        if progress > 11 {
             puzzleOne.setImage(UIImage(named: imageOne), for: .normal)
+        }
+        if progress > 12 {
             puzzleFour.setImage(UIImage(named: imageFour), for: .normal)
             
             puzzleOne.addTarget(self, action: #selector(self.puzzleTapped), for: .touchUpInside)
@@ -530,28 +685,50 @@ class EndingSoundsQuiz: UIViewController {
     
     // functions for sidebar
     @IBAction func backButtonTapped(_ sender: Any) {
-        audioPlayer?.stop()
         self.dismiss(animated: true, completion: nil)
     }
 
     @IBAction func homeButtonTapped(_ sender: Any) {
-        audioPlayer?.stop()
         self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func puzzleButtonTapped(_ sender: Any) {
+        audioPlayer?.stop()
         let vc = mainStoryBoard.instantiateViewController(identifier: "puzzle_vc")
 //        let vc = UIHostingController(rootView: PuzzleView())
         present(vc, animated: true)
     }
     
     @IBAction func coinButtonTapped(_ sender: Any) {
+        audioPlayer?.stop()
         let vc = mainStoryBoard.instantiateViewController(identifier: "coin_vc")
         present(vc, animated: true)
     }
     
     @IBAction func replayButtonTapped(_ sender: Any) {
+        audioPlayer?.stop()
+        choice1.isEnabled = false
+        choice2.isEnabled = false
+        choice3.isEnabled = false
+        backButton.isEnabled = false
+        homeButton.isEnabled = false
+        replayButton.isEnabled = false
+        
         playFullAudio(currentLetter: currentLetter, firstChoice: choice1.currentTitle!, secondChoice: choice2.currentTitle!, thirdChoice: choice3.currentTitle!)
+        
+        
+        let seconds = 8.0
+        DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
+
+            self.choice1.isEnabled = true
+            self.choice2.isEnabled = true
+            self.choice3.isEnabled = true
+         
+            self.backButton.isEnabled = true
+            self.homeButton.isEnabled = true
+            self.replayButton.isEnabled = true
+
+        }
     }
 
 }
