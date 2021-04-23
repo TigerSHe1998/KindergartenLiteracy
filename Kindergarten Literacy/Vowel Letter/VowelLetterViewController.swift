@@ -68,6 +68,15 @@ class VowelLetterViewController: UIViewController {
         present(vc, animated: true)
     }
     
+    @IBAction func replay(_ sender: Any) {
+        let pathToSound = Bundle.main.path(forResource: "vowels_intro", ofType: "mp3")!
+        let url = URL(fileURLWithPath: pathToSound)
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: url)
+            audioPlayer?.play()
+        } catch {}
+    }
+    
     @IBAction func `return`(_ sender: Any) {
         self.dismiss(animated:true, completion: nil)
     }
