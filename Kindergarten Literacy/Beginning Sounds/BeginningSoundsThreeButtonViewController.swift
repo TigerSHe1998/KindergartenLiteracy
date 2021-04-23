@@ -60,26 +60,41 @@ class BeginningSoundsThreeButtonViewController: UIViewController {
     
  
     @IBAction func `return`(_ sender: Any) {
+        audioPlayer!.stop()
         self.dismiss(animated:true, completion: nil)
     }
 
     @IBAction func home(_ sender: Any) {
+        audioPlayer!.stop()
         self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
     }
 
     @IBAction func quiz(_ sender: Any) {
+        audioPlayer!.stop()
         let vc = storyboard?.instantiateViewController(identifier: "beginning_sounds_quiz_vc") as! BeginningSoundsQuizViewController
         vc.desiredLabelOne = "B"
         present(vc, animated: true)
     }
     
+    @IBAction func replay(_ sender: Any) {
+        let pathToSound = Bundle.main.path(forResource: "00_Button_Audio_Win_A_Green_Ball_(Alphabet_Letters)", ofType: "mp3")!
+        let url = URL(fileURLWithPath: pathToSound)
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: url)
+            audioPlayer?.play()
+        } catch {
+            
+        }
+    }
     @IBAction func coin(_ sender: Any) {
+        audioPlayer!.stop()
         let sb = UIStoryboard(name: "Main", bundle: nil)
         let vc = sb.instantiateViewController(identifier: "coin_vc") as! CoinViewController
         present(vc, animated: true)
     }
     
     @IBAction func puzzle(_ sender: Any) {
+        audioPlayer!.stop()
         let sb = UIStoryboard(name: "Main", bundle: nil)
         let vc = sb.instantiateViewController(identifier: "puzzle_vc") as! PuzzleViewController
         present(vc, animated: true)

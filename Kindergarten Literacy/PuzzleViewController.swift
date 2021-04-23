@@ -200,7 +200,7 @@ class PuzzleViewController: UIViewController {
     }
     
     var vowelSaveFile = UserDefaults.standard.dictionary(forKey: "VowelPuzzleProgress")
-    var beginningSoundsSaveFile = UserDefaults.standard.dictionary(forKey: "BeginningSoundsPuzzleProgress")
+    var beginningSoundsSaveFile = UserDefaults.standard.dictionary(forKey: "BP")
     var endingSoundsSaveFile = UserDefaults.standard.dictionary(forKey: "endingSoundsPuzzleProgress")
     
     func configure(currentTitle: String, currentButton: PuzzleButton, category: String) {
@@ -215,9 +215,9 @@ class PuzzleViewController: UIViewController {
             if vowelSaveFile![currentButton.currentTitle!] as! Int >= 6 {
                 setVowelCompositePuzzle(currentButton: currentButton)
             }
-        //case "begin":
-            //if beginningSoundsSaveFile![currentButton.currentTitle!] as! Int >= 12 {                //setBeginningSoundsCompositePuzzle(currentButton: currentButton)
-            //}
+        case "begin":
+            if beginningSoundsSaveFile![currentButton.currentTitle!.lowercased()] as! Int >= 12 {                setBeginningSoundsCompositePuzzle(currentButton: currentButton)
+            }
         case "end":
             if endingSoundsSaveFile![currentButton.currentTitle!] as! Int >= 6 {
                 setEndingSoundsCompositePuzzle(currentButton: currentButton)
@@ -349,17 +349,17 @@ class PuzzleViewController: UIViewController {
                 vc.desiredLabelOne = sender.currentTitle
                 present(vc, animated: true)
             }
-        //case "begin":
-            //if beginningSoundsSaveFile![sender.currentTitle!] as! Int >= 12 {
-                //let vc = mainStoryBoard.instantiateViewController(identifier: "rhyme_vc") as! RhymeViewController
-                //vc.passedInLetter = sender.currentTitle
-                //vc.letterCategory = "begin"
-                //present(vc, animated: true)
-            //} else {
-                //let vc = beginningSoundsStoryBoard.instantiateViewController(identifier: "oneButtonLevel_vc") as! //OneButtonLevelViewController
-                //vc.desiredLabelOne = sender.currentTitle
-                //present(vc, animated: true)
-            //}
+        case "begin":
+            if beginningSoundsSaveFile![sender.currentTitle!.lowercased()] as! Int >= 12 {
+                let vc = mainStoryBoard.instantiateViewController(identifier: "rhyme_vc") as! RhymeViewController
+                vc.passedInLetter = sender.currentTitle
+                vc.letterCategory = "begin"
+                present(vc, animated: true)
+            } else {
+                let vc = beginningSoundsStoryBoard.instantiateViewController(identifier: "oneButtonLevel_vc") as! OneButtonLevelViewController
+                vc.desiredLabelOne = sender.currentTitle
+                present(vc, animated: true)
+            }
         case "end":
             if endingSoundsSaveFile![sender.currentTitle!] as! Int >= 6 {
                 let vc = mainStoryBoard.instantiateViewController(identifier: "rhyme_vc") as! RhymeViewController

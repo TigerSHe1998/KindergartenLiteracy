@@ -53,14 +53,17 @@ class BeginningSoundsViewController: UIViewController {
     
 
     @IBAction func `return`(_ sender: Any) {
+        audioPlayer!.stop()
         self.dismiss(animated:true, completion: nil)
     }
 
     @IBAction func home(_ sender: Any) {
+        audioPlayer!.stop()
         self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func coin(_ sender: Any) {
+        audioPlayer!.stop()
         let sb = UIStoryboard(name: "Main", bundle: nil)
         let vc = sb.instantiateViewController(identifier: "coin_vc") as! CoinViewController
         present(vc, animated: true)
@@ -68,12 +71,14 @@ class BeginningSoundsViewController: UIViewController {
     
     
     @IBAction func puzzle(_ sender: Any) {
+        audioPlayer!.stop()
         let sb = UIStoryboard(name: "Main", bundle: nil)
         let vc = sb.instantiateViewController(identifier: "puzzle_vc") as! PuzzleViewController
         present(vc, animated: true)
     }
 
     @IBAction func quiz(_ sender: Any) {
+        audioPlayer!.stop()
         let vc = storyboard?.instantiateViewController(identifier: "beginning_sounds_quiz_vc") as! BeginningSoundsQuizViewController
         vc.desiredLabelOne = "b"
         audioPlayer!.stop()

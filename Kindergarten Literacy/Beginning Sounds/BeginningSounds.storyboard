@@ -614,6 +614,9 @@
                                             <constraint firstAttribute="height" constant="40" id="An9-67-UWj"/>
                                         </constraints>
                                         <state key="normal" image="repeat"/>
+                                        <connections>
+                                            <action selector="replay:" destination="deS-uM-ZXT" eventType="touchUpInside" id="3il-HE-5Sh"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DGh-Pn-wxp" userLabel="Bank">
                                         <rect key="frame" x="0.0" y="238.33333333333331" width="40" height="40"/>
@@ -736,6 +739,9 @@
                                             <constraint firstAttribute="height" constant="40" id="cFc-QC-MsU"/>
                                         </constraints>
                                         <state key="normal" image="repeat"/>
+                                        <connections>
+                                            <action selector="replay:" destination="Ign-y4-RTg" eventType="touchUpInside" id="cWj-z4-qxe"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jG1-2v-waT" userLabel="Bank">
                                         <rect key="frame" x="0.0" y="238.33333333333331" width="40" height="40"/>
@@ -1183,6 +1189,9 @@
                                             <constraint firstAttribute="height" constant="40" id="wdF-vs-lW9"/>
                                         </constraints>
                                         <state key="normal" image="repeat"/>
+                                        <connections>
+                                            <action selector="replay:" destination="mga-7k-i2c" eventType="touchUpInside" id="NhB-AF-ow0"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sjm-RN-aJr" userLabel="Bank">
                                         <rect key="frame" x="0.0" y="238.33333333333331" width="40" height="40"/>
@@ -1305,6 +1314,9 @@
                                             <constraint firstAttribute="height" constant="40" id="Z1w-0u-g2o"/>
                                         </constraints>
                                         <state key="normal" image="repeat"/>
+                                        <connections>
+                                            <action selector="replay:" destination="P0C-Ee-CUY" eventType="touchUpInside" id="peu-DJ-K1U"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7vZ-wj-kv3" userLabel="Bank">
                                         <rect key="frame" x="0.0" y="238.33333333333331" width="40" height="40"/>
@@ -1752,6 +1764,9 @@
                                             <constraint firstAttribute="height" constant="40" id="YXH-rN-G0W"/>
                                         </constraints>
                                         <state key="normal" image="repeat"/>
+                                        <connections>
+                                            <action selector="replay:" destination="t5o-YK-Ek6" eventType="touchUpInside" id="5kX-Ig-NhX"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5aA-o7-Asv" userLabel="Bank">
                                         <rect key="frame" x="0.0" y="238.33333333333331" width="40" height="40"/>
@@ -1874,6 +1889,9 @@
                                             <constraint firstAttribute="height" constant="40" id="0zj-JI-x7M"/>
                                         </constraints>
                                         <state key="normal" image="repeat"/>
+                                        <connections>
+                                            <action selector="replay:" destination="Lnn-lH-skY" eventType="touchUpInside" id="mcs-k9-UpF"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lgx-jt-b3m" userLabel="Bank">
                                         <rect key="frame" x="0.0" y="238.33333333333331" width="40" height="40"/>
@@ -2321,6 +2339,9 @@
                                             <constraint firstAttribute="height" constant="40" id="64T-Dq-NpY"/>
                                         </constraints>
                                         <state key="normal" image="repeat"/>
+                                        <connections>
+                                            <action selector="replay:" destination="hno-YZ-1Od" eventType="touchUpInside" id="SDs-gG-A9e"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ler-f1-fif" userLabel="Bank">
                                         <rect key="frame" x="0.0" y="238.33333333333331" width="40" height="40"/>
@@ -2443,6 +2464,9 @@
                                             <constraint firstAttribute="height" constant="40" id="qIn-u5-InW"/>
                                         </constraints>
                                         <state key="normal" image="repeat"/>
+                                        <connections>
+                                            <action selector="replay:" destination="nc9-Sy-S2d" eventType="touchUpInside" id="dPS-L6-irx"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8nn-of-Rdc" userLabel="Bank">
                                         <rect key="frame" x="0.0" y="238.33333333333331" width="40" height="40"/>

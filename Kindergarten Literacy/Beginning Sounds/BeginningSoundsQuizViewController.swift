@@ -1569,6 +1569,7 @@ class BeginningSoundsQuizViewController: UIViewController {
     }
     
     @objc func puzzleTapped(sender: UIButton) {
+        audioPlayer?.stop()
         let sb = UIStoryboard(name: "Main", bundle: nil)
         let vc = sb.instantiateViewController(identifier: "rhyme_vc") as! RhymeViewController
         vc.passedInLetter = desiredLabelOne
@@ -1760,10 +1761,12 @@ class BeginningSoundsQuizViewController: UIViewController {
     }
     
     @IBAction func returnButtonTapped(_ sender: Any) {
+        audioPlayer!.stop()
         self.dismiss(animated:true, completion: nil)
     }
     
     @IBAction func home(_ sender: Any) {
+        audioPlayer!.stop()
         self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
     }
     @IBAction func replay(_ sender: Any) {
@@ -1771,11 +1774,13 @@ class BeginningSoundsQuizViewController: UIViewController {
         setupChoices()
     }
     @IBAction func coin(_ sender: Any) {
+        audioPlayer!.stop()
         let sb = UIStoryboard(name: "Main", bundle: nil)
         let vc = sb.instantiateViewController(identifier: "coin_vc") as! CoinViewController
         present(vc, animated: true)
     }
     @IBAction func puzzle(_ sender: Any) {
+        audioPlayer!.stop()
         let sb = UIStoryboard(name: "Main", bundle: nil)
         let vc = sb.instantiateViewController(identifier: "puzzle_vc") as! PuzzleViewController
         present(vc, animated: true)
