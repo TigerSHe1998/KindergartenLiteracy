@@ -23,6 +23,11 @@ class BeginningSoundsOneButtonViewController: UIViewController {
         } catch {
             
         }
+        for button in levelButtons {
+            button.contentHorizontalAlignment = .left
+            button.contentVerticalAlignment = .top
+            button.titleEdgeInsets = UIEdgeInsets(top: 20, left: 40, bottom: 0, right: 0)
+        }
         initButtonBackground()
         Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { timer in
             self.initButtonBackground() // refresh star every second

@@ -102,31 +102,31 @@
                                                 </connections>
                                             </button>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="bat" translatesAutoresizingMaskIntoConstraints="NO" id="6ul-GT-d64">
-                                                <rect key="frame" x="110" y="40" width="114" height="101"/>
+                                                <rect key="frame" x="115" y="40" width="114" height="101"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="mittens" translatesAutoresizingMaskIntoConstraints="NO" id="mPq-r2-7bC">
-                                                <rect key="frame" x="108" y="219" width="118" height="90"/>
+                                                <rect key="frame" x="115" y="215" width="118" height="90"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="taxi" translatesAutoresizingMaskIntoConstraints="NO" id="Fee-b3-crD">
-                                                <rect key="frame" x="344" y="213" width="124" height="103"/>
+                                                <rect key="frame" x="340" y="215" width="124" height="103"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="bug" translatesAutoresizingMaskIntoConstraints="NO" id="z5h-nH-sdg">
-                                                <rect key="frame" x="122" y="384" width="91" height="93"/>
+                                                <rect key="frame" x="122" y="380" width="91" height="93"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="ball" translatesAutoresizingMaskIntoConstraints="NO" id="liP-7d-rcd">
-                                                <rect key="frame" x="348" y="39" width="117" height="103"/>
+                                                <rect key="frame" x="340" y="40" width="117" height="103"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="elf" translatesAutoresizingMaskIntoConstraints="NO" id="FkX-om-tzW">
-                                                <rect key="frame" x="610" y="40" width="86" height="108"/>
+                                                <rect key="frame" x="600" y="40" width="86" height="108"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="fox" translatesAutoresizingMaskIntoConstraints="NO" id="58y-uw-4wo">
-                                                <rect key="frame" x="601" y="212" width="104" height="97"/>
+                                                <rect key="frame" x="600" y="215" width="104" height="97"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                         </subviews>
