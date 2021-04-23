@@ -73,6 +73,10 @@ class BeginningSoundsQuizViewController: UIViewController {
     var yPuzzles = ["puzzle-Y-yuh-row1-col1", "puzzle-Y-yuh-row2-col2", "puzzle-Y-yuh-row2-col0", "puzzle-Y-yuh-row3-col0", "puzzle-Y-yuh-row1-col2", "puzzle-Y-yuh-row3-col2", "puzzle-Y-yuh-row2-col1", "puzzle-Y-yuh-row3-col1", "puzzle-Y-yuh-row0-col1", "puzzle-Y-yuh-row0-col2", "puzzle-Y-yuh-row0-col0", "puzzle-Y-yuh-row1-col0"]
     var zPuzzles = ["puzzle-Z-zzz-begin-row1-col1", "puzzle-Z-zzz-begin-row2-col2", "puzzle-Z-zzz-begin-row2-col0", "puzzle-Z-zzz-begin-row3-col0", "puzzle-Z-zzz-begin-row1-col2", "puzzle-Z-zzz-begin-row3-col2", "puzzle-Z-zzz-begin-row2-col1", "puzzle-Z-zzz-begin-row3-col1", "puzzle-Z-zzz-begin-row0-col1", "puzzle-Z-zzz-begin-row0-col2", "puzzle-Z-zzz-begin-row0-col0", "puzzle-Z-zzz-begin-row1-col0"]
     
+    var first: String!
+    var second: String!
+    var third: String!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -352,6 +356,9 @@ class BeginningSoundsQuizViewController: UIViewController {
         let correctChoice = Int.random(in: 0..<3)
         switch correctChoice {
         case 0:
+            first = correctImage
+            second = wrongOne
+            third = wrongTwo
             wordButton1.setImage(UIImage(named: correctImage), for: .normal)
             wordButton2.setImage(UIImage(named: String(wrongOne!)), for: .normal)
             wordButton3.setImage(UIImage(named: String(wrongTwo!)), for: .normal)
@@ -397,6 +404,9 @@ class BeginningSoundsQuizViewController: UIViewController {
             }
             playLetter(s: desiredLabelOne)
         case 1:
+            first = wrongOne
+            second = correctImage
+            third = wrongTwo
             wordButton1.setImage(UIImage(named: String(wrongOne!)), for: .normal)
             wordButton2.setImage(UIImage(named: correctImage), for: .normal)
             wordButton3.setImage(UIImage(named: String(wrongTwo!)), for: .normal)
@@ -442,6 +452,9 @@ class BeginningSoundsQuizViewController: UIViewController {
             }
             playLetter(s: desiredLabelOne)
         case 2:
+            first = wrongTwo
+            second = wrongOne
+            third = correctImage
             wordButton1.setImage(UIImage(named: String(wrongTwo!)), for: .normal)
             wordButton2.setImage(UIImage(named: String(wrongOne!)), for: .normal)
             wordButton3.setImage(UIImage(named: correctImage), for: .normal)
@@ -1485,24 +1498,27 @@ class BeginningSoundsQuizViewController: UIViewController {
             }, completion: { done in // excutes only after animation complete
                 if done {
                     // sleep 1 second to keep answer on screen longer
-                    DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute : {
+                    if curr < 12 || puzzleJump[self.desiredLabelOne.capitalized] == 1 {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute : {
                         // hide letter to avoid pop in
-                        (sender as! UIButton).alpha = 0.0
+                            (sender as! UIButton).alpha = 0.0
                         // assign new choices and layout
-                        self.setupChoices()
+                            self.setupChoices()
+                        
                         // reset positions
-                        self.wordButton1.center = c1
-                        self.wordButton2.center = c2
-                        self.wordButton3.center = c3
-                        UIView.animate(withDuration: 0.5, animations: {
+                            self.wordButton1.center = c1
+                            self.wordButton2.center = c2
+                            self.wordButton3.center = c3
+                            UIView.animate(withDuration: 0.5, animations: {
                             // show hidden letter with grace (if no use animation will pop)
-                            self.wordButton1.alpha = 1.0
-                            self.wordButton2.alpha = 1.0
-                            self.wordButton3.alpha = 1.0
-                        })
+                                self.wordButton1.alpha = 1.0
+                                self.wordButton2.alpha = 1.0
+                                self.wordButton3.alpha = 1.0
+                            })
                         // re enable button
                         //(sender as! UIButton).isEnabled = true
-                    })
+                        })
+                    }
                 }
             })
             if curr >= 12 {
@@ -1772,7 +1788,46 @@ class BeginningSoundsQuizViewController: UIViewController {
     }
     @IBAction func replay(_ sender: Any) {
         audioPlayer!.stop()
-        setupChoices()
+        returnButton.isEnabled = false
+        homeButton.isEnabled = false
+        redoButton.isEnabled = false
+        wordButton1.isEnabled = false
+        wordButton2.isEnabled = false
+        wordButton3.isEnabled = false
+        let seconds = 1.5
+        DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
+            let pathToSound = Bundle.main.path(forResource: self.first, ofType: "mp3")!
+            let url = URL(fileURLWithPath: pathToSound)
+            do {
+                    self.audioPlayer = try AVAudioPlayer(contentsOf: url)
+                    self.audioPlayer?.play()
+            } catch {}
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2 * seconds) {
+            let pathToSound = Bundle.main.path(forResource: self.second, ofType: "mp3")!
+            let url = URL(fileURLWithPath: pathToSound)
+            do {
+                    self.audioPlayer = try AVAudioPlayer(contentsOf: url)
+                    self.audioPlayer?.play()
+            } catch {}
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3 * seconds) {
+            let pathToSound = Bundle.main.path(forResource: self.third, ofType: "mp3")!
+            let url = URL(fileURLWithPath: pathToSound)
+            do {
+                    self.audioPlayer = try AVAudioPlayer(contentsOf: url)
+                    self.audioPlayer?.play()
+            } catch {}
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 4 * seconds) {
+            self.returnButton.isEnabled = true
+            self.homeButton.isEnabled = true
+            self.redoButton.isEnabled = true
+            self.wordButton1.isEnabled = true
+            self.wordButton2.isEnabled = true
+            self.wordButton3.isEnabled = true
+        }
+        playLetter(s: desiredLabelOne)
     }
     @IBAction func coin(_ sender: Any) {
         audioPlayer!.stop()

@@ -497,7 +497,7 @@ class RhymeViewController: UIViewController {
                     rhymeLabel.attributedText = rhyme
                 }
             case "y", "Y":
-                configure(puzzleImage: "puzzle-Y-yuh-rhyme-composite", rhymeAudio: "puzzle-Y-yuh-rhyme")
+                configure(puzzleImage: "puzzle-Y-yuh-composite", rhymeAudio: "puzzle-Y-yuh-rhyme")
                 let rhyme = NSMutableAttributedString(string: "Baa, baa, black sheep, have you any wool?\nYes sir, yes sir, three bags full.\nOne for my master, one for my dame,\nAnd one for the little boy,\nWho lives down the lane.", attributes: [NSAttributedString.Key.font :UIFont(name: "Helvetica", size: 20.0)!])
                     rhyme.addAttribute(.paragraphStyle, value: style, range: NSRange(location: 0, length: rhyme.length))
                     rhyme.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: NSRange(location:28,length:1))
