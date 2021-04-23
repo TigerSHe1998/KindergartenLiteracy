@@ -1497,12 +1497,13 @@ class BeginningSoundsQuizViewController: UIViewController {
                 }
             }, completion: { done in // excutes only after animation complete
                 if done {
-                    // sleep 1 second to keep answer on screen longer
                     if curr < 12 || puzzleJump[self.desiredLabelOne.capitalized] == 1 {
-                        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute : {
+                    // sleep 1 second to keep answer on screen longer
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute : {
                         // hide letter to avoid pop in
                             (sender as! UIButton).alpha = 0.0
                         // assign new choices and layout
+                            
                             self.setupChoices()
                         
                         // reset positions
@@ -1521,17 +1522,19 @@ class BeginningSoundsQuizViewController: UIViewController {
                     }
                 }
             })
-            if curr >= 12 {
-                puzzleOne.addTarget(self, action: #selector(self.puzzleTapped), for: .touchUpInside)
-                if puzzleJump[desiredLabelOne.capitalized] == 0 {
-                    let sb = UIStoryboard(name: "Main", bundle: nil)
-                    let vc = sb.instantiateViewController(identifier: "rhyme_vc") as! RhymeViewController
-                    vc.passedInLetter = desiredLabelOne
-                    vc.letterCategory = "begin"
-                    present(vc, animated: true)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.2, execute : {
+                if curr >= 12 {
+                    self.puzzleOne.addTarget(self, action: #selector(self.puzzleTapped), for: .touchUpInside)
+                    if puzzleJump[self.desiredLabelOne.capitalized] == 0 {
+                        let sb = UIStoryboard(name: "Main", bundle: nil)
+                        let vc = sb.instantiateViewController(identifier: "rhyme_vc") as! RhymeViewController
+                        vc.passedInLetter = self.desiredLabelOne
+                        vc.letterCategory = "begin"
+                        self.present(vc, animated: true)
+                    }
+                    puzzleJump[self.desiredLabelOne.capitalized] = 1
                 }
-                puzzleJump[desiredLabelOne.capitalized] = 1
-            }
+            })
             correctChoice = 2
         } else {
             if correctChoice > 0{
