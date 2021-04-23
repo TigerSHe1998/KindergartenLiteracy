@@ -69,6 +69,9 @@ class RealVowelViewController: UIViewController {
         playVowelThirdWord(letter: myButtonOne.currentTitle!)
     }
     
+    @IBAction func replay(_ sender: Any) {
+        playVowelAudioLong(letter:myButtonOne.currentTitle!)
+    }
     
     
     func transitionAudioandImage(letter: String) {
@@ -533,6 +536,7 @@ class RealVowelViewController: UIViewController {
         self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
     }
     @IBAction func quiz(_ sender: Any) {
+        audioPlayer?.stop()
         let vc = storyboard?.instantiateViewController(identifier: "vowel_quiz_vc") as! VowelQuizViewController
         vc.passedInLetter = myButtonOne.currentTitle!
         vc.passedInArray = array

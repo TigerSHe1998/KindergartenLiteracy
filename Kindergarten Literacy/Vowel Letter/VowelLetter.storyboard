@@ -175,6 +175,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qa7-AW-j5x" userLabel="Repeat">
                                         <rect key="frame" x="0.0" y="182.5" width="56" height="56"/>
                                         <state key="normal" image="repeat"/>
+                                        <connections>
+                                            <action selector="replay:" destination="c99-6M-wtR" eventType="touchUpInside" id="FVK-RT-oCI"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cK0-fB-nO3" userLabel="Bank">
                                         <rect key="frame" x="0.0" y="243" width="56" height="56"/>
@@ -264,6 +267,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OiX-3I-REj" userLabel="Repeat">
                                         <rect key="frame" x="0.0" y="183" width="56" height="56"/>
                                         <state key="normal" image="repeat"/>
+                                        <connections>
+                                            <action selector="replay:" destination="zU6-iG-0CU" eventType="touchUpInside" id="NJp-Y0-Lvv"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7GQ-aO-kdz" userLabel="Bank">
                                         <rect key="frame" x="0.0" y="244" width="56" height="56"/>
