@@ -18,18 +18,26 @@ class VowelQuizViewController: UIViewController {
     
     var images = ["bat", "cat", "ax", "ball", "fall", "swan", "elf", "bed", "net", "mittens", "hit", "fish", "taxi", "yeti", "skis", "fox","pot", "hot","bug","bus","cut"]
     
-    var puzzleOne: UIImageView!
-    var puzzleTwo: UIImageView!
-    var puzzleThree: UIImageView!
-    var puzzleFour: UIImageView!
-    var puzzleFive: UIImageView!
-    var puzzleSix: UIImageView!
-    var puzzleSeven: UIImageView!
-    var puzzleEight: UIImageView!
-    var puzzleNine: UIImageView!
-    var puzzleTen: UIImageView!
-    var puzzleEleven: UIImageView!
-    var puzzleTwelve: UIImageView!
+    var puzzleOne: UIButton!
+    var puzzleTwo: UIButton!
+    var puzzleThree: UIButton!
+    var puzzleFour: UIButton!
+    var puzzleFive: UIButton!
+    var puzzleSix: UIButton!
+    var puzzleSeven: UIButton!
+    var puzzleEight: UIButton!
+    var puzzleNine: UIButton!
+    var puzzleTen: UIButton!
+    var puzzleEleven: UIButton!
+    var puzzleTwelve: UIButton!
+    
+    
+    @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var homeButton: UIButton!
+    @IBOutlet weak var replayButton: UIButton!
+    @IBOutlet weak var coinButton: UIButton!
+    @IBOutlet weak var puzzleButton: UIButton!
+    @IBOutlet weak var quizButton: UIButton!
     
     //passed in argument from level select page
     var passedInLetter: String!
@@ -37,9 +45,9 @@ class VowelQuizViewController: UIViewController {
     
     // choice buttons variables outlet
     @IBOutlet var letterButton: UIButton!
-    @IBOutlet var choice1: UIButton!;
-    @IBOutlet var choice2: UIButton!;
-    @IBOutlet var choice3: UIButton!;
+    @IBOutlet weak var choice1: UIButton!;
+    @IBOutlet weak var choice2: UIButton!;
+    @IBOutlet weak var choice3: UIButton!;
     
     // audio player
     var audioPlayer: AVAudioPlayer?
@@ -53,7 +61,7 @@ class VowelQuizViewController: UIViewController {
     var wrongTwo: String!
     
     var correctButton: UIButton!
-    var wrongTimes = 0
+    var increment = 2
     
     // reference to different storyboards
     let VowelLetterStoryBoard:UIStoryboard = UIStoryboard(name: "VowelLetter", bundle:nil)
@@ -63,29 +71,31 @@ class VowelQuizViewController: UIViewController {
         super.viewDidLoad()
         letterButton.setTitle(passedInLetter, for: .normal)
         
-        puzzleOne = UIImageView(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
+        quizButton.isEnabled = false
+        
+        puzzleOne = UIButton(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
         self.view.addSubview(puzzleOne)
-        puzzleTwo = UIImageView(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
+        puzzleTwo = UIButton(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
         self.view.insertSubview(puzzleTwo, belowSubview: puzzleOne)
-        puzzleThree = UIImageView(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
+        puzzleThree = UIButton(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
         self.view.insertSubview(puzzleThree, belowSubview: puzzleTwo)
-        puzzleFour = UIImageView(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
+        puzzleFour = UIButton(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
         self.view.insertSubview(puzzleFour, belowSubview: puzzleThree)
-        puzzleFive = UIImageView(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
+        puzzleFive = UIButton(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
         self.view.insertSubview(puzzleFive, belowSubview: puzzleFour)
-        puzzleSix = UIImageView(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
+        puzzleSix = UIButton(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
         self.view.insertSubview(puzzleSix, belowSubview: puzzleFive)
-        puzzleSeven = UIImageView(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
+        puzzleSeven = UIButton(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
         self.view.insertSubview(puzzleSeven, belowSubview: puzzleSix)
-        puzzleEight = UIImageView(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
+        puzzleEight = UIButton(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
         self.view.insertSubview(puzzleEight, belowSubview: puzzleSeven)
-        puzzleNine = UIImageView(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
+        puzzleNine = UIButton(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
         self.view.insertSubview(puzzleNine, belowSubview: puzzleEight)
-        puzzleTen = UIImageView(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
+        puzzleTen = UIButton(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
         self.view.insertSubview(puzzleTen, belowSubview: puzzleNine)
-        puzzleEleven = UIImageView(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
+        puzzleEleven = UIButton(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
         self.view.insertSubview(puzzleEleven, belowSubview: puzzleTen)
-        puzzleTwelve = UIImageView(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
+        puzzleTwelve = UIButton(frame: CGRect(x: 150, y: 110, width: 220, height: 260))
         self.view.insertSubview(puzzleTwelve, belowSubview: puzzleEleven)
         
         currentArray = passedInArray
@@ -126,6 +136,33 @@ class VowelQuizViewController: UIViewController {
             choice3.setImage(UIImage(named: String(wrongTwo!)), for: .normal)
             choice3.setTitle(wrongTwo, for: .normal)
             correctButton = choice1
+  
+            choice1.isEnabled = false
+            choice2.isEnabled = false
+            choice3.isEnabled = false
+            backButton.isEnabled = false
+            homeButton.isEnabled = false
+            replayButton.isEnabled = false
+            coinButton.isEnabled = false
+            puzzleButton.isEnabled = false
+
+            let seconds = 6.0
+            
+            playFullAudio(currentLetter: currentLetter, firstChoice: choice1.currentTitle!, secondChoice: choice2.currentTitle!, thirdChoice: choice3.currentTitle!)
+
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
+ 
+                self.choice1.isEnabled = true
+                self.choice2.isEnabled = true
+                self.choice3.isEnabled = true
+                self.backButton.isEnabled = true
+                self.homeButton.isEnabled = true
+                self.replayButton.isEnabled = true
+                self.coinButton.isEnabled = true
+                self.puzzleButton.isEnabled = true
+            }
+            
         case 1:
             choice1.setImage(UIImage(named: String(wrongOne!)), for: .normal)
             choice1.setTitle(wrongOne, for: .normal)
@@ -134,6 +171,31 @@ class VowelQuizViewController: UIViewController {
             choice3.setImage(UIImage(named: String(wrongTwo!)), for: .normal)
             choice3.setTitle(wrongTwo, for: .normal)
             correctButton = choice2
+
+            choice1.isEnabled = false
+            choice2.isEnabled = false
+            choice3.isEnabled = false
+            backButton.isEnabled = false
+            homeButton.isEnabled = false
+            replayButton.isEnabled = false
+            coinButton.isEnabled = false
+            puzzleButton.isEnabled = false
+
+            playFullAudio(currentLetter: currentLetter, firstChoice: choice1.currentTitle!, secondChoice: choice2.currentTitle!, thirdChoice: choice3.currentTitle!)
+
+            let seconds = 6.0
+            DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
+
+                self.choice1.isEnabled = true
+                self.choice2.isEnabled = true
+                self.choice3.isEnabled = true
+                
+                self.backButton.isEnabled = true
+                self.homeButton.isEnabled = true
+                self.replayButton.isEnabled = true
+                self.coinButton.isEnabled = true
+                self.puzzleButton.isEnabled = true
+            }
         case 2:
             choice1.setImage(UIImage(named: String(wrongOne!)), for: .normal)
             choice1.setTitle(wrongOne, for: .normal)
@@ -142,11 +204,36 @@ class VowelQuizViewController: UIViewController {
             choice3.setImage(UIImage(named: correctImage), for: .normal)
             choice3.setTitle(correctImage, for: .normal)
             correctButton = choice3
+  
+            choice1.isEnabled = false
+            choice2.isEnabled = false
+            choice3.isEnabled = false
+            backButton.isEnabled = false
+            homeButton.isEnabled = false
+            replayButton.isEnabled = false
+            coinButton.isEnabled = false
+            puzzleButton.isEnabled = false
+
+            playFullAudio(currentLetter: currentLetter, firstChoice: choice1.currentTitle!, secondChoice: choice2.currentTitle!, thirdChoice: choice3.currentTitle!)
+
+            let seconds = 6.0
+            DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
+
+                self.choice1.isEnabled = true
+                self.choice2.isEnabled = true
+                self.choice3.isEnabled = true
+             
+                self.backButton.isEnabled = true
+                self.homeButton.isEnabled = true
+                self.replayButton.isEnabled = true
+                self.coinButton.isEnabled = true
+                self.puzzleButton.isEnabled = true
+            }
         default:
             break
         }
         
-        playFullAudio(currentLetter: currentLetter, firstChoice: choice1.currentTitle!, secondChoice: choice2.currentTitle!, thirdChoice: choice3.currentTitle!)
+        
         
     }
     
@@ -175,19 +262,24 @@ class VowelQuizViewController: UIViewController {
         var saveFile = UserDefaults.standard.dictionary(forKey: "vowelStarCount")
 
         if (sender as! UIButton) == correctButton {
-            correctButtonAnimation()
+            
             
             var currScore:Int = saveFile![currentLetter] as! Int
-            if currScore < 5 {
-                currScore += 1
-                saveFile![currentLetter] = currScore
-                UserDefaults.standard.set(saveFile, forKey: "vowelStarCount")
+            if currScore < 12 {
+                while increment > 0{
+                    currScore += 1
+                    correctButtonAnimation()
+                    increment -= 1
+                }
+                increment = 2
+                if currScore < 6{
+                    saveFile![currentLetter] = currScore
+                    UserDefaults.standard.set(saveFile, forKey: "vowelStarCount")
+                }
+                
             }
-       
-            
             // disable button to avoid tapping during animation
             (sender as! UIButton).isEnabled = false
-            
             // ANIMATION BLOCK //
             // backup center points
             let c1 = self.choice1.center
@@ -228,12 +320,15 @@ class VowelQuizViewController: UIViewController {
                             self.choice3.alpha = 1.0
                         })
                         // re enable button
-                        (sender as! UIButton).isEnabled = true
+                        
                     })
                 }
             })
-        } else {
-            playFullAudio(currentLetter: currentLetter, firstChoice: choice1.currentTitle!, secondChoice: choice2.currentTitle!, thirdChoice: choice3.currentTitle!)
+    } else {
+        if increment > 0{
+            increment -= 1
+        }
+       // playFullAudio(currentLetter: currentLetter, firstChoice: choice1.currentTitle!, secondChoice: choice2.currentTitle!, thirdChoice: choice3.currentTitle!)
         }
     }
     
@@ -263,54 +358,67 @@ class VowelQuizViewController: UIViewController {
         
         var saveFile = UserDefaults.standard.dictionary(forKey: "VowelPuzzleProgress")
         
-        var progressScore:Int = saveFile![currentLetter] as! Int
+        var progress:Int = saveFile![currentLetter] as! Int
         
         
         
-        if progressScore == 1 {
-            puzzleFive.image = UIImage(named: imageFive)
-            puzzleNine.image = UIImage(named: imageNine)
-            self.animate(myview: puzzleFive)
-            self.animate(myview: puzzleNine)
+        if progress == 1 {
+            puzzleFive.setImage(UIImage(named: imageFive), for: .normal)
+            self.animate(mybutton: puzzleFive)
         }
-        if progressScore == 2 {
-            puzzleSeven.image = UIImage(named: imageSeven)
-            puzzleTen.image = UIImage(named: imageTen)
-            self.animate(myview: puzzleSeven)
-            self.animate(myview: puzzleTen)
+        if progress == 2{
+            puzzleNine.setImage(UIImage(named: imageNine), for: .normal)
+            self.animate(mybutton: puzzleNine)
         }
-        if progressScore == 3 {
-            puzzleSix.image = UIImage(named: imageSix)
-            puzzleTwelve.image = UIImage(named: imageTwelve)
-            self.animate(myview: puzzleSix)
-            self.animate(myview: puzzleTwelve)
+        if progress == 3 {
+            puzzleTen.setImage(UIImage(named: imageTen), for: .normal)
+            self.animate(mybutton: puzzleTen)
         }
-        if progressScore == 4 {
-            puzzleEight.image = UIImage(named: imageEight)
-            puzzleEleven.image = UIImage(named: imageEleven)
-            self.animate(myview: puzzleEight)
-            self.animate(myview: puzzleEleven)
+        if progress == 4{
+            puzzleSeven.setImage(UIImage(named: imageSeven), for: .normal)
+            self.animate(mybutton: puzzleSeven)
         }
-        if progressScore == 5 {
-            puzzleTwo.image = UIImage(named: imageTwo)
-            puzzleThree.image = UIImage(named: imageThree)
-            self.animate(myview: puzzleTwo)
-            self.animate(myview: puzzleThree)
+        if progress == 5{
+            puzzleSix.setImage(UIImage(named: imageSix), for: .normal)
+            self.animate(mybutton: puzzleSix)
         }
-        if progressScore == 6 {
-            puzzleOne.image = UIImage(named: imageOne)
-            puzzleFour.image = UIImage(named: imageFour)
-            self.animate(myview: puzzleOne)
-            self.animate(myview: puzzleFour)
-            let sb = UIStoryboard(name: "Main", bundle: nil)
-            let vc = sb.instantiateViewController(identifier: "rhyme_vc") as! RhymeViewController
+        if progress == 6{
+            puzzleTwelve.setImage(UIImage(named: imageTwelve), for: .normal)
+            self.animate(mybutton: puzzleTwelve)
+        }
+        if progress == 7 {
+            puzzleEight.setImage(UIImage(named: imageEight), for: .normal)
+            self.animate(mybutton: puzzleEight)
+        }
+        if progress == 8{
+            puzzleEleven.setImage(UIImage(named: imageEleven), for: .normal)
+            self.animate(mybutton: puzzleEleven)
+        }
+        if progress == 9{
+            puzzleTwo.setImage(UIImage(named: imageTwo), for: .normal)
+            self.animate(mybutton: puzzleTwo)
+        }
+        if progress == 10{
+            puzzleThree.setImage(UIImage(named: imageThree), for: .normal)
+            self.animate(mybutton: puzzleThree)
+        }
+        if progress == 11{
+            puzzleFour.setImage(UIImage(named: imageFour), for: .normal)
+            self.animate(mybutton: puzzleFour)
+        }
+        if progress == 12 {
+            puzzleOne.setImage(UIImage(named: imageOne), for: .normal)
+            self.animate(mybutton: puzzleOne)
+            puzzleOne.addTarget(self, action: #selector(self.puzzleTapped), for: .touchUpInside)
+            let vc = mainStoryBoard.instantiateViewController(identifier: "rhyme_vc") as! RhymeViewController
             vc.passedInLetter = currentLetter
+            vc.letterCategory = "end"
             present(vc, animated: true)
         }
-        progressScore += 1
+        progress += 1
         playCorrectAudio()
         
-        saveFile![currentLetter] = progressScore
+        saveFile![currentLetter] = progress
         
         UserDefaults.standard.set(saveFile, forKey: "VowelPuzzleProgress")
     }
@@ -319,40 +427,57 @@ class VowelQuizViewController: UIViewController {
         
         let saveFile = UserDefaults.standard.dictionary(forKey: "VowelPuzzleProgress")
         
-        let progressScore:Int = saveFile![currentLetter] as! Int
+        let progress:Int = saveFile![currentLetter] as! Int
         
         UserDefaults.standard.set(saveFile, forKey: "VowelPuzzleProgress")
         
-        if progressScore > 1 {
-            puzzleFive.image = UIImage(named: imageFive)
-            puzzleNine.image = UIImage(named: imageNine)
+        if progress > 1 {
+            puzzleFive.setImage(UIImage(named: imageFive), for: .normal)
         }
-        if progressScore > 2 {
-            puzzleSeven.image = UIImage(named: imageSeven)
-            puzzleTen.image = UIImage(named: imageTen)
+        if progress > 2 {
+            puzzleNine.setImage(UIImage(named: imageNine), for: .normal)
         }
-        if progressScore > 3 {
-            puzzleSix.image = UIImage(named: imageSix)
-            puzzleTwelve.image = UIImage(named: imageTwelve)
+        if progress > 3 {
+            puzzleTen.setImage(UIImage(named: imageTen), for: .normal)
         }
-        if progressScore > 4 {
-            puzzleEight.image = UIImage(named: imageEight)
-            puzzleEleven.image = UIImage(named: imageEleven)
+        if progress > 4 {
+            puzzleSeven.setImage(UIImage(named: imageSeven), for: .normal)
         }
-        if progressScore > 5 {
-            puzzleTwo.image = UIImage(named: imageTwo)
-            puzzleThree.image = UIImage(named: imageThree)
+        if progress > 5 {
+            puzzleSix.setImage(UIImage(named: imageSix), for: .normal)
         }
-        if progressScore > 6 {
-            puzzleOne.image = UIImage(named: imageOne)
-            puzzleFour.image = UIImage(named: imageFour)
-            let sb = UIStoryboard(name: "Main", bundle: nil)
-            let vc = sb.instantiateViewController(identifier: "rhyme_vc") as! RhymeViewController
-            vc.passedInLetter = currentLetter
-            present(vc, animated: true)
+        if progress > 6 {
+            puzzleTwelve.setImage(UIImage(named: imageTwelve), for: .normal)
+        }
+        if progress > 7 {
+            puzzleEight.setImage(UIImage(named: imageEight), for: .normal)
+        }
+        if progress > 8 {
+            puzzleEleven.setImage(UIImage(named: imageEleven), for: .normal)
+        }
+        if progress > 9 {
+            puzzleTwo.setImage(UIImage(named: imageTwo), for: .normal)
+        }
+        if progress > 10 {
+            puzzleThree.setImage(UIImage(named: imageThree), for: .normal)
+        }
+        if progress > 11 {
+            puzzleFour.setImage(UIImage(named: imageFour), for: .normal)
+        }
+        if progress > 12 {
+            puzzleOne.setImage(UIImage(named: imageOne), for: .normal)
+            puzzleOne.addTarget(self, action: #selector(self.puzzleTapped), for: .touchUpInside)
+        }
+
             
-        }
-            
+    }
+    
+    
+    @objc func puzzleTapped(sender: UIButton) {
+        let vc = mainStoryBoard.instantiateViewController(identifier: "rhyme_vc") as! RhymeViewController
+        vc.passedInLetter = currentLetter
+        vc.letterCategory = "vowel"
+        present(vc, animated: true)
     }
     
     func getRandomChoices(firstPic: Int, secondPic: Int, thirdPic: Int) {
@@ -373,15 +498,14 @@ class VowelQuizViewController: UIViewController {
         playIndividualLetterAudio(letter: letterButton.currentTitle!)
     }
     
-    func animate(myview: UIImageView) {
-        UIImageView.animate(withDuration: 1, animations: {
-            myview.frame = CGRect(x: 150, y: 110, width: 230, height: 270)
-            myview.center = myview.center
+ 
+    func animate(mybutton: UIButton) {
+        UIView.animate(withDuration: 1.0, animations:{
+            mybutton.frame = CGRect(x: mybutton.frame.origin.x, y: mybutton.frame.origin.y - 5, width: mybutton.frame.size.width, height: mybutton.frame.size.height)
         }, completion: {done in
             if done {
-                UIImageView.animate(withDuration: 1, animations: {
-                    myview.frame = CGRect(x: 150, y: 110, width: 220, height: 260)
-                    myview.center = myview.center
+                UIView.animate(withDuration: 1.0, animations:{
+                    mybutton.frame = CGRect(x: mybutton.frame.origin.x, y: mybutton.frame.origin.y + 5, width: mybutton.frame.size.width, height: mybutton.frame.size.height)
                 }, completion:  {done in
                     if done {
                     }
@@ -418,9 +542,9 @@ class VowelQuizViewController: UIViewController {
         switch letter {
         
         case "a","A":
-            playAudio(audioName: "phoneme-A-ahh")
-        case "a ","A ":
             playAudio(audioName: "phoneme-A-short")
+        case "a ","A ":
+            playAudio(audioName: "phoneme-A-ahh")
         case "e","E":
             playAudio(audioName: "phoneme-E-short")
         case "i","I":

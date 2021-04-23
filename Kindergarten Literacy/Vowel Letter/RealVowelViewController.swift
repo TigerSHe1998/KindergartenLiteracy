@@ -24,9 +24,9 @@ class RealVowelViewController: UIViewController {
     @IBOutlet weak var wordButton1: UIButton!
     @IBOutlet weak var wordButton3: UIButton!
     
-    @IBOutlet weak var word1: UILabel!
-    @IBOutlet weak var word2: UILabel!
-    @IBOutlet weak var word3: UILabel!
+    @IBOutlet weak var word1: UIButton!
+    @IBOutlet weak var word2: UIButton!
+    @IBOutlet weak var word3: UIButton!
     
     
     override func viewDidLoad() {
@@ -57,16 +57,16 @@ class RealVowelViewController: UIViewController {
     }
     
     @IBAction func playLetter(_ sender: Any) {
-        playBeginningSoundsAudio(letter: myButtonOne.currentTitle!)
+        playVowelAudio(letter: myButtonOne.currentTitle!)
     }
     @IBAction func playFirst(_ sender: Any) {
-        playBeginningSoundsFirstWord(letter: myButtonOne.currentTitle!)
+        playVowelFirstWord(letter: myButtonOne.currentTitle!)
     }
     @IBAction func playSecond(_ sender: Any) {
-        playBeginningSoundsSecondWord(letter: myButtonOne.currentTitle!)
+        playVowelSecondWord(letter: myButtonOne.currentTitle!)
     }
     @IBAction func playThird(_ sender: Any) {
-        playBeginningSoundsThirdWord(letter: myButtonOne.currentTitle!)
+        playVowelThirdWord(letter: myButtonOne.currentTitle!)
     }
     
     
@@ -77,134 +77,225 @@ class RealVowelViewController: UIViewController {
             wordButton1.setImage(UIImage(named: "bat"), for: .normal)
             wordButton2.setImage(UIImage(named: "cat"), for: .normal)
             wordButton3.setImage(UIImage(named: "ax"), for: .normal)
-            word1.text = "bat"
-            word2.text = "cat"
-            word3.text = "ax"
-            playBeginningSoundsAudio(letter: "a")
+            let letterToRed = "a"
+            let range1 = ("bat" as NSString).range(of: letterToRed)
+            let mutableFirst = NSMutableAttributedString(string: "bat")
+            mutableFirst.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: range1)
+            word1.setAttributedTitle(mutableFirst, for: .normal)
+            let range2 = ("cat" as NSString).range(of: letterToRed)
+            let mutableSecond = NSMutableAttributedString(string: "cat")
+            mutableSecond.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: range2)
+            word2.setAttributedTitle(mutableSecond, for: .normal)
+            let range3 = ("ax" as NSString).range(of: letterToRed)
+            let mutableThird = NSMutableAttributedString(string: "ax")
+            mutableThird.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: range3)
+            word3.setAttributedTitle(mutableThird, for: .normal)
+            //word1.text = "bat"
+            //word2.text = "cat"
+            //word3.text = "ax"
+            playVowelAudio(letter: "a")
             // use dispatch queue to add delay between words. the delay have to increase each time by 1
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: {
-                self.playBeginningSoundsFirstWord(letter: "a")
+                self.playVowelFirstWord(letter: "a")
             })
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2), execute: {
-                self.playBeginningSoundsSecondWord(letter: "a")
+                self.playVowelSecondWord(letter: "a")
             })
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(3), execute: {
-                self.playBeginningSoundsThirdWord(letter: "a")
+                self.playVowelThirdWord(letter: "a")
             })
         case "a ","A ":
-            playBeginningSoundsAudio(letter: "a ")
+            playVowelAudio(letter: "a ")
             // use dispatch queue to add delay between words. the delay have to increase each time by 1
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: {
-                self.playBeginningSoundsFirstWord(letter: "a ")
+                self.playVowelFirstWord(letter: "a ")
             })
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2), execute: {
-                self.playBeginningSoundsSecondWord(letter: "a ")
+                self.playVowelSecondWord(letter: "a ")
             })
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(3), execute: {
-                self.playBeginningSoundsThirdWord(letter: "a ")
+                self.playVowelThirdWord(letter: "a ")
             })
             wordButton1.setImage(UIImage(named: "ball"), for: .normal)
             wordButton2.setImage(UIImage(named: "fall"), for: .normal)
             wordButton3.setImage(UIImage(named: "swan"), for: .normal)
-            word1.text = "ball"
-            word2.text = "fall"
-            word3.text = "swan"
+            let letterToRed = "a"
+            let range1 = ("ball" as NSString).range(of: letterToRed)
+            let mutableFirst = NSMutableAttributedString(string: "ball")
+            mutableFirst.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: range1)
+            word1.setAttributedTitle(mutableFirst, for: .normal)
+            let range2 = ("fall" as NSString).range(of: letterToRed)
+            let mutableSecond = NSMutableAttributedString(string: "fall")
+            mutableSecond.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: range2)
+            word2.setAttributedTitle(mutableSecond, for: .normal)
+            let range3 = ("swan" as NSString).range(of: letterToRed)
+            let mutableThird = NSMutableAttributedString(string: "swan")
+            mutableThird.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: range3)
+            word3.setAttributedTitle(mutableThird, for: .normal)
+            //word1.text = "ball"
+            //word2.text = "fall"
+            //word3.text = "swan"
         case "e","E":
-            playBeginningSoundsAudio(letter: "e")
+            playVowelAudio(letter: "e")
             // use dispatch queue to add delay between words. the delay have to increase each time by 1
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: {
-                self.playBeginningSoundsFirstWord(letter: "e")
+                self.playVowelFirstWord(letter: "e")
             })
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2), execute: {
-                self.playBeginningSoundsSecondWord(letter: "e")
+                self.playVowelSecondWord(letter: "e")
             })
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(3), execute: {
-                self.playBeginningSoundsThirdWord(letter: "e")
+                self.playVowelThirdWord(letter: "e")
             })
             wordButton1.setImage(UIImage(named: "elf"), for: .normal)
             wordButton2.setImage(UIImage(named: "bed"), for: .normal)
             wordButton3.setImage(UIImage(named: "net"), for: .normal)
-            word1.text = "elf"
-            word2.text = "bed"
-            word3.text = "net"
+            let letterToRed = "e"
+            let range1 = ("elf" as NSString).range(of: letterToRed)
+            let mutableFirst = NSMutableAttributedString(string: "elf")
+            mutableFirst.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: range1)
+            word1.setAttributedTitle(mutableFirst, for: .normal)
+            let range2 = ("bed" as NSString).range(of: letterToRed)
+            let mutableSecond = NSMutableAttributedString(string: "bed")
+            mutableSecond.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: range2)
+            word2.setAttributedTitle(mutableSecond, for: .normal)
+            let range3 = ("net" as NSString).range(of: letterToRed)
+            let mutableThird = NSMutableAttributedString(string: "net")
+            mutableThird.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: range3)
+            word3.setAttributedTitle(mutableThird, for: .normal)
+            //word1.text = "elf"
+            //word2.text = "bed"
+            //word3.text = "net"
         case "i","I":
-            playBeginningSoundsAudio(letter: "i")
+            playVowelAudio(letter: "i")
             // use dispatch queue to add delay between words. the delay have to increase each time by 1
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: {
-                self.playBeginningSoundsFirstWord(letter: "i")
+                self.playVowelFirstWord(letter: "i")
             })
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2), execute: {
-                self.playBeginningSoundsSecondWord(letter: "i")
+                self.playVowelSecondWord(letter: "i")
             })
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(3), execute: {
-                self.playBeginningSoundsThirdWord(letter: "i")
+                self.playVowelThirdWord(letter: "i")
             })
             wordButton1.setImage(UIImage(named: "mittens"), for: .normal)
             wordButton2.setImage(UIImage(named: "hit"), for: .normal)
             wordButton3.setImage(UIImage(named: "fish"), for: .normal)
-            word1.text = "mittens"
-            word2.text = "hit"
-            word3.text = "fish"
+            let letterToRed = "i"
+            let range1 = ("mittens" as NSString).range(of: letterToRed)
+            let mutableFirst = NSMutableAttributedString(string: "mittens")
+            mutableFirst.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: range1)
+            word1.setAttributedTitle(mutableFirst, for: .normal)
+            let range2 = ("hit" as NSString).range(of: letterToRed)
+            let mutableSecond = NSMutableAttributedString(string: "hit")
+            mutableSecond.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: range2)
+            word2.setAttributedTitle(mutableSecond, for: .normal)
+            let range3 = ("fish" as NSString).range(of: letterToRed)
+            let mutableThird = NSMutableAttributedString(string: "fish")
+            mutableThird.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: range3)
+            word3.setAttributedTitle(mutableThird, for: .normal)
+            //word1.text = "mittens"
+            //word2.text = "hit"
+            //word3.text = "fish"
         case "i ","I ":
-            playBeginningSoundsAudio(letter: "i ")
+            playVowelAudio(letter: "i ")
             // use dispatch queue to add delay between words. the delay have to increase each time by 1
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: {
-                self.playBeginningSoundsFirstWord(letter: "i ")
+                self.playVowelFirstWord(letter: "i ")
             })
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2), execute: {
-                self.playBeginningSoundsSecondWord(letter: "i ")
+                self.playVowelSecondWord(letter: "i ")
             })
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(3), execute: {
-                self.playBeginningSoundsThirdWord(letter: "i ")
+                self.playVowelThirdWord(letter: "i ")
             })
             wordButton1.setImage(UIImage(named: "taxi"), for: .normal)
             wordButton2.setImage(UIImage(named: "yeti"), for: .normal)
             wordButton3.setImage(UIImage(named: "skis"), for: .normal)
-            word1.text = "taxi"
-            word2.text = "yeti"
-            word3.text = "skis"
+            let letterToRed = "i"
+            let range1 = ("taxi" as NSString).range(of: letterToRed)
+            let mutableFirst = NSMutableAttributedString(string: "taxi")
+            mutableFirst.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: range1)
+            word1.setAttributedTitle(mutableFirst, for: .normal)
+            let range2 = ("yeti" as NSString).range(of: letterToRed)
+            let mutableSecond = NSMutableAttributedString(string: "yeti")
+            mutableSecond.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: range2)
+            word2.setAttributedTitle(mutableSecond, for: .normal)
+            let range3 = ("skis" as NSString).range(of: letterToRed)
+            let mutableThird = NSMutableAttributedString(string: "skis")
+            mutableThird.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: range3)
+            word3.setAttributedTitle(mutableThird, for: .normal)
+            //word1.text = "taxi"
+            //word2.text = "yeti"
+            //word3.text = "skis"
         case "o","O":
-            playBeginningSoundsAudio(letter: "o")
+            playVowelAudio(letter: "o")
             // use dispatch queue to add delay between words. the delay have to increase each time by 1
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: {
-                self.playBeginningSoundsFirstWord(letter: "o")
+                self.playVowelFirstWord(letter: "o")
             })
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2), execute: {
-                self.playBeginningSoundsSecondWord(letter: "o")
+                self.playVowelSecondWord(letter: "o")
             })
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(3), execute: {
-                self.playBeginningSoundsThirdWord(letter: "o")
+                self.playVowelThirdWord(letter: "o")
             })
             wordButton1.setImage(UIImage(named: "fox"), for: .normal)
             wordButton2.setImage(UIImage(named: "pot"), for: .normal)
             wordButton3.setImage(UIImage(named: "hot"), for: .normal)
-            word1.text = "fox"
-            word2.text = "pot"
-            word3.text = "hot"
+            let letterToRed = "o"
+            let range1 = ("fox" as NSString).range(of: letterToRed)
+            let mutableFirst = NSMutableAttributedString(string: "fox")
+            mutableFirst.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: range1)
+            word1.setAttributedTitle(mutableFirst, for: .normal)
+            let range2 = ("pot" as NSString).range(of: letterToRed)
+            let mutableSecond = NSMutableAttributedString(string: "pot")
+            mutableSecond.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: range2)
+            word2.setAttributedTitle(mutableSecond, for: .normal)
+            let range3 = ("hot" as NSString).range(of: letterToRed)
+            let mutableThird = NSMutableAttributedString(string: "hot")
+            mutableThird.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: range3)
+            word3.setAttributedTitle(mutableThird, for: .normal)
+            //word1.text = "fox"
+           // word2.text = "pot"
+            //word3.text = "hot"
         case "u","U":
-            playBeginningSoundsAudio(letter: "u")
+            playVowelAudio(letter: "u")
             // use dispatch queue to add delay between words. the delay have to increase each time by 1
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: {
-                self.playBeginningSoundsFirstWord(letter: "u")
+                self.playVowelFirstWord(letter: "u")
             })
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2), execute: {
-                self.playBeginningSoundsSecondWord(letter: "u")
+                self.playVowelSecondWord(letter: "u")
             })
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(3), execute: {
-                self.playBeginningSoundsThirdWord(letter: "u")
+                self.playVowelThirdWord(letter: "u")
             })
             wordButton1.setImage(UIImage(named: "bug"), for: .normal)
             wordButton2.setImage(UIImage(named: "bus"), for: .normal)
             wordButton3.setImage(UIImage(named: "cut"), for: .normal)
-            word1.text = "bug"
-            word2.text = "bus"
-            word3.text = "cut"
+            let letterToRed = "u"
+            let range1 = ("bug" as NSString).range(of: letterToRed)
+            let mutableFirst = NSMutableAttributedString(string: "bug")
+            mutableFirst.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: range1)
+            word1.setAttributedTitle(mutableFirst, for: .normal)
+            let range2 = ("bus" as NSString).range(of: letterToRed)
+            let mutableSecond = NSMutableAttributedString(string: "bus")
+            mutableSecond.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: range2)
+            word2.setAttributedTitle(mutableSecond, for: .normal)
+            let range3 = ("cut" as NSString).range(of: letterToRed)
+            let mutableThird = NSMutableAttributedString(string: "cut")
+            mutableThird.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: range3)
+            word3.setAttributedTitle(mutableThird, for: .normal)
+            //word1.text = "bug"
+            //word2.text = "bus"
+            //word3.text = "cut"
         default:
             break
         }
     }
     
-    func playBeginningSoundsAudio(letter: String) {
+    func playVowelAudio(letter: String) {
         switch letter {
         case "a","A":
             let pathToSound = Bundle.main.path(forResource: "phoneme-A-short", ofType: "mp3")!
@@ -260,7 +351,7 @@ class RealVowelViewController: UIViewController {
         }
     }
     
-    func playBeginningSoundsFirstWord(letter: String) {
+    func playVowelFirstWord(letter: String) {
         switch letter {
         case "a","A":
             let pathToSound = Bundle.main.path(forResource: "bat", ofType: "mp3")!
@@ -316,7 +407,7 @@ class RealVowelViewController: UIViewController {
         }
     }
     
-    func playBeginningSoundsSecondWord(letter: String) {
+    func playVowelSecondWord(letter: String) {
         switch letter {
         case "a","A":
             let pathToSound = Bundle.main.path(forResource: "cat", ofType: "mp3")!
@@ -372,7 +463,7 @@ class RealVowelViewController: UIViewController {
         }
     }
     
-    func playBeginningSoundsThirdWord(letter: String) {
+    func playVowelThirdWord(letter: String) {
         switch letter {
         case "a","A":
             let pathToSound = Bundle.main.path(forResource: "ax", ofType: "mp3")!
