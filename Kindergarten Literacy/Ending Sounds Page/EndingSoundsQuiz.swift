@@ -338,7 +338,7 @@ class EndingSoundsQuiz: UIViewController {
                 }
                 puzzleIncrement = 2
                 if currScore < 6{
-                    saveFile![currentLetter] = currScore
+                    saveFile![currentLetter.lowercased()] = currScore
                     UserDefaults.standard.set(saveFile, forKey: "endingSoundsStarCount")
                 }
                 

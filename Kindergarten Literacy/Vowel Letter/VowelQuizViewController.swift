@@ -294,7 +294,7 @@ class VowelQuizViewController: UIViewController {
                 increment = 2
                 if currScore < 6{
                     saveFile![currentLetter] = currScore
-                    UserDefaults.standard.set(saveFile, forKey: "VowelStarCount")
+                    UserDefaults.standard.set(saveFile, forKey: "vowelStarCount")
                 }
                 
             }
